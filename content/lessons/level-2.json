@@ -1,0 +1,1349 @@
+{
+  "level_code": 2,
+  "lessons": [
+    {
+      "slug": "past-was-were",
+      "title": "Past of to be: was and were",
+      "summary": "Talk about where people were and how things were.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "was / were",
+          "body_md": "| | past of *to be* |\n|---|---|\n| I / he / she / it | **was** |\n| you / we / they | **were** |\n\n**Negative:** *wasn't* (was not), *weren't* (were not).\n\n**Question:** ***Was** it cold? **Were** they at home?*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I **was** at the doctor's yesterday.*\n- *The film **was** really funny.*\n- *We **weren't** at school last Friday.*\n- ***Were** you tired after the trip?* — *Yes, I **was**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "was-try-1",
+              "type": "single_choice",
+              "prompt": "My grandparents ___ farmers.",
+              "options": [
+                "was",
+                "were",
+                "are been"
+              ],
+              "answer": "were",
+              "hint": "they → ?",
+              "explanation": "*My grandparents* = *they*, so *were*."
+            },
+            {
+              "id": "was-try-2",
+              "type": "single_choice",
+              "prompt": "___ the shop open yesterday?",
+              "options": [
+                "Was",
+                "Were",
+                "Did"
+              ],
+              "answer": "Was",
+              "explanation": "*The shop* = *it*, so the question starts with *Was*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "was-check-1",
+              "type": "single_choice",
+              "prompt": "It ___ very hot last summer.",
+              "options": [
+                "was",
+                "were",
+                "is"
+              ],
+              "answer": "was",
+              "explanation": "*It* + past = *was*."
+            },
+            {
+              "id": "was-check-2",
+              "type": "single_choice",
+              "prompt": "You ___ late this morning.",
+              "options": [
+                "was",
+                "were",
+                "be"
+              ],
+              "answer": "were",
+              "explanation": "*You* always goes with *were*."
+            },
+            {
+              "id": "was-check-3",
+              "type": "single_choice",
+              "prompt": "Which is the negative?",
+              "options": [
+                "They weren't happy.",
+                "They were happy.",
+                "Were they happy?"
+              ],
+              "answer": "They weren't happy.",
+              "explanation": "*weren't* = *were not*."
+            },
+            {
+              "id": "was-check-4",
+              "type": "single_choice",
+              "prompt": "\"Was Sam at the party?\" \"No, he ___.\"",
+              "options": [
+                "wasn't",
+                "weren't",
+                "didn't"
+              ],
+              "answer": "wasn't",
+              "explanation": "Short answer with *he*: *No, he wasn't.*"
+            },
+            {
+              "id": "was-check-5",
+              "type": "single_choice",
+              "prompt": "Where ___ you last night?",
+              "options": [
+                "was",
+                "were",
+                "did"
+              ],
+              "answer": "were",
+              "explanation": "*you* → *were*: *Where were you?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-regular",
+      "title": "Past simple: regular verbs",
+      "summary": "Add -ed to talk about finished actions.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Finished actions",
+          "body_md": "We use the **past simple** for actions that finished in the past.\n\nRegular verbs add **-ed**, the same for everyone: *I work**ed**, she work**ed**, they work**ed**.*\n\nSpelling:\n- *live → live**d*** (ends in *e*: add *d*)\n- *study → stud**ied*** (consonant + *y*: *y → ied*)\n- *stop → stop**ped*** (short verb, one vowel + one consonant: double it)\n- *play → play**ed*** (vowel + *y*: just add *ed*)"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*Last weekend I **visited** my aunt. We **cooked** lunch and **watched** a film. On Sunday it **rained**, so I **stayed** at home and **studied**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "reg-try-1",
+              "type": "single_choice",
+              "prompt": "Yesterday I ___ my room.",
+              "options": [
+                "clean",
+                "cleaned",
+                "cleaning"
+              ],
+              "answer": "cleaned",
+              "hint": "Add -ed.",
+              "explanation": "Past simple: *clean + ed = cleaned*."
+            },
+            {
+              "id": "reg-try-2",
+              "type": "single_choice",
+              "prompt": "What is the past of \"try\"?",
+              "options": [
+                "tryed",
+                "tried",
+                "trys"
+              ],
+              "answer": "tried",
+              "explanation": "Consonant + *y* → *ied*: *tried*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "reg-check-1",
+              "type": "single_choice",
+              "prompt": "She ___ in Rome for two years.",
+              "options": [
+                "live",
+                "lived",
+                "liveed"
+              ],
+              "answer": "lived",
+              "explanation": "*live* ends in *e*, so add *d*: *lived*."
+            },
+            {
+              "id": "reg-check-2",
+              "type": "single_choice",
+              "prompt": "The bus ___ suddenly.",
+              "options": [
+                "stoped",
+                "stopped",
+                "stopt"
+              ],
+              "answer": "stopped",
+              "explanation": "*stop* doubles the *p*: *stopped*."
+            },
+            {
+              "id": "reg-check-3",
+              "type": "single_choice",
+              "prompt": "We ___ football after school.",
+              "options": [
+                "played",
+                "plaied",
+                "plays"
+              ],
+              "answer": "played",
+              "explanation": "Vowel + *y*: just add *ed*: *played*."
+            },
+            {
+              "id": "reg-check-4",
+              "type": "single_choice",
+              "prompt": "Which sentence is in the past?",
+              "options": [
+                "I walk to work.",
+                "I walked to work.",
+                "I am walking to work."
+              ],
+              "answer": "I walked to work.",
+              "explanation": "*walked* is past simple."
+            },
+            {
+              "id": "reg-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ for the exam all night.",
+              "options": [
+                "studyed",
+                "studied",
+                "studies"
+              ],
+              "answer": "studied",
+              "explanation": "*study* → *studied*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-irregular",
+      "title": "Past simple: irregular verbs",
+      "summary": "Learn common verbs that do not use -ed.",
+      "estimated_minutes": 14,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Irregular verbs",
+          "body_md": "Many common verbs have a special past form. Learn them by heart.\n\n| verb | past | verb | past |\n|---|---|---|---|\n| go | **went** | have | **had** |\n| see | **saw** | eat | **ate** |\n| come | **came** | make | **made** |\n| take | **took** | buy | **bought** |\n| get | **got** | write | **wrote** |\n| say | **said** | think | **thought** |"
+        },
+        {
+          "kind": "see",
+          "title": "A story",
+          "body_md": "*On Saturday I **went** to the market. I **saw** my friend Leo there. We **bought** some fruit and **had** coffee. Then we **took** the bus home. Leo **said** it **was** a great day.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "irr-try-1",
+              "type": "single_choice",
+              "prompt": "Last year we ___ to Spain.",
+              "options": [
+                "goed",
+                "went",
+                "gone"
+              ],
+              "answer": "went",
+              "hint": "It is irregular.",
+              "explanation": "The past of *go* is *went*."
+            },
+            {
+              "id": "irr-try-2",
+              "type": "single_choice",
+              "prompt": "I ___ a letter to my grandmother.",
+              "options": [
+                "writed",
+                "wrote",
+                "write"
+              ],
+              "answer": "wrote",
+              "explanation": "The past of *write* is *wrote*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "irr-check-1",
+              "type": "single_choice",
+              "prompt": "She ___ a new phone last week.",
+              "options": [
+                "buyed",
+                "bought",
+                "buys"
+              ],
+              "answer": "bought",
+              "explanation": "The past of *buy* is *bought*."
+            },
+            {
+              "id": "irr-check-2",
+              "type": "single_choice",
+              "prompt": "We ___ pizza for dinner.",
+              "options": [
+                "ate",
+                "eated",
+                "eat"
+              ],
+              "answer": "ate",
+              "explanation": "The past of *eat* is *ate*."
+            },
+            {
+              "id": "irr-check-3",
+              "type": "single_choice",
+              "prompt": "They ___ home very late.",
+              "options": [
+                "comed",
+                "came",
+                "come"
+              ],
+              "answer": "came",
+              "explanation": "The past of *come* is *came*."
+            },
+            {
+              "id": "irr-check-4",
+              "type": "single_choice",
+              "prompt": "I ___ a strange noise in the night.",
+              "options": [
+                "heard",
+                "heared",
+                "hear"
+              ],
+              "answer": "heard",
+              "explanation": "The past of *hear* is *heard*."
+            },
+            {
+              "id": "irr-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ that he was busy.",
+              "options": [
+                "sayed",
+                "said",
+                "says"
+              ],
+              "answer": "said",
+              "explanation": "The past of *say* is *said*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-questions-negatives",
+      "title": "Past simple: questions and negatives",
+      "summary": "Use did and didn't to ask and say no about the past.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "did / didn't",
+          "body_md": "- **Negative:** *didn't* + base verb: *I **didn't go** to work.* (not *didn't went*)\n- **Question:** *Did* + subject + base verb: ***Did** you **see** the match?*\n- **Short answers:** *Yes, I did. / No, I didn't.*\n- **Wh- questions:** *Where **did** you **go**? What **did** she **buy**?*\n\nWith *was/were* we do **not** use *did*: *Were you tired?* (not *Did you be tired?*)"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***Did** you **enjoy** the concert?* — *Yes, I **did**.*\n- *She **didn't like** the food.*\n- *What time **did** the train **leave**?*\n- *We **didn't have** time for lunch.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "dq-try-1",
+              "type": "single_choice",
+              "prompt": "I ___ my homework yesterday.",
+              "options": [
+                "didn't finish",
+                "didn't finished",
+                "not finished"
+              ],
+              "answer": "didn't finish",
+              "hint": "didn't + base verb",
+              "explanation": "After *didn't*, use the base verb: *didn't finish*."
+            },
+            {
+              "id": "dq-try-2",
+              "type": "single_choice",
+              "prompt": "___ you call your mother?",
+              "options": [
+                "Did",
+                "Do",
+                "Were"
+              ],
+              "answer": "Did",
+              "explanation": "Past simple questions start with *Did*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "dq-check-1",
+              "type": "single_choice",
+              "prompt": "Where ___ you go on holiday?",
+              "options": [
+                "did",
+                "were",
+                "do"
+              ],
+              "answer": "did",
+              "explanation": "*Where did you go?*"
+            },
+            {
+              "id": "dq-check-2",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "Did she came?",
+                "Did she come?",
+                "Did she comes?"
+              ],
+              "answer": "Did she come?",
+              "explanation": "After *Did*, use the base verb."
+            },
+            {
+              "id": "dq-check-3",
+              "type": "single_choice",
+              "prompt": "\"Did they win?\" \"No, they ___.\"",
+              "options": [
+                "didn't",
+                "weren't",
+                "don't"
+              ],
+              "answer": "didn't",
+              "explanation": "Short answer: *No, they didn't.*"
+            },
+            {
+              "id": "dq-check-4",
+              "type": "single_choice",
+              "prompt": "He ___ at home last night.",
+              "options": [
+                "didn't be",
+                "wasn't",
+                "not was"
+              ],
+              "answer": "wasn't",
+              "explanation": "With *be* we use *wasn't*, not *didn't*."
+            },
+            {
+              "id": "dq-check-5",
+              "type": "single_choice",
+              "prompt": "What ___ you have for breakfast?",
+              "options": [
+                "did",
+                "was",
+                "do"
+              ],
+              "answer": "did",
+              "explanation": "*What did you have ...?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-time-expressions",
+      "title": "Yesterday, last week, two days ago",
+      "summary": "Say when something happened.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "When did it happen?",
+          "body_md": "- **yesterday** / **yesterday morning**\n- **last** + time: *last night, last week, last year* (no *the*)\n- time + **ago**: *two days ago, ten minutes ago*\n- **in** + year or month: *in 2019, in May*\n- **on** + day or date: *on Monday, on 3 March*\n\nThese words usually go at the end or the start of the sentence."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I started this job **three months ago**.*\n- ***Last summer** we went camping.*\n- *She was born **in** 2001.*\n- *I saw him **on** Tuesday.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "ptx-try-1",
+              "type": "single_choice",
+              "prompt": "I met her two years ___.",
+              "options": [
+                "ago",
+                "last",
+                "before"
+              ],
+              "answer": "ago",
+              "hint": "Which word comes after the time?",
+              "explanation": "Time + *ago*: *two years ago*."
+            },
+            {
+              "id": "ptx-try-2",
+              "type": "single_choice",
+              "prompt": "We moved here ___ year.",
+              "options": [
+                "last",
+                "the last",
+                "ago"
+              ],
+              "answer": "last",
+              "explanation": "*last year* (no *the*)."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "ptx-check-1",
+              "type": "single_choice",
+              "prompt": "The class finished ten minutes ___.",
+              "options": [
+                "ago",
+                "last",
+                "yesterday"
+              ],
+              "answer": "ago",
+              "explanation": "*ten minutes ago*."
+            },
+            {
+              "id": "ptx-check-2",
+              "type": "single_choice",
+              "prompt": "I phoned you ___ night.",
+              "options": [
+                "yesterday",
+                "last",
+                "ago"
+              ],
+              "answer": "last",
+              "explanation": "*last night*. (We say *yesterday evening*, but *last night*.)"
+            },
+            {
+              "id": "ptx-check-3",
+              "type": "single_choice",
+              "prompt": "He finished school ___ 2015.",
+              "options": [
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": "in",
+              "explanation": "*in* + year."
+            },
+            {
+              "id": "ptx-check-4",
+              "type": "single_choice",
+              "prompt": "The parcel arrived ___ Friday.",
+              "options": [
+                "on",
+                "in",
+                "ago"
+              ],
+              "answer": "on",
+              "explanation": "*on* + day."
+            },
+            {
+              "id": "ptx-check-5",
+              "type": "single_choice",
+              "prompt": "Which sentence is correct?",
+              "options": [
+                "I saw him the last week.",
+                "I saw him last week.",
+                "I saw him week ago."
+              ],
+              "answer": "I saw him last week.",
+              "explanation": "*last week*, with no *the*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "present-continuous-now",
+      "title": "Present continuous: happening now",
+      "summary": "Say what people are doing at the moment.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "am / is / are + -ing",
+          "body_md": "We use the **present continuous** for actions happening **now** or around now.\n\n*I **am** read**ing**. She **is** cook**ing**. They **are** play**ing**.*\n\nSpelling: *make → mak**ing*** (drop *e*), *run → run**ning*** (double the consonant), *lie → l**ying***.\n\n**Negative:** *I'm not working. He isn't sleeping.*  **Question:** ***Are** you listen**ing**?*"
+        },
+        {
+          "kind": "see",
+          "title": "Look out of the window",
+          "body_md": "*It **is raining**. A man **is running** for the bus. Two children **are playing** in the park. My neighbour **isn't working** today: she **is sitting** in her garden.*\n\nWords like *now, right now, at the moment, look!, listen!* often go with it."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "pc-try-1",
+              "type": "single_choice",
+              "prompt": "Be quiet! The baby ___.",
+              "options": [
+                "sleeps",
+                "is sleeping",
+                "sleeping"
+              ],
+              "answer": "is sleeping",
+              "hint": "am / is / are + -ing",
+              "explanation": "Happening now: *is sleeping*."
+            },
+            {
+              "id": "pc-try-2",
+              "type": "single_choice",
+              "prompt": "What is the -ing form of \"swim\"?",
+              "options": [
+                "swiming",
+                "swimming",
+                "swimeing"
+              ],
+              "answer": "swimming",
+              "explanation": "Short verb, one vowel + one consonant: double it: *swimming*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "pc-check-1",
+              "type": "single_choice",
+              "prompt": "They ___ TV right now.",
+              "options": [
+                "watch",
+                "are watching",
+                "watching"
+              ],
+              "answer": "are watching",
+              "explanation": "*They* + *are* + *watching*."
+            },
+            {
+              "id": "pc-check-2",
+              "type": "single_choice",
+              "prompt": "I ___ dinner at the moment.",
+              "options": [
+                "am making",
+                "am makeing",
+                "make"
+              ],
+              "answer": "am making",
+              "explanation": "*make* drops the *e*: *making*."
+            },
+            {
+              "id": "pc-check-3",
+              "type": "single_choice",
+              "prompt": "Which is a question?",
+              "options": [
+                "Is she working?",
+                "She is working.",
+                "She isn't working."
+              ],
+              "answer": "Is she working?",
+              "explanation": "Questions start with *Is / Are*."
+            },
+            {
+              "id": "pc-check-4",
+              "type": "single_choice",
+              "prompt": "Listen! Someone ___ at the door.",
+              "options": [
+                "knocks",
+                "is knocking",
+                "knocked"
+              ],
+              "answer": "is knocking",
+              "explanation": "*Listen!* means now: *is knocking*."
+            },
+            {
+              "id": "pc-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ today. He is at home.",
+              "options": [
+                "isn't working",
+                "doesn't working",
+                "not work"
+              ],
+              "answer": "isn't working",
+              "explanation": "Negative: *isn't* + *-ing*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "present-simple-vs-continuous",
+      "title": "Present simple or present continuous?",
+      "summary": "Choose between habits and things happening now.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Habit or now?",
+          "body_md": "- **Present simple**: habits, routines and facts: *I **drink** coffee every morning.*\n- **Present continuous**: now or around now: *I**'m drinking** tea now.*\n\nClue words:\n- simple: *every day, usually, often, never, on Mondays*\n- continuous: *now, at the moment, today, this week*\n\nSome verbs are rarely used with -ing: *like, love, want, know, understand, need*: *I **want** a coffee* (not *I'm wanting*)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Ali usually **walks** to work, but today he**'s taking** the bus.*\n- *Water **boils** at 100 °C.*\n- *I **know** the answer.*\n- *We**'re staying** with friends this week.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "svc-try-1",
+              "type": "single_choice",
+              "prompt": "She ___ to the gym every Tuesday.",
+              "options": [
+                "goes",
+                "is going",
+                "go"
+              ],
+              "answer": "goes",
+              "hint": "Look for the clue word.",
+              "explanation": "*every Tuesday* = a habit: present simple."
+            },
+            {
+              "id": "svc-try-2",
+              "type": "single_choice",
+              "prompt": "Look! It ___.",
+              "options": [
+                "snows",
+                "is snowing",
+                "snow"
+              ],
+              "answer": "is snowing",
+              "explanation": "*Look!* = now: present continuous."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "svc-check-1",
+              "type": "single_choice",
+              "prompt": "I ___ what you mean.",
+              "options": [
+                "understand",
+                "am understanding",
+                "understanding"
+              ],
+              "answer": "understand",
+              "explanation": "*understand* is not normally used with -ing."
+            },
+            {
+              "id": "svc-check-2",
+              "type": "single_choice",
+              "prompt": "My brother ___ for an exam this week.",
+              "options": [
+                "studies",
+                "is studying",
+                "study"
+              ],
+              "answer": "is studying",
+              "explanation": "*this week* = around now: present continuous."
+            },
+            {
+              "id": "svc-check-3",
+              "type": "single_choice",
+              "prompt": "The sun ___ in the east.",
+              "options": [
+                "rises",
+                "is rising",
+                "rising"
+              ],
+              "answer": "rises",
+              "explanation": "A fact: present simple."
+            },
+            {
+              "id": "svc-check-4",
+              "type": "single_choice",
+              "prompt": "\"Where's Mum?\" \"She ___ in the garden.\"",
+              "options": [
+                "works",
+                "is working",
+                "work"
+              ],
+              "answer": "is working",
+              "explanation": "Happening now: present continuous."
+            },
+            {
+              "id": "svc-check-5",
+              "type": "single_choice",
+              "prompt": "We never ___ meat.",
+              "options": [
+                "eat",
+                "are eating",
+                "eats"
+              ],
+              "answer": "eat",
+              "explanation": "*never* = a habit: present simple. *We* has no *-s*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "going-to-plans",
+      "title": "Going to: plans and intentions",
+      "summary": "Talk about things you have decided to do.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "be going to + verb",
+          "body_md": "Use **be going to** for plans you have already made, and for things we can see are going to happen.\n\n*I**'m going to** visit my cousin. She**'s going to** study law. They**'re going to** move house.*\n\n**Negative:** *I'm not going to ...*  **Question:** ***Are** you **going to** ...?*\n\nLook at those clouds! It**'s going to** rain. (we can see it)"
+        },
+        {
+          "kind": "see",
+          "title": "Plans for the summer",
+          "body_md": "*This summer **I'm going to** learn to drive. My sister **is going to** work in a hotel. We **aren't going to** travel abroad, but we **are going to** visit the coast for a weekend.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "gt-try-1",
+              "type": "single_choice",
+              "prompt": "We ___ paint the kitchen next weekend.",
+              "options": [
+                "are going to",
+                "going to",
+                "are go to"
+              ],
+              "answer": "are going to",
+              "hint": "be + going to",
+              "explanation": "*We* + *are going to* + verb."
+            },
+            {
+              "id": "gt-try-2",
+              "type": "single_choice",
+              "prompt": "Watch out! You ___ fall!",
+              "options": [
+                "are going to",
+                "go to",
+                "will going to"
+              ],
+              "answer": "are going to",
+              "explanation": "We can see it is about to happen: *are going to*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "gt-check-1",
+              "type": "single_choice",
+              "prompt": "He ___ buy a new laptop.",
+              "options": [
+                "is going to",
+                "are going to",
+                "going"
+              ],
+              "answer": "is going to",
+              "explanation": "*He* + *is going to*."
+            },
+            {
+              "id": "gt-check-2",
+              "type": "single_choice",
+              "prompt": "Which is a question?",
+              "options": [
+                "Are you going to apply?",
+                "You are going to apply.",
+                "You aren't going to apply."
+              ],
+              "answer": "Are you going to apply?",
+              "explanation": "Questions start with *Are / Is*."
+            },
+            {
+              "id": "gt-check-3",
+              "type": "single_choice",
+              "prompt": "I ___ to the party. I'm too tired.",
+              "options": [
+                "am not going to go",
+                "not going to go",
+                "don't going to go"
+              ],
+              "answer": "am not going to go",
+              "explanation": "Negative: *am not going to* + verb."
+            },
+            {
+              "id": "gt-check-4",
+              "type": "single_choice",
+              "prompt": "They ___ get married in June.",
+              "options": [
+                "are going to",
+                "is going to",
+                "going to"
+              ],
+              "answer": "are going to",
+              "explanation": "*They* + *are going to*."
+            },
+            {
+              "id": "gt-check-5",
+              "type": "single_choice",
+              "prompt": "What ___ do after university?",
+              "options": [
+                "are you going to",
+                "you are going to",
+                "do you going to"
+              ],
+              "answer": "are you going to",
+              "explanation": "Question: *What are you going to do?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "will-predictions-offers",
+      "title": "Will: predictions, offers and quick decisions",
+      "summary": "Use will for the future when you decide now or guess.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "will + verb",
+          "body_md": "**will** (*'ll*) + base verb is the same for everyone: *I'll help, she'll help.*\n\nUse it for:\n- **quick decisions** made now: *The phone's ringing. I**'ll** answer it.*\n- **offers and promises**: *I**'ll** carry that bag for you. I **won't** tell anyone.*\n- **predictions** (what you think): *I think it **will** be sunny tomorrow.*\n\n**Negative:** *won't* (= will not)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *\"I'm cold.\" \"I**'ll** close the window.\"*\n- *Don't worry, I **won't** be late.*\n- *I think you**'ll** love this book.*\n- ***Will** you help me with this?*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "will-try-1",
+              "type": "single_choice",
+              "prompt": "\"I haven't got any money.\" \"Don't worry, I ___ pay.\"",
+              "options": [
+                "'ll",
+                "am going to",
+                "pay"
+              ],
+              "answer": "'ll",
+              "hint": "Did you decide just now?",
+              "explanation": "A quick decision or offer made now: *I'll pay*."
+            },
+            {
+              "id": "will-try-2",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She will comes.",
+                "She will come.",
+                "She wills come."
+              ],
+              "answer": "She will come.",
+              "explanation": "*will* + base verb, no *-s*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "will-check-1",
+              "type": "single_choice",
+              "prompt": "I promise I ___ forget.",
+              "options": [
+                "won't",
+                "don't",
+                "am not"
+              ],
+              "answer": "won't",
+              "explanation": "A promise: *I won't forget*."
+            },
+            {
+              "id": "will-check-2",
+              "type": "single_choice",
+              "prompt": "I think people ___ live on Mars one day.",
+              "options": [
+                "will",
+                "are",
+                "do"
+              ],
+              "answer": "will",
+              "explanation": "A prediction: *will live*."
+            },
+            {
+              "id": "will-check-3",
+              "type": "single_choice",
+              "prompt": "\"This box is heavy.\" \"I ___ help you.\"",
+              "options": [
+                "'ll",
+                "'m helping",
+                "help"
+              ],
+              "answer": "'ll",
+              "explanation": "An offer made now: *I'll help you*."
+            },
+            {
+              "id": "will-check-4",
+              "type": "single_choice",
+              "prompt": "___ you marry me?",
+              "options": [
+                "Will",
+                "Do",
+                "Are"
+              ],
+              "answer": "Will",
+              "explanation": "A request: *Will you ...?*"
+            },
+            {
+              "id": "will-check-5",
+              "type": "single_choice",
+              "prompt": "Which means \"will not\"?",
+              "options": [
+                "won't",
+                "willn't",
+                "don't"
+              ],
+              "answer": "won't",
+              "explanation": "*won't* = *will not*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "future-time-expressions",
+      "title": "Tomorrow, next week, in two days",
+      "summary": "Say when something will happen.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "When will it happen?",
+          "body_md": "- **tomorrow** / **tomorrow morning** / **the day after tomorrow**\n- **next** + time: *next week, next month, next year* (no *the*)\n- **in** + period: *in two days, in an hour* (= two days from now)\n- **soon**, **later**, **tonight**, **this evening**\n\nCompare: *two days **ago*** (past) and ***in** two days* (future)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The shop opens **in** ten minutes.*\n- *I'll call you **tomorrow**.*\n- *We're going to Italy **next** month.*\n- *See you **later**!*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "ftx-try-1",
+              "type": "single_choice",
+              "prompt": "The train leaves ___ five minutes.",
+              "options": [
+                "in",
+                "after",
+                "ago"
+              ],
+              "answer": "in",
+              "hint": "ago is for the past.",
+              "explanation": "Future, from now: *in five minutes*."
+            },
+            {
+              "id": "ftx-try-2",
+              "type": "single_choice",
+              "prompt": "My exam is ___ Monday.",
+              "options": [
+                "next",
+                "the next",
+                "in"
+              ],
+              "answer": "next",
+              "explanation": "*next Monday* (no *the*)."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "ftx-check-1",
+              "type": "single_choice",
+              "prompt": "I'll finish the report ___.",
+              "options": [
+                "tomorrow",
+                "yesterday",
+                "last week"
+              ],
+              "answer": "tomorrow",
+              "explanation": "*tomorrow* is in the future."
+            },
+            {
+              "id": "ftx-check-2",
+              "type": "single_choice",
+              "prompt": "She's starting a new job ___ month.",
+              "options": [
+                "next",
+                "last",
+                "ago"
+              ],
+              "answer": "next",
+              "explanation": "Future: *next month*."
+            },
+            {
+              "id": "ftx-check-3",
+              "type": "single_choice",
+              "prompt": "Which is about the future?",
+              "options": [
+                "in three days",
+                "three days ago",
+                "last three days"
+              ],
+              "answer": "in three days",
+              "explanation": "*in three days* = three days from now."
+            },
+            {
+              "id": "ftx-check-4",
+              "type": "single_choice",
+              "prompt": "\"When is the party?\" \"___ Saturday, the day after tomorrow.\"",
+              "options": [
+                "This",
+                "Last",
+                "Ago"
+              ],
+              "answer": "This",
+              "explanation": "*This Saturday* = the coming Saturday."
+            },
+            {
+              "id": "ftx-check-5",
+              "type": "single_choice",
+              "prompt": "I'm busy now. I'll do it ___.",
+              "options": [
+                "later",
+                "ago",
+                "yesterday"
+              ],
+              "answer": "later",
+              "explanation": "*later* = at a time after now."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "slug": "l2-u1-past-events",
+      "title": "Unit 1: Past events",
+      "summary": "Talk about what happened: was, were and the past simple.",
+      "lessons": [
+        "past-was-were",
+        "past-simple-regular",
+        "past-simple-irregular",
+        "past-simple-questions-negatives",
+        "past-time-expressions"
+      ],
+      "test": [
+        {
+          "id": "u21-t1",
+          "type": "single_choice",
+          "prompt": "We ___ very tired after the game.",
+          "options": [
+            "was",
+            "were",
+            "did"
+          ],
+          "answer": "were",
+          "explanation": "*We* → *were*."
+        },
+        {
+          "id": "u21-t2",
+          "type": "single_choice",
+          "prompt": "She ___ the window because it was hot.",
+          "options": [
+            "opened",
+            "opend",
+            "open"
+          ],
+          "answer": "opened",
+          "explanation": "Regular past: *opened*."
+        },
+        {
+          "id": "u21-t3",
+          "type": "single_choice",
+          "prompt": "I ___ my keys at home.",
+          "options": [
+            "leaved",
+            "left",
+            "leave"
+          ],
+          "answer": "left",
+          "explanation": "The past of *leave* is *left*."
+        },
+        {
+          "id": "u21-t4",
+          "type": "single_choice",
+          "prompt": "They ___ the answer.",
+          "options": [
+            "didn't know",
+            "didn't knew",
+            "not knew"
+          ],
+          "answer": "didn't know",
+          "explanation": "*didn't* + base verb."
+        },
+        {
+          "id": "u21-t5",
+          "type": "single_choice",
+          "prompt": "I finished university three years ___.",
+          "options": [
+            "ago",
+            "last",
+            "before"
+          ],
+          "answer": "ago",
+          "explanation": "*three years ago*."
+        },
+        {
+          "id": "u21-t6",
+          "type": "single_choice",
+          "prompt": "___ you see the news?",
+          "options": [
+            "Did",
+            "Were",
+            "Do"
+          ],
+          "answer": "Did",
+          "explanation": "Past simple question: *Did you see ...?*"
+        }
+      ]
+    },
+    {
+      "slug": "l2-u2-now-and-next",
+      "title": "Unit 2: Now and next",
+      "summary": "Talk about now, your plans and the future.",
+      "lessons": [
+        "present-continuous-now",
+        "present-simple-vs-continuous",
+        "going-to-plans",
+        "will-predictions-offers",
+        "future-time-expressions"
+      ],
+      "test": [
+        {
+          "id": "u22-t1",
+          "type": "single_choice",
+          "prompt": "Shh! I ___ to the radio.",
+          "options": [
+            "listen",
+            "am listening",
+            "listens"
+          ],
+          "answer": "am listening",
+          "explanation": "Now: present continuous."
+        },
+        {
+          "id": "u22-t2",
+          "type": "single_choice",
+          "prompt": "She ___ tea. She prefers coffee.",
+          "options": [
+            "doesn't like",
+            "isn't liking",
+            "don't like"
+          ],
+          "answer": "doesn't like",
+          "explanation": "*like* is not used with -ing; *she* → *doesn't*."
+        },
+        {
+          "id": "u22-t3",
+          "type": "single_choice",
+          "prompt": "We have the tickets. We ___ see the show on Friday.",
+          "options": [
+            "are going to",
+            "will to",
+            "going"
+          ],
+          "answer": "are going to",
+          "explanation": "A plan already made: *are going to*."
+        },
+        {
+          "id": "u22-t4",
+          "type": "single_choice",
+          "prompt": "\"It's dark in here.\" \"I ___ turn on the light.\"",
+          "options": [
+            "'ll",
+            "'m going",
+            "turn"
+          ],
+          "answer": "'ll",
+          "explanation": "A decision made now: *I'll*."
+        },
+        {
+          "id": "u22-t5",
+          "type": "single_choice",
+          "prompt": "The film starts ___ ten minutes.",
+          "options": [
+            "in",
+            "ago",
+            "next"
+          ],
+          "answer": "in",
+          "explanation": "*in ten minutes* = from now."
+        },
+        {
+          "id": "u22-t6",
+          "type": "single_choice",
+          "prompt": "Which is correct?",
+          "options": [
+            "He is running every morning.",
+            "He runs every morning.",
+            "He run every morning."
+          ],
+          "answer": "He runs every morning.",
+          "explanation": "*every morning* = habit: *He runs*."
+        }
+      ]
+    }
+  ]
+}
