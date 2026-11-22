@@ -1,0 +1,112 @@
+type Attempt {
+  id: ID!
+  createdAt: DateTime!
+  mode: String!
+  isCorrect: Boolean
+  scoreRatio: Float
+  category: QuestionCategory
+}
+
+"""Date (isoformat)"""
+scalar Date
+
+"""Date with time (isoformat)"""
+scalar DateTime
+
+type LearningLevel {
+  id: ID!
+  code: Int!
+  slug: String!
+  name: String!
+  cefr: String!
+  description: String!
+}
+
+type Lesson {
+  id: ID!
+  slug: String!
+  title: String!
+  summary: String!
+  estimatedMinutes: Int!
+  level: LearningLevel
+}
+
+type MockExam {
+  id: ID!
+  kind: String!
+  status: String!
+  startedAt: DateTime!
+  completedAt: DateTime
+}
+
+type Profile {
+  displayName: String
+  targetScore: Int
+  examDate: Date
+  dailyGoalMinutes: Int!
+  onboardingCompleted: Boolean!
+  level: LearningLevel
+}
+
+type Progress {
+  lessonsCompleted: Int!
+  lessonsTotal: Int!
+  skills: [SkillProgress!]!
+  overallRatio: Float!
+}
+
+type Query {
+  viewer: Viewer!
+  learningLevels: [LearningLevel!]!
+  questionCategories: [QuestionCategory!]!
+}
+
+type QuestionCategory {
+  id: ID!
+  code: String!
+  name: String!
+  section: String!
+  skills: [Skill!]!
+}
+
+enum Skill {
+  SPEAKING
+  WRITING
+  READING
+  LISTENING
+}
+
+type SkillProgress {
+  skill: Skill!
+  attempts: Int!
+
+  """0..1 share of marks gained; null if no marked attempts"""
+  accuracy: Float
+}
+
+type Viewer {
+  id: ID!
+  email: String
+  demoMode: Boolean!
+  roles: [String!]!
+  profile: Profile
+  progress: Progress!
+
+  """Consecutive study days (UTC) ending today or yesterday"""
+  streakDays: Int!
+
+  """Minutes practised today (UTC), from recorded attempt durations"""
+  todayMinutes: Int!
+  recentAttempts(limit: Int! = 5): [Attempt!]!
+
+  """Next published lessons at the learner's level that are not completed"""
+  recommendedLessons(limit: Int! = 3): [Lesson!]!
+  weakAreas: [WeakArea!]!
+  mockExams(limit: Int! = 5): [MockExam!]!
+}
+
+type WeakArea {
+  accuracy: Float!
+  attempts: Int!
+  category: QuestionCategory
+}
