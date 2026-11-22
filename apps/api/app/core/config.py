@@ -62,7 +62,11 @@ class Settings(BaseSettings):
 
     @property
     def recordings_path(self) -> Path:
-        return Path(self.recordings_dir) if self.recordings_dir else Path(__file__).resolve().parents[4] / "recordings"
+        if self.recordings_dir:
+            return Path(self.recordings_dir)
+        here = Path(__file__).resolve()  # <repo>/apps/api/app/core/config.py when run from the repository
+        root = here.parents[4] if len(here.parents) > 4 else Path.cwd()
+        return root / "recordings"
 
     @property
     def is_dev(self) -> bool:
