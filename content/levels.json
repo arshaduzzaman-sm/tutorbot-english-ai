@@ -1,0 +1,8 @@
+[
+  {"code": 1, "slug": "beginner-english", "name": "Beginner English", "cefr": "Pre-A1 to A1", "description": "Alphabet, sounds, numbers, your first 500 words and the simple present. Learn to introduce yourself."},
+  {"code": 2, "slug": "elementary-english", "name": "Elementary English", "cefr": "A2", "description": "About 1,500 words, past and future, simple paragraphs, short conversations and basic listening."},
+  {"code": 3, "slug": "intermediate-english", "name": "Intermediate English", "cefr": "B1", "description": "About 3,000 words, all main tenses, linking words, opinion paragraphs and everyday lectures."},
+  {"code": 4, "slug": "pte-preparation", "name": "PTE Preparation", "cefr": "B2", "description": "Academic vocabulary, complex sentences, essays, note-taking and all 22 PTE task types."},
+  {"code": 5, "slug": "advanced-pte-preparation", "name": "Advanced PTE Preparation", "cefr": "C1", "description": "Precise academic writing, natural fluency, fast reading and detailed listening."},
+  {"code": 6, "slug": "pte-85-90-target-training", "name": "PTE 85-90 Target Training", "cefr": "C1+ to C2", "description": "Consistency under time pressure, removing small errors and full-exam stamina."}
+]
