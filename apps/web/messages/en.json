@@ -16,7 +16,14 @@
     "practiceEstimate": "Practice estimate: not an official PTE score",
     "demoMode": "Demo mode: AI not connected. Feedback is sample text."
   },
-  "nav": { "home": "Home", "about": "About", "privacy": "Privacy", "terms": "Terms", "main": "Main" },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "main": "Main",
+    "lessons": "Lessons"
+  },
   "footer": {
     "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
     "local": "Runs on your own computer. Your data stays on this computer.",
@@ -35,10 +42,14 @@
     "introTitle": "What is TutorBot English AI?",
     "introBody": "A free app that teaches English from the alphabet to advanced academic English, and trains you on every PTE Academic task. It runs on your own computer, so your recordings and progress stay with you.",
     "skillsTitle": "The four skills",
-    "speaking": "Speaking", "speakingBody": "Read aloud, repeat sentences, describe images and more, with feedback on fluency and pronunciation.",
-    "writing": "Writing", "writingBody": "Summaries and essays with a word counter, timer, and grammar and vocabulary feedback.",
-    "reading": "Reading", "readingBody": "Fill in the blanks, multiple choice and reorder paragraphs, with clear explanations.",
-    "listening": "Listening", "listeningBody": "Dictation, summaries and highlight tasks, with transcripts in Learn mode.",
+    "speaking": "Speaking",
+    "speakingBody": "Read aloud, repeat sentences, describe images and more, with feedback on fluency and pronunciation.",
+    "writing": "Writing",
+    "writingBody": "Summaries and essays with a word counter, timer, and grammar and vocabulary feedback.",
+    "reading": "Reading",
+    "readingBody": "Fill in the blanks, multiple choice and reorder paragraphs, with clear explanations.",
+    "listening": "Listening",
+    "listeningBody": "Dictation, summaries and highlight tasks, with transcripts in Learn mode.",
     "aiTitle": "How the AI helps",
     "ai1": "Measures what can be measured: word accuracy, pauses, speed, grammar errors and word counts.",
     "ai2": "Explains your mistakes in simple English.",
@@ -52,10 +63,14 @@
     "f3": "Mock exams with section tests and mini mocks",
     "f4": "Daily study plan that fits your time",
     "faqTitle": "Questions",
-    "q1": "Is it really free?", "a1": "Yes. There are no paywalls and no subscriptions. The code is open source.",
-    "q2": "Will this guarantee my PTE score?", "a2": "No. Nobody can guarantee a score. We give you practice and feedback; your results depend on your study and practice.",
-    "q3": "Are the scores official?", "a3": "No. Every estimate is a practice estimate, not an official PTE score. Take an official Pearson practice test before you book your exam.",
-    "q4": "Where is my data?", "a4": "Only on the computer where the app runs. Nothing is sent to a cloud service."
+    "q1": "Is it really free?",
+    "a1": "Yes. There are no paywalls and no subscriptions. The code is open source.",
+    "q2": "Will this guarantee my PTE score?",
+    "a2": "No. Nobody can guarantee a score. We give you practice and feedback; your results depend on your study and practice.",
+    "q3": "Are the scores official?",
+    "a3": "No. Every estimate is a practice estimate, not an official PTE score. Take an official Pearson practice test before you book your exam.",
+    "q4": "Where is my data?",
+    "a4": "Only on the computer where the app runs. Nothing is sent to a cloud service."
   },
   "auth": {
     "email": "Email",
@@ -107,7 +122,11 @@
     "back": "Back",
     "next": "Next",
     "finish": "Save and go to my dashboard",
-    "errors": { "level": "Please choose a level.", "target": "Please enter a score from 10 to 90.", "examDate": "The exam date cannot be in the past." }
+    "errors": {
+      "level": "Please choose a level.",
+      "target": "Please enter a score from 10 to 90.",
+      "examDate": "The exam date cannot be in the past."
+    }
   },
   "dashboard": {
     "welcome": "Welcome, {name}!",
@@ -137,7 +156,8 @@
     "mocks": "Mock exams",
     "mocksEmpty": "No mock exams yet. Full mock exams arrive in a later version.",
     "readinessNote": "Progress here is a practice estimate, not an official PTE score.",
-    "lessonsSoon": "Lesson pages open in the next version."
+    "openLesson": "Open lesson",
+    "allLessons": "See all lessons"
   },
   "profile": {
     "title": "Your profile",
@@ -154,14 +174,62 @@
     "deleted": "Your account has been deleted."
   },
   "levels": {
-    "1": "Beginner English", "2": "Elementary English", "3": "Intermediate English",
-    "4": "PTE Preparation", "5": "Advanced PTE Preparation", "6": "PTE 85-90 Target Training"
+    "1": "Beginner English",
+    "2": "Elementary English",
+    "3": "Intermediate English",
+    "4": "PTE Preparation",
+    "5": "Advanced PTE Preparation",
+    "6": "PTE 85-90 Target Training"
   },
-  "skills": { "SPEAKING": "Speaking", "WRITING": "Writing", "READING": "Reading", "LISTENING": "Listening" },
+  "skills": {
+    "SPEAKING": "Speaking",
+    "WRITING": "Writing",
+    "READING": "Reading",
+    "LISTENING": "Listening"
+  },
   "legal": {
     "reviewNote": "Template: to be reviewed by a lawyer before public launch.",
     "aboutTitle": "About TutorBot English AI",
     "privacyTitle": "Privacy policy",
     "termsTitle": "Terms of use"
+  },
+  "lessons": {
+    "title": "Lessons",
+    "intro": "Learn step by step. Each lesson has four parts: Learn, See, Try and Check.",
+    "levelHeading": "Level {code}: {name}",
+    "cefr": "CEFR {cefr}",
+    "minutes": "{count} min",
+    "statusNew": "Not started",
+    "statusInProgress": "In progress",
+    "statusCompleted": "Completed",
+    "bestScore": "Best score: {value}%",
+    "empty": "No lessons for this level yet. More are coming soon.",
+    "start": "Start",
+    "continue": "Continue",
+    "review": "Review",
+    "steps": {
+      "learn": "Learn",
+      "see": "See",
+      "try": "Try",
+      "check": "Check",
+      "review": "Review"
+    },
+    "stepOf": "Part {current} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "checkAnswer": "Check my answer",
+    "showHint": "Show a hint",
+    "hint": "Hint: {text}",
+    "correct": "Correct!",
+    "notQuite": "Not quite. The answer is: {answer}",
+    "submitCheck": "Submit my answers",
+    "answerAll": "Please answer every question.",
+    "passed": "Well done! You scored {value}%. This lesson is complete.",
+    "failed": "You scored {value}%. You need {pass}% to complete the lesson. Read the explanations and try again.",
+    "tryAgain": "Try again",
+    "backToLessons": "Back to lessons",
+    "toDashboard": "Go to my dashboard",
+    "notFound": "This lesson was not found.",
+    "question": "Question {n}"
   }
 }

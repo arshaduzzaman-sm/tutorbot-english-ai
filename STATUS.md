@@ -1,6 +1,6 @@
 # STATUS
 
-**Current milestone:** M1 Foundation (branch `m1-foundation`) · **Last updated:** 2026-11-22
+**Current milestone:** M2 Learning (branch `m2-learning`, M1 done in PR #1) · **Last updated:** 2026-11-22
 
 ## M1 acceptance criteria
 - [x] `make setup` then `make start` runs the full app locally with no API keys (tested on Linux; see Known issues)
@@ -22,9 +22,17 @@
 ## Content counts
 - Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
 
+## M2 plan (one small PR each, into `m2-learning`)
+- [x] PR A `m2-lesson-pages`: lesson list + Learn/See/Try/Check player, auto-marking, progress (pytest 48, vitest 17, e2e 20)
+- [ ] PR B reading practice (5 types, Learn + Practice modes, auto-marking)
+- [ ] PR C listening practice (8 types; audio script, transcript fallback)
+- [ ] PR D mistake notebook + spaced review
+- [ ] PR E placement test + study plan
+- [ ] PR F more content (Levels 1-3) + content import script
+
 ## Next step
-1. Owner: merge PR #1 (`m1-foundation` → `main`). All M1 criteria pass.
-2. Then create branch `m2-learning` and write the M2 plan here.
+1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
+2. Agent: continue with PR B.
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
@@ -37,7 +45,6 @@
 
 ## Known issues and limitations
 - AI is mock-only (demo banner shown). Local models arrive in M3.
-- Lessons are listed on the dashboard but lesson pages open in M2.
 - Streak and "today" use UTC days.
 - `make` needs a Unix shell; Windows users use WSL2 or `scripts/setup.ps1` (not tested on Windows/macOS yet).
 

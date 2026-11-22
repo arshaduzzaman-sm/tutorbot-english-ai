@@ -13,6 +13,14 @@ scalar Date
 """Date with time (isoformat)"""
 scalar DateTime
 
+type Exercise {
+  id: String!
+  type: String!
+  prompt: String!
+  options: [String!]!
+  hint: String
+}
+
 type LearningLevel {
   id: ID!
   code: Int!
@@ -29,6 +37,23 @@ type Lesson {
   summary: String!
   estimatedMinutes: Int!
   level: LearningLevel
+
+  """The viewer's progress on this lesson; null if not started"""
+  progress: LessonProgress
+  sections: [LessonSection!]!
+}
+
+type LessonProgress {
+  status: String!
+  bestScore: Float
+  completedAt: DateTime
+}
+
+type LessonSection {
+  kind: String!
+  title: String!
+  bodyMd: String!
+  exercises: [Exercise!]!
 }
 
 type MockExam {
@@ -58,6 +83,10 @@ type Progress {
 type Query {
   viewer: Viewer!
   learningLevels: [LearningLevel!]!
+
+  """Published lessons, optionally for one level, in course order"""
+  lessons(levelCode: Int = null): [Lesson!]!
+  lesson(slug: String!): Lesson
   questionCategories: [QuestionCategory!]!
 }
 

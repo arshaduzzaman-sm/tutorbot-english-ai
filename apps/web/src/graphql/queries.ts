@@ -49,3 +49,25 @@ export const ProfileQuery = graphql(`
     }
   }
 `);
+
+export const LessonsQuery = graphql(`
+  query Lessons {
+    learningLevels { code name cefr }
+    lessons {
+      id slug title summary estimatedMinutes
+      level { code }
+      progress { status bestScore }
+    }
+  }
+`);
+
+export const LessonQuery = graphql(`
+  query Lesson($slug: String!) {
+    lesson(slug: $slug) {
+      id slug title summary estimatedMinutes
+      level { code name cefr }
+      progress { status bestScore }
+      sections { kind title bodyMd exercises { id type prompt options hint } }
+    }
+  }
+`);

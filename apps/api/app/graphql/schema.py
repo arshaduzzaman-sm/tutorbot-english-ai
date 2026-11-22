@@ -15,6 +15,7 @@ from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
 from app.graphql.context import Context
+from app.services.lessons import public_exercise
 from app.services.progress import AttemptSignal, skill_stats, study_streak, weak_categories
 
 CtxInfo = Info[Context, None]
@@ -85,6 +86,32 @@ class Profile:
 
 
 @strawberry.type
+class Exercise:
+    """A practice item as learners see it: never includes the answer or explanation."""
+
+    id: str
+    type: str
+    prompt: str
+    options: list[str]
+    hint: str | None
+
+
+@strawberry.type
+class LessonSection:
+    kind: str
+    title: str
+    body_md: str
+    exercises: list[Exercise]
+
+
+@strawberry.type
+class LessonProgress:
+    status: str
+    best_score: float | None
+    completed_at: datetime | None
+
+
+@strawberry.type
 class Lesson:
     id: strawberry.ID
     slug: str
@@ -96,6 +123,58 @@ class Lesson:
     @strawberry.field
     async def level(self, info: CtxInfo) -> LearningLevel | None:
         return await _level(info, self.level_id)
+
+    @strawberry.field(description="The viewer's progress on this lesson; null if not started")
+    async def progress(self, info: CtxInfo) -> LessonProgress | None:
+        row = await info.context.progress_loader.load(uuid.UUID(str(self.id)))
+        if row is None:
+            return None
+        return LessonProgress(
+            status=row["status"],
+            best_score=float(row["score_ratio"]) if row["score_ratio"] is not None else None,
+            completed_at=row["completed_at"],
+        )
+
+    @strawberry.field
+    async def sections(self, info: CtxInfo) -> list[LessonSection]:
+        rows = await info.context.execute(
+            text(
+                "select kind, title, body_md, exercises from public.lesson_sections "
+                "where lesson_id = :id order by sort_order"
+            ),
+            {"id": str(self.id)},
+        )
+        out = []
+        section_rows: list[Any] = list(rows.all())
+        for kind, title, body, exercises in section_rows:
+            items = [public_exercise(e) for e in (exercises or [])]
+            out.append(
+                LessonSection(
+                    kind=kind,
+                    title=title,
+                    body_md=body,
+                    exercises=[
+                        Exercise(
+                            id=e["id"],
+                            type=e["type"],
+                            prompt=e["prompt"],
+                            options=e.get("options", []),
+                            hint=e.get("hint"),
+                        )
+                        for e in items
+                    ],
+                )
+            )
+        return out
+
+
+LESSON_COLUMNS = "l.id, l.slug, l.title, l.summary, l.estimated_minutes, l.learning_level_id"
+
+
+def _lesson(r: Any) -> Lesson:
+    return Lesson(
+        id=strawberry.ID(str(r[0])), slug=r[1], title=r[2], summary=r[3], estimated_minutes=r[4], level_id=r[5]
+    )
 
 
 @strawberry.type
@@ -351,6 +430,31 @@ class Query:
             .all()
         )
         return [LearningLevel.of(r) for r in rows]
+
+    @strawberry.field(description="Published lessons, optionally for one level, in course order")
+    async def lessons(self, info: CtxInfo, level_code: int | None = None) -> list[Lesson]:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608 (constant column list)
+                "join public.learning_levels lv on lv.id = l.learning_level_id "
+                "where l.status = 'published' and l.deleted_at is null "
+                "and (cast(:code as int) is null or lv.code = :code) order by lv.code, l.sort_order"
+            ),
+            {"code": level_code},
+        )
+        return [_lesson(r) for r in rows.all()]
+
+    @strawberry.field
+    async def lesson(self, info: CtxInfo, slug: str) -> Lesson | None:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608
+                "where l.slug = :slug and l.status = 'published' and l.deleted_at is null"
+            ),
+            {"slug": slug},
+        )
+        r = rows.first()
+        return _lesson(r) if r else None
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

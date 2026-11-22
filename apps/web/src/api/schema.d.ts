@@ -4,6 +4,57 @@
  */
 
 export interface paths {
+    "/api/v1/lessons/{slug}/check": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Submit Check */
+        post: operations["submit_check_api_v1_lessons__slug__check_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/lessons/{slug}/exercises/{exercise_id}/check": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Check Exercise */
+        post: operations["check_exercise_api_v1_lessons__slug__exercises__exercise_id__check_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/lessons/{slug}/start": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Start */
+        post: operations["start_api_v1_lessons__slug__start_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/me": {
         parameters: {
             query?: never;
@@ -101,10 +152,53 @@ export interface components {
              */
             confirm: "DELETE";
         };
+        /** ExerciseCheckIn */
+        ExerciseCheckIn: {
+            /** Answer */
+            answer: string;
+        };
+        /** ExerciseResultOut */
+        ExerciseResultOut: {
+            /** Correct */
+            correct: boolean;
+            /** Correct Answer */
+            correct_answer: string;
+            /** Explanation */
+            explanation: string;
+            /** Id */
+            id: string;
+        };
         /** HTTPValidationError */
         HTTPValidationError: {
             /** Detail */
             detail?: components["schemas"]["ValidationError"][];
+        };
+        /** LessonCheckIn */
+        LessonCheckIn: {
+            /** Answers */
+            answers: {
+                [key: string]: string;
+            };
+            /** Duration Seconds */
+            duration_seconds?: number | null;
+        };
+        /** LessonCheckOut */
+        LessonCheckOut: {
+            /** Pass Ratio */
+            pass_ratio: number;
+            /** Passed */
+            passed: boolean;
+            /** Results */
+            results: components["schemas"]["ExerciseResultOut"][];
+            /** Score Ratio */
+            score_ratio: number;
+            /** Status */
+            status: string;
+        };
+        /** LessonStartOut */
+        LessonStartOut: {
+            /** Status */
+            status: string;
         };
         /** OnboardingIn */
         OnboardingIn: {
@@ -162,6 +256,108 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
+    submit_check_api_v1_lessons__slug__check_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["LessonCheckIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["LessonCheckOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    check_exercise_api_v1_lessons__slug__exercises__exercise_id__check_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+                exercise_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ExerciseCheckIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExerciseResultOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    start_api_v1_lessons__slug__start_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["LessonStartOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     delete_me_api_v1_me_delete: {
         parameters: {
             query?: never;

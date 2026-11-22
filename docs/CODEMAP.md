@@ -21,8 +21,9 @@
 - `core/errors.py` error format · `core/logging.py` JSON logs, no PII · `core/ratelimit.py` sliding window
 - `db/session.py` `user_session` (RLS as authenticated) / `service_session` · `db/models.py` SQLAlchemy models
 - `api/deps.py` DB dependency, `require_role` · `api/me.py` onboarding PUT, export GET, delete · `api/health.py`
-- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories; limits
-- `graphql/context.py` per-request context, locked execute, DataLoaders (levels, categories)
+- `api/lessons.py` lesson start, Try check, Check submit · `services/lessons.py` marking (answers never leave the API)
+- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson; limits
+- `graphql/context.py` per-request context, locked execute, DataLoaders (levels, categories, lesson progress)
 - `services/progress.py` streak, skill stats, weak areas (pure) · `services/profile.py` onboarding/export/delete
 - `ai/interfaces/` Protocols + result types (EvaluationResult = SPEC 7.2) · `ai/providers/mock.py` deterministic mocks
 - `ai/providers/local.py` placeholder (M3) · `ai/registry.py` env-based provider choice · `ai/evaluation/bands.py`
@@ -32,14 +33,15 @@
 ## Frontend (`apps/web/`)
 - `messages/en.json` all UI text · `src/i18n/request.ts` next-intl config · `src/proxy.ts` session refresh + route guard
 - `src/app/` routes: `/`, `/register`, `/login`, `/check-email`, `/forgot-password`, `/reset-password`,
-  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/profile`, `/about`, `/privacy`, `/terms`
+  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/lessons`, `/lessons/[slug]`, `/profile`, `/about`, `/privacy`, `/terms`
 - `src/components/ui/` design system (button, card, input, alert, progress, badge) · `site-header/footer`, `cookie-banner`
 - `src/components/dashboard/dashboard-view.tsx` pure dashboard view · `onboarding/onboarding-form.tsx` · `profile/data-actions.tsx`
+- `src/components/lessons/lesson-player.tsx` Learn/See/Try/Check player · `status-badge.tsx` · `markdown.tsx` safe markdown
 - `src/lib/supabase/{client,server,proxy}.ts` Supabase SSR clients · `src/lib/api.ts` typed REST + urql clients
-- `src/lib/session.ts` requireSession + serverQuery · `src/lib/validation.ts` form rules · `src/lib/origin.ts` public origin
+- `src/lib/session.ts` requireSession + serverQuery · `src/lib/validation.ts` form rules · `src/lib/origin.ts` public origin · `src/lib/client-api.ts` browser REST client
 - `src/graphql/queries.ts` documents · `schema.graphql` + `generated/` (codegen) · `src/api/openapi.json` + `schema.d.ts`
 
 ## Scripts and tests
 - `scripts/setup.sh`, `setup.ps1` one-command setup · `write-env.sh` env files from `supabase status`
 - `scripts/build_seed.py` validates content → seed.sql · `download-models.sh`, `detect-hardware.sh` AI tiers
-- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete)
+- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count)
