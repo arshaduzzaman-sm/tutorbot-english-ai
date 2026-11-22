@@ -16,4 +16,5 @@
 | 2026-11-22 | CEFR shown without PTE score ranges | No official CEFR→PTE table found on the checked official pages (SPEC 5A.1 rule). |
 | 2026-11-22 | Streak/daily minutes in UTC | Simple and deterministic for M1; per-user time zone later. |
 | 2026-11-22 | Unused Supabase services excluded at start (studio, realtime, etc.) | Saves memory for the 8 GB minimum tier. |
+| 2026-11-22 | Listening audio as static files (`make audio`, Kokoro) with browser speech voice fallback | SPEC 6 says Supabase Storage; static git-ignored files are simpler locally. The audio script never goes in page HTML: it is fetched only on Play or for the Learn-mode transcript. Revisit when content moves to Storage. |
 | — | Numeric 10-90 estimates: threshold to be set in M7 calibration | SPEC 7.3. Not enabled. |

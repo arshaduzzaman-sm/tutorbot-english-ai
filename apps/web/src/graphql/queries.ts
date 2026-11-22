@@ -78,6 +78,10 @@ export const PracticeHubQuery = graphql(`
       category { code name section }
       questionCount autoMarked attempts averageScore
     }
+    listening: practiceTypes(section: "listening") {
+      category { code name section }
+      questionCount autoMarked attempts averageScore
+    }
   }
 `);
 

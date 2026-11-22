@@ -21,7 +21,7 @@
 - `core/errors.py` error format · `core/logging.py` JSON logs, no PII · `core/ratelimit.py` sliding window
 - `db/session.py` `user_session` (RLS as authenticated) / `service_session` · `db/models.py` SQLAlchemy models
 - `api/deps.py` DB dependency, `require_role` · `api/me.py` onboarding PUT, export GET, delete · `api/health.py`
-- `api/practice.py` answer a question · `services/practice.py` auto-marking (blanks, choices, reorder), attempts
+- `api/practice.py` answer a question · `services/practice.py` auto-marking (blanks, choices, reorder, highlight words, dictation), attempts, speech text
 - `api/lessons.py` lesson start, Try check, Check submit · `services/lessons.py` marking (answers never leave the API)
 - `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson, practiceTypes, practiceQuestions; limits
 - `graphql/context.py` per-request context, locked execute, DataLoaders (levels, categories, lesson progress)
@@ -38,12 +38,14 @@
 - `src/components/ui/` design system (button, card, input, alert, progress, badge) · `site-header/footer`, `cookie-banner`
 - `src/components/dashboard/dashboard-view.tsx` pure dashboard view · `onboarding/onboarding-form.tsx` · `profile/data-actions.tsx`
 - `src/components/lessons/lesson-player.tsx` Learn/See/Try/Check player · `status-badge.tsx` · `markdown.tsx` safe markdown
-- `src/components/practice/practice-player.tsx` Learn/Practice question player · `question-views.tsx` blanks, choices, reorder
+- `src/components/practice/practice-player.tsx` Learn/Practice question player · `question-views.tsx` blanks, choices, reorder, words, dictation
+- `src/components/practice/audio-player.tsx` Kokoro file or browser voice fallback, transcript in Learn mode
 - `src/lib/supabase/{client,server,proxy}.ts` Supabase SSR clients · `src/lib/api.ts` typed REST + urql clients
 - `src/lib/session.ts` requireSession + serverQuery · `src/lib/validation.ts` form rules · `src/lib/origin.ts` public origin · `src/lib/client-api.ts` browser REST client
 - `src/graphql/queries.ts` documents · `schema.graphql` + `generated/` (codegen) · `src/api/openapi.json` + `schema.d.ts`
 
 ## Scripts and tests
 - `scripts/setup.sh`, `setup.ps1` one-command setup · `write-env.sh` env files from `supabase status`
+- `scripts/generate_audio.py` (`make audio`) Kokoro listening audio → apps/web/public/audio (git-ignored)
 - `scripts/build_seed.py` validates content → seed.sql · `download-models.sh`, `detect-hardware.sh` AI tiers
-- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading marking → hub stats)
+- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats)

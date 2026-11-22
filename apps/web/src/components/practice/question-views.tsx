@@ -13,11 +13,18 @@ export type QuestionContent = {
   passage?: string;
   question?: string;
   paragraphs?: Paragraph[];
+  transcript?: string;
 };
 export type Option = { label: string; body: string };
-export type AnswerState = { blanks?: Record<string, string>; selected?: string[]; order?: string[] };
+export type AnswerState = {
+  blanks?: Record<string, string>;
+  selected?: string[];
+  order?: string[];
+  indices?: number[];
+  text?: string;
+};
 
-/** A text with {{n}} gaps, each a keyboard-friendly select. Options come per blank or from a shared word bank. */
+/** A text with {{n}} gaps. Each gap is a select (options per blank or a word bank) or, with no options, a text box. */
 export function BlanksView({
   content, value, onChange, disabled, wrong,
 }: {
@@ -33,7 +40,23 @@ export function BlanksView({
     <p className="leading-10 text-foreground">
       {pieces.map((piece, i) => {
         if (i % 2 === 0) return <span key={i}>{piece}</span>;
-        const choices = content.blanks?.[piece] ?? content.word_bank ?? [];
+        const choices = content.blanks?.[piece] ?? content.word_bank;
+        if (!choices) {
+          return (
+            <input
+              key={i}
+              type="text"
+              aria-label={t("blank", { n: piece })}
+              value={value[piece] ?? ""}
+              disabled={disabled}
+              aria-invalid={wrong?.has(piece) || undefined}
+              autoComplete="off"
+              spellCheck={false}
+              onChange={(e) => onChange({ ...value, [piece]: e.target.value })}
+              className="mx-1 w-32 rounded-lg border border-border bg-white px-2 py-1 aria-[invalid]:border-danger"
+            />
+          );
+        }
         return (
           <select
             key={i}
@@ -136,5 +159,52 @@ export function ReorderView({
         })}
       </ol>
     </div>
+  );
+}
+
+/** Highlight Incorrect Words: each word of the transcript is a toggle button. */
+export function WordsView({
+  transcript, value, onChange, disabled, wrong,
+}: { transcript: string; value: number[]; onChange: (v: number[]) => void; disabled?: boolean; wrong?: Set<number> }) {
+  const t = useTranslations("practice");
+  return (
+    <div className="space-y-2">
+      <p className="text-sm text-muted-foreground">{t("wordsHelp")}</p>
+      <p className="flex flex-wrap gap-1 leading-8">
+        {transcript.split(/\s+/).map((word, i) => {
+          const on = value.includes(i);
+          return (
+            <button
+              key={i}
+              type="button"
+              aria-pressed={on}
+              disabled={disabled}
+              onClick={() => onChange(on ? value.filter((v) => v !== i) : [...value, i])}
+              className={`rounded px-1 ${on ? "bg-yellow-200 font-semibold underline" : "hover:bg-muted"} ${wrong?.has(i) ? "ring-2 ring-danger" : ""}`}
+            >
+              {word}
+            </button>
+          );
+        })}
+      </p>
+    </div>
+  );
+}
+
+export function DictationView({ value, onChange, disabled }: { value: string; onChange: (v: string) => void; disabled?: boolean }) {
+  const t = useTranslations("practice");
+  return (
+    <label className="block space-y-2">
+      <span className="font-medium">{t("dictationLabel")}</span>
+      <textarea
+        value={value}
+        disabled={disabled}
+        rows={3}
+        autoComplete="off"
+        spellCheck={false}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full rounded-xl border border-border bg-white p-3"
+      />
+    </label>
   );
 }

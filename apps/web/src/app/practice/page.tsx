@@ -17,10 +17,12 @@ export default async function PracticePage() {
         <h1 className="text-3xl font-bold text-primary">{t("title")}</h1>
         <p className="mt-2 text-muted-foreground">{t("intro")}</p>
       </div>
-      <section aria-labelledby="reading-heading">
-        <h2 id="reading-heading" className="text-xl font-semibold text-primary">{t("readingHeading")}</h2>
+      {([["reading", t("readingHeading"), data.reading], ["listening", t("listeningHeading"), data.listening]] as const).map(
+        ([key, heading, types]) => (
+      <section key={key} aria-labelledby={`${key}-heading`}>
+        <h2 id={`${key}-heading`} className="text-xl font-semibold text-primary">{heading}</h2>
         <ul className="mt-3 grid gap-3 sm:grid-cols-2">
-          {data.reading.map((pt) => (
+          {types.map((pt) => (
             <li key={pt.category.code} className="flex flex-col justify-between gap-3 rounded-xl border border-border bg-white p-4">
               <div>
                 <p className="font-semibold text-foreground">{pt.category.name}</p>
@@ -43,6 +45,8 @@ export default async function PracticePage() {
           ))}
         </ul>
       </section>
+        ),
+      )}
       <p className="rounded-xl bg-muted p-4 text-sm">{t("comingSoon")}</p>
     </div>
   );

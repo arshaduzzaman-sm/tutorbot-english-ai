@@ -123,6 +123,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/practice/questions/{question_id}/speech": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Speech
+         * @description Text of a listening question's audio. Fetched only when the learner presses Play or asks for the transcript.
+         */
+        get: operations["speech_api_v1_practice_questions__question_id__speech_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/health": {
         parameters: {
             query?: never;
@@ -201,10 +221,14 @@ export interface components {
             blanks?: {
                 [key: string]: string;
             } | null;
+            /** Indices */
+            indices?: number[] | null;
             /** Order */
             order?: string[] | null;
             /** Selected */
             selected?: string[] | null;
+            /** Text */
+            text?: string | null;
         };
         /** DeleteAccountIn */
         DeleteAccountIn: {
@@ -295,6 +319,15 @@ export interface components {
             onboarding_completed: boolean;
             /** Target Score */
             target_score: number;
+        };
+        /** SpeechOut */
+        SpeechOut: {
+            /** External Id */
+            external_id: string;
+            /** Parts */
+            parts: string[];
+            /** Transcript */
+            transcript: string;
         };
         /** ValidationError */
         ValidationError: {
@@ -528,6 +561,37 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AnswerOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    speech_api_v1_practice_questions__question_id__speech_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                question_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["SpeechOut"];
                 };
             };
             /** @description Validation Error */

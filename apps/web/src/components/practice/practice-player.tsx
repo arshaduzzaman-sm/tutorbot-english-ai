@@ -11,21 +11,27 @@ import { Progress } from "@/components/ui/progress";
 import type { components } from "@/api/schema";
 import type { PracticeQuestionsQuery } from "@/graphql/generated/graphql";
 import { browserApi } from "@/lib/client-api";
-import { type AnswerState, BlanksView, ChoicesView, type QuestionContent, ReorderView } from "./question-views";
+import { AudioPlayer } from "./audio-player";
+import { type AnswerState, BlanksView, ChoicesView, DictationView, type QuestionContent, ReorderView, WordsView } from "./question-views";
 
 type Question = PracticeQuestionsQuery["practiceQuestions"][number];
 type Outcome = components["schemas"]["AnswerOut"];
 type Mode = "learn" | "practice";
+const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
 
 function initialAnswer(q: Question): AnswerState {
   const c = q.content as QuestionContent;
   if (q.categoryCode === "reorder_paragraphs") return { order: (c.paragraphs ?? []).map((p) => p.id) };
   if (q.categoryCode.endsWith("fill_blanks")) return { blanks: {} };
+  if (q.categoryCode === "highlight_incorrect_words") return { indices: [] };
+  if (q.categoryCode === "write_from_dictation") return { text: "" };
   return { selected: [] };
 }
 
 function isAnswered(q: Question, a: AnswerState): boolean {
   if (a.order) return true;
+  if (a.indices) return a.indices.length > 0;
+  if (a.text !== undefined) return a.text.trim().length > 0;
   if (a.blanks) {
     const gaps = ((q.content as QuestionContent).text ?? "").match(/\{\{\d+\}\}/g) ?? [];
     return gaps.length > 0 && gaps.every((g) => a.blanks?.[g.slice(2, -2)]);
@@ -40,6 +46,10 @@ export function describeAnswer(q: Question, correct: Outcome["correct_answer"]):
     const text = new Map((c.paragraphs ?? []).map((p) => [p.id, p.text]));
     return (correct.order as string[]).map((id, i) => `${i + 1}. ${text.get(id) ?? id}`).join(" ");
   }
+  if (Array.isArray(correct.incorrect_words)) {
+    return (correct.incorrect_words as { word: string; spoken: string }[]).map((w) => `${w.word} → ${w.spoken}`).join(", ");
+  }
+  if (typeof correct.reference_text === "string") return correct.reference_text;
   if (correct.blanks && typeof correct.blanks === "object") {
     return Object.entries(correct.blanks as Record<string, string>).map(([k, v]) => `(${k}) ${v}`).join(", ");
   }
@@ -117,6 +127,10 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
     );
   }
 
+  const listening = q.category?.section === "listening";
+  const wrongWords = new Set(
+    ((outcome?.correct_answer.incorrect_words as { index: number }[] | undefined) ?? []).map((w) => w.index),
+  );
   const wrongBlanks = new Set((outcome?.parts ?? []).filter((p) => p.correct === false).map((p) => String(p.key)));
   const last = index === questions.length - 1;
   return (
@@ -150,6 +164,7 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
             <Lightbulb aria-hidden="true" className="mt-0.5 size-4" /> {t("tip", { text: q.learningObjective })}
           </p>
         )}
+        {listening && <AudioPlayer key={q.id} questionId={q.id} externalId={q.externalId} learn={mode === "learn"} />}
         {content.passage && <div className="rounded-xl bg-muted p-4"><Markdown>{content.passage}</Markdown></div>}
 
         {answer.blanks && (
@@ -157,9 +172,16 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
             onChange={(blanks) => setAnswer({ blanks })} />
         )}
         {answer.selected && (
-          <ChoicesView name={`q-${q.id}`} question={content.question ?? ""} options={q.options}
-            single={q.categoryCode.endsWith("_single")} value={answer.selected} disabled={!!outcome}
+          <ChoicesView name={`q-${q.id}`} question={content.question ?? t("chooseBest")} options={q.options}
+            single={SINGLE.has(q.categoryCode)} value={answer.selected} disabled={!!outcome}
             onChange={(selected) => setAnswer({ selected })} />
+        )}
+        {answer.indices && (
+          <WordsView transcript={content.transcript ?? ""} value={answer.indices} disabled={!!outcome}
+            wrong={outcome ? wrongWords : undefined} onChange={(indices) => setAnswer({ indices })} />
+        )}
+        {answer.text !== undefined && (
+          <DictationView value={answer.text} disabled={!!outcome} onChange={(text) => setAnswer({ text })} />
         )}
         {answer.order && (
           <ReorderView paragraphs={content.paragraphs ?? []} order={answer.order} disabled={!!outcome}
