@@ -15,8 +15,10 @@ from strawberry.types import Info
 from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
+from app.graphql import evaluations as evals
 from app.graphql import tracks
 from app.graphql.context import Context
+from app.services.evaluate import EVALUATED
 from app.services.lessons import public_exercise
 from app.services.placement import public_item
 from app.services.practice import AUTO_MARKED, public_content
@@ -103,7 +105,7 @@ class PracticeQuestion:
 class PracticeTypeStats:
     category: QuestionCategory
     question_count: int
-    auto_marked: bool
+    auto_marked: bool = strawberry.field(description="True when answers are marked: automatically, or by AI feedback")
     attempts: int = strawberry.field(description="The viewer's attempts at this task type")
     average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
 
@@ -659,6 +661,41 @@ class Viewer:
         weak = weak_categories(s for s, _ in await _signals(info))
         return [WeakArea(category_id=uuid.UUID(cid), accuracy=acc, attempts=n) for cid, acc, n in weak]
 
+    @strawberry.field(description="The viewer's speaking and writing evaluations, newest first")
+    async def evaluations(
+        self, info: CtxInfo, category_code: str | None = None, limit: int = 20
+    ) -> list[evals.Evaluation]:
+        return await evals.evaluations(info, category_code, limit)
+
+    @strawberry.field(description="True when the viewer has agreed to voice recordings")
+    async def recording_consent(self, info: CtxInfo) -> bool:
+        return await evals.recording_consent(info)
+
+    @strawberry.field(description="The viewer's attempts at one task type, newest first (personal history)")
+    async def type_history(self, info: CtxInfo, category_code: str, limit: int = 20) -> list[Attempt]:
+        rows = await info.context.execute(
+            text(
+                "select a.id, a.created_at, a.mode::text, a.is_correct, a.score_ratio, a.category_id "
+                "from public.attempts a join public.question_categories c on c.id = a.category_id "
+                "where a.user_id = :u and c.code = :code order by a.created_at desc limit :lim"
+            ),
+            {"u": info.context.user.id, "code": category_code, "lim": max(1, min(limit, 50))},
+        )
+        out: list[Attempt] = []
+        for row in rows.all():
+            r: list[Any] = list(row)
+            out.append(
+                Attempt(
+                    id=strawberry.ID(str(r[0])),
+                    created_at=r[1],
+                    mode=r[2],
+                    is_correct=r[3],
+                    score_ratio=float(r[4]) if r[4] is not None else None,
+                    category_id=r[5],
+                )
+            )
+        return out
+
     @strawberry.field
     async def mock_exams(self, info: CtxInfo, limit: int = 5) -> list[MockExam]:
         limit = max(1, min(limit, 20))
@@ -760,7 +797,7 @@ class Query:
                 PracticeTypeStats(
                     category=QuestionCategory.of(c),
                     question_count=int(r[1]) if r else 0,
-                    auto_marked=c.code in AUTO_MARKED,
+                    auto_marked=c.code in AUTO_MARKED | EVALUATED,
                     attempts=int(r[2]) if r else 0,
                     average_score=float(r[3]) if r and r[3] is not None else None,
                 )

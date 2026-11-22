@@ -143,8 +143,8 @@ async def test_listening_types_marking_and_speech(client: AsyncClient, make_user
         headers=h,
     )
     types = {t["category"]["code"]: t for t in r.json()["data"]["practiceTypes"]}
-    assert len(types) == 8 and types["summarize_spoken_text"]["autoMarked"] is False
-    assert sum(t["autoMarked"] for t in types.values()) == 7
+    assert len(types) == 8 and types["summarize_spoken_text"]["autoMarked"] is True  # AI feedback since M3
+    assert sum(t["autoMarked"] for t in types.values()) == 8
 
     ids = {}
     for code in ("write_from_dictation", "highlight_incorrect_words", "select_missing_word", "listening_fill_blanks"):

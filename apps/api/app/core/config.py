@@ -1,6 +1,7 @@
 """Application settings. Every secret comes from environment variables (SPEC 3.1.6)."""
 
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 from pydantic import Field
@@ -44,6 +45,23 @@ class Settings(BaseSettings):
     embedder_provider: Literal["local", "mock"] = "mock"
     llm_provider: Literal["local", "mock"] = "mock"
     llm_model: str = "qwen3:4b"
+    whisper_model: str = "small"  # or large-v3-turbo on a stronger computer (SPEC 6.4)
+    whisper_device: str = "auto"
+    whisper_compute_type: str = "int8"
+    embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
+    languagetool_url: str = "http://127.0.0.1:8010"
+    ollama_url: str = "http://127.0.0.1:11434"
+    ai_timeout_seconds: float = 60.0
+
+    # Speaking and writing evaluation (SPEC 6.5 cost controls).
+    recordings_dir: str = ""  # default: <repo>/recordings (git-ignored). Files are deleted with the account.
+    max_recording_bytes: int = 3_000_000
+    evaluations_per_day: int = 200
+    evaluation_worker: bool = True  # run the background worker inside the API process
+
+    @property
+    def recordings_path(self) -> Path:
+        return Path(self.recordings_dir) if self.recordings_dir else Path(__file__).resolve().parents[4] / "recordings"
 
     @property
     def is_dev(self) -> bool:
