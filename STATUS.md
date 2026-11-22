@@ -16,7 +16,8 @@
 ## Test results (2026-11-22, local)
 - Backend `pytest -q`: 43 passed (26 unit/security, 17 integration with RLS + GraphQL)
 - Frontend `vitest`: 16 passed · `tsc` and `eslint`: clean · `ruff`, `mypy --strict`: clean
-- E2E Playwright against the Docker stack: 19 passed (desktop + 375 px mobile)
+- E2E Playwright against the Docker stack (`make setup` + `make start` from clean): 19 passed (desktop + 375 px)
+- Memory: whole running stack (Supabase + API + web) uses about 0.6 GB RAM
 
 ## Content counts
 - Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
