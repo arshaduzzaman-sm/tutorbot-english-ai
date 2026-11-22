@@ -40,7 +40,7 @@ test("learner practises reading tasks with instant marking, and the hub shows th
 test("learner practises listening tasks; the transcript is shown in Learn mode only", async ({ page, request }) => {
   await newLearner(page, request, /4\. PTE Preparation/);
   await page.goto("/practice");
-  await expect(page.getByRole("region", { name: "Listening" }).getByRole("link", { name: /^Practise: / })).toHaveCount(7);
+  await expect(page.getByRole("region", { name: "Listening" }).getByRole("link", { name: /^Practise: / })).toHaveCount(8);
 
   await page.getByRole("link", { name: "Practise: Write From Dictation" }).click();
   await page.getByRole("button", { name: "Show transcript" }).click();

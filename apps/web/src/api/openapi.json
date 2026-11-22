@@ -431,6 +431,336 @@
         "title": "EvaluationOut",
         "type": "object"
       },
+      "ExamAnswerIn": {
+        "properties": {
+          "evaluation_id": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "For speaking and writing items",
+            "title": "Evaluation Id"
+          },
+          "index": {
+            "description": "Must be the current item; going back is not allowed",
+            "minimum": 0.0,
+            "title": "Index",
+            "type": "integer"
+          },
+          "response": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/AnswerResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "index"
+        ],
+        "title": "ExamAnswerIn",
+        "type": "object"
+      },
+      "ExamAnswerOut": {
+        "properties": {
+          "finished": {
+            "title": "Finished",
+            "type": "boolean"
+          },
+          "index": {
+            "title": "Index",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "index",
+          "finished"
+        ],
+        "title": "ExamAnswerOut",
+        "type": "object"
+      },
+      "ExamItem": {
+        "properties": {
+          "category_code": {
+            "title": "Category Code",
+            "type": "string"
+          },
+          "content": {
+            "additionalProperties": true,
+            "title": "Content",
+            "type": "object"
+          },
+          "external_id": {
+            "title": "External Id",
+            "type": "string"
+          },
+          "id": {
+            "format": "uuid",
+            "title": "Id",
+            "type": "string"
+          },
+          "instructions": {
+            "title": "Instructions",
+            "type": "string"
+          },
+          "options": {
+            "items": {
+              "$ref": "#/components/schemas/ExamOption"
+            },
+            "title": "Options",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "external_id",
+          "category_code",
+          "instructions",
+          "content",
+          "options"
+        ],
+        "title": "ExamItem",
+        "type": "object"
+      },
+      "ExamOption": {
+        "properties": {
+          "body": {
+            "title": "Body",
+            "type": "string"
+          },
+          "label": {
+            "title": "Label",
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "body"
+        ],
+        "title": "ExamOption",
+        "type": "object"
+      },
+      "ExamReport": {
+        "properties": {
+          "answered": {
+            "title": "Answered",
+            "type": "integer"
+          },
+          "by_criterion": {
+            "items": {
+              "$ref": "#/components/schemas/ReportRow"
+            },
+            "title": "By Criterion",
+            "type": "array"
+          },
+          "by_section": {
+            "items": {
+              "$ref": "#/components/schemas/ReportRow"
+            },
+            "title": "By Section",
+            "type": "array"
+          },
+          "by_skill": {
+            "items": {
+              "$ref": "#/components/schemas/ReportRow"
+            },
+            "title": "By Skill",
+            "type": "array"
+          },
+          "by_type": {
+            "items": {
+              "$ref": "#/components/schemas/ReportRow"
+            },
+            "title": "By Type",
+            "type": "array"
+          },
+          "disclaimer": {
+            "title": "Disclaimer",
+            "type": "string"
+          },
+          "most_lost": {
+            "items": {
+              "$ref": "#/components/schemas/ReportRow"
+            },
+            "title": "Most Lost",
+            "type": "array"
+          },
+          "overall_band": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Band"
+          },
+          "overall_ratio": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Ratio"
+          },
+          "pending_evaluations": {
+            "title": "Pending Evaluations",
+            "type": "integer"
+          },
+          "previous": {
+            "items": {
+              "$ref": "#/components/schemas/PreviousTest"
+            },
+            "title": "Previous",
+            "type": "array"
+          },
+          "ready": {
+            "description": "False while speaking/writing answers are still being evaluated",
+            "title": "Ready",
+            "type": "boolean"
+          },
+          "skipped": {
+            "title": "Skipped",
+            "type": "integer"
+          },
+          "total": {
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ready",
+          "pending_evaluations",
+          "overall_ratio",
+          "overall_band",
+          "by_section",
+          "by_skill",
+          "by_type",
+          "by_criterion",
+          "most_lost",
+          "previous",
+          "answered",
+          "skipped",
+          "total",
+          "disclaimer"
+        ],
+        "title": "ExamReport",
+        "type": "object"
+      },
+      "ExamState": {
+        "properties": {
+          "blueprint_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Blueprint Code"
+          },
+          "id": {
+            "format": "uuid",
+            "title": "Id",
+            "type": "string"
+          },
+          "index": {
+            "title": "Index",
+            "type": "integer"
+          },
+          "item": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ExamItem"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "kind": {
+            "title": "Kind",
+            "type": "string"
+          },
+          "pre_test": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Pre Test",
+            "type": "array"
+          },
+          "section": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SectionInfo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "section_seconds_left": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Time left on the section clock; null when items are timed",
+            "title": "Section Seconds Left"
+          },
+          "sections": {
+            "items": {
+              "$ref": "#/components/schemas/SectionSummary"
+            },
+            "title": "Sections",
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "in_progress",
+              "completed",
+              "abandoned"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "total": {
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "kind",
+          "blueprint_code",
+          "index",
+          "total",
+          "pre_test",
+          "sections",
+          "section",
+          "section_seconds_left",
+          "item"
+        ],
+        "title": "ExamState",
+        "type": "object"
+      },
       "ExerciseCheckIn": {
         "properties": {
           "answer": {
@@ -740,6 +1070,43 @@
         "title": "PlacementOut",
         "type": "object"
       },
+      "PreviousTest": {
+        "properties": {
+          "completed_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completed At"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "overall_ratio": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overall Ratio"
+          }
+        },
+        "required": [
+          "id",
+          "completed_at",
+          "overall_ratio"
+        ],
+        "title": "PreviousTest",
+        "type": "object"
+      },
       "QueuedOut": {
         "properties": {
           "id": {
@@ -770,6 +1137,109 @@
         "title": "QueuedOut",
         "type": "object"
       },
+      "ReportRow": {
+        "properties": {
+          "band": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Band"
+          },
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "items": {
+            "title": "Items",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "ratio": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ratio"
+          }
+        },
+        "required": [
+          "code",
+          "name",
+          "ratio",
+          "band",
+          "items"
+        ],
+        "title": "ReportRow",
+        "type": "object"
+      },
+      "SectionInfo": {
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "count": {
+            "title": "Count",
+            "type": "integer"
+          },
+          "index": {
+            "title": "Index",
+            "type": "integer"
+          },
+          "position": {
+            "title": "Position",
+            "type": "integer"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "code",
+          "title",
+          "position",
+          "count"
+        ],
+        "title": "SectionInfo",
+        "type": "object"
+      },
+      "SectionSummary": {
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "count": {
+            "title": "Count",
+            "type": "integer"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "title",
+          "count"
+        ],
+        "title": "SectionSummary",
+        "type": "object"
+      },
       "SpeechOut": {
         "properties": {
           "external_id": {
@@ -794,6 +1264,35 @@
           "transcript"
         ],
         "title": "SpeechOut",
+        "type": "object"
+      },
+      "StartIn": {
+        "properties": {
+          "blueprint_code": {
+            "maxLength": 60,
+            "pattern": "^[a-z0-9_]+$",
+            "title": "Blueprint Code",
+            "type": "string"
+          }
+        },
+        "required": [
+          "blueprint_code"
+        ],
+        "title": "StartIn",
+        "type": "object"
+      },
+      "StartOut": {
+        "properties": {
+          "id": {
+            "format": "uuid",
+            "title": "Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "title": "StartOut",
         "type": "object"
       },
       "UnitTestIn": {
@@ -1046,6 +1545,248 @@
         "summary": "Get Evaluation",
         "tags": [
           "evaluations"
+        ]
+      }
+    },
+    "/api/v1/exams": {
+      "post": {
+        "description": "Starts a test from a blueprint, or returns the one already in progress (resume after a refresh).",
+        "operationId": "start_api_v1_exams_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StartOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Start",
+        "tags": [
+          "exams"
+        ]
+      }
+    },
+    "/api/v1/exams/{test_id}": {
+      "get": {
+        "operationId": "get_state_api_v1_exams__test_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "test_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Test Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamState"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get State",
+        "tags": [
+          "exams"
+        ]
+      }
+    },
+    "/api/v1/exams/{test_id}/abandon": {
+      "post": {
+        "operationId": "abandon_api_v1_exams__test_id__abandon_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "test_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Test Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Abandon",
+        "tags": [
+          "exams"
+        ]
+      }
+    },
+    "/api/v1/exams/{test_id}/answer": {
+      "post": {
+        "operationId": "answer_api_v1_exams__test_id__answer_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "test_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Test Id",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamAnswerIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamAnswerOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Answer",
+        "tags": [
+          "exams"
+        ]
+      }
+    },
+    "/api/v1/exams/{test_id}/report": {
+      "get": {
+        "operationId": "get_report_api_v1_exams__test_id__report_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "test_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Test Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamReport"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get Report",
+        "tags": [
+          "exams"
         ]
       }
     },

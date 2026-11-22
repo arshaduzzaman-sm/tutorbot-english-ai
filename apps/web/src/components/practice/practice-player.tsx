@@ -17,9 +17,9 @@ import { type AnswerState, BlanksView, ChoicesView, DictationView, type Question
 type Question = PracticeQuestionsQuery["practiceQuestions"][number];
 type Outcome = components["schemas"]["AnswerOut"];
 type Mode = "learn" | "practice" | "review";
-const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
+export const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
 
-function initialAnswer(q: Question): AnswerState {
+export function initialAnswer(q: Question): AnswerState {
   const c = q.content as QuestionContent;
   if (q.categoryCode === "reorder_paragraphs") return { order: (c.paragraphs ?? []).map((p) => p.id) };
   if (q.categoryCode.endsWith("fill_blanks")) return { blanks: {} };
@@ -28,7 +28,7 @@ function initialAnswer(q: Question): AnswerState {
   return { selected: [] };
 }
 
-function isAnswered(q: Question, a: AnswerState): boolean {
+export function isAnswered(q: Question, a: AnswerState): boolean {
   if (a.order) return true;
   if (a.indices) return a.indices.length > 0;
   if (a.text !== undefined) return a.text.trim().length > 0;

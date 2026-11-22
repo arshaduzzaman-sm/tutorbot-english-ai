@@ -7,6 +7,19 @@ type Attempt {
   category: QuestionCategory
 }
 
+type Blueprint {
+  code: String!
+  name: String!
+  kind: String!
+  about: String!
+
+  """False: item counts or clocks are our own choices (see STATUS.md)"""
+  verified: Boolean!
+  itemCount: Int!
+  sections: [String!]!
+  spec: JSON!
+}
+
 """Date (isoformat)"""
 scalar Date
 
@@ -100,6 +113,10 @@ type MockExam {
   status: String!
   startedAt: DateTime!
   completedAt: DateTime
+  blueprintCode: String
+
+  """Band from the report, once ready"""
+  overallBand: String
 }
 
 type PlacementItem {
@@ -212,6 +229,10 @@ type Query {
   """Pronunciation track: sounds, stress, linking and intonation"""
   pronunciationTopics: [PronunciationTopic!]!
   pronunciationTopic(slug: String!): PronunciationTopic
+  questionType(code: String!): QuestionTypeGuide
+
+  """Mock exams and section tests learners can take"""
+  blueprints: [Blueprint!]!
   questionCategories: [QuestionCategory!]!
 }
 
@@ -226,6 +247,16 @@ type QuestionCategory {
 type QuestionOption {
   label: String!
   body: String!
+}
+
+type QuestionTypeGuide {
+  category: QuestionCategory!
+
+  """
+  what, tests, scoring (with source), strategy, examples, mistakes, rules
+  """
+  guide: JSON!
+  questionCount: Int!
 }
 
 type ReviewItem {

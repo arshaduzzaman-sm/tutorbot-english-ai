@@ -192,3 +192,28 @@ export const RecordingConsentQuery = graphql(`
     viewer { recordingConsent demoMode }
   }
 `);
+
+export const AcademyHubQuery = graphql(`
+  query AcademyHub {
+    speakingWriting: practiceTypes(section: "speaking_writing") { category { code name section } questionCount attempts }
+    reading: practiceTypes(section: "reading") { category { code name section } questionCount attempts }
+    listening: practiceTypes(section: "listening") { category { code name section } questionCount attempts }
+  }
+`);
+
+export const QuestionTypeQuery = graphql(`
+  query QuestionType($code: String!) {
+    questionType(code: $code) { questionCount guide category { code name section skills } }
+    viewer {
+      typeHistory(categoryCode: $code, limit: 10) { id createdAt mode isCorrect scoreRatio }
+      evaluations(categoryCode: $code, limit: 5) { id status createdAt result }
+    }
+  }
+`);
+
+export const ExamsHubQuery = graphql(`
+  query ExamsHub {
+    blueprints { code name kind about verified itemCount sections spec }
+    viewer { recordingConsent mockExams(limit: 10) { id kind status startedAt completedAt blueprintCode overallBand } }
+  }
+`);

@@ -21,6 +21,94 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/exams": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Start
+         * @description Starts a test from a blueprint, or returns the one already in progress (resume after a refresh).
+         */
+        post: operations["start_api_v1_exams_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/exams/{test_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Get State */
+        get: operations["get_state_api_v1_exams__test_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/exams/{test_id}/abandon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Abandon */
+        post: operations["abandon_api_v1_exams__test_id__abandon_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/exams/{test_id}/answer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Answer */
+        post: operations["answer_api_v1_exams__test_id__answer_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/exams/{test_id}/report": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Get Report */
+        get: operations["get_report_api_v1_exams__test_id__report_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/lessons/{slug}/check": {
         parameters: {
             query?: never;
@@ -523,6 +611,120 @@ export interface components {
             /** Test Session Id */
             test_session_id: string | null;
         };
+        /** ExamAnswerIn */
+        ExamAnswerIn: {
+            /**
+             * Evaluation Id
+             * @description For speaking and writing items
+             */
+            evaluation_id?: string | null;
+            /**
+             * Index
+             * @description Must be the current item; going back is not allowed
+             */
+            index: number;
+            response?: components["schemas"]["AnswerResponse"] | null;
+        };
+        /** ExamAnswerOut */
+        ExamAnswerOut: {
+            /** Finished */
+            finished: boolean;
+            /** Index */
+            index: number;
+        };
+        /** ExamItem */
+        ExamItem: {
+            /** Category Code */
+            category_code: string;
+            /** Content */
+            content: {
+                [key: string]: unknown;
+            };
+            /** External Id */
+            external_id: string;
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Instructions */
+            instructions: string;
+            /** Options */
+            options: components["schemas"]["ExamOption"][];
+        };
+        /** ExamOption */
+        ExamOption: {
+            /** Body */
+            body: string;
+            /** Label */
+            label: string;
+        };
+        /** ExamReport */
+        ExamReport: {
+            /** Answered */
+            answered: number;
+            /** By Criterion */
+            by_criterion: components["schemas"]["ReportRow"][];
+            /** By Section */
+            by_section: components["schemas"]["ReportRow"][];
+            /** By Skill */
+            by_skill: components["schemas"]["ReportRow"][];
+            /** By Type */
+            by_type: components["schemas"]["ReportRow"][];
+            /** Disclaimer */
+            disclaimer: string;
+            /** Most Lost */
+            most_lost: components["schemas"]["ReportRow"][];
+            /** Overall Band */
+            overall_band: string | null;
+            /** Overall Ratio */
+            overall_ratio: number | null;
+            /** Pending Evaluations */
+            pending_evaluations: number;
+            /** Previous */
+            previous: components["schemas"]["PreviousTest"][];
+            /**
+             * Ready
+             * @description False while speaking/writing answers are still being evaluated
+             */
+            ready: boolean;
+            /** Skipped */
+            skipped: number;
+            /** Total */
+            total: number;
+        };
+        /** ExamState */
+        ExamState: {
+            /** Blueprint Code */
+            blueprint_code: string | null;
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Index */
+            index: number;
+            item: components["schemas"]["ExamItem"] | null;
+            /** Kind */
+            kind: string;
+            /** Pre Test */
+            pre_test: string[];
+            section: components["schemas"]["SectionInfo"] | null;
+            /**
+             * Section Seconds Left
+             * @description Time left on the section clock; null when items are timed
+             */
+            section_seconds_left: number | null;
+            /** Sections */
+            sections: components["schemas"]["SectionSummary"][];
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "in_progress" | "completed" | "abandoned";
+            /** Total */
+            total: number;
+        };
         /** ExerciseCheckIn */
         ExerciseCheckIn: {
             /** Answer */
@@ -637,6 +839,15 @@ export interface components {
             /** Total */
             total: number;
         };
+        /** PreviousTest */
+        PreviousTest: {
+            /** Completed At */
+            completed_at: string | null;
+            /** Id */
+            id: string;
+            /** Overall Ratio */
+            overall_ratio: number | null;
+        };
         /** QueuedOut */
         QueuedOut: {
             /**
@@ -652,6 +863,41 @@ export interface components {
             /** Task Type */
             task_type: string;
         };
+        /** ReportRow */
+        ReportRow: {
+            /** Band */
+            band: string | null;
+            /** Code */
+            code: string;
+            /** Items */
+            items: number;
+            /** Name */
+            name: string;
+            /** Ratio */
+            ratio: number | null;
+        };
+        /** SectionInfo */
+        SectionInfo: {
+            /** Code */
+            code: string;
+            /** Count */
+            count: number;
+            /** Index */
+            index: number;
+            /** Position */
+            position: number;
+            /** Title */
+            title: string;
+        };
+        /** SectionSummary */
+        SectionSummary: {
+            /** Code */
+            code: string;
+            /** Count */
+            count: number;
+            /** Title */
+            title: string;
+        };
         /** SpeechOut */
         SpeechOut: {
             /** External Id */
@@ -660,6 +906,19 @@ export interface components {
             parts: string[];
             /** Transcript */
             transcript: string;
+        };
+        /** StartIn */
+        StartIn: {
+            /** Blueprint Code */
+            blueprint_code: string;
+        };
+        /** StartOut */
+        StartOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
         };
         /** UnitTestIn */
         UnitTestIn: {
@@ -759,6 +1018,165 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["EvaluationOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    start_api_v1_exams_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["StartIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["StartOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_state_api_v1_exams__test_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                test_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamState"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    abandon_api_v1_exams__test_id__abandon_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                test_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    answer_api_v1_exams__test_id__answer_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                test_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ExamAnswerIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamAnswerOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    get_report_api_v1_exams__test_id__report_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                test_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamReport"];
                 };
             };
             /** @description Validation Error */
