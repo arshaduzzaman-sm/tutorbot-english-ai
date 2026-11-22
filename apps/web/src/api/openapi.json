@@ -96,6 +96,21 @@
             ],
             "title": "Blanks"
           },
+          "indices": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "integer"
+                },
+                "maxItems": 60,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Indices"
+          },
           "order": {
             "anyOf": [
               {
@@ -125,6 +140,18 @@
               }
             ],
             "title": "Selected"
+          },
+          "text": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Text"
           }
         },
         "title": "AnswerResponse",
@@ -364,6 +391,32 @@
           "onboarding_completed"
         ],
         "title": "OnboardingOut",
+        "type": "object"
+      },
+      "SpeechOut": {
+        "properties": {
+          "external_id": {
+            "title": "External Id",
+            "type": "string"
+          },
+          "parts": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Parts",
+            "type": "array"
+          },
+          "transcript": {
+            "title": "Transcript",
+            "type": "string"
+          }
+        },
+        "required": [
+          "external_id",
+          "parts",
+          "transcript"
+        ],
+        "title": "SpeechOut",
         "type": "object"
       },
       "ValidationError": {
@@ -757,6 +810,55 @@
           }
         ],
         "summary": "Answer",
+        "tags": [
+          "practice"
+        ]
+      }
+    },
+    "/api/v1/practice/questions/{question_id}/speech": {
+      "get": {
+        "description": "Text of a listening question's audio. Fetched only when the learner presses Play or asks for the transcript.",
+        "operationId": "speech_api_v1_practice_questions__question_id__speech_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "question_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Question Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpeechOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Speech",
         "tags": [
           "practice"
         ]

@@ -119,3 +119,51 @@ async def test_practice_errors(client: AsyncClient, make_user) -> None:  # type:
     assert (await client.post(url, json={"response": {}, "mode": "exam"}, headers=h)).status_code == 422
     q = await client.post("/graphql", json={"query": '{ practiceQuestion(id: "nope") { id } }'}, headers=h)
     assert q.json()["data"]["practiceQuestion"] is None
+
+
+def test_highlight_and_dictation_marking() -> None:
+    from app.services.practice import mark_dictation, mark_highlights
+
+    wrong = [{"index": 4, "word": "history", "spoken": "science"}, {"index": 10, "word": "small", "spoken": "large"}]
+    assert mark_highlights(wrong, [4, 10]).is_correct is True
+    assert mark_highlights(wrong, [4, 3]).score_ratio == 0  # +1 -1
+    assert mark_highlights(wrong, [10]).score_ratio == 0.5
+    m = mark_dictation("The lecture will start in the main hall.", "the lecture start in the mian hall")
+    assert m.score_ratio == 6 / 8 and m.is_correct is False  # "will" missing, "main" misspelt
+    assert mark_dictation("A cat.", "a CAT").is_correct is True
+
+
+@pytest.mark.integration
+async def test_listening_types_marking_and_speech(client: AsyncClient, make_user) -> None:  # type: ignore[no-untyped-def]
+    u = await make_user()
+    h = auth(u.token)
+    r = await client.post(
+        "/graphql",
+        json={"query": '{ practiceTypes(section: "listening") { category { code } questionCount autoMarked } }'},
+        headers=h,
+    )
+    types = {t["category"]["code"]: t for t in r.json()["data"]["practiceTypes"]}
+    assert len(types) == 8 and types["summarize_spoken_text"]["autoMarked"] is False
+    assert sum(t["autoMarked"] for t in types.values()) == 7
+
+    ids = {}
+    for code in ("write_from_dictation", "highlight_incorrect_words", "select_missing_word", "listening_fill_blanks"):
+        rr = await client.post("/graphql", json={"query": QUESTIONS_Q, "variables": {"c": code}}, headers=h)
+        assert "audio_script" not in rr.text and "lecture will start" not in rr.text
+        for q in rr.json()["data"]["practiceQuestions"]:
+            ids[q["externalId"]] = q["id"]
+
+    sp = (await client.get(f"/api/v1/practice/questions/{ids['smw-0001']}/speech", headers=h)).json()
+    assert len(sp["parts"]) == 2 and sp["transcript"].endswith("stay ….")
+    reading_id = (await _questions(client, u.token, "reading_mc_single"))[0]["id"]
+    assert (await client.get(f"/api/v1/practice/questions/{reading_id}/speech", headers=h)).status_code == 404
+
+    cases = [
+        ("wfd-0001", {"text": "The lecture will start in the main hall"}, 1.0),
+        ("hiw-0001", {"indices": [4]}, 0.5),
+        ("smw-0001", {"selected": ["A"]}, 1.0),
+        ("lfib-0001", {"blanks": {"1": "Card", "2": "pensil"}}, 0.5),
+    ]
+    for ext, response, expected in cases:
+        res = await client.post(f"/api/v1/practice/questions/{ids[ext]}/answer", json={"response": response}, headers=h)
+        assert res.status_code == 200 and res.json()["score_ratio"] == expected, (ext, res.json())

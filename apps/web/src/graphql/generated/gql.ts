@@ -19,7 +19,7 @@ type Documents = {
     "\n  query ProfilePage {\n    viewer {\n      email\n      roles\n      profile { displayName targetScore examDate dailyGoalMinutes level { code name cefr } }\n    }\n  }\n": typeof types.ProfilePageDocument,
     "\n  query Lessons {\n    learningLevels { code name cefr }\n    lessons {\n      id slug title summary estimatedMinutes\n      level { code }\n      progress { status bestScore }\n    }\n  }\n": typeof types.LessonsDocument,
     "\n  query Lesson($slug: String!) {\n    lesson(slug: $slug) {\n      id slug title summary estimatedMinutes\n      level { code name cefr }\n      progress { status bestScore }\n      sections { kind title bodyMd exercises { id type prompt options hint } }\n    }\n  }\n": typeof types.LessonDocument,
-    "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n": typeof types.PracticeHubDocument,
+    "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n    listening: practiceTypes(section: \"listening\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n": typeof types.PracticeHubDocument,
     "\n  query PracticeQuestions($code: String!) {\n    practiceQuestions(categoryCode: $code) {\n      id externalId categoryCode difficulty instructions learningObjective content\n      options { label body }\n      category { code name section }\n    }\n  }\n": typeof types.PracticeQuestionsDocument,
 };
 const documents: Documents = {
@@ -28,7 +28,7 @@ const documents: Documents = {
     "\n  query ProfilePage {\n    viewer {\n      email\n      roles\n      profile { displayName targetScore examDate dailyGoalMinutes level { code name cefr } }\n    }\n  }\n": types.ProfilePageDocument,
     "\n  query Lessons {\n    learningLevels { code name cefr }\n    lessons {\n      id slug title summary estimatedMinutes\n      level { code }\n      progress { status bestScore }\n    }\n  }\n": types.LessonsDocument,
     "\n  query Lesson($slug: String!) {\n    lesson(slug: $slug) {\n      id slug title summary estimatedMinutes\n      level { code name cefr }\n      progress { status bestScore }\n      sections { kind title bodyMd exercises { id type prompt options hint } }\n    }\n  }\n": types.LessonDocument,
-    "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n": types.PracticeHubDocument,
+    "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n    listening: practiceTypes(section: \"listening\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n": types.PracticeHubDocument,
     "\n  query PracticeQuestions($code: String!) {\n    practiceQuestions(categoryCode: $code) {\n      id externalId categoryCode difficulty instructions learningObjective content\n      options { label body }\n      category { code name section }\n    }\n  }\n": types.PracticeQuestionsDocument,
 };
 
@@ -69,7 +69,7 @@ export function graphql(source: "\n  query Lesson($slug: String!) {\n    lesson(
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n"): (typeof documents)["\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n"];
+export function graphql(source: "\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n    listening: practiceTypes(section: \"listening\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n"): (typeof documents)["\n  query PracticeHub {\n    reading: practiceTypes(section: \"reading\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n    listening: practiceTypes(section: \"listening\") {\n      category { code name section }\n      questionCount autoMarked attempts averageScore\n    }\n  }\n"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

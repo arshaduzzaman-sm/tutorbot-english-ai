@@ -25,14 +25,14 @@
 ## M2 plan (one small PR each, into `m2-learning`)
 - [x] PR A `m2-lesson-pages`: lesson list + Learn/See/Try/Check player, auto-marking, progress (pytest 48, vitest 17, e2e 20)
 - [x] PR B `m2-reading-practice`: 5 reading types, Learn + Practice modes, auto-marking (pytest 55, vitest 18, e2e 21)
-- [ ] PR C listening practice (8 types; audio script, transcript fallback)
+- [x] PR C `m2-listening-practice`: 7 auto-marked listening types, audio player, Kokoro script (pytest 57, vitest 20, e2e 22)
 - [ ] PR D mistake notebook + spaced review
 - [ ] PR E placement test + study plan
 - [ ] PR F more content (Levels 1-3) + content import script
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR C.
+2. Agent: continue with PR D.
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
@@ -43,6 +43,8 @@
   against Pearson's current Score Guide before M3 uses them.
 - **Practice marking** is our own simple method (share of correct parts; multiple-answer: +1 right, -1 wrong,
   never below 0). It is labelled "not an official PTE score". Practice mode shows a count-up timer, not official timings.
+- **Listening audio:** `make audio` (Kokoro) is written but not run here (model download blocked in this
+  environment). Without the files, the app uses the browser's speech voice. Summarize Spoken Text waits for M3.
 - Exam timings are not stored yet (blueprint arrives in M4; every rule must cite an official source).
 
 ## Known issues and limitations

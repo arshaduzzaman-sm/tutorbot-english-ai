@@ -20,6 +20,8 @@ class AnswerResponse(BaseModel):
     blanks: dict[str, str] | None = Field(default=None, max_length=20)
     selected: list[str] | None = Field(default=None, max_length=10)
     order: list[str] | None = Field(default=None, max_length=10)
+    indices: list[int] | None = Field(default=None, max_length=60)
+    text: str | None = Field(default=None, max_length=500)
 
 
 class AnswerIn(BaseModel):
@@ -48,3 +50,15 @@ async def answer(
         session, user.id, question_id, body.response.model_dump(exclude_none=True), body.mode, body.duration_seconds
     )
     return AnswerOut(**result)
+
+
+class SpeechOut(BaseModel):
+    external_id: str
+    parts: list[str]
+    transcript: str
+
+
+@router.get("/questions/{question_id}/speech", response_model=SpeechOut)
+async def speech(question_id: uuid.UUID, session: AsyncSession = Depends(get_user_db)) -> SpeechOut:
+    """Text of a listening question's audio. Fetched only when the learner presses Play or asks for the transcript."""
+    return SpeechOut(**await svc.speech(session, question_id))
