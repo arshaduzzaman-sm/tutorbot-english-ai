@@ -154,7 +154,8 @@ async def test_database_blocks_publishing_without_approval_even_outside_the_api(
                 await s.execute(
                     text(
                         "insert into public.questions (external_id, category_id, difficulty, instructions, status, "
-                        "origin) select :e, id, 'beginner', 'x', 'published', 'ai' from public.question_categories limit 1"
+                        "origin) select :e, id, 'beginner', 'x', 'published', 'ai' "
+                        "from public.question_categories limit 1"
                     ),
                     {"e": prefix + "2"},
                 )
