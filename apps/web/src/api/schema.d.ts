@@ -231,6 +231,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/me/progress-report.csv": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Progress Report
+         * @description Download your progress by question type and by day (practice estimates, not official PTE scores).
+         */
+        get: operations["progress_report_api_v1_me_progress_report_csv_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/placement/items/{item_id}/speech": {
         parameters: {
             query?: never;
@@ -379,6 +399,30 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/tutor/messages": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Post Message
+         * @description Ask the tutor a question about English or PTE practice. Off-topic questions get a short fixed reply.
+         */
+        post: operations["post_message_api_v1_tutor_messages_post"];
+        /**
+         * Clear Messages
+         * @description Delete the viewer's tutor chat history.
+         */
+        delete: operations["clear_messages_api_v1_tutor_messages_delete"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/units/{slug}/test": {
         parameters: {
             query?: never;
@@ -521,6 +565,11 @@ export interface components {
             selected?: string[] | null;
             /** Text */
             text?: string | null;
+        };
+        /** ClearedOut */
+        ClearedOut: {
+            /** Deleted */
+            deleted: number;
         };
         /** ConsentIn */
         ConsentIn: {
@@ -919,6 +968,24 @@ export interface components {
              * Format: uuid
              */
             id: string;
+        };
+        /** TutorIn */
+        TutorIn: {
+            /** Message */
+            message: string;
+        };
+        /** TutorOut */
+        TutorOut: {
+            /** Level */
+            level: number;
+            /** On Topic */
+            on_topic: boolean;
+            /** Provider */
+            provider: ("local" | "mock") | null;
+            /** Remaining Today */
+            remaining_today: number;
+            /** Reply */
+            reply: string;
         };
         /** UnitTestIn */
         UnitTestIn: {
@@ -1411,6 +1478,37 @@ export interface operations {
             };
         };
     };
+    progress_report_api_v1_me_progress_report_csv_get: {
+        parameters: {
+            query?: {
+                days?: number;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Progress report as CSV */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "text/csv": unknown;
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     speech_api_v1_placement_items__item_id__speech_get: {
         parameters: {
             query?: never;
@@ -1672,6 +1770,59 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    post_message_api_v1_tutor_messages_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["TutorIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["TutorOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    clear_messages_api_v1_tutor_messages_delete: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ClearedOut"];
                 };
             };
         };

@@ -20,6 +20,22 @@ type Blueprint {
   spec: JSON!
 }
 
+"""Practice guidance from your own answers. Not an official PTE score."""
+type Coach {
+  """Ranked next steps: kind, reason, categoryCode, difficulty"""
+  recommendations: JSON!
+
+  """Bands per skill and an overall label (never a 10-90 score)"""
+  readiness: JSON!
+
+  """This week against last week"""
+  weekly: JSON!
+
+  """Today's blocks: lessons, practice, review"""
+  todayPlan: JSON!
+  level: Int!
+}
+
 """Date (isoformat)"""
 scalar Date
 
@@ -212,7 +228,13 @@ type Query {
   practiceTypes(section: String!): [PracticeTypeStats!]!
 
   """Published questions of one task type, easiest first"""
-  practiceQuestions(categoryCode: String!, limit: Int! = 50): [PracticeQuestion!]!
+  practiceQuestions(
+    categoryCode: String!
+    limit: Int! = 50
+
+    """Put questions at the learner's current difficulty first"""
+    adaptive: Boolean! = false
+  ): [PracticeQuestion!]!
   practiceQuestion(id: ID!): PracticeQuestion
 
   """The current placement (diagnostic) test, without answers"""
@@ -297,6 +319,16 @@ type StudyPlan {
   plan: JSON!
 }
 
+type TutorMessage {
+  id: ID!
+
+  """user or assistant"""
+  role: String!
+  content: String!
+  provider: String
+  createdAt: DateTime!
+}
+
 type Unit {
   id: ID!
   slug: String!
@@ -359,6 +391,19 @@ type Viewer {
 
   """The viewer's speaking and writing evaluations, newest first"""
   evaluations(categoryCode: String = null, limit: Int! = 20): [Evaluation!]!
+
+  """
+  Personal guidance from the viewer's own attempts (practice estimate only)
+  """
+  coach: Coach!
+
+  """
+  Progress analytics: summary, daily series, by question type, weekly skill trend (JSON)
+  """
+  analytics(days: Int! = 30): JSON!
+
+  """The viewer's tutor chat, oldest first"""
+  tutorMessages(limit: Int! = 40): [TutorMessage!]!
 
   """True when the viewer has agreed to voice recordings"""
   recordingConsent: Boolean!

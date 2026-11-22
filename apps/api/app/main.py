@@ -11,7 +11,7 @@ from starlette.requests import Request
 from starlette.responses import Response
 from strawberry.fastapi import GraphQLRouter
 
-from app.api import evaluations, exams, health, lessons, me, placement, practice, tracks, units
+from app.api import evaluations, exams, health, lessons, me, placement, practice, tracks, tutor, units
 from app.core.config import get_settings
 from app.core.errors import register_error_handlers
 from app.core.logging import RequestLogMiddleware, configure_logging
@@ -76,6 +76,7 @@ def create_app() -> FastAPI:
     app.include_router(tracks.router)
     app.include_router(evaluations.router)
     app.include_router(exams.router)
+    app.include_router(tutor.router)
     graphql = GraphQLRouter(
         build_schema(), context_getter=get_context, graphql_ide="graphiql" if settings.is_dev else None
     )

@@ -57,6 +57,7 @@ class Settings(BaseSettings):
     recordings_dir: str = ""  # default: <repo>/recordings (git-ignored). Files are deleted with the account.
     max_recording_bytes: int = 3_000_000
     evaluations_per_day: int = 200
+    tutor_messages_per_day: int = 60
     evaluation_worker: bool = True  # run the background worker inside the API process
 
     @property

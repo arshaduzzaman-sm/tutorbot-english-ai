@@ -675,6 +675,16 @@ class Viewer:
     async def coach(self, info: CtxInfo) -> coach_gql.Coach:
         return await coach_gql.coach(info, str(self.id))
 
+    @strawberry.field(
+        description="Progress analytics: summary, daily series, by question type, weekly skill trend (JSON)"
+    )
+    async def analytics(self, info: CtxInfo, days: int = 30) -> JSON:
+        return await coach_gql.analytics(info, str(self.id), days)  # type: ignore[no-any-return]
+
+    @strawberry.field(description="The viewer's tutor chat, oldest first")
+    async def tutor_messages(self, info: CtxInfo, limit: int = 40) -> list[coach_gql.TutorMessage]:
+        return await coach_gql.tutor_messages(info, str(self.id), limit)
+
     @strawberry.field(description="True when the viewer has agreed to voice recordings")
     async def recording_consent(self, info: CtxInfo) -> bool:
         return await evals.recording_consent(info)

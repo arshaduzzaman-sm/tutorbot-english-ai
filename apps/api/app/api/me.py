@@ -1,9 +1,9 @@
 """REST actions on the current user's account (reads go through GraphQL)."""
 
-from datetime import date
+from datetime import UTC, date, datetime
 from typing import Literal
 
-from fastapi import APIRouter, Depends, Response
+from fastapi import APIRouter, Depends, Query, Response
 from pydantic import BaseModel, Field
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -11,6 +11,7 @@ from app.api.deps import get_user_db, require_role
 from app.core.errors import AppError
 from app.core.security import AuthUser, get_current_user
 from app.db.session import service_session
+from app.services import analytics as analytics_service
 from app.services import profile as profile_service
 
 router = APIRouter(prefix="/api/v1/me", tags=["me"])
@@ -60,6 +61,25 @@ async def export_data(
     user: AuthUser = Depends(get_current_user), session: AsyncSession = Depends(get_user_db)
 ) -> dict[str, object]:
     return await profile_service.export_user_data(session, user.id)
+
+
+@router.get(
+    "/progress-report.csv",
+    response_class=Response,
+    responses={200: {"content": {"text/csv": {}}, "description": "Progress report as CSV"}},
+)
+async def progress_report(
+    days: int = Query(default=30, ge=7, le=analytics_service.MAX_DAYS),
+    user: AuthUser = Depends(get_current_user),
+    session: AsyncSession = Depends(get_user_db),
+) -> Response:
+    """Download your progress by question type and by day (practice estimates, not official PTE scores)."""
+    data = await analytics_service.analytics(session, user.id, datetime.now(UTC).date(), days)
+    return Response(
+        content=analytics_service.to_csv(data),
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": 'attachment; filename="tutorbot-progress.csv"'},
+    )
 
 
 @router.delete("", status_code=204)

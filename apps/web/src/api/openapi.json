@@ -177,6 +177,19 @@
         "title": "AnswerResponse",
         "type": "object"
       },
+      "ClearedOut": {
+        "properties": {
+          "deleted": {
+            "title": "Deleted",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "deleted"
+        ],
+        "title": "ClearedOut",
+        "type": "object"
+      },
       "ConsentIn": {
         "properties": {
           "granted": {
@@ -1295,6 +1308,65 @@
         "title": "StartOut",
         "type": "object"
       },
+      "TutorIn": {
+        "properties": {
+          "message": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "title": "Message",
+            "type": "string"
+          }
+        },
+        "required": [
+          "message"
+        ],
+        "title": "TutorIn",
+        "type": "object"
+      },
+      "TutorOut": {
+        "properties": {
+          "level": {
+            "title": "Level",
+            "type": "integer"
+          },
+          "on_topic": {
+            "title": "On Topic",
+            "type": "boolean"
+          },
+          "provider": {
+            "anyOf": [
+              {
+                "enum": [
+                  "local",
+                  "mock"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provider"
+          },
+          "remaining_today": {
+            "title": "Remaining Today",
+            "type": "integer"
+          },
+          "reply": {
+            "title": "Reply",
+            "type": "string"
+          }
+        },
+        "required": [
+          "reply",
+          "on_topic",
+          "provider",
+          "level",
+          "remaining_today"
+        ],
+        "title": "TutorOut",
+        "type": "object"
+      },
       "UnitTestIn": {
         "properties": {
           "answers": {
@@ -2120,6 +2192,53 @@
         ]
       }
     },
+    "/api/v1/me/progress-report.csv": {
+      "get": {
+        "description": "Download your progress by question type and by day (practice estimates, not official PTE scores).",
+        "operationId": "progress_report_api_v1_me_progress_report_csv_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "days",
+            "required": false,
+            "schema": {
+              "default": 30,
+              "maximum": 180,
+              "minimum": 7,
+              "title": "Days",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "text/csv": {}
+            },
+            "description": "Progress report as CSV"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Progress Report",
+        "tags": [
+          "me"
+        ]
+      }
+    },
     "/api/v1/placement/items/{item_id}/speech": {
       "get": {
         "operationId": "speech_api_v1_placement_items__item_id__speech_get",
@@ -2584,6 +2703,78 @@
         "summary": "Upload Recording",
         "tags": [
           "evaluations"
+        ]
+      }
+    },
+    "/api/v1/tutor/messages": {
+      "delete": {
+        "description": "Delete the viewer's tutor chat history.",
+        "operationId": "clear_messages_api_v1_tutor_messages_delete",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClearedOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Clear Messages",
+        "tags": [
+          "tutor"
+        ]
+      },
+      "post": {
+        "description": "Ask the tutor a question about English or PTE practice. Off-topic questions get a short fixed reply.",
+        "operationId": "post_message_api_v1_tutor_messages_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TutorIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TutorOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Post Message",
+        "tags": [
+          "tutor"
         ]
       }
     },
