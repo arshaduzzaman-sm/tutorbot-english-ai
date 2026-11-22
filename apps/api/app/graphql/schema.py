@@ -3,7 +3,7 @@
 import uuid
 from datetime import UTC, date, datetime
 from enum import Enum
-from typing import Any
+from typing import Annotated, Any
 
 import strawberry
 from graphql.validation import NoSchemaIntrospectionCustomRule
@@ -15,9 +15,11 @@ from strawberry.types import Info
 from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
+from app.graphql import coach as coach_gql
 from app.graphql import evaluations as evals
 from app.graphql import tracks
 from app.graphql.context import Context
+from app.services import coach as coach_stats
 from app.services.evaluate import EVALUATED
 from app.services.lessons import public_exercise
 from app.services.placement import public_item
@@ -669,6 +671,10 @@ class Viewer:
     ) -> list[evals.Evaluation]:
         return await evals.evaluations(info, category_code, limit)
 
+    @strawberry.field(description="Personal guidance from the viewer's own attempts (practice estimate only)")
+    async def coach(self, info: CtxInfo) -> coach_gql.Coach:
+        return await coach_gql.coach(info, str(self.id))
+
     @strawberry.field(description="True when the viewer has agreed to voice recordings")
     async def recording_consent(self, info: CtxInfo) -> bool:
         return await evals.recording_consent(info)
@@ -830,15 +836,33 @@ class Query:
         return out
 
     @strawberry.field(description="Published questions of one task type, easiest first")
-    async def practice_questions(self, info: CtxInfo, category_code: str, limit: int = 50) -> list[PracticeQuestion]:
+    async def practice_questions(
+        self,
+        info: CtxInfo,
+        category_code: str,
+        limit: int = 50,
+        adaptive: Annotated[
+            bool, strawberry.argument(description="Put questions at the learner's current difficulty first")
+        ] = False,
+    ) -> list[PracticeQuestion]:
+        target = 0
+        if adaptive:
+            uid = info.context.user.id
+            level, _ = await coach_gql.learner_level(info, uid)
+            stats = coach_stats.category_stats(
+                r for r in await coach_gql.attempt_rows(info, uid) if r.category_code == category_code
+            )
+            target = coach_stats.DIFFICULTIES.index(coach_stats.target_difficulty(level, stats.get(category_code)))
         rows = await info.context.execute(
             text(
                 f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608 (constant column list)
                 "join public.question_categories c on c.id = q.category_id "
                 "where c.code = :code and q.status = 'published' and q.deleted_at is null "
-                "order by q.difficulty, q.external_id limit :lim"
+                "order by case when :adaptive then abs(array_position("
+                "array['beginner','intermediate','advanced'], q.difficulty::text) - 1 - :target) else 0 end, "
+                "q.difficulty, q.external_id limit :lim"
             ),
-            {"code": category_code, "lim": max(1, min(limit, 100))},
+            {"code": category_code, "lim": max(1, min(limit, 100)), "adaptive": adaptive, "target": target},
         )
         return [_question(r) for r in rows.all()]
 
