@@ -1,6 +1,135 @@
 {
   "components": {
     "schemas": {
+      "AnswerIn": {
+        "properties": {
+          "duration_seconds": {
+            "anyOf": [
+              {
+                "maximum": 10800.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Seconds"
+          },
+          "mode": {
+            "default": "practice",
+            "enum": [
+              "learn",
+              "practice"
+            ],
+            "title": "Mode",
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/AnswerResponse"
+          }
+        },
+        "required": [
+          "response"
+        ],
+        "title": "AnswerIn",
+        "type": "object"
+      },
+      "AnswerOut": {
+        "properties": {
+          "correct_answer": {
+            "additionalProperties": true,
+            "title": "Correct Answer",
+            "type": "object"
+          },
+          "explanation": {
+            "title": "Explanation",
+            "type": "string"
+          },
+          "is_correct": {
+            "title": "Is Correct",
+            "type": "boolean"
+          },
+          "note": {
+            "title": "Note",
+            "type": "string"
+          },
+          "parts": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Parts",
+            "type": "array"
+          },
+          "score_ratio": {
+            "title": "Score Ratio",
+            "type": "number"
+          }
+        },
+        "required": [
+          "score_ratio",
+          "is_correct",
+          "correct_answer",
+          "parts",
+          "explanation",
+          "note"
+        ],
+        "title": "AnswerOut",
+        "type": "object"
+      },
+      "AnswerResponse": {
+        "description": "Exactly one of these is used, depending on the task type.",
+        "properties": {
+          "blanks": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "maxProperties": 20,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Blanks"
+          },
+          "order": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 10,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Order"
+          },
+          "selected": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 10,
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Selected"
+          }
+        },
+        "title": "AnswerResponse",
+        "type": "object"
+      },
       "DeleteAccountIn": {
         "properties": {
           "confirm": {
@@ -572,6 +701,64 @@
         "summary": "Put Onboarding",
         "tags": [
           "me"
+        ]
+      }
+    },
+    "/api/v1/practice/questions/{question_id}/answer": {
+      "post": {
+        "operationId": "answer_api_v1_practice_questions__question_id__answer_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "question_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Question Id",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnswerIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnswerOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Answer",
+        "tags": [
+          "practice"
         ]
       }
     },

@@ -129,6 +129,7 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
                   </li>
                 ))}
                 <li><Link href="/lessons" className="text-sm font-medium text-accent-blue underline">{t("allLessons")}</Link></li>
+                <li><Link href="/practice" className="text-sm font-medium text-accent-blue underline">{t("openPractice")}</Link></li>
               </ul>
             )}
           </CardBody>

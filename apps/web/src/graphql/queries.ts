@@ -71,3 +71,22 @@ export const LessonQuery = graphql(`
     }
   }
 `);
+
+export const PracticeHubQuery = graphql(`
+  query PracticeHub {
+    reading: practiceTypes(section: "reading") {
+      category { code name section }
+      questionCount autoMarked attempts averageScore
+    }
+  }
+`);
+
+export const PracticeQuestionsQuery = graphql(`
+  query PracticeQuestions($code: String!) {
+    practiceQuestions(categoryCode: $code) {
+      id externalId categoryCode difficulty instructions learningObjective content
+      options { label body }
+      category { code name section }
+    }
+  }
+`);

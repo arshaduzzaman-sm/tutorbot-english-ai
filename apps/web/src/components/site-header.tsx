@@ -1,4 +1,4 @@
-import { BookOpen, LayoutDashboard, LogIn, UserRound } from "lucide-react";
+import { BookOpen, LayoutDashboard, LogIn, PencilLine, UserRound } from "lucide-react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Logo } from "@/components/logo";
@@ -27,6 +27,10 @@ export async function SiteHeader() {
               <Link href="/lessons" className={buttonVariants({ variant: "ghost", size: "sm" })}>
                 <BookOpen aria-hidden="true" className="size-4" />
                 {tn("lessons")}
+              </Link>
+              <Link href="/practice" className={buttonVariants({ variant: "ghost", size: "sm" })}>
+                <PencilLine aria-hidden="true" className="size-4" />
+                {tn("practice")}
               </Link>
               <Link href="/profile" className={buttonVariants({ variant: "ghost", size: "sm" })}>
                 <UserRound aria-hidden="true" className="size-4" />
