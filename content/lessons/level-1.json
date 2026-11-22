@@ -140,6 +140,241 @@
       ]
     },
     {
+      "slug": "numbers-0-20",
+      "title": "Numbers 0 to 20",
+      "summary": "Count from zero to twenty and spell the numbers.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Count to twenty",
+          "body_md": "We use numbers to count things, say our age and give phone numbers.\n\n| | | | |\n|---|---|---|---|\n| 0 zero | 1 one | 2 two | 3 three |\n| 4 four | 5 five | 6 six | 7 seven |\n| 8 eight | 9 nine | 10 ten | 11 eleven |\n| 12 twelve | 13 thirteen | 14 fourteen | 15 fifteen |\n| 16 sixteen | 17 seventeen | 18 eighteen | 19 nineteen |\n| 20 twenty | | | |\n\nNumbers 13 to 19 end in **-teen**."
+        },
+        {
+          "kind": "see",
+          "title": "Numbers in sentences",
+          "body_md": "- *I have **two** brothers.*\n- *She is **twelve** years old.*\n- *There are **fifteen** students in the class.*\n\nFor phone numbers we say each number: *0 7 1 5* → *zero, seven, one, five*. Many people say *oh* for 0."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "num-try-1",
+              "type": "single_choice",
+              "prompt": "How do you write 8?",
+              "options": [
+                "eight",
+                "eigth",
+                "ate"
+              ],
+              "answer": "eight",
+              "hint": "It has a silent gh.",
+              "explanation": "*eight* is the number 8. *ate* can sound the same, but it is the past of *eat*."
+            },
+            {
+              "id": "num-try-2",
+              "type": "single_choice",
+              "prompt": "What is 10 + 3?",
+              "options": [
+                "thirty",
+                "thirteen",
+                "three"
+              ],
+              "answer": "thirteen",
+              "hint": "Numbers 13 to 19 end in -teen.",
+              "explanation": "10 + 3 = 13, *thirteen*. *Thirty* is 30."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "num-check-1",
+              "type": "single_choice",
+              "prompt": "Which number is \"fifteen\"?",
+              "options": [
+                "5",
+                "15",
+                "50"
+              ],
+              "answer": "15",
+              "explanation": "*Fifteen* is 15."
+            },
+            {
+              "id": "num-check-2",
+              "type": "single_choice",
+              "prompt": "How do you write 12?",
+              "options": [
+                "twelve",
+                "twelf",
+                "twenty"
+              ],
+              "answer": "twelve",
+              "explanation": "12 is *twelve*. *Twenty* is 20."
+            },
+            {
+              "id": "num-check-3",
+              "type": "single_choice",
+              "prompt": "What is 20 − 1?",
+              "options": [
+                "nineteen",
+                "ninety",
+                "nine"
+              ],
+              "answer": "nineteen",
+              "explanation": "20 − 1 = 19, *nineteen*."
+            },
+            {
+              "id": "num-check-4",
+              "type": "single_choice",
+              "prompt": "\"I have ___ hands.\"",
+              "options": [
+                "two",
+                "too",
+                "to"
+              ],
+              "answer": "two",
+              "explanation": "*Two* is the number 2. *Too* and *to* sound the same but mean different things."
+            },
+            {
+              "id": "num-check-5",
+              "type": "single_choice",
+              "prompt": "Which is the correct spelling?",
+              "options": [
+                "fourty",
+                "fourteen",
+                "forteen"
+              ],
+              "answer": "fourteen",
+              "explanation": "14 is *fourteen*: four + teen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "colours-and-classroom-objects",
+      "title": "Colours and things in the classroom",
+      "summary": "Name colours and the things you use in class.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Colours and classroom words",
+          "body_md": "**Colours:** red, blue, green, yellow, black, white, brown, orange, pink, grey.\n\n**Things in the classroom:** a pen, a pencil, a book, a desk, a chair, a bag, a board, a window, a door.\n\nThe colour usually comes **before** the thing: *a **red** pen*, not *a pen red*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *This is a **blue** book.*\n- *My bag is **black**.*\n- *The board is **white**.*\n- *I have two **yellow** pencils.*\n\nColour words do not change for plurals: *a red pen → two red pens*."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "col-try-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "a pen red",
+                "a red pen",
+                "a reds pen"
+              ],
+              "answer": "a red pen",
+              "hint": "Where does the colour go?",
+              "explanation": "The colour comes before the noun: *a red pen*."
+            },
+            {
+              "id": "col-try-2",
+              "type": "single_choice",
+              "prompt": "You sit on a ___.",
+              "options": [
+                "chair",
+                "board",
+                "window"
+              ],
+              "answer": "chair",
+              "explanation": "We sit on a *chair*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "col-check-1",
+              "type": "single_choice",
+              "prompt": "The sky on a sunny day is usually ___.",
+              "options": [
+                "blue",
+                "brown",
+                "pink"
+              ],
+              "answer": "blue",
+              "explanation": "A clear sky is *blue*."
+            },
+            {
+              "id": "col-check-2",
+              "type": "single_choice",
+              "prompt": "You write with a ___.",
+              "options": [
+                "desk",
+                "pen",
+                "door"
+              ],
+              "answer": "pen",
+              "explanation": "We write with a *pen* or a *pencil*."
+            },
+            {
+              "id": "col-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "two greens books",
+                "two green books",
+                "two books greens"
+              ],
+              "answer": "two green books",
+              "explanation": "Colours do not take -s: *two green books*."
+            },
+            {
+              "id": "col-check-4",
+              "type": "single_choice",
+              "prompt": "Snow is ___.",
+              "options": [
+                "white",
+                "black",
+                "orange"
+              ],
+              "answer": "white",
+              "explanation": "Snow is *white*."
+            },
+            {
+              "id": "col-check-5",
+              "type": "single_choice",
+              "prompt": "You carry your books in a ___.",
+              "options": [
+                "chair",
+                "bag",
+                "window"
+              ],
+              "answer": "bag",
+              "explanation": "We carry books in a *bag*."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "slug": "parts-of-speech",
       "title": "Parts of speech",
       "summary": "Words have jobs: nouns, verbs, adjectives and more.",
@@ -343,6 +578,1410 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "articles-a-an-the",
+      "title": "A, an and the",
+      "summary": "Use a and an for one thing, and the for a thing we both know.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "A, an, the",
+          "body_md": "- Use **a** before a consonant **sound**: *a book, a cat, a university* (you-ni-ver-si-ty starts with a *y* sound).\n- Use **an** before a vowel **sound**: *an apple, an egg, an hour* (the *h* is silent).\n- Use **the** when we both know which thing: *Close **the** door, please.*\n\nUse *a/an* when you talk about something for the first time, and *the* after that."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*I have **a** dog and **a** cat. **The** dog is big and **the** cat is small.*\n\n- *She is **an** engineer.*\n- *It is **an** old house.*\n- ***The** sun is hot.* (there is only one sun)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "art-try-1",
+              "type": "single_choice",
+              "prompt": "I eat ___ apple every day.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "an",
+              "hint": "Say the first sound of the word.",
+              "explanation": "*Apple* starts with a vowel sound, so we say *an apple*."
+            },
+            {
+              "id": "art-try-2",
+              "type": "single_choice",
+              "prompt": "Please open ___ window. It is hot in here.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "the",
+              "explanation": "We both know which window (the one in this room), so we use *the*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "art-check-1",
+              "type": "single_choice",
+              "prompt": "He is ___ teacher.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "a",
+              "explanation": "*Teacher* starts with a consonant sound: *a teacher*."
+            },
+            {
+              "id": "art-check-2",
+              "type": "single_choice",
+              "prompt": "We waited for ___ hour.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "an",
+              "explanation": "The *h* in *hour* is silent, so it starts with a vowel sound: *an hour*."
+            },
+            {
+              "id": "art-check-3",
+              "type": "single_choice",
+              "prompt": "She studies at ___ university in London.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "a",
+              "explanation": "*University* starts with a *y* sound (a consonant sound): *a university*."
+            },
+            {
+              "id": "art-check-4",
+              "type": "single_choice",
+              "prompt": "I bought a shirt and a hat. ___ shirt is blue.",
+              "options": [
+                "A",
+                "An",
+                "The"
+              ],
+              "answer": "The",
+              "explanation": "We already talked about the shirt, so now we use *the*."
+            },
+            {
+              "id": "art-check-5",
+              "type": "single_choice",
+              "prompt": "___ moon is bright tonight.",
+              "options": [
+                "A",
+                "An",
+                "The"
+              ],
+              "answer": "The",
+              "explanation": "There is only one moon, so we use *the*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "this-that-these-those",
+      "title": "This, that, these and those",
+      "summary": "Point to things near you and far from you.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Near and far",
+          "body_md": "| | near | far |\n|---|---|---|\n| one (singular) | **this** | **that** |\n| more than one (plural) | **these** | **those** |\n\n- *this* and *these* are for things **near** you.\n- *that* and *those* are for things **far** from you."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***This** is my phone.* (in my hand)\n- ***That** is our school.* (over there)\n- ***These** shoes are new.* (I am wearing them)\n- ***Those** birds are very loud.* (in the tree over there)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "dem-try-1",
+              "type": "single_choice",
+              "prompt": "(The book is in your hand.) \"___ is my book.\"",
+              "options": [
+                "This",
+                "These",
+                "Those"
+              ],
+              "answer": "This",
+              "hint": "Is it one thing or many? Near or far?",
+              "explanation": "One thing, near you: *this*."
+            },
+            {
+              "id": "dem-try-2",
+              "type": "single_choice",
+              "prompt": "(The cars are across the street.) \"___ cars are fast.\"",
+              "options": [
+                "This",
+                "That",
+                "Those"
+              ],
+              "answer": "Those",
+              "explanation": "Many things, far from you: *those*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "dem-check-1",
+              "type": "single_choice",
+              "prompt": "(Many apples on your plate.) \"___ apples are sweet.\"",
+              "options": [
+                "These",
+                "That",
+                "This"
+              ],
+              "answer": "These",
+              "explanation": "Many things, near you: *these*."
+            },
+            {
+              "id": "dem-check-2",
+              "type": "single_choice",
+              "prompt": "(A house on the hill, far away.) \"___ house is very old.\"",
+              "options": [
+                "This",
+                "That",
+                "These"
+              ],
+              "answer": "That",
+              "explanation": "One thing, far away: *that*."
+            },
+            {
+              "id": "dem-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "These is my bag.",
+                "This are my bags.",
+                "These are my bags."
+              ],
+              "answer": "These are my bags.",
+              "explanation": "*These* goes with plural nouns and *are*."
+            },
+            {
+              "id": "dem-check-4",
+              "type": "single_choice",
+              "prompt": "(Pointing at stars in the sky.) \"Look at ___ stars!\"",
+              "options": [
+                "this",
+                "those",
+                "that"
+              ],
+              "answer": "those",
+              "explanation": "Many things, far away: *those*."
+            },
+            {
+              "id": "dem-check-5",
+              "type": "single_choice",
+              "prompt": "(Holding one key.) \"Is ___ your key?\"",
+              "options": [
+                "this",
+                "these",
+                "those"
+              ],
+              "answer": "this",
+              "explanation": "One thing, near you: *this*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "verb-to-be",
+      "title": "The verb to be: am, is, are",
+      "summary": "Say who you are, where you are from and how you feel.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "am, is, are",
+          "body_md": "| | to be | short form |\n|---|---|---|\n| I | **am** | I'm |\n| you / we / they | **are** | you're, we're, they're |\n| he / she / it | **is** | he's, she's, it's |\n\n**Negative:** add *not*: *I am not*, *she is not (isn't)*, *they are not (aren't)*.\n\n**Question:** put the verb first: ***Are** you a student?* ***Is** he tired?*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I **am** Ali. I**'m** from Egypt.*\n- *She **is** a nurse.*\n- *We **are** not late.*\n- ***Is** it cold today?* — *Yes, it **is**.* / *No, it **isn't**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "be-try-1",
+              "type": "single_choice",
+              "prompt": "They ___ my friends.",
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": "are",
+              "hint": "Look at the table: which verb goes with they?",
+              "explanation": "*They* goes with *are*."
+            },
+            {
+              "id": "be-try-2",
+              "type": "single_choice",
+              "prompt": "Make a question: \"___ she your sister?\"",
+              "options": [
+                "Is",
+                "Are",
+                "Am"
+              ],
+              "answer": "Is",
+              "explanation": "Questions with *she* start with *Is*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "be-check-1",
+              "type": "single_choice",
+              "prompt": "I ___ hungry.",
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": "am",
+              "explanation": "*I* always goes with *am*."
+            },
+            {
+              "id": "be-check-2",
+              "type": "single_choice",
+              "prompt": "The weather ___ nice today.",
+              "options": [
+                "am",
+                "is",
+                "are"
+              ],
+              "answer": "is",
+              "explanation": "*The weather* is one thing (*it*), so we use *is*."
+            },
+            {
+              "id": "be-check-3",
+              "type": "single_choice",
+              "prompt": "Which sentence is negative?",
+              "options": [
+                "We are ready.",
+                "We aren't ready.",
+                "Are we ready?"
+              ],
+              "answer": "We aren't ready.",
+              "explanation": "*aren't* = *are not*, so the sentence is negative."
+            },
+            {
+              "id": "be-check-4",
+              "type": "single_choice",
+              "prompt": "My parents ___ teachers.",
+              "options": [
+                "is",
+                "are",
+                "am"
+              ],
+              "answer": "are",
+              "explanation": "*My parents* = *they*, so we use *are*."
+            },
+            {
+              "id": "be-check-5",
+              "type": "single_choice",
+              "prompt": "\"Are you from Brazil?\" \"Yes, I ___.\"",
+              "options": [
+                "am",
+                "are",
+                "is"
+              ],
+              "answer": "am",
+              "explanation": "Short answer with *I*: *Yes, I am.*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "have-and-has",
+      "title": "Have and has",
+      "summary": "Talk about things you own, your family and your body.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "have / has",
+          "body_md": "- **I / you / we / they** + **have**: *I have a bike.*\n- **he / she / it** + **has**: *She has a cat.*\n\n**Negative:** *don't have* / *doesn't have*: *He **doesn't have** a car.*\n\n**Question:** *Do you have ...? / Does she have ...?*\n\nAfter *doesn't* and *does*, use **have**, not *has*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *We **have** a big kitchen.*\n- *My brother **has** blue eyes.*\n- *I **don't have** a pet.*\n- ***Does** your school **have** a library?* — *Yes, it **does**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "have-try-1",
+              "type": "single_choice",
+              "prompt": "My sister ___ long hair.",
+              "options": [
+                "have",
+                "has",
+                "haves"
+              ],
+              "answer": "has",
+              "hint": "he / she / it use a different form.",
+              "explanation": "*My sister* = *she*, so we use *has*."
+            },
+            {
+              "id": "have-try-2",
+              "type": "single_choice",
+              "prompt": "___ you have a pen?",
+              "options": [
+                "Do",
+                "Does",
+                "Are"
+              ],
+              "answer": "Do",
+              "explanation": "Questions with *you* use *Do*: *Do you have ...?*"
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "have-check-1",
+              "type": "single_choice",
+              "prompt": "They ___ two children.",
+              "options": [
+                "have",
+                "has",
+                "having"
+              ],
+              "answer": "have",
+              "explanation": "*They* goes with *have*."
+            },
+            {
+              "id": "have-check-2",
+              "type": "single_choice",
+              "prompt": "It ___ four legs.",
+              "options": [
+                "have",
+                "has",
+                "is"
+              ],
+              "answer": "has",
+              "explanation": "*It* goes with *has*."
+            },
+            {
+              "id": "have-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "He doesn't has a phone.",
+                "He don't have a phone.",
+                "He doesn't have a phone."
+              ],
+              "answer": "He doesn't have a phone.",
+              "explanation": "After *doesn't*, use *have*."
+            },
+            {
+              "id": "have-check-4",
+              "type": "single_choice",
+              "prompt": "\"Does she have a car?\" \"No, she ___.\"",
+              "options": [
+                "doesn't",
+                "don't",
+                "isn't"
+              ],
+              "answer": "doesn't",
+              "explanation": "Short answer with *she*: *No, she doesn't.*"
+            },
+            {
+              "id": "have-check-5",
+              "type": "single_choice",
+              "prompt": "I ___ a cold today.",
+              "options": [
+                "has",
+                "have",
+                "am"
+              ],
+              "answer": "have",
+              "explanation": "*I* goes with *have*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "present-simple-routines",
+      "title": "Present simple: daily routines",
+      "summary": "Say what you do every day, with -s for he, she and it.",
+      "estimated_minutes": 14,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Habits and routines",
+          "body_md": "We use the **present simple** for things we do often or always.\n\n- *I / you / we / they* **work**.\n- *he / she / it* **works** (add **-s**).\n\nSpelling: *watch → watch**es***, *go → go**es***, *study → stud**ies***, *have → **has***.\n\n**Negative:** *I **don't** work. She **doesn't** work.*  **Question:** ***Do** you work? **Does** he work?*"
+        },
+        {
+          "kind": "see",
+          "title": "A day in Mina's life",
+          "body_md": "*Mina **gets up** at seven. She **has** breakfast and **goes** to work by bus. She **starts** work at nine. In the evening she **watches** TV or **reads**. She **doesn't work** on Sundays.*\n\nWords for how often: *always, usually, often, sometimes, never* go **before** the main verb: *I **usually** walk to school.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "pres-try-1",
+              "type": "single_choice",
+              "prompt": "He ___ football on Saturdays.",
+              "options": [
+                "play",
+                "plays",
+                "playing"
+              ],
+              "answer": "plays",
+              "hint": "he / she / it add -s.",
+              "explanation": "*He* needs *-s*: *plays*."
+            },
+            {
+              "id": "pres-try-2",
+              "type": "single_choice",
+              "prompt": "She ___ to bed at ten.",
+              "options": [
+                "gos",
+                "goes",
+                "go"
+              ],
+              "answer": "goes",
+              "explanation": "*go* becomes *goes* with he / she / it."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "pres-check-1",
+              "type": "single_choice",
+              "prompt": "My father ___ the news every morning.",
+              "options": [
+                "watch",
+                "watchs",
+                "watches"
+              ],
+              "answer": "watches",
+              "explanation": "Verbs ending in *-ch* add *-es*: *watches*."
+            },
+            {
+              "id": "pres-check-2",
+              "type": "single_choice",
+              "prompt": "We ___ English on Mondays.",
+              "options": [
+                "study",
+                "studies",
+                "studys"
+              ],
+              "answer": "study",
+              "explanation": "*We* has no *-s*: *study*."
+            },
+            {
+              "id": "pres-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She don't like coffee.",
+                "She doesn't like coffee.",
+                "She doesn't likes coffee."
+              ],
+              "answer": "She doesn't like coffee.",
+              "explanation": "Use *doesn't* + base verb with *she*."
+            },
+            {
+              "id": "pres-check-4",
+              "type": "single_choice",
+              "prompt": "___ they live near here?",
+              "options": [
+                "Do",
+                "Does",
+                "Are"
+              ],
+              "answer": "Do",
+              "explanation": "Questions with *they* use *Do*."
+            },
+            {
+              "id": "pres-check-5",
+              "type": "single_choice",
+              "prompt": "Which sentence has the word in the right place?",
+              "options": [
+                "I walk always to school.",
+                "I always walk to school.",
+                "Always I walk school."
+              ],
+              "answer": "I always walk to school.",
+              "explanation": "*always* goes before the main verb: *I always walk*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "days-and-time",
+      "title": "Days, months and telling the time",
+      "summary": "Say the day, the date and the time.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Days, months and time",
+          "body_md": "**Days:** Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.\n\n**Months:** January, February, March, April, May, June, July, August, September, October, November, December.\n\nDays and months always start with a **capital letter**.\n\n**Prepositions:** ***on** Monday*, ***in** May*, ***at** 7 o'clock*.\n\n**Time:** *7:00 = seven o'clock*, *7:30 = half past seven*, *7:15 = quarter past seven*, *7:45 = quarter to eight*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *My birthday is **in** June.*\n- *We have a test **on** Friday.*\n- *The film starts **at** half past eight.*\n- *What time is it?* — *It's quarter past three.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "time-try-1",
+              "type": "single_choice",
+              "prompt": "The shop opens ___ 9 o'clock.",
+              "options": [
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": "at",
+              "hint": "Look at the prepositions list.",
+              "explanation": "We use *at* with clock times."
+            },
+            {
+              "id": "time-try-2",
+              "type": "single_choice",
+              "prompt": "Which day comes after Tuesday?",
+              "options": [
+                "Monday",
+                "Wednesday",
+                "Thursday"
+              ],
+              "answer": "Wednesday",
+              "explanation": "The order is Monday, Tuesday, **Wednesday** ..."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "time-check-1",
+              "type": "single_choice",
+              "prompt": "I was born ___ March.",
+              "options": [
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": "in",
+              "explanation": "We use *in* with months."
+            },
+            {
+              "id": "time-check-2",
+              "type": "single_choice",
+              "prompt": "What is 4:30?",
+              "options": [
+                "half past four",
+                "half past five",
+                "quarter past four"
+              ],
+              "answer": "half past four",
+              "explanation": "4:30 is thirty minutes after four: *half past four*."
+            },
+            {
+              "id": "time-check-3",
+              "type": "single_choice",
+              "prompt": "Which is written correctly?",
+              "options": [
+                "see you on monday.",
+                "See you on Monday.",
+                "See you on MONDAY."
+              ],
+              "answer": "See you on Monday.",
+              "explanation": "Days start with a capital letter, and so does the first word."
+            },
+            {
+              "id": "time-check-4",
+              "type": "single_choice",
+              "prompt": "What is 10:45?",
+              "options": [
+                "quarter past ten",
+                "quarter to eleven",
+                "half past ten"
+              ],
+              "answer": "quarter to eleven",
+              "explanation": "10:45 is fifteen minutes before eleven: *quarter to eleven*."
+            },
+            {
+              "id": "time-check-5",
+              "type": "single_choice",
+              "prompt": "Which month comes before May?",
+              "options": [
+                "April",
+                "June",
+                "March"
+              ],
+              "answer": "April",
+              "explanation": "The order is ... March, **April**, May, June ..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "numbers-20-100",
+      "title": "Numbers 20 to 100 and prices",
+      "summary": "Count to one hundred, and say ages and prices.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Tens and more",
+          "body_md": "**Tens:** 20 twenty, 30 thirty, 40 forty, 50 fifty, 60 sixty, 70 seventy, 80 eighty, 90 ninety, 100 one hundred.\n\nOther numbers use a **hyphen**: *21 twenty-one*, *35 thirty-five*, *99 ninety-nine*.\n\nCareful: *forty* has no *u* (but *four* and *fourteen* do).\n\nListen for the stress: *thir**teen*** (13) vs ***thir**ty* (30)."
+        },
+        {
+          "kind": "see",
+          "title": "Prices and ages",
+          "body_md": "- *My grandmother is **seventy-two**.*\n- *This bag costs **forty-five** dollars.*\n- *£3.50* → *three pounds fifty*.\n- *$12.99* → *twelve dollars ninety-nine*."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "big-try-1",
+              "type": "single_choice",
+              "prompt": "How do you write 40?",
+              "options": [
+                "fourty",
+                "forty",
+                "fourteen"
+              ],
+              "answer": "forty",
+              "hint": "Different from four!",
+              "explanation": "40 is *forty*, with no *u*."
+            },
+            {
+              "id": "big-try-2",
+              "type": "single_choice",
+              "prompt": "How do you write 67?",
+              "options": [
+                "sixty-seven",
+                "sixty seven",
+                "sixtyseven"
+              ],
+              "answer": "sixty-seven",
+              "explanation": "Use a hyphen: *sixty-seven*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "big-check-1",
+              "type": "single_choice",
+              "prompt": "What is 50 + 5?",
+              "options": [
+                "fifteen",
+                "fifty-five",
+                "fifty"
+              ],
+              "answer": "fifty-five",
+              "explanation": "50 + 5 = 55, *fifty-five*."
+            },
+            {
+              "id": "big-check-2",
+              "type": "single_choice",
+              "prompt": "Which number is \"eighty-three\"?",
+              "options": [
+                "38",
+                "83",
+                "803"
+              ],
+              "answer": "83",
+              "explanation": "*Eighty-three* is 83."
+            },
+            {
+              "id": "big-check-3",
+              "type": "single_choice",
+              "prompt": "How do you say £7.20?",
+              "options": [
+                "seven pounds twenty",
+                "seventy pounds two",
+                "seven twenty pounds"
+              ],
+              "answer": "seven pounds twenty",
+              "explanation": "Say the pounds, then the pence: *seven pounds twenty*."
+            },
+            {
+              "id": "big-check-4",
+              "type": "single_choice",
+              "prompt": "What comes after ninety-nine?",
+              "options": [
+                "one hundred",
+                "ninety-ten",
+                "one thousand"
+              ],
+              "answer": "one hundred",
+              "explanation": "After 99 comes 100, *one hundred*."
+            },
+            {
+              "id": "big-check-5",
+              "type": "single_choice",
+              "prompt": "Which is 30?",
+              "options": [
+                "thirteen",
+                "thirty",
+                "three"
+              ],
+              "answer": "thirty",
+              "explanation": "30 is *thirty*. 13 is *thirteen*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "family-words",
+      "title": "Family words",
+      "summary": "Name the people in your family.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "My family",
+          "body_md": "- **parents**: mother (mum) and father (dad)\n- **children**: son and daughter\n- brother, sister\n- grandmother, grandfather (**grandparents**)\n- aunt, uncle, cousin\n- wife, husband\n\nTo show who someone belongs to, add **'s**: *Sara**'s** brother* = the brother of Sara."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*This is my family. My **father** is a driver and my **mother** is a cook. I have one **sister**. My **grandparents** live with us. My **uncle**'s children are my **cousins**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "fam-try-1",
+              "type": "single_choice",
+              "prompt": "Your mother's mother is your ___.",
+              "options": [
+                "aunt",
+                "grandmother",
+                "sister"
+              ],
+              "answer": "grandmother",
+              "hint": "Think about grand-.",
+              "explanation": "Your mother's mother is your *grandmother*."
+            },
+            {
+              "id": "fam-try-2",
+              "type": "single_choice",
+              "prompt": "Which shows that the car belongs to Omar?",
+              "options": [
+                "Omar car",
+                "Omars car",
+                "Omar's car"
+              ],
+              "answer": "Omar's car",
+              "explanation": "Add *'s* to the owner's name: *Omar's car*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "fam-check-1",
+              "type": "single_choice",
+              "prompt": "Your father's brother is your ___.",
+              "options": [
+                "cousin",
+                "uncle",
+                "son"
+              ],
+              "answer": "uncle",
+              "explanation": "Your parent's brother is your *uncle*."
+            },
+            {
+              "id": "fam-check-2",
+              "type": "single_choice",
+              "prompt": "A girl is her parents' ___.",
+              "options": [
+                "son",
+                "daughter",
+                "aunt"
+              ],
+              "answer": "daughter",
+              "explanation": "A girl child is a *daughter*."
+            },
+            {
+              "id": "fam-check-3",
+              "type": "single_choice",
+              "prompt": "Your aunt's children are your ___.",
+              "options": [
+                "cousins",
+                "brothers",
+                "parents"
+              ],
+              "answer": "cousins",
+              "explanation": "The children of your aunt or uncle are your *cousins*."
+            },
+            {
+              "id": "fam-check-4",
+              "type": "single_choice",
+              "prompt": "Your mother and father are your ___.",
+              "options": [
+                "grandparents",
+                "parents",
+                "children"
+              ],
+              "answer": "parents",
+              "explanation": "Mother + father = *parents*."
+            },
+            {
+              "id": "fam-check-5",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "This is Anna's bag.",
+                "This is Annas bag.",
+                "This is bag Anna."
+              ],
+              "answer": "This is Anna's bag.",
+              "explanation": "Use *'s* to show the owner: *Anna's bag*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "possessive-adjectives",
+      "title": "My, your, his, her, our, their",
+      "summary": "Show who something belongs to.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Whose is it?",
+          "body_md": "| pronoun | possessive |\n|---|---|\n| I | **my** |\n| you | **your** |\n| he | **his** |\n| she | **her** |\n| it | **its** |\n| we | **our** |\n| they | **their** |\n\nA possessive word comes **before** a noun: *my phone, their house*.\n\nCareful: *its* (belongs to it) has **no** apostrophe. *it's* = *it is*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I like **my** new job.*\n- *Ben is with **his** dog.*\n- *Lucy calls **her** mother every day.*\n- *We love **our** city.*\n- *The tree lost **its** leaves.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "poss-try-1",
+              "type": "single_choice",
+              "prompt": "Maria loves ___ cat.",
+              "options": [
+                "his",
+                "her",
+                "their"
+              ],
+              "answer": "her",
+              "hint": "Who is Maria: he, she or they?",
+              "explanation": "Maria is *she*, so we use *her*."
+            },
+            {
+              "id": "poss-try-2",
+              "type": "single_choice",
+              "prompt": "The children are with ___ teacher.",
+              "options": [
+                "their",
+                "there",
+                "they're"
+              ],
+              "answer": "their",
+              "explanation": "*Their* shows the teacher belongs to them. *There* is a place; *they're* = *they are*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "poss-check-1",
+              "type": "single_choice",
+              "prompt": "I can't find ___ keys.",
+              "options": [
+                "my",
+                "me",
+                "I"
+              ],
+              "answer": "my",
+              "explanation": "Before a noun we use *my*."
+            },
+            {
+              "id": "poss-check-2",
+              "type": "single_choice",
+              "prompt": "John washes ___ car on Sundays.",
+              "options": [
+                "her",
+                "his",
+                "its"
+              ],
+              "answer": "his",
+              "explanation": "John is *he*, so *his*."
+            },
+            {
+              "id": "poss-check-3",
+              "type": "single_choice",
+              "prompt": "The dog wants ___ food.",
+              "options": [
+                "it's",
+                "its",
+                "his"
+              ],
+              "answer": "its",
+              "explanation": "Belonging to *it* = *its* (no apostrophe)."
+            },
+            {
+              "id": "poss-check-4",
+              "type": "single_choice",
+              "prompt": "We visit ___ grandparents every summer.",
+              "options": [
+                "our",
+                "we",
+                "us"
+              ],
+              "answer": "our",
+              "explanation": "*We* → *our* before a noun."
+            },
+            {
+              "id": "poss-check-5",
+              "type": "single_choice",
+              "prompt": "Is this ___ coat, sir?",
+              "options": [
+                "you",
+                "your",
+                "you're"
+              ],
+              "answer": "your",
+              "explanation": "*Your* shows it belongs to you. *You're* = *you are*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "there-is-there-are",
+      "title": "There is and there are",
+      "summary": "Say what is in a place.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "there is / there are",
+          "body_md": "- **There is** (*there's*) + one thing: *There is a bank on this street.*\n- **There are** + more than one: *There are three bedrooms.*\n\n**Negative:** *There isn't a lift. There aren't any shops.*\n\n**Question:** ***Is there** a park near here? **Are there** any buses?*"
+        },
+        {
+          "kind": "see",
+          "title": "My town",
+          "body_md": "*In my town **there is** a big market and **there are** two schools. **There isn't** a cinema, but **there are** lots of cafés. **Is there** a hospital?* — *Yes, **there is**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "there-try-1",
+              "type": "single_choice",
+              "prompt": "___ a cat on the sofa.",
+              "options": [
+                "There is",
+                "There are",
+                "It are"
+              ],
+              "answer": "There is",
+              "hint": "One or more than one?",
+              "explanation": "One cat: *There is*."
+            },
+            {
+              "id": "there-try-2",
+              "type": "single_choice",
+              "prompt": "___ any eggs in the fridge?",
+              "options": [
+                "Is there",
+                "Are there",
+                "There are"
+              ],
+              "answer": "Are there",
+              "explanation": "A question about more than one thing: *Are there ...?*"
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "there-check-1",
+              "type": "single_choice",
+              "prompt": "___ five people in my family.",
+              "options": [
+                "There is",
+                "There are",
+                "They are"
+              ],
+              "answer": "There are",
+              "explanation": "More than one: *There are*."
+            },
+            {
+              "id": "there-check-2",
+              "type": "single_choice",
+              "prompt": "There ___ a problem with my computer.",
+              "options": [
+                "is",
+                "are",
+                "be"
+              ],
+              "answer": "is",
+              "explanation": "One problem: *There is*."
+            },
+            {
+              "id": "there-check-3",
+              "type": "single_choice",
+              "prompt": "Which is the negative?",
+              "options": [
+                "There aren't any trees.",
+                "There are some trees.",
+                "Are there any trees?"
+              ],
+              "answer": "There aren't any trees.",
+              "explanation": "*aren't* = *are not*, so it is negative."
+            },
+            {
+              "id": "there-check-4",
+              "type": "single_choice",
+              "prompt": "\"Is there a bank near here?\" \"Yes, ___.\"",
+              "options": [
+                "there is",
+                "there are",
+                "it is"
+              ],
+              "answer": "there is",
+              "explanation": "Short answer: *Yes, there is.*"
+            },
+            {
+              "id": "there-check-5",
+              "type": "single_choice",
+              "prompt": "There ___ two windows in this room.",
+              "options": [
+                "is",
+                "are",
+                "am"
+              ],
+              "answer": "are",
+              "explanation": "Two windows = more than one: *are*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "prepositions-of-place",
+      "title": "In, on, under, next to",
+      "summary": "Say where things are.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Where is it?",
+          "body_md": "- **in**: inside something: *in the box*\n- **on**: on top of a surface: *on the table*\n- **under**: below: *under the bed*\n- **next to**: at the side of: *next to the door*\n- **between**: in the middle of two things: *between the bank and the shop*\n- **behind** / **in front of**: at the back of / at the front of"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The keys are **in** my bag.*\n- *Your phone is **on** the desk.*\n- *The cat is sleeping **under** the chair.*\n- *The café is **between** the post office and the library.*\n- *There is a garden **behind** the house.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "prep-try-1",
+              "type": "single_choice",
+              "prompt": "The milk is ___ the fridge.",
+              "options": [
+                "in",
+                "on",
+                "under"
+              ],
+              "answer": "in",
+              "hint": "Is it inside or on top?",
+              "explanation": "The milk is inside the fridge: *in*."
+            },
+            {
+              "id": "prep-try-2",
+              "type": "single_choice",
+              "prompt": "The picture is ___ the wall.",
+              "options": [
+                "in",
+                "on",
+                "under"
+              ],
+              "answer": "on",
+              "explanation": "Pictures hang on a surface: *on the wall*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "prep-check-1",
+              "type": "single_choice",
+              "prompt": "The shoes are ___ the bed. You can't see them.",
+              "options": [
+                "on",
+                "under",
+                "next to"
+              ],
+              "answer": "under",
+              "explanation": "Below the bed: *under*."
+            },
+            {
+              "id": "prep-check-2",
+              "type": "single_choice",
+              "prompt": "B is ___ A and C.",
+              "options": [
+                "between",
+                "behind",
+                "in"
+              ],
+              "answer": "between",
+              "explanation": "In the middle of two things: *between*."
+            },
+            {
+              "id": "prep-check-3",
+              "type": "single_choice",
+              "prompt": "My house is ___ the school. It is right at its side.",
+              "options": [
+                "next to",
+                "in",
+                "under"
+              ],
+              "answer": "next to",
+              "explanation": "At the side of: *next to*."
+            },
+            {
+              "id": "prep-check-4",
+              "type": "single_choice",
+              "prompt": "Put the plates ___ the table, please.",
+              "options": [
+                "on",
+                "in",
+                "under"
+              ],
+              "answer": "on",
+              "explanation": "On top of the table: *on*."
+            },
+            {
+              "id": "prep-check-5",
+              "type": "single_choice",
+              "prompt": "The car is ___ the house. You can see it from the front door.",
+              "options": [
+                "behind",
+                "in front of",
+                "under"
+              ],
+              "answer": "in front of",
+              "explanation": "If you see it from the front door, it is *in front of* the house."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "can-for-ability",
+      "title": "Can and can't",
+      "summary": "Say what you are able to do.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "can / can't",
+          "body_md": "**can** + base verb, the same for everyone: *I can swim. She can swim. They can swim.*\n\n- No *-s* and no *to*: *He can drive* (not *He cans drive* or *He can to drive*).\n- **Negative:** *can't* (= *cannot*): *I can't cook.*\n- **Question:** ***Can** you speak French?* — *Yes, I **can**. / No, I **can't**.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *My little brother **can** read now.*\n- *I **can't** hear you. Can you speak louder?*\n- ***Can** your sister play the guitar?* — *Yes, she **can**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "can-try-1",
+              "type": "single_choice",
+              "prompt": "She ___ ride a bike.",
+              "options": [
+                "can",
+                "cans",
+                "can to"
+              ],
+              "answer": "can",
+              "hint": "can is the same for everyone.",
+              "explanation": "*can* never takes *-s* or *to*."
+            },
+            {
+              "id": "can-try-2",
+              "type": "single_choice",
+              "prompt": "\"Can you swim?\" \"No, I ___.\"",
+              "options": [
+                "can't",
+                "don't",
+                "am not"
+              ],
+              "answer": "can't",
+              "explanation": "Short answer: *No, I can't.*"
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "can-check-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "He can plays tennis.",
+                "He can play tennis.",
+                "He can to play tennis."
+              ],
+              "answer": "He can play tennis.",
+              "explanation": "*can* + base verb: *can play*."
+            },
+            {
+              "id": "can-check-2",
+              "type": "single_choice",
+              "prompt": "Birds ___ fly, but fish can't.",
+              "options": [
+                "can",
+                "can't",
+                "cans"
+              ],
+              "answer": "can",
+              "explanation": "Birds are able to fly: *can*."
+            },
+            {
+              "id": "can-check-3",
+              "type": "single_choice",
+              "prompt": "I ___ open this jar. It's too tight.",
+              "options": [
+                "can",
+                "can't",
+                "do"
+              ],
+              "answer": "can't",
+              "explanation": "Not able: *can't*."
+            },
+            {
+              "id": "can-check-4",
+              "type": "single_choice",
+              "prompt": "Make a question: \"___ you help me?\"",
+              "options": [
+                "Do",
+                "Can",
+                "Are"
+              ],
+              "answer": "Can",
+              "explanation": "Ask about ability or help with *Can you ...?*"
+            },
+            {
+              "id": "can-check-5",
+              "type": "single_choice",
+              "prompt": "Babies ___ walk when they are born.",
+              "options": [
+                "can",
+                "can't",
+                "cans"
+              ],
+              "answer": "can't",
+              "explanation": "Newborn babies are not able to walk: *can't*."
+            }
+          ]
+        }
+      ]
     }
   ],
   "units": [
@@ -352,7 +1991,9 @@
       "summary": "Letters and your first words: say hello and introduce yourself.",
       "lessons": [
         "the-alphabet",
-        "basic-vocabulary-greetings"
+        "basic-vocabulary-greetings",
+        "numbers-0-20",
+        "colours-and-classroom-objects"
       ],
       "test": [
         {
@@ -424,7 +2065,9 @@
       "lessons": [
         "parts-of-speech",
         "nouns-singular-plural",
-        "pronouns"
+        "pronouns",
+        "articles-a-an-the",
+        "this-that-these-those"
       ],
       "test": [
         {
@@ -486,6 +2129,178 @@
           ],
           "answer": "We",
           "explanation": "*Tom and I* means *we*."
+        }
+      ]
+    },
+    {
+      "slug": "l1-u3-me-and-my-day",
+      "title": "Unit 3: Me and my day",
+      "summary": "Talk about yourself, your things and your daily routine.",
+      "lessons": [
+        "verb-to-be",
+        "have-and-has",
+        "present-simple-routines",
+        "days-and-time",
+        "numbers-20-100"
+      ],
+      "test": [
+        {
+          "id": "u13-t1",
+          "type": "single_choice",
+          "prompt": "She ___ a doctor.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "explanation": "*She* goes with *is*."
+        },
+        {
+          "id": "u13-t2",
+          "type": "single_choice",
+          "prompt": "We ___ a garden.",
+          "options": [
+            "have",
+            "has",
+            "haves"
+          ],
+          "answer": "have",
+          "explanation": "*We* goes with *have*."
+        },
+        {
+          "id": "u13-t3",
+          "type": "single_choice",
+          "prompt": "Tom ___ to work by train.",
+          "options": [
+            "go",
+            "goes",
+            "going"
+          ],
+          "answer": "goes",
+          "explanation": "*Tom* = *he*, so *goes*."
+        },
+        {
+          "id": "u13-t4",
+          "type": "single_choice",
+          "prompt": "The meeting is ___ Tuesday.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "answer": "on",
+          "explanation": "We use *on* with days."
+        },
+        {
+          "id": "u13-t5",
+          "type": "single_choice",
+          "prompt": "Which is 70?",
+          "options": [
+            "seventeen",
+            "seventy",
+            "seven"
+          ],
+          "answer": "seventy",
+          "explanation": "70 is *seventy*."
+        },
+        {
+          "id": "u13-t6",
+          "type": "single_choice",
+          "prompt": "___ your brother live in Paris?",
+          "options": [
+            "Do",
+            "Does",
+            "Is"
+          ],
+          "answer": "Does",
+          "explanation": "Questions with *he* use *Does*."
+        }
+      ]
+    },
+    {
+      "slug": "l1-u4-people-and-places",
+      "title": "Unit 4: People and places",
+      "summary": "Talk about your family, what is around you and what you can do.",
+      "lessons": [
+        "family-words",
+        "possessive-adjectives",
+        "there-is-there-are",
+        "prepositions-of-place",
+        "can-for-ability"
+      ],
+      "test": [
+        {
+          "id": "u14-t1",
+          "type": "single_choice",
+          "prompt": "My mother's sister is my ___.",
+          "options": [
+            "aunt",
+            "cousin",
+            "niece"
+          ],
+          "answer": "aunt",
+          "explanation": "Your parent's sister is your *aunt*."
+        },
+        {
+          "id": "u14-t2",
+          "type": "single_choice",
+          "prompt": "They love ___ new house.",
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ],
+          "answer": "their",
+          "explanation": "*their* shows it belongs to them."
+        },
+        {
+          "id": "u14-t3",
+          "type": "single_choice",
+          "prompt": "___ two cafés on my street.",
+          "options": [
+            "There is",
+            "There are",
+            "It is"
+          ],
+          "answer": "There are",
+          "explanation": "Two cafés: *There are*."
+        },
+        {
+          "id": "u14-t4",
+          "type": "single_choice",
+          "prompt": "The cat is ___ the box. It is inside.",
+          "options": [
+            "in",
+            "on",
+            "between"
+          ],
+          "answer": "in",
+          "explanation": "Inside = *in*."
+        },
+        {
+          "id": "u14-t5",
+          "type": "single_choice",
+          "prompt": "Which is correct?",
+          "options": [
+            "She can sings.",
+            "She can sing.",
+            "She cans sing."
+          ],
+          "answer": "She can sing.",
+          "explanation": "*can* + base verb."
+        },
+        {
+          "id": "u14-t6",
+          "type": "single_choice",
+          "prompt": "Which is correct?",
+          "options": [
+            "The bird hurt it's wing.",
+            "The bird hurt its wing.",
+            "The bird hurt his' wing."
+          ],
+          "answer": "The bird hurt its wing.",
+          "explanation": "*its* (no apostrophe) shows belonging."
         }
       ]
     }
