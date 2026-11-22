@@ -1,6 +1,6 @@
 # CLAUDE.md: rules for AI coding agents (read every session)
 
-PTE Master AI: free, open-source, **local-only** English + PTE Academic prep app.
+TutorBot English AI: free, open-source, **local-only** English + PTE Academic prep app.
 Full spec: `docs/SPEC.md`. **Do not read all of it.** Open only the section you need (numbers below).
 Current state and next step: `STATUS.md`. Find files with `docs/CODEMAP.md`, then `grep`.
 

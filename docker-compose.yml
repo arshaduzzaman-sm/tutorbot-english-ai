@@ -1,6 +1,6 @@
 # Started by `make start` after `supabase start` (database, auth, storage, mail viewer).
 # Every port is bound to 127.0.0.1 so the app is not exposed to your network (SPEC 3.2).
-name: pte-master-ai
+name: tutorbot-english-ai
 
 x-host-gateway: &host-gateway
   extra_hosts:

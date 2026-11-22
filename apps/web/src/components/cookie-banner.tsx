@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const COOKIE = "pte_cookie_notice";
+const COOKIE = "tutorbot_cookie_notice";
 
 /** Only essential cookies are used; optional cookies stay off unless a future setting turns them on. */
 export function CookieBanner() {

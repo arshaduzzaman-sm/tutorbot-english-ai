@@ -2,6 +2,7 @@
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-22 | Product renamed to TutorBot English AI, repo `tutorbot-english-ai` | Owner decision, to avoid using Pearson's "PTE" trademark in the name. PTE is still named descriptively, with the disclaimer. |
 | 2026-11-22 | Licence: MIT for code, CC BY-SA 4.0 for original content | Chosen by the owner. |
 | 2026-11-22 | Next.js 16 (current stable) with `src/proxy.ts` | Spec says Next.js App Router; v16 renames middleware to proxy. |
 | 2026-11-22 | shadcn/ui-style components written in-repo (`components/ui`, `components.json` present) | Same pattern shadcn generates; avoids extra Radix deps in M1. More can be added with the shadcn CLI. |

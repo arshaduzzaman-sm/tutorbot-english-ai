@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "PTE Master AI",
+    "appName": "TutorBot English AI",
     "tagline": "Learn English. Master PTE. Achieve Your Target.",
     "skipToContent": "Skip to main content",
     "login": "Log in",
@@ -18,7 +18,7 @@
   },
   "nav": { "home": "Home", "about": "About", "privacy": "Privacy", "terms": "Terms", "main": "Main" },
   "footer": {
-    "disclaimer": "PTE Master AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
+    "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
     "local": "Runs on your own computer. Your data stays on this computer.",
     "license": "Free and open source. Code: MIT. Lessons: CC BY-SA 4.0."
   },
@@ -32,7 +32,7 @@
     "heroBody": "Free practice and AI feedback to help you improve your English and prepare for PTE Academic. Your results depend on your study and practice.",
     "start": "Start Learning",
     "haveAccount": "I already have an account",
-    "introTitle": "What is PTE Master AI?",
+    "introTitle": "What is TutorBot English AI?",
     "introBody": "A free app that teaches English from the alphabet to advanced academic English, and trains you on every PTE Academic task. It runs on your own computer, so your recordings and progress stay with you.",
     "skillsTitle": "The four skills",
     "speaking": "Speaking", "speakingBody": "Read aloud, repeat sentences, describe images and more, with feedback on fluency and pronunciation.",
@@ -86,7 +86,7 @@
       "required": "Please fill in this field.",
       "email": "Please enter a valid email address.",
       "passwordShort": "Your password needs at least 8 characters.",
-      "age": "You must be 16 or older to use PTE Master AI.",
+      "age": "You must be 16 or older to use TutorBot English AI.",
       "terms": "Please accept the Terms and Privacy policy.",
       "invalidLogin": "Email or password is not correct.",
       "notConfirmed": "Please confirm your email first. Check your inbox.",
@@ -160,7 +160,7 @@
   "skills": { "SPEAKING": "Speaking", "WRITING": "Writing", "READING": "Reading", "LISTENING": "Listening" },
   "legal": {
     "reviewNote": "Template: to be reviewed by a lawyer before public launch.",
-    "aboutTitle": "About PTE Master AI",
+    "aboutTitle": "About TutorBot English AI",
     "privacyTitle": "Privacy policy",
     "termsTitle": "Terms of use"
   }

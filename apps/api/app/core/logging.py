@@ -11,7 +11,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
 
-logger = logging.getLogger("pte")
+logger = logging.getLogger("tutorbot")
 
 
 class JsonFormatter(logging.Formatter):

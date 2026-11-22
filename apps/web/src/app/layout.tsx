@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "PTE Master AI", template: "%s | PTE Master AI" },
+  title: { default: "TutorBot English AI", template: "%s | TutorBot English AI" },
   description: "Free practice and AI feedback to help you improve your English and prepare for PTE Academic.",
 };
 

@@ -792,51 +792,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pte-master-ai-api"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "asyncpg" },
-    { name = "fastapi" },
-    { name = "httpx" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
-    { name = "pyjwt", extra = ["crypto"] },
-    { name = "sqlalchemy", extra = ["asyncio"] },
-    { name = "strawberry-graphql" },
-    { name = "uvicorn", extra = ["standard"] },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "mypy" },
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "asyncpg", specifier = ">=0.29" },
-    { name = "fastapi", specifier = ">=0.115" },
-    { name = "httpx", specifier = ">=0.27" },
-    { name = "pydantic", specifier = ">=2.8" },
-    { name = "pydantic-settings", specifier = ">=2.4" },
-    { name = "pyjwt", extras = ["crypto"], specifier = ">=2.9" },
-    { name = "sqlalchemy", extras = ["asyncio"], specifier = ">=2.0.30" },
-    { name = "strawberry-graphql", specifier = ">=0.240" },
-    { name = "uvicorn", extras = ["standard"], specifier = ">=0.30" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "mypy", specifier = ">=1.11" },
-    { name = "pytest", specifier = ">=8.3" },
-    { name = "pytest-asyncio", specifier = ">=0.24" },
-    { name = "ruff", specifier = ">=0.6" },
-]
-
-[[package]]
 name = "pycparser"
 version = "3.12"
 source = { registry = "https://pypi.org/simple" }
@@ -1250,6 +1205,51 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ca/91/4c9344b92f3a8b24b6b34394de0bc32a96c2cfec08a89612e8ad15e63885/strawberry_graphql-0.341.2.tar.gz", hash = "sha256:8073fae26510fb25394a6ea9dd0f4e23da6bc303312fff684f6a884d59eedb72", size = 299246, upload-time = "2026-11-07T16:26:56.992Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d6/a8/46312ba316ff70cda1fb8052572f2b488d117a96fa74c3ab29f58cd570c0/strawberry_graphql-0.341.2-py3-none-any.whl", hash = "sha256:73e9c4cf5e2fddd522d2741491a6fbba70f940d945ab0a40152b2fadf26d9a89", size = 396061, upload-time = "2026-11-07T16:26:54.835Z" },
+]
+
+[[package]]
+name = "tutorbot-english-ai-api"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "asyncpg" },
+    { name = "fastapi" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "pydantic-settings" },
+    { name = "pyjwt", extra = ["crypto"] },
+    { name = "sqlalchemy", extra = ["asyncio"] },
+    { name = "strawberry-graphql" },
+    { name = "uvicorn", extra = ["standard"] },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "asyncpg", specifier = ">=0.29" },
+    { name = "fastapi", specifier = ">=0.115" },
+    { name = "httpx", specifier = ">=0.27" },
+    { name = "pydantic", specifier = ">=2.8" },
+    { name = "pydantic-settings", specifier = ">=2.4" },
+    { name = "pyjwt", extras = ["crypto"], specifier = ">=2.9" },
+    { name = "sqlalchemy", extras = ["asyncio"], specifier = ">=2.0.30" },
+    { name = "strawberry-graphql", specifier = ">=0.240" },
+    { name = "uvicorn", extras = ["standard"], specifier = ">=0.30" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "mypy", specifier = ">=1.11" },
+    { name = "pytest", specifier = ">=8.3" },
+    { name = "pytest-asyncio", specifier = ">=0.24" },
+    { name = "ruff", specifier = ">=0.6" },
 ]
 
 [[package]]

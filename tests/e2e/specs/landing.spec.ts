@@ -4,7 +4,7 @@ import { expect, test } from "@playwright/test";
 const HERO =
   "Free practice and AI feedback to help you improve your English and prepare for PTE Academic. Your results depend on your study and practice.";
 const DISCLAIMER =
-  "PTE Master AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.";
+  "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.";
 
 test("landing page shows hero message, Start Learning and Pearson disclaimer", async ({ page }) => {
   await page.goto("/");

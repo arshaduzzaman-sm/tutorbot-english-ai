@@ -3,7 +3,7 @@
 $ErrorActionPreference = "Stop"
 Set-Location (Join-Path $PSScriptRoot "..")
 
-Write-Host "== PTE Master AI setup =="
+Write-Host "== TutorBot English AI setup =="
 $missing = $false
 foreach ($tool in @("docker", "node", "pnpm", "supabase", "python", "uv")) {
   if (Get-Command $tool -ErrorAction SilentlyContinue) { Write-Host "  ok       $tool" }

@@ -40,9 +40,9 @@ def create_app() -> FastAPI:
     settings = get_settings()
     configure_logging(settings.log_level)
     app = FastAPI(
-        title="PTE Master AI API",
+        title="TutorBot English AI API",
         version="0.1.0",
-        description="REST actions for PTE Master AI. Reads use GraphQL at /graphql.",
+        description="REST actions for TutorBot English AI. Reads use GraphQL at /graphql.",
         docs_url="/docs" if settings.is_dev else None,
         redoc_url=None,
         lifespan=lifespan,

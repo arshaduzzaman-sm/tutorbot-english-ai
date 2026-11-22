@@ -1,5 +1,9 @@
 # PART A: PERMANENT PROJECT RULES
 
+> **Name change (2026-11-22):** the owner renamed the product from "PTE Master AI" to **TutorBot English AI**
+> (repository `tutorbot-english-ai`) so the name does not use Pearson's "PTE" trademark. The app still
+> describes PTE Academic preparation and shows the Pearson disclaimer. See docs/DECISIONS.md.
+
 *(The AI must save this whole part as `docs/SPEC.md`, then write a short `CLAUDE.md` from it as described in Section 3.3.)*
 
 ## 1. ROLE
@@ -8,8 +12,8 @@ Work as a senior full-stack team covering product, architecture, UI/UX, frontend
 
 ## 2. PRODUCT
 
-**Name:** PTE Master AI
-**Repository name:** `pte-master-ai`
+**Name:** TutorBot English AI
+**Repository name:** `tutorbot-english-ai`
 **Tagline:** Learn English. Master PTE. Achieve Your Target.
 **Type:** A free, open-source, AI-powered English-learning and PTE Academic preparation app that **runs entirely on the learner's own computer**.
 **Distribution:** A public GitHub repository. There is **no online deployment, no hosted server and no cloud service**. Anyone can download the code and run it locally with Docker. All data (accounts, recordings, progress) stays on the computer where it runs.
@@ -30,7 +34,7 @@ The aim is to give every learner **the best possible chance** of reaching their 
 - The platform is **free**. There are no paywalls, subscriptions or mandatory premium tiers.
 - **Never guarantee** any exam score.
 - **Never present an estimate as an official Pearson score.** Every estimate is labelled "Practice estimate: not an official PTE score".
-- **Trademark disclaimer** in the footer, terms page and About page: "PTE Master AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson." Add a `docs/LEGAL_NOTES.md` file reminding the owner to get legal advice on using "PTE" in the product name before public launch.
+- **Trademark disclaimer** in the footer, terms page and About page: "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson." Add a `docs/LEGAL_NOTES.md` file reminding the owner to get legal advice on using "PTE" in the product name before public launch.
 - **Never copy** Pearson's or anyone else's copyrighted exam questions. All content is original or properly licensed.
 - **Minimise running costs.** Prefer free, open-source and locally run AI (see Section 6).
 
@@ -92,7 +96,7 @@ Provide `scripts/setup.sh` (macOS/Linux) and `scripts/setup.ps1` (Windows) plus 
 ## 4. REPOSITORY STRUCTURE
 
 ```
-pte-master-ai/
+tutorbot-english-ai/
 ├── CLAUDE.md                 # Short rules file read every session (<150 lines)
 ├── STATUS.md                 # Short current-status file (<100 lines)
 ├── README.md                 # What it is, setup and run instructions

@@ -1,4 +1,4 @@
-# PTE Master AI: one-command local setup (SPEC 3.4). Run `make help`.
+# TutorBot English AI: one-command local setup (SPEC 3.4). Run `make help`.
 SHELL := /bin/bash
 # Services not needed by the app are skipped to save memory on 8 GB computers.
 SUPABASE_EXCLUDE := studio,imgproxy,edge-runtime,logflare,vector,supavisor,realtime,postgres-meta

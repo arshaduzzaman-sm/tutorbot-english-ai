@@ -7,9 +7,9 @@ export function Logo() {
         aria-hidden="true"
         className="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-primary to-accent-purple text-sm text-white"
       >
-        PM
+        TB
       </span>
-      <span className="text-lg">PTE Master AI</span>
+      <span className="text-lg">TutorBot English AI</span>
     </Link>
   );
 }

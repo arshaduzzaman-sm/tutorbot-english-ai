@@ -16,7 +16,7 @@ test("register validation explains problems in simple English", async ({ page })
   await page.getByRole("button", { name: "Create account" }).click();
   await expect(page.getByText("Please enter a valid email address.")).toBeVisible();
   await expect(page.getByText("Your password needs at least 8 characters.")).toBeVisible();
-  await expect(page.getByText("You must be 16 or older to use PTE Master AI.")).toBeVisible();
+  await expect(page.getByText("You must be 16 or older to use TutorBot English AI.")).toBeVisible();
 });
 
 test("register → verify email → onboarding → dashboard → logout → login → reset password", async ({ page, request }) => {
@@ -40,7 +40,7 @@ test("register → verify email → onboarding → dashboard → logout → logi
   await expect(page.getByText("Please confirm your email first.")).toBeVisible();
 
   // Verify through the local mail viewer (Mailpit)
-  const confirmLink = await linkFromEmail(request, email, "Confirm your PTE Master AI account");
+  const confirmLink = await linkFromEmail(request, email, "Confirm your TutorBot English AI account");
   await page.goto(confirmLink);
   await expect(page).toHaveURL(/\/onboarding/);
 
@@ -79,7 +79,7 @@ test("register → verify email → onboarding → dashboard → logout → logi
   await page.getByLabel("Email").fill(email);
   await page.getByRole("button", { name: "Send reset link" }).click();
   await expect(page.getByText(/a reset link is on its way/)).toBeVisible();
-  const resetLink = await linkFromEmail(request, email, "Reset your PTE Master AI password");
+  const resetLink = await linkFromEmail(request, email, "Reset your TutorBot English AI password");
   await page.goto(resetLink);
   await expect(page).toHaveURL(/\/reset-password/);
   await page.getByLabel("New password").fill(newPassword);

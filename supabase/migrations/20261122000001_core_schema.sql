@@ -1,4 +1,4 @@
--- PTE Master AI: Milestone 1 core schema.
+-- TutorBot English AI: Milestone 1 core schema.
 -- This folder is the single source of truth for the database schema (SPEC 3.1.1).
 
 -- ---------- Types ----------
@@ -115,7 +115,7 @@ create table public.questions (
   key_points text[] not null default '{}',
   source text not null default 'original',
   licence text not null default 'CC-BY-SA-4.0',
-  author text not null default 'PTE Master AI contributors',
+  author text not null default 'TutorBot English AI contributors',
   status public.content_status not null default 'draft',
   version integer not null default 1 check (version > 0),
   created_at timestamptz not null default now(),

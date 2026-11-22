@@ -31,7 +31,7 @@ export function DataActions() {
     if (err || !data) return setError(tc("errorBody"));
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
-    const a = Object.assign(document.createElement("a"), { href: url, download: "pte-master-ai-my-data.json" });
+    const a = Object.assign(document.createElement("a"), { href: url, download: "tutorbot-english-ai-my-data.json" });
     a.click();
     URL.revokeObjectURL(url);
   }

@@ -1,6 +1,8 @@
 # Legal notes for the owner
 
-- **Get legal advice before public launch** about using "PTE" in the product name "PTE Master AI".
+- The product was renamed from "PTE Master AI" to **TutorBot English AI** (2026-11-22) so the name does not
+  use the "PTE" trademark. "PTE" still appears in descriptions (for example the tagline "Master PTE" and
+  "prepares you for PTE Academic"). This descriptive use is common, but **get legal advice before public launch**.
   PTE and PTE Academic are trademarks of Pearson. The app shows the required disclaimer in the footer,
   terms and about pages.
 - The privacy policy and terms pages are **templates** and are marked "to be reviewed by a lawyer".

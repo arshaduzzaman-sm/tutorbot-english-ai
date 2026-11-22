@@ -1,13 +1,13 @@
-# PTE Master AI
+# TutorBot English AI
 
 **Learn English. Master PTE. Achieve Your Target.**
 
-PTE Master AI is a **free, open-source** app that teaches English from the very first letters up to advanced
+TutorBot English AI is a **free, open-source** app that teaches English from the very first letters up to advanced
 academic English, and prepares you for every task in the **PTE Academic** test. It gives practice and AI feedback.
 Your results depend on your study and practice. **Nobody can guarantee a score**, and every estimate in the app is a
 *practice estimate, not an official PTE score*.
 
-> PTE Master AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by
+> TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by
 > Pearson. PTE and PTE Academic are trademarks of Pearson.
 
 ## It runs on your own computer
@@ -46,8 +46,8 @@ Disk: about 6 GB for Docker images in Milestone 1 (more later for AI models).
 ## Setup (one command)
 
 ```bash
-git clone https://github.com/<owner>/pte-master-ai.git
-cd pte-master-ai
+git clone https://github.com/<owner>/tutorbot-english-ai.git
+cd tutorbot-english-ai
 make setup      # checks tools, installs, starts the local database, loads lessons, writes .env files
 make start      # starts everything
 ```

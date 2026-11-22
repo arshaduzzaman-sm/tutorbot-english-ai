@@ -1,6 +1,6 @@
 # Security
 
-PTE Master AI runs locally, but please still report security problems privately.
+TutorBot English AI runs locally, but please still report security problems privately.
 
 - **Do not** open a public issue for a vulnerability. Use GitHub's "Report a vulnerability"
   (Security → Advisories) on this repository.

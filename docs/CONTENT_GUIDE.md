@@ -3,7 +3,7 @@
 1. **Original only.** Never copy Pearson, textbook or website questions. Write your own topics and sentences.
 2. Every question has: `external_id`, `category` (one of 22 codes), `difficulty`, `instructions`, `content`,
    `answer`, `explanation`, `learning_objective`, `scoring_criteria`, `key_points`; options need `is_correct`.
-   Source/licence/author default to original / CC-BY-SA-4.0 / PTE Master AI contributors.
+   Source/licence/author default to original / CC-BY-SA-4.0 / TutorBot English AI contributors.
 3. Lessons follow **Learn → See → Try → Check → Review**, in short sentences and common words.
 4. Status: `draft`, `ai_generated`, `reviewed`, `published`. AI-generated items stay `ai_generated` until a
    `content_editor` approves them. Learners only see `published` (enforced by RLS).

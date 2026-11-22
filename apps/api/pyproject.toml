@@ -1,7 +1,7 @@
 [project]
-name = "pte-master-ai-api"
+name = "tutorbot-english-ai-api"
 version = "0.1.0"
-description = "PTE Master AI backend (FastAPI + Strawberry GraphQL)"
+description = "TutorBot English AI backend (FastAPI + Strawberry GraphQL)"
 requires-python = ">=3.12"
 license = "MIT"
 dependencies = [

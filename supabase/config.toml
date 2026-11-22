@@ -2,7 +2,7 @@
 # https://supabase.com/docs/guides/local-development/cli/config
 # A string used to distinguish different Supabase projects on the same host. Defaults to the
 # working directory name when running `supabase init`.
-project_id = "pte-master-ai"
+project_id = "tutorbot-english-ai"
 
 [api]
 enabled = true
@@ -245,11 +245,11 @@ otp_expiry = 3600
 # sender_name = "Admin"
 
 [auth.email.template.confirmation]
-subject = "Confirm your PTE Master AI account"
+subject = "Confirm your TutorBot English AI account"
 content_path = "./supabase/templates/confirmation.html"
 
 [auth.email.template.recovery]
-subject = "Reset your PTE Master AI password"
+subject = "Reset your TutorBot English AI password"
 content_path = "./supabase/templates/recovery.html"
 
 # Uncomment to customize email template

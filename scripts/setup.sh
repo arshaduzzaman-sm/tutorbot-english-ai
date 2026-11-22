@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-echo "== PTE Master AI setup =="
+echo "== TutorBot English AI setup =="
 scripts/check-deps.sh || { echo; echo "Please install the missing tools above, then run make setup again."; exit 1; }
 
 echo "== Installing app dependencies =="

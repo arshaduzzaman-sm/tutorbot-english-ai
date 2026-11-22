@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Checks the tools needed to run PTE Master AI locally and prints install help.
+# Checks the tools needed to run TutorBot English AI locally and prints install help.
 set -uo pipefail
 missing=0
 need() { # name, command, help

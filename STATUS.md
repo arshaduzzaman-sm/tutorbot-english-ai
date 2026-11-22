@@ -23,11 +23,11 @@
 - Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
 
 ## Next step
-1. Owner: create the public GitHub repo `pte-master-ai`, push, and confirm CI is green (last M1 box).
+1. Owner: create the empty public GitHub repo `tutorbot-english-ai`; then push and confirm CI is green (last M1 box).
 2. Then merge `m1-foundation` → `main`, create `m2-learning`, write the M2 plan here.
 
 ## Open questions / items for the owner
-- **Legal:** get advice on using "PTE" in the product name before public launch (docs/LEGAL_NOTES.md).
+- **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
 - **Privacy/terms pages** are templates, marked "to be reviewed by a lawyer".
 - **Unverified:** official CEFR-to-PTE score mapping. Pearson's 2025 update page says the CEFR alignment is
   unchanged but gives no table, so the app shows CEFR levels only (no PTE ranges).
