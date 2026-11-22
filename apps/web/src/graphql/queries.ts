@@ -56,9 +56,14 @@ export const LessonsQuery = graphql(`
   query Lessons {
     learningLevels { code name cefr }
     lessons {
-      id slug title summary estimatedMinutes
+      id slug title summary estimatedMinutes unitSlug
       level { code }
       progress { status bestScore }
+    }
+    units {
+      slug title summary locked
+      level { code }
+      progress { bestScore passed attempts }
     }
   }
 `);
@@ -66,7 +71,7 @@ export const LessonsQuery = graphql(`
 export const LessonQuery = graphql(`
   query Lesson($slug: String!) {
     lesson(slug: $slug) {
-      id slug title summary estimatedMinutes
+      id slug title summary estimatedMinutes locked unitSlug
       level { code name cefr }
       progress { status bestScore }
       sections { kind title bodyMd exercises { id type prompt options hint } }
@@ -121,5 +126,17 @@ export const PlacementQuery = graphql(`
   query Placement {
     placementTest { slug title estimatedMinutes items { id level skill prompt passage options hasAudio } }
     learningLevels { code name cefr }
+  }
+`);
+
+export const UnitTestQuery = graphql(`
+  query UnitTest($slug: String!) {
+    unit(slug: $slug) {
+      slug title summary locked
+      level { code name }
+      progress { bestScore passed attempts }
+      lessons { slug title progress { status } }
+      testItems { id type prompt options hint }
+    }
   }
 `);

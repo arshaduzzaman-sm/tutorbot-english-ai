@@ -93,7 +93,7 @@ def build() -> str:
     if len(cat_ids) != 22:
         errors.append(f"expected 22 question categories, found {len(cat_ids)}")
 
-    out += ["", "-- Lessons"]
+    out += ["", "-- Units and lessons"]
     lesson_count = 0
     for path in sorted((CONTENT / "lessons").glob("*.json")):
         data = load_json(path)
@@ -101,12 +101,36 @@ def build() -> str:
         if not level_id:
             errors.append(f"{path.name}: unknown level_code {data['level_code']}")
             continue
+        unit_of: dict[str, str] = {}
+        lesson_slugs = {lesson["slug"] for lesson in data["lessons"]}
+        for u_order, unit in enumerate(data.get("units", []), start=1):
+            unit_id = uid("unit", unit["slug"])
+            for slug in unit["lessons"]:
+                if slug not in lesson_slugs:
+                    errors.append(f"{path.name}/{unit['slug']}: unknown lesson {slug}")
+                if slug in unit_of:
+                    errors.append(f"{path.name}: lesson {slug} is in two units")
+                unit_of[slug] = unit_id
+            test = unit.get("test", [])
+            if len(test) < 5:
+                errors.append(f"{unit['slug']}: end-of-unit test needs at least 5 items")
+            for ex in test:
+                if ex.get("type") != "single_choice" or ex["answer"] not in ex["options"]:
+                    errors.append(f"{unit['slug']}/{ex.get('id')}: must be single_choice with the answer in options")
+            out.append(
+                "insert into public.units (id, slug, learning_level_id, title, summary, sort_order, test_items, status) values ("
+                f"{q(unit_id)}, {q(unit['slug'])}, {q(level_id)}, {q(unit['title'])}, {q(unit.get('summary', ''))}, "
+                f"{u_order}, {q(test)}, 'published');"
+            )
+        if data.get("units") and set(unit_of) != lesson_slugs:
+            errors.append(f"{path.name}: lessons not in any unit: {sorted(lesson_slugs - set(unit_of))}")
         for order, lesson in enumerate(data["lessons"], start=1):
             lesson_count += 1
             lid = uid("lesson", lesson["slug"])
+            unit_sql = q(unit_of[lesson["slug"]]) if lesson["slug"] in unit_of else "null"
             out.append(
-                "insert into public.lessons (id, slug, learning_level_id, title, summary, sort_order, estimated_minutes, status) values ("
-                f"{q(lid)}, {q(lesson['slug'])}, {q(level_id)}, {q(lesson['title'])}, {q(lesson['summary'])}, {order}, "
+                "insert into public.lessons (id, slug, learning_level_id, unit_id, title, summary, sort_order, estimated_minutes, status) values ("
+                f"{q(lid)}, {q(lesson['slug'])}, {q(level_id)}, {unit_sql}, {q(lesson['title'])}, {q(lesson['summary'])}, {order}, "
                 f"{lesson.get('estimated_minutes', 10)}, 'published');"
             )
             for s_order, sec in enumerate(lesson["sections"], start=1):

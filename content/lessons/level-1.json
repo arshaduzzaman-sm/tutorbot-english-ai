@@ -7,15 +7,67 @@
       "summary": "Learn the 26 letters, capital and small letters, and the five vowel letters.",
       "estimated_minutes": 10,
       "sections": [
-        {"kind": "learn", "title": "26 letters", "body_md": "English has **26 letters**.\n\nEach letter has a **capital** form (A) and a **small** form (a).\n\nFive letters are **vowels**: a, e, i, o, u. The other 21 letters are **consonants**."},
-        {"kind": "see", "title": "Examples", "body_md": "- **A a**: apple\n- **B b**: book\n- **C c**: cat\n- **E e**: egg\n- **O o**: orange\n\nWe use a capital letter at the start of a sentence and for names: *Maria lives in Dhaka.*"},
-        {"kind": "try", "title": "Try it", "body_md": "Say the vowels out loud: **a, e, i, o, u**.", "exercises": [
-          {"id": "alpha-try-1", "type": "single_choice", "prompt": "Which letter is a vowel?", "options": ["b", "e", "t"], "answer": "e", "hint": "There are five vowels: a, e, i, o, u.", "explanation": "**e** is one of the five vowel letters."}
-        ]},
-        {"kind": "check", "title": "Check", "body_md": "Answer the questions.", "exercises": [
-          {"id": "alpha-check-1", "type": "single_choice", "prompt": "How many letters are in the English alphabet?", "options": ["24", "26", "28"], "answer": "26", "explanation": "The English alphabet has 26 letters."},
-          {"id": "alpha-check-2", "type": "single_choice", "prompt": "Which sentence uses capital letters correctly?", "options": ["my name is ali.", "My name is Ali.", "my Name is ali."], "answer": "My name is Ali.", "explanation": "Use a capital at the start of a sentence and for names."}
-        ]}
+        {
+          "kind": "learn",
+          "title": "26 letters",
+          "body_md": "English has **26 letters**.\n\nEach letter has a **capital** form (A) and a **small** form (a).\n\nFive letters are **vowels**: a, e, i, o, u. The other 21 letters are **consonants**."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- **A a**: apple\n- **B b**: book\n- **C c**: cat\n- **E e**: egg\n- **O o**: orange\n\nWe use a capital letter at the start of a sentence and for names: *Maria lives in Dhaka.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Say the vowels out loud: **a, e, i, o, u**.",
+          "exercises": [
+            {
+              "id": "alpha-try-1",
+              "type": "single_choice",
+              "prompt": "Which letter is a vowel?",
+              "options": [
+                "b",
+                "e",
+                "t"
+              ],
+              "answer": "e",
+              "hint": "There are five vowels: a, e, i, o, u.",
+              "explanation": "**e** is one of the five vowel letters."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "alpha-check-1",
+              "type": "single_choice",
+              "prompt": "How many letters are in the English alphabet?",
+              "options": [
+                "24",
+                "26",
+                "28"
+              ],
+              "answer": "26",
+              "explanation": "The English alphabet has 26 letters."
+            },
+            {
+              "id": "alpha-check-2",
+              "type": "single_choice",
+              "prompt": "Which sentence uses capital letters correctly?",
+              "options": [
+                "my name is ali.",
+                "My name is Ali.",
+                "my Name is ali."
+              ],
+              "answer": "My name is Ali.",
+              "explanation": "Use a capital at the start of a sentence and for names."
+            }
+          ]
+        }
       ]
     },
     {
@@ -24,15 +76,67 @@
       "summary": "Say hello, say goodbye and introduce yourself.",
       "estimated_minutes": 10,
       "sections": [
-        {"kind": "learn", "title": "Hello and goodbye", "body_md": "We **greet** people when we meet them.\n\n- *Hello* and *Hi* work at any time.\n- *Good morning* is for the morning.\n- *Goodbye* and *Bye* are for when we leave."},
-        {"kind": "see", "title": "A short conversation", "body_md": "**Sam:** Hello! My name is Sam.\n\n**Lina:** Hi, Sam. I am Lina. Nice to meet you.\n\n**Sam:** Nice to meet you too."},
-        {"kind": "try", "title": "Try it", "body_md": "Introduce yourself: *Hello, my name is ...*", "exercises": [
-          {"id": "greet-try-1", "type": "single_choice", "prompt": "It is 8 in the morning. What do you say?", "options": ["Good night", "Good morning", "Goodbye"], "answer": "Good morning", "hint": "Think about the time of day.", "explanation": "*Good morning* is a greeting for the morning."}
-        ]},
-        {"kind": "check", "title": "Check", "body_md": "Answer the questions.", "exercises": [
-          {"id": "greet-check-1", "type": "single_choice", "prompt": "Someone says \"Nice to meet you.\" What is a good reply?", "options": ["Nice to meet you too.", "Goodbye.", "I am fine."], "answer": "Nice to meet you too.", "explanation": "We reply with the same words plus *too*."},
-          {"id": "greet-check-2", "type": "single_choice", "prompt": "Which word do we say when we leave?", "options": ["Hello", "Goodbye", "Hi"], "answer": "Goodbye", "explanation": "*Goodbye* is for leaving."}
-        ]}
+        {
+          "kind": "learn",
+          "title": "Hello and goodbye",
+          "body_md": "We **greet** people when we meet them.\n\n- *Hello* and *Hi* work at any time.\n- *Good morning* is for the morning.\n- *Goodbye* and *Bye* are for when we leave."
+        },
+        {
+          "kind": "see",
+          "title": "A short conversation",
+          "body_md": "**Sam:** Hello! My name is Sam.\n\n**Lina:** Hi, Sam. I am Lina. Nice to meet you.\n\n**Sam:** Nice to meet you too."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Introduce yourself: *Hello, my name is ...*",
+          "exercises": [
+            {
+              "id": "greet-try-1",
+              "type": "single_choice",
+              "prompt": "It is 8 in the morning. What do you say?",
+              "options": [
+                "Good night",
+                "Good morning",
+                "Goodbye"
+              ],
+              "answer": "Good morning",
+              "hint": "Think about the time of day.",
+              "explanation": "*Good morning* is a greeting for the morning."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "greet-check-1",
+              "type": "single_choice",
+              "prompt": "Someone says \"Nice to meet you.\" What is a good reply?",
+              "options": [
+                "Nice to meet you too.",
+                "Goodbye.",
+                "I am fine."
+              ],
+              "answer": "Nice to meet you too.",
+              "explanation": "We reply with the same words plus *too*."
+            },
+            {
+              "id": "greet-check-2",
+              "type": "single_choice",
+              "prompt": "Which word do we say when we leave?",
+              "options": [
+                "Hello",
+                "Goodbye",
+                "Hi"
+              ],
+              "answer": "Goodbye",
+              "explanation": "*Goodbye* is for leaving."
+            }
+          ]
+        }
       ]
     },
     {
@@ -41,15 +145,66 @@
       "summary": "Words have jobs: nouns, verbs, adjectives and more.",
       "estimated_minutes": 12,
       "sections": [
-        {"kind": "learn", "title": "Words have jobs", "body_md": "Every word has a **job** in a sentence.\n\n- A **noun** names a thing, person or place: *book, teacher, city*.\n- A **verb** is an action or state: *run, eat, is*.\n- An **adjective** describes a noun: *big, happy, red*.\n- An **adverb** describes a verb: *quickly, slowly*."},
-        {"kind": "see", "title": "Examples", "body_md": "*The **happy** (adjective) **child** (noun) **runs** (verb) **quickly** (adverb).*"},
-        {"kind": "try", "title": "Try it", "body_md": "Find the verb.", "exercises": [
-          {"id": "pos-try-1", "type": "single_choice", "prompt": "In \"Birds sing\", which word is the verb?", "options": ["Birds", "sing"], "answer": "sing", "hint": "The verb is the action.", "explanation": "*sing* is the action, so it is the verb."}
-        ]},
-        {"kind": "check", "title": "Check", "body_md": "Answer the questions.", "exercises": [
-          {"id": "pos-check-1", "type": "single_choice", "prompt": "Which word is an adjective?", "options": ["table", "blue", "write"], "answer": "blue", "explanation": "*blue* describes a noun, so it is an adjective."},
-          {"id": "pos-check-2", "type": "single_choice", "prompt": "Which word is a noun?", "options": ["school", "quickly", "eat"], "answer": "school", "explanation": "*school* names a place, so it is a noun."}
-        ]}
+        {
+          "kind": "learn",
+          "title": "Words have jobs",
+          "body_md": "Every word has a **job** in a sentence.\n\n- A **noun** names a thing, person or place: *book, teacher, city*.\n- A **verb** is an action or state: *run, eat, is*.\n- An **adjective** describes a noun: *big, happy, red*.\n- An **adverb** describes a verb: *quickly, slowly*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*The **happy** (adjective) **child** (noun) **runs** (verb) **quickly** (adverb).*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Find the verb.",
+          "exercises": [
+            {
+              "id": "pos-try-1",
+              "type": "single_choice",
+              "prompt": "In \"Birds sing\", which word is the verb?",
+              "options": [
+                "Birds",
+                "sing"
+              ],
+              "answer": "sing",
+              "hint": "The verb is the action.",
+              "explanation": "*sing* is the action, so it is the verb."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "pos-check-1",
+              "type": "single_choice",
+              "prompt": "Which word is an adjective?",
+              "options": [
+                "table",
+                "blue",
+                "write"
+              ],
+              "answer": "blue",
+              "explanation": "*blue* describes a noun, so it is an adjective."
+            },
+            {
+              "id": "pos-check-2",
+              "type": "single_choice",
+              "prompt": "Which word is a noun?",
+              "options": [
+                "school",
+                "quickly",
+                "eat"
+              ],
+              "answer": "school",
+              "explanation": "*school* names a place, so it is a noun."
+            }
+          ]
+        }
       ]
     },
     {
@@ -58,15 +213,66 @@
       "summary": "Make plural nouns with -s and -es, and learn some special plurals.",
       "estimated_minutes": 12,
       "sections": [
-        {"kind": "learn", "title": "Singular and plural", "body_md": "**Singular** means one. **Plural** means more than one.\n\n- Most nouns add **-s**: *book → books*.\n- Nouns ending in -s, -sh, -ch, -x add **-es**: *box → boxes*.\n- Some nouns are special: *child → children, man → men*."},
-        {"kind": "see", "title": "Examples", "body_md": "- one **cat**, two **cats**\n- one **bus**, two **buses**\n- one **person**, two **people**"},
-        {"kind": "try", "title": "Try it", "body_md": "Make the plural.", "exercises": [
-          {"id": "noun-try-1", "type": "single_choice", "prompt": "One watch, two ...", "options": ["watchs", "watches"], "answer": "watches", "hint": "The word ends in -ch.", "explanation": "Nouns ending in -ch add -es: *watches*."}
-        ]},
-        {"kind": "check", "title": "Check", "body_md": "Answer the questions.", "exercises": [
-          {"id": "noun-check-1", "type": "single_choice", "prompt": "What is the plural of \"child\"?", "options": ["childs", "children", "childes"], "answer": "children", "explanation": "*child* has a special plural: *children*."},
-          {"id": "noun-check-2", "type": "single_choice", "prompt": "What is the plural of \"pen\"?", "options": ["pens", "penes", "pen"], "answer": "pens", "explanation": "Most nouns add -s."}
-        ]}
+        {
+          "kind": "learn",
+          "title": "Singular and plural",
+          "body_md": "**Singular** means one. **Plural** means more than one.\n\n- Most nouns add **-s**: *book → books*.\n- Nouns ending in -s, -sh, -ch, -x add **-es**: *box → boxes*.\n- Some nouns are special: *child → children, man → men*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- one **cat**, two **cats**\n- one **bus**, two **buses**\n- one **person**, two **people**"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Make the plural.",
+          "exercises": [
+            {
+              "id": "noun-try-1",
+              "type": "single_choice",
+              "prompt": "One watch, two ...",
+              "options": [
+                "watchs",
+                "watches"
+              ],
+              "answer": "watches",
+              "hint": "The word ends in -ch.",
+              "explanation": "Nouns ending in -ch add -es: *watches*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "noun-check-1",
+              "type": "single_choice",
+              "prompt": "What is the plural of \"child\"?",
+              "options": [
+                "childs",
+                "children",
+                "childes"
+              ],
+              "answer": "children",
+              "explanation": "*child* has a special plural: *children*."
+            },
+            {
+              "id": "noun-check-2",
+              "type": "single_choice",
+              "prompt": "What is the plural of \"pen\"?",
+              "options": [
+                "pens",
+                "penes",
+                "pen"
+              ],
+              "answer": "pens",
+              "explanation": "Most nouns add -s."
+            }
+          ]
+        }
       ]
     },
     {
@@ -75,15 +281,212 @@
       "summary": "Use I, you, he, she, it, we and they instead of repeating nouns.",
       "estimated_minutes": 10,
       "sections": [
-        {"kind": "learn", "title": "Words that replace nouns", "body_md": "A **pronoun** takes the place of a noun, so we do not repeat it.\n\n| Person | One | Many |\n|---|---|---|\n| 1st | I | we |\n| 2nd | you | you |\n| 3rd | he / she / it | they |"},
-        {"kind": "see", "title": "Examples", "body_md": "*Anna is a doctor. **She** works in a hospital.*\n\n*My brothers play football. **They** play every Friday.*"},
-        {"kind": "try", "title": "Try it", "body_md": "Choose the pronoun.", "exercises": [
-          {"id": "pron-try-1", "type": "single_choice", "prompt": "Tom is tall. ... plays basketball.", "options": ["She", "He", "They"], "answer": "He", "hint": "Tom is one man.", "explanation": "For one man we use *he*."}
-        ]},
-        {"kind": "check", "title": "Check", "body_md": "Answer the questions.", "exercises": [
-          {"id": "pron-check-1", "type": "single_choice", "prompt": "The books are new. ... are on the table.", "options": ["It", "They", "We"], "answer": "They", "explanation": "For many things we use *they*."},
-          {"id": "pron-check-2", "type": "single_choice", "prompt": "My sister and I are students. ... study English.", "options": ["We", "They", "She"], "answer": "We", "explanation": "*My sister and I* includes me, so we use *we*."}
-        ]}
+        {
+          "kind": "learn",
+          "title": "Words that replace nouns",
+          "body_md": "A **pronoun** takes the place of a noun, so we do not repeat it.\n\n| Person | One | Many |\n|---|---|---|\n| 1st | I | we |\n| 2nd | you | you |\n| 3rd | he / she / it | they |"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*Anna is a doctor. **She** works in a hospital.*\n\n*My brothers play football. **They** play every Friday.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Choose the pronoun.",
+          "exercises": [
+            {
+              "id": "pron-try-1",
+              "type": "single_choice",
+              "prompt": "Tom is tall. ... plays basketball.",
+              "options": [
+                "She",
+                "He",
+                "They"
+              ],
+              "answer": "He",
+              "hint": "Tom is one man.",
+              "explanation": "For one man we use *he*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "pron-check-1",
+              "type": "single_choice",
+              "prompt": "The books are new. ... are on the table.",
+              "options": [
+                "It",
+                "They",
+                "We"
+              ],
+              "answer": "They",
+              "explanation": "For many things we use *they*."
+            },
+            {
+              "id": "pron-check-2",
+              "type": "single_choice",
+              "prompt": "My sister and I are students. ... study English.",
+              "options": [
+                "We",
+                "They",
+                "She"
+              ],
+              "answer": "We",
+              "explanation": "*My sister and I* includes me, so we use *we*."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "slug": "l1-u1-first-steps",
+      "title": "Unit 1: First steps",
+      "summary": "Letters and your first words: say hello and introduce yourself.",
+      "lessons": [
+        "the-alphabet",
+        "basic-vocabulary-greetings"
+      ],
+      "test": [
+        {
+          "id": "u11-t1",
+          "type": "single_choice",
+          "prompt": "Which of these is a vowel?",
+          "options": [
+            "k",
+            "o",
+            "s"
+          ],
+          "answer": "o",
+          "explanation": "The vowels are a, e, i, o and u."
+        },
+        {
+          "id": "u11-t2",
+          "type": "single_choice",
+          "prompt": "Which letter comes after \"g\"?",
+          "options": [
+            "f",
+            "h",
+            "j"
+          ],
+          "answer": "h",
+          "explanation": "The order is ... f, g, h, i, j ..."
+        },
+        {
+          "id": "u11-t3",
+          "type": "single_choice",
+          "prompt": "Which sentence uses capital letters correctly?",
+          "options": [
+            "i live in london.",
+            "I live in London.",
+            "I Live In london."
+          ],
+          "answer": "I live in London.",
+          "explanation": "Use a capital for \"I\", the first word, and names of places."
+        },
+        {
+          "id": "u11-t4",
+          "type": "single_choice",
+          "prompt": "It is 9 at night and you are going to bed. What do you say?",
+          "options": [
+            "Good morning",
+            "Good night",
+            "Hello"
+          ],
+          "answer": "Good night",
+          "explanation": "*Good night* is what we say late in the evening or before sleep."
+        },
+        {
+          "id": "u11-t5",
+          "type": "single_choice",
+          "prompt": "Complete: \"Hello, my ___ is Ana.\"",
+          "options": [
+            "name",
+            "names",
+            "named"
+          ],
+          "answer": "name",
+          "explanation": "We say *My name is ...* to introduce ourselves."
+        }
+      ]
+    },
+    {
+      "slug": "l1-u2-words-and-sentences",
+      "title": "Unit 2: Words and sentences",
+      "summary": "Kinds of words, one and many, and words like I, you and they.",
+      "lessons": [
+        "parts-of-speech",
+        "nouns-singular-plural",
+        "pronouns"
+      ],
+      "test": [
+        {
+          "id": "u12-t1",
+          "type": "single_choice",
+          "prompt": "In \"The cat sleeps\", which word is a verb?",
+          "options": [
+            "The",
+            "cat",
+            "sleeps"
+          ],
+          "answer": "sleeps",
+          "explanation": "A verb is an action or state word: *sleeps*."
+        },
+        {
+          "id": "u12-t2",
+          "type": "single_choice",
+          "prompt": "What is the plural of \"box\"?",
+          "options": [
+            "boxs",
+            "boxes",
+            "boxies"
+          ],
+          "answer": "boxes",
+          "explanation": "Nouns ending in -x add -es: box → boxes."
+        },
+        {
+          "id": "u12-t3",
+          "type": "single_choice",
+          "prompt": "What is the plural of \"child\"?",
+          "options": [
+            "childs",
+            "children",
+            "childes"
+          ],
+          "answer": "children",
+          "explanation": "*Child* is irregular: one child, two children."
+        },
+        {
+          "id": "u12-t4",
+          "type": "single_choice",
+          "prompt": "Maria is my friend. ___ is from Spain.",
+          "options": [
+            "He",
+            "She",
+            "They"
+          ],
+          "answer": "She",
+          "explanation": "We use *she* for one woman or girl."
+        },
+        {
+          "id": "u12-t5",
+          "type": "single_choice",
+          "prompt": "Tom and I are students. ___ study English.",
+          "options": [
+            "We",
+            "They",
+            "You"
+          ],
+          "answer": "We",
+          "explanation": "*Tom and I* means *we*."
+        }
       ]
     }
   ]

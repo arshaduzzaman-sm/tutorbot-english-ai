@@ -245,10 +245,21 @@ class Lesson:
     summary: str
     estimated_minutes: int
     level_id: strawberry.Private[uuid.UUID]
+    unit_id: strawberry.Private[uuid.UUID | None] = None
 
     @strawberry.field
     async def level(self, info: CtxInfo) -> LearningLevel | None:
         return await _level(info, self.level_id)
+
+    @strawberry.field(description="Slug of the unit this lesson belongs to; null if none")
+    async def unit_slug(self, info: CtxInfo) -> str | None:
+        st = next((s for s in await info.context.unit_states() if s.id == self.unit_id), None)
+        return st.slug if st else None
+
+    @strawberry.field(description="True when the lesson's unit is still locked for the viewer")
+    async def locked(self, info: CtxInfo) -> bool:
+        st = next((s for s in await info.context.unit_states() if s.id == self.unit_id), None)
+        return bool(st and st.locked)
 
     @strawberry.field(description="The viewer's progress on this lesson; null if not started")
     async def progress(self, info: CtxInfo) -> LessonProgress | None:
@@ -294,12 +305,97 @@ class Lesson:
         return out
 
 
-LESSON_COLUMNS = "l.id, l.slug, l.title, l.summary, l.estimated_minutes, l.learning_level_id"
+LESSON_COLUMNS = "l.id, l.slug, l.title, l.summary, l.estimated_minutes, l.learning_level_id, l.unit_id"
 
 
 def _lesson(r: Any) -> Lesson:
     return Lesson(
-        id=strawberry.ID(str(r[0])), slug=r[1], title=r[2], summary=r[3], estimated_minutes=r[4], level_id=r[5]
+        id=strawberry.ID(str(r[0])),
+        slug=r[1],
+        title=r[2],
+        summary=r[3],
+        estimated_minutes=r[4],
+        level_id=r[5],
+        unit_id=r[6],
+    )
+
+
+@strawberry.type
+class UnitProgress:
+    best_score: float
+    attempts: int
+    passed: bool
+
+
+@strawberry.type
+class Unit:
+    id: strawberry.ID
+    slug: str
+    title: str
+    summary: str
+    level_id: strawberry.Private[uuid.UUID]
+    db_id: strawberry.Private[uuid.UUID]
+    test_items_raw: strawberry.Private[list[dict[str, Any]]]
+
+    async def _state(self, info: CtxInfo) -> Any:
+        return next(s for s in await info.context.unit_states() if s.id == self.db_id)
+
+    @strawberry.field
+    async def level(self, info: CtxInfo) -> LearningLevel | None:
+        return await _level(info, self.level_id)
+
+    @strawberry.field(description="Locked until the unit before it is passed (or the learner placed higher)")
+    async def locked(self, info: CtxInfo) -> bool:
+        return bool((await self._state(info)).locked)
+
+    @strawberry.field
+    async def progress(self, info: CtxInfo) -> UnitProgress | None:
+        st = await self._state(info)
+        if not st.attempts:
+            return None
+        return UnitProgress(best_score=st.best_score or 0.0, attempts=st.attempts, passed=st.passed)
+
+    @strawberry.field
+    async def lessons(self, info: CtxInfo) -> list[Lesson]:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608
+                "where l.unit_id = :u and l.status = 'published' and l.deleted_at is null order by l.sort_order"
+            ),
+            {"u": self.db_id},
+        )
+        return [_lesson(r) for r in rows.all()]
+
+    @strawberry.field(description="End-of-unit test questions, without answers")
+    def test_items(self) -> list[Exercise]:
+        return [
+            Exercise(
+                id=str(e["id"]),
+                type=str(e["type"]),
+                prompt=str(e["prompt"]),
+                options=list(e.get("options", [])),
+                hint=None,
+            )
+            for e in self.test_items_raw
+        ]
+
+
+UNIT_SQL = (
+    "select u.id, u.slug, u.title, u.summary, u.learning_level_id, u.test_items from public.units u "
+    "join public.learning_levels lv on lv.id = u.learning_level_id "
+    "where u.status = 'published' and u.deleted_at is null "
+)
+
+
+def _unit(r: Any) -> Unit:
+    return Unit(
+        id=strawberry.ID(str(r[0])),
+        slug=r[1],
+        title=r[2],
+        summary=r[3],
+        level_id=r[4],
+        db_id=r[0],
+        test_items_raw=list(r[5] or []),
     )
 
 
@@ -721,6 +817,19 @@ class Query:
                 for i in items
             ],
         )
+
+    @strawberry.field(description="Published units in course order, optionally for one level")
+    async def units(self, info: CtxInfo, level_code: int | None = None) -> list[Unit]:
+        rows = await info.context.execute(
+            text(UNIT_SQL + "and (cast(:code as int) is null or lv.code = :code) order by lv.code, u.sort_order"),
+            {"code": level_code},
+        )
+        return [_unit(r) for r in rows.all()]
+
+    @strawberry.field
+    async def unit(self, info: CtxInfo, slug: str) -> Unit | None:
+        r = (await info.context.execute(text(UNIT_SQL + "and u.slug = :slug"), {"slug": slug})).first()
+        return _unit(r) if r else None
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

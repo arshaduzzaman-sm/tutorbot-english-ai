@@ -28,6 +28,16 @@ class Context(BaseContext):
         self.category_loader: DataLoader[uuid.UUID, QuestionCategory | None] = DataLoader(self._load_categories)
         self.progress_loader: DataLoader[uuid.UUID, dict[str, Any] | None] = DataLoader(self._load_progress)
         self.query_count = 0
+        self._unit_states: list[Any] | None = None
+
+    async def unit_states(self) -> list[Any]:
+        """Unit lock/progress states for the viewer, computed once per request."""
+        from app.services.units import unit_states
+
+        async with self._lock:
+            if self._unit_states is None:
+                self._unit_states = await unit_states(self.session, self.user.id)
+            return self._unit_states
 
     async def execute(self, stmt: Executable, params: dict[str, Any] | None = None) -> Result[Any]:
         async with self._lock:

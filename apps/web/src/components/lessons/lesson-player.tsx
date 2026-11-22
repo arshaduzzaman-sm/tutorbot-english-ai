@@ -17,7 +17,7 @@ type Exercise = LessonData["sections"][number]["exercises"][number];
 type Result = { id: string; correct: boolean; correct_answer: string; explanation: string };
 type CheckOutcome = { score_ratio: number; passed: boolean; pass_ratio: number; results: Result[] };
 
-function Choices({
+export function Choices({
   ex, value, onChange, disabled, label,
 }: { ex: Exercise; value?: string; onChange: (v: string) => void; disabled?: boolean; label: string }) {
   return (
