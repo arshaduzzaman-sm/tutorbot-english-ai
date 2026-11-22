@@ -4,7 +4,7 @@ SHELL := /bin/bash
 SUPABASE_EXCLUDE := studio,imgproxy,edge-runtime,logflare,vector,supavisor,realtime,postgres-meta
 API := apps/api
 
-.PHONY: help setup start stop dev dev-api dev-web test test-api test-web test-e2e lint typecheck codegen seed audio reset update mock status
+.PHONY: help setup start stop dev dev-api dev-web test test-api test-web test-e2e lint typecheck codegen seed import audio reset update mock status
 
 help: ## Show all commands
 	@grep -E '^[a-z0-9-]+:.*##' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -56,6 +56,9 @@ codegen: ## Regenerate GraphQL + OpenAPI types for the frontend
 
 seed: ## Rebuild supabase/seed.sql from content/
 	python3 scripts/build_seed.py
+
+import: ## Check and import questions: make import FILE=path/to/file.csv [STATUS=draft]
+	python3 scripts/import_content.py $(FILE) $(if $(STATUS),--status $(STATUS),)
 
 audio: ## Pre-generate listening audio with Kokoro (optional; browser voice is the fallback)
 	python3 scripts/generate_audio.py

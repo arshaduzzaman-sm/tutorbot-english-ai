@@ -14,6 +14,9 @@ import sys
 import uuid
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from content_rules import check_question  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 OUT = ROOT / "supabase" / "seed.sql"
@@ -154,21 +157,12 @@ def build() -> str:
             if ext in seen:
                 errors.append(f"duplicate external_id {ext}")
             seen.add(ext)
-            if item["category"] not in cat_ids:
-                errors.append(f"{ext}: unknown category {item['category']}")
+            problems = check_question(item, set(cat_ids))
+            if problems:
+                errors += problems
                 continue
-            if item["difficulty"] not in DIFFICULTIES:
-                errors.append(f"{ext}: bad difficulty")
-            for field in ("instructions", "explanation", "learning_objective"):
-                if not item.get(field):
-                    errors.append(f"{ext}: missing {field}")
             options = item.get("options", [])
-            if options and not any(o["is_correct"] for o in options):
-                errors.append(f"{ext}: no correct option")
-            if options:
-                correct = sorted(o["label"] for o in options if o["is_correct"])
-                if correct != sorted(item["answer"].get("correct", [])):
-                    errors.append(f"{ext}: answer.correct does not match options")
+            status = item.get("status", "published")
             per_cat[item["category"]] = per_cat.get(item["category"], 0) + 1
             qid = uid("question", ext)
             out.append(
@@ -176,7 +170,7 @@ def build() -> str:
                 "learning_objective, scoring_criteria, key_points, status) values ("
                 f"{q(qid)}, {q(ext)}, {q(cat_ids[item['category']])}, {q(item['difficulty'])}, {q(item['instructions'])}, "
                 f"{q(item['content'])}, {q(item['answer'])}, {q(item['explanation'])}, {q(item['learning_objective'])}, "
-                f"{text_array(item.get('scoring_criteria', []))}, {text_array(item.get('key_points', []))}, 'published');"
+                f"{text_array(item.get('scoring_criteria', []))}, {text_array(item.get('key_points', []))}, {q(status)});"
             )
             for o_order, opt in enumerate(options, start=1):
                 out.append(
@@ -184,7 +178,7 @@ def build() -> str:
                     f"{q(uid('option', ext + ':' + opt['label']))}, {q(qid)}, {q(opt['label'])}, {q(opt['body'])}, {q(opt['is_correct'])}, {o_order});"
                 )
     for code in cat_ids:
-        if per_cat.get(code, 0) < 2:
+        if per_cat.get(code, 0) < 2:  # counts every status; learners only see published
             errors.append(f"category {code} has fewer than 2 questions")
 
     out += ["", "-- Placement (diagnostic) test"]

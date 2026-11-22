@@ -29,11 +29,12 @@
 - [x] PR D `m2-mistake-review`: mistake notebook + spaced review, new table `review_items` (pytest 59, vitest 21, e2e 23)
 - [x] PR E `m2-placement-plan`: 18-item placement test, level + daily plan, tables `placement_tests`, `study_plans` (pytest 63, vitest 22, e2e 24)
 - [x] PR F1 `m2-units`: units, end-of-unit tests, unlock rule, tables `units`, `unit_progress` (pytest 65, vitest 23, e2e 25)
-- [ ] PR F2+ more content (Levels 1-3, about 60 lessons) + content import script
+- [x] PR F2 `m2-content-import`: `make import` (CSV/JSON), shared content rules, instructions rewritten (pytest 68)
+- [ ] PR F3+ more content (Levels 1-3, about 60 lessons, 30+ questions per reading/listening type)
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR F2 (content).
+2. Agent: continue with PR F3 (content).
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
