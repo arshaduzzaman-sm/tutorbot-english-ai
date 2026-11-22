@@ -106,6 +106,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/placement/items/{item_id}/speech": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Speech */
+        get: operations["speech_api_v1_placement_items__item_id__speech_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/placement/submit": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Submit */
+        post: operations["submit_api_v1_placement_submit_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/practice/questions/{question_id}/answer": {
         parameters: {
             query?: never;
@@ -325,6 +359,38 @@ export interface components {
             /** Target Score */
             target_score: number;
         };
+        /** PlacementIn */
+        PlacementIn: {
+            /** Answers */
+            answers: {
+                [key: string]: string;
+            };
+            /** Duration Seconds */
+            duration_seconds?: number | null;
+        };
+        /** PlacementOut */
+        PlacementOut: {
+            /** Correct */
+            correct: number;
+            /** Level Scores */
+            level_scores: {
+                [key: string]: number;
+            };
+            /** Note */
+            note: string;
+            /** Plan */
+            plan: {
+                [key: string]: unknown;
+            };
+            /** Recommended Level */
+            recommended_level: number;
+            /** Skill Scores */
+            skill_scores: {
+                [key: string]: number | null;
+            };
+            /** Total */
+            total: number;
+        };
         /** SpeechOut */
         SpeechOut: {
             /** External Id */
@@ -531,6 +597,70 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["OnboardingOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    speech_api_v1_placement_items__item_id__speech_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                item_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["SpeechOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    submit_api_v1_placement_submit_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["PlacementIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PlacementOut"];
                 };
             };
             /** @description Validation Error */

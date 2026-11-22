@@ -17,6 +17,7 @@ from app.core.config import get_settings
 from app.db import models
 from app.graphql.context import Context
 from app.services.lessons import public_exercise
+from app.services.placement import public_item
 from app.services.practice import AUTO_MARKED, public_content
 from app.services.progress import AttemptSignal, skill_stats, study_streak, weak_categories
 
@@ -159,6 +160,34 @@ def _review_item(row: Any) -> ReviewItem:
         mastered=r[13] is not None,
         question=_question(r[:8]),
     )
+
+
+@strawberry.type
+class PlacementItem:
+    id: str
+    level: int
+    skill: str
+    prompt: str
+    passage: str | None
+    options: list[str]
+    has_audio: bool
+
+
+@strawberry.type
+class PlacementTest:
+    slug: str
+    title: str
+    estimated_minutes: int
+    items: list[PlacementItem]
+
+
+@strawberry.type
+class StudyPlan:
+    id: strawberry.ID
+    created_at: datetime
+    recommended_level_code: int
+    skill_scores: JSON
+    plan: JSON
 
 
 async def _level(info: CtxInfo, level_id: uuid.UUID | None) -> LearningLevel | None:
@@ -500,6 +529,26 @@ class Viewer:
         )
         return int(rows.scalar_one())
 
+    @strawberry.field(description="The learner's latest study plan from the placement test; null if not taken")
+    async def study_plan(self, info: CtxInfo) -> StudyPlan | None:
+        rows = await info.context.execute(
+            text(
+                "select id, created_at, recommended_level_code, skill_scores, plan from public.study_plans "
+                "where user_id = :u order by created_at desc limit 1"
+            ),
+            {"u": self.id},
+        )
+        r = rows.mappings().first()
+        if r is None:
+            return None
+        return StudyPlan(
+            id=strawberry.ID(str(r["id"])),
+            created_at=r["created_at"],
+            recommended_level_code=int(r["recommended_level_code"]),
+            skill_scores=r["skill_scores"],
+            plan=r["plan"],
+        )
+
     @strawberry.field
     async def weak_areas(self, info: CtxInfo) -> list[WeakArea]:
         weak = weak_categories(s for s, _ in await _signals(info))
@@ -642,6 +691,36 @@ class Query:
         )
         r = rows.first()
         return _question(r) if r else None
+
+    @strawberry.field(description="The current placement (diagnostic) test, without answers")
+    async def placement_test(self, info: CtxInfo) -> PlacementTest | None:
+        rows = await info.context.execute(
+            text(
+                "select slug, title, estimated_minutes, items from public.placement_tests "
+                "where status = 'published' order by version desc limit 1"
+            )
+        )
+        r = rows.mappings().first()
+        if r is None:
+            return None
+        items = [public_item(i) for i in r["items"]]
+        return PlacementTest(
+            slug=r["slug"],
+            title=r["title"],
+            estimated_minutes=int(r["estimated_minutes"]),
+            items=[
+                PlacementItem(
+                    id=i["id"],
+                    level=int(i["level"]),
+                    skill=i["skill"],
+                    prompt=i["prompt"],
+                    passage=i.get("passage"),
+                    options=list(i["options"]),
+                    has_audio=i["has_audio"],
+                )
+                for i in items
+            ],
+        )
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

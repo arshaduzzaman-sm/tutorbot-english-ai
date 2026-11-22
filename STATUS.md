@@ -27,12 +27,12 @@
 - [x] PR B `m2-reading-practice`: 5 reading types, Learn + Practice modes, auto-marking (pytest 55, vitest 18, e2e 21)
 - [x] PR C `m2-listening-practice`: 7 auto-marked listening types, audio player, Kokoro script (pytest 57, vitest 20, e2e 22)
 - [x] PR D `m2-mistake-review`: mistake notebook + spaced review, new table `review_items` (pytest 59, vitest 21, e2e 23)
-- [ ] PR E placement test + study plan
+- [x] PR E `m2-placement-plan`: 18-item placement test, level + daily plan, tables `placement_tests`, `study_plans` (pytest 63, vitest 22, e2e 24)
 - [ ] PR F more content (Levels 1-3) + content import script
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR E.
+2. Agent: continue with PR F.
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
@@ -50,6 +50,8 @@
 ## Known issues and limitations
 - AI is mock-only (demo banner shown). Local models arrive in M3.
 - Streak and "today" use UTC days.
+- Placement test covers reading, listening and writing (grammar/words) only; speaking joins in M3.
+  Levels 5-6 have 3 items each, so the top of the range is a rough guide.
 - Mistake notebook covers practice questions; wrong answers inside lessons are not saved there yet.
 - `make` needs a Unix shell; Windows users use WSL2 or `scripts/setup.ps1` (not tested on Windows/macOS yet).
 

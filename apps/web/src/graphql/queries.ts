@@ -24,6 +24,7 @@ export const DashboardQuery = graphql(`
       streakDays
       todayMinutes
       reviewDueCount
+      studyPlan { createdAt recommendedLevelCode plan }
       recentAttempts(limit: 5) { id createdAt isCorrect scoreRatio category { code name } }
       recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }
       weakAreas { accuracy attempts category { code name } }
@@ -113,5 +114,12 @@ export const ReviewQuery = graphql(`
         }
       }
     }
+  }
+`);
+
+export const PlacementQuery = graphql(`
+  query Placement {
+    placementTest { slug title estimatedMinutes items { id level skill prompt passage options hasAudio } }
+    learningLevels { code name cefr }
   }
 `);

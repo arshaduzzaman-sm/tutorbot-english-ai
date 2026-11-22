@@ -163,7 +163,11 @@
     "openPractice": "Practise a task type",
     "review": "Review",
     "reviewDue": "{count, plural, =0 {Nothing due} one {# mistake to review} other {# mistakes to review}}",
-    "openReview": "Open my mistake notebook"
+    "openReview": "Open my mistake notebook",
+    "planTitle": "Today's plan",
+    "planEmpty": "Take the 15-minute placement test to get a level and a study plan.",
+    "takePlacement": "Take the placement test",
+    "retakePlacement": "Redo the placement test"
   },
   "profile": {
     "title": "Your profile",
@@ -314,5 +318,35 @@
     "nextDue": "Next review: {date}",
     "dueNow": "Due now",
     "back": "Back to the notebook"
+  },
+  "placement": {
+    "title": "Placement test",
+    "intro": "About {minutes} minutes. {count} short questions that get harder as you go. They cover reading, listening and writing (grammar and words). Speaking is not tested yet: it arrives with the local AI tools.",
+    "note": "The result is a practice estimate of where to start. It is not an official PTE score or level.",
+    "start": "Start the placement test",
+    "questionOf": "Question {current} of {total}",
+    "skill": {
+      "reading": "Reading",
+      "listening": "Listening",
+      "writing": "Writing",
+      "speaking": "Speaking"
+    },
+    "next": "Next",
+    "finish": "See my result",
+    "chooseFirst": "Please choose an answer, or press “I don't know”.",
+    "dontKnow": "I don't know",
+    "resultTitle": "Your result",
+    "resultLevel": "We suggest you start at Level {code}: {name}.",
+    "resultScore": "You answered {correct} of {total} questions correctly.",
+    "levelSaved": "Your level is saved on your profile. You can change it at any time.",
+    "skillsHeading": "Your skills",
+    "notTested": "Not tested",
+    "planHeading": "Your daily study plan ({minutes} minutes)",
+    "planLessons": "{minutes} min: lessons at Level {level}",
+    "planPractice": "{minutes} min: {skill} practice",
+    "planReview": "{minutes} min: review your mistakes",
+    "daysToExam": "{count, plural, one {# day until your exam.} other {# days until your exam.}}",
+    "toDashboard": "Go to my dashboard",
+    "retake": "Take the test again"
   }
 }

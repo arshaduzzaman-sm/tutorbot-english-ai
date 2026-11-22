@@ -40,7 +40,9 @@ function say(text: string): Promise<void> {
  * Plays a listening question. Uses the pre-generated Kokoro file (/audio/<id>.wav, from `make audio`) when it exists,
  * otherwise the browser's own offline speech voice. The transcript is offered in Learn mode only.
  */
-export function AudioPlayer({ questionId, externalId, learn }: { questionId: string; externalId: string; learn: boolean }) {
+export function AudioPlayer({
+  questionId, externalId, learn, source = "practice",
+}: { questionId: string; externalId: string; learn: boolean; source?: "practice" | "placement" }) {
   const t = useTranslations("practice");
   const [speech, setSpeech] = useState<Speech | null>(null);
   const [playing, setPlaying] = useState(false);
@@ -58,7 +60,9 @@ export function AudioPlayer({ questionId, externalId, learn }: { questionId: str
   async function loadSpeech(): Promise<Speech | null> {
     if (speech) return speech;
     const api = await browserApi();
-    const res = await api?.GET("/api/v1/practice/questions/{question_id}/speech", { params: { path: { question_id: questionId } } });
+    const res = source === "placement"
+      ? await api?.GET("/api/v1/placement/items/{item_id}/speech", { params: { path: { item_id: questionId } } })
+      : await api?.GET("/api/v1/practice/questions/{question_id}/speech", { params: { path: { question_id: questionId } } });
     if (!res?.data) { setError(t("audioError")); return null; }
     setSpeech(res.data);
     return res.data;

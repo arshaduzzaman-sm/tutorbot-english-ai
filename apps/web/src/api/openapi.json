@@ -412,6 +412,93 @@
         "title": "OnboardingOut",
         "type": "object"
       },
+      "PlacementIn": {
+        "properties": {
+          "answers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "maxProperties": 100,
+            "title": "Answers",
+            "type": "object"
+          },
+          "duration_seconds": {
+            "anyOf": [
+              {
+                "maximum": 10800.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Seconds"
+          }
+        },
+        "required": [
+          "answers"
+        ],
+        "title": "PlacementIn",
+        "type": "object"
+      },
+      "PlacementOut": {
+        "properties": {
+          "correct": {
+            "title": "Correct",
+            "type": "integer"
+          },
+          "level_scores": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Level Scores",
+            "type": "object"
+          },
+          "note": {
+            "title": "Note",
+            "type": "string"
+          },
+          "plan": {
+            "additionalProperties": true,
+            "title": "Plan",
+            "type": "object"
+          },
+          "recommended_level": {
+            "title": "Recommended Level",
+            "type": "integer"
+          },
+          "skill_scores": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Skill Scores",
+            "type": "object"
+          },
+          "total": {
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "recommended_level",
+          "level_scores",
+          "skill_scores",
+          "correct",
+          "total",
+          "plan",
+          "note"
+        ],
+        "title": "PlacementOut",
+        "type": "object"
+      },
       "SpeechOut": {
         "properties": {
           "external_id": {
@@ -773,6 +860,99 @@
         "summary": "Put Onboarding",
         "tags": [
           "me"
+        ]
+      }
+    },
+    "/api/v1/placement/items/{item_id}/speech": {
+      "get": {
+        "operationId": "speech_api_v1_placement_items__item_id__speech_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "item_id",
+            "required": true,
+            "schema": {
+              "title": "Item Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpeechOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Speech",
+        "tags": [
+          "placement"
+        ]
+      }
+    },
+    "/api/v1/placement/submit": {
+      "post": {
+        "operationId": "submit_api_v1_placement_submit_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlacementIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlacementOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit",
+        "tags": [
+          "placement"
         ]
       }
     },
