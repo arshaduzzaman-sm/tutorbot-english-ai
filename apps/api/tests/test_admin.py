@@ -88,7 +88,7 @@ async def test_ai_content_needs_a_different_reviewer_before_publishing(client: A
 
         # Students never see it; publishing without approval fails
         student = await make_user()
-        q = '{ practiceQuestion(id: "%s") { id } }' % qid
+        q = f'{{ practiceQuestion(id: "{qid}") {{ id }} }}'
         assert (await client.post("/graphql", json={"query": q}, headers=auth(student.token))).json()["data"][
             "practiceQuestion"
         ] is None
@@ -153,8 +153,8 @@ async def test_database_blocks_publishing_without_approval_even_outside_the_api(
             async with user_session(user) as s:
                 await s.execute(
                     text(
-                        "insert into public.questions (external_id, category_id, difficulty, instructions, status, origin) "
-                        "select :e, id, 'beginner', 'x', 'published', 'ai' from public.question_categories limit 1"
+                        "insert into public.questions (external_id, category_id, difficulty, instructions, status, "
+                        "origin) select :e, id, 'beginner', 'x', 'published', 'ai' from public.question_categories limit 1"
                     ),
                     {"e": prefix + "2"},
                 )
