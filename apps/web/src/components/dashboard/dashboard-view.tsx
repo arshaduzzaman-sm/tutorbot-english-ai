@@ -1,10 +1,12 @@
-import { BookOpen, CalendarCheck, Flame, GraduationCap, History, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
+import { BookOpen, CalendarCheck, Flame, GraduationCap, History, ListChecks, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardBody, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { buttonVariants } from "@/components/ui/button";
+import { type Plan, StudyPlanList } from "@/components/placement/study-plan";
 import type { DashboardQuery } from "@/graphql/generated/graphql";
 
 export type DashboardData = DashboardQuery["viewer"];
@@ -66,6 +68,23 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           </CardBody>
         </Card>
       </div>
+
+      <Card>
+        <CardTitle><ListChecks aria-hidden="true" className="size-5 text-accent-blue" />{t("planTitle")}</CardTitle>
+        <CardBody className="space-y-3">
+          {data.studyPlan ? (
+            <>
+              <StudyPlanList plan={data.studyPlan.plan as Plan} />
+              <Link href="/placement" className="text-sm font-medium text-accent-blue underline">{t("retakePlacement")}</Link>
+            </>
+          ) : (
+            <>
+              <p data-testid="plan-empty">{t("planEmpty")}</p>
+              <Link href="/placement" className={buttonVariants({ size: "sm" })}>{t("takePlacement")}</Link>
+            </>
+          )}
+        </CardBody>
+      </Card>
 
       <div className="grid gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">

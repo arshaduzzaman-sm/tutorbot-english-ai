@@ -69,6 +69,23 @@ type MockExam {
   completedAt: DateTime
 }
 
+type PlacementItem {
+  id: String!
+  level: Int!
+  skill: String!
+  prompt: String!
+  passage: String
+  options: [String!]!
+  hasAudio: Boolean!
+}
+
+type PlacementTest {
+  slug: String!
+  title: String!
+  estimatedMinutes: Int!
+  items: [PlacementItem!]!
+}
+
 type PracticeQuestion {
   id: ID!
   externalId: String!
@@ -129,6 +146,9 @@ type Query {
   """Published questions of one task type, easiest first"""
   practiceQuestions(categoryCode: String!, limit: Int! = 50): [PracticeQuestion!]!
   practiceQuestion(id: ID!): PracticeQuestion
+
+  """The current placement (diagnostic) test, without answers"""
+  placementTest: PlacementTest
   questionCategories: [QuestionCategory!]!
 }
 
@@ -175,6 +195,14 @@ type SkillProgress {
   accuracy: Float
 }
 
+type StudyPlan {
+  id: ID!
+  createdAt: DateTime!
+  recommendedLevelCode: Int!
+  skillScores: JSON!
+  plan: JSON!
+}
+
 type Viewer {
   id: ID!
   email: String
@@ -198,6 +226,11 @@ type Viewer {
 
   """Mistakes due for spaced review now"""
   reviewDueCount: Int!
+
+  """
+  The learner's latest study plan from the placement test; null if not taken
+  """
+  studyPlan: StudyPlan
   weakAreas: [WeakArea!]!
   mockExams(limit: Int! = 5): [MockExam!]!
 }

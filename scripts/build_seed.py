@@ -163,6 +163,29 @@ def build() -> str:
         if per_cat.get(code, 0) < 2:
             errors.append(f"category {code} has fewer than 2 questions")
 
+    out += ["", "-- Placement (diagnostic) test"]
+    diag = load_json(CONTENT / "diagnostic.json")
+    per_level: dict[int, int] = {}
+    ids: set[str] = set()
+    for item in diag["items"]:
+        if item["id"] in ids:
+            errors.append(f"diagnostic: duplicate id {item['id']}")
+        ids.add(item["id"])
+        if item["level"] not in level_ids:
+            errors.append(f"diagnostic/{item['id']}: unknown level {item['level']}")
+        if item.get("skill") not in ("reading", "writing", "listening", "speaking"):
+            errors.append(f"diagnostic/{item['id']}: bad skill {item.get('skill')}")
+        if item.get("type") != "single_choice" or item["answer"] not in item["options"]:
+            errors.append(f"diagnostic/{item['id']}: must be single_choice with the answer in options")
+        per_level[item["level"]] = per_level.get(item["level"], 0) + 1
+    if sorted(per_level) != sorted(level_ids) or min(per_level.values()) < 2:
+        errors.append("diagnostic: every level needs at least 2 items")
+    out.append(
+        "insert into public.placement_tests (id, slug, title, version, estimated_minutes, items) values ("
+        f"{q(uid('placement', diag['slug']))}, {q(diag['slug'])}, {q(diag['title'])}, {diag['version']}, "
+        f"{diag['estimated_minutes']}, {q(diag['items'])});"
+    )
+
     out += ["", "-- Demo users (fake, local only). The signup trigger creates profiles and student roles."]
     for user in DEMO_USERS:
         user_id = uid("demo-user", user["email"])
