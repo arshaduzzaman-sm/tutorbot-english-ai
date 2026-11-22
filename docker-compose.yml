@@ -1,0 +1,59 @@
+# Started by `make start` after `supabase start` (database, auth, storage, mail viewer).
+# Every port is bound to 127.0.0.1 so the app is not exposed to your network (SPEC 3.2).
+name: tutorbot-english-ai
+
+x-host-gateway: &host-gateway
+  extra_hosts:
+    - "host.docker.internal:host-gateway"
+
+services:
+  api:
+    build: ./apps/api
+    <<: *host-gateway
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD:-postgres}@host.docker.internal:54322/postgres
+      SUPABASE_URL: http://host.docker.internal:54321
+      JWT_ISSUER: ${SUPABASE_PUBLIC_URL:-http://127.0.0.1:54321}/auth/v1
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${SUPABASE_PUBLIC_URL:-http://127.0.0.1:54321}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY:?run make setup first}
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+        NEXT_PUBLIC_SITE_URL: http://localhost:3000
+    <<: *host-gateway
+    environment:
+      SUPABASE_URL_INTERNAL: http://host.docker.internal:54321
+      API_URL_INTERNAL: http://api:8000
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ---- Local AI services (Milestone 3). Start with: docker compose --profile ai up -d ----
+  languagetool:
+    profiles: ["ai"]
+    image: erikvl87/languagetool:6.6
+    ports:
+      - "127.0.0.1:8010:8010"
+    environment:
+      Java_Xmx: 1g
+    restart: unless-stopped
+
+  ollama:
+    profiles: ["ai"]
+    image: ollama/ollama:0.12.6
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ./models/ollama:/root/.ollama
+    restart: unless-stopped

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Design tokens (SPEC 10): white background, dark navy primary, blue and purple accents. */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0b1730;
+  --color-muted: #f4f6fb;
+  --color-muted-foreground: #4a5672;
+  --color-border: #dde3ef;
+  --color-primary: #0f2147;
+  --color-primary-foreground: #ffffff;
+  --color-accent-blue: #1d4ed8;
+  --color-accent-purple: #6d28d9;
+  --color-success: #15803d;
+  --color-warning: #a16207;
+  --color-danger: #b91c1c;
+  --color-ring: #1d4ed8;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(15 33 71 / 0.06), 0 4px 16px rgb(15 33 71 / 0.06);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* Clear focus states for keyboard users (WCAG 2.2 AA). */
+:focus-visible {
+  outline: 3px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

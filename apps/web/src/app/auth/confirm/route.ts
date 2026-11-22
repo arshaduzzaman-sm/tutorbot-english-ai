@@ -1,0 +1,23 @@
+import type { EmailOtpType } from "@supabase/supabase-js";
+import { NextResponse, type NextRequest } from "next/server";
+import { publicOrigin } from "@/lib/origin";
+import { createClient } from "@/lib/supabase/server";
+import { safeNext } from "@/lib/validation";
+
+const ALLOWED: EmailOtpType[] = ["email", "signup", "recovery", "email_change"];
+
+/** Email links (confirmation and password reset) land here with a one-time token hash. */
+export async function GET(request: NextRequest) {
+  const { searchParams } = request.nextUrl;
+  const origin = publicOrigin(request.headers);
+  const tokenHash = searchParams.get("token_hash");
+  const type = searchParams.get("type") as EmailOtpType | null;
+  const next = safeNext(searchParams.get("next"), "/dashboard");
+
+  if (tokenHash && type && ALLOWED.includes(type)) {
+    const supabase = await createClient();
+    const { error } = await supabase.auth.verifyOtp({ type, token_hash: tokenHash });
+    if (!error) return NextResponse.redirect(new URL(next, origin));
+  }
+  return NextResponse.redirect(new URL("/login?error=link", origin));
+}

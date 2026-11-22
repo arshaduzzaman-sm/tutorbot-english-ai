@@ -1,0 +1,46 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies and builds
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.pnpm-store/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Tests
+apps/web/test-results/
+apps/web/playwright-report/
+tests/e2e/test-results/
+tests/e2e/playwright-report/
+
+# AI models, user data, recordings (never commit)
+models/*
+!models/.gitkeep
+recordings/
+*.wav
+*.webm
+*.opus
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

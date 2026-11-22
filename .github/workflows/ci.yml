@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "m*-*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  SUPABASE_EXCLUDE: studio,imgproxy,edge-runtime,logflare,vector,supavisor,realtime,postgres-meta
+
+jobs:
+  checks:
+    name: Lint, types, unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: { python-version: "3.12" }
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Backend lint + types
+        working-directory: apps/api
+        run: |
+          uv sync --frozen
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run mypy app
+      - name: Backend unit tests (no database)
+        working-directory: apps/api
+        run: uv run pytest -q tests/test_units.py tests/test_security.py
+      - name: Content is valid and seed.sql is up to date
+        run: python3 scripts/build_seed.py --check
+      - name: API contracts and generated types are up to date
+        run: |
+          (cd apps/api && uv run python -m app.export_contracts ../web/src)
+          pnpm --filter web codegen
+          git diff --exit-code -- apps/web/src/graphql apps/web/src/api
+      - name: Frontend lint, types, unit tests
+        run: |
+          pnpm --filter web lint
+          pnpm --filter web typecheck
+          pnpm --filter web test
+
+  integration-e2e:
+    name: Integration + end-to-end (local Supabase)
+    runs-on: ubuntu-latest
+    needs: checks
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: { python-version: "3.12" }
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - uses: supabase/setup-cli@v1
+        with: { version: latest }
+      - run: pnpm install --frozen-lockfile
+      - name: Start local Supabase
+        run: supabase start -x "$SUPABASE_EXCLUDE"
+      - name: Write .env files
+        run: scripts/write-env.sh
+      - name: Backend tests (unit + integration, RLS, GraphQL permissions)
+        working-directory: apps/api
+        run: |
+          uv sync --frozen
+          REQUIRE_DB=1 uv run pytest -q
+      - name: Start API
+        working-directory: apps/api
+        run: |
+          nohup uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 > /tmp/api.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/health/ready && break; sleep 1; done
+      - name: Build and start web
+        run: |
+          pnpm --filter web build
+          nohup pnpm --filter web start > /tmp/web.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS -o /dev/null http://localhost:3000/ && break; sleep 1; done
+      - name: Install Playwright browser
+        run: pnpm --filter e2e exec playwright install --with-deps chromium
+      - name: End-to-end tests (register → verify → login → onboarding → dashboard, axe)
+        run: pnpm --filter e2e test
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: tests/e2e/playwright-report
+          retention-days: 7
+      - name: Show service logs
+        if: failure()
+        run: tail -n 100 /tmp/api.log /tmp/web.log
