@@ -35,6 +35,7 @@ type Documents = {
     "\n  query ExamsHub {\n    blueprints { code name kind about verified itemCount sections spec }\n    viewer { recordingConsent mockExams(limit: 10) { id kind status startedAt completedAt blueprintCode overallBand } }\n  }\n": typeof types.ExamsHubDocument,
     "\n  query Progress($days: Int!) {\n    viewer {\n      id\n      demoMode\n      coach { level recommendations readiness weekly todayPlan }\n      analytics(days: $days)\n    }\n    practiceTypes: questionCategories { code name }\n  }\n": typeof types.ProgressDocument,
     "\n  query Tutor {\n    viewer {\n      id\n      demoMode\n      profile { level { code name cefr } }\n      tutorMessages(limit: 40) { id role content provider createdAt }\n    }\n  }\n": typeof types.TutorDocument,
+    "\n  query Roles {\n    viewer { id roles }\n  }\n": typeof types.RolesDocument,
 };
 const documents: Documents = {
     "\n  query Dashboard {\n    viewer {\n      id\n      email\n      demoMode\n      profile {\n        displayName\n        targetScore\n        examDate\n        dailyGoalMinutes\n        onboardingCompleted\n        level { code name cefr }\n      }\n      progress {\n        lessonsCompleted\n        lessonsTotal\n        overallRatio\n        skills { skill attempts accuracy }\n      }\n      streakDays\n      todayMinutes\n      reviewDueCount\n      vocabularyDueCount\n      studyPlan { createdAt recommendedLevelCode plan }\n      recentAttempts(limit: 5) { id createdAt isCorrect scoreRatio category { code name } }\n      recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }\n      weakAreas { accuracy attempts category { code name } }\n      mockExams(limit: 5) { id kind status startedAt completedAt }\n      coach { recommendations }\n    }\n    practiceTypes: questionCategories { code name }\n  }\n": types.DashboardDocument,
@@ -58,6 +59,7 @@ const documents: Documents = {
     "\n  query ExamsHub {\n    blueprints { code name kind about verified itemCount sections spec }\n    viewer { recordingConsent mockExams(limit: 10) { id kind status startedAt completedAt blueprintCode overallBand } }\n  }\n": types.ExamsHubDocument,
     "\n  query Progress($days: Int!) {\n    viewer {\n      id\n      demoMode\n      coach { level recommendations readiness weekly todayPlan }\n      analytics(days: $days)\n    }\n    practiceTypes: questionCategories { code name }\n  }\n": types.ProgressDocument,
     "\n  query Tutor {\n    viewer {\n      id\n      demoMode\n      profile { level { code name cefr } }\n      tutorMessages(limit: 40) { id role content provider createdAt }\n    }\n  }\n": types.TutorDocument,
+    "\n  query Roles {\n    viewer { id roles }\n  }\n": types.RolesDocument,
 };
 
 /**
@@ -158,6 +160,10 @@ export function graphql(source: "\n  query Progress($days: Int!) {\n    viewer {
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "\n  query Tutor {\n    viewer {\n      id\n      demoMode\n      profile { level { code name cefr } }\n      tutorMessages(limit: 40) { id role content provider createdAt }\n    }\n  }\n"): (typeof documents)["\n  query Tutor {\n    viewer {\n      id\n      demoMode\n      profile { level { code name cefr } }\n      tutorMessages(limit: 40) { id role content provider createdAt }\n    }\n  }\n"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n  query Roles {\n    viewer { id roles }\n  }\n"): (typeof documents)["\n  query Roles {\n    viewer { id roles }\n  }\n"];
 
 export function graphql(source: string) {
   return (documents as any)[source] ?? {};

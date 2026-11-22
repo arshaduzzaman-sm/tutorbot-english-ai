@@ -198,7 +198,8 @@
     "recordingOn": "You have agreed to voice recordings.",
     "recordingOff": "Voice recordings are off. You will be asked before you record.",
     "recordingStop": "Stop recordings",
-    "recordingAllow": "Allow recordings"
+    "recordingAllow": "Allow recordings",
+    "adminLink": "Open the admin area"
   },
   "levels": {
     "1": "Beginner English",
@@ -759,5 +760,171 @@
     "remaining": "{count, plural, =0 {No messages left today} one {# message left today} other {# messages left today}}",
     "limit": "You have reached today's limit for tutor messages. Try again tomorrow.",
     "error": "Something went wrong. Please try again."
+  },
+  "report": {
+    "open": "Report a problem",
+    "reasonLabel": "What is wrong?",
+    "messageLabel": "Details (optional)",
+    "send": "Send report",
+    "cancel": "Cancel",
+    "thanks": "Thank you. The content team will check this question.",
+    "error": "The report could not be sent. Please try again.",
+    "reason": {
+      "wrong_answer": "The answer is wrong",
+      "unclear": "The question is unclear",
+      "typo": "Spelling or typing mistake",
+      "audio": "Problem with the audio",
+      "offensive": "Offensive or unsuitable",
+      "other": "Something else"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "navLabel": "Admin sections",
+    "nav": {
+      "overview": "Overview",
+      "content": "Content",
+      "reports": "Reports",
+      "upload": "Upload",
+      "users": "Users",
+      "blueprints": "Mock exams",
+      "calibration": "Calibration"
+    },
+    "status": {
+      "draft": "Draft",
+      "ai_generated": "AI draft",
+      "reviewed": "Approved",
+      "published": "Published"
+    },
+    "reason": {
+      "wrong_answer": "The answer is wrong",
+      "unclear": "The question is unclear",
+      "typo": "Spelling or typing mistake",
+      "audio": "Problem with the audio",
+      "offensive": "Offensive or unsuitable",
+      "other": "Something else"
+    },
+    "reportStatus": {
+      "open": "open",
+      "resolved": "resolved",
+      "dismissed": "dismissed"
+    },
+    "roles": {
+      "content_editor": "Content editor",
+      "admin": "Admin"
+    },
+    "overview": {
+      "aiWaiting": "AI drafts waiting for review",
+      "openReports": "Open reports",
+      "content": "Questions by status",
+      "usage": "Usage (last 7 days)",
+      "users": "{users} accounts, {active} active this week",
+      "queue": "Evaluation queue: {queued} waiting, {failed} failed this week",
+      "aiTable": "AI use by feature",
+      "feature": "Feature",
+      "provider": "Provider",
+      "count": "Uses",
+      "noUsage": "No AI use this week."
+    },
+    "content": {
+      "status": "Status",
+      "all": "All",
+      "search": "Search",
+      "filter": "Filter",
+      "id": "Question",
+      "type": "Type",
+      "version": "Version",
+      "reports": "Open reports",
+      "none": "No questions match.",
+      "aiBadge": "AI-drafted",
+      "back": "Back to content"
+    },
+    "editor": {
+      "version": "Version {version}",
+      "reviewTitle": "Review and publish",
+      "approvedNow": "This version is approved and can be published.",
+      "needsApproval": "This version needs an approval before it can be published.",
+      "aiRule": "This question was drafted with AI. A different staff member from the one who added it must approve it.",
+      "note": "Review note (optional)",
+      "approve": "Approve this version",
+      "requestChanges": "Request changes",
+      "publish": "Publish",
+      "unpublish": "Take back to draft",
+      "approved": "Approved.",
+      "changesRequested": "Changes requested.",
+      "published": "Published. Learners can now see it.",
+      "unpublished": "Moved back to draft.",
+      "history": "Review history",
+      "decision": {
+        "approve": "Approved",
+        "request_changes": "Changes requested"
+      },
+      "instructions": "Instructions",
+      "content": "Content (JSON)",
+      "answer": "Answer (JSON)",
+      "explanation": "Explanation",
+      "saveNote": "Saving creates a new version. It goes back to review before it can be published again.",
+      "save": "Save changes",
+      "saved": "Saved as a new version.",
+      "badJson": "Content and answer must be valid JSON.",
+      "error": "Something went wrong. Please try again."
+    },
+    "reports": {
+      "title": "Open reports from learners",
+      "none": "No open reports.",
+      "resolve": "Mark fixed",
+      "dismiss": "Dismiss"
+    },
+    "upload": {
+      "title": "Upload questions",
+      "intro": "Upload a JSON content file in the same format as content/questions/*.json. Every question is checked with the same rules as the seed builder. New questions start as drafts and are never published straight away.",
+      "file": "Content file (.json)",
+      "origin": "Who wrote these questions?",
+      "origin_human": "People (original content)",
+      "origin_ai": "Drafted with AI (needs a human approval)",
+      "submit": "Upload",
+      "badFile": "This file is not valid JSON with a list of questions.",
+      "created": "{count, plural, =0 {No questions added} one {# question added} other {# questions added}} as {status}.",
+      "rowError": "Row {row}:"
+    },
+    "users": {
+      "search": "Email or name",
+      "user": "User",
+      "joined": "Joined",
+      "attempts": "Answers",
+      "roles": "Staff roles",
+      "rolesFor": "Staff roles for {name}"
+    },
+    "blueprints": {
+      "note": "Item counts and section clocks in our blueprints are not published by Pearson and are marked unverified.",
+      "name": "Name",
+      "items": "Items",
+      "check": "Questions available",
+      "enough": "Enough published questions",
+      "short": "{type}: needs {needed}, {published} published",
+      "publish": "Show to learners",
+      "hide": "Hide from learners",
+      "unverified": "Unverified rules",
+      "actions": "Actions"
+    },
+    "calibration": {
+      "intro": "Rate your own sample answers (write or record them in practice first). Learners' answers are never shown here. The report compares the AI bands with your bands.",
+      "report": "Agreement between AI and human bands",
+      "ratings": "Ratings",
+      "exact": "Same band",
+      "adjacent": "Within one band",
+      "minimum": "Meets the minimum",
+      "yes": "Yes",
+      "no": "Not yet",
+      "noRatings": "No ratings yet.",
+      "numericOff": "Numeric 10-90 practice estimates stay switched off. The minimum is 30 ratings per task type with at least 60% same band and 80% within one band; even then, switching them on is a separate, documented decision.",
+      "noSamples": "No sample evaluations yet. Answer a few speaking or writing questions with this account first.",
+      "rateCaption": "AI and human bands",
+      "criterion": "Criterion",
+      "ai": "AI band",
+      "human": "Your band",
+      "save": "Save rating",
+      "saved": "Saved."
+    }
   }
 }

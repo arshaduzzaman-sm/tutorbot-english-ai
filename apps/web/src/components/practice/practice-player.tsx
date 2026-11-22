@@ -3,6 +3,7 @@
 import { Lightbulb } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
+import { ReportProblem } from "@/components/practice/report-problem";
 import { Markdown } from "@/components/markdown";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -208,9 +209,12 @@ export function PracticePlayer({ questions, fixedMode }: { questions: Question[]
             )}
             <p className="text-xs">{outcome.note}</p>
           </Alert>
-          <Button type="button" onClick={() => (last ? setDone(true) : load(index + 1))}>
-            {last ? t("finish") : t("next")}
-          </Button>
+          <div className="flex flex-wrap items-center gap-3">
+            <Button type="button" onClick={() => (last ? setDone(true) : load(index + 1))}>
+              {last ? t("finish") : t("next")}
+            </Button>
+            <ReportProblem key={q.id} questionId={q.id} />
+          </div>
         </div>
       )}
     </div>

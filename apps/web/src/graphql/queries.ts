@@ -243,3 +243,9 @@ export const TutorQuery = graphql(`
     }
   }
 `);
+
+export const RolesQuery = graphql(`
+  query Roles {
+    viewer { id roles }
+  }
+`);
