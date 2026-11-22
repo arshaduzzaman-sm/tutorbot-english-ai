@@ -20,7 +20,8 @@
             "default": "practice",
             "enum": [
               "learn",
-              "practice"
+              "practice",
+              "review"
             ],
             "title": "Mode",
             "type": "string"
@@ -54,6 +55,23 @@
             "title": "Note",
             "type": "string"
           },
+          "notebook": {
+            "anyOf": [
+              {
+                "enum": [
+                  "added",
+                  "moved",
+                  "mastered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "What happened in the mistake notebook: added (new mistake), moved, mastered, or nothing",
+            "title": "Notebook"
+          },
           "parts": {
             "items": {
               "additionalProperties": true,
@@ -68,6 +86,7 @@
           }
         },
         "required": [
+          "notebook",
           "score_ratio",
           "is_correct",
           "correct_answer",

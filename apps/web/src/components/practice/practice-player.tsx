@@ -16,7 +16,7 @@ import { type AnswerState, BlanksView, ChoicesView, DictationView, type Question
 
 type Question = PracticeQuestionsQuery["practiceQuestions"][number];
 type Outcome = components["schemas"]["AnswerOut"];
-type Mode = "learn" | "practice";
+type Mode = "learn" | "practice" | "review";
 const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
 
 function initialAnswer(q: Question): AnswerState {
@@ -70,10 +70,11 @@ function Elapsed({ running }: { running: boolean }) {
 
 const clock = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
-export function PracticePlayer({ questions }: { questions: Question[] }) {
+/** fixedMode="review" hides the mode choice: no tips, no transcript, no timer (used by spaced review). */
+export function PracticePlayer({ questions, fixedMode }: { questions: Question[]; fixedMode?: "review" }) {
   const t = useTranslations("practice");
   const tc = useTranslations("common");
-  const [mode, setMode] = useState<Mode>("learn");
+  const [mode, setMode] = useState<Mode>(fixedMode ?? "learn");
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState<AnswerState>(() => initialAnswer(questions[0]!));
   const [outcome, setOutcome] = useState<Outcome | null>(null);
@@ -135,7 +136,7 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
   const last = index === questions.length - 1;
   return (
     <div className="space-y-6">
-      <fieldset className="flex flex-wrap gap-3">
+      {!fixedMode && <fieldset className="flex flex-wrap gap-3">
         <legend className="mb-2 text-sm font-medium">{t("modeLabel")}</legend>
         {(["learn", "practice"] as const).map((m) => (
           <label key={m} className="flex cursor-pointer items-start gap-2 rounded-xl border border-border bg-white p-3 has-[:checked]:border-accent-blue">
@@ -146,7 +147,7 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
             </span>
           </label>
         ))}
-      </fieldset>
+      </fieldset>}
 
       <Progress value={(index + 1) / questions.length} label={t("questionOf", { current: index + 1, total: questions.length })} />
 
@@ -200,6 +201,11 @@ export function PracticePlayer({ questions }: { questions: Question[] }) {
             </p>
             <p>{t("correctAnswer", { answer: describeAnswer(q, outcome.correct_answer) })}</p>
             <Markdown>{outcome.explanation}</Markdown>
+            {outcome.notebook && (
+              <p className="text-sm font-medium" data-testid="notebook-note">
+                {t(outcome.notebook === "added" ? "notebookAdded" : outcome.notebook === "mastered" ? "notebookMastered" : "notebookMoved")}
+              </p>
+            )}
             <p className="text-xs">{outcome.note}</p>
           </Alert>
           <Button type="button" onClick={() => (last ? setDone(true) : load(index + 1))}>

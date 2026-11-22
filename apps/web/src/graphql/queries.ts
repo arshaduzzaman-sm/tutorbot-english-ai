@@ -23,6 +23,7 @@ export const DashboardQuery = graphql(`
       }
       streakDays
       todayMinutes
+      reviewDueCount
       recentAttempts(limit: 5) { id createdAt isCorrect scoreRatio category { code name } }
       recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }
       weakAreas { accuracy attempts category { code name } }
@@ -91,6 +92,26 @@ export const PracticeQuestionsQuery = graphql(`
       id externalId categoryCode difficulty instructions learningObjective content
       options { label body }
       category { code name section }
+    }
+  }
+`);
+
+export const ReviewQuery = graphql(`
+  query Review {
+    viewer {
+      reviewDueCount
+      reviewItems(limit: 100) {
+        id box dueAt isDue wrongCount lastScore mastered
+        question { id externalId categoryCode category { name } }
+      }
+      due: reviewItems(dueOnly: true, limit: 20) {
+        id
+        question {
+          id externalId categoryCode difficulty instructions learningObjective content
+          options { label body }
+          category { code name section }
+        }
+      }
     }
   }
 `);

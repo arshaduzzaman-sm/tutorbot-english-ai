@@ -43,4 +43,17 @@ describe("PracticePlayer", () => {
     await user.click(screen.getByRole("button", { name: "See my results" }));
     expect(screen.getByTestId("practice-done")).toHaveTextContent("You answered 2 questions. Your average was 50%.");
   });
+
+  it("review mode hides the mode choice and tip, sends mode review and shows the notebook change", async () => {
+    const user = userEvent.setup();
+    post.mockResolvedValueOnce({ data: { notebook: "moved", score_ratio: 1, is_correct: true,
+      correct_answer: { blanks: { "1": "like" } }, parts: [], explanation: "e", note: "n" } });
+    renderWithIntl(<PracticePlayer questions={[blanks]} fixedMode="review" />);
+    expect(screen.queryByRole("group", { name: "Mode" })).not.toBeInTheDocument();
+    expect(screen.queryByText(/Tip:/)).not.toBeInTheDocument();
+    await user.selectOptions(screen.getByLabelText("Blank 1"), "like");
+    await user.click(screen.getByRole("button", { name: "Check my answer" }));
+    expect(await screen.findByTestId("notebook-note")).toHaveTextContent("Mistake notebook updated.");
+    expect(post.mock.calls[0]?.[1].body.mode).toBe("review");
+  });
 });

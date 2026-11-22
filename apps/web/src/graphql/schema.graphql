@@ -145,6 +145,21 @@ type QuestionOption {
   body: String!
 }
 
+type ReviewItem {
+  id: ID!
+
+  """0 = just missed; 5 = mastered"""
+  box: Int!
+  dueAt: DateTime!
+  wrongCount: Int!
+  lastScore: Float
+  mastered: Boolean!
+  question: PracticeQuestion!
+
+  """True when the item is waiting for review now"""
+  isDue: Boolean!
+}
+
 enum Skill {
   SPEAKING
   WRITING
@@ -177,6 +192,12 @@ type Viewer {
 
   """Next published lessons at the learner's level that are not completed"""
   recommendedLessons(limit: Int! = 3): [Lesson!]!
+
+  """Mistake notebook. dueOnly: only items due for spaced review now"""
+  reviewItems(dueOnly: Boolean! = false, limit: Int! = 50): [ReviewItem!]!
+
+  """Mistakes due for spaced review now"""
+  reviewDueCount: Int!
   weakAreas: [WeakArea!]!
   mockExams(limit: Int! = 5): [MockExam!]!
 }

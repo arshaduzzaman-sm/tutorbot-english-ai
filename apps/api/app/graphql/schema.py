@@ -66,6 +66,101 @@ class QuestionCategory:
         )
 
 
+@strawberry.type
+class QuestionOption:
+    label: str
+    body: str
+
+
+@strawberry.type
+class PracticeQuestion:
+    id: strawberry.ID
+    external_id: str
+    category_code: str
+    difficulty: str
+    instructions: str
+    learning_objective: str
+    content: JSON = strawberry.field(description="Task content without answers (text, blanks, passage, ...)")
+    category_id: strawberry.Private[uuid.UUID]
+
+    @strawberry.field
+    async def category(self, info: CtxInfo) -> QuestionCategory | None:
+        m = await info.context.category_loader.load(self.category_id)
+        return QuestionCategory.of(m) if m else None
+
+    @strawberry.field(description="Answer options in order, without which ones are correct")
+    async def options(self, info: CtxInfo) -> list[QuestionOption]:
+        rows = await info.context.execute(
+            text("select label, body from public.question_options where question_id = :id order by sort_order, label"),
+            {"id": uuid.UUID(str(self.id))},
+        )
+        return [QuestionOption(label=str(r.label), body=str(r.body)) for r in rows.all()]
+
+
+@strawberry.type
+class PracticeTypeStats:
+    category: QuestionCategory
+    question_count: int
+    auto_marked: bool
+    attempts: int = strawberry.field(description="The viewer's attempts at this task type")
+    average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
+
+
+QUESTION_COLUMNS = (
+    "q.id, q.external_id, c.code, q.difficulty::text, q.instructions, q.learning_objective, q.content, q.category_id"
+)
+
+
+def _question(row: Any) -> PracticeQuestion:
+    r: list[Any] = list(row)
+    return PracticeQuestion(
+        id=strawberry.ID(str(r[0])),
+        external_id=r[1],
+        category_code=r[2],
+        difficulty=r[3],
+        instructions=r[4],
+        learning_objective=r[5],
+        content=public_content(r[2], dict(r[6])),  # type: ignore[arg-type]
+        category_id=r[7],
+    )
+
+
+@strawberry.type
+class ReviewItem:
+    id: strawberry.ID
+    box: int = strawberry.field(description="0 = just missed; 5 = mastered")
+    due_at: datetime
+    wrong_count: int
+    last_score: float | None
+    mastered: bool
+    question: PracticeQuestion
+
+    @strawberry.field(description="True when the item is waiting for review now")
+    def is_due(self) -> bool:
+        return not self.mastered and self.due_at <= datetime.now(UTC)
+
+
+REVIEW_SQL = (
+    f"select {QUESTION_COLUMNS}, r.id, r.box, r.due_at, r.wrong_count, r.last_score, r.mastered_at "  # noqa: S608
+    "from public.review_items r join public.questions q on q.id = r.question_id "
+    "join public.question_categories c on c.id = q.category_id "
+    "where r.user_id = :u and q.status = 'published' and q.deleted_at is null "
+)
+
+
+def _review_item(row: Any) -> ReviewItem:
+    r: list[Any] = list(row)
+    return ReviewItem(
+        id=strawberry.ID(str(r[8])),
+        box=int(r[9]),
+        due_at=r[10],
+        wrong_count=int(r[11]),
+        last_score=float(r[12]) if r[12] is not None else None,
+        mastered=r[13] is not None,
+        question=_question(r[:8]),
+    )
+
+
 async def _level(info: CtxInfo, level_id: uuid.UUID | None) -> LearningLevel | None:
     if level_id is None:
         return None
@@ -385,6 +480,26 @@ class Viewer:
             for r in lesson_rows
         ]
 
+    @strawberry.field(description="Mistake notebook. dueOnly: only items due for spaced review now")
+    async def review_items(self, info: CtxInfo, due_only: bool = False, limit: int = 50) -> list[ReviewItem]:
+        where = "and r.mastered_at is null and r.due_at <= now() " if due_only else ""
+        rows = await info.context.execute(
+            text(REVIEW_SQL + where + "order by r.mastered_at nulls first, r.due_at limit :lim"),
+            {"u": self.id, "lim": max(1, min(limit, 100))},
+        )
+        return [_review_item(r) for r in rows.all()]
+
+    @strawberry.field(description="Mistakes due for spaced review now")
+    async def review_due_count(self, info: CtxInfo) -> int:
+        rows = await info.context.execute(
+            text(
+                "select count(*) from public.review_items "
+                "where user_id = :u and mastered_at is null and due_at <= now()"
+            ),
+            {"u": self.id},
+        )
+        return int(rows.scalar_one())
+
     @strawberry.field
     async def weak_areas(self, info: CtxInfo) -> list[WeakArea]:
         weak = weak_categories(s for s, _ in await _signals(info))
@@ -415,65 +530,6 @@ class Viewer:
             )
             for t in rows
         ]
-
-
-@strawberry.type
-class QuestionOption:
-    label: str
-    body: str
-
-
-@strawberry.type
-class PracticeQuestion:
-    id: strawberry.ID
-    external_id: str
-    category_code: str
-    difficulty: str
-    instructions: str
-    learning_objective: str
-    content: JSON = strawberry.field(description="Task content without answers (text, blanks, passage, ...)")
-    category_id: strawberry.Private[uuid.UUID]
-
-    @strawberry.field
-    async def category(self, info: CtxInfo) -> QuestionCategory | None:
-        m = await info.context.category_loader.load(self.category_id)
-        return QuestionCategory.of(m) if m else None
-
-    @strawberry.field(description="Answer options in order, without which ones are correct")
-    async def options(self, info: CtxInfo) -> list[QuestionOption]:
-        rows = await info.context.execute(
-            text("select label, body from public.question_options where question_id = :id order by sort_order, label"),
-            {"id": uuid.UUID(str(self.id))},
-        )
-        return [QuestionOption(label=str(r.label), body=str(r.body)) for r in rows.all()]
-
-
-@strawberry.type
-class PracticeTypeStats:
-    category: QuestionCategory
-    question_count: int
-    auto_marked: bool
-    attempts: int = strawberry.field(description="The viewer's attempts at this task type")
-    average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
-
-
-QUESTION_COLUMNS = (
-    "q.id, q.external_id, c.code, q.difficulty::text, q.instructions, q.learning_objective, q.content, q.category_id"
-)
-
-
-def _question(row: Any) -> PracticeQuestion:
-    r: list[Any] = list(row)
-    return PracticeQuestion(
-        id=strawberry.ID(str(r[0])),
-        external_id=r[1],
-        category_code=r[2],
-        difficulty=r[3],
-        instructions=r[4],
-        learning_objective=r[5],
-        content=public_content(r[2], dict(r[6])),  # type: ignore[arg-type]
-        category_id=r[7],
-    )
 
 
 @strawberry.type

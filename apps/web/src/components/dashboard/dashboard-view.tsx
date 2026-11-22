@@ -1,4 +1,4 @@
-import { BookOpen, CalendarCheck, Flame, GraduationCap, History, Target, TriangleAlert, Trophy } from "lucide-react";
+import { BookOpen, CalendarCheck, Flame, GraduationCap, History, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui/alert";
@@ -49,6 +49,13 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           <CardTitle><Flame aria-hidden="true" className="size-5 text-warning" />{t("streak")}</CardTitle>
           <CardBody>
             <p className="text-lg font-semibold text-foreground" data-testid="streak">{t("streakValue", { count: data.streakDays })}</p>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardTitle><RotateCcw aria-hidden="true" className="size-5 text-accent-purple" />{t("review")}</CardTitle>
+          <CardBody>
+            <p className="text-lg font-semibold text-foreground" data-testid="review-due">{t("reviewDue", { count: data.reviewDueCount })}</p>
+            <Link href="/review" className="text-sm font-medium text-accent-blue underline">{t("openReview")}</Link>
           </CardBody>
         </Card>
         <Card>

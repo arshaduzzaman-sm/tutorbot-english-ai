@@ -26,11 +26,14 @@ class AnswerResponse(BaseModel):
 
 class AnswerIn(BaseModel):
     response: AnswerResponse
-    mode: Literal["learn", "practice"] = "practice"
+    mode: Literal["learn", "practice", "review"] = "practice"
     duration_seconds: int | None = Field(default=None, ge=0, le=3 * 3600)
 
 
 class AnswerOut(BaseModel):
+    notebook: Literal["added", "moved", "mastered"] | None = Field(
+        description="What happened in the mistake notebook: added (new mistake), moved, mastered, or nothing"
+    )
     score_ratio: float
     is_correct: bool
     correct_answer: dict[str, Any]

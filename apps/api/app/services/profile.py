@@ -9,7 +9,16 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import AppError
 
-EXPORT_TABLES = ("profiles", "user_roles", "attempts", "learning_progress", "test_sessions", "consents", "ai_usage")
+EXPORT_TABLES = (
+    "profiles",
+    "user_roles",
+    "attempts",
+    "learning_progress",
+    "review_items",
+    "test_sessions",
+    "consents",
+    "ai_usage",
+)
 
 
 async def save_onboarding(

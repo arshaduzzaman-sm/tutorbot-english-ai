@@ -23,7 +23,8 @@
     "terms": "Terms",
     "main": "Main",
     "lessons": "Lessons",
-    "practice": "Practice"
+    "practice": "Practice",
+    "review": "Review"
   },
   "footer": {
     "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
@@ -159,7 +160,10 @@
     "readinessNote": "Progress here is a practice estimate, not an official PTE score.",
     "openLesson": "Open lesson",
     "allLessons": "See all lessons",
-    "openPractice": "Practise a task type"
+    "openPractice": "Practise a task type",
+    "review": "Review",
+    "reviewDue": "{count, plural, =0 {Nothing due} one {# mistake to review} other {# mistakes to review}}",
+    "openReview": "Open my mistake notebook"
   },
   "profile": {
     "title": "Your profile",
@@ -291,6 +295,24 @@
     "noVoice": "Your browser has no speech voice. Use Learn mode and read the transcript instead.",
     "wordsHelp": "Listen and click each word that is different from what the speaker says.",
     "dictationLabel": "Type the sentence you hear.",
-    "chooseBest": "Choose the best answer."
+    "chooseBest": "Choose the best answer.",
+    "notebookAdded": "This question is saved in your mistake notebook for review.",
+    "notebookMoved": "Mistake notebook updated.",
+    "notebookMastered": "Mastered! This question leaves your review list."
+  },
+  "review": {
+    "title": "Mistake notebook",
+    "intro": "Every question you get wrong is saved here. It comes back for review after 1, 3, 7 and 14 days. Answer it right each time and it is mastered.",
+    "dueHeading": "Review now",
+    "dueCount": "{count, plural, =0 {Nothing is due right now. Well done!} one {# mistake is ready to review.} other {# mistakes are ready to review.}}",
+    "start": "Start review",
+    "allHeading": "All my mistakes",
+    "empty": "No mistakes yet. When you get a practice question wrong, it appears here.",
+    "box": "Step {box} of 5",
+    "mastered": "Mastered",
+    "wrongCount": "{count, plural, one {Wrong once} other {Wrong # times}}",
+    "nextDue": "Next review: {date}",
+    "dueNow": "Due now",
+    "back": "Back to the notebook"
   }
 }
