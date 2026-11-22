@@ -24,9 +24,11 @@
 - `api/practice.py` answer a question · `services/practice.py` auto-marking (blanks, choices, reorder, highlight words, dictation), attempts, speech text
 - `api/placement.py` submit, item speech · `services/placement.py` level recommendation + study plan (pure)
 - `api/units.py` end-of-unit test · `services/units.py` unlock rule (pure) + test marking + unit progress
+- `api/tracks.py` vocabulary flashcard review, pronunciation drill + item speech · `services/tracks.py` drill marking, flashcard boxes
 - `services/review.py` mistake notebook + spaced review schedule (Leitner boxes 0-5)
 - `api/lessons.py` lesson start, Try check, Check submit · `services/lessons.py` marking (answers never leave the API)
-- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson, practiceTypes, practiceQuestions, viewer.reviewItems/reviewDueCount/studyPlan, placementTest, units, unit; limits
+- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson, practiceTypes, practiceQuestions, viewer.reviewItems/reviewDueCount/studyPlan, placementTest, units, unit, vocabularySets/vocabularySet, viewer.vocabularyDue/vocabularyDueCount, pronunciationTopics/pronunciationTopic; limits
+- `graphql/tracks.py` vocabulary + pronunciation types (drill answers never leave the API)
 - `graphql/context.py` per-request context, locked execute, DataLoaders (levels, categories, lesson progress)
 - `services/progress.py` streak, skill stats, weak areas (pure) · `services/profile.py` onboarding/export/delete
 - `ai/interfaces/` Protocols + result types (EvaluationResult = SPEC 7.2) · `ai/providers/mock.py` deterministic mocks
@@ -37,13 +39,14 @@
 ## Frontend (`apps/web/`)
 - `messages/en.json` all UI text · `src/i18n/request.ts` next-intl config · `src/proxy.ts` session refresh + route guard
 - `src/app/` routes: `/`, `/register`, `/login`, `/check-email`, `/forgot-password`, `/reset-password`,
-  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/lessons`, `/lessons/[slug]`, `/practice`, `/practice/[category]`, `/review` (mistake notebook), `/placement`, `/units/[slug]/test`, `/profile`, `/about`, `/privacy`, `/terms`
+  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/lessons`, `/lessons/[slug]`, `/practice`, `/practice/[category]`, `/review` (mistake notebook), `/placement`, `/units/[slug]/test`, `/vocabulary`, `/vocabulary/[set]`, `/vocabulary/review`, `/pronunciation`, `/pronunciation/[slug]`, `/profile`, `/about`, `/privacy`, `/terms`
 - `src/components/ui/` design system (button, card, input, alert, progress, badge) · `site-header/footer`, `cookie-banner`
 - `src/components/dashboard/dashboard-view.tsx` pure dashboard view · `onboarding/onboarding-form.tsx` · `profile/data-actions.tsx`
 - `src/components/lessons/lesson-player.tsx` Learn/See/Try/Check player · `status-badge.tsx` · `markdown.tsx` safe markdown
 - `src/components/practice/practice-player.tsx` Learn/Practice question player · `question-views.tsx` blanks, choices, reorder, words, dictation
 - `src/components/lessons/unit-test.tsx` end-of-unit test form
 - `src/components/placement/placement-runner.tsx` diagnostic flow + result · `study-plan.tsx` plan list
+- `src/components/vocabulary/flashcards.tsx` flashcards · `speak-button.tsx` audio file or browser voice · `pronunciation/drill.tsx` listen-and-choose drill
 - `src/components/practice/audio-player.tsx` Kokoro file or browser voice fallback, transcript in Learn mode
 - `src/lib/supabase/{client,server,proxy}.ts` Supabase SSR clients · `src/lib/api.ts` typed REST + urql clients
 - `src/lib/session.ts` requireSession + serverQuery · `src/lib/validation.ts` form rules · `src/lib/origin.ts` public origin · `src/lib/client-api.ts` browser REST client
@@ -51,7 +54,7 @@
 
 ## Scripts and tests
 - `scripts/setup.sh`, `setup.ps1` one-command setup · `write-env.sh` env files from `supabase status`
-- `scripts/generate_audio.py` (`make audio`) Kokoro listening audio → apps/web/public/audio (git-ignored)
+- `scripts/generate_audio.py` (`make audio`) Kokoro audio for listening, placement, vocabulary and pronunciation → apps/web/public/audio (git-ignored)
 - `scripts/build_seed.py` validates content → seed.sql · `content_rules.py` per-type question checks
 - `scripts/import_content.py` (`make import FILE=...`) CSV/JSON questions → content/questions/imported.json · `download-models.sh`, `detect-hardware.sh` AI tiers
-- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats), review (mistake → notebook → spaced review), placement (test → level + plan → dashboard), units (pass test → next unit opens)
+- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats), review (mistake → notebook → spaced review), placement (test → level + plan → dashboard), units (pass test → next unit opens), tracks (flashcards, pronunciation drill)

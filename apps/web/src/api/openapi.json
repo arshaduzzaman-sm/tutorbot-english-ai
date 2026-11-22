@@ -190,6 +190,72 @@
         "title": "DeleteAccountIn",
         "type": "object"
       },
+      "DrillIn": {
+        "properties": {
+          "answers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "maxProperties": 30,
+            "title": "Answers",
+            "type": "object"
+          }
+        },
+        "required": [
+          "answers"
+        ],
+        "title": "DrillIn",
+        "type": "object"
+      },
+      "DrillOut": {
+        "properties": {
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/DrillResultOut"
+            },
+            "title": "Results",
+            "type": "array"
+          },
+          "score_ratio": {
+            "title": "Score Ratio",
+            "type": "number"
+          }
+        },
+        "required": [
+          "score_ratio",
+          "results"
+        ],
+        "title": "DrillOut",
+        "type": "object"
+      },
+      "DrillResultOut": {
+        "properties": {
+          "correct": {
+            "title": "Correct",
+            "type": "boolean"
+          },
+          "correct_answer": {
+            "title": "Correct Answer",
+            "type": "string"
+          },
+          "explanation": {
+            "title": "Explanation",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "correct",
+          "correct_answer",
+          "explanation"
+        ],
+        "title": "DrillResultOut",
+        "type": "object"
+      },
       "ExerciseCheckIn": {
         "properties": {
           "answer": {
@@ -624,6 +690,44 @@
           "type"
         ],
         "title": "ValidationError",
+        "type": "object"
+      },
+      "WordReviewIn": {
+        "properties": {
+          "known": {
+            "description": "True when the learner knew the word",
+            "title": "Known",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "known"
+        ],
+        "title": "WordReviewIn",
+        "type": "object"
+      },
+      "WordReviewOut": {
+        "properties": {
+          "box": {
+            "title": "Box",
+            "type": "integer"
+          },
+          "due_at": {
+            "format": "date-time",
+            "title": "Due At",
+            "type": "string"
+          },
+          "mastered": {
+            "title": "Mastered",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "box",
+          "due_at",
+          "mastered"
+        ],
+        "title": "WordReviewOut",
         "type": "object"
       }
     },
@@ -1124,6 +1228,120 @@
         ]
       }
     },
+    "/api/v1/pronunciation/{slug}/drill": {
+      "post": {
+        "operationId": "submit_drill_api_v1_pronunciation__slug__drill_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DrillIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DrillOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit Drill",
+        "tags": [
+          "tracks"
+        ]
+      }
+    },
+    "/api/v1/pronunciation/{slug}/items/{item_id}/speech": {
+      "get": {
+        "description": "The word a listen-and-choose item says. Fetched only when the learner presses Play.",
+        "operationId": "drill_speech_api_v1_pronunciation__slug__items__item_id__speech_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "item_id",
+            "required": true,
+            "schema": {
+              "title": "Item Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpeechOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Drill Speech",
+        "tags": [
+          "tracks"
+        ]
+      }
+    },
     "/api/v1/units/{slug}/test": {
       "post": {
         "operationId": "submit_test_api_v1_units__slug__test_post",
@@ -1178,6 +1396,64 @@
         "summary": "Submit Test",
         "tags": [
           "units"
+        ]
+      }
+    },
+    "/api/v1/vocabulary/{word_id}/review": {
+      "post": {
+        "operationId": "review_word_api_v1_vocabulary__word_id__review_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "word_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Word Id",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WordReviewIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WordReviewOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Review Word",
+        "tags": [
+          "tracks"
         ]
       }
     },

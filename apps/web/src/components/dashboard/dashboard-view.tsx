@@ -58,6 +58,8 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           <CardBody>
             <p className="text-lg font-semibold text-foreground" data-testid="review-due">{t("reviewDue", { count: data.reviewDueCount })}</p>
             <Link href="/review" className="text-sm font-medium text-accent-blue underline">{t("openReview")}</Link>
+            <p className="mt-2 font-semibold text-foreground" data-testid="vocab-due">{t("vocabularyDue", { count: data.vocabularyDueCount })}</p>
+            <Link href="/vocabulary" className="text-sm font-medium text-accent-blue underline">{t("openVocabulary")}</Link>
           </CardBody>
         </Card>
         <Card>
@@ -156,6 +158,7 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
                 ))}
                 <li><Link href="/lessons" className="text-sm font-medium text-accent-blue underline">{t("allLessons")}</Link></li>
                 <li><Link href="/practice" className="text-sm font-medium text-accent-blue underline">{t("openPractice")}</Link></li>
+                <li><Link href="/pronunciation" className="text-sm font-medium text-accent-blue underline">{t("openPronunciation")}</Link></li>
               </ul>
             )}
           </CardBody>

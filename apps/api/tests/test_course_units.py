@@ -51,3 +51,16 @@ async def test_unit_test_unlocks_the_next_unit(client: AsyncClient, make_user) -
     assert units[0]["progress"] == {"bestScore": 1.0, "attempts": 2, "passed": True}
     assert units[1]["locked"] is False
     assert (await client.post("/api/v1/units/nope/test", json={"answers": {}}, headers=h)).status_code == 404
+
+
+@pytest.mark.integration
+async def test_lessons_in_a_locked_unit_cannot_be_started(client: AsyncClient, make_user) -> None:  # type: ignore[no-untyped-def]
+    u = await make_user()
+    h = auth(u.token)
+    units = (await client.post("/graphql", json={"query": UNITS_Q}, headers=h)).json()["data"]["units"]
+    open_lesson, locked_lesson = units[0]["lessons"][0]["slug"], units[1]["lessons"][0]["slug"]
+    assert (await client.post(f"/api/v1/lessons/{open_lesson}/start", headers=h)).status_code == 200
+    r = await client.post(f"/api/v1/lessons/{locked_lesson}/start", headers=h)
+    assert r.status_code == 403
+    r = await client.post(f"/api/v1/lessons/{locked_lesson}/check", json={"answers": {}}, headers=h)
+    assert r.status_code == 403

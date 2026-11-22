@@ -24,7 +24,9 @@
     "main": "Main",
     "lessons": "Lessons",
     "practice": "Practice",
-    "review": "Review"
+    "review": "Review",
+    "vocabulary": "Vocabulary",
+    "pronunciation": "Pronunciation"
   },
   "footer": {
     "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
@@ -167,7 +169,10 @@
     "planTitle": "Today's plan",
     "planEmpty": "Take the 15-minute placement test to get a level and a study plan.",
     "takePlacement": "Take the placement test",
-    "retakePlacement": "Redo the placement test"
+    "retakePlacement": "Redo the placement test",
+    "vocabularyDue": "{count, plural, =0 {No words to review} one {# word to review} other {# words to review}}",
+    "openVocabulary": "Vocabulary flashcards",
+    "openPronunciation": "Pronunciation track"
   },
   "profile": {
     "title": "Your profile",
@@ -240,7 +245,8 @@
     "backToLessons": "Back to lessons",
     "toDashboard": "Go to my dashboard",
     "notFound": "This lesson was not found.",
-    "question": "Question {n}"
+    "question": "Question {n}",
+    "tracks": "Also practise: "
   },
   "practice": {
     "title": "Practice",
@@ -366,5 +372,63 @@
     "resultFailed": "You need {pass}% to pass. Read the explanations, review the lessons and try again.",
     "openNext": "Go to the next unit",
     "otherLessons": "Other lessons"
+  },
+  "vocabulary": {
+    "title": "Vocabulary",
+    "intro": "Learn the most useful English words with flashcards. Say if you knew each word. Words you miss come back sooner; words you know come back after 1, 3, 7 and 14 days, then they are mastered.",
+    "dueCount": "{count, plural, =0 {No words are due for review right now.} one {# word is ready to review.} other {# words are ready to review.}}",
+    "reviewNow": "Review due words",
+    "levelHeading": "Level {code}: {name} ({cefr})",
+    "setProgress": "{seen} of {total} practised · {mastered} mastered",
+    "open": "Study this set",
+    "backToSets": "Back to vocabulary",
+    "card": "Card {n} of {total}",
+    "listen": "Listen",
+    "show": "Show meaning",
+    "knewIt": "I knew it",
+    "notYet": "Not yet",
+    "example": "Example",
+    "done": "Set finished",
+    "doneBody": "You knew {known} of {total} words. Words you did not know will come back tomorrow.",
+    "again": "Study again",
+    "reviewTitle": "Review due words",
+    "reviewEmpty": "Nothing to review right now. Come back later or study a new set.",
+    "mastered": "Mastered",
+    "box": "Step {box} of 5",
+    "new": "New",
+    "noVoice": "Your browser has no speech voice. Read the word and the example instead.",
+    "source": "Word list based on English word frequency (wordfreq, CC BY-SA 4.0). Meanings and examples are our own."
+  },
+  "pronunciation": {
+    "title": "Pronunciation",
+    "intro": "Learn every English sound, word stress, sentence stress, linking and intonation. Listen and choose what you hear. Saying the sounds yourself and getting feedback comes in a later update.",
+    "kinds": {
+      "vowel": "Vowels",
+      "diphthong": "Diphthongs (moving vowels)",
+      "consonant": "Consonants",
+      "stress": "Stress",
+      "linking": "Linking",
+      "intonation": "Intonation"
+    },
+    "best": "Best score: {value}%",
+    "notTried": "Not tried yet",
+    "open": "Practise",
+    "backToTopics": "Back to pronunciation",
+    "howTo": "How to say it",
+    "examples": "Examples",
+    "listenExamples": "Listen to the examples",
+    "drill": "Drill",
+    "drillListen": "Press play, then choose the word you hear.",
+    "item": "Item {n}",
+    "play": "Play",
+    "submit": "Check my answers",
+    "answerAll": "Please answer every item.",
+    "result": "You scored {value}%.",
+    "correct": "Correct",
+    "notQuite": "Not quite. The answer was: {answer}",
+    "tryAgain": "Try again",
+    "symbols": "Sound symbols: {symbols}",
+    "accent": "Symbols follow common British dictionary style. Other accents are fine as long as you are clear.",
+    "noVoice": "Your browser has no speech voice, so audio items cannot play here."
   }
 }

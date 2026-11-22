@@ -1,0 +1,3765 @@
+{
+  "level_code": 1,
+  "sets": [
+    {
+      "slug": "l1-words-01",
+      "title": "Starter words 1",
+      "words": [
+        {
+          "id": "apple-noun",
+          "word": "apple",
+          "part_of_speech": "noun",
+          "meaning": "a round fruit with red or green skin",
+          "example": "I eat an apple every day."
+        },
+        {
+          "id": "bread-noun",
+          "word": "bread",
+          "part_of_speech": "noun",
+          "meaning": "food made from flour and baked",
+          "example": "We need some bread."
+        },
+        {
+          "id": "egg-noun",
+          "word": "egg",
+          "part_of_speech": "noun",
+          "meaning": "an oval object laid by birds, used as food",
+          "example": "I had two eggs for breakfast."
+        },
+        {
+          "id": "rice-noun",
+          "word": "rice",
+          "part_of_speech": "noun",
+          "meaning": "small white or brown grains used as food",
+          "example": "We had rice with vegetables."
+        },
+        {
+          "id": "vegetable-noun",
+          "word": "vegetable",
+          "part_of_speech": "noun",
+          "meaning": "a plant eaten as food",
+          "example": "Carrots are my favourite vegetable."
+        },
+        {
+          "id": "fruit-noun",
+          "word": "fruit",
+          "part_of_speech": "noun",
+          "meaning": "the sweet part of a plant you can eat",
+          "example": "Eat more fruit."
+        },
+        {
+          "id": "cheese-noun",
+          "word": "cheese",
+          "part_of_speech": "noun",
+          "meaning": "food made from milk",
+          "example": "I'd like a cheese sandwich."
+        },
+        {
+          "id": "juice-noun",
+          "word": "juice",
+          "part_of_speech": "noun",
+          "meaning": "liquid from fruit",
+          "example": "A glass of orange juice, please."
+        },
+        {
+          "id": "breakfast-noun",
+          "word": "breakfast",
+          "part_of_speech": "noun",
+          "meaning": "the first meal of the day",
+          "example": "What did you have for breakfast?"
+        },
+        {
+          "id": "hungry-adjective",
+          "word": "hungry",
+          "part_of_speech": "adjective",
+          "meaning": "wanting food",
+          "example": "I'm hungry."
+        },
+        {
+          "id": "thirsty-adjective",
+          "word": "thirsty",
+          "part_of_speech": "adjective",
+          "meaning": "wanting a drink",
+          "example": "I'm thirsty. Is there any water?"
+        },
+        {
+          "id": "delicious-adjective",
+          "word": "delicious",
+          "part_of_speech": "adjective",
+          "meaning": "tasting very good",
+          "example": "This soup is delicious."
+        },
+        {
+          "id": "nose-noun",
+          "word": "nose",
+          "part_of_speech": "noun",
+          "meaning": "the part of your face you smell with",
+          "example": "He has a cold and a red nose."
+        },
+        {
+          "id": "ear-noun",
+          "word": "ear",
+          "part_of_speech": "noun",
+          "meaning": "the part of your head you hear with",
+          "example": "She has small ears."
+        },
+        {
+          "id": "tooth-noun",
+          "word": "tooth",
+          "part_of_speech": "noun",
+          "meaning": "one of the hard white things in your mouth",
+          "example": "I need to clean my teeth."
+        },
+        {
+          "id": "finger-noun",
+          "word": "finger",
+          "part_of_speech": "noun",
+          "meaning": "one of the five parts at the end of your hand",
+          "example": "I cut my finger."
+        },
+        {
+          "id": "knee-noun",
+          "word": "knee",
+          "part_of_speech": "noun",
+          "meaning": "the middle part of your leg",
+          "example": "I hurt my knee."
+        },
+        {
+          "id": "back-noun",
+          "word": "back",
+          "part_of_speech": "noun",
+          "meaning": "the part of your body behind you",
+          "example": "My back hurts."
+        },
+        {
+          "id": "shoulder-noun",
+          "word": "shoulder",
+          "part_of_speech": "noun",
+          "meaning": "the top of your arm, near your neck",
+          "example": "She put her bag on her shoulder."
+        },
+        {
+          "id": "headache-noun",
+          "word": "headache",
+          "part_of_speech": "noun",
+          "meaning": "a pain in your head",
+          "example": "I have a headache."
+        },
+        {
+          "id": "uncle-noun",
+          "word": "uncle",
+          "part_of_speech": "noun",
+          "meaning": "the brother of your mother or father",
+          "example": "My uncle lives in Canada."
+        },
+        {
+          "id": "aunt-noun",
+          "word": "aunt",
+          "part_of_speech": "noun",
+          "meaning": "the sister of your mother or father",
+          "example": "My aunt is a nurse."
+        },
+        {
+          "id": "cousin-noun",
+          "word": "cousin",
+          "part_of_speech": "noun",
+          "meaning": "the child of your aunt or uncle",
+          "example": "My cousin is my age."
+        },
+        {
+          "id": "grandmother-noun",
+          "word": "grandmother",
+          "part_of_speech": "noun",
+          "meaning": "the mother of your mother or father",
+          "example": "My grandmother tells great stories."
+        },
+        {
+          "id": "grandfather-noun",
+          "word": "grandfather",
+          "part_of_speech": "noun",
+          "meaning": "the father of your mother or father",
+          "example": "My grandfather was a farmer."
+        },
+        {
+          "id": "neighbour-noun",
+          "word": "neighbour",
+          "part_of_speech": "noun",
+          "meaning": "a person who lives near you",
+          "example": "Our neighbours are friendly."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-02",
+      "title": "Starter words 2",
+      "words": [
+        {
+          "id": "bedroom-noun",
+          "word": "bedroom",
+          "part_of_speech": "noun",
+          "meaning": "a room for sleeping",
+          "example": "My bedroom is upstairs."
+        },
+        {
+          "id": "bathroom-noun",
+          "word": "bathroom",
+          "part_of_speech": "noun",
+          "meaning": "a room with a bath or shower",
+          "example": "The bathroom is on the left."
+        },
+        {
+          "id": "sofa-noun",
+          "word": "sofa",
+          "part_of_speech": "noun",
+          "meaning": "a long soft seat for two or more people",
+          "example": "We sat on the sofa."
+        },
+        {
+          "id": "fridge-noun",
+          "word": "fridge",
+          "part_of_speech": "noun",
+          "meaning": "a cold box for keeping food",
+          "example": "Put the milk in the fridge."
+        },
+        {
+          "id": "towel-noun",
+          "word": "towel",
+          "part_of_speech": "noun",
+          "meaning": "a cloth for drying yourself",
+          "example": "Can I have a clean towel?"
+        },
+        {
+          "id": "jacket-noun",
+          "word": "jacket",
+          "part_of_speech": "noun",
+          "meaning": "a short coat",
+          "example": "Take a jacket; it's cold."
+        },
+        {
+          "id": "trousers-noun",
+          "word": "trousers",
+          "part_of_speech": "noun",
+          "meaning": "clothing for the legs",
+          "example": "He bought new trousers."
+        },
+        {
+          "id": "umbrella-noun",
+          "word": "umbrella",
+          "part_of_speech": "noun",
+          "meaning": "a thing that protects you from rain",
+          "example": "Don't forget your umbrella."
+        },
+        {
+          "id": "pen-noun",
+          "word": "pen",
+          "part_of_speech": "noun",
+          "meaning": "a thing for writing with ink",
+          "example": "Can I borrow a pen?"
+        },
+        {
+          "id": "pencil-noun",
+          "word": "pencil",
+          "part_of_speech": "noun",
+          "meaning": "a wooden thing for writing or drawing",
+          "example": "Use a pencil for the test."
+        },
+        {
+          "id": "homework-noun",
+          "word": "homework",
+          "part_of_speech": "noun",
+          "meaning": "school work you do at home",
+          "example": "I have a lot of homework."
+        },
+        {
+          "id": "lesson-noun",
+          "word": "lesson",
+          "part_of_speech": "noun",
+          "meaning": "a period of teaching",
+          "example": "The lesson starts at ten."
+        },
+        {
+          "id": "exam-noun",
+          "word": "exam",
+          "part_of_speech": "noun",
+          "meaning": "an important test",
+          "example": "I passed my exam!"
+        },
+        {
+          "id": "dictionary-noun",
+          "word": "dictionary",
+          "part_of_speech": "noun",
+          "meaning": "a book that explains words",
+          "example": "Look up the word in a dictionary."
+        },
+        {
+          "id": "spell-verb",
+          "word": "spell",
+          "part_of_speech": "verb",
+          "meaning": "say or write the letters of a word",
+          "example": "How do you spell your name?"
+        },
+        {
+          "id": "sentence-noun",
+          "word": "sentence",
+          "part_of_speech": "noun",
+          "meaning": "a group of words with a verb",
+          "example": "Write a sentence with this word."
+        },
+        {
+          "id": "mean-adjective",
+          "word": "mean",
+          "part_of_speech": "adjective",
+          "meaning": "unkind",
+          "example": "Don't be mean to your sister."
+        },
+        {
+          "id": "clever-adjective",
+          "word": "clever",
+          "part_of_speech": "adjective",
+          "meaning": "quick to learn and understand",
+          "example": "She's a clever girl."
+        },
+        {
+          "id": "lazy-adjective",
+          "word": "lazy",
+          "part_of_speech": "adjective",
+          "meaning": "not wanting to work",
+          "example": "He's too lazy to cook."
+        },
+        {
+          "id": "polite-adjective",
+          "word": "polite",
+          "part_of_speech": "adjective",
+          "meaning": "having good manners",
+          "example": "It's polite to say thank you."
+        },
+        {
+          "id": "rude-adjective",
+          "word": "rude",
+          "part_of_speech": "adjective",
+          "meaning": "not polite",
+          "example": "It's rude to interrupt."
+        },
+        {
+          "id": "shy-adjective",
+          "word": "shy",
+          "part_of_speech": "adjective",
+          "meaning": "nervous with other people",
+          "example": "He's shy at parties."
+        },
+        {
+          "id": "nervous-adjective",
+          "word": "nervous",
+          "part_of_speech": "adjective",
+          "meaning": "a little afraid or worried",
+          "example": "I'm nervous about the interview."
+        },
+        {
+          "id": "bored-adjective",
+          "word": "bored",
+          "part_of_speech": "adjective",
+          "meaning": "not interested",
+          "example": "I'm bored. Let's go out."
+        },
+        {
+          "id": "boring-adjective",
+          "word": "boring",
+          "part_of_speech": "adjective",
+          "meaning": "not interesting",
+          "example": "The film was boring."
+        },
+        {
+          "id": "interesting-adjective",
+          "word": "interesting",
+          "part_of_speech": "adjective",
+          "meaning": "making you want to know more",
+          "example": "It's an interesting book."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-03",
+      "title": "Starter words 3",
+      "words": [
+        {
+          "id": "noisy-adjective",
+          "word": "noisy",
+          "part_of_speech": "adjective",
+          "meaning": "making a lot of noise",
+          "example": "The street is very noisy."
+        },
+        {
+          "id": "dirty-adjective",
+          "word": "dirty",
+          "part_of_speech": "adjective",
+          "meaning": "not clean",
+          "example": "Your shoes are dirty."
+        },
+        {
+          "id": "wet-adjective",
+          "word": "wet",
+          "part_of_speech": "adjective",
+          "meaning": "covered with water",
+          "example": "My hair is wet."
+        },
+        {
+          "id": "sunny-adjective",
+          "word": "sunny",
+          "part_of_speech": "adjective",
+          "meaning": "with a lot of sun",
+          "example": "It's a sunny day."
+        },
+        {
+          "id": "cloudy-adjective",
+          "word": "cloudy",
+          "part_of_speech": "adjective",
+          "meaning": "with many clouds",
+          "example": "It's cloudy today."
+        },
+        {
+          "id": "windy-adjective",
+          "word": "windy",
+          "part_of_speech": "adjective",
+          "meaning": "with a lot of wind",
+          "example": "It's windy by the sea."
+        },
+        {
+          "id": "rainy-adjective",
+          "word": "rainy",
+          "part_of_speech": "adjective",
+          "meaning": "with a lot of rain",
+          "example": "It was a rainy weekend."
+        },
+        {
+          "id": "people-noun",
+          "word": "people",
+          "part_of_speech": "noun",
+          "meaning": "men, women and children",
+          "example": "Many people came to the party."
+        },
+        {
+          "id": "now-adverb",
+          "word": "now",
+          "part_of_speech": "adverb",
+          "meaning": "at this moment",
+          "example": "I'm busy now. Can I call you later?"
+        },
+        {
+          "id": "good-adjective",
+          "word": "good",
+          "part_of_speech": "adjective",
+          "meaning": "of high quality; nice",
+          "example": "This is a good book."
+        },
+        {
+          "id": "after-preposition",
+          "word": "after",
+          "part_of_speech": "preposition",
+          "meaning": "later than something",
+          "example": "We went for a walk after lunch."
+        },
+        {
+          "id": "first-adjective",
+          "word": "first",
+          "part_of_speech": "adjective",
+          "meaning": "coming before all others",
+          "example": "My first teacher was very kind."
+        },
+        {
+          "id": "know-verb",
+          "word": "know",
+          "part_of_speech": "verb",
+          "meaning": "have information in your mind",
+          "example": "Do you know her phone number?"
+        },
+        {
+          "id": "see-verb",
+          "word": "see",
+          "part_of_speech": "verb",
+          "meaning": "notice with your eyes",
+          "example": "I can see the sea from my window."
+        },
+        {
+          "id": "two-number",
+          "word": "two",
+          "part_of_speech": "number",
+          "meaning": "the number 2",
+          "example": "I have two brothers."
+        },
+        {
+          "id": "make-verb",
+          "word": "make",
+          "part_of_speech": "verb",
+          "meaning": "create or produce something",
+          "example": "Let's make a cake."
+        },
+        {
+          "id": "think-verb",
+          "word": "think",
+          "part_of_speech": "verb",
+          "meaning": "have an idea or opinion",
+          "example": "I think it will rain."
+        },
+        {
+          "id": "back-adverb",
+          "word": "back",
+          "part_of_speech": "adverb",
+          "meaning": "to the place you came from",
+          "example": "She came back at six."
+        },
+        {
+          "id": "want-verb",
+          "word": "want",
+          "part_of_speech": "verb",
+          "meaning": "wish to have or do something",
+          "example": "I want a cup of tea."
+        },
+        {
+          "id": "go-verb",
+          "word": "go",
+          "part_of_speech": "verb",
+          "meaning": "move to another place",
+          "example": "We go to school by bus."
+        },
+        {
+          "id": "well-adverb",
+          "word": "well",
+          "part_of_speech": "adverb",
+          "meaning": "in a good way",
+          "example": "She speaks English well."
+        },
+        {
+          "id": "way-noun",
+          "word": "way",
+          "part_of_speech": "noun",
+          "meaning": "a road or method",
+          "example": "Is this the way to the station?"
+        },
+        {
+          "id": "much-determiner",
+          "word": "much",
+          "part_of_speech": "determiner",
+          "meaning": "a large amount of",
+          "example": "I don't have much time."
+        },
+        {
+          "id": "even-adverb",
+          "word": "even",
+          "part_of_speech": "adverb",
+          "meaning": "used to show something is surprising",
+          "example": "He works even on Sundays."
+        },
+        {
+          "id": "need-verb",
+          "word": "need",
+          "part_of_speech": "verb",
+          "meaning": "must have something",
+          "example": "I need a new phone."
+        },
+        {
+          "id": "really-adverb",
+          "word": "really",
+          "part_of_speech": "adverb",
+          "meaning": "very; truly",
+          "example": "The film was really good."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-04",
+      "title": "Starter words 4",
+      "words": [
+        {
+          "id": "right-adjective",
+          "word": "right",
+          "part_of_speech": "adjective",
+          "meaning": "correct",
+          "example": "That's the right answer."
+        },
+        {
+          "id": "work-noun",
+          "word": "work",
+          "part_of_speech": "noun",
+          "meaning": "a job or activity you do",
+          "example": "I start work at nine."
+        },
+        {
+          "id": "year-noun",
+          "word": "year",
+          "part_of_speech": "noun",
+          "meaning": "twelve months",
+          "example": "She is ten years old."
+        },
+        {
+          "id": "day-noun",
+          "word": "day",
+          "part_of_speech": "noun",
+          "meaning": "24 hours; the time when it is light",
+          "example": "Have a nice day!"
+        },
+        {
+          "id": "too-adverb",
+          "word": "too",
+          "part_of_speech": "adverb",
+          "meaning": "also; more than is good",
+          "example": "This coffee is too hot."
+        },
+        {
+          "id": "before-preposition",
+          "word": "before",
+          "part_of_speech": "preposition",
+          "meaning": "earlier than",
+          "example": "Wash your hands before dinner."
+        },
+        {
+          "id": "off-adverb",
+          "word": "off",
+          "part_of_speech": "adverb",
+          "meaning": "not working; away",
+          "example": "Please turn the TV off."
+        },
+        {
+          "id": "still-adverb",
+          "word": "still",
+          "part_of_speech": "adverb",
+          "meaning": "continuing until now",
+          "example": "Are you still at work?"
+        },
+        {
+          "id": "take-verb",
+          "word": "take",
+          "part_of_speech": "verb",
+          "meaning": "carry or get something",
+          "example": "Take an umbrella with you."
+        },
+        {
+          "id": "never-adverb",
+          "word": "never",
+          "part_of_speech": "adverb",
+          "meaning": "not at any time",
+          "example": "I never drink coffee at night."
+        },
+        {
+          "id": "life-noun",
+          "word": "life",
+          "part_of_speech": "noun",
+          "meaning": "the time a person is alive",
+          "example": "She had a happy life."
+        },
+        {
+          "id": "say-verb",
+          "word": "say",
+          "part_of_speech": "verb",
+          "meaning": "speak words",
+          "example": "What did he say?"
+        },
+        {
+          "id": "world-noun",
+          "word": "world",
+          "part_of_speech": "noun",
+          "meaning": "the earth and all its people",
+          "example": "It's the biggest city in the world."
+        },
+        {
+          "id": "down-adverb",
+          "word": "down",
+          "part_of_speech": "adverb",
+          "meaning": "to a lower place",
+          "example": "Please sit down."
+        },
+        {
+          "id": "great-adjective",
+          "word": "great",
+          "part_of_speech": "adjective",
+          "meaning": "very good; very large",
+          "example": "We had a great time."
+        },
+        {
+          "id": "last-adjective",
+          "word": "last",
+          "part_of_speech": "adjective",
+          "meaning": "the one before now; final",
+          "example": "I saw him last week."
+        },
+        {
+          "id": "best-adjective",
+          "word": "best",
+          "part_of_speech": "adjective",
+          "meaning": "better than all others",
+          "example": "She is my best friend."
+        },
+        {
+          "id": "love-verb",
+          "word": "love",
+          "part_of_speech": "verb",
+          "meaning": "like someone or something very much",
+          "example": "I love my family."
+        },
+        {
+          "id": "man-noun",
+          "word": "man",
+          "part_of_speech": "noun",
+          "meaning": "an adult male person",
+          "example": "A man opened the door."
+        },
+        {
+          "id": "home-noun",
+          "word": "home",
+          "part_of_speech": "noun",
+          "meaning": "the place where you live",
+          "example": "I'm going home now."
+        },
+        {
+          "id": "long-adjective",
+          "word": "long",
+          "part_of_speech": "adjective",
+          "meaning": "large in length or time",
+          "example": "It was a long journey."
+        },
+        {
+          "id": "look-verb",
+          "word": "look",
+          "part_of_speech": "verb",
+          "meaning": "turn your eyes towards something",
+          "example": "Look at this photo!"
+        },
+        {
+          "id": "something-pronoun",
+          "word": "something",
+          "part_of_speech": "pronoun",
+          "meaning": "a thing that is not named",
+          "example": "I want something to drink."
+        },
+        {
+          "id": "use-verb",
+          "word": "use",
+          "part_of_speech": "verb",
+          "meaning": "do something with a tool or thing",
+          "example": "Can I use your pen?"
+        },
+        {
+          "id": "same-adjective",
+          "word": "same",
+          "part_of_speech": "adjective",
+          "meaning": "not different",
+          "example": "We are in the same class."
+        },
+        {
+          "id": "every-determiner",
+          "word": "every",
+          "part_of_speech": "determiner",
+          "meaning": "each one of a group",
+          "example": "I walk every day."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-05",
+      "title": "Starter words 5",
+      "words": [
+        {
+          "id": "come-verb",
+          "word": "come",
+          "part_of_speech": "verb",
+          "meaning": "move towards here",
+          "example": "Come to my house on Saturday."
+        },
+        {
+          "id": "part-noun",
+          "word": "part",
+          "part_of_speech": "noun",
+          "meaning": "one piece of something bigger",
+          "example": "The first part of the film was boring."
+        },
+        {
+          "id": "state-noun",
+          "word": "state",
+          "part_of_speech": "noun",
+          "meaning": "a condition; a country or region",
+          "example": "The house was in a bad state."
+        },
+        {
+          "id": "three-number",
+          "word": "three",
+          "part_of_speech": "number",
+          "meaning": "the number 3",
+          "example": "The shop is three minutes away."
+        },
+        {
+          "id": "around-preposition",
+          "word": "around",
+          "part_of_speech": "preposition",
+          "meaning": "in a circle; near",
+          "example": "We walked around the lake."
+        },
+        {
+          "id": "between-preposition",
+          "word": "between",
+          "part_of_speech": "preposition",
+          "meaning": "in the space in the middle of two things",
+          "example": "The bank is between the café and the shop."
+        },
+        {
+          "id": "always-adverb",
+          "word": "always",
+          "part_of_speech": "adverb",
+          "meaning": "at all times",
+          "example": "She always smiles."
+        },
+        {
+          "id": "better-adjective",
+          "word": "better",
+          "part_of_speech": "adjective",
+          "meaning": "more good",
+          "example": "This plan is better than that one."
+        },
+        {
+          "id": "find-verb",
+          "word": "find",
+          "part_of_speech": "verb",
+          "meaning": "discover something you were looking for",
+          "example": "I can't find my keys."
+        },
+        {
+          "id": "help-verb",
+          "word": "help",
+          "part_of_speech": "verb",
+          "meaning": "make it easier for someone to do something",
+          "example": "Can you help me carry this?"
+        },
+        {
+          "id": "high-adjective",
+          "word": "high",
+          "part_of_speech": "adjective",
+          "meaning": "far from the ground",
+          "example": "The mountain is very high."
+        },
+        {
+          "id": "little-adjective",
+          "word": "little",
+          "part_of_speech": "adjective",
+          "meaning": "small",
+          "example": "They live in a little house."
+        },
+        {
+          "id": "old-adjective",
+          "word": "old",
+          "part_of_speech": "adjective",
+          "meaning": "having lived or existed a long time",
+          "example": "My grandfather is very old."
+        },
+        {
+          "id": "another-determiner",
+          "word": "another",
+          "part_of_speech": "determiner",
+          "meaning": "one more",
+          "example": "Can I have another biscuit?"
+        },
+        {
+          "id": "thing-noun",
+          "word": "thing",
+          "part_of_speech": "noun",
+          "meaning": "an object",
+          "example": "What is that thing on the table?"
+        },
+        {
+          "id": "under-preposition",
+          "word": "under",
+          "part_of_speech": "preposition",
+          "meaning": "below something",
+          "example": "The cat is under the bed."
+        },
+        {
+          "id": "during-preposition",
+          "word": "during",
+          "part_of_speech": "preposition",
+          "meaning": "all through a period of time",
+          "example": "Don't talk during the film."
+        },
+        {
+          "id": "game-noun",
+          "word": "game",
+          "part_of_speech": "noun",
+          "meaning": "an activity you play for fun",
+          "example": "Let's play a game."
+        },
+        {
+          "id": "give-verb",
+          "word": "give",
+          "part_of_speech": "verb",
+          "meaning": "let someone have something",
+          "example": "Give me the book, please."
+        },
+        {
+          "id": "house-noun",
+          "word": "house",
+          "part_of_speech": "noun",
+          "meaning": "a building where people live",
+          "example": "Their house has a big garden."
+        },
+        {
+          "id": "place-noun",
+          "word": "place",
+          "part_of_speech": "noun",
+          "meaning": "a particular area or position",
+          "example": "This is a nice place for a picnic."
+        },
+        {
+          "id": "school-noun",
+          "word": "school",
+          "part_of_speech": "noun",
+          "meaning": "where children go to learn",
+          "example": "My school starts at eight."
+        },
+        {
+          "id": "again-adverb",
+          "word": "again",
+          "part_of_speech": "adverb",
+          "meaning": "one more time",
+          "example": "Can you say that again?"
+        },
+        {
+          "id": "next-adjective",
+          "word": "next",
+          "part_of_speech": "adjective",
+          "meaning": "coming straight after",
+          "example": "See you next week."
+        },
+        {
+          "id": "without-preposition",
+          "word": "without",
+          "part_of_speech": "preposition",
+          "meaning": "not having",
+          "example": "I drink tea without sugar."
+        },
+        {
+          "id": "against-preposition",
+          "word": "against",
+          "part_of_speech": "preposition",
+          "meaning": "opposing; touching",
+          "example": "She is against the plan."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-06",
+      "title": "Starter words 6",
+      "words": [
+        {
+          "id": "end-noun",
+          "word": "end",
+          "part_of_speech": "noun",
+          "meaning": "the last part",
+          "example": "The end of the story was sad."
+        },
+        {
+          "id": "show-verb",
+          "word": "show",
+          "part_of_speech": "verb",
+          "meaning": "let someone see something",
+          "example": "Show me your new phone."
+        },
+        {
+          "id": "big-adjective",
+          "word": "big",
+          "part_of_speech": "adjective",
+          "meaning": "large in size",
+          "example": "They have a big dog."
+        },
+        {
+          "id": "feel-verb",
+          "word": "feel",
+          "part_of_speech": "verb",
+          "meaning": "have an emotion or sensation",
+          "example": "I feel tired today."
+        },
+        {
+          "id": "sure-adjective",
+          "word": "sure",
+          "part_of_speech": "adjective",
+          "meaning": "certain",
+          "example": "Are you sure it's open?"
+        },
+        {
+          "id": "team-noun",
+          "word": "team",
+          "part_of_speech": "noun",
+          "meaning": "a group that works or plays together",
+          "example": "Our team won the match."
+        },
+        {
+          "id": "ever-adverb",
+          "word": "ever",
+          "part_of_speech": "adverb",
+          "meaning": "at any time",
+          "example": "Have you ever been to Italy?"
+        },
+        {
+          "id": "family-noun",
+          "word": "family",
+          "part_of_speech": "noun",
+          "meaning": "parents, children and relatives",
+          "example": "I have a big family."
+        },
+        {
+          "id": "keep-verb",
+          "word": "keep",
+          "part_of_speech": "verb",
+          "meaning": "continue to have or do something",
+          "example": "Keep the change."
+        },
+        {
+          "id": "might-modal",
+          "word": "might",
+          "part_of_speech": "modal verb",
+          "meaning": "used to say something is possible",
+          "example": "It might snow tonight."
+        },
+        {
+          "id": "please-adverb",
+          "word": "please",
+          "part_of_speech": "adverb",
+          "meaning": "a polite word when you ask",
+          "example": "Please sit down."
+        },
+        {
+          "id": "put-verb",
+          "word": "put",
+          "part_of_speech": "verb",
+          "meaning": "move something to a place",
+          "example": "Put the milk in the fridge."
+        },
+        {
+          "id": "money-noun",
+          "word": "money",
+          "part_of_speech": "noun",
+          "meaning": "coins and notes used to buy things",
+          "example": "I don't have much money."
+        },
+        {
+          "id": "free-adjective",
+          "word": "free",
+          "part_of_speech": "adjective",
+          "meaning": "costing nothing; not busy",
+          "example": "The museum is free on Sundays."
+        },
+        {
+          "id": "second-adjective",
+          "word": "second",
+          "part_of_speech": "adjective",
+          "meaning": "coming after the first",
+          "example": "This is my second visit."
+        },
+        {
+          "id": "someone-pronoun",
+          "word": "someone",
+          "part_of_speech": "pronoun",
+          "meaning": "a person who is not named",
+          "example": "Someone is at the door."
+        },
+        {
+          "id": "away-adverb",
+          "word": "away",
+          "part_of_speech": "adverb",
+          "meaning": "at a distance",
+          "example": "The beach is two kilometres away."
+        },
+        {
+          "id": "left-noun",
+          "word": "left",
+          "part_of_speech": "noun",
+          "meaning": "the side opposite to right",
+          "example": "Turn left at the corner."
+        },
+        {
+          "id": "number-noun",
+          "word": "number",
+          "part_of_speech": "noun",
+          "meaning": "a word or sign like 1, 2, 3",
+          "example": "What is your phone number?"
+        },
+        {
+          "id": "city-noun",
+          "word": "city",
+          "part_of_speech": "noun",
+          "meaning": "a large town",
+          "example": "Tokyo is a huge city."
+        },
+        {
+          "id": "lot-noun",
+          "word": "lot",
+          "part_of_speech": "noun",
+          "meaning": "a large number or amount (a lot of)",
+          "example": "There are a lot of people here."
+        },
+        {
+          "id": "name-noun",
+          "word": "name",
+          "part_of_speech": "noun",
+          "meaning": "the word that someone is called",
+          "example": "What's your name?"
+        },
+        {
+          "id": "night-noun",
+          "word": "night",
+          "part_of_speech": "noun",
+          "meaning": "the time when it is dark",
+          "example": "I sleep eight hours a night."
+        },
+        {
+          "id": "play-verb",
+          "word": "play",
+          "part_of_speech": "verb",
+          "meaning": "take part in a game; make music",
+          "example": "The children play in the park."
+        },
+        {
+          "id": "until-preposition",
+          "word": "until",
+          "part_of_speech": "preposition",
+          "meaning": "up to a time",
+          "example": "The shop is open until ten."
+        },
+        {
+          "id": "company-noun",
+          "word": "company",
+          "part_of_speech": "noun",
+          "meaning": "a business",
+          "example": "She works for a big company."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-07",
+      "title": "Starter words 7",
+      "words": [
+        {
+          "id": "few-determiner",
+          "word": "few",
+          "part_of_speech": "determiner",
+          "meaning": "a small number of",
+          "example": "I have a few friends here."
+        },
+        {
+          "id": "let-verb",
+          "word": "let",
+          "part_of_speech": "verb",
+          "meaning": "allow",
+          "example": "Let me help you."
+        },
+        {
+          "id": "real-adjective",
+          "word": "real",
+          "part_of_speech": "adjective",
+          "meaning": "true; not imagined",
+          "example": "Is this a real diamond?"
+        },
+        {
+          "id": "called-adjective",
+          "word": "called",
+          "part_of_speech": "adjective",
+          "meaning": "having a name",
+          "example": "He has a dog called Max."
+        },
+        {
+          "id": "different-adjective",
+          "word": "different",
+          "part_of_speech": "adjective",
+          "meaning": "not the same",
+          "example": "We have different ideas."
+        },
+        {
+          "id": "set-verb",
+          "word": "set",
+          "part_of_speech": "verb",
+          "meaning": "put in place; decide on",
+          "example": "Set the table for dinner."
+        },
+        {
+          "id": "thought-noun",
+          "word": "thought",
+          "part_of_speech": "noun",
+          "meaning": "an idea",
+          "example": "That's an interesting thought."
+        },
+        {
+          "id": "however-adverb",
+          "word": "however",
+          "part_of_speech": "adverb",
+          "meaning": "but; used to show contrast",
+          "example": "It was cold. However, we went out."
+        },
+        {
+          "id": "government-noun",
+          "word": "government",
+          "part_of_speech": "noun",
+          "meaning": "the people who control a country",
+          "example": "The government will build new schools."
+        },
+        {
+          "id": "group-noun",
+          "word": "group",
+          "part_of_speech": "noun",
+          "meaning": "a number of people or things together",
+          "example": "A group of students waited outside."
+        },
+        {
+          "id": "public-adjective",
+          "word": "public",
+          "part_of_speech": "adjective",
+          "meaning": "for everyone",
+          "example": "There is a public library in town."
+        },
+        {
+          "id": "top-noun",
+          "word": "top",
+          "part_of_speech": "noun",
+          "meaning": "the highest part",
+          "example": "We climbed to the top of the hill."
+        },
+        {
+          "id": "woman-noun",
+          "word": "woman",
+          "part_of_speech": "noun",
+          "meaning": "an adult female person",
+          "example": "The woman at the desk was helpful."
+        },
+        {
+          "id": "business-noun",
+          "word": "business",
+          "part_of_speech": "noun",
+          "meaning": "buying and selling; a company",
+          "example": "He runs a small business."
+        },
+        {
+          "id": "care-verb",
+          "word": "care",
+          "part_of_speech": "verb",
+          "meaning": "feel that something is important",
+          "example": "I care about the environment."
+        },
+        {
+          "id": "start-verb",
+          "word": "start",
+          "part_of_speech": "verb",
+          "meaning": "begin",
+          "example": "The film starts at eight."
+        },
+        {
+          "id": "system-noun",
+          "word": "system",
+          "part_of_speech": "noun",
+          "meaning": "a set of parts or ways that work together",
+          "example": "The school has a new computer system."
+        },
+        {
+          "id": "time-noun",
+          "word": "time",
+          "part_of_speech": "noun",
+          "meaning": "what we measure in hours and minutes",
+          "example": "What time is it?"
+        },
+        {
+          "id": "week-noun",
+          "word": "week",
+          "part_of_speech": "noun",
+          "meaning": "seven days",
+          "example": "I go swimming twice a week."
+        },
+        {
+          "id": "already-adverb",
+          "word": "already",
+          "part_of_speech": "adverb",
+          "meaning": "before now",
+          "example": "I've already eaten."
+        },
+        {
+          "id": "anything-pronoun",
+          "word": "anything",
+          "part_of_speech": "pronoun",
+          "meaning": "any thing at all",
+          "example": "Do you need anything?"
+        },
+        {
+          "id": "case-noun",
+          "word": "case",
+          "part_of_speech": "noun",
+          "meaning": "a box or bag; a situation",
+          "example": "Put your glasses in the case."
+        },
+        {
+          "id": "nothing-pronoun",
+          "word": "nothing",
+          "part_of_speech": "pronoun",
+          "meaning": "not anything",
+          "example": "There's nothing in the box."
+        },
+        {
+          "id": "person-noun",
+          "word": "person",
+          "part_of_speech": "noun",
+          "meaning": "a human",
+          "example": "She's a very kind person."
+        },
+        {
+          "id": "today-adverb",
+          "word": "today",
+          "part_of_speech": "adverb",
+          "meaning": "on this day",
+          "example": "It's hot today."
+        },
+        {
+          "id": "change-verb",
+          "word": "change",
+          "part_of_speech": "verb",
+          "meaning": "make or become different",
+          "example": "She changed her hair colour."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-08",
+      "title": "Starter words 8",
+      "words": [
+        {
+          "id": "enough-determiner",
+          "word": "enough",
+          "part_of_speech": "determiner",
+          "meaning": "as much as you need",
+          "example": "We have enough food."
+        },
+        {
+          "id": "everything-pronoun",
+          "word": "everything",
+          "part_of_speech": "pronoun",
+          "meaning": "all things",
+          "example": "Everything is ready."
+        },
+        {
+          "id": "full-adjective",
+          "word": "full",
+          "part_of_speech": "adjective",
+          "meaning": "with no empty space",
+          "example": "The bus was full."
+        },
+        {
+          "id": "live-verb",
+          "word": "live",
+          "part_of_speech": "verb",
+          "meaning": "have your home somewhere",
+          "example": "I live in a flat."
+        },
+        {
+          "id": "point-noun",
+          "word": "point",
+          "part_of_speech": "noun",
+          "meaning": "an idea; a sharp end",
+          "example": "That's a good point."
+        },
+        {
+          "id": "read-verb",
+          "word": "read",
+          "part_of_speech": "verb",
+          "meaning": "look at and understand words",
+          "example": "I read a book every month."
+        },
+        {
+          "id": "tell-verb",
+          "word": "tell",
+          "part_of_speech": "verb",
+          "meaning": "give information to someone",
+          "example": "Tell me about your trip."
+        },
+        {
+          "id": "yet-adverb",
+          "word": "yet",
+          "part_of_speech": "adverb",
+          "meaning": "until now (in questions and negatives)",
+          "example": "Have you finished yet?"
+        },
+        {
+          "id": "bad-adjective",
+          "word": "bad",
+          "part_of_speech": "adjective",
+          "meaning": "not good",
+          "example": "I have some bad news."
+        },
+        {
+          "id": "four-number",
+          "word": "four",
+          "part_of_speech": "number",
+          "meaning": "the number 4",
+          "example": "There are four seasons."
+        },
+        {
+          "id": "hard-adjective",
+          "word": "hard",
+          "part_of_speech": "adjective",
+          "meaning": "difficult; not soft",
+          "example": "The test was hard."
+        },
+        {
+          "id": "mean-verb",
+          "word": "mean",
+          "part_of_speech": "verb",
+          "meaning": "have a meaning",
+          "example": "What does this word mean?"
+        },
+        {
+          "id": "once-adverb",
+          "word": "once",
+          "part_of_speech": "adverb",
+          "meaning": "one time",
+          "example": "I've been there once."
+        },
+        {
+          "id": "support-verb",
+          "word": "support",
+          "part_of_speech": "verb",
+          "meaning": "help or agree with",
+          "example": "My parents support my plans."
+        },
+        {
+          "id": "music-noun",
+          "word": "music",
+          "part_of_speech": "noun",
+          "meaning": "sounds made by singing or instruments",
+          "example": "I listen to music every day."
+        },
+        {
+          "id": "power-noun",
+          "word": "power",
+          "part_of_speech": "noun",
+          "meaning": "strength; energy",
+          "example": "The storm cut the power."
+        },
+        {
+          "id": "stop-verb",
+          "word": "stop",
+          "part_of_speech": "verb",
+          "meaning": "end moving or doing",
+          "example": "The bus stops here."
+        },
+        {
+          "id": "water-noun",
+          "word": "water",
+          "part_of_speech": "noun",
+          "meaning": "the clear liquid we drink",
+          "example": "Can I have a glass of water?"
+        },
+        {
+          "id": "believe-verb",
+          "word": "believe",
+          "part_of_speech": "verb",
+          "meaning": "think something is true",
+          "example": "I believe you."
+        },
+        {
+          "id": "call-verb",
+          "word": "call",
+          "part_of_speech": "verb",
+          "meaning": "phone someone; give a name",
+          "example": "I'll call you tomorrow."
+        },
+        {
+          "id": "head-noun",
+          "word": "head",
+          "part_of_speech": "noun",
+          "meaning": "the top part of your body",
+          "example": "He hit his head."
+        },
+        {
+          "id": "small-adjective",
+          "word": "small",
+          "part_of_speech": "adjective",
+          "meaning": "not big",
+          "example": "It's a small room."
+        },
+        {
+          "id": "white-adjective",
+          "word": "white",
+          "part_of_speech": "adjective",
+          "meaning": "the colour of snow",
+          "example": "She wore a white dress."
+        },
+        {
+          "id": "far-adverb",
+          "word": "far",
+          "part_of_speech": "adverb",
+          "meaning": "a long distance",
+          "example": "Is it far from here?"
+        },
+        {
+          "id": "job-noun",
+          "word": "job",
+          "part_of_speech": "noun",
+          "meaning": "work you are paid for",
+          "example": "She has a new job."
+        },
+        {
+          "id": "side-noun",
+          "word": "side",
+          "part_of_speech": "noun",
+          "meaning": "the left or right part",
+          "example": "Write on one side of the paper."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-09",
+      "title": "Starter words 9",
+      "words": [
+        {
+          "id": "though-adverb",
+          "word": "though",
+          "part_of_speech": "adverb",
+          "meaning": "however (often at the end)",
+          "example": "It was expensive. It was good, though."
+        },
+        {
+          "id": "try-verb",
+          "word": "try",
+          "part_of_speech": "verb",
+          "meaning": "make an effort",
+          "example": "I'll try to come."
+        },
+        {
+          "id": "yes-exclamation",
+          "word": "yes",
+          "part_of_speech": "exclamation",
+          "meaning": "a word to agree",
+          "example": "Yes, I'd love to."
+        },
+        {
+          "id": "actually-adverb",
+          "word": "actually",
+          "part_of_speech": "adverb",
+          "meaning": "in fact",
+          "example": "Actually, I'm a teacher."
+        },
+        {
+          "id": "later-adverb",
+          "word": "later",
+          "part_of_speech": "adverb",
+          "meaning": "after now",
+          "example": "See you later."
+        },
+        {
+          "id": "less-determiner",
+          "word": "less",
+          "part_of_speech": "determiner",
+          "meaning": "a smaller amount",
+          "example": "I'm trying to eat less sugar."
+        },
+        {
+          "id": "line-noun",
+          "word": "line",
+          "part_of_speech": "noun",
+          "meaning": "a long thin mark; a row of people",
+          "example": "Draw a line under the title."
+        },
+        {
+          "id": "order-verb",
+          "word": "order",
+          "part_of_speech": "verb",
+          "meaning": "ask for food or goods",
+          "example": "I'd like to order a pizza."
+        },
+        {
+          "id": "party-noun",
+          "word": "party",
+          "part_of_speech": "noun",
+          "meaning": "a social event with food and music",
+          "example": "We're having a party on Friday."
+        },
+        {
+          "id": "run-verb",
+          "word": "run",
+          "part_of_speech": "verb",
+          "meaning": "move fast on your feet",
+          "example": "I run in the park every morning."
+        },
+        {
+          "id": "service-noun",
+          "word": "service",
+          "part_of_speech": "noun",
+          "meaning": "help given to customers",
+          "example": "The service in this café is fast."
+        },
+        {
+          "id": "country-noun",
+          "word": "country",
+          "part_of_speech": "noun",
+          "meaning": "a nation with its own government",
+          "example": "Which country are you from?"
+        },
+        {
+          "id": "open-adjective",
+          "word": "open",
+          "part_of_speech": "adjective",
+          "meaning": "not closed",
+          "example": "Is the shop open?"
+        },
+        {
+          "id": "season-noun",
+          "word": "season",
+          "part_of_speech": "noun",
+          "meaning": "one of four parts of the year",
+          "example": "Summer is my favourite season."
+        },
+        {
+          "id": "thank-verb",
+          "word": "thank",
+          "part_of_speech": "verb",
+          "meaning": "say you are grateful",
+          "example": "Thank you for your help."
+        },
+        {
+          "id": "child-noun",
+          "word": "child",
+          "part_of_speech": "noun",
+          "meaning": "a young person",
+          "example": "Every child needs to play."
+        },
+        {
+          "id": "everyone-pronoun",
+          "word": "everyone",
+          "part_of_speech": "pronoun",
+          "meaning": "every person",
+          "example": "Everyone was happy."
+        },
+        {
+          "id": "general-adjective",
+          "word": "general",
+          "part_of_speech": "adjective",
+          "meaning": "not detailed; for most people",
+          "example": "I have a general idea."
+        },
+        {
+          "id": "area-noun",
+          "word": "area",
+          "part_of_speech": "noun",
+          "meaning": "a part of a place",
+          "example": "They live in a quiet area."
+        },
+        {
+          "id": "black-adjective",
+          "word": "black",
+          "part_of_speech": "adjective",
+          "meaning": "the darkest colour",
+          "example": "He has a black cat."
+        },
+        {
+          "id": "following-adjective",
+          "word": "following",
+          "part_of_speech": "adjective",
+          "meaning": "next",
+          "example": "We met again the following day."
+        },
+        {
+          "id": "law-noun",
+          "word": "law",
+          "part_of_speech": "noun",
+          "meaning": "a rule made by a government",
+          "example": "It's against the law."
+        },
+        {
+          "id": "together-adverb",
+          "word": "together",
+          "part_of_speech": "adverb",
+          "meaning": "with each other",
+          "example": "Let's study together."
+        },
+        {
+          "id": "war-noun",
+          "word": "war",
+          "part_of_speech": "noun",
+          "meaning": "fighting between countries",
+          "example": "The war lasted five years."
+        },
+        {
+          "id": "whole-adjective",
+          "word": "whole",
+          "part_of_speech": "adjective",
+          "meaning": "all of something",
+          "example": "I ate the whole pizza!"
+        },
+        {
+          "id": "car-noun",
+          "word": "car",
+          "part_of_speech": "noun",
+          "meaning": "a vehicle with four wheels",
+          "example": "My car is red."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-10",
+      "title": "Starter words 10",
+      "words": [
+        {
+          "id": "face-noun",
+          "word": "face",
+          "part_of_speech": "noun",
+          "meaning": "the front of your head",
+          "example": "She has a happy face."
+        },
+        {
+          "id": "five-number",
+          "word": "five",
+          "part_of_speech": "number",
+          "meaning": "the number 5",
+          "example": "I'll be there in five minutes."
+        },
+        {
+          "id": "kind-adjective",
+          "word": "kind",
+          "part_of_speech": "adjective",
+          "meaning": "nice and helpful",
+          "example": "Thank you, you're very kind."
+        },
+        {
+          "id": "maybe-adverb",
+          "word": "maybe",
+          "part_of_speech": "adverb",
+          "meaning": "perhaps",
+          "example": "Maybe it will be sunny tomorrow."
+        },
+        {
+          "id": "president-noun",
+          "word": "president",
+          "part_of_speech": "noun",
+          "meaning": "the leader of a country or group",
+          "example": "The president gave a speech."
+        },
+        {
+          "id": "story-noun",
+          "word": "story",
+          "part_of_speech": "noun",
+          "meaning": "a description of events",
+          "example": "Tell me a story."
+        },
+        {
+          "id": "course-noun",
+          "word": "course",
+          "part_of_speech": "noun",
+          "meaning": "a set of lessons",
+          "example": "I'm doing an English course."
+        },
+        {
+          "id": "health-noun",
+          "word": "health",
+          "part_of_speech": "noun",
+          "meaning": "the condition of your body",
+          "example": "Exercise is good for your health."
+        },
+        {
+          "id": "hope-verb",
+          "word": "hope",
+          "part_of_speech": "verb",
+          "meaning": "want something to happen",
+          "example": "I hope you feel better soon."
+        },
+        {
+          "id": "important-adjective",
+          "word": "important",
+          "part_of_speech": "adjective",
+          "meaning": "mattering a lot",
+          "example": "It's important to drink water."
+        },
+        {
+          "id": "least-determiner",
+          "word": "least",
+          "part_of_speech": "determiner",
+          "meaning": "the smallest amount",
+          "example": "It costs at least ten pounds."
+        },
+        {
+          "id": "news-noun",
+          "word": "news",
+          "part_of_speech": "noun",
+          "meaning": "information about recent events",
+          "example": "Did you hear the news?"
+        },
+        {
+          "id": "able-adjective",
+          "word": "able",
+          "part_of_speech": "adjective",
+          "meaning": "can do something",
+          "example": "Will you be able to come?"
+        },
+        {
+          "id": "book-noun",
+          "word": "book",
+          "part_of_speech": "noun",
+          "meaning": "pages with writing, joined together",
+          "example": "I'm reading a good book."
+        },
+        {
+          "id": "early-adjective",
+          "word": "early",
+          "part_of_speech": "adjective",
+          "meaning": "before the usual time",
+          "example": "I got up early today."
+        },
+        {
+          "id": "friend-noun",
+          "word": "friend",
+          "part_of_speech": "noun",
+          "meaning": "a person you like and know well",
+          "example": "She's my oldest friend."
+        },
+        {
+          "id": "information-noun",
+          "word": "information",
+          "part_of_speech": "noun",
+          "meaning": "facts about something",
+          "example": "I need more information."
+        },
+        {
+          "id": "local-adjective",
+          "word": "local",
+          "part_of_speech": "adjective",
+          "meaning": "of the area near you",
+          "example": "We shop at the local market."
+        },
+        {
+          "id": "post-noun",
+          "word": "post",
+          "part_of_speech": "noun",
+          "meaning": "letters and packages",
+          "example": "Has the post arrived?"
+        },
+        {
+          "id": "video-noun",
+          "word": "video",
+          "part_of_speech": "noun",
+          "meaning": "a recording of moving pictures",
+          "example": "I watched a funny video."
+        },
+        {
+          "id": "young-adjective",
+          "word": "young",
+          "part_of_speech": "adjective",
+          "meaning": "not old",
+          "example": "My sister is very young."
+        },
+        {
+          "id": "ago-adverb",
+          "word": "ago",
+          "part_of_speech": "adverb",
+          "meaning": "before now",
+          "example": "I moved here two years ago."
+        },
+        {
+          "id": "social-adjective",
+          "word": "social",
+          "part_of_speech": "adjective",
+          "meaning": "about people and society",
+          "example": "She has a busy social life."
+        },
+        {
+          "id": "talk-verb",
+          "word": "talk",
+          "part_of_speech": "verb",
+          "meaning": "speak to someone",
+          "example": "Can we talk later?"
+        },
+        {
+          "id": "court-noun",
+          "word": "court",
+          "part_of_speech": "noun",
+          "meaning": "a place where legal cases are decided; a sports area",
+          "example": "They played on the tennis court."
+        },
+        {
+          "id": "fact-noun",
+          "word": "fact",
+          "part_of_speech": "noun",
+          "meaning": "something that is true",
+          "example": "It's a fact that water boils at 100°C."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-11",
+      "title": "Starter words 11",
+      "words": [
+        {
+          "id": "given-adjective",
+          "word": "given",
+          "part_of_speech": "adjective",
+          "meaning": "fixed or stated",
+          "example": "Finish the task in the given time."
+        },
+        {
+          "id": "half-noun",
+          "word": "half",
+          "part_of_speech": "noun",
+          "meaning": "one of two equal parts",
+          "example": "I ate half of the cake."
+        },
+        {
+          "id": "hand-noun",
+          "word": "hand",
+          "part_of_speech": "noun",
+          "meaning": "the part at the end of your arm",
+          "example": "Raise your hand if you know."
+        },
+        {
+          "id": "level-noun",
+          "word": "level",
+          "part_of_speech": "noun",
+          "meaning": "a height or standard",
+          "example": "What level of English do you have?"
+        },
+        {
+          "id": "mind-noun",
+          "word": "mind",
+          "part_of_speech": "noun",
+          "meaning": "your thoughts",
+          "example": "I changed my mind."
+        },
+        {
+          "id": "often-adverb",
+          "word": "often",
+          "part_of_speech": "adverb",
+          "meaning": "many times",
+          "example": "I often walk to work."
+        },
+        {
+          "id": "single-adjective",
+          "word": "single",
+          "part_of_speech": "adjective",
+          "meaning": "only one; not married",
+          "example": "He is single."
+        },
+        {
+          "id": "become-verb",
+          "word": "become",
+          "part_of_speech": "verb",
+          "meaning": "start to be",
+          "example": "She wants to become a doctor."
+        },
+        {
+          "id": "body-noun",
+          "word": "body",
+          "part_of_speech": "noun",
+          "meaning": "the whole physical form of a person",
+          "example": "Exercise keeps your body strong."
+        },
+        {
+          "id": "control-verb",
+          "word": "control",
+          "part_of_speech": "verb",
+          "meaning": "make something do what you want",
+          "example": "He couldn't control the car."
+        },
+        {
+          "id": "death-noun",
+          "word": "death",
+          "part_of_speech": "noun",
+          "meaning": "the end of life",
+          "example": "The news of his death was sad."
+        },
+        {
+          "id": "food-noun",
+          "word": "food",
+          "part_of_speech": "noun",
+          "meaning": "what we eat",
+          "example": "I like Italian food."
+        },
+        {
+          "id": "hour-noun",
+          "word": "hour",
+          "part_of_speech": "noun",
+          "meaning": "sixty minutes",
+          "example": "The trip takes an hour."
+        },
+        {
+          "id": "office-noun",
+          "word": "office",
+          "part_of_speech": "noun",
+          "meaning": "a room or building where people work",
+          "example": "Her office is on the third floor."
+        },
+        {
+          "id": "pay-verb",
+          "word": "pay",
+          "part_of_speech": "verb",
+          "meaning": "give money for something",
+          "example": "Can I pay by card?"
+        },
+        {
+          "id": "problem-noun",
+          "word": "problem",
+          "part_of_speech": "noun",
+          "meaning": "something difficult",
+          "example": "We have a problem with the car."
+        },
+        {
+          "id": "south-noun",
+          "word": "south",
+          "part_of_speech": "noun",
+          "meaning": "the direction towards the bottom of a map",
+          "example": "Birds fly south in winter."
+        },
+        {
+          "id": "true-adjective",
+          "word": "true",
+          "part_of_speech": "adjective",
+          "meaning": "correct; not false",
+          "example": "Is it true that you're leaving?"
+        },
+        {
+          "id": "almost-adverb",
+          "word": "almost",
+          "part_of_speech": "adverb",
+          "meaning": "nearly",
+          "example": "It's almost time to go."
+        },
+        {
+          "id": "history-noun",
+          "word": "history",
+          "part_of_speech": "noun",
+          "meaning": "the study of the past",
+          "example": "I love history."
+        },
+        {
+          "id": "known-adjective",
+          "word": "known",
+          "part_of_speech": "adjective",
+          "meaning": "that people know about",
+          "example": "It's a well-known song."
+        },
+        {
+          "id": "large-adjective",
+          "word": "large",
+          "part_of_speech": "adjective",
+          "meaning": "big",
+          "example": "We need a large table."
+        },
+        {
+          "id": "lost-adjective",
+          "word": "lost",
+          "part_of_speech": "adjective",
+          "meaning": "not able to find the way",
+          "example": "I think we're lost."
+        },
+        {
+          "id": "research-noun",
+          "word": "research",
+          "part_of_speech": "noun",
+          "meaning": "careful study to find facts",
+          "example": "She does research on climate."
+        },
+        {
+          "id": "room-noun",
+          "word": "room",
+          "part_of_speech": "noun",
+          "meaning": "a part of a building with walls",
+          "example": "My room is small but nice."
+        },
+        {
+          "id": "several-determiner",
+          "word": "several",
+          "part_of_speech": "determiner",
+          "meaning": "more than two but not many",
+          "example": "I've read it several times."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-12",
+      "title": "Starter words 12",
+      "words": [
+        {
+          "id": "university-noun",
+          "word": "university",
+          "part_of_speech": "noun",
+          "meaning": "a place for study after school",
+          "example": "He studies at university."
+        },
+        {
+          "id": "win-verb",
+          "word": "win",
+          "part_of_speech": "verb",
+          "meaning": "be the best in a game or competition",
+          "example": "We won the match."
+        },
+        {
+          "id": "wrong-adjective",
+          "word": "wrong",
+          "part_of_speech": "adjective",
+          "meaning": "not correct",
+          "example": "That answer is wrong."
+        },
+        {
+          "id": "along-preposition",
+          "word": "along",
+          "part_of_speech": "preposition",
+          "meaning": "from one end towards the other",
+          "example": "We walked along the river."
+        },
+        {
+          "id": "anyone-pronoun",
+          "word": "anyone",
+          "part_of_speech": "pronoun",
+          "meaning": "any person",
+          "example": "Does anyone have a pen?"
+        },
+        {
+          "id": "else-adverb",
+          "word": "else",
+          "part_of_speech": "adverb",
+          "meaning": "other; more",
+          "example": "What else do you need?"
+        },
+        {
+          "id": "girl-noun",
+          "word": "girl",
+          "part_of_speech": "noun",
+          "meaning": "a female child",
+          "example": "The girl is reading."
+        },
+        {
+          "id": "matter-verb",
+          "word": "matter",
+          "part_of_speech": "verb",
+          "meaning": "be important",
+          "example": "It doesn't matter."
+        },
+        {
+          "id": "pretty-adjective",
+          "word": "pretty",
+          "part_of_speech": "adjective",
+          "meaning": "nice to look at",
+          "example": "What a pretty garden!"
+        },
+        {
+          "id": "remember-verb",
+          "word": "remember",
+          "part_of_speech": "verb",
+          "meaning": "keep in your memory",
+          "example": "I remember my first day at school."
+        },
+        {
+          "id": "air-noun",
+          "word": "air",
+          "part_of_speech": "noun",
+          "meaning": "what we breathe",
+          "example": "Open the window for some fresh air."
+        },
+        {
+          "id": "bit-noun",
+          "word": "bit",
+          "part_of_speech": "noun",
+          "meaning": "a small piece or amount",
+          "example": "Can I have a bit of cake?"
+        },
+        {
+          "id": "hit-verb",
+          "word": "hit",
+          "part_of_speech": "verb",
+          "meaning": "touch something with force",
+          "example": "He hit the ball hard."
+        },
+        {
+          "id": "nice-adjective",
+          "word": "nice",
+          "part_of_speech": "adjective",
+          "meaning": "pleasant",
+          "example": "Have a nice weekend!"
+        },
+        {
+          "id": "probably-adverb",
+          "word": "probably",
+          "part_of_speech": "adverb",
+          "meaning": "very likely",
+          "example": "It will probably rain."
+        },
+        {
+          "id": "understand-verb",
+          "word": "understand",
+          "part_of_speech": "verb",
+          "meaning": "know the meaning of something",
+          "example": "I don't understand this word."
+        },
+        {
+          "id": "class-noun",
+          "word": "class",
+          "part_of_speech": "noun",
+          "meaning": "a group of students; a lesson",
+          "example": "My class has twenty students."
+        },
+        {
+          "id": "close-verb",
+          "word": "close",
+          "part_of_speech": "verb",
+          "meaning": "shut",
+          "example": "Please close the door."
+        },
+        {
+          "id": "idea-noun",
+          "word": "idea",
+          "part_of_speech": "noun",
+          "meaning": "a plan or thought",
+          "example": "That's a great idea!"
+        },
+        {
+          "id": "international-adjective",
+          "word": "international",
+          "part_of_speech": "adjective",
+          "meaning": "between countries",
+          "example": "It's an international school."
+        },
+        {
+          "id": "past-noun",
+          "word": "past",
+          "part_of_speech": "noun",
+          "meaning": "the time before now",
+          "example": "In the past, people wrote letters."
+        },
+        {
+          "id": "possible-adjective",
+          "word": "possible",
+          "part_of_speech": "adjective",
+          "meaning": "that can happen",
+          "example": "Is it possible to change my ticket?"
+        },
+        {
+          "id": "cause-verb",
+          "word": "cause",
+          "part_of_speech": "verb",
+          "meaning": "make something happen",
+          "example": "Ice can cause accidents."
+        },
+        {
+          "id": "due-adjective",
+          "word": "due",
+          "part_of_speech": "adjective",
+          "meaning": "expected at a time",
+          "example": "The train is due at six."
+        },
+        {
+          "id": "happy-adjective",
+          "word": "happy",
+          "part_of_speech": "adjective",
+          "meaning": "feeling good",
+          "example": "I'm happy to see you."
+        },
+        {
+          "id": "human-adjective",
+          "word": "human",
+          "part_of_speech": "adjective",
+          "meaning": "of people",
+          "example": "Human beings need sleep."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-13",
+      "title": "Starter words 13",
+      "words": [
+        {
+          "id": "member-noun",
+          "word": "member",
+          "part_of_speech": "noun",
+          "meaning": "a person in a group",
+          "example": "She's a member of the club."
+        },
+        {
+          "id": "month-noun",
+          "word": "month",
+          "part_of_speech": "noun",
+          "meaning": "about four weeks",
+          "example": "I'll see you next month."
+        },
+        {
+          "id": "move-verb",
+          "word": "move",
+          "part_of_speech": "verb",
+          "meaning": "change place",
+          "example": "We moved to a new house."
+        },
+        {
+          "id": "question-noun",
+          "word": "question",
+          "part_of_speech": "noun",
+          "meaning": "something you ask",
+          "example": "Can I ask a question?"
+        },
+        {
+          "id": "series-noun",
+          "word": "series",
+          "part_of_speech": "noun",
+          "meaning": "a set of TV programmes or events",
+          "example": "I'm watching a new TV series."
+        },
+        {
+          "id": "wait-verb",
+          "word": "wait",
+          "part_of_speech": "verb",
+          "meaning": "stay until something happens",
+          "example": "Wait for me!"
+        },
+        {
+          "id": "ask-verb",
+          "word": "ask",
+          "part_of_speech": "verb",
+          "meaning": "say a question",
+          "example": "Can I ask you something?"
+        },
+        {
+          "id": "community-noun",
+          "word": "community",
+          "part_of_speech": "noun",
+          "meaning": "the people living in one area",
+          "example": "Our community is very friendly."
+        },
+        {
+          "id": "data-noun",
+          "word": "data",
+          "part_of_speech": "noun",
+          "meaning": "facts and numbers",
+          "example": "The data shows a big change."
+        },
+        {
+          "id": "late-adjective",
+          "word": "late",
+          "part_of_speech": "adjective",
+          "meaning": "after the right time",
+          "example": "Sorry I'm late."
+        },
+        {
+          "id": "leave-verb",
+          "word": "leave",
+          "part_of_speech": "verb",
+          "meaning": "go away from a place",
+          "example": "What time do you leave work?"
+        },
+        {
+          "id": "north-noun",
+          "word": "north",
+          "part_of_speech": "noun",
+          "meaning": "the direction towards the top of a map",
+          "example": "Scotland is in the north."
+        },
+        {
+          "id": "special-adjective",
+          "word": "special",
+          "part_of_speech": "adjective",
+          "meaning": "different and important",
+          "example": "Today is a special day."
+        },
+        {
+          "id": "watch-verb",
+          "word": "watch",
+          "part_of_speech": "verb",
+          "meaning": "look at something for a time",
+          "example": "We watched a film."
+        },
+        {
+          "id": "either-determiner",
+          "word": "either",
+          "part_of_speech": "determiner",
+          "meaning": "one or the other",
+          "example": "You can sit on either side."
+        },
+        {
+          "id": "future-noun",
+          "word": "future",
+          "part_of_speech": "noun",
+          "meaning": "the time after now",
+          "example": "What are your plans for the future?"
+        },
+        {
+          "id": "light-noun",
+          "word": "light",
+          "part_of_speech": "noun",
+          "meaning": "what makes things bright",
+          "example": "Turn on the light."
+        },
+        {
+          "id": "low-adjective",
+          "word": "low",
+          "part_of_speech": "adjective",
+          "meaning": "not high",
+          "example": "The wall is very low."
+        },
+        {
+          "id": "million-number",
+          "word": "million",
+          "part_of_speech": "number",
+          "meaning": "1,000,000",
+          "example": "The city has two million people."
+        },
+        {
+          "id": "morning-noun",
+          "word": "morning",
+          "part_of_speech": "noun",
+          "meaning": "the early part of the day",
+          "example": "I run every morning."
+        },
+        {
+          "id": "police-noun",
+          "word": "police",
+          "part_of_speech": "noun",
+          "meaning": "people whose job is to keep the law",
+          "example": "Call the police!"
+        },
+        {
+          "id": "short-adjective",
+          "word": "short",
+          "part_of_speech": "adjective",
+          "meaning": "not long; not tall",
+          "example": "She has short hair."
+        },
+        {
+          "id": "stay-verb",
+          "word": "stay",
+          "part_of_speech": "verb",
+          "meaning": "remain in a place",
+          "example": "We stayed at a hotel."
+        },
+        {
+          "id": "age-noun",
+          "word": "age",
+          "part_of_speech": "noun",
+          "meaning": "how old someone is",
+          "example": "What age is your son?"
+        },
+        {
+          "id": "buy-verb",
+          "word": "buy",
+          "part_of_speech": "verb",
+          "meaning": "get something by paying",
+          "example": "I want to buy a new bike."
+        },
+        {
+          "id": "deal-noun",
+          "word": "deal",
+          "part_of_speech": "noun",
+          "meaning": "an agreement",
+          "example": "It's a deal!"
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-14",
+      "title": "Starter words 14",
+      "words": [
+        {
+          "id": "rather-adverb",
+          "word": "rather",
+          "part_of_speech": "adverb",
+          "meaning": "quite; more willingly",
+          "example": "I'd rather stay home."
+        },
+        {
+          "id": "reason-noun",
+          "word": "reason",
+          "part_of_speech": "noun",
+          "meaning": "why something happens",
+          "example": "What's the reason for the delay?"
+        },
+        {
+          "id": "red-adjective",
+          "word": "red",
+          "part_of_speech": "adjective",
+          "meaning": "the colour of blood",
+          "example": "She has a red coat."
+        },
+        {
+          "id": "report-noun",
+          "word": "report",
+          "part_of_speech": "noun",
+          "meaning": "a written description of facts",
+          "example": "I have to write a report."
+        },
+        {
+          "id": "soon-adverb",
+          "word": "soon",
+          "part_of_speech": "adverb",
+          "meaning": "in a short time",
+          "example": "See you soon."
+        },
+        {
+          "id": "third-adjective",
+          "word": "third",
+          "part_of_speech": "adjective",
+          "meaning": "number 3 in order",
+          "example": "It's my third time here."
+        },
+        {
+          "id": "turn-verb",
+          "word": "turn",
+          "part_of_speech": "verb",
+          "meaning": "move round; change direction",
+          "example": "Turn right at the lights."
+        },
+        {
+          "id": "whether-conjunction",
+          "word": "whether",
+          "part_of_speech": "conjunction",
+          "meaning": "if (used with two choices)",
+          "example": "I don't know whether to go."
+        },
+        {
+          "id": "among-preposition",
+          "word": "among",
+          "part_of_speech": "preposition",
+          "meaning": "in the middle of many",
+          "example": "She was among friends."
+        },
+        {
+          "id": "check-verb",
+          "word": "check",
+          "part_of_speech": "verb",
+          "meaning": "look to see if something is right",
+          "example": "Check your answers."
+        },
+        {
+          "id": "development-noun",
+          "word": "development",
+          "part_of_speech": "noun",
+          "meaning": "growth or change",
+          "example": "The development of the city was fast."
+        },
+        {
+          "id": "form-noun",
+          "word": "form",
+          "part_of_speech": "noun",
+          "meaning": "a paper with spaces to fill in",
+          "example": "Please fill in this form."
+        },
+        {
+          "id": "further-adverb",
+          "word": "further",
+          "part_of_speech": "adverb",
+          "meaning": "more; a longer distance",
+          "example": "I can't walk any further."
+        },
+        {
+          "id": "heart-noun",
+          "word": "heart",
+          "part_of_speech": "noun",
+          "meaning": "the organ that pumps blood",
+          "example": "Her heart was beating fast."
+        },
+        {
+          "id": "minute-noun",
+          "word": "minute",
+          "part_of_speech": "noun",
+          "meaning": "sixty seconds",
+          "example": "Wait a minute."
+        },
+        {
+          "id": "act-verb",
+          "word": "act",
+          "part_of_speech": "verb",
+          "meaning": "do something; perform in a play",
+          "example": "We must act quickly."
+        },
+        {
+          "id": "although-conjunction",
+          "word": "although",
+          "part_of_speech": "conjunction",
+          "meaning": "even though",
+          "example": "Although it was late, we stayed."
+        },
+        {
+          "id": "fire-noun",
+          "word": "fire",
+          "part_of_speech": "noun",
+          "meaning": "flames and heat",
+          "example": "The fire kept us warm."
+        },
+        {
+          "id": "fun-noun",
+          "word": "fun",
+          "part_of_speech": "noun",
+          "meaning": "enjoyment",
+          "example": "We had a lot of fun."
+        },
+        {
+          "id": "major-adjective",
+          "word": "major",
+          "part_of_speech": "adjective",
+          "meaning": "very important or big",
+          "example": "It's a major problem."
+        },
+        {
+          "id": "media-noun",
+          "word": "media",
+          "part_of_speech": "noun",
+          "meaning": "TV, radio, newspapers and the internet",
+          "example": "The story was all over the media."
+        },
+        {
+          "id": "phone-noun",
+          "word": "phone",
+          "part_of_speech": "noun",
+          "meaning": "a device for talking to people far away",
+          "example": "My phone is on the table."
+        },
+        {
+          "id": "player-noun",
+          "word": "player",
+          "part_of_speech": "noun",
+          "meaning": "a person who plays a game",
+          "example": "He's a great football player."
+        },
+        {
+          "id": "art-noun",
+          "word": "art",
+          "part_of_speech": "noun",
+          "meaning": "paintings, drawings and other creative work",
+          "example": "I love modern art."
+        },
+        {
+          "id": "behind-preposition",
+          "word": "behind",
+          "part_of_speech": "preposition",
+          "meaning": "at the back of",
+          "example": "The garden is behind the house."
+        },
+        {
+          "id": "building-noun",
+          "word": "building",
+          "part_of_speech": "noun",
+          "meaning": "a structure with walls and a roof",
+          "example": "That's the tallest building in the city."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-15",
+      "title": "Starter words 15",
+      "words": [
+        {
+          "id": "easy-adjective",
+          "word": "easy",
+          "part_of_speech": "adjective",
+          "meaning": "not difficult",
+          "example": "The test was easy."
+        },
+        {
+          "id": "market-noun",
+          "word": "market",
+          "part_of_speech": "noun",
+          "meaning": "a place where people buy and sell",
+          "example": "We buy fruit at the market."
+        },
+        {
+          "id": "near-preposition",
+          "word": "near",
+          "part_of_speech": "preposition",
+          "meaning": "not far from",
+          "example": "I live near the station."
+        },
+        {
+          "id": "plan-noun",
+          "word": "plan",
+          "part_of_speech": "noun",
+          "meaning": "an idea of what to do",
+          "example": "What's the plan for tonight?"
+        },
+        {
+          "id": "political-adjective",
+          "word": "political",
+          "part_of_speech": "adjective",
+          "meaning": "about government and power",
+          "example": "They had a political discussion."
+        },
+        {
+          "id": "quite-adverb",
+          "word": "quite",
+          "part_of_speech": "adverb",
+          "meaning": "fairly; more than a little",
+          "example": "It's quite cold today."
+        },
+        {
+          "id": "six-number",
+          "word": "six",
+          "part_of_speech": "number",
+          "meaning": "the number 6",
+          "example": "The shop closes at six."
+        },
+        {
+          "id": "west-noun",
+          "word": "west",
+          "part_of_speech": "noun",
+          "meaning": "the direction where the sun sets",
+          "example": "The sun sets in the west."
+        },
+        {
+          "id": "according-to-preposition",
+          "word": "according to",
+          "part_of_speech": "preposition",
+          "meaning": "as said by",
+          "example": "According to the news, it will snow."
+        },
+        {
+          "id": "available-adjective",
+          "word": "available",
+          "part_of_speech": "adjective",
+          "meaning": "that you can get or use",
+          "example": "Is this room available?"
+        },
+        {
+          "id": "education-noun",
+          "word": "education",
+          "part_of_speech": "noun",
+          "meaning": "teaching and learning",
+          "example": "Education is important."
+        },
+        {
+          "id": "final-adjective",
+          "word": "final",
+          "part_of_speech": "adjective",
+          "meaning": "last",
+          "example": "This is the final question."
+        },
+        {
+          "id": "former-adjective",
+          "word": "former",
+          "part_of_speech": "adjective",
+          "meaning": "earlier; past",
+          "example": "She is a former teacher."
+        },
+        {
+          "id": "front-noun",
+          "word": "front",
+          "part_of_speech": "noun",
+          "meaning": "the part that faces forward",
+          "example": "Sit at the front of the class."
+        },
+        {
+          "id": "kid-noun",
+          "word": "kid",
+          "part_of_speech": "noun",
+          "meaning": "a child (informal)",
+          "example": "The kids are playing outside."
+        },
+        {
+          "id": "list-noun",
+          "word": "list",
+          "part_of_speech": "noun",
+          "meaning": "things written one under another",
+          "example": "Make a shopping list."
+        },
+        {
+          "id": "ready-adjective",
+          "word": "ready",
+          "part_of_speech": "adjective",
+          "meaning": "prepared",
+          "example": "Dinner is ready!"
+        },
+        {
+          "id": "sometimes-adverb",
+          "word": "sometimes",
+          "part_of_speech": "adverb",
+          "meaning": "on some occasions",
+          "example": "I sometimes cook dinner."
+        },
+        {
+          "id": "son-noun",
+          "word": "son",
+          "part_of_speech": "noun",
+          "meaning": "someone's male child",
+          "example": "Their son is five."
+        },
+        {
+          "id": "street-noun",
+          "word": "street",
+          "part_of_speech": "noun",
+          "meaning": "a road in a town",
+          "example": "I live on a quiet street."
+        },
+        {
+          "id": "bring-verb",
+          "word": "bring",
+          "part_of_speech": "verb",
+          "meaning": "take something to a place",
+          "example": "Bring your book tomorrow."
+        },
+        {
+          "id": "college-noun",
+          "word": "college",
+          "part_of_speech": "noun",
+          "meaning": "a place for education after school",
+          "example": "She goes to college."
+        },
+        {
+          "id": "current-adjective",
+          "word": "current",
+          "part_of_speech": "adjective",
+          "meaning": "of the present time",
+          "example": "What's your current address?"
+        },
+        {
+          "id": "example-noun",
+          "word": "example",
+          "part_of_speech": "noun",
+          "meaning": "something that shows what others are like",
+          "example": "Can you give me an example?"
+        },
+        {
+          "id": "experience-noun",
+          "word": "experience",
+          "part_of_speech": "noun",
+          "meaning": "knowledge from doing something",
+          "example": "She has a lot of experience."
+        },
+        {
+          "id": "hear-verb",
+          "word": "hear",
+          "part_of_speech": "verb",
+          "meaning": "notice sounds with your ears",
+          "example": "Can you hear me?"
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-16",
+      "title": "Starter words 16",
+      "words": [
+        {
+          "id": "meet-verb",
+          "word": "meet",
+          "part_of_speech": "verb",
+          "meaning": "come together with someone",
+          "example": "Let's meet at the café."
+        },
+        {
+          "id": "program-noun",
+          "word": "program",
+          "part_of_speech": "noun",
+          "meaning": "a set of instructions for a computer",
+          "example": "This program is easy to use."
+        },
+        {
+          "id": "type-noun",
+          "word": "type",
+          "part_of_speech": "noun",
+          "meaning": "a kind or sort",
+          "example": "What type of music do you like?"
+        },
+        {
+          "id": "baby-noun",
+          "word": "baby",
+          "part_of_speech": "noun",
+          "meaning": "a very young child",
+          "example": "The baby is sleeping."
+        },
+        {
+          "id": "chance-noun",
+          "word": "chance",
+          "part_of_speech": "noun",
+          "meaning": "a possibility; an opportunity",
+          "example": "This is your last chance."
+        },
+        {
+          "id": "father-noun",
+          "word": "father",
+          "part_of_speech": "noun",
+          "meaning": "a male parent",
+          "example": "My father is a doctor."
+        },
+        {
+          "id": "process-noun",
+          "word": "process",
+          "part_of_speech": "noun",
+          "meaning": "a series of actions",
+          "example": "Learning is a slow process."
+        },
+        {
+          "id": "song-noun",
+          "word": "song",
+          "part_of_speech": "noun",
+          "meaning": "a short piece of music with words",
+          "example": "This is my favourite song."
+        },
+        {
+          "id": "study-verb",
+          "word": "study",
+          "part_of_speech": "verb",
+          "meaning": "learn about a subject",
+          "example": "I study English every day."
+        },
+        {
+          "id": "word-noun",
+          "word": "word",
+          "part_of_speech": "noun",
+          "meaning": "a single unit of language",
+          "example": "What does this word mean?"
+        },
+        {
+          "id": "across-preposition",
+          "word": "across",
+          "part_of_speech": "preposition",
+          "meaning": "from one side to the other",
+          "example": "We swam across the lake."
+        },
+        {
+          "id": "action-noun",
+          "word": "action",
+          "part_of_speech": "noun",
+          "meaning": "something you do",
+          "example": "We need action, not words."
+        },
+        {
+          "id": "clear-adjective",
+          "word": "clear",
+          "part_of_speech": "adjective",
+          "meaning": "easy to see or understand",
+          "example": "The instructions are clear."
+        },
+        {
+          "id": "outside-adverb",
+          "word": "outside",
+          "part_of_speech": "adverb",
+          "meaning": "not inside a building",
+          "example": "Let's eat outside."
+        },
+        {
+          "id": "student-noun",
+          "word": "student",
+          "part_of_speech": "noun",
+          "meaning": "a person who is studying",
+          "example": "She is a university student."
+        },
+        {
+          "id": "board-noun",
+          "word": "board",
+          "part_of_speech": "noun",
+          "meaning": "a flat piece of wood or a surface for writing",
+          "example": "The teacher wrote on the board."
+        },
+        {
+          "id": "cost-verb",
+          "word": "cost",
+          "part_of_speech": "verb",
+          "meaning": "have a price",
+          "example": "How much does it cost?"
+        },
+        {
+          "id": "cut-verb",
+          "word": "cut",
+          "part_of_speech": "verb",
+          "meaning": "divide with a knife or scissors",
+          "example": "Cut the bread, please."
+        },
+        {
+          "id": "field-noun",
+          "word": "field",
+          "part_of_speech": "noun",
+          "meaning": "an area of land with grass",
+          "example": "Cows were in the field."
+        },
+        {
+          "id": "instead-adverb",
+          "word": "instead",
+          "part_of_speech": "adverb",
+          "meaning": "in place of something",
+          "example": "Let's walk instead of driving."
+        },
+        {
+          "id": "main-adjective",
+          "word": "main",
+          "part_of_speech": "adjective",
+          "meaning": "most important",
+          "example": "The main road is busy."
+        },
+        {
+          "id": "moment-noun",
+          "word": "moment",
+          "part_of_speech": "noun",
+          "meaning": "a very short time",
+          "example": "Wait a moment, please."
+        },
+        {
+          "id": "mother-noun",
+          "word": "mother",
+          "part_of_speech": "noun",
+          "meaning": "a female parent",
+          "example": "My mother loves gardening."
+        },
+        {
+          "id": "road-noun",
+          "word": "road",
+          "part_of_speech": "noun",
+          "meaning": "a way for cars",
+          "example": "Be careful when you cross the road."
+        },
+        {
+          "id": "seem-verb",
+          "word": "seem",
+          "part_of_speech": "verb",
+          "meaning": "appear to be",
+          "example": "You seem tired."
+        },
+        {
+          "id": "town-noun",
+          "word": "town",
+          "part_of_speech": "noun",
+          "meaning": "a place with houses and shops, smaller than a city",
+          "example": "I grew up in a small town."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-17",
+      "title": "Starter words 17",
+      "words": [
+        {
+          "id": "department-noun",
+          "word": "department",
+          "part_of_speech": "noun",
+          "meaning": "a part of a company or shop",
+          "example": "She works in the sales department."
+        },
+        {
+          "id": "energy-noun",
+          "word": "energy",
+          "part_of_speech": "noun",
+          "meaning": "the power to do things",
+          "example": "Children have so much energy."
+        },
+        {
+          "id": "fight-verb",
+          "word": "fight",
+          "part_of_speech": "verb",
+          "meaning": "use force against someone",
+          "example": "The two cats are fighting."
+        },
+        {
+          "id": "fine-adjective",
+          "word": "fine",
+          "part_of_speech": "adjective",
+          "meaning": "good; well",
+          "example": "I'm fine, thanks."
+        },
+        {
+          "id": "force-noun",
+          "word": "force",
+          "part_of_speech": "noun",
+          "meaning": "strength or power",
+          "example": "The force of the wind broke the window."
+        },
+        {
+          "id": "issue-noun",
+          "word": "issue",
+          "part_of_speech": "noun",
+          "meaning": "a problem or subject",
+          "example": "Climate change is a big issue."
+        },
+        {
+          "id": "price-noun",
+          "word": "price",
+          "part_of_speech": "noun",
+          "meaning": "the money you pay for something",
+          "example": "The price of bread has gone up."
+        },
+        {
+          "id": "rest-noun",
+          "word": "rest",
+          "part_of_speech": "noun",
+          "meaning": "a time to relax; what is left",
+          "example": "You need some rest."
+        },
+        {
+          "id": "result-noun",
+          "word": "result",
+          "part_of_speech": "noun",
+          "meaning": "what happens because of something",
+          "example": "The results of the test are good."
+        },
+        {
+          "id": "space-noun",
+          "word": "space",
+          "part_of_speech": "noun",
+          "meaning": "an empty area; the universe",
+          "example": "There's no space in my bag."
+        },
+        {
+          "id": "summer-noun",
+          "word": "summer",
+          "part_of_speech": "noun",
+          "meaning": "the hottest season",
+          "example": "We go to the beach in summer."
+        },
+        {
+          "id": "term-noun",
+          "word": "term",
+          "part_of_speech": "noun",
+          "meaning": "a part of the school year; a word",
+          "example": "The new term starts in September."
+        },
+        {
+          "id": "wife-noun",
+          "word": "wife",
+          "part_of_speech": "noun",
+          "meaning": "the woman a man is married to",
+          "example": "His wife is a teacher."
+        },
+        {
+          "id": "beautiful-adjective",
+          "word": "beautiful",
+          "part_of_speech": "adjective",
+          "meaning": "very nice to look at",
+          "example": "What a beautiful view!"
+        },
+        {
+          "id": "date-noun",
+          "word": "date",
+          "part_of_speech": "noun",
+          "meaning": "a day of the month",
+          "example": "What's the date today?"
+        },
+        {
+          "id": "land-noun",
+          "word": "land",
+          "part_of_speech": "noun",
+          "meaning": "the ground; a country",
+          "example": "The plane landed safely."
+        },
+        {
+          "id": "miss-verb",
+          "word": "miss",
+          "part_of_speech": "verb",
+          "meaning": "feel sad without someone; not catch",
+          "example": "I miss my family."
+        },
+        {
+          "id": "project-noun",
+          "word": "project",
+          "part_of_speech": "noun",
+          "meaning": "a planned piece of work",
+          "example": "We're doing a school project."
+        },
+        {
+          "id": "site-noun",
+          "word": "site",
+          "part_of_speech": "noun",
+          "meaning": "a place where something is",
+          "example": "This is the site of the new hospital."
+        },
+        {
+          "id": "strong-adjective",
+          "word": "strong",
+          "part_of_speech": "adjective",
+          "meaning": "having power",
+          "example": "He is very strong."
+        },
+        {
+          "id": "account-noun",
+          "word": "account",
+          "part_of_speech": "noun",
+          "meaning": "an arrangement with a bank or website",
+          "example": "I opened a bank account."
+        },
+        {
+          "id": "especially-adverb",
+          "word": "especially",
+          "part_of_speech": "adverb",
+          "meaning": "more than usual",
+          "example": "I love fruit, especially apples."
+        },
+        {
+          "id": "eye-noun",
+          "word": "eye",
+          "part_of_speech": "noun",
+          "meaning": "the part of the body you see with",
+          "example": "She has blue eyes."
+        },
+        {
+          "id": "include-verb",
+          "word": "include",
+          "part_of_speech": "verb",
+          "meaning": "have as a part",
+          "example": "The price includes breakfast."
+        },
+        {
+          "id": "parent-noun",
+          "word": "parent",
+          "part_of_speech": "noun",
+          "meaning": "a mother or father",
+          "example": "My parents live in the country."
+        },
+        {
+          "id": "period-noun",
+          "word": "period",
+          "part_of_speech": "noun",
+          "meaning": "a length of time",
+          "example": "It was a difficult period."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-18",
+      "title": "Starter words 18",
+      "words": [
+        {
+          "id": "position-noun",
+          "word": "position",
+          "part_of_speech": "noun",
+          "meaning": "a place; a job",
+          "example": "What position does he play?"
+        },
+        {
+          "id": "record-verb",
+          "word": "record",
+          "part_of_speech": "verb",
+          "meaning": "store sound or pictures",
+          "example": "I recorded the show."
+        },
+        {
+          "id": "similar-adjective",
+          "word": "similar",
+          "part_of_speech": "adjective",
+          "meaning": "almost the same",
+          "example": "Our bags are similar."
+        },
+        {
+          "id": "total-noun",
+          "word": "total",
+          "part_of_speech": "noun",
+          "meaning": "the whole amount",
+          "example": "The total is twenty pounds."
+        },
+        {
+          "id": "above-preposition",
+          "word": "above",
+          "part_of_speech": "preposition",
+          "meaning": "higher than",
+          "example": "The picture is above the sofa."
+        },
+        {
+          "id": "club-noun",
+          "word": "club",
+          "part_of_speech": "noun",
+          "meaning": "a group of people with the same interest",
+          "example": "I joined a book club."
+        },
+        {
+          "id": "common-adjective",
+          "word": "common",
+          "part_of_speech": "adjective",
+          "meaning": "happening often",
+          "example": "It's a common mistake."
+        },
+        {
+          "id": "die-verb",
+          "word": "die",
+          "part_of_speech": "verb",
+          "meaning": "stop living",
+          "example": "Plants die without water."
+        },
+        {
+          "id": "film-noun",
+          "word": "film",
+          "part_of_speech": "noun",
+          "meaning": "a story shown on a screen",
+          "example": "Let's watch a film."
+        },
+        {
+          "id": "happen-verb",
+          "word": "happen",
+          "part_of_speech": "verb",
+          "meaning": "take place",
+          "example": "What happened?"
+        },
+        {
+          "id": "lead-verb",
+          "word": "lead",
+          "part_of_speech": "verb",
+          "meaning": "be in front; show the way",
+          "example": "She led us to the hotel."
+        },
+        {
+          "id": "likely-adjective",
+          "word": "likely",
+          "part_of_speech": "adjective",
+          "meaning": "probably going to happen",
+          "example": "It's likely to rain."
+        },
+        {
+          "id": "military-adjective",
+          "word": "military",
+          "part_of_speech": "adjective",
+          "meaning": "about soldiers and armies",
+          "example": "He was in the military."
+        },
+        {
+          "id": "perfect-adjective",
+          "word": "perfect",
+          "part_of_speech": "adjective",
+          "meaning": "with no mistakes",
+          "example": "Your English is perfect."
+        },
+        {
+          "id": "personal-adjective",
+          "word": "personal",
+          "part_of_speech": "adjective",
+          "meaning": "about one person",
+          "example": "This is a personal question."
+        },
+        {
+          "id": "security-noun",
+          "word": "security",
+          "part_of_speech": "noun",
+          "meaning": "protection from danger",
+          "example": "Airport security is very strict."
+        },
+        {
+          "id": "share-verb",
+          "word": "share",
+          "part_of_speech": "verb",
+          "meaning": "use or have together",
+          "example": "Let's share the pizza."
+        },
+        {
+          "id": "centre-noun",
+          "word": "centre",
+          "part_of_speech": "noun",
+          "meaning": "the middle",
+          "example": "Our hotel is in the city centre."
+        },
+        {
+          "id": "couple-noun",
+          "word": "couple",
+          "part_of_speech": "noun",
+          "meaning": "two people together; two things",
+          "example": "A couple of friends came over."
+        },
+        {
+          "id": "dead-adjective",
+          "word": "dead",
+          "part_of_speech": "adjective",
+          "meaning": "not alive",
+          "example": "The plant is dead."
+        },
+        {
+          "id": "hold-verb",
+          "word": "hold",
+          "part_of_speech": "verb",
+          "meaning": "have in your hand",
+          "example": "Hold my bag, please."
+        },
+        {
+          "id": "industry-noun",
+          "word": "industry",
+          "part_of_speech": "noun",
+          "meaning": "making goods; a type of business",
+          "example": "The car industry is big here."
+        },
+        {
+          "id": "inside-adverb",
+          "word": "inside",
+          "part_of_speech": "adverb",
+          "meaning": "in a building or container",
+          "example": "It's raining. Let's go inside."
+        },
+        {
+          "id": "online-adjective",
+          "word": "online",
+          "part_of_speech": "adjective",
+          "meaning": "on the internet",
+          "example": "I bought it online."
+        },
+        {
+          "id": "private-adjective",
+          "word": "private",
+          "part_of_speech": "adjective",
+          "meaning": "for one person or group only",
+          "example": "This is a private beach."
+        },
+        {
+          "id": "return-verb",
+          "word": "return",
+          "part_of_speech": "verb",
+          "meaning": "go or come back; give back",
+          "example": "Please return the book on Friday."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-19",
+      "title": "Starter words 19",
+      "words": [
+        {
+          "id": "sense-noun",
+          "word": "sense",
+          "part_of_speech": "noun",
+          "meaning": "a feeling; good judgement",
+          "example": "It makes sense."
+        },
+        {
+          "id": "star-noun",
+          "word": "star",
+          "part_of_speech": "noun",
+          "meaning": "a light in the night sky; a famous person",
+          "example": "Look at the stars!"
+        },
+        {
+          "id": "test-noun",
+          "word": "test",
+          "part_of_speech": "noun",
+          "meaning": "questions to check knowledge",
+          "example": "I have a test tomorrow."
+        },
+        {
+          "id": "view-noun",
+          "word": "view",
+          "part_of_speech": "noun",
+          "meaning": "what you can see; an opinion",
+          "example": "The room has a sea view."
+        },
+        {
+          "id": "break-noun",
+          "word": "break",
+          "part_of_speech": "noun",
+          "meaning": "a short rest",
+          "example": "Let's take a break."
+        },
+        {
+          "id": "event-noun",
+          "word": "event",
+          "part_of_speech": "noun",
+          "meaning": "something important that happens",
+          "example": "The concert was a big event."
+        },
+        {
+          "id": "middle-noun",
+          "word": "middle",
+          "part_of_speech": "noun",
+          "meaning": "the centre",
+          "example": "There's a table in the middle of the room."
+        },
+        {
+          "id": "present-noun",
+          "word": "present",
+          "part_of_speech": "noun",
+          "meaning": "a gift",
+          "example": "Thank you for the present."
+        },
+        {
+          "id": "sorry-adjective",
+          "word": "sorry",
+          "part_of_speech": "adjective",
+          "meaning": "feeling bad about something",
+          "example": "I'm sorry I'm late."
+        },
+        {
+          "id": "training-noun",
+          "word": "training",
+          "part_of_speech": "noun",
+          "meaning": "teaching skills for a job or sport",
+          "example": "The training lasts two days."
+        },
+        {
+          "id": "wish-verb",
+          "word": "wish",
+          "part_of_speech": "verb",
+          "meaning": "want something that may not happen",
+          "example": "I wish I could fly."
+        },
+        {
+          "id": "answer-noun",
+          "word": "answer",
+          "part_of_speech": "noun",
+          "meaning": "a reply to a question",
+          "example": "What's the answer?"
+        },
+        {
+          "id": "boy-noun",
+          "word": "boy",
+          "part_of_speech": "noun",
+          "meaning": "a male child",
+          "example": "The boy is playing football."
+        },
+        {
+          "id": "design-noun",
+          "word": "design",
+          "part_of_speech": "noun",
+          "meaning": "the way something is planned or drawn",
+          "example": "I like the design of this chair."
+        },
+        {
+          "id": "finally-adverb",
+          "word": "finally",
+          "part_of_speech": "adverb",
+          "meaning": "at the end; after a long time",
+          "example": "We finally arrived."
+        },
+        {
+          "id": "gold-noun",
+          "word": "gold",
+          "part_of_speech": "noun",
+          "meaning": "a valuable yellow metal",
+          "example": "She has a gold ring."
+        },
+        {
+          "id": "guess-verb",
+          "word": "guess",
+          "part_of_speech": "verb",
+          "meaning": "give an answer without knowing",
+          "example": "Guess how old I am."
+        },
+        {
+          "id": "interest-noun",
+          "word": "interest",
+          "part_of_speech": "noun",
+          "meaning": "wanting to know about something",
+          "example": "He has an interest in music."
+        },
+        {
+          "id": "king-noun",
+          "word": "king",
+          "part_of_speech": "noun",
+          "meaning": "a male ruler of a country",
+          "example": "The king lived in a castle."
+        },
+        {
+          "id": "learn-verb",
+          "word": "learn",
+          "part_of_speech": "verb",
+          "meaning": "get knowledge or a skill",
+          "example": "I'm learning to swim."
+        },
+        {
+          "id": "policy-noun",
+          "word": "policy",
+          "part_of_speech": "noun",
+          "meaning": "a plan or rule",
+          "example": "The company has a no-smoking policy."
+        },
+        {
+          "id": "society-noun",
+          "word": "society",
+          "part_of_speech": "noun",
+          "meaning": "people living together",
+          "example": "Technology changes society."
+        },
+        {
+          "id": "add-verb",
+          "word": "add",
+          "part_of_speech": "verb",
+          "meaning": "put something with something else",
+          "example": "Add some salt."
+        },
+        {
+          "id": "alone-adjective",
+          "word": "alone",
+          "part_of_speech": "adjective",
+          "meaning": "without other people",
+          "example": "She lives alone."
+        },
+        {
+          "id": "average-adjective",
+          "word": "average",
+          "part_of_speech": "adjective",
+          "meaning": "usual or normal",
+          "example": "He is of average height."
+        },
+        {
+          "id": "bank-noun",
+          "word": "bank",
+          "part_of_speech": "noun",
+          "meaning": "a place that keeps money",
+          "example": "I need to go to the bank."
+        }
+      ]
+    },
+    {
+      "slug": "l1-words-20",
+      "title": "Starter words 20",
+      "words": [
+        {
+          "id": "certain-adjective",
+          "word": "certain",
+          "part_of_speech": "adjective",
+          "meaning": "sure",
+          "example": "I'm certain he'll come."
+        },
+        {
+          "id": "church-noun",
+          "word": "church",
+          "part_of_speech": "noun",
+          "meaning": "a building for Christian worship",
+          "example": "The church is very old."
+        },
+        {
+          "id": "east-noun",
+          "word": "east",
+          "part_of_speech": "noun",
+          "meaning": "the direction where the sun rises",
+          "example": "The sun rises in the east."
+        },
+        {
+          "id": "hot-adjective",
+          "word": "hot",
+          "part_of_speech": "adjective",
+          "meaning": "very warm",
+          "example": "It's very hot today."
+        },
+        {
+          "id": "medical-adjective",
+          "word": "medical",
+          "part_of_speech": "adjective",
+          "meaning": "about medicine and health",
+          "example": "She needs medical help."
+        },
+        {
+          "id": "movie-noun",
+          "word": "movie",
+          "part_of_speech": "noun",
+          "meaning": "a film",
+          "example": "We watched a movie last night."
+        },
+        {
+          "id": "original-adjective",
+          "word": "original",
+          "part_of_speech": "adjective",
+          "meaning": "first; new and different",
+          "example": "This is the original painting."
+        },
+        {
+          "id": "park-noun",
+          "word": "park",
+          "part_of_speech": "noun",
+          "meaning": "a public garden",
+          "example": "Let's go to the park."
+        },
+        {
+          "id": "performance-noun",
+          "word": "performance",
+          "part_of_speech": "noun",
+          "meaning": "a show; how well someone does something",
+          "example": "The performance was excellent."
+        },
+        {
+          "id": "press-verb",
+          "word": "press",
+          "part_of_speech": "verb",
+          "meaning": "push with your finger",
+          "example": "Press the button."
+        },
+        {
+          "id": "receive-verb",
+          "word": "receive",
+          "part_of_speech": "verb",
+          "meaning": "get something sent to you",
+          "example": "I received your letter."
+        },
+        {
+          "id": "role-noun",
+          "word": "role",
+          "part_of_speech": "noun",
+          "meaning": "a part someone plays",
+          "example": "She plays the main role."
+        },
+        {
+          "id": "send-verb",
+          "word": "send",
+          "part_of_speech": "verb",
+          "meaning": "make something go to someone",
+          "example": "Send me a message."
+        },
+        {
+          "id": "worth-adjective",
+          "word": "worth",
+          "part_of_speech": "adjective",
+          "meaning": "having a certain value",
+          "example": "The film is worth seeing."
+        },
+        {
+          "id": "bill-noun",
+          "word": "bill",
+          "part_of_speech": "noun",
+          "meaning": "a paper showing how much you must pay",
+          "example": "Can we have the bill, please?"
+        },
+        {
+          "id": "cool-adjective",
+          "word": "cool",
+          "part_of_speech": "adjective",
+          "meaning": "a little cold; good (informal)",
+          "example": "It's cool in the evening."
+        },
+        {
+          "id": "director-noun",
+          "word": "director",
+          "part_of_speech": "noun",
+          "meaning": "a person who manages; makes films",
+          "example": "She's the director of the company."
+        },
+        {
+          "id": "exactly-adverb",
+          "word": "exactly",
+          "part_of_speech": "adverb",
+          "meaning": "completely correct",
+          "example": "That's exactly right."
+        },
+        {
+          "id": "ground-noun",
+          "word": "ground",
+          "part_of_speech": "noun",
+          "meaning": "the surface of the earth",
+          "example": "He sat on the ground."
+        },
+        {
+          "id": "provide-verb",
+          "word": "provide",
+          "part_of_speech": "verb",
+          "meaning": "give something people need",
+          "example": "The hotel provides towels."
+        },
+        {
+          "id": "relationship-noun",
+          "word": "relationship",
+          "part_of_speech": "noun",
+          "meaning": "the way people are connected",
+          "example": "They have a good relationship."
+        },
+        {
+          "id": "sound-noun",
+          "word": "sound",
+          "part_of_speech": "noun",
+          "meaning": "something you hear",
+          "example": "I heard a strange sound."
+        },
+        {
+          "id": "source-noun",
+          "word": "source",
+          "part_of_speech": "noun",
+          "meaning": "where something comes from",
+          "example": "Fruit is a good source of vitamins."
+        },
+        {
+          "id": "usually-adverb",
+          "word": "usually",
+          "part_of_speech": "adverb",
+          "meaning": "most of the time",
+          "example": "I usually walk to work."
+        },
+        {
+          "id": "value-noun",
+          "word": "value",
+          "part_of_speech": "noun",
+          "meaning": "how much something is worth",
+          "example": "The value of the house has gone up."
+        },
+        {
+          "id": "evidence-noun",
+          "word": "evidence",
+          "part_of_speech": "noun",
+          "meaning": "facts that show something is true",
+          "example": "There is no evidence."
+        }
+      ]
+    }
+  ]
+}

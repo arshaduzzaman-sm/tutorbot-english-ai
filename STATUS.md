@@ -1,6 +1,6 @@
 # STATUS
 
-**Current milestone:** M2 Learning (branch `m2-learning`, M1 done in PR #1) · **Last updated:** 2026-11-22
+**Current milestone:** M2 Learning done on `m2-finish`; next M3 + M4 (M1 in PR #1) · **Last updated:** 2026-11-22
 
 ## M1 acceptance criteria
 - [x] `make setup` then `make start` runs the full app locally with no API keys (tested on Linux; see Known issues)
@@ -13,30 +13,35 @@
 - [x] Landing page responsive (375 px), passes axe (WCAG 2.2 AA tags), shows Pearson disclaimer
 - [x] Backend, frontend and e2e tests pass in GitHub CI (PR #1, both jobs green on 2026-11-22)
 
+## M2 acceptance criteria
+- [x] Diagnostic → level + daily plan (e2e placement)
+- [x] Finish a full unit and its end-of-unit test; the next unit opens (e2e units; API also blocks locked lessons)
+- [x] Wrong answers go to the mistake notebook and come back in spaced review (e2e review)
+- [x] Every reading and listening type answered with auto-marking and explanations (e2e practice; 30 questions per type)
+- [x] Progress updates on the dashboard (e2e lessons)
+- [x] Levels 1-3 units (59 lessons), vocabulary (1,561 words) and pronunciation (25 topics) tracks, import + audio scripts
+- [ ] GitHub CI green on the final M2 PR (owner merges)
+
 ## Test results (2026-11-22, local)
-- Backend `pytest -q`: 43 passed (26 unit/security, 17 integration with RLS + GraphQL)
-- Frontend `vitest`: 16 passed · `tsc` and `eslint`: clean · `ruff`, `mypy --strict`: clean
-- E2E Playwright against the Docker stack (`make setup` + `make start` from clean): 19 passed (desktop + 375 px)
-- Memory: whole running stack (Supabase + API + web) uses about 0.6 GB RAM
+- Backend `pytest -q`: 72 passed · `ruff`, `mypy --strict`: clean
+- Frontend `vitest`: 24 passed · `tsc` and `eslint`: clean
+- E2E Playwright (desktop + 375 px): 27 passed
 
 ## Content counts
-- Levels: 6 · Lessons: 29 (Level 1: 19 in 4 units; Level 2: 10 in 2 units) · Placement items: 18 · Question types: 22 · Sample questions: 44 (2 per type)
+- Lessons: 59 (Level 1: 19 in 4 units; Level 2: 20 in 4 units; Level 3: 20 in 4 units) · Placement items: 18
+- Practice questions: 362 (30 per auto-marked reading/listening type; 2 per speaking/writing type)
+- Vocabulary: 1,561 words in 61 sets · Pronunciation: 25 topics, 146 drill items
 
-## M2 plan (one small PR each, into `m2-learning`)
-- [x] PR A `m2-lesson-pages`: lesson list + Learn/See/Try/Check player, auto-marking, progress (pytest 48, vitest 17, e2e 20)
-- [x] PR B `m2-reading-practice`: 5 reading types, Learn + Practice modes, auto-marking (pytest 55, vitest 18, e2e 21)
-- [x] PR C `m2-listening-practice`: 7 auto-marked listening types, audio player, Kokoro script (pytest 57, vitest 20, e2e 22)
-- [x] PR D `m2-mistake-review`: mistake notebook + spaced review, new table `review_items` (pytest 59, vitest 21, e2e 23)
-- [x] PR E `m2-placement-plan`: 18-item placement test, level + daily plan, tables `placement_tests`, `study_plans` (pytest 63, vitest 22, e2e 24)
-- [x] PR F1 `m2-units`: units, end-of-unit tests, unlock rule, tables `units`, `unit_progress` (pytest 65, vitest 23, e2e 25)
-- [x] PR F2 `m2-content-import`: `make import` (CSV/JSON), shared content rules, instructions rewritten (pytest 68)
-- [x] PR F3 `m2-level1-content`: Level 1 complete, 19 lessons in 4 units (+14 lessons, +2 unit tests)
-- [x] PR F4 `m2-level2-content-a`: Level 2 units 1-2 (past simple; now and future), 10 lessons
-- [ ] PR F5+ more content (Levels 1-3, about 60 lessons, 30+ questions per reading/listening type)
+## Plan from here (owner asked for 3 PRs in total)
+- [ ] PR 1 `m2-finish` → `m2-learning`: rest of M2 (this branch; builds on PR #12)
+- [ ] PR 2 `m3-m4`: speaking + writing (recording, consent, jobs, local AI + mocks, 22 Question-Type Academy pages,
+  timed drills), mock exam engine (blueprint, timers, resume, results), Levels 4-6
+- [ ] PR 3 `m5-m8`: AI tutor, adaptive plans, analytics charts, admin + content review, security/licence audit,
+  backup/restore, release docs
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR F5 (Level 2 units 3-4).
+2. Agent: PR 2 (M3 + M4).
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
@@ -56,8 +61,8 @@
 - Streak and "today" use UTC days.
 - Placement test covers reading, listening and writing (grammar/words) only; speaking joins in M3.
   Levels 5-6 have 3 items each, so the top of the range is a rough guide.
-- Units lock in the UI and for the unit test; the lesson REST endpoints do not check the lock yet.
 - Mistake notebook covers practice questions; wrong answers inside lessons are not saved there yet.
+- Pronunciation drills are listen-and-choose only; speaking practice with feedback arrives in M3.
 - `make` needs a Unix shell; Windows users use WSL2 or `scripts/setup.ps1` (not tested on Windows/macOS yet).
 
 ## M1 implementation (done)

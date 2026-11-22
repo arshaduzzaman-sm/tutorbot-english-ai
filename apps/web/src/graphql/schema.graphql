@@ -13,6 +13,15 @@ scalar Date
 """Date with time (isoformat)"""
 scalar DateTime
 
+type DrillItem {
+  id: String!
+
+  """listen_choose (play audio, pick the word) or choose"""
+  type: String!
+  prompt: String
+  options: [String!]!
+}
+
 type Exercise {
   id: String!
   type: String!
@@ -136,6 +145,22 @@ type Progress {
   overallRatio: Float!
 }
 
+type PronunciationTopic {
+  slug: String!
+  kind: String!
+  title: String!
+  symbols: [String!]!
+  tip: String!
+  examples: [String!]!
+
+  """Drill items without answers"""
+  drill: [DrillItem!]!
+
+  """The viewer's best drill score 0-1; null if not tried"""
+  bestScore: Float
+  attempts: Int!
+}
+
 type Query {
   viewer: Viewer!
   learningLevels: [LearningLevel!]!
@@ -159,6 +184,14 @@ type Query {
   """Published units in course order, optionally for one level"""
   units(levelCode: Int = null): [Unit!]!
   unit(slug: String!): Unit
+
+  """Vocabulary sets in course order, optionally for one level"""
+  vocabularySets(levelCode: Int = null): [VocabularySet!]!
+  vocabularySet(slug: String!): VocabularySet
+
+  """Pronunciation track: sounds, stress, linking and intonation"""
+  pronunciationTopics: [PronunciationTopic!]!
+  pronunciationTopic(slug: String!): PronunciationTopic
   questionCategories: [QuestionCategory!]!
 }
 
@@ -261,12 +294,48 @@ type Viewer {
   """Mistakes due for spaced review now"""
   reviewDueCount: Int!
 
+  """Vocabulary flashcards due for spaced review now"""
+  vocabularyDue(limit: Int! = 30): [VocabularyWord!]!
+
+  """Number of vocabulary flashcards due now"""
+  vocabularyDueCount: Int!
+
   """
   The learner's latest study plan from the placement test; null if not taken
   """
   studyPlan: StudyPlan
   weakAreas: [WeakArea!]!
   mockExams(limit: Int! = 5): [MockExam!]!
+}
+
+type VocabularySet {
+  slug: String!
+  title: String!
+  levelCode: Int!
+  wordCount: Int!
+
+  """Words the viewer has practised at least once"""
+  seenCount: Int!
+  masteredCount: Int!
+
+  """Words in order with the viewer's flashcard state"""
+  words: [VocabularyWord!]!
+}
+
+type VocabularyWord {
+  id: ID!
+  word: String!
+  partOfSpeech: String!
+  meaning: String!
+  example: String!
+
+  """Stable id; audio file name is vocab-<externalId>.wav"""
+  externalId: String!
+
+  """Flashcard box 0-5 for the viewer; null if never practised"""
+  box: Int
+  dueAt: DateTime
+  mastered: Boolean!
 }
 
 type WeakArea {

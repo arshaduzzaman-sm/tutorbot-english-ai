@@ -45,7 +45,8 @@ async def load_lesson(session: AsyncSession, slug: str) -> tuple[dict[str, Any],
     lesson = (
         (
             await session.execute(
-                text("select id, slug, title from public.lessons where slug = :s and deleted_at is null"), {"s": slug}
+                text("select id, slug, title, unit_id from public.lessons where slug = :s and deleted_at is null"),
+                {"s": slug},
             )
         )
         .mappings()
@@ -66,6 +67,17 @@ async def load_lesson(session: AsyncSession, slug: str) -> tuple[dict[str, Any],
     return dict(lesson), [dict(s) for s in sections]
 
 
+async def ensure_unlocked(session: AsyncSession, user_id: str, lesson: dict[str, Any]) -> None:
+    """Lessons in a locked unit cannot be started or checked (the same rule as the unit list)."""
+    if lesson.get("unit_id") is None:
+        return
+    from app.services.units import unit_states  # units imports this module
+
+    state = next((s for s in await unit_states(session, user_id) if s.id == lesson["unit_id"]), None)
+    if state is not None and state.locked:
+        raise AppError(403, "unit_locked", "Pass the unit before this one first.")
+
+
 def find_exercises(sections: list[dict[str, Any]], kind: str) -> list[dict[str, Any]]:
     return [ex for s in sections if s["kind"] == kind for ex in (s["exercises"] or [])]
 
@@ -81,6 +93,7 @@ async def check_one(session: AsyncSession, slug: str, exercise_id: str, given: s
 
 async def start_lesson(session: AsyncSession, user_id: str, slug: str) -> str:
     lesson, _ = await load_lesson(session, slug)
+    await ensure_unlocked(session, user_id, lesson)
     row = await session.execute(
         text(
             """insert into public.learning_progress (user_id, lesson_id, status)
@@ -102,6 +115,7 @@ async def submit_check(
     removes a completion, and the best score is kept.
     """
     lesson, sections = await load_lesson(session, slug)
+    await ensure_unlocked(session, user_id, lesson)
     exercises = find_exercises(sections, "check")
     if not exercises:
         raise AppError(422, "no_check", "This lesson has no Check exercises.")

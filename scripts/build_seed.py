@@ -204,6 +204,44 @@ def build() -> str:
         f"{diag['estimated_minutes']}, {q(diag['items'])});"
     )
 
+    out += ["", "-- Vocabulary track"]
+    seen_words: set[str] = set()
+    for path in sorted((CONTENT / "vocabulary").glob("level-*.json")):
+        data = load_json(path)
+        level_id = level_ids.get(data["level_code"])
+        if level_id is None:
+            errors.append(f"{path.name}: unknown level {data['level_code']}")
+            continue
+        for s_order, vset in enumerate(data["sets"], start=1):
+            if not vset.get("words"):
+                errors.append(f"{path.name}: set {vset.get('slug')} has no words")
+            for w_order, w in enumerate(vset["words"], start=1):
+                missing = [k for k in ("id", "word", "part_of_speech", "meaning", "example") if not w.get(k)]
+                if missing or w["id"] in seen_words:
+                    errors.append(f"{path.name}/{w.get('id')}: missing {missing} or duplicate id")
+                    continue
+                seen_words.add(w["id"])
+                out.append(
+                    "insert into public.vocabulary (id, external_id, learning_level_id, set_slug, set_title, set_order, "
+                    "sort_order, word, part_of_speech, meaning, example, status) values ("
+                    f"{q(uid('vocab', w['id']))}, {q(w['id'])}, {q(level_id)}, {q(vset['slug'])}, {q(vset['title'])}, "
+                    f"{s_order}, {w_order}, {q(w['word'])}, {q(w['part_of_speech'])}, {q(w['meaning'])}, "
+                    f"{q(w['example'])}, 'published');"
+                )
+
+    out += ["", "-- Pronunciation track"]
+    for p_order, t in enumerate(load_json(CONTENT / "pronunciation.json")["topics"], start=1):
+        for d in t["drill"]:
+            if d["answer"] not in d["options"] or d.get("type") not in ("listen_choose", "choose"):
+                errors.append(f"pronunciation/{d['id']}: answer must be one of the options")
+        if len(t["drill"]) < 5:
+            errors.append(f"pronunciation/{t['slug']}: needs at least 5 drill items")
+        out.append(
+            "insert into public.pronunciation_topics (id, slug, kind, title, symbols, tip, examples, drill, sort_order, status) "
+            f"values ({q(uid('pron', t['slug']))}, {q(t['slug'])}, {q(t['kind'])}, {q(t['title'])}, {text_array(t['symbols'])}, "
+            f"{q(t['tip'])}, {text_array(t['examples'])}, {q(t['drill'])}, {p_order}, 'published');"
+        )
+
     out += ["", "-- Demo users (fake, local only). The signup trigger creates profiles and student roles."]
     for user in DEMO_USERS:
         user_id = uid("demo-user", user["email"])

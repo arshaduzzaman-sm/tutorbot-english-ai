@@ -48,11 +48,18 @@ export default async function LessonsPage() {
   const data = await serverQuery(accessToken, LessonsQuery);
   const t = await getTranslations("lessons");
   const tu = await getTranslations("units");
+  const tn = await getTranslations("nav");
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
       <div>
         <h1 className="text-3xl font-bold text-primary">{t("title")}</h1>
         <p className="mt-2 text-muted-foreground">{t("intro")}</p>
+        <p className="mt-2 text-sm">
+          {t("tracks")}
+          <Link href="/vocabulary" className="font-medium text-accent-blue underline">{tn("vocabulary")}</Link>
+          {" · "}
+          <Link href="/pronunciation" className="font-medium text-accent-blue underline">{tn("pronunciation")}</Link>
+        </p>
       </div>
       {data.learningLevels.map((lv) => {
         const units = data.units.filter((u) => u.level?.code === lv.code);
