@@ -7,8 +7,8 @@ import pytest
 from httpx import AsyncClient
 from sqlalchemy import text
 
-from app.db.session import service_session, user_session
 from app.core.security import AuthUser
+from app.db.session import service_session, user_session
 from app.services import admin as svc
 from tests.helpers import auth
 
