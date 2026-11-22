@@ -30,7 +30,9 @@ export const DashboardQuery = graphql(`
       recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }
       weakAreas { accuracy attempts category { code name } }
       mockExams(limit: 5) { id kind status startedAt completedAt }
+      coach { recommendations }
     }
+    practiceTypes: questionCategories { code name }
   }
 `);
 
@@ -99,8 +101,8 @@ export const PracticeHubQuery = graphql(`
 `);
 
 export const PracticeQuestionsQuery = graphql(`
-  query PracticeQuestions($code: String!) {
-    practiceQuestions(categoryCode: $code) {
+  query PracticeQuestions($code: String!, $adaptive: Boolean! = false) {
+    practiceQuestions(categoryCode: $code, adaptive: $adaptive) {
       id externalId categoryCode difficulty instructions learningObjective content
       options { label body }
       category { code name section }
@@ -216,5 +218,28 @@ export const ExamsHubQuery = graphql(`
   query ExamsHub {
     blueprints { code name kind about verified itemCount sections spec }
     viewer { recordingConsent mockExams(limit: 10) { id kind status startedAt completedAt blueprintCode overallBand } }
+  }
+`);
+
+export const ProgressQuery = graphql(`
+  query Progress($days: Int!) {
+    viewer {
+      id
+      demoMode
+      coach { level recommendations readiness weekly todayPlan }
+      analytics(days: $days)
+    }
+    practiceTypes: questionCategories { code name }
+  }
+`);
+
+export const TutorQuery = graphql(`
+  query Tutor {
+    viewer {
+      id
+      demoMode
+      profile { level { code name cefr } }
+      tutorMessages(limit: 40) { id role content provider createdAt }
+    }
   }
 `);

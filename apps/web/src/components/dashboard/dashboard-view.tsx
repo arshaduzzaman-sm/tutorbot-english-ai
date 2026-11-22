@@ -1,4 +1,4 @@
-import { BookOpen, CalendarCheck, Flame, GraduationCap, History, ListChecks, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
+import { BookOpen, CalendarCheck, Compass, Flame, GraduationCap, History, ListChecks, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui/alert";
@@ -8,8 +8,10 @@ import { Progress } from "@/components/ui/progress";
 import { buttonVariants } from "@/components/ui/button";
 import { type Plan, StudyPlanList } from "@/components/placement/study-plan";
 import type { DashboardQuery } from "@/graphql/generated/graphql";
+import { RecommendationList } from "@/components/progress/coach-panel";
+import type { Recommendation } from "@/lib/coach";
 
-export type DashboardData = DashboardQuery["viewer"];
+export type DashboardData = DashboardQuery["viewer"] & { typeNames?: Record<string, string> };
 
 /** Pure view: every value comes from the GraphQL response. Empty states for new users; no fake numbers. */
 export function DashboardView({ data, notice }: { data: DashboardData; notice?: string }) {
@@ -70,6 +72,14 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           </CardBody>
         </Card>
       </div>
+
+      <Card>
+        <CardTitle><Compass aria-hidden="true" className="size-5 text-accent-purple" />{t("nextSteps")}</CardTitle>
+        <CardBody className="space-y-3">
+          <RecommendationList recs={data.coach.recommendations as Recommendation[]} names={data.typeNames ?? {}} limit={3} />
+          <Link href="/progress" className="text-sm font-medium text-accent-blue underline">{t("openProgress")}</Link>
+        </CardBody>
+      </Card>
 
       <Card>
         <CardTitle><ListChecks aria-hidden="true" className="size-5 text-accent-blue" />{t("planTitle")}</CardTitle>

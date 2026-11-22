@@ -1,4 +1,4 @@
-import { BookOpen, LayoutDashboard, LogIn, PencilLine, Timer, UserRound } from "lucide-react";
+import { BookOpen, ChartLine, LayoutDashboard, LogIn, MessageCircle, PencilLine, Timer, UserRound } from "lucide-react";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Logo } from "@/components/logo";
@@ -35,6 +35,14 @@ export async function SiteHeader() {
               <Link href="/exams" className={buttonVariants({ variant: "ghost", size: "sm" })}>
                 <Timer aria-hidden="true" className="size-4" />
                 {tn("exams")}
+              </Link>
+              <Link href="/progress" className={buttonVariants({ variant: "ghost", size: "sm" })}>
+                <ChartLine aria-hidden="true" className="size-4" />
+                {tn("progress")}
+              </Link>
+              <Link href="/tutor" className={buttonVariants({ variant: "ghost", size: "sm" })}>
+                <MessageCircle aria-hidden="true" className="size-4" />
+                {tn("tutor")}
               </Link>
               <Link href="/profile" className={buttonVariants({ variant: "ghost", size: "sm" })}>
                 <UserRound aria-hidden="true" className="size-4" />

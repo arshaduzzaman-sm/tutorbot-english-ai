@@ -9,10 +9,17 @@ import { requireSession, serverQuery } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
-export default async function PracticeTypePage({ params }: { params: Promise<{ category: string }> }) {
+export default async function PracticeTypePage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ category: string }>;
+  searchParams: Promise<{ adaptive?: string }>;
+}) {
   const { category } = await params;
+  const adaptive = (await searchParams).adaptive === "1";
   const { accessToken } = await requireSession(`/practice/${category}`);
-  const { practiceQuestions } = await serverQuery(accessToken, PracticeQuestionsQuery, { code: category });
+  const { practiceQuestions } = await serverQuery(accessToken, PracticeQuestionsQuery, { code: category, adaptive });
   const first = practiceQuestions[0];
   if (!first?.category) notFound();
   const t = await getTranslations("practice");

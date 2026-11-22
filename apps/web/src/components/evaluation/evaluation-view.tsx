@@ -5,7 +5,7 @@ import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import type { Band, EvalResult } from "@/lib/evaluations";
 
-const BAND_STYLE: Record<Band, string> = {
+export const BAND_STYLE: Record<Band, string> = {
   needs_work: "bg-red-50 text-[#7f1d1d] border-danger/30",
   developing: "bg-amber-50 text-[#713f12] border-warning/30",
   good: "bg-blue-50 text-[#1e3a8a] border-accent-blue/30",
