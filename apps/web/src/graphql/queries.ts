@@ -48,6 +48,7 @@ export const ProfileQuery = graphql(`
     viewer {
       email
       roles
+      recordingConsent
       profile { displayName targetScore examDate dailyGoalMinutes level { code name cefr } }
     }
   }

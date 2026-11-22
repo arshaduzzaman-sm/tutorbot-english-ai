@@ -188,7 +188,13 @@
     "deleteBody": "This deletes your profile, progress, attempts and recordings. It cannot be undone.",
     "deleteConfirmLabel": "Type DELETE to confirm",
     "deleteButton": "Delete my account",
-    "deleted": "Your account has been deleted."
+    "deleted": "Your account has been deleted.",
+    "recordingTitle": "Voice recordings",
+    "recordingBody": "Speaking feedback needs your recordings. They are saved only on this computer and are deleted when you delete your account.",
+    "recordingOn": "You have agreed to voice recordings.",
+    "recordingOff": "Voice recordings are off. You will be asked before you record.",
+    "recordingStop": "Stop recordings",
+    "recordingAllow": "Allow recordings"
   },
   "levels": {
     "1": "Beginner English",

@@ -21,4 +21,9 @@
 | 2026-11-22 | Flashcards reuse the mistake-notebook boxes (1, 3, 7, 14 days) in a separate table `vocabulary_reviews` | One spaced-review rule for the whole app; `review_items` stays tied to questions. |
 | 2026-11-22 | Pronunciation drills are listen-and-choose (auto-marked) until M3 | Recording + pronunciation analyser are M3 work. Symbols follow common British dictionary style. |
 | 2026-11-22 | E2E runs the API with `RATE_LIMIT_PER_MINUTE=1000` | All test learners share the web server's IP; the normal limit (120/min per IP) stays for real use. |
+| 2026-11-22 | Pronunciation uses Whisper word confidence as a proxy, not a phoneme model | No wav2vec2 phoneme model could be downloaded or licence-checked here. The proxy is labelled in the result; replace when a model is verified. |
+| 2026-11-22 | Evaluation jobs use a Postgres table claimed with `for update skip locked`; worker runs in the API process or `python -m app.workers` | No extra queue service (local-only, 8 GB tier). Stale jobs are re-queued. |
+| 2026-11-22 | Recordings are files under `recordings/<user>/` (git-ignored), not Supabase Storage | Simpler locally; deleted with the account and included in the export list. |
+| 2026-11-22 | Mock exam state is written only by the API (service role); students can only read their own sessions | Stops a student from changing answers, timers or position through the database. |
+| 2026-11-22 | Exam blueprints keep unverified counts and clocks with `verified: false` | Pearson publishes per-task timings but not exact item counts per test; the report says "practice estimate". |
 | — | Numeric 10-90 estimates: threshold to be set in M7 calibration | SPEC 7.3. Not enabled. |

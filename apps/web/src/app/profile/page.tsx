@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { DataActions } from "@/components/profile/data-actions";
+import { RecordingConsentToggle } from "@/components/profile/recording-consent-toggle";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardBody, CardTitle } from "@/components/ui/card";
 import { ProfileQuery } from "@/graphql/queries";
@@ -32,6 +33,13 @@ export default async function ProfilePage() {
           <p>{td("target")}: {p?.targetScore ?? td("noTarget")}</p>
           <p>{td("dailyGoal")}: {p?.dailyGoalMinutes} min</p>
           <Link href="/onboarding" className={`${buttonVariants({ variant: "outline", size: "sm" })} mt-3`}>{t("editGoals")}</Link>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardTitle>{t("recordingTitle")}</CardTitle>
+        <CardBody>
+          <p className="mb-3">{t("recordingBody")}</p>
+          <RecordingConsentToggle initial={viewer.recordingConsent} />
         </CardBody>
       </Card>
       <Card>

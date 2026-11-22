@@ -68,3 +68,16 @@ test("a timed drill gives feedback at the end", async ({ page, request }) => {
   }
   await expect(page.getByTestId("drill-done")).toContainText("You answered 5 questions");
 });
+
+test("the profile page turns voice recording consent on and off", async ({ page, request }) => {
+  await newLearner(page, request, /3\. Intermediate English/);
+  await page.goto("/profile");
+  const state = page.getByTestId("recording-consent-state");
+  await expect(state).toContainText("Voice recordings are off");
+  await page.getByRole("button", { name: "Allow recordings" }).click();
+  await expect(state).toContainText("You have agreed to voice recordings.");
+  await page.reload();
+  await expect(state).toContainText("You have agreed to voice recordings.");
+  await page.getByRole("button", { name: "Stop recordings" }).click();
+  await expect(state).toContainText("Voice recordings are off");
+});
