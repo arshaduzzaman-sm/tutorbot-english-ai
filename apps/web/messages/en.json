@@ -22,7 +22,8 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "main": "Main",
-    "lessons": "Lessons"
+    "lessons": "Lessons",
+    "practice": "Practice"
   },
   "footer": {
     "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
@@ -157,7 +158,8 @@
     "mocksEmpty": "No mock exams yet. Full mock exams arrive in a later version.",
     "readinessNote": "Progress here is a practice estimate, not an official PTE score.",
     "openLesson": "Open lesson",
-    "allLessons": "See all lessons"
+    "allLessons": "See all lessons",
+    "openPractice": "Practise a task type"
   },
   "profile": {
     "title": "Your profile",
@@ -231,5 +233,52 @@
     "toDashboard": "Go to my dashboard",
     "notFound": "This lesson was not found.",
     "question": "Question {n}"
+  },
+  "practice": {
+    "title": "Practice",
+    "intro": "Practise each PTE task type with original questions. Answers are marked straight away.",
+    "readingHeading": "Reading",
+    "comingSoon": "Listening practice is coming next. Speaking and writing practice arrive with the local AI tools.",
+    "questions": "{count, plural, one {# question} other {# questions}}",
+    "attempts": "{count, plural, =0 {Not tried yet} one {Tried once} other {Tried # times}}",
+    "average": "Your average: {value}%",
+    "open": "Practise",
+    "openLabel": "Practise: {name}",
+    "backToPractice": "Back to practice",
+    "modeLabel": "Mode",
+    "modeLearn": "Learn mode",
+    "modeLearnHelp": "No timer. You see a tip before you answer.",
+    "modePractice": "Practice mode",
+    "modePracticeHelp": "A timer shows how long you take. Feedback comes after each question.",
+    "timerUnofficial": "Time so far: {time}. Official timings are not shown yet.",
+    "tip": "Tip: {text}",
+    "questionOf": "Question {current} of {total}",
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "blank": "Blank {n}",
+    "choose": "Choose…",
+    "selectAll": "Choose all the correct answers.",
+    "selectOne": "Choose one answer.",
+    "reorderHelp": "Put the boxes in the right order. Use the Up and Down buttons, or drag a box.",
+    "moveUp": "Move up: {text}",
+    "moveDown": "Move down: {text}",
+    "position": "Box {n}",
+    "submit": "Check my answer",
+    "answerFirst": "Please answer the question first.",
+    "scored": "You scored {value}%.",
+    "allCorrect": "All correct!",
+    "someWrong": "Not all correct yet.",
+    "correctAnswer": "Correct answer: {answer}",
+    "next": "Next question",
+    "finish": "See my results",
+    "doneTitle": "Practice finished",
+    "doneBody": "You answered {count} questions. Your average was {value}%.",
+    "again": "Practise again",
+    "empty": "There are no questions for this task type yet.",
+    "notAutoMarked": "This task type needs the AI tools that arrive later. You can read about it for now.",
+    "notFound": "This task type was not found."
   }
 }

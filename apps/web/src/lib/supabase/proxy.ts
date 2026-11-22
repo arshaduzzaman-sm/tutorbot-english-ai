@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { publicEnv, serverEnv } from "@/lib/env";
 import { publicOrigin } from "@/lib/origin";
 
-export const PROTECTED_PREFIXES = ["/dashboard", "/onboarding", "/profile", "/reset-password", "/lessons"];
+export const PROTECTED_PREFIXES = ["/dashboard", "/onboarding", "/profile", "/reset-password", "/lessons", "/practice"];
 
 export function isProtected(pathname: string) {
   return PROTECTED_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));

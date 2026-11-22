@@ -9,6 +9,7 @@ import strawberry
 from graphql.validation import NoSchemaIntrospectionCustomRule
 from sqlalchemy import func, select, text
 from strawberry.extensions import AddValidationRules, MaxAliasesLimiter, MaxTokensLimiter, QueryDepthLimiter
+from strawberry.scalars import JSON
 from strawberry.types import Info
 
 from app.ai.registry import demo_mode
@@ -16,6 +17,7 @@ from app.core.config import get_settings
 from app.db import models
 from app.graphql.context import Context
 from app.services.lessons import public_exercise
+from app.services.practice import AUTO_MARKED, public_content
 from app.services.progress import AttemptSignal, skill_stats, study_streak, weak_categories
 
 CtxInfo = Info[Context, None]
@@ -416,6 +418,65 @@ class Viewer:
 
 
 @strawberry.type
+class QuestionOption:
+    label: str
+    body: str
+
+
+@strawberry.type
+class PracticeQuestion:
+    id: strawberry.ID
+    external_id: str
+    category_code: str
+    difficulty: str
+    instructions: str
+    learning_objective: str
+    content: JSON = strawberry.field(description="Task content without answers (text, blanks, passage, ...)")
+    category_id: strawberry.Private[uuid.UUID]
+
+    @strawberry.field
+    async def category(self, info: CtxInfo) -> QuestionCategory | None:
+        m = await info.context.category_loader.load(self.category_id)
+        return QuestionCategory.of(m) if m else None
+
+    @strawberry.field(description="Answer options in order, without which ones are correct")
+    async def options(self, info: CtxInfo) -> list[QuestionOption]:
+        rows = await info.context.execute(
+            text("select label, body from public.question_options where question_id = :id order by sort_order, label"),
+            {"id": uuid.UUID(str(self.id))},
+        )
+        return [QuestionOption(label=str(r.label), body=str(r.body)) for r in rows.all()]
+
+
+@strawberry.type
+class PracticeTypeStats:
+    category: QuestionCategory
+    question_count: int
+    auto_marked: bool
+    attempts: int = strawberry.field(description="The viewer's attempts at this task type")
+    average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
+
+
+QUESTION_COLUMNS = (
+    "q.id, q.external_id, c.code, q.difficulty::text, q.instructions, q.learning_objective, q.content, q.category_id"
+)
+
+
+def _question(row: Any) -> PracticeQuestion:
+    r: list[Any] = list(row)
+    return PracticeQuestion(
+        id=strawberry.ID(str(r[0])),
+        external_id=r[1],
+        category_code=r[2],
+        difficulty=r[3],
+        instructions=r[4],
+        learning_objective=r[5],
+        content=public_content(r[2], dict(r[6])),  # type: ignore[arg-type]
+        category_id=r[7],
+    )
+
+
+@strawberry.type
 class Query:
     @strawberry.field
     def viewer(self, info: CtxInfo) -> Viewer:
@@ -455,6 +516,76 @@ class Query:
         )
         r = rows.first()
         return _lesson(r) if r else None
+
+    @strawberry.field(description="Task types of one section with question counts and the viewer's results")
+    async def practice_types(self, info: CtxInfo, section: str) -> list[PracticeTypeStats]:
+        if section not in ("speaking_writing", "reading", "listening"):
+            return []
+        cats = (
+            (
+                await info.context.execute(
+                    select(models.QuestionCategory)
+                    .where(models.QuestionCategory.section == section)
+                    .order_by(models.QuestionCategory.sort_order)
+                )
+            )
+            .scalars()
+            .all()
+        )
+        rows = await info.context.execute(
+            text(
+                "select c.id, (select count(*) from public.questions q where q.category_id = c.id "
+                "and q.status = 'published' and q.deleted_at is null), "
+                "count(a.id), avg(a.score_ratio) from public.question_categories c "
+                "left join public.attempts a on a.category_id = c.id and a.user_id = :u and a.question_id is not null "
+                "where c.section = cast(:s as public.pte_section) group by c.id"
+            ),
+            {"u": info.context.user.id, "s": section},
+        )
+        stats: dict[Any, list[Any]] = {r[0]: list(r) for r in rows.all()}
+        out = []
+        for c in cats:
+            r = stats.get(c.id)
+            out.append(
+                PracticeTypeStats(
+                    category=QuestionCategory.of(c),
+                    question_count=int(r[1]) if r else 0,
+                    auto_marked=c.code in AUTO_MARKED,
+                    attempts=int(r[2]) if r else 0,
+                    average_score=float(r[3]) if r and r[3] is not None else None,
+                )
+            )
+        return out
+
+    @strawberry.field(description="Published questions of one task type, easiest first")
+    async def practice_questions(self, info: CtxInfo, category_code: str, limit: int = 50) -> list[PracticeQuestion]:
+        rows = await info.context.execute(
+            text(
+                f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608 (constant column list)
+                "join public.question_categories c on c.id = q.category_id "
+                "where c.code = :code and q.status = 'published' and q.deleted_at is null "
+                "order by q.difficulty, q.external_id limit :lim"
+            ),
+            {"code": category_code, "lim": max(1, min(limit, 100))},
+        )
+        return [_question(r) for r in rows.all()]
+
+    @strawberry.field
+    async def practice_question(self, info: CtxInfo, id: strawberry.ID) -> PracticeQuestion | None:
+        try:
+            qid = uuid.UUID(str(id))
+        except ValueError:
+            return None
+        rows = await info.context.execute(
+            text(
+                f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608
+                "join public.question_categories c on c.id = q.category_id "
+                "where q.id = :id and q.status = 'published' and q.deleted_at is null"
+            ),
+            {"id": qid},
+        )
+        r = rows.first()
+        return _question(r) if r else None
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

@@ -21,6 +21,11 @@ type Exercise {
   hint: String
 }
 
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf).
+"""
+scalar JSON @specifiedBy(url: "https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf")
+
 type LearningLevel {
   id: ID!
   code: Int!
@@ -64,6 +69,34 @@ type MockExam {
   completedAt: DateTime
 }
 
+type PracticeQuestion {
+  id: ID!
+  externalId: String!
+  categoryCode: String!
+  difficulty: String!
+  instructions: String!
+  learningObjective: String!
+
+  """Task content without answers (text, blanks, passage, ...)"""
+  content: JSON!
+  category: QuestionCategory
+
+  """Answer options in order, without which ones are correct"""
+  options: [QuestionOption!]!
+}
+
+type PracticeTypeStats {
+  category: QuestionCategory!
+  questionCount: Int!
+  autoMarked: Boolean!
+
+  """The viewer's attempts at this task type"""
+  attempts: Int!
+
+  """Mean practice score ratio 0-1; null if no attempts"""
+  averageScore: Float
+}
+
 type Profile {
   displayName: String
   targetScore: Int
@@ -87,6 +120,15 @@ type Query {
   """Published lessons, optionally for one level, in course order"""
   lessons(levelCode: Int = null): [Lesson!]!
   lesson(slug: String!): Lesson
+
+  """
+  Task types of one section with question counts and the viewer's results
+  """
+  practiceTypes(section: String!): [PracticeTypeStats!]!
+
+  """Published questions of one task type, easiest first"""
+  practiceQuestions(categoryCode: String!, limit: Int! = 50): [PracticeQuestion!]!
+  practiceQuestion(id: ID!): PracticeQuestion
   questionCategories: [QuestionCategory!]!
 }
 
@@ -96,6 +138,11 @@ type QuestionCategory {
   name: String!
   section: String!
   skills: [Skill!]!
+}
+
+type QuestionOption {
+  label: String!
+  body: String!
 }
 
 enum Skill {

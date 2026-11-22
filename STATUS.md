@@ -24,7 +24,7 @@
 
 ## M2 plan (one small PR each, into `m2-learning`)
 - [x] PR A `m2-lesson-pages`: lesson list + Learn/See/Try/Check player, auto-marking, progress (pytest 48, vitest 17, e2e 20)
-- [ ] PR B reading practice (5 types, Learn + Practice modes, auto-marking)
+- [x] PR B `m2-reading-practice`: 5 reading types, Learn + Practice modes, auto-marking (pytest 55, vitest 18, e2e 21)
 - [ ] PR C listening practice (8 types; audio script, transcript fallback)
 - [ ] PR D mistake notebook + spaced review
 - [ ] PR E placement test + study plan
@@ -32,7 +32,7 @@
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR B.
+2. Agent: continue with PR C.
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
@@ -41,6 +41,8 @@
   unchanged but gives no table, so the app shows CEFR levels only (no PTE ranges).
 - **Unverified:** scoring-criteria names stored on sample questions (e.g. "Oral fluency") must be checked
   against Pearson's current Score Guide before M3 uses them.
+- **Practice marking** is our own simple method (share of correct parts; multiple-answer: +1 right, -1 wrong,
+  never below 0). It is labelled "not an official PTE score". Practice mode shows a count-up timer, not official timings.
 - Exam timings are not stored yet (blueprint arrives in M4; every rule must cite an official source).
 
 ## Known issues and limitations
