@@ -5,12 +5,14 @@ Marking here is our own simple practice method (share of correct parts). It is N
 
 import uuid
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from typing import Any
 
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import AppError
+from app.services import review
 
 BLANKS = {"rw_fill_blanks", "reading_fill_blanks", "listening_fill_blanks"}
 SINGLE = {"reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"}
@@ -27,7 +29,7 @@ LISTENING = {
     "write_from_dictation",
     "summarize_spoken_text",
 }
-MODES = {"learn", "practice"}
+MODES = {"learn", "practice", "review"}
 
 
 @dataclass(frozen=True)
@@ -135,7 +137,7 @@ async def answer_question(
     duration_seconds: int | None,
 ) -> dict[str, Any]:
     if mode not in MODES:
-        raise AppError(422, "bad_mode", "Mode must be learn or practice.")
+        raise AppError(422, "bad_mode", "Mode must be learn, practice or review.")
     row = (
         (
             await session.execute(
@@ -169,7 +171,9 @@ async def answer_question(
             "d": duration_seconds,
         },
     )
+    notebook = await review.record(session, user_id, row["id"], m.score_ratio, m.is_correct, datetime.now(UTC))
     return {
+        "notebook": notebook,
         "score_ratio": m.score_ratio,
         "is_correct": m.is_correct,
         "correct_answer": m.correct_answer,

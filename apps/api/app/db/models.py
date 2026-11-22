@@ -13,7 +13,7 @@ skill_enum = ENUM("speaking", "writing", "reading", "listening", name="skill", c
 section_enum = ENUM("speaking_writing", "reading", "listening", name="pte_section", create_type=False)
 status_enum = ENUM("draft", "ai_generated", "reviewed", "published", name="content_status", create_type=False)
 difficulty_enum = ENUM("beginner", "intermediate", "advanced", name="difficulty", create_type=False)
-mode_enum = ENUM("learn", "practice", "timed_drill", "exam", name="practice_mode", create_type=False)
+mode_enum = ENUM("learn", "practice", "timed_drill", "exam", "review", name="practice_mode", create_type=False)
 role_enum = ENUM("student", "content_editor", "admin", name="app_role", create_type=False)
 
 

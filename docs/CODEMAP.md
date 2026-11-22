@@ -22,8 +22,9 @@
 - `db/session.py` `user_session` (RLS as authenticated) / `service_session` · `db/models.py` SQLAlchemy models
 - `api/deps.py` DB dependency, `require_role` · `api/me.py` onboarding PUT, export GET, delete · `api/health.py`
 - `api/practice.py` answer a question · `services/practice.py` auto-marking (blanks, choices, reorder, highlight words, dictation), attempts, speech text
+- `services/review.py` mistake notebook + spaced review schedule (Leitner boxes 0-5)
 - `api/lessons.py` lesson start, Try check, Check submit · `services/lessons.py` marking (answers never leave the API)
-- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson, practiceTypes, practiceQuestions; limits
+- `graphql/schema.py` Query: viewer (dashboard fields), learningLevels, questionCategories, lessons, lesson, practiceTypes, practiceQuestions, viewer.reviewItems/reviewDueCount; limits
 - `graphql/context.py` per-request context, locked execute, DataLoaders (levels, categories, lesson progress)
 - `services/progress.py` streak, skill stats, weak areas (pure) · `services/profile.py` onboarding/export/delete
 - `ai/interfaces/` Protocols + result types (EvaluationResult = SPEC 7.2) · `ai/providers/mock.py` deterministic mocks
@@ -34,7 +35,7 @@
 ## Frontend (`apps/web/`)
 - `messages/en.json` all UI text · `src/i18n/request.ts` next-intl config · `src/proxy.ts` session refresh + route guard
 - `src/app/` routes: `/`, `/register`, `/login`, `/check-email`, `/forgot-password`, `/reset-password`,
-  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/lessons`, `/lessons/[slug]`, `/practice`, `/practice/[category]`, `/profile`, `/about`, `/privacy`, `/terms`
+  `/auth/confirm` (email links), `/auth/signout`, `/onboarding`, `/dashboard`, `/lessons`, `/lessons/[slug]`, `/practice`, `/practice/[category]`, `/review` (mistake notebook), `/profile`, `/about`, `/privacy`, `/terms`
 - `src/components/ui/` design system (button, card, input, alert, progress, badge) · `site-header/footer`, `cookie-banner`
 - `src/components/dashboard/dashboard-view.tsx` pure dashboard view · `onboarding/onboarding-form.tsx` · `profile/data-actions.tsx`
 - `src/components/lessons/lesson-player.tsx` Learn/See/Try/Check player · `status-badge.tsx` · `markdown.tsx` safe markdown
@@ -48,4 +49,4 @@
 - `scripts/setup.sh`, `setup.ps1` one-command setup · `write-env.sh` env files from `supabase status`
 - `scripts/generate_audio.py` (`make audio`) Kokoro listening audio → apps/web/public/audio (git-ignored)
 - `scripts/build_seed.py` validates content → seed.sql · `download-models.sh`, `detect-hardware.sh` AI tiers
-- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats)
+- `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats), review (mistake → notebook → spaced review)

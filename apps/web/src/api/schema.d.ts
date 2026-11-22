@@ -190,7 +190,7 @@ export interface components {
              * @default practice
              * @enum {string}
              */
-            mode: "learn" | "practice";
+            mode: "learn" | "practice" | "review";
             response: components["schemas"]["AnswerResponse"];
         };
         /** AnswerOut */
@@ -205,6 +205,11 @@ export interface components {
             is_correct: boolean;
             /** Note */
             note: string;
+            /**
+             * Notebook
+             * @description What happened in the mistake notebook: added (new mistake), moved, mastered, or nothing
+             */
+            notebook: ("added" | "moved" | "mastered") | null;
             /** Parts */
             parts: {
                 [key: string]: unknown;

@@ -23,6 +23,7 @@ const empty: DashboardData = {
   },
   streakDays: 0,
   todayMinutes: 0,
+  reviewDueCount: 0,
   recentAttempts: [],
   recommendedLessons: [],
   weakAreas: [],
