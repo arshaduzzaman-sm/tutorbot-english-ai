@@ -11,7 +11,7 @@
 - [x] Dashboard shows real DB data and correct empty states for a new user
 - [x] RLS tests prove one user cannot read another user's data
 - [x] Landing page responsive (375 px), passes axe (WCAG 2.2 AA tags), shows Pearson disclaimer
-- [ ] Backend, frontend and e2e tests pass **in GitHub CI** (workflow written; no GitHub repo yet, so not run in CI)
+- [x] Backend, frontend and e2e tests pass in GitHub CI (PR #1, both jobs green on 2026-11-22)
 
 ## Test results (2026-11-22, local)
 - Backend `pytest -q`: 43 passed (26 unit/security, 17 integration with RLS + GraphQL)
@@ -23,8 +23,8 @@
 - Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
 
 ## Next step
-1. Owner: create the empty public GitHub repo `tutorbot-english-ai`; then push and confirm CI is green (last M1 box).
-2. Then merge `m1-foundation` → `main`, create `m2-learning`, write the M2 plan here.
+1. Owner: merge PR #1 (`m1-foundation` → `main`). All M1 criteria pass.
+2. Then create branch `m2-learning` and write the M2 plan here.
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
