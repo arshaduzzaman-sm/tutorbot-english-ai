@@ -38,3 +38,26 @@ export async function dismissCookies(page: Page) {
   const ok = page.getByRole("region", { name: "Cookie notice" }).getByRole("button", { name: "OK" });
   if (await ok.isVisible().catch(() => false)) await ok.click();
 }
+
+/** Registers, confirms and onboards a new learner at `level` (e.g. "1. Beginner English"). Ends on /dashboard. */
+export async function newLearner(page: Page, request: APIRequestContext, level: RegExp, name = "Sam") {
+  const email = uniqueEmail();
+  const password = "Learner-pass-123";
+  await page.goto("/register");
+  await dismissCookies(page);
+  await page.getByLabel("Your name").fill(name);
+  await page.getByLabel("Email").fill(email);
+  await page.getByLabel("Password", { exact: true }).fill(password);
+  await page.getByLabel("I am 16 years old or older.").check();
+  await page.getByLabel(/I agree to the Terms/).check();
+  await page.getByRole("button", { name: "Create account" }).click();
+  await expect(page).toHaveURL(/\/check-email/);
+  await page.goto(await linkFromEmail(request, email, "Confirm your TutorBot English AI account"));
+  await expect(page).toHaveURL(/\/onboarding/);
+  await page.getByLabel(level).check();
+  await page.getByRole("button", { name: "Next" }).click();
+  await page.getByLabel("What PTE score are you aiming for?").fill("50");
+  await page.getByRole("button", { name: "Save and go to my dashboard" }).click();
+  await expect(page).toHaveURL(/\/dashboard/);
+  return { email, password };
+}

@@ -15,6 +15,48 @@
         "title": "DeleteAccountIn",
         "type": "object"
       },
+      "ExerciseCheckIn": {
+        "properties": {
+          "answer": {
+            "maxLength": 500,
+            "title": "Answer",
+            "type": "string"
+          }
+        },
+        "required": [
+          "answer"
+        ],
+        "title": "ExerciseCheckIn",
+        "type": "object"
+      },
+      "ExerciseResultOut": {
+        "properties": {
+          "correct": {
+            "title": "Correct",
+            "type": "boolean"
+          },
+          "correct_answer": {
+            "title": "Correct Answer",
+            "type": "string"
+          },
+          "explanation": {
+            "title": "Explanation",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "correct",
+          "correct_answer",
+          "explanation"
+        ],
+        "title": "ExerciseResultOut",
+        "type": "object"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
@@ -26,6 +68,85 @@
           }
         },
         "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "LessonCheckIn": {
+        "properties": {
+          "answers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "maxProperties": 50,
+            "title": "Answers",
+            "type": "object"
+          },
+          "duration_seconds": {
+            "anyOf": [
+              {
+                "maximum": 21600.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Seconds"
+          }
+        },
+        "required": [
+          "answers"
+        ],
+        "title": "LessonCheckIn",
+        "type": "object"
+      },
+      "LessonCheckOut": {
+        "properties": {
+          "pass_ratio": {
+            "title": "Pass Ratio",
+            "type": "number"
+          },
+          "passed": {
+            "title": "Passed",
+            "type": "boolean"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/ExerciseResultOut"
+            },
+            "title": "Results",
+            "type": "array"
+          },
+          "score_ratio": {
+            "title": "Score Ratio",
+            "type": "number"
+          },
+          "status": {
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "score_ratio",
+          "passed",
+          "pass_ratio",
+          "status",
+          "results"
+        ],
+        "title": "LessonCheckOut",
+        "type": "object"
+      },
+      "LessonStartOut": {
+        "properties": {
+          "status": {
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "LessonStartOut",
         "type": "object"
       },
       "OnboardingIn": {
@@ -171,6 +292,176 @@
   },
   "openapi": "3.1.0",
   "paths": {
+    "/api/v1/lessons/{slug}/check": {
+      "post": {
+        "operationId": "submit_check_api_v1_lessons__slug__check_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LessonCheckIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LessonCheckOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit Check",
+        "tags": [
+          "lessons"
+        ]
+      }
+    },
+    "/api/v1/lessons/{slug}/exercises/{exercise_id}/check": {
+      "post": {
+        "operationId": "check_exercise_api_v1_lessons__slug__exercises__exercise_id__check_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "exercise_id",
+            "required": true,
+            "schema": {
+              "title": "Exercise Id",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExerciseCheckIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExerciseResultOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Check Exercise",
+        "tags": [
+          "lessons"
+        ]
+      }
+    },
+    "/api/v1/lessons/{slug}/start": {
+      "post": {
+        "operationId": "start_api_v1_lessons__slug__start_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LessonStartOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Start",
+        "tags": [
+          "lessons"
+        ]
+      }
+    },
     "/api/v1/me": {
       "delete": {
         "operationId": "delete_me_api_v1_me_delete",

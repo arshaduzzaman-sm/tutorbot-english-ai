@@ -1,4 +1,5 @@
 import { BookOpen, CalendarCheck, Flame, GraduationCap, History, Target, TriangleAlert, Trophy } from "lucide-react";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -120,14 +121,14 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
               <ul className="space-y-3" data-testid="recommended-lessons">
                 {data.recommendedLessons.map((l) => (
                   <li key={l.id} className="rounded-xl border border-border p-3">
-                    <p className="font-semibold text-foreground">{l.title}</p>
+                    <Link href={`/lessons/${l.slug}`} className="font-semibold text-accent-blue underline-offset-4 hover:underline">{l.title}</Link>
                     <p>{l.summary}</p>
                     <p className="mt-1 text-xs">
                       {t("minutesShort", { count: l.estimatedMinutes })} · CEFR {l.level?.cefr}
                     </p>
                   </li>
                 ))}
-                <li className="text-xs">{t("lessonsSoon")}</li>
+                <li><Link href="/lessons" className="text-sm font-medium text-accent-blue underline">{t("allLessons")}</Link></li>
               </ul>
             )}
           </CardBody>
