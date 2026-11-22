@@ -32,6 +32,9 @@ DEMO_USERS = [
 ]
 
 
+ACADEMY_KEYS = ("what", "tests", "scoring", "strategy", "examples", "mistakes")
+
+
 def uid(kind: str, key: str) -> str:
     return str(uuid.uuid5(NS, f"{kind}:{key}"))
 
@@ -85,13 +88,25 @@ def build() -> str:
     source = cats_file["_source"]
     cat_ids = {}
     out += ["", "-- Question categories (22 PTE Academic task types)"]
+    rules = load_json(CONTENT / "blueprints" / "task_rules.json")
     for i, c in enumerate(cats_file["categories"], start=1):
         cat_ids[c["code"]] = uid("category", c["code"])
         skills = "array[" + ", ".join(q(s) for s in c["skills"]) + "]::public.skill[]"
+        guide_path = CONTENT / "academy" / f"{c['code']}.json"
+        guide = load_json(guide_path) if guide_path.exists() else {}
+        missing = [k for k in ACADEMY_KEYS if not guide.get(k)]
+        if missing:
+            errors.append(f"academy/{c['code']}.json: missing {', '.join(missing)}")
+        elif set(guide["examples"]) != {"strong", "medium", "weak"}:
+            errors.append(f"academy/{c['code']}.json: examples must be strong, medium and weak")
+        task_rules = rules["tasks"].get(c["code"])
+        if not task_rules:
+            errors.append(f"blueprints/task_rules.json: no rules for {c['code']}")
+        guide = {**guide, "rules": task_rules or {}, "rules_source": rules["_source"]}
         out.append(
-            "insert into public.question_categories (id, code, name, section, skills, sort_order, description, official_source_url, verified) values ("
+            "insert into public.question_categories (id, code, name, section, skills, sort_order, description, official_source_url, verified, guide) values ("
             f"{q(cat_ids[c['code']])}, {q(c['code'])}, {q(c['name'])}, {q(c['section'])}, {skills}, {i}, "
-            f"{q(c.get('description', ''))}, {q(source)}, true);"
+            f"{q(c.get('description', ''))}, {q(source)}, true, {q(guide)});"
         )
     if len(cat_ids) != 22:
         errors.append(f"expected 22 question categories, found {len(cat_ids)}")
@@ -151,6 +166,7 @@ def build() -> str:
     out += ["", "-- Sample questions"]
     seen: set[str] = set()
     per_cat: dict[str, int] = {}
+    published_by_type: dict[str, int] = {}
     for path in sorted((CONTENT / "questions").glob("*.json")):
         for item in load_json(path)["questions"]:
             ext = item["external_id"]
@@ -164,6 +180,8 @@ def build() -> str:
             options = item.get("options", [])
             status = item.get("status", "published")
             per_cat[item["category"]] = per_cat.get(item["category"], 0) + 1
+            if status == "published":
+                published_by_type[item["category"]] = published_by_type.get(item["category"], 0) + 1
             qid = uid("question", ext)
             out.append(
                 "insert into public.questions (id, external_id, category_id, difficulty, instructions, content, answer, explanation, "
@@ -240,6 +258,24 @@ def build() -> str:
             "insert into public.pronunciation_topics (id, slug, kind, title, symbols, tip, examples, drill, sort_order, status) "
             f"values ({q(uid('pron', t['slug']))}, {q(t['slug'])}, {q(t['kind'])}, {q(t['title'])}, {text_array(t['symbols'])}, "
             f"{q(t['tip'])}, {text_array(t['examples'])}, {q(t['drill'])}, {p_order}, 'published');"
+        )
+
+    out += ["", "-- Exam blueprints (SPEC 5A.4)"]
+    for path in sorted((CONTENT / "blueprints").glob("*.json")):
+        if path.name == "task_rules.json":
+            continue
+        bp = load_json(path)
+        for sec in bp["sections"]:
+            for item in sec["items"]:
+                have = published_by_type.get(item["type"], 0)
+                if item["type"] not in cat_ids:
+                    errors.append(f"blueprints/{path.name}: unknown task type {item['type']}")
+                elif item["count"] > have:
+                    errors.append(f"blueprints/{path.name}: needs {item['count']} {item['type']} but only {have} published")
+        out.append(
+            "insert into public.blueprints (id, code, version, name, kind, spec, verified, sort_order) values ("
+            f"{q(uid('blueprint', bp['code']))}, {q(bp['code'])}, {q(bp['version'])}, {q(bp['name'])}, {q(bp['kind'])}, "
+            f"{q(bp)}, {'true' if bp.get('verified') else 'false'}, {bp.get('sort_order', 0)});"
         )
 
     out += ["", "-- Demo users (fake, local only). The signup trigger creates profiles and student roles."]

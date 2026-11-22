@@ -22,6 +22,24 @@ type DrillItem {
   options: [String!]!
 }
 
+type Evaluation {
+  id: ID!
+
+  """queued, running, done or failed"""
+  status: String!
+  taskType: String!
+  questionId: ID
+  recordingId: ID
+  mode: String!
+  responseText: String
+
+  """EvaluationResult (bands only, no scores) once done"""
+  result: JSON
+  provider: String
+  createdAt: DateTime!
+  finishedAt: DateTime
+}
+
 type Exercise {
   id: String!
   type: String!
@@ -120,6 +138,8 @@ type PracticeQuestion {
 type PracticeTypeStats {
   category: QuestionCategory!
   questionCount: Int!
+
+  """True when answers are marked: automatically, or by AI feedback"""
   autoMarked: Boolean!
 
   """The viewer's attempts at this task type"""
@@ -305,6 +325,17 @@ type Viewer {
   """
   studyPlan: StudyPlan
   weakAreas: [WeakArea!]!
+
+  """The viewer's speaking and writing evaluations, newest first"""
+  evaluations(categoryCode: String = null, limit: Int! = 20): [Evaluation!]!
+
+  """True when the viewer has agreed to voice recordings"""
+  recordingConsent: Boolean!
+
+  """
+  The viewer's attempts at one task type, newest first (personal history)
+  """
+  typeHistory(categoryCode: String!, limit: Int! = 20): [Attempt!]!
   mockExams(limit: Int! = 5): [MockExam!]!
 }
 

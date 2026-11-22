@@ -1,0 +1,36 @@
+{
+  "code": "select_missing_word",
+  "what": "You hear a recording. A beep replaces the last word or words. You choose the option that completes it.",
+  "tests": "Listening: predicting the end of a talk from its meaning.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says it is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Follow the topic and the direction of the argument.",
+    "Near the end, think about what word would naturally come next.",
+    "Choose the option that fits both the meaning and the grammar."
+  ],
+  "example_prompt": "'...so if we want cleaner air in the city, we need fewer [beep]' (cars / trees / parks)",
+  "examples": {
+    "strong": {
+      "answer": "cars",
+      "why": "Fits the argument about cleaner air."
+    },
+    "medium": {
+      "answer": "parks",
+      "why": "A word from the topic, but the meaning is opposite."
+    },
+    "weak": {
+      "answer": "trees",
+      "why": "Does not fit the argument."
+    }
+  },
+  "mistakes": [
+    "Losing focus before the end of the recording.",
+    "Choosing a word just because it was heard earlier."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

@@ -21,7 +21,8 @@
             "enum": [
               "learn",
               "practice",
-              "review"
+              "review",
+              "timed_drill"
             ],
             "title": "Mode",
             "type": "string"
@@ -176,6 +177,32 @@
         "title": "AnswerResponse",
         "type": "object"
       },
+      "ConsentIn": {
+        "properties": {
+          "granted": {
+            "title": "Granted",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "granted"
+        ],
+        "title": "ConsentIn",
+        "type": "object"
+      },
+      "ConsentOut": {
+        "properties": {
+          "granted": {
+            "title": "Granted",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "granted"
+        ],
+        "title": "ConsentOut",
+        "type": "object"
+      },
       "DeleteAccountIn": {
         "properties": {
           "confirm": {
@@ -254,6 +281,154 @@
           "explanation"
         ],
         "title": "DrillResultOut",
+        "type": "object"
+      },
+      "EvaluationOut": {
+        "properties": {
+          "created_at": {
+            "format": "date-time",
+            "title": "Created At",
+            "type": "string"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          },
+          "finished_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Finished At"
+          },
+          "id": {
+            "format": "uuid",
+            "title": "Id",
+            "type": "string"
+          },
+          "mode": {
+            "title": "Mode",
+            "type": "string"
+          },
+          "provider": {
+            "anyOf": [
+              {
+                "enum": [
+                  "local",
+                  "mock"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provider"
+          },
+          "question_id": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Question Id"
+          },
+          "recording_id": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Recording Id"
+          },
+          "response_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Typed answer, or the transcript of a recording once evaluated",
+            "title": "Response Text"
+          },
+          "result": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "EvaluationResult (SPEC 7.2) once done; bands only, no scores",
+            "title": "Result"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "done",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "task_type": {
+            "title": "Task Type",
+            "type": "string"
+          },
+          "test_session_id": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Test Session Id"
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "task_type",
+          "question_id",
+          "recording_id",
+          "test_session_id",
+          "mode",
+          "response_text",
+          "result",
+          "error",
+          "provider",
+          "created_at",
+          "finished_at"
+        ],
+        "title": "EvaluationOut",
         "type": "object"
       },
       "ExerciseCheckIn": {
@@ -565,6 +740,36 @@
         "title": "PlacementOut",
         "type": "object"
       },
+      "QueuedOut": {
+        "properties": {
+          "id": {
+            "format": "uuid",
+            "title": "Id",
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "done",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "task_type": {
+            "title": "Task Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "task_type"
+        ],
+        "title": "QueuedOut",
+        "type": "object"
+      },
       "SpeechOut": {
         "properties": {
           "external_id": {
@@ -729,6 +934,57 @@
         ],
         "title": "WordReviewOut",
         "type": "object"
+      },
+      "WritingIn": {
+        "properties": {
+          "duration_seconds": {
+            "anyOf": [
+              {
+                "maximum": 10800.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Seconds"
+          },
+          "mode": {
+            "default": "practice",
+            "enum": [
+              "learn",
+              "practice",
+              "timed_drill",
+              "exam"
+            ],
+            "title": "Mode",
+            "type": "string"
+          },
+          "test_session_id": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Test Session Id"
+          },
+          "text": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "WritingIn",
+        "type": "object"
       }
     },
     "securitySchemes": {
@@ -745,6 +1001,54 @@
   },
   "openapi": "3.1.0",
   "paths": {
+    "/api/v1/evaluations/{evaluation_id}": {
+      "get": {
+        "operationId": "get_evaluation_api_v1_evaluations__evaluation_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "evaluation_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Evaluation Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvaluationOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get Evaluation",
+        "tags": [
+          "evaluations"
+        ]
+      }
+    },
     "/api/v1/lessons/{slug}/check": {
       "post": {
         "operationId": "submit_check_api_v1_lessons__slug__check_post",
@@ -951,6 +1255,53 @@
         "summary": "Delete Me",
         "tags": [
           "me"
+        ]
+      }
+    },
+    "/api/v1/me/consents/recording": {
+      "put": {
+        "description": "Agree (or stop agreeing) to voice recordings being stored on this computer for feedback.",
+        "operationId": "put_recording_consent_api_v1_me_consents_recording_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConsentIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsentOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Put Recording Consent",
+        "tags": [
+          "evaluations"
         ]
       }
     },
@@ -1342,6 +1693,159 @@
         ]
       }
     },
+    "/api/v1/recordings/{recording_id}": {
+      "get": {
+        "description": "Play back your own recording.",
+        "operationId": "get_recording_api_v1_recordings__recording_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "recording_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Recording Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Get Recording",
+        "tags": [
+          "evaluations"
+        ]
+      }
+    },
+    "/api/v1/speaking/questions/{question_id}/recording": {
+      "post": {
+        "description": "Send the recording as the raw request body (Content-Type audio/webm, audio/ogg, audio/wav ...).",
+        "operationId": "upload_recording_api_v1_speaking_questions__question_id__recording_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "question_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Question Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "duration_seconds",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "maximum": 600,
+                  "minimum": 0,
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Duration Seconds"
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "required": false,
+            "schema": {
+              "default": "practice",
+              "enum": [
+                "learn",
+                "practice",
+                "timed_drill",
+                "exam"
+              ],
+              "title": "Mode",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "test_session_id",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "format": "uuid",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Test Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "audio/webm": {
+              "schema": {
+                "format": "binary",
+                "type": "string"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QueuedOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Upload Recording",
+        "tags": [
+          "evaluations"
+        ]
+      }
+    },
     "/api/v1/units/{slug}/test": {
       "post": {
         "operationId": "submit_test_api_v1_units__slug__test_post",
@@ -1454,6 +1958,64 @@
         "summary": "Review Word",
         "tags": [
           "tracks"
+        ]
+      }
+    },
+    "/api/v1/writing/questions/{question_id}/submit": {
+      "post": {
+        "operationId": "submit_writing_api_v1_writing_questions__question_id__submit_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "question_id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "title": "Question Id",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WritingIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QueuedOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit Writing",
+        "tags": [
+          "evaluations"
         ]
       }
     },

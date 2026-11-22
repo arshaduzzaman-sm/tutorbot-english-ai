@@ -109,5 +109,6 @@ class TestSession(Base):
     kind: Mapped[str] = mapped_column(Text)
     status: Mapped[str] = mapped_column(Text)
     result_summary: Mapped[dict[str, Any]] = mapped_column(JSONB)
+    blueprint_code: Mapped[str | None] = mapped_column(Text)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))

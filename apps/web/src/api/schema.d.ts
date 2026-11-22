@@ -4,6 +4,23 @@
  */
 
 export interface paths {
+    "/api/v1/evaluations/{evaluation_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Get Evaluation */
+        get: operations["get_evaluation_api_v1_evaluations__evaluation_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/lessons/{slug}/check": {
         parameters: {
             query?: never;
@@ -67,6 +84,26 @@ export interface paths {
         post?: never;
         /** Delete Me */
         delete: operations["delete_me_api_v1_me_delete"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/me/consents/recording": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /**
+         * Put Recording Consent
+         * @description Agree (or stop agreeing) to voice recordings being stored on this computer for feedback.
+         */
+        put: operations["put_recording_consent_api_v1_me_consents_recording_put"];
+        post?: never;
+        delete?: never;
         options?: never;
         head?: never;
         patch?: never;
@@ -214,6 +251,46 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/recordings/{recording_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Recording
+         * @description Play back your own recording.
+         */
+        get: operations["get_recording_api_v1_recordings__recording_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/speaking/questions/{question_id}/recording": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Upload Recording
+         * @description Send the recording as the raw request body (Content-Type audio/webm, audio/ogg, audio/wav ...).
+         */
+        post: operations["upload_recording_api_v1_speaking_questions__question_id__recording_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/units/{slug}/test": {
         parameters: {
             query?: never;
@@ -242,6 +319,23 @@ export interface paths {
         put?: never;
         /** Review Word */
         post: operations["review_word_api_v1_vocabulary__word_id__review_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/writing/questions/{question_id}/submit": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Submit Writing */
+        post: operations["submit_writing_api_v1_writing_questions__question_id__submit_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -295,7 +389,7 @@ export interface components {
              * @default practice
              * @enum {string}
              */
-            mode: "learn" | "practice" | "review";
+            mode: "learn" | "practice" | "review" | "timed_drill";
             response: components["schemas"]["AnswerResponse"];
         };
         /** AnswerOut */
@@ -340,6 +434,16 @@ export interface components {
             /** Text */
             text?: string | null;
         };
+        /** ConsentIn */
+        ConsentIn: {
+            /** Granted */
+            granted: boolean;
+        };
+        /** ConsentOut */
+        ConsentOut: {
+            /** Granted */
+            granted: boolean;
+        };
         /** DeleteAccountIn */
         DeleteAccountIn: {
             /**
@@ -372,6 +476,52 @@ export interface components {
             explanation: string;
             /** Id */
             id: string;
+        };
+        /** EvaluationOut */
+        EvaluationOut: {
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Error */
+            error: string | null;
+            /** Finished At */
+            finished_at: string | null;
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Mode */
+            mode: string;
+            /** Provider */
+            provider: ("local" | "mock") | null;
+            /** Question Id */
+            question_id: string | null;
+            /** Recording Id */
+            recording_id: string | null;
+            /**
+             * Response Text
+             * @description Typed answer, or the transcript of a recording once evaluated
+             */
+            response_text: string | null;
+            /**
+             * Result
+             * @description EvaluationResult (SPEC 7.2) once done; bands only, no scores
+             */
+            result: {
+                [key: string]: unknown;
+            } | null;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "queued" | "running" | "done" | "failed";
+            /** Task Type */
+            task_type: string;
+            /** Test Session Id */
+            test_session_id: string | null;
         };
         /** ExerciseCheckIn */
         ExerciseCheckIn: {
@@ -487,6 +637,21 @@ export interface components {
             /** Total */
             total: number;
         };
+        /** QueuedOut */
+        QueuedOut: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "queued" | "running" | "done" | "failed";
+            /** Task Type */
+            task_type: string;
+        };
         /** SpeechOut */
         SpeechOut: {
             /** External Id */
@@ -552,6 +717,21 @@ export interface components {
             /** Mastered */
             mastered: boolean;
         };
+        /** WritingIn */
+        WritingIn: {
+            /** Duration Seconds */
+            duration_seconds?: number | null;
+            /**
+             * Mode
+             * @default practice
+             * @enum {string}
+             */
+            mode: "learn" | "practice" | "timed_drill" | "exam";
+            /** Test Session Id */
+            test_session_id?: string | null;
+            /** Text */
+            text: string;
+        };
     };
     responses: never;
     parameters: never;
@@ -561,6 +741,37 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
+    get_evaluation_api_v1_evaluations__evaluation_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                evaluation_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["EvaluationOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     submit_check_api_v1_lessons__slug__check_post: {
         parameters: {
             query?: never;
@@ -682,6 +893,39 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    put_recording_consent_api_v1_me_consents_recording_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ConsentIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ConsentOut"];
+                };
             };
             /** @description Validation Error */
             422: {
@@ -946,6 +1190,74 @@ export interface operations {
             };
         };
     };
+    get_recording_api_v1_recordings__recording_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                recording_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    upload_recording_api_v1_speaking_questions__question_id__recording_post: {
+        parameters: {
+            query?: {
+                duration_seconds?: number | null;
+                mode?: "learn" | "practice" | "timed_drill" | "exam";
+                test_session_id?: string | null;
+            };
+            header?: never;
+            path: {
+                question_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "audio/webm": string;
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            202: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["QueuedOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     submit_test_api_v1_units__slug__test_post: {
         parameters: {
             query?: never;
@@ -1003,6 +1315,41 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["WordReviewOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    submit_writing_api_v1_writing_questions__question_id__submit_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                question_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["WritingIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            202: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["QueuedOut"];
                 };
             };
             /** @description Validation Error */

@@ -456,6 +456,8 @@ class MockExam:
     status: str
     started_at: datetime
     completed_at: datetime | None
+    blueprint_code: str | None = None
+    overall_band: str | None = strawberry.field(default=None, description="Band from the report, once ready")
 
 
 async def _signals(info: CtxInfo) -> list[tuple[AttemptSignal, date]]:
@@ -718,9 +720,32 @@ class Viewer:
                 status=t.status,
                 started_at=t.started_at,
                 completed_at=t.completed_at,
+                blueprint_code=t.blueprint_code,
+                overall_band=(t.result_summary or {}).get("overall_band"),
             )
             for t in rows
         ]
+
+
+@strawberry.type
+class QuestionTypeGuide:
+    category: QuestionCategory
+    guide: JSON = strawberry.field(
+        description="what, tests, scoring (with source), strategy, examples, mistakes, rules"
+    )
+    question_count: int
+
+
+@strawberry.type
+class Blueprint:
+    code: str
+    name: str
+    kind: str
+    about: str
+    verified: bool = strawberry.field(description="False: item counts or clocks are our own choices (see STATUS.md)")
+    item_count: int
+    sections: list[str]
+    spec: JSON
 
 
 @strawberry.type
@@ -894,6 +919,57 @@ class Query:
     async def pronunciation_topic(self, info: CtxInfo, slug: str) -> tracks.PronunciationTopic | None:
         found = await tracks.pronunciation_topics(info, slug)
         return found[0] if found else None
+
+    @strawberry.field
+    async def question_type(self, info: CtxInfo, code: str) -> "QuestionTypeGuide | None":
+        """A Question-Type Academy page: our guide plus the published rules (timings) for that task."""
+        m = (
+            await info.context.execute(select(models.QuestionCategory).where(models.QuestionCategory.code == code))
+        ).scalar_one_or_none()
+        if m is None:
+            return None
+        guide = (
+            await info.context.execute(
+                text("select guide from public.question_categories where id = :id"), {"id": m.id}
+            )
+        ).scalar_one()
+        count = (
+            await info.context.execute(
+                text(
+                    "select count(*) from public.questions where category_id = :id and status = 'published' "
+                    "and deleted_at is null"
+                ),
+                {"id": m.id},
+            )
+        ).scalar_one()
+        return QuestionTypeGuide(category=QuestionCategory.of(m), guide=guide, question_count=int(count))
+
+    @strawberry.field(description="Mock exams and section tests learners can take")
+    async def blueprints(self, info: CtxInfo) -> list["Blueprint"]:
+        rows = await info.context.execute(
+            text(
+                "select code, name, kind, spec, verified from public.blueprints where status = 'published' "
+                "order by sort_order, code"
+            )
+        )
+        out = []
+        for r in rows.mappings():
+            spec = dict(r["spec"])
+            if not spec.get("listed", True):
+                continue
+            out.append(
+                Blueprint(
+                    code=r["code"],
+                    name=r["name"],
+                    kind=r["kind"],
+                    about=str(spec.get("about", "")),
+                    verified=bool(r["verified"]),
+                    item_count=sum(int(i["count"]) for s in spec["sections"] for i in s["items"]),
+                    sections=[str(sec["title"]) for sec in spec["sections"]],
+                    spec=spec,  # type: ignore[arg-type]
+                )
+            )
+        return out
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

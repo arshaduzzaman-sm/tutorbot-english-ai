@@ -82,6 +82,10 @@ export const LessonQuery = graphql(`
 
 export const PracticeHubQuery = graphql(`
   query PracticeHub {
+    speakingWriting: practiceTypes(section: "speaking_writing") {
+      category { code name section }
+      questionCount autoMarked attempts averageScore
+    }
     reading: practiceTypes(section: "reading") {
       category { code name section }
       questionCount autoMarked attempts averageScore
@@ -180,5 +184,11 @@ export const PronunciationTopicQuery = graphql(`
       slug kind title symbols tip examples bestScore attempts
       drill { id type prompt options }
     }
+  }
+`);
+
+export const RecordingConsentQuery = graphql(`
+  query RecordingConsent {
+    viewer { recordingConsent demoMode }
   }
 `);
