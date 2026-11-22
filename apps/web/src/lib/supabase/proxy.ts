@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { publicEnv, serverEnv } from "@/lib/env";
+import { publicOrigin } from "@/lib/origin";
 
 export const PROTECTED_PREFIXES = ["/dashboard", "/onboarding", "/profile", "/reset-password"];
 
@@ -34,9 +35,7 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   if (!user && isProtected(request.nextUrl.pathname)) {
-    const url = request.nextUrl.clone();
-    url.pathname = "/login";
-    url.search = `?next=${encodeURIComponent(request.nextUrl.pathname)}`;
+    const url = new URL(`/login?next=${encodeURIComponent(request.nextUrl.pathname)}`, publicOrigin(request.headers));
     return NextResponse.redirect(url);
   }
   return response;
