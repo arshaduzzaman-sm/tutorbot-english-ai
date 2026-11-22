@@ -43,6 +43,12 @@ type Lesson {
   estimatedMinutes: Int!
   level: LearningLevel
 
+  """Slug of the unit this lesson belongs to; null if none"""
+  unitSlug: String
+
+  """True when the lesson's unit is still locked for the viewer"""
+  locked: Boolean!
+
   """The viewer's progress on this lesson; null if not started"""
   progress: LessonProgress
   sections: [LessonSection!]!
@@ -149,6 +155,10 @@ type Query {
 
   """The current placement (diagnostic) test, without answers"""
   placementTest: PlacementTest
+
+  """Published units in course order, optionally for one level"""
+  units(levelCode: Int = null): [Unit!]!
+  unit(slug: String!): Unit
   questionCategories: [QuestionCategory!]!
 }
 
@@ -201,6 +211,30 @@ type StudyPlan {
   recommendedLevelCode: Int!
   skillScores: JSON!
   plan: JSON!
+}
+
+type Unit {
+  id: ID!
+  slug: String!
+  title: String!
+  summary: String!
+  level: LearningLevel
+
+  """
+  Locked until the unit before it is passed (or the learner placed higher)
+  """
+  locked: Boolean!
+  progress: UnitProgress
+  lessons: [Lesson!]!
+
+  """End-of-unit test questions, without answers"""
+  testItems: [Exercise!]!
+}
+
+type UnitProgress {
+  bestScore: Float!
+  attempts: Int!
+  passed: Boolean!
 }
 
 type Viewer {

@@ -525,6 +525,67 @@
         "title": "SpeechOut",
         "type": "object"
       },
+      "UnitTestIn": {
+        "properties": {
+          "answers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "maxProperties": 50,
+            "title": "Answers",
+            "type": "object"
+          }
+        },
+        "required": [
+          "answers"
+        ],
+        "title": "UnitTestIn",
+        "type": "object"
+      },
+      "UnitTestOut": {
+        "properties": {
+          "pass_ratio": {
+            "title": "Pass Ratio",
+            "type": "number"
+          },
+          "passed": {
+            "title": "Passed",
+            "type": "boolean"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/ExerciseResultOut"
+            },
+            "title": "Results",
+            "type": "array"
+          },
+          "score_ratio": {
+            "title": "Score Ratio",
+            "type": "number"
+          },
+          "unlocked": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Slug of the next unit when this test was passed",
+            "title": "Unlocked"
+          }
+        },
+        "required": [
+          "score_ratio",
+          "passed",
+          "pass_ratio",
+          "unlocked",
+          "results"
+        ],
+        "title": "UnitTestOut",
+        "type": "object"
+      },
       "ValidationError": {
         "properties": {
           "ctx": {
@@ -1060,6 +1121,63 @@
         "summary": "Speech",
         "tags": [
           "practice"
+        ]
+      }
+    },
+    "/api/v1/units/{slug}/test": {
+      "post": {
+        "operationId": "submit_test_api_v1_units__slug__test_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitTestIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UnitTestOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit Test",
+        "tags": [
+          "units"
         ]
       }
     },

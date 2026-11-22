@@ -10,7 +10,7 @@ vi.mock("@/lib/client-api", () => ({ browserApi: async () => ({ POST: post }) })
 
 const ex = (id: string) => ({ id, type: "single_choice", prompt: `Pick ${id}`, options: ["a", "b"], hint: "Think" });
 const lesson = {
-  id: "1", slug: "demo", title: "Demo", summary: "", estimatedMinutes: 5,
+  id: "1", slug: "demo", title: "Demo", summary: "", estimatedMinutes: 5, locked: false, unitSlug: null,
   level: { code: 1, name: "Beginner", cefr: "A1" }, progress: null,
   sections: [
     { kind: "learn", title: "Read this", bodyMd: "Some **text**", exercises: [] },

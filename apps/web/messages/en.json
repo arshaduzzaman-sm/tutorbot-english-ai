@@ -348,5 +348,23 @@
     "daysToExam": "{count, plural, one {# day until your exam.} other {# days until your exam.}}",
     "toDashboard": "Go to my dashboard",
     "retake": "Take the test again"
+  },
+  "units": {
+    "locked": "Locked",
+    "lockedHelp": "Pass the end-of-unit test of the unit before this one to open it.",
+    "passed": "Passed",
+    "best": "Best test score: {value}%",
+    "takeTest": "Take the end-of-unit test",
+    "retakeTest": "Take the test again",
+    "testTitle": "End-of-unit test: {title}",
+    "testIntro": "Answer every question. You need {pass}% or more to pass and open the next unit.",
+    "lessonsInUnit": "Lessons in this unit",
+    "lockedLesson": "This lesson is in a locked unit. Pass the unit before it first.",
+    "result": "You scored {value}%.",
+    "resultPassed": "You passed! The next unit is open.",
+    "resultPassedLast": "You passed this unit!",
+    "resultFailed": "You need {pass}% to pass. Read the explanations, review the lessons and try again.",
+    "openNext": "Go to the next unit",
+    "otherLessons": "Other lessons"
   }
 }

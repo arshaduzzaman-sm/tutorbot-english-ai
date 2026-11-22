@@ -177,6 +177,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/units/{slug}/test": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Submit Test */
+        post: operations["submit_test_api_v1_units__slug__test_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/health": {
         parameters: {
             query?: never;
@@ -399,6 +416,29 @@ export interface components {
             parts: string[];
             /** Transcript */
             transcript: string;
+        };
+        /** UnitTestIn */
+        UnitTestIn: {
+            /** Answers */
+            answers: {
+                [key: string]: string;
+            };
+        };
+        /** UnitTestOut */
+        UnitTestOut: {
+            /** Pass Ratio */
+            pass_ratio: number;
+            /** Passed */
+            passed: boolean;
+            /** Results */
+            results: components["schemas"]["ExerciseResultOut"][];
+            /** Score Ratio */
+            score_ratio: number;
+            /**
+             * Unlocked
+             * @description Slug of the next unit when this test was passed
+             */
+            unlocked: string | null;
         };
         /** ValidationError */
         ValidationError: {
@@ -727,6 +767,41 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["SpeechOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    submit_test_api_v1_units__slug__test_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["UnitTestIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["UnitTestOut"];
                 };
             };
             /** @description Validation Error */

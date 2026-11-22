@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { LessonPlayer } from "@/components/lessons/lesson-player";
 import { LessonStatusBadge } from "@/components/lessons/status-badge";
+import { Alert } from "@/components/ui/alert";
 import { LessonQuery } from "@/graphql/queries";
 import { requireSession, serverQuery } from "@/lib/session";
 
@@ -14,6 +15,7 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
   const { lesson } = await serverQuery(accessToken, LessonQuery, { slug });
   if (!lesson) notFound();
   const t = await getTranslations("lessons");
+  const tu = await getTranslations("units");
   return (
     <div className="mx-auto max-w-3xl space-y-6 px-4 py-10">
       <Link href="/lessons" className="text-sm font-medium text-accent-blue underline">{t("backToLessons")}</Link>
@@ -25,7 +27,7 @@ export default async function LessonPage({ params }: { params: Promise<{ slug: s
         <p className="text-muted-foreground">{lesson.summary}</p>
         <LessonStatusBadge status={lesson.progress?.status} />
       </header>
-      <LessonPlayer lesson={lesson} />
+      {lesson.locked ? <Alert tone="warning">{tu("lockedLesson")}</Alert> : <LessonPlayer lesson={lesson} />}
     </div>
   );
 }
