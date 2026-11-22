@@ -52,5 +52,6 @@
 ## Scripts and tests
 - `scripts/setup.sh`, `setup.ps1` one-command setup · `write-env.sh` env files from `supabase status`
 - `scripts/generate_audio.py` (`make audio`) Kokoro listening audio → apps/web/public/audio (git-ignored)
-- `scripts/build_seed.py` validates content → seed.sql · `download-models.sh`, `detect-hardware.sh` AI tiers
+- `scripts/build_seed.py` validates content → seed.sql · `content_rules.py` per-type question checks
+- `scripts/import_content.py` (`make import FILE=...`) CSV/JSON questions → content/questions/imported.json · `download-models.sh`, `detect-hardware.sh` AI tiers
 - `tests/e2e/specs/` Playwright: landing (axe, mobile), auth flow (register → verify → ... → delete), lessons (full lesson → dashboard count), practice (reading + listening marking, transcript rules, hub stats), review (mistake → notebook → spaced review), placement (test → level + plan → dashboard), units (pass test → next unit opens)
