@@ -20,7 +20,7 @@
 - Memory: whole running stack (Supabase + API + web) uses about 0.6 GB RAM
 
 ## Content counts
-- Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
+- Levels: 6 · Lessons: 19 (Level 1, 4 units with tests) · Placement items: 18 · Question types: 22 · Sample questions: 44 (2 per type)
 
 ## M2 plan (one small PR each, into `m2-learning`)
 - [x] PR A `m2-lesson-pages`: lesson list + Learn/See/Try/Check player, auto-marking, progress (pytest 48, vitest 17, e2e 20)
@@ -30,11 +30,12 @@
 - [x] PR E `m2-placement-plan`: 18-item placement test, level + daily plan, tables `placement_tests`, `study_plans` (pytest 63, vitest 22, e2e 24)
 - [x] PR F1 `m2-units`: units, end-of-unit tests, unlock rule, tables `units`, `unit_progress` (pytest 65, vitest 23, e2e 25)
 - [x] PR F2 `m2-content-import`: `make import` (CSV/JSON), shared content rules, instructions rewritten (pytest 68)
-- [ ] PR F3+ more content (Levels 1-3, about 60 lessons, 30+ questions per reading/listening type)
+- [x] PR F3 `m2-level1-content`: Level 1 complete, 19 lessons in 4 units (+14 lessons, +2 unit tests)
+- [ ] PR F4+ more content (Levels 1-3, about 60 lessons, 30+ questions per reading/listening type)
 
 ## Next step
 1. Owner: merge PR #1 (`m1-foundation` → `main`), then the M2 PRs in order.
-2. Agent: continue with PR F3 (content).
+2. Agent: continue with PR F4 (Level 2 content).
 
 ## Open questions / items for the owner
 - **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).

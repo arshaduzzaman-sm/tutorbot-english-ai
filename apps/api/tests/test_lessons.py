@@ -57,7 +57,7 @@ async def test_lesson_graphql_has_sections_and_no_answers(client: AsyncClient, m
     )
     assert bad.json()["errors"]
     lst = await client.post("/graphql", json={"query": "{ lessons(levelCode: 1) { slug } }"}, headers=auth(u.token))
-    assert len(lst.json()["data"]["lessons"]) == 5
+    assert len(lst.json()["data"]["lessons"]) == 19
 
 
 @pytest.mark.integration

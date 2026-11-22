@@ -12,7 +12,7 @@
 
 ## Content (`content/`)
 - `levels.json` 6 levels (CEFR) · `question_categories.json` 22 task types + official source
-- `diagnostic.json` placement test (18 original items, levels 1-6, with answers) · `lessons/level-1.json` 2 units, 5 lessons (Learn/See/Try/Check) + end-of-unit tests · `questions/*.json` 44 original sample questions
+- `diagnostic.json` placement test (18 original items, levels 1-6, with answers) · `lessons/level-1.json` 4 units, 19 lessons (Learn/See/Try/Check) + end-of-unit tests · `questions/*.json` 44 original sample questions
 - `LICENSE.md` CC BY-SA 4.0
 
 ## Backend (`apps/api/app/`)
