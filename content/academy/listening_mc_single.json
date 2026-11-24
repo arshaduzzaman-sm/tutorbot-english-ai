@@ -1,0 +1,36 @@
+{
+  "code": "listening_mc_single",
+  "what": "You listen to a recording once and choose the one correct answer.",
+  "tests": "Listening: main idea, details and inference.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says it is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the question before the recording starts.",
+    "Listen for the answer to that question, not every detail.",
+    "Remove options that the speaker did not say or that change the meaning."
+  ],
+  "example_prompt": "What does the speaker suggest students do before an exam?",
+  "examples": {
+    "strong": {
+      "answer": "Chooses the suggestion the speaker gives.",
+      "why": "Matches what was said."
+    },
+    "medium": {
+      "answer": "Chooses advice that is good in general but was not in the talk.",
+      "why": "Must come from the recording."
+    },
+    "weak": {
+      "answer": "Chooses the option with a word heard at the start.",
+      "why": "Same word, different meaning."
+    }
+  },
+  "mistakes": [
+    "Answering from general knowledge.",
+    "Being tricked by repeated words."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

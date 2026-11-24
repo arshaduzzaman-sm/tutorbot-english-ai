@@ -1,47 +1,62 @@
 # STATUS
 
-**Current milestone:** M1 Foundation (branch `m1-foundation`) · **Last updated:** 2026-11-22
+**Current milestone:** M5-M8 done on `m5-m8` (PR 3 of 3): v1.0.0 ready once merged · **Last updated:** 2026-11-22
+Earlier milestones: docs/HISTORY.md. M3/M4 acceptance: PR #14.
 
-## M1 acceptance criteria
-- [x] `make setup` then `make start` runs the full app locally with no API keys (tested on Linux; see Known issues)
-- [x] Dashboard loads with one GraphQL query; GraphQL permission tests pass
-- [x] Register → verification email (local mail viewer) → verify → login → logout → reset password (e2e)
-- [x] Protected pages redirect logged-out users; FastAPI rejects requests without a valid JWT (tested)
-- [x] Onboarding saves level and target score to `profiles` (API + e2e tests)
-- [x] Dashboard shows real DB data and correct empty states for a new user
-- [x] RLS tests prove one user cannot read another user's data
-- [x] Landing page responsive (375 px), passes axe (WCAG 2.2 AA tags), shows Pearson disclaimer
-- [x] Backend, frontend and e2e tests pass in GitHub CI (PR #1, both jobs green on 2026-11-22)
+## M5 acceptance (AI personalisation)
+- [x] Recommendations change with real attempt history (API test with seeded users; e2e progress page)
+- [x] Adaptive difficulty: weak run → easier questions, strong run → harder (API test)
+- [x] Readiness as bands only, weekly check-in, daily plan from recommendations (unit + e2e)
+- [x] Tutor adapts to level, stays on topic, refuses score promises, daily limit (API + e2e)
+- [ ] Optional in-browser transcription: not built. The browser Web Speech API sends audio to a cloud service in
+  most browsers (breaks local-only), and in-browser Whisper needs model files we could not download here.
+
+## M6 acceptance (analytics)
+- [x] Charts from real data with data-table alternatives, correct against seeded data (API test + e2e + axe)
+- [x] By question type with last-14-days comparison, weekly skill trend, CSV report export
+
+## M7 acceptance (administration)
+- [x] Only admin/content_editor reach admin features: every route tested for 401/403; pages return 404
+- [x] AI-generated content cannot be published without approval by a different staff member (API test, database
+  trigger test with direct SQL, e2e)
+- [x] Content review workflow with versions, uploads, learner reports, users and roles, blueprints, usage, calibration
+
+## M8 acceptance (release)
+- [x] OWASP Top 10 review (docs/SECURITY_REVIEW.md); CSP added; licence audit (docs/LICENCE_AUDIT.md)
+- [x] Secret scan of the full history (`scripts/secret_scan.py`, also in CI): none found
+- [x] `make backup` / `make restore` (round trip tested: accounts, progress, content and recordings match)
+- [x] README, release notes (docs/releases/v1.0.0.md), licence files
+- [ ] Windows and macOS: documented, not tested · [ ] GitHub release `v1.0.0`: after the owner merges to `main`
+- [ ] Docker image rebuild not re-run here (this sandbox's proxy certificate is not trusted inside Docker builds)
 
 ## Test results (2026-11-22, local)
-- Backend `pytest -q`: 43 passed (26 unit/security, 17 integration with RLS + GraphQL)
-- Frontend `vitest`: 16 passed · `tsc` and `eslint`: clean · `ruff`, `mypy --strict`: clean
-- E2E Playwright against the Docker stack (`make setup` + `make start` from clean): 19 passed (desktop + 375 px)
-- Memory: whole running stack (Supabase + API + web) uses about 0.6 GB RAM
+- Backend `pytest -q`: 121 passed · `ruff`, `ruff format`, `mypy --strict`: clean
+- Frontend `vitest`: 30 passed · `tsc`, `eslint`, `next build`: clean · E2E Playwright (desktop + 375 px): 37 passed
+- `pnpm audit --prod`, `pip-audit`: no known vulnerabilities · `build_seed.py --check`: up to date
 
 ## Content counts
-- Levels: 6 · Lessons: 5 (Level 1) · Question types: 22 · Sample questions: 44 (2 per type)
+- Lessons: 95 in 21 units (6 levels) · Placement items: 18 · Academy pages: 22 · Blueprints: 6
+- Practice questions: 446 · Vocabulary: 1,561 words in 61 sets · Pronunciation: 25 topics, 146 drill items
 
 ## Next step
-1. Owner: merge PR #1 (`m1-foundation` → `main`). All M1 criteria pass.
-2. Then create branch `m2-learning` and write the M2 plan here.
+1. Owner: merge PR #1, #12, #13, #14 and PR 3 in order, then `m2-learning` → `main`.
+2. Owner (or agent when asked): tag `v1.0.0` on `main` and publish the release with docs/releases/v1.0.0.md.
 
-## Open questions / items for the owner
-- **Legal:** product renamed to TutorBot English AI. Still get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md).
-- **Privacy/terms pages** are templates, marked "to be reviewed by a lawyer".
-- **Unverified:** official CEFR-to-PTE score mapping. Pearson's 2025 update page says the CEFR alignment is
-  unchanged but gives no table, so the app shows CEFR levels only (no PTE ranges).
-- **Unverified:** scoring-criteria names stored on sample questions (e.g. "Oral fluency") must be checked
-  against Pearson's current Score Guide before M3 uses them.
-- Exam timings are not stored yet (blueprint arrives in M4; every rule must cite an official source).
+## Unverified rules (marked `verified: false`; Pearson does not publish these)
+- Item counts per task in a full test (full_mock: 72 items) and the order of items inside a section.
+- Section clocks we chose: Reading 30 min, Listening 23 min after Summarize Spoken Text, mini/section mock clocks.
+- Read Aloud answer time 40 s (our choice) · timed-drill time per item: 120 s reading, 90 s listening (our rule).
+- Official CEFR-to-PTE table: none published, so the app shows CEFR levels only.
 
-## Known issues and limitations
-- AI is mock-only (demo banner shown). Local models arrive in M3.
-- Lessons are listed on the dashboard but lesson pages open in M2.
-- Streak and "today" use UTC days.
-- `make` needs a Unix shell; Windows users use WSL2 or `scripts/setup.ps1` (not tested on Windows/macOS yet).
-
-## M1 implementation (done)
-Repo + docs → migrations (schema, RLS, trigger) → content + seed generator → FastAPI (JWT, errors, logging,
-rate limit, health, REST, GraphQL with limits + DataLoaders) → mock AI → Next.js (design system, i18n,
-landing, auth, onboarding, dashboard, profile) → Docker/Makefile/scripts → tests → CI. Details: docs/HISTORY.md.
+## Known limitations
+- AI is mock-only in our tests (demo banner shown). Local providers are unit-tested for their error path only.
+- Pronunciation uses Whisper word confidence as a proxy, not a phoneme model.
+- No 10-90 estimates. The calibration tool sets the minimum (30 ratings per type, 60% exact, 80% adjacent); turning
+  them on is a separate decision.
+- Tutor topic filter is a keyword check; unusual on-topic questions may get the "English and PTE only" reply.
+- Admin uploads accept JSON (CSV via `make import`). Uploaded questions live in the database; export them with
+  `GET /api/v1/admin/questions/export` and commit them to `content/` to keep them after `make reset`.
+- Streak and "today" use UTC days. Recordings have no automatic expiry yet.
+- Listening audio: `make audio` (Kokoro) not run here; the browser voice is used without the files.
+- Legal: get advice on descriptive use of "PTE" (docs/LEGAL_NOTES.md); privacy/terms pages need a lawyer.
+- `make` needs a Unix shell; Windows users use WSL2 or `scripts/setup.ps1`.

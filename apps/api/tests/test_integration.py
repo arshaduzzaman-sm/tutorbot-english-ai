@@ -264,3 +264,15 @@ async def test_account_deletion_removes_everything(client: AsyncClient, make_use
 async def test_ready_endpoint(client: AsyncClient, db) -> None:  # type: ignore[no-untyped-def]
     r = await client.get("/health/ready")
     assert r.status_code == 200 and r.json()["database"] == "up"
+
+
+async def test_every_level_has_published_lessons_and_units(make_user) -> None:  # type: ignore[no-untyped-def]
+    a = await make_user()
+    rows = await _rls_query(
+        a.id,
+        "select l.code, (select count(*) from lessons s where s.learning_level_id = l.id), "
+        "(select count(*) from units u where u.learning_level_id = l.id) from learning_levels l order by l.code",
+    )
+    assert [r[0] for r in rows] == [1, 2, 3, 4, 5, 6]
+    for _code, lessons, units in rows:
+        assert lessons >= 12 and units >= 3

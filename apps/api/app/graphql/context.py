@@ -6,7 +6,7 @@ from collections.abc import Sequence
 from typing import Any
 
 from fastapi import Depends
-from sqlalchemy import Executable, select
+from sqlalchemy import Executable, select, text
 from sqlalchemy.engine import Result
 from sqlalchemy.ext.asyncio import AsyncSession
 from strawberry.dataloader import DataLoader
@@ -26,7 +26,18 @@ class Context(BaseContext):
         self._lock = asyncio.Lock()
         self.level_loader: DataLoader[uuid.UUID, LearningLevel | None] = DataLoader(self._load_levels)
         self.category_loader: DataLoader[uuid.UUID, QuestionCategory | None] = DataLoader(self._load_categories)
+        self.progress_loader: DataLoader[uuid.UUID, dict[str, Any] | None] = DataLoader(self._load_progress)
         self.query_count = 0
+        self._unit_states: list[Any] | None = None
+
+    async def unit_states(self) -> list[Any]:
+        """Unit lock/progress states for the viewer, computed once per request."""
+        from app.services.units import unit_states
+
+        async with self._lock:
+            if self._unit_states is None:
+                self._unit_states = await unit_states(self.session, self.user.id)
+            return self._unit_states
 
     async def execute(self, stmt: Executable, params: dict[str, Any] | None = None) -> Result[Any]:
         async with self._lock:
@@ -37,6 +48,23 @@ class Context(BaseContext):
         rows = (await self.execute(select(LearningLevel).where(LearningLevel.id.in_(ids)))).scalars().all()
         by_id = {r.id: r for r in rows}
         return [by_id.get(i) for i in ids]
+
+    async def _load_progress(self, lesson_ids: Sequence[uuid.UUID]) -> list[dict[str, Any] | None]:
+        rows = (
+            (
+                await self.execute(
+                    text(
+                        "select lesson_id, status, score_ratio, completed_at from public.learning_progress "
+                        "where user_id = :uid and lesson_id = any(:ids)"
+                    ),
+                    {"uid": self.user.id, "ids": list(lesson_ids)},
+                )
+            )
+            .mappings()
+            .all()
+        )
+        by_id = {r["lesson_id"]: dict(r) for r in rows}
+        return [by_id.get(i) for i in lesson_ids]
 
     async def _load_categories(self, ids: Sequence[uuid.UUID]) -> list[QuestionCategory | None]:
         rows = (await self.execute(select(QuestionCategory).where(QuestionCategory.id.in_(ids)))).scalars().all()

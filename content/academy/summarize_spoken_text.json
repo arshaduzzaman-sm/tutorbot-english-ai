@@ -1,0 +1,44 @@
+{
+  "code": "summarize_spoken_text",
+  "what": "You listen to a short talk once and write a summary of 50 to 70 words.",
+  "tests": "Listening and writing: understanding the main points and writing them clearly and correctly.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Form",
+      "Grammar",
+      "Vocabulary",
+      "Spelling"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Take short notes: the topic, two or three main points, and the conclusion.",
+    "Write two or three sentences that join the points with linking words.",
+    "Keep between 50 and 70 words.",
+    "Check spelling and grammar before the time ends."
+  ],
+  "example_prompt": "A talk explaining why people throw away safe food: 'best before' is about quality, 'use by' is about safety, and clearer labels could reduce waste.",
+  "examples": {
+    "strong": {
+      "answer": "The speaker explained that a lot of safe food is wasted because people misunderstand date labels. A 'best before' date is about quality, so food is often still fine afterwards, whereas a 'use by' date is about safety and must be followed. The speaker suggested that clearer labels and public information could reduce household food waste.",
+      "why": "All main points, linked clearly, within the word limit."
+    },
+    "medium": {
+      "answer": "Food is wasted. Best before is quality and use by is safety. Labels should be better so less waste.",
+      "why": "Main points are there, but it is too short and the grammar is weak."
+    },
+    "weak": {
+      "answer": "The lecture was about food and it was very interesting and important for people and the planet in many ways.",
+      "why": "No specific points from the talk."
+    }
+  },
+  "mistakes": [
+    "Writing too few or too many words.",
+    "Spelling mistakes in key words.",
+    "Only one main point."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

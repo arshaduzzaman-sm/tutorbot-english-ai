@@ -8,6 +8,7 @@ import hashlib
 import math
 import re
 
+from app.ai.evaluation.signals import fluency_from_timings
 from app.ai.interfaces.types import (
     FluencyResult,
     GrammarIssue,
@@ -19,7 +20,6 @@ from app.ai.interfaces.types import (
     WordTiming,
 )
 
-FILLERS = {"um", "uh", "er", "erm", "ah"}
 MOCK_TRANSCRIPT = "this is a mock transcript"
 
 
@@ -53,32 +53,12 @@ class MockPronunciationAnalyzer:
 
 
 class MockFluencyAnalyzer:
-    """Deterministic, timestamp-based calculation; the 'local' version will share this logic."""
+    """Deterministic, timestamp-based calculation; the local version uses the same function."""
 
     name = "mock"
 
     async def analyze(self, transcript: Transcript) -> FluencyResult:
-        words = transcript.words
-        if not words:
-            return FluencyResult(
-                words_per_minute=0,
-                pause_count=0,
-                long_pause_count=0,
-                filler_count=0,
-                repetition_count=0,
-                provider="mock",
-            )
-        duration = max(words[-1].end - words[0].start, 0.001)
-        gaps = [b.start - a.end for a, b in zip(words, words[1:], strict=False)]
-        tokens = [w.word.lower() for w in words]
-        return FluencyResult(
-            words_per_minute=round(len(words) / duration * 60, 1),
-            pause_count=sum(1 for g in gaps if g >= 0.3),
-            long_pause_count=sum(1 for g in gaps if g >= 1.0),
-            filler_count=sum(1 for t in tokens if t in FILLERS),
-            repetition_count=sum(1 for a, b in zip(tokens, tokens[1:], strict=False) if a == b),
-            provider="mock",
-        )
+        return fluency_from_timings(transcript.words, "mock")
 
 
 class MockTextToSpeech:

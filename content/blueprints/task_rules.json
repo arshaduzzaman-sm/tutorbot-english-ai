@@ -1,0 +1,32 @@
+{
+  "_source": "Pearson PTE Academic test-format pages, read 2026-11-22: https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/ , https://www.pearsonpte.com/pte-academic/test-format/reading/ , https://www.pearsonpte.com/pte-academic/test-format/listening/ and https://www.pearsonpte.com/pte-updates-2025/ . Every value with verified=true is printed on those pages. verified=false values are our own practice choices, listed in STATUS.md.",
+  "sections": {
+    "speaking_writing": {"minutes": "76-84", "verified": true},
+    "reading": {"minutes": "23-30", "verified": true},
+    "listening": {"minutes": "31-39", "verified": true}
+  },
+  "tasks": {
+    "read_aloud": {"prepare_seconds": "30-40", "answer_seconds": "Varies by item, depending on the length of text", "prompt": "Text up to 60 words", "tone": true, "silence_stop_seconds": 3, "verified": true},
+    "repeat_sentence": {"answer_seconds": 15, "prompt": "3-9 seconds of audio", "plays": "Plays automatically; no replay", "tone": true, "silence_stop_seconds": 3, "verified": true},
+    "describe_image": {"prepare_seconds": 25, "answer_seconds": 40, "tone": true, "silence_stop_seconds": 3, "verified": true},
+    "retell_lecture": {"prepare_seconds": "10 (after the audio)", "answer_seconds": 40, "prompt": "Up to 90 seconds of audio", "plays": "Plays automatically", "tone": true, "silence_stop_seconds": 3, "verified": true},
+    "answer_short_question": {"answer_seconds": 10, "prompt": "3-9 seconds of audio", "plays": "Plays automatically; no replay", "tone": false, "silence_stop_seconds": 3, "scoring": "Scored as either correct or incorrect", "verified": true},
+    "summarize_group_discussion": {"prepare_seconds": "10 (after the audio)", "answer_seconds": 120, "prompt": "Up to 3 minutes of audio", "plays": "Plays automatically", "tone": true, "verified": true},
+    "respond_to_situation": {"prepare_seconds": 10, "answer_seconds": 40, "prompt": "Text up to 60 words", "plays": "You can only listen to the audio recording once", "tone": true, "verified": true},
+    "summarize_written_text": {"answer_seconds": 600, "prompt": "Text up to 300 words", "words": "One sentence, between 5 and 75 words", "verified": true},
+    "write_essay": {"answer_seconds": 1200, "prompt": "2-3 sentences", "words": "200-300 words", "verified": true},
+    "rw_fill_blanks": {"prompt": "Text up to 200 words", "answer_seconds": "Not applicable (part of the section time)", "verified": true},
+    "reading_mc_multiple": {"prompt": "Text up to 350 words", "answer_seconds": "Not applicable (part of the section time)", "verified": true},
+    "reorder_paragraphs": {"prompt": "Text up to 110 words", "answer_seconds": "Not applicable (part of the section time)", "verified": true},
+    "reading_fill_blanks": {"prompt": "Text up to 80 words", "answer_seconds": "Not applicable (part of the section time)", "verified": true},
+    "reading_mc_single": {"prompt": "Text up to 110 words", "answer_seconds": "Not applicable (part of the section time)", "scoring": "Scored as either correct or incorrect", "verified": true},
+    "summarize_spoken_text": {"answer_seconds": 600, "prompt": "60-90 seconds of audio", "plays": "Once", "words": "50-70 words", "verified": true},
+    "listening_mc_multiple": {"prompt": "80-120 seconds of audio", "plays": "Once", "verified": true},
+    "listening_fill_blanks": {"prompt": "30-60 seconds of audio", "plays": "Once", "verified": true},
+    "highlight_correct_summary": {"prompt": "30-90 seconds of audio", "plays": "Once", "scoring": "Scored as either correct or incorrect", "verified": true},
+    "listening_mc_single": {"prompt": "30-60 seconds of audio", "plays": "Once", "scoring": "Scored as either correct or incorrect", "verified": true},
+    "select_missing_word": {"prompt": "20-70 seconds of audio", "plays": "Once", "options": "3-5", "scoring": "Scored as either correct or incorrect", "verified": true},
+    "highlight_incorrect_words": {"prompt": "15-50 seconds of audio", "plays": "Once", "verified": true},
+    "write_from_dictation": {"prompt": "3-5 seconds of audio", "plays": "Once", "verified": true}
+  }
+}

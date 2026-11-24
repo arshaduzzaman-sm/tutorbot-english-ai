@@ -1,0 +1,36 @@
+{
+  "code": "highlight_correct_summary",
+  "what": "You listen to a recording and choose the paragraph that best summarizes it.",
+  "tests": "Listening and reading: understanding the main message.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says it is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Note the main idea and the speaker's conclusion.",
+    "Remove summaries that include wrong details or miss the main point.",
+    "Choose the one that is complete and accurate."
+  ],
+  "example_prompt": "Four short summaries of a talk about why sleep matters for memory.",
+  "examples": {
+    "strong": {
+      "answer": "Chooses the summary with the main idea and correct details.",
+      "why": "Complete and accurate."
+    },
+    "medium": {
+      "answer": "Chooses a summary that is correct but only about one example.",
+      "why": "Too narrow."
+    },
+    "weak": {
+      "answer": "Chooses a summary with a detail that the speaker did not say.",
+      "why": "Contains wrong information."
+    }
+  },
+  "mistakes": [
+    "Choosing a summary because it repeats words from the talk.",
+    "Missing a small but wrong detail."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

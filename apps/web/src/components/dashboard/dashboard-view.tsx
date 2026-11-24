@@ -1,12 +1,17 @@
-import { BookOpen, CalendarCheck, Flame, GraduationCap, History, Target, TriangleAlert, Trophy } from "lucide-react";
+import { BookOpen, CalendarCheck, Compass, Flame, GraduationCap, History, ListChecks, RotateCcw, Target, TriangleAlert, Trophy } from "lucide-react";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardBody, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { buttonVariants } from "@/components/ui/button";
+import { type Plan, StudyPlanList } from "@/components/placement/study-plan";
 import type { DashboardQuery } from "@/graphql/generated/graphql";
+import { RecommendationList } from "@/components/progress/coach-panel";
+import type { Recommendation } from "@/lib/coach";
 
-export type DashboardData = DashboardQuery["viewer"];
+export type DashboardData = DashboardQuery["viewer"] & { typeNames?: Record<string, string> };
 
 /** Pure view: every value comes from the GraphQL response. Empty states for new users; no fake numbers. */
 export function DashboardView({ data, notice }: { data: DashboardData; notice?: string }) {
@@ -51,6 +56,15 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           </CardBody>
         </Card>
         <Card>
+          <CardTitle><RotateCcw aria-hidden="true" className="size-5 text-accent-purple" />{t("review")}</CardTitle>
+          <CardBody>
+            <p className="text-lg font-semibold text-foreground" data-testid="review-due">{t("reviewDue", { count: data.reviewDueCount })}</p>
+            <Link href="/review" className="text-sm font-medium text-accent-blue underline">{t("openReview")}</Link>
+            <p className="mt-2 font-semibold text-foreground" data-testid="vocab-due">{t("vocabularyDue", { count: data.vocabularyDueCount })}</p>
+            <Link href="/vocabulary" className="text-sm font-medium text-accent-blue underline">{t("openVocabulary")}</Link>
+          </CardBody>
+        </Card>
+        <Card>
           <CardTitle><CalendarCheck aria-hidden="true" className="size-5 text-success" />{t("dailyGoal")}</CardTitle>
           <CardBody>
             <p className="mb-2 font-semibold text-foreground">{t("dailyGoalValue", { done: data.todayMinutes, goal })}</p>
@@ -58,6 +72,31 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
           </CardBody>
         </Card>
       </div>
+
+      <Card>
+        <CardTitle><Compass aria-hidden="true" className="size-5 text-accent-purple" />{t("nextSteps")}</CardTitle>
+        <CardBody className="space-y-3">
+          <RecommendationList recs={data.coach.recommendations as Recommendation[]} names={data.typeNames ?? {}} limit={3} />
+          <Link href="/progress" className="text-sm font-medium text-accent-blue underline">{t("openProgress")}</Link>
+        </CardBody>
+      </Card>
+
+      <Card>
+        <CardTitle><ListChecks aria-hidden="true" className="size-5 text-accent-blue" />{t("planTitle")}</CardTitle>
+        <CardBody className="space-y-3">
+          {data.studyPlan ? (
+            <>
+              <StudyPlanList plan={data.studyPlan.plan as Plan} />
+              <Link href="/placement" className="text-sm font-medium text-accent-blue underline">{t("retakePlacement")}</Link>
+            </>
+          ) : (
+            <>
+              <p data-testid="plan-empty">{t("planEmpty")}</p>
+              <Link href="/placement" className={buttonVariants({ size: "sm" })}>{t("takePlacement")}</Link>
+            </>
+          )}
+        </CardBody>
+      </Card>
 
       <div className="grid gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">
@@ -120,14 +159,16 @@ export function DashboardView({ data, notice }: { data: DashboardData; notice?: 
               <ul className="space-y-3" data-testid="recommended-lessons">
                 {data.recommendedLessons.map((l) => (
                   <li key={l.id} className="rounded-xl border border-border p-3">
-                    <p className="font-semibold text-foreground">{l.title}</p>
+                    <Link href={`/lessons/${l.slug}`} className="font-semibold text-accent-blue underline-offset-4 hover:underline">{l.title}</Link>
                     <p>{l.summary}</p>
                     <p className="mt-1 text-xs">
                       {t("minutesShort", { count: l.estimatedMinutes })} · CEFR {l.level?.cefr}
                     </p>
                   </li>
                 ))}
-                <li className="text-xs">{t("lessonsSoon")}</li>
+                <li><Link href="/lessons" className="text-sm font-medium text-accent-blue underline">{t("allLessons")}</Link></li>
+                <li><Link href="/practice" className="text-sm font-medium text-accent-blue underline">{t("openPractice")}</Link></li>
+                <li><Link href="/pronunciation" className="text-sm font-medium text-accent-blue underline">{t("openPronunciation")}</Link></li>
               </ul>
             )}
           </CardBody>

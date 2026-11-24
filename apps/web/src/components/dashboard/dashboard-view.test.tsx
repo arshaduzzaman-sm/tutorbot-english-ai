@@ -23,13 +23,24 @@ const empty: DashboardData = {
   },
   streakDays: 0,
   todayMinutes: 0,
+  reviewDueCount: 0, vocabularyDueCount: 0,
+  studyPlan: null,
   recentAttempts: [],
   recommendedLessons: [],
   weakAreas: [],
   mockExams: [],
+  coach: { recommendations: [{ kind: "practice", reason: "not_tried", categoryCode: "read_aloud", difficulty: "intermediate" }] },
+  typeNames: { read_aloud: "Read Aloud" },
 };
 
 describe("DashboardView", () => {
+  it("shows next steps from the coach", () => {
+    renderWithIntl(<DashboardView data={empty} />);
+    expect(screen.getByText("Read Aloud")).toBeInTheDocument();
+    expect(screen.getByText("You have not tried this question type yet.")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Start: Read Aloud" })).toHaveAttribute("href", "/practice/read_aloud?adaptive=1");
+  });
+
   it("shows friendly empty states and no fake numbers for a new user", () => {
     renderWithIntl(<DashboardView data={empty} />);
     expect(screen.getByRole("heading", { name: "Welcome, Rina!" })).toBeInTheDocument();

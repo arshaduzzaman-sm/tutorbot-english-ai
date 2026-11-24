@@ -13,5 +13,5 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
   if (!data.viewer.profile?.onboardingCompleted) redirect("/onboarding");
   const t = await getTranslations("auth");
   const { notice } = await searchParams;
-  return <DashboardView data={data.viewer} notice={notice === "password-changed" ? t("resetDone") : undefined} />;
+  return <DashboardView data={{ ...data.viewer, typeNames: Object.fromEntries(data.practiceTypes.map((c) => [c.code, c.name])) }} notice={notice === "password-changed" ? t("resetDone") : undefined} />;
 }

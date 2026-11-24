@@ -1,0 +1,1679 @@
+{
+  "level_code": 4,
+  "_licence": "CC BY-SA 4.0, original TutorBot content",
+  "units": [
+    {
+      "slug": "l4-u1-complex-sentences",
+      "title": "Unit 1: Complex sentences",
+      "summary": "Relative clauses, conditionals, the passive and reported speech.",
+      "lessons": [
+        "l4-relative-clauses",
+        "l4-conditionals-2-3",
+        "l4-passive-voice",
+        "l4-reported-speech"
+      ],
+      "test": [
+        {
+          "id": "u41-t1",
+          "type": "single_choice",
+          "prompt": "The woman ___ car was stolen called the police.",
+          "options": [
+            "who",
+            "whose",
+            "which"
+          ],
+          "answer": "whose",
+          "explanation": "Possession: *whose*."
+        },
+        {
+          "id": "u41-t2",
+          "type": "single_choice",
+          "prompt": "If I had known, I ___ you.",
+          "options": [
+            "would tell",
+            "would have told",
+            "will tell"
+          ],
+          "answer": "would have told",
+          "explanation": "Third conditional."
+        },
+        {
+          "id": "u41-t3",
+          "type": "single_choice",
+          "prompt": "The bridge ___ in 1890.",
+          "options": [
+            "built",
+            "was built",
+            "has built"
+          ],
+          "answer": "was built",
+          "explanation": "Past passive."
+        },
+        {
+          "id": "u41-t4",
+          "type": "single_choice",
+          "prompt": "\"I can come.\" → He said he ___ come.",
+          "options": [
+            "can",
+            "could",
+            "will"
+          ],
+          "answer": "could",
+          "explanation": "*can* → *could*."
+        },
+        {
+          "id": "u41-t5",
+          "type": "single_choice",
+          "prompt": "Oslo, ___ is in Norway, is expensive.",
+          "options": [
+            "that",
+            "which",
+            "who"
+          ],
+          "answer": "which",
+          "explanation": "Non-defining: *which*."
+        },
+        {
+          "id": "u41-t6",
+          "type": "single_choice",
+          "prompt": "If people ___ less meat, emissions would fall.",
+          "options": [
+            "eat",
+            "ate",
+            "had eaten"
+          ],
+          "answer": "ate",
+          "explanation": "Second conditional."
+        }
+      ]
+    },
+    {
+      "slug": "l4-u2-academic-vocabulary",
+      "title": "Unit 2: Academic vocabulary",
+      "summary": "Word families, collocations, linking words and hedging.",
+      "lessons": [
+        "l4-word-formation",
+        "l4-collocations",
+        "l4-linking-contrast-cause",
+        "l4-hedging"
+      ],
+      "test": [
+        {
+          "id": "u42-t1",
+          "type": "single_choice",
+          "prompt": "The ___ of the plan was slow.",
+          "options": [
+            "implement",
+            "implementation",
+            "implemented"
+          ],
+          "answer": "implementation",
+          "explanation": "Noun after *the*."
+        },
+        {
+          "id": "u42-t2",
+          "type": "single_choice",
+          "prompt": "The study ___ that diet matters.",
+          "options": [
+            "suggests",
+            "proves totally",
+            "is sure"
+          ],
+          "answer": "suggests",
+          "explanation": "Hedging verb."
+        },
+        {
+          "id": "u42-t3",
+          "type": "single_choice",
+          "prompt": "Scientists ___ research on the virus.",
+          "options": [
+            "did",
+            "made",
+            "took"
+          ],
+          "answer": "did",
+          "explanation": "*do research*."
+        },
+        {
+          "id": "u42-t4",
+          "type": "single_choice",
+          "prompt": "___ the cost, the project continued.",
+          "options": [
+            "Although",
+            "Despite",
+            "Because"
+          ],
+          "answer": "Despite",
+          "explanation": "Before a noun: *Despite*."
+        },
+        {
+          "id": "u42-t5",
+          "type": "single_choice",
+          "prompt": "The flight was delayed ___ fog.",
+          "options": [
+            "because",
+            "due to",
+            "so"
+          ],
+          "answer": "due to",
+          "explanation": "Before a noun: *due to*."
+        },
+        {
+          "id": "u42-t6",
+          "type": "single_choice",
+          "prompt": "Technology plays a key ___ in education.",
+          "options": [
+            "role",
+            "part to",
+            "play"
+          ],
+          "answer": "role",
+          "explanation": "*play a role*."
+        }
+      ]
+    },
+    {
+      "slug": "l4-u3-pte-skills",
+      "title": "Unit 3: Skills for PTE tasks",
+      "summary": "Paraphrasing, main ideas, describing data and paragraph structure.",
+      "lessons": [
+        "l4-paraphrasing",
+        "l4-main-ideas",
+        "l4-describing-data",
+        "l4-paragraph-structure"
+      ],
+      "test": [
+        {
+          "id": "u43-t1",
+          "type": "single_choice",
+          "prompt": "Best paraphrase: \"Use of cars fell.\"",
+          "options": [
+            "There was a decline in car use.",
+            "Cars use fell down was.",
+            "Car fell use."
+          ],
+          "answer": "There was a decline in car use.",
+          "explanation": "Same meaning, new structure."
+        },
+        {
+          "id": "u43-t2",
+          "type": "single_choice",
+          "prompt": "The highest value on a graph is the:",
+          "options": [
+            "peak",
+            "share",
+            "trend"
+          ],
+          "answer": "peak",
+          "explanation": "*peak*."
+        },
+        {
+          "id": "u43-t3",
+          "type": "single_choice",
+          "prompt": "The main idea of a paragraph is often in the:",
+          "options": [
+            "topic sentence",
+            "example",
+            "last word"
+          ],
+          "answer": "topic sentence",
+          "explanation": "Topic sentence."
+        },
+        {
+          "id": "u43-t4",
+          "type": "single_choice",
+          "prompt": "From 200 to 600 is a ___ increase.",
+          "options": [
+            "slight",
+            "sharp",
+            "stable"
+          ],
+          "answer": "sharp",
+          "explanation": "Big change: *sharp*."
+        },
+        {
+          "id": "u43-t5",
+          "type": "single_choice",
+          "prompt": "\"for instance\" introduces:",
+          "options": [
+            "an example",
+            "a contrast",
+            "a conclusion"
+          ],
+          "answer": "an example",
+          "explanation": "Example signal."
+        },
+        {
+          "id": "u43-t6",
+          "type": "single_choice",
+          "prompt": "A good paragraph has ___ main idea(s).",
+          "options": [
+            "one",
+            "five",
+            "no"
+          ],
+          "answer": "one",
+          "explanation": "One idea per paragraph."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "l4-relative-clauses",
+      "title": "Relative clauses: who, which, that, whose",
+      "summary": "Add information about people and things in one sentence.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Relative clauses: who, which, that, whose",
+          "body_md": "A **relative clause** gives more information about a noun.\n\n- *who* for people, *which* for things, *that* for people or things (defining clauses only), *whose* for possession.\n- **Defining** clauses say *which one* and have no commas: *The student **who won** is my friend.*\n- **Non-defining** clauses add extra information between commas, and cannot use *that*: *My brother, **who lives in Leeds**, is a nurse.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The book **that** I borrowed was excellent.*\n- *Paris, **which** is the capital of France, attracts millions of visitors.*\n- *The scientist **whose** research won the prize gave a talk.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-relative-clauses-try-1",
+              "type": "single_choice",
+              "prompt": "The researcher ___ led the study is from Canada.",
+              "options": [
+                "who",
+                "which",
+                "whose"
+              ],
+              "answer": "who",
+              "explanation": "People: *who*.",
+              "hint": "People: *who*."
+            },
+            {
+              "id": "l4-relative-clauses-try-2",
+              "type": "single_choice",
+              "prompt": "The city, ___ is famous for its bridges, is very old.",
+              "options": [
+                "that",
+                "which",
+                "who"
+              ],
+              "answer": "which",
+              "explanation": "Non-defining clause about a thing: *which* (never *that* after a comma).",
+              "hint": "Non-defining clause about a thing: *which* (never *that* after a comma)."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-relative-clauses-check-1",
+              "type": "single_choice",
+              "prompt": "This is the student ___ essay won the prize.",
+              "options": [
+                "who",
+                "whose",
+                "which"
+              ],
+              "answer": "whose",
+              "explanation": "Possession: *whose essay*."
+            },
+            {
+              "id": "l4-relative-clauses-check-2",
+              "type": "single_choice",
+              "prompt": "The laptop ___ I bought last week has stopped working.",
+              "options": [
+                "who",
+                "that",
+                "whose"
+              ],
+              "answer": "that",
+              "explanation": "Thing, defining clause: *that* (or *which*)."
+            },
+            {
+              "id": "l4-relative-clauses-check-3",
+              "type": "single_choice",
+              "prompt": "Which sentence is punctuated correctly?",
+              "options": [
+                "My sister who is a doctor, lives in Oslo.",
+                "My sister, who is a doctor, lives in Oslo.",
+                "My sister, that is a doctor, lives in Oslo."
+              ],
+              "answer": "My sister, who is a doctor, lives in Oslo.",
+              "explanation": "Extra information about one sister: commas and *who*."
+            },
+            {
+              "id": "l4-relative-clauses-check-4",
+              "type": "single_choice",
+              "prompt": "The professor, ___ lectures are always full, is retiring.",
+              "options": [
+                "whose",
+                "who's",
+                "which"
+              ],
+              "answer": "whose",
+              "explanation": "*whose lectures* = the lectures of the professor."
+            },
+            {
+              "id": "l4-relative-clauses-check-5",
+              "type": "single_choice",
+              "prompt": "Plants ___ need little water are popular in dry regions.",
+              "options": [
+                "who",
+                "which",
+                "whose"
+              ],
+              "answer": "which",
+              "explanation": "Things: *which*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-conditionals-2-3",
+      "title": "Second and third conditionals",
+      "summary": "Talk about unreal present and past situations.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Second and third conditionals",
+          "body_md": "- **Second conditional** (unreal present or unlikely future): *If* + past simple, *would* + verb. *If I **had** more time, I **would study** more.*\n- **Third conditional** (unreal past): *If* + past perfect, *would have* + past participle. *If she **had left** earlier, she **would have caught** the train.*\n- With *be*, *were* is common for all persons in formal English: *If I **were** you, ...*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *If cities **invested** in cycling, fewer people **would drive**.*\n- *If the team **had tested** the design, the bridge **would not have failed**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-conditionals-2-3-try-1",
+              "type": "single_choice",
+              "prompt": "If I ___ rich, I would travel the world.",
+              "options": [
+                "am",
+                "were",
+                "will be"
+              ],
+              "answer": "were",
+              "explanation": "Second conditional: *If* + past (*were*).",
+              "hint": "Second conditional: *If* + past (*were*)."
+            },
+            {
+              "id": "l4-conditionals-2-3-try-2",
+              "type": "single_choice",
+              "prompt": "If we had left earlier, we ___ the bus.",
+              "options": [
+                "would catch",
+                "would have caught",
+                "will catch"
+              ],
+              "answer": "would have caught",
+              "explanation": "Third conditional: *would have* + past participle.",
+              "hint": "Third conditional: *would have* + past participle."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-conditionals-2-3-check-1",
+              "type": "single_choice",
+              "prompt": "If she ___ harder, she would have passed.",
+              "options": [
+                "studied",
+                "had studied",
+                "has studied"
+              ],
+              "answer": "had studied",
+              "explanation": "Unreal past: *had studied*."
+            },
+            {
+              "id": "l4-conditionals-2-3-check-2",
+              "type": "single_choice",
+              "prompt": "What would you do if you ___ a wallet in the street?",
+              "options": [
+                "find",
+                "found",
+                "will find"
+              ],
+              "answer": "found",
+              "explanation": "Second conditional: past simple *found*."
+            },
+            {
+              "id": "l4-conditionals-2-3-check-3",
+              "type": "single_choice",
+              "prompt": "If the government ___ taxes, people would spend more.",
+              "options": [
+                "cut",
+                "had cut",
+                "cuts"
+              ],
+              "answer": "cut",
+              "explanation": "Second conditional: past simple *cut* (same form)."
+            },
+            {
+              "id": "l4-conditionals-2-3-check-4",
+              "type": "single_choice",
+              "prompt": "Which sentence is about the past?",
+              "options": [
+                "If it rained, we would stay inside.",
+                "If it had rained, we would have stayed inside.",
+                "If it rains, we will stay inside."
+              ],
+              "answer": "If it had rained, we would have stayed inside.",
+              "explanation": "*had rained ... would have stayed*: third conditional, past."
+            },
+            {
+              "id": "l4-conditionals-2-3-check-5",
+              "type": "single_choice",
+              "prompt": "If I ___ you, I would apply for the job.",
+              "options": [
+                "was being",
+                "were",
+                "am"
+              ],
+              "answer": "were",
+              "explanation": "Advice: *If I were you*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-passive-voice",
+      "title": "The passive voice",
+      "summary": "Focus on the action or result, not the person who does it.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "The passive voice",
+          "body_md": "Form the passive with **be** + past participle. Use it when the doer is unknown, unimportant or obvious, which is common in academic English.\n\n- Present: *Data **is collected** every month.*\n- Past: *The bridge **was built** in 1890.*\n- Present perfect: *New rules **have been introduced**.*\n- With *by* to name the doer: *The study was carried out **by** a team in Oslo.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Thousands of tonnes of plastic **are thrown away** each year.*\n- *The results **were published** in a journal.*\n- *A new vaccine **has been developed**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-passive-voice-try-1",
+              "type": "single_choice",
+              "prompt": "The survey ___ by 500 students last year.",
+              "options": [
+                "completed",
+                "was completed",
+                "has completed"
+              ],
+              "answer": "was completed",
+              "explanation": "Past passive: *was completed*.",
+              "hint": "Past passive: *was completed*."
+            },
+            {
+              "id": "l4-passive-voice-try-2",
+              "type": "single_choice",
+              "prompt": "English ___ in many countries.",
+              "options": [
+                "is spoken",
+                "speaks",
+                "is speaking"
+              ],
+              "answer": "is spoken",
+              "explanation": "Present passive: *is spoken*.",
+              "hint": "Present passive: *is spoken*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-passive-voice-check-1",
+              "type": "single_choice",
+              "prompt": "Several new species ___ since 2020.",
+              "options": [
+                "have been discovered",
+                "were discovered",
+                "have discovered"
+              ],
+              "answer": "have been discovered",
+              "explanation": "*since 2020*: present perfect passive."
+            },
+            {
+              "id": "l4-passive-voice-check-2",
+              "type": "single_choice",
+              "prompt": "The museum ___ every Monday.",
+              "options": [
+                "closes by",
+                "is closed",
+                "is closing by"
+              ],
+              "answer": "is closed",
+              "explanation": "Present passive: *is closed*."
+            },
+            {
+              "id": "l4-passive-voice-check-3",
+              "type": "single_choice",
+              "prompt": "Choose the passive sentence.",
+              "options": [
+                "Scientists tested the drug.",
+                "The drug was tested by scientists.",
+                "The drug tested well."
+              ],
+              "answer": "The drug was tested by scientists.",
+              "explanation": "*was tested*: be + past participle."
+            },
+            {
+              "id": "l4-passive-voice-check-4",
+              "type": "single_choice",
+              "prompt": "The essays ___ next week.",
+              "options": [
+                "will be marked",
+                "will mark",
+                "are marking"
+              ],
+              "answer": "will be marked",
+              "explanation": "Future passive: *will be marked*."
+            },
+            {
+              "id": "l4-passive-voice-check-5",
+              "type": "single_choice",
+              "prompt": "Paper ___ from wood.",
+              "options": [
+                "is made",
+                "makes",
+                "is making"
+              ],
+              "answer": "is made",
+              "explanation": "General fact, passive: *is made*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-reported-speech",
+      "title": "Reported speech",
+      "summary": "Report what people said and asked.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Reported speech",
+          "body_md": "When the reporting verb is in the past, the tense usually moves back:\n\n- present → past: *\"I **am** tired.\"* → *She said she **was** tired.*\n- past / present perfect → past perfect: *\"I **saw** it.\"* → *He said he **had seen** it.*\n- *will* → *would*; *can* → *could*.\n- Questions use statement word order: *\"Where **do you live**?\"* → *She asked where **I lived**.*\n- Useful reporting verbs: *explain, suggest, argue, claim, point out*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The speaker **explained** that bees **were** important for farming.*\n- *He **asked** whether the library **was** open.*\n- *She **suggested** opening one floor overnight.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-reported-speech-try-1",
+              "type": "single_choice",
+              "prompt": "\"I am busy.\" → She said she ___ busy.",
+              "options": [
+                "is",
+                "was",
+                "has been"
+              ],
+              "answer": "was",
+              "explanation": "Present → past: *was*.",
+              "hint": "Present → past: *was*."
+            },
+            {
+              "id": "l4-reported-speech-try-2",
+              "type": "single_choice",
+              "prompt": "\"We will help.\" → They said they ___ help.",
+              "options": [
+                "will",
+                "would",
+                "had"
+              ],
+              "answer": "would",
+              "explanation": "*will* → *would*.",
+              "hint": "*will* → *would*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-reported-speech-check-1",
+              "type": "single_choice",
+              "prompt": "\"Where do you work?\" → He asked me where ___.",
+              "options": [
+                "did I work",
+                "I worked",
+                "do I work"
+              ],
+              "answer": "I worked",
+              "explanation": "Reported questions use statement order: *I worked*."
+            },
+            {
+              "id": "l4-reported-speech-check-2",
+              "type": "single_choice",
+              "prompt": "\"I have finished.\" → She said she ___.",
+              "options": [
+                "had finished",
+                "has finished",
+                "finished have"
+              ],
+              "answer": "had finished",
+              "explanation": "Present perfect → past perfect."
+            },
+            {
+              "id": "l4-reported-speech-check-3",
+              "type": "single_choice",
+              "prompt": "The lecturer ___ that the results were surprising.",
+              "options": [
+                "said us",
+                "told",
+                "explained"
+              ],
+              "answer": "explained",
+              "explanation": "*explain that ...* (no object needed); *told* needs a person: *told us*."
+            },
+            {
+              "id": "l4-reported-speech-check-4",
+              "type": "single_choice",
+              "prompt": "\"Can you swim?\" → She asked if I ___ swim.",
+              "options": [
+                "can",
+                "could",
+                "would"
+              ],
+              "answer": "could",
+              "explanation": "*can* → *could*."
+            },
+            {
+              "id": "l4-reported-speech-check-5",
+              "type": "single_choice",
+              "prompt": "Ben suggested ___ the meeting online.",
+              "options": [
+                "to hold",
+                "holding",
+                "hold"
+              ],
+              "answer": "holding",
+              "explanation": "*suggest* + -ing: *suggested holding*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-word-formation",
+      "title": "Word formation: nouns, verbs and adjectives",
+      "summary": "Choose the right form of a word for the sentence.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Word formation: nouns, verbs and adjectives",
+          "body_md": "Many academic words come in families. Use the grammar of the sentence to choose the form.\n\n| Verb | Noun | Adjective | Adverb |\n|---|---|---|---|\n| develop | development | developed | — |\n| analyse | analysis | analytical | analytically |\n| succeed | success | successful | successfully |\n| depend | dependence | dependent | — |\n\nCommon noun endings: *-tion, -ment, -ness, -ity*. Adjective endings: *-ful, -ive, -al, -ous, -able*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The **development** of new drugs takes years.* (noun after *the*)\n- *The plan was **successful**.* (adjective after *was*)\n- *Prices rose **significantly**.* (adverb describing a verb)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-word-formation-try-1",
+              "type": "single_choice",
+              "prompt": "The ___ of the project took two years.",
+              "options": [
+                "develop",
+                "development",
+                "developed"
+              ],
+              "answer": "development",
+              "explanation": "After *the ... of*: a noun.",
+              "hint": "After *the ... of*: a noun."
+            },
+            {
+              "id": "l4-word-formation-try-2",
+              "type": "single_choice",
+              "prompt": "She spoke ___ about the problem.",
+              "options": [
+                "confident",
+                "confidence",
+                "confidently"
+              ],
+              "answer": "confidently",
+              "explanation": "Describing *spoke*: adverb.",
+              "hint": "Describing *spoke*: adverb."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-word-formation-check-1",
+              "type": "single_choice",
+              "prompt": "The results were very ___.",
+              "options": [
+                "success",
+                "successful",
+                "succeed"
+              ],
+              "answer": "successful",
+              "explanation": "After *were very*: adjective."
+            },
+            {
+              "id": "l4-word-formation-check-2",
+              "type": "single_choice",
+              "prompt": "We need a careful ___ of the data.",
+              "options": [
+                "analyse",
+                "analysis",
+                "analytical"
+              ],
+              "answer": "analysis",
+              "explanation": "After *a careful*: noun."
+            },
+            {
+              "id": "l4-word-formation-check-3",
+              "type": "single_choice",
+              "prompt": "Many towns are ___ on tourism.",
+              "options": [
+                "dependent",
+                "dependence",
+                "depend"
+              ],
+              "answer": "dependent",
+              "explanation": "*be dependent on*: adjective."
+            },
+            {
+              "id": "l4-word-formation-check-4",
+              "type": "single_choice",
+              "prompt": "There has been a ___ increase in prices.",
+              "options": [
+                "significance",
+                "significant",
+                "signify"
+              ],
+              "answer": "significant",
+              "explanation": "Before a noun: adjective."
+            },
+            {
+              "id": "l4-word-formation-check-5",
+              "type": "single_choice",
+              "prompt": "The ___ of the river is about 300 km.",
+              "options": [
+                "long",
+                "length",
+                "lengthen"
+              ],
+              "answer": "length",
+              "explanation": "Noun: *length*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-collocations",
+      "title": "Academic collocations",
+      "summary": "Use words that naturally go together.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Academic collocations",
+          "body_md": "**Collocations** are word partners. Learning them makes your English sound natural and helps in fill-in-the-blank tasks.\n\n- *make* a decision / progress / a mistake\n- *do* research / damage / a task\n- *carry out* a study / an experiment\n- *play* a role (in)\n- *raise* awareness / a question\n- *have an impact on*, *pose a threat to*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The team **carried out** a survey of 2,000 people.*\n- *Social media **plays a role in** how news spreads.*\n- *The campaign **raised awareness** of the problem.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-collocations-try-1",
+              "type": "single_choice",
+              "prompt": "Researchers ___ an experiment to test the idea.",
+              "options": [
+                "made",
+                "carried out",
+                "did up"
+              ],
+              "answer": "carried out",
+              "explanation": "*carry out an experiment*.",
+              "hint": "*carry out an experiment*."
+            },
+            {
+              "id": "l4-collocations-try-2",
+              "type": "single_choice",
+              "prompt": "Education plays an important ___ in development.",
+              "options": [
+                "part of",
+                "role",
+                "place"
+              ],
+              "answer": "role",
+              "explanation": "*play a role in*.",
+              "hint": "*play a role in*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-collocations-check-1",
+              "type": "single_choice",
+              "prompt": "We need to ___ a decision soon.",
+              "options": [
+                "do",
+                "make",
+                "take up"
+              ],
+              "answer": "make",
+              "explanation": "*make a decision*."
+            },
+            {
+              "id": "l4-collocations-check-2",
+              "type": "single_choice",
+              "prompt": "Pollution can ___ serious damage to health.",
+              "options": [
+                "do",
+                "make",
+                "give"
+              ],
+              "answer": "do",
+              "explanation": "*do damage*."
+            },
+            {
+              "id": "l4-collocations-check-3",
+              "type": "single_choice",
+              "prompt": "The film helped to ___ awareness of climate change.",
+              "options": [
+                "rise",
+                "raise",
+                "arise"
+              ],
+              "answer": "raise",
+              "explanation": "*raise awareness* (transitive verb *raise*)."
+            },
+            {
+              "id": "l4-collocations-check-4",
+              "type": "single_choice",
+              "prompt": "Plastic waste ___ a threat to sea life.",
+              "options": [
+                "poses",
+                "puts",
+                "makes"
+              ],
+              "answer": "poses",
+              "explanation": "*pose a threat to*."
+            },
+            {
+              "id": "l4-collocations-check-5",
+              "type": "single_choice",
+              "prompt": "The new law had a big ___ on small businesses.",
+              "options": [
+                "impact",
+                "effect to",
+                "affect"
+              ],
+              "answer": "impact",
+              "explanation": "*have an impact on*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-linking-contrast-cause",
+      "title": "Linking words: contrast, cause and result",
+      "summary": "Connect ideas clearly in speaking and writing.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Linking words: contrast, cause and result",
+          "body_md": "- **Contrast:** *however* (new sentence + comma), *although / even though* (+ clause), *despite / in spite of* (+ noun or -ing), *whereas, while*.\n- **Cause:** *because* (+ clause), *because of / due to* (+ noun).\n- **Result:** *so* (+ clause), *therefore / as a result / consequently* (often after a full stop or semicolon)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***Although** the plan was expensive, it was approved.*\n- ***Despite** the rain, the event went ahead.*\n- *Costs rose. **As a result**, prices increased.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-linking-contrast-cause-try-1",
+              "type": "single_choice",
+              "prompt": "___ the high cost, many people bought the phone.",
+              "options": [
+                "Although",
+                "Despite",
+                "However"
+              ],
+              "answer": "Despite",
+              "explanation": "Before a noun phrase: *Despite*.",
+              "hint": "Before a noun phrase: *Despite*."
+            },
+            {
+              "id": "l4-linking-contrast-cause-try-2",
+              "type": "single_choice",
+              "prompt": "The road was closed ___ flooding.",
+              "options": [
+                "because",
+                "due to",
+                "so"
+              ],
+              "answer": "due to",
+              "explanation": "Before a noun: *due to*.",
+              "hint": "Before a noun: *due to*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-linking-contrast-cause-check-1",
+              "type": "single_choice",
+              "prompt": "___ it was late, the shop was still open.",
+              "options": [
+                "Despite",
+                "Although",
+                "Because of"
+              ],
+              "answer": "Although",
+              "explanation": "Before a clause: *Although*."
+            },
+            {
+              "id": "l4-linking-contrast-cause-check-2",
+              "type": "single_choice",
+              "prompt": "Sales fell sharply. ___, the company cut jobs.",
+              "options": [
+                "Although",
+                "As a result",
+                "Despite"
+              ],
+              "answer": "As a result",
+              "explanation": "Result after a full stop: *As a result*."
+            },
+            {
+              "id": "l4-linking-contrast-cause-check-3",
+              "type": "single_choice",
+              "prompt": "Some students prefer mornings, ___ others work better at night.",
+              "options": [
+                "whereas",
+                "despite",
+                "therefore"
+              ],
+              "answer": "whereas",
+              "explanation": "Contrast between two clauses: *whereas*."
+            },
+            {
+              "id": "l4-linking-contrast-cause-check-4",
+              "type": "single_choice",
+              "prompt": "The method is cheap. ___, it is not very accurate.",
+              "options": [
+                "Because",
+                "However",
+                "So"
+              ],
+              "answer": "However",
+              "explanation": "Contrast after a full stop: *However*."
+            },
+            {
+              "id": "l4-linking-contrast-cause-check-5",
+              "type": "single_choice",
+              "prompt": "He was tired, ___ he went to bed early.",
+              "options": [
+                "so",
+                "although",
+                "despite"
+              ],
+              "answer": "so",
+              "explanation": "Result in the same sentence: *so*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-hedging",
+      "title": "Hedging: being careful with claims",
+      "summary": "Use cautious language, as academic writers do.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Hedging: being careful with claims",
+          "body_md": "Academic writers rarely say something is 100% certain. They **hedge**:\n\n- modal verbs: *may, might, could*\n- verbs: *suggest, appear, seem, tend to*\n- adverbs: *possibly, probably, generally, often*\n- phrases: *It is likely that ..., There is evidence that ...*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The results **suggest** that sleep **may** improve memory.*\n- *Older adults **tend to** prefer printed news.*\n- ***It is likely that** costs will rise.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-hedging-try-1",
+              "type": "single_choice",
+              "prompt": "Which sentence is hedged?",
+              "options": [
+                "Coffee causes heart disease.",
+                "Coffee may increase the risk of heart disease.",
+                "Coffee always damages the heart."
+              ],
+              "answer": "Coffee may increase the risk of heart disease.",
+              "explanation": "*may increase the risk*: careful claim.",
+              "hint": "*may increase the risk*: careful claim."
+            },
+            {
+              "id": "l4-hedging-try-2",
+              "type": "single_choice",
+              "prompt": "The data ___ that the policy worked.",
+              "options": [
+                "proves completely",
+                "suggests",
+                "is sure"
+              ],
+              "answer": "suggests",
+              "explanation": "*suggests* is a cautious verb.",
+              "hint": "*suggests* is a cautious verb."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-hedging-check-1",
+              "type": "single_choice",
+              "prompt": "Young people ___ to use social media more than older people.",
+              "options": [
+                "tend",
+                "are always",
+                "must"
+              ],
+              "answer": "tend",
+              "explanation": "*tend to*: a general pattern."
+            },
+            {
+              "id": "l4-hedging-check-2",
+              "type": "single_choice",
+              "prompt": "It is ___ that prices will rise next year.",
+              "options": [
+                "likely",
+                "certainly sure",
+                "proven"
+              ],
+              "answer": "likely",
+              "explanation": "*It is likely that*: hedged prediction."
+            },
+            {
+              "id": "l4-hedging-check-3",
+              "type": "single_choice",
+              "prompt": "Choose the most academic wording.",
+              "options": [
+                "Everyone hates long meetings.",
+                "Many employees appear to dislike long meetings.",
+                "Long meetings are the worst."
+              ],
+              "answer": "Many employees appear to dislike long meetings.",
+              "explanation": "Hedged and specific."
+            },
+            {
+              "id": "l4-hedging-check-4",
+              "type": "single_choice",
+              "prompt": "This ___ explain why sales fell.",
+              "options": [
+                "might",
+                "will definitely",
+                "does surely"
+              ],
+              "answer": "might",
+              "explanation": "*might*: possible explanation."
+            },
+            {
+              "id": "l4-hedging-check-5",
+              "type": "single_choice",
+              "prompt": "Which word is NOT used for hedging?",
+              "options": [
+                "possibly",
+                "generally",
+                "undoubtedly"
+              ],
+              "answer": "undoubtedly",
+              "explanation": "*undoubtedly* shows certainty, not caution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-paraphrasing",
+      "title": "Paraphrasing",
+      "summary": "Say the same idea in your own words.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Paraphrasing",
+          "body_md": "A good paraphrase keeps the **meaning** but changes the **words and structure**:\n\n1. Use synonyms: *rise → increase, important → significant*.\n2. Change the word form: *develop → development*.\n3. Change the structure: active ↔ passive, or move clauses.\n4. Keep key technical words that have no synonym."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- Original: *Many people throw away food that is still safe.*\n- Paraphrase: *A large amount of safe food is wasted.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-paraphrasing-try-1",
+              "type": "single_choice",
+              "prompt": "Best paraphrase: \"Prices rose quickly.\"",
+              "options": [
+                "Prices rised fast.",
+                "There was a rapid increase in prices.",
+                "Quickly prices are rose."
+              ],
+              "answer": "There was a rapid increase in prices.",
+              "explanation": "Synonyms + new structure, correct grammar.",
+              "hint": "Synonyms + new structure, correct grammar."
+            },
+            {
+              "id": "l4-paraphrasing-try-2",
+              "type": "single_choice",
+              "prompt": "A synonym for *significant* is:",
+              "options": [
+                "important",
+                "small",
+                "simple"
+              ],
+              "answer": "important",
+              "explanation": "*significant* ≈ *important*.",
+              "hint": "*significant* ≈ *important*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-paraphrasing-check-1",
+              "type": "single_choice",
+              "prompt": "Best paraphrase: \"The council built a new library.\"",
+              "options": [
+                "A new library was built by the council.",
+                "The council library is new built.",
+                "Council new library build."
+              ],
+              "answer": "A new library was built by the council.",
+              "explanation": "Active → passive keeps the meaning."
+            },
+            {
+              "id": "l4-paraphrasing-check-2",
+              "type": "single_choice",
+              "prompt": "Which paraphrase changes the meaning?",
+              "options": [
+                "Most students passed.",
+                "The majority of students passed.",
+                "Few students passed."
+              ],
+              "answer": "Few students passed.",
+              "explanation": "*Few* is the opposite of *most*."
+            },
+            {
+              "id": "l4-paraphrasing-check-3",
+              "type": "single_choice",
+              "prompt": "Paraphrase \"because of the storm\":",
+              "options": [
+                "due to the storm",
+                "despite the storm",
+                "after the storm"
+              ],
+              "answer": "due to the storm",
+              "explanation": "*due to* = *because of*."
+            },
+            {
+              "id": "l4-paraphrasing-check-4",
+              "type": "single_choice",
+              "prompt": "A noun form of *decide* is:",
+              "options": [
+                "decisive",
+                "decision",
+                "decided"
+              ],
+              "answer": "decision",
+              "explanation": "*decision*."
+            },
+            {
+              "id": "l4-paraphrasing-check-5",
+              "type": "single_choice",
+              "prompt": "Best paraphrase: \"Cycling is good for health.\"",
+              "options": [
+                "Cycling has health benefits.",
+                "Cycling is health.",
+                "Health is cycling good."
+              ],
+              "answer": "Cycling has health benefits.",
+              "explanation": "Same meaning, new words."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-main-ideas",
+      "title": "Finding main ideas",
+      "summary": "Separate the main idea from details and examples.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Finding main ideas",
+          "body_md": "The **main idea** is what the whole paragraph or talk is about. **Details** support it with examples, numbers or reasons.\n\n- The main idea is often in the first or last sentence.\n- Signals for examples: *for example, such as, for instance*.\n- Signals for the main point: *the key point is, overall, in short, the main reason*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*Cities are getting hotter. For example, Paris recorded its highest temperature in 2019. Roads and buildings store heat.* → Main idea: **cities are getting hotter**; the rest are details."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-main-ideas-try-1",
+              "type": "single_choice",
+              "prompt": "Which word usually introduces an example?",
+              "options": [
+                "however",
+                "for instance",
+                "therefore"
+              ],
+              "answer": "for instance",
+              "explanation": "*for instance* = *for example*.",
+              "hint": "*for instance* = *for example*."
+            },
+            {
+              "id": "l4-main-ideas-try-2",
+              "type": "single_choice",
+              "prompt": "\"Sleep helps memory. In one study, students who slept recalled 20% more.\" The main idea is:",
+              "options": [
+                "Students recalled 20% more.",
+                "Sleep helps memory.",
+                "There was one study."
+              ],
+              "answer": "Sleep helps memory.",
+              "explanation": "The study is a detail supporting the main idea.",
+              "hint": "The study is a detail supporting the main idea."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-main-ideas-check-1",
+              "type": "single_choice",
+              "prompt": "Where is the main idea often found?",
+              "options": [
+                "In the first or last sentence",
+                "Only in the middle",
+                "In the examples"
+              ],
+              "answer": "In the first or last sentence",
+              "explanation": "Topic and concluding sentences."
+            },
+            {
+              "id": "l4-main-ideas-check-2",
+              "type": "single_choice",
+              "prompt": "\"Overall, ...\" usually introduces:",
+              "options": [
+                "an example",
+                "a summary or main point",
+                "a question"
+              ],
+              "answer": "a summary or main point",
+              "explanation": "*Overall* signals a summary."
+            },
+            {
+              "id": "l4-main-ideas-check-3",
+              "type": "single_choice",
+              "prompt": "Which is a detail, not a main idea?",
+              "options": [
+                "Remote work has advantages and disadvantages.",
+                "One worker saved two hours a day.",
+                "Remote work is changing offices."
+              ],
+              "answer": "One worker saved two hours a day.",
+              "explanation": "A single example with a number is a detail."
+            },
+            {
+              "id": "l4-main-ideas-check-4",
+              "type": "single_choice",
+              "prompt": "A summary should include:",
+              "options": [
+                "every number in the text",
+                "the main ideas",
+                "only the first sentence"
+              ],
+              "answer": "the main ideas",
+              "explanation": "Summaries keep main ideas."
+            },
+            {
+              "id": "l4-main-ideas-check-5",
+              "type": "single_choice",
+              "prompt": "\"such as\" is followed by:",
+              "options": [
+                "examples",
+                "a contrast",
+                "a result"
+              ],
+              "answer": "examples",
+              "explanation": "*such as* lists examples."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-describing-data",
+      "title": "Describing data and trends",
+      "summary": "Talk about charts with accurate trend language.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Describing data and trends",
+          "body_md": "- **Up:** *rise, increase, grow, climb* → *a rise, an increase*\n- **Down:** *fall, drop, decrease, decline* → *a fall, a decline*\n- **No change:** *remain stable, stay the same, level off*\n- **How much:** *sharply, dramatically, significantly* (big); *slightly, gradually* (small)\n- **Highest / lowest:** *peak at, reach a low of*\n- **Comparing:** *twice as many as, the largest share, followed by*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Sales **rose sharply** from 20 to 95 thousand.*\n- *Visitor numbers **peaked** in July at 10,000.*\n- *Bus travel accounted for **the largest share** (40%).*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-describing-data-try-1",
+              "type": "single_choice",
+              "prompt": "Numbers went from 100 to 102. They rose ___.",
+              "options": [
+                "dramatically",
+                "slightly",
+                "sharply"
+              ],
+              "answer": "slightly",
+              "explanation": "A very small change: *slightly*.",
+              "hint": "A very small change: *slightly*."
+            },
+            {
+              "id": "l4-describing-data-try-2",
+              "type": "single_choice",
+              "prompt": "The opposite of *increase* is:",
+              "options": [
+                "decline",
+                "climb",
+                "peak"
+              ],
+              "answer": "decline",
+              "explanation": "*decline* = go down.",
+              "hint": "*decline* = go down."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-describing-data-check-1",
+              "type": "single_choice",
+              "prompt": "Sales were 50, 50, 50. They ___.",
+              "options": [
+                "fluctuated",
+                "remained stable",
+                "peaked"
+              ],
+              "answer": "remained stable",
+              "explanation": "No change: *remained stable*."
+            },
+            {
+              "id": "l4-describing-data-check-2",
+              "type": "single_choice",
+              "prompt": "The highest point is called the:",
+              "options": [
+                "peak",
+                "trough",
+                "share"
+              ],
+              "answer": "peak",
+              "explanation": "*peak*."
+            },
+            {
+              "id": "l4-describing-data-check-3",
+              "type": "single_choice",
+              "prompt": "Car use is 15% and bus use is 30%. Bus use is ___ car use.",
+              "options": [
+                "half of",
+                "twice as high as",
+                "the same as"
+              ],
+              "answer": "twice as high as",
+              "explanation": "30 is two times 15."
+            },
+            {
+              "id": "l4-describing-data-check-4",
+              "type": "single_choice",
+              "prompt": "\"There was a sharp ___ in prices.\"",
+              "options": [
+                "rise",
+                "rose",
+                "risen"
+              ],
+              "answer": "rise",
+              "explanation": "Noun after *a sharp*: *rise*."
+            },
+            {
+              "id": "l4-describing-data-check-5",
+              "type": "single_choice",
+              "prompt": "Which sentence describes a chart best?",
+              "options": [
+                "The chart is nice.",
+                "Coffee prices rose steadily from $2.10 to $3.40.",
+                "There are many numbers."
+              ],
+              "answer": "Coffee prices rose steadily from $2.10 to $3.40.",
+              "explanation": "Trend + numbers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l4-paragraph-structure",
+      "title": "Building a clear paragraph",
+      "summary": "Write paragraphs with a topic sentence, support and a link.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Building a clear paragraph",
+          "body_md": "A strong body paragraph in an essay has:\n\n1. A **topic sentence** with the main point.\n2. **Explanation**: why it is true.\n3. An **example** or evidence.\n4. A **closing or linking** sentence.\n\nKeep one main idea per paragraph."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*(Topic) Public transport reduces pollution. (Explain) One bus can replace dozens of cars. (Example) In one city, adding bus lanes cut traffic emissions by a fifth. (Link) Therefore, investment in buses benefits everyone.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l4-paragraph-structure-try-1",
+              "type": "single_choice",
+              "prompt": "A topic sentence:",
+              "options": [
+                "gives the main point of the paragraph",
+                "is always a question",
+                "lists every example"
+              ],
+              "answer": "gives the main point of the paragraph",
+              "explanation": "It states the main idea.",
+              "hint": "It states the main idea."
+            },
+            {
+              "id": "l4-paragraph-structure-try-2",
+              "type": "single_choice",
+              "prompt": "How many main ideas should a body paragraph have?",
+              "options": [
+                "One",
+                "Three",
+                "As many as possible"
+              ],
+              "answer": "One",
+              "explanation": "One clear idea per paragraph.",
+              "hint": "One clear idea per paragraph."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l4-paragraph-structure-check-1",
+              "type": "single_choice",
+              "prompt": "Which is the best topic sentence?",
+              "options": [
+                "For example, my uncle walks.",
+                "Walking to work has clear health benefits.",
+                "Then it was good."
+              ],
+              "answer": "Walking to work has clear health benefits.",
+              "explanation": "Clear main point."
+            },
+            {
+              "id": "l4-paragraph-structure-check-2",
+              "type": "single_choice",
+              "prompt": "\"For example, ...\" usually comes:",
+              "options": [
+                "after the explanation",
+                "as the first sentence",
+                "only in the conclusion"
+              ],
+              "answer": "after the explanation",
+              "explanation": "Examples support an explained point."
+            },
+            {
+              "id": "l4-paragraph-structure-check-3",
+              "type": "single_choice",
+              "prompt": "A linking sentence at the end:",
+              "options": [
+                "introduces a new unrelated topic",
+                "connects to the next idea or the question",
+                "repeats the example"
+              ],
+              "answer": "connects to the next idea or the question",
+              "explanation": "It connects ideas."
+            },
+            {
+              "id": "l4-paragraph-structure-check-4",
+              "type": "single_choice",
+              "prompt": "Which order is best?",
+              "options": [
+                "Example, topic, explanation",
+                "Topic, explanation, example",
+                "Explanation, link, topic"
+              ],
+              "answer": "Topic, explanation, example",
+              "explanation": "Topic → explanation → example."
+            },
+            {
+              "id": "l4-paragraph-structure-check-5",
+              "type": "single_choice",
+              "prompt": "Which word helps link to a result?",
+              "options": [
+                "Therefore",
+                "Although",
+                "For instance"
+              ],
+              "answer": "Therefore",
+              "explanation": "*Therefore* shows a result."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

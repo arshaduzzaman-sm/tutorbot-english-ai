@@ -3,18 +3,27 @@
 import uuid
 from datetime import UTC, date, datetime
 from enum import Enum
-from typing import Any
+from typing import Annotated, Any
 
 import strawberry
 from graphql.validation import NoSchemaIntrospectionCustomRule
 from sqlalchemy import func, select, text
 from strawberry.extensions import AddValidationRules, MaxAliasesLimiter, MaxTokensLimiter, QueryDepthLimiter
+from strawberry.scalars import JSON
 from strawberry.types import Info
 
 from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
+from app.graphql import coach as coach_gql
+from app.graphql import evaluations as evals
+from app.graphql import tracks
 from app.graphql.context import Context
+from app.services import coach as coach_stats
+from app.services.evaluate import EVALUATED
+from app.services.lessons import public_exercise
+from app.services.placement import public_item
+from app.services.practice import AUTO_MARKED, public_content
 from app.services.progress import AttemptSignal, skill_stats, study_streak, weak_categories
 
 CtxInfo = Info[Context, None]
@@ -63,6 +72,129 @@ class QuestionCategory:
         )
 
 
+@strawberry.type
+class QuestionOption:
+    label: str
+    body: str
+
+
+@strawberry.type
+class PracticeQuestion:
+    id: strawberry.ID
+    external_id: str
+    category_code: str
+    difficulty: str
+    instructions: str
+    learning_objective: str
+    content: JSON = strawberry.field(description="Task content without answers (text, blanks, passage, ...)")
+    category_id: strawberry.Private[uuid.UUID]
+
+    @strawberry.field
+    async def category(self, info: CtxInfo) -> QuestionCategory | None:
+        m = await info.context.category_loader.load(self.category_id)
+        return QuestionCategory.of(m) if m else None
+
+    @strawberry.field(description="Answer options in order, without which ones are correct")
+    async def options(self, info: CtxInfo) -> list[QuestionOption]:
+        rows = await info.context.execute(
+            text("select label, body from public.question_options where question_id = :id order by sort_order, label"),
+            {"id": uuid.UUID(str(self.id))},
+        )
+        return [QuestionOption(label=str(r.label), body=str(r.body)) for r in rows.all()]
+
+
+@strawberry.type
+class PracticeTypeStats:
+    category: QuestionCategory
+    question_count: int
+    auto_marked: bool = strawberry.field(description="True when answers are marked: automatically, or by AI feedback")
+    attempts: int = strawberry.field(description="The viewer's attempts at this task type")
+    average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
+
+
+QUESTION_COLUMNS = (
+    "q.id, q.external_id, c.code, q.difficulty::text, q.instructions, q.learning_objective, q.content, q.category_id"
+)
+
+
+def _question(row: Any) -> PracticeQuestion:
+    r: list[Any] = list(row)
+    return PracticeQuestion(
+        id=strawberry.ID(str(r[0])),
+        external_id=r[1],
+        category_code=r[2],
+        difficulty=r[3],
+        instructions=r[4],
+        learning_objective=r[5],
+        content=public_content(r[2], dict(r[6])),  # type: ignore[arg-type]
+        category_id=r[7],
+    )
+
+
+@strawberry.type
+class ReviewItem:
+    id: strawberry.ID
+    box: int = strawberry.field(description="0 = just missed; 5 = mastered")
+    due_at: datetime
+    wrong_count: int
+    last_score: float | None
+    mastered: bool
+    question: PracticeQuestion
+
+    @strawberry.field(description="True when the item is waiting for review now")
+    def is_due(self) -> bool:
+        return not self.mastered and self.due_at <= datetime.now(UTC)
+
+
+REVIEW_SQL = (
+    f"select {QUESTION_COLUMNS}, r.id, r.box, r.due_at, r.wrong_count, r.last_score, r.mastered_at "  # noqa: S608
+    "from public.review_items r join public.questions q on q.id = r.question_id "
+    "join public.question_categories c on c.id = q.category_id "
+    "where r.user_id = :u and q.status = 'published' and q.deleted_at is null "
+)
+
+
+def _review_item(row: Any) -> ReviewItem:
+    r: list[Any] = list(row)
+    return ReviewItem(
+        id=strawberry.ID(str(r[8])),
+        box=int(r[9]),
+        due_at=r[10],
+        wrong_count=int(r[11]),
+        last_score=float(r[12]) if r[12] is not None else None,
+        mastered=r[13] is not None,
+        question=_question(r[:8]),
+    )
+
+
+@strawberry.type
+class PlacementItem:
+    id: str
+    level: int
+    skill: str
+    prompt: str
+    passage: str | None
+    options: list[str]
+    has_audio: bool
+
+
+@strawberry.type
+class PlacementTest:
+    slug: str
+    title: str
+    estimated_minutes: int
+    items: list[PlacementItem]
+
+
+@strawberry.type
+class StudyPlan:
+    id: strawberry.ID
+    created_at: datetime
+    recommended_level_code: int
+    skill_scores: JSON
+    plan: JSON
+
+
 async def _level(info: CtxInfo, level_id: uuid.UUID | None) -> LearningLevel | None:
     if level_id is None:
         return None
@@ -85,6 +217,32 @@ class Profile:
 
 
 @strawberry.type
+class Exercise:
+    """A practice item as learners see it: never includes the answer or explanation."""
+
+    id: str
+    type: str
+    prompt: str
+    options: list[str]
+    hint: str | None
+
+
+@strawberry.type
+class LessonSection:
+    kind: str
+    title: str
+    body_md: str
+    exercises: list[Exercise]
+
+
+@strawberry.type
+class LessonProgress:
+    status: str
+    best_score: float | None
+    completed_at: datetime | None
+
+
+@strawberry.type
 class Lesson:
     id: strawberry.ID
     slug: str
@@ -92,10 +250,158 @@ class Lesson:
     summary: str
     estimated_minutes: int
     level_id: strawberry.Private[uuid.UUID]
+    unit_id: strawberry.Private[uuid.UUID | None] = None
 
     @strawberry.field
     async def level(self, info: CtxInfo) -> LearningLevel | None:
         return await _level(info, self.level_id)
+
+    @strawberry.field(description="Slug of the unit this lesson belongs to; null if none")
+    async def unit_slug(self, info: CtxInfo) -> str | None:
+        st = next((s for s in await info.context.unit_states() if s.id == self.unit_id), None)
+        return st.slug if st else None
+
+    @strawberry.field(description="True when the lesson's unit is still locked for the viewer")
+    async def locked(self, info: CtxInfo) -> bool:
+        st = next((s for s in await info.context.unit_states() if s.id == self.unit_id), None)
+        return bool(st and st.locked)
+
+    @strawberry.field(description="The viewer's progress on this lesson; null if not started")
+    async def progress(self, info: CtxInfo) -> LessonProgress | None:
+        row = await info.context.progress_loader.load(uuid.UUID(str(self.id)))
+        if row is None:
+            return None
+        return LessonProgress(
+            status=row["status"],
+            best_score=float(row["score_ratio"]) if row["score_ratio"] is not None else None,
+            completed_at=row["completed_at"],
+        )
+
+    @strawberry.field
+    async def sections(self, info: CtxInfo) -> list[LessonSection]:
+        rows = await info.context.execute(
+            text(
+                "select kind, title, body_md, exercises from public.lesson_sections "
+                "where lesson_id = :id order by sort_order"
+            ),
+            {"id": str(self.id)},
+        )
+        out = []
+        section_rows: list[Any] = list(rows.all())
+        for kind, title, body, exercises in section_rows:
+            items = [public_exercise(e) for e in (exercises or [])]
+            out.append(
+                LessonSection(
+                    kind=kind,
+                    title=title,
+                    body_md=body,
+                    exercises=[
+                        Exercise(
+                            id=e["id"],
+                            type=e["type"],
+                            prompt=e["prompt"],
+                            options=e.get("options", []),
+                            hint=e.get("hint"),
+                        )
+                        for e in items
+                    ],
+                )
+            )
+        return out
+
+
+LESSON_COLUMNS = "l.id, l.slug, l.title, l.summary, l.estimated_minutes, l.learning_level_id, l.unit_id"
+
+
+def _lesson(r: Any) -> Lesson:
+    return Lesson(
+        id=strawberry.ID(str(r[0])),
+        slug=r[1],
+        title=r[2],
+        summary=r[3],
+        estimated_minutes=r[4],
+        level_id=r[5],
+        unit_id=r[6],
+    )
+
+
+@strawberry.type
+class UnitProgress:
+    best_score: float
+    attempts: int
+    passed: bool
+
+
+@strawberry.type
+class Unit:
+    id: strawberry.ID
+    slug: str
+    title: str
+    summary: str
+    level_id: strawberry.Private[uuid.UUID]
+    db_id: strawberry.Private[uuid.UUID]
+    test_items_raw: strawberry.Private[list[dict[str, Any]]]
+
+    async def _state(self, info: CtxInfo) -> Any:
+        return next(s for s in await info.context.unit_states() if s.id == self.db_id)
+
+    @strawberry.field
+    async def level(self, info: CtxInfo) -> LearningLevel | None:
+        return await _level(info, self.level_id)
+
+    @strawberry.field(description="Locked until the unit before it is passed (or the learner placed higher)")
+    async def locked(self, info: CtxInfo) -> bool:
+        return bool((await self._state(info)).locked)
+
+    @strawberry.field
+    async def progress(self, info: CtxInfo) -> UnitProgress | None:
+        st = await self._state(info)
+        if not st.attempts:
+            return None
+        return UnitProgress(best_score=st.best_score or 0.0, attempts=st.attempts, passed=st.passed)
+
+    @strawberry.field
+    async def lessons(self, info: CtxInfo) -> list[Lesson]:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608
+                "where l.unit_id = :u and l.status = 'published' and l.deleted_at is null order by l.sort_order"
+            ),
+            {"u": self.db_id},
+        )
+        return [_lesson(r) for r in rows.all()]
+
+    @strawberry.field(description="End-of-unit test questions, without answers")
+    def test_items(self) -> list[Exercise]:
+        return [
+            Exercise(
+                id=str(e["id"]),
+                type=str(e["type"]),
+                prompt=str(e["prompt"]),
+                options=list(e.get("options", [])),
+                hint=None,
+            )
+            for e in self.test_items_raw
+        ]
+
+
+UNIT_SQL = (
+    "select u.id, u.slug, u.title, u.summary, u.learning_level_id, u.test_items from public.units u "
+    "join public.learning_levels lv on lv.id = u.learning_level_id "
+    "where u.status = 'published' and u.deleted_at is null "
+)
+
+
+def _unit(r: Any) -> Unit:
+    return Unit(
+        id=strawberry.ID(str(r[0])),
+        slug=r[1],
+        title=r[2],
+        summary=r[3],
+        level_id=r[4],
+        db_id=r[0],
+        test_items_raw=list(r[5] or []),
+    )
 
 
 @strawberry.type
@@ -152,6 +458,8 @@ class MockExam:
     status: str
     started_at: datetime
     completed_at: datetime | None
+    blueprint_code: str | None = None
+    overall_band: str | None = strawberry.field(default=None, description="Band from the report, once ready")
 
 
 async def _signals(info: CtxInfo) -> list[tuple[AttemptSignal, date]]:
@@ -304,10 +612,107 @@ class Viewer:
             for r in lesson_rows
         ]
 
+    @strawberry.field(description="Mistake notebook. dueOnly: only items due for spaced review now")
+    async def review_items(self, info: CtxInfo, due_only: bool = False, limit: int = 50) -> list[ReviewItem]:
+        where = "and r.mastered_at is null and r.due_at <= now() " if due_only else ""
+        rows = await info.context.execute(
+            text(REVIEW_SQL + where + "order by r.mastered_at nulls first, r.due_at limit :lim"),
+            {"u": self.id, "lim": max(1, min(limit, 100))},
+        )
+        return [_review_item(r) for r in rows.all()]
+
+    @strawberry.field(description="Mistakes due for spaced review now")
+    async def review_due_count(self, info: CtxInfo) -> int:
+        rows = await info.context.execute(
+            text(
+                "select count(*) from public.review_items "
+                "where user_id = :u and mastered_at is null and due_at <= now()"
+            ),
+            {"u": self.id},
+        )
+        return int(rows.scalar_one())
+
+    @strawberry.field(description="Vocabulary flashcards due for spaced review now")
+    async def vocabulary_due(self, info: CtxInfo, limit: int = 30) -> list[tracks.VocabularyWord]:
+        return await tracks.due_words(info, limit)
+
+    @strawberry.field(description="Number of vocabulary flashcards due now")
+    async def vocabulary_due_count(self, info: CtxInfo) -> int:
+        return await tracks.due_word_count(info)
+
+    @strawberry.field(description="The learner's latest study plan from the placement test; null if not taken")
+    async def study_plan(self, info: CtxInfo) -> StudyPlan | None:
+        rows = await info.context.execute(
+            text(
+                "select id, created_at, recommended_level_code, skill_scores, plan from public.study_plans "
+                "where user_id = :u order by created_at desc limit 1"
+            ),
+            {"u": self.id},
+        )
+        r = rows.mappings().first()
+        if r is None:
+            return None
+        return StudyPlan(
+            id=strawberry.ID(str(r["id"])),
+            created_at=r["created_at"],
+            recommended_level_code=int(r["recommended_level_code"]),
+            skill_scores=r["skill_scores"],
+            plan=r["plan"],
+        )
+
     @strawberry.field
     async def weak_areas(self, info: CtxInfo) -> list[WeakArea]:
         weak = weak_categories(s for s, _ in await _signals(info))
         return [WeakArea(category_id=uuid.UUID(cid), accuracy=acc, attempts=n) for cid, acc, n in weak]
+
+    @strawberry.field(description="The viewer's speaking and writing evaluations, newest first")
+    async def evaluations(
+        self, info: CtxInfo, category_code: str | None = None, limit: int = 20
+    ) -> list[evals.Evaluation]:
+        return await evals.evaluations(info, category_code, limit)
+
+    @strawberry.field(description="Personal guidance from the viewer's own attempts (practice estimate only)")
+    async def coach(self, info: CtxInfo) -> coach_gql.Coach:
+        return await coach_gql.coach(info, str(self.id))
+
+    @strawberry.field(
+        description="Progress analytics: summary, daily series, by question type, weekly skill trend (JSON)"
+    )
+    async def analytics(self, info: CtxInfo, days: int = 30) -> JSON:
+        return await coach_gql.analytics(info, str(self.id), days)  # type: ignore[no-any-return]
+
+    @strawberry.field(description="The viewer's tutor chat, oldest first")
+    async def tutor_messages(self, info: CtxInfo, limit: int = 40) -> list[coach_gql.TutorMessage]:
+        return await coach_gql.tutor_messages(info, str(self.id), limit)
+
+    @strawberry.field(description="True when the viewer has agreed to voice recordings")
+    async def recording_consent(self, info: CtxInfo) -> bool:
+        return await evals.recording_consent(info)
+
+    @strawberry.field(description="The viewer's attempts at one task type, newest first (personal history)")
+    async def type_history(self, info: CtxInfo, category_code: str, limit: int = 20) -> list[Attempt]:
+        rows = await info.context.execute(
+            text(
+                "select a.id, a.created_at, a.mode::text, a.is_correct, a.score_ratio, a.category_id "
+                "from public.attempts a join public.question_categories c on c.id = a.category_id "
+                "where a.user_id = :u and c.code = :code order by a.created_at desc limit :lim"
+            ),
+            {"u": info.context.user.id, "code": category_code, "lim": max(1, min(limit, 50))},
+        )
+        out: list[Attempt] = []
+        for row in rows.all():
+            r: list[Any] = list(row)
+            out.append(
+                Attempt(
+                    id=strawberry.ID(str(r[0])),
+                    created_at=r[1],
+                    mode=r[2],
+                    is_correct=r[3],
+                    score_ratio=float(r[4]) if r[4] is not None else None,
+                    category_id=r[5],
+                )
+            )
+        return out
 
     @strawberry.field
     async def mock_exams(self, info: CtxInfo, limit: int = 5) -> list[MockExam]:
@@ -331,9 +736,32 @@ class Viewer:
                 status=t.status,
                 started_at=t.started_at,
                 completed_at=t.completed_at,
+                blueprint_code=t.blueprint_code,
+                overall_band=(t.result_summary or {}).get("overall_band"),
             )
             for t in rows
         ]
+
+
+@strawberry.type
+class QuestionTypeGuide:
+    category: QuestionCategory
+    guide: JSON = strawberry.field(
+        description="what, tests, scoring (with source), strategy, examples, mistakes, rules"
+    )
+    question_count: int
+
+
+@strawberry.type
+class Blueprint:
+    code: str
+    name: str
+    kind: str
+    about: str
+    verified: bool = strawberry.field(description="False: item counts or clocks are our own choices (see STATUS.md)")
+    item_count: int
+    sections: list[str]
+    spec: JSON
 
 
 @strawberry.type
@@ -351,6 +779,231 @@ class Query:
             .all()
         )
         return [LearningLevel.of(r) for r in rows]
+
+    @strawberry.field(description="Published lessons, optionally for one level, in course order")
+    async def lessons(self, info: CtxInfo, level_code: int | None = None) -> list[Lesson]:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608 (constant column list)
+                "join public.learning_levels lv on lv.id = l.learning_level_id "
+                "where l.status = 'published' and l.deleted_at is null "
+                "and (cast(:code as int) is null or lv.code = :code) order by lv.code, l.sort_order"
+            ),
+            {"code": level_code},
+        )
+        return [_lesson(r) for r in rows.all()]
+
+    @strawberry.field
+    async def lesson(self, info: CtxInfo, slug: str) -> Lesson | None:
+        rows = await info.context.execute(
+            text(
+                f"select {LESSON_COLUMNS} from public.lessons l "  # noqa: S608
+                "where l.slug = :slug and l.status = 'published' and l.deleted_at is null"
+            ),
+            {"slug": slug},
+        )
+        r = rows.first()
+        return _lesson(r) if r else None
+
+    @strawberry.field(description="Task types of one section with question counts and the viewer's results")
+    async def practice_types(self, info: CtxInfo, section: str) -> list[PracticeTypeStats]:
+        if section not in ("speaking_writing", "reading", "listening"):
+            return []
+        cats = (
+            (
+                await info.context.execute(
+                    select(models.QuestionCategory)
+                    .where(models.QuestionCategory.section == section)
+                    .order_by(models.QuestionCategory.sort_order)
+                )
+            )
+            .scalars()
+            .all()
+        )
+        rows = await info.context.execute(
+            text(
+                "select c.id, (select count(*) from public.questions q where q.category_id = c.id "
+                "and q.status = 'published' and q.deleted_at is null), "
+                "count(a.id), avg(a.score_ratio) from public.question_categories c "
+                "left join public.attempts a on a.category_id = c.id and a.user_id = :u and a.question_id is not null "
+                "where c.section = cast(:s as public.pte_section) group by c.id"
+            ),
+            {"u": info.context.user.id, "s": section},
+        )
+        stats: dict[Any, list[Any]] = {r[0]: list(r) for r in rows.all()}
+        out = []
+        for c in cats:
+            r = stats.get(c.id)
+            out.append(
+                PracticeTypeStats(
+                    category=QuestionCategory.of(c),
+                    question_count=int(r[1]) if r else 0,
+                    auto_marked=c.code in AUTO_MARKED | EVALUATED,
+                    attempts=int(r[2]) if r else 0,
+                    average_score=float(r[3]) if r and r[3] is not None else None,
+                )
+            )
+        return out
+
+    @strawberry.field(description="Published questions of one task type, easiest first")
+    async def practice_questions(
+        self,
+        info: CtxInfo,
+        category_code: str,
+        limit: int = 50,
+        adaptive: Annotated[
+            bool, strawberry.argument(description="Put questions at the learner's current difficulty first")
+        ] = False,
+    ) -> list[PracticeQuestion]:
+        target = 0
+        if adaptive:
+            uid = info.context.user.id
+            level, _ = await coach_gql.learner_level(info, uid)
+            stats = coach_stats.category_stats(
+                r for r in await coach_gql.attempt_rows(info, uid) if r.category_code == category_code
+            )
+            target = coach_stats.DIFFICULTIES.index(coach_stats.target_difficulty(level, stats.get(category_code)))
+        rows = await info.context.execute(
+            text(
+                f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608 (constant column list)
+                "join public.question_categories c on c.id = q.category_id "
+                "where c.code = :code and q.status = 'published' and q.deleted_at is null "
+                "order by case when :adaptive then abs(array_position("
+                "array['beginner','intermediate','advanced'], q.difficulty::text) - 1 - :target) else 0 end, "
+                "q.difficulty, q.external_id limit :lim"
+            ),
+            {"code": category_code, "lim": max(1, min(limit, 100)), "adaptive": adaptive, "target": target},
+        )
+        return [_question(r) for r in rows.all()]
+
+    @strawberry.field
+    async def practice_question(self, info: CtxInfo, id: strawberry.ID) -> PracticeQuestion | None:
+        try:
+            qid = uuid.UUID(str(id))
+        except ValueError:
+            return None
+        rows = await info.context.execute(
+            text(
+                f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608
+                "join public.question_categories c on c.id = q.category_id "
+                "where q.id = :id and q.status = 'published' and q.deleted_at is null"
+            ),
+            {"id": qid},
+        )
+        r = rows.first()
+        return _question(r) if r else None
+
+    @strawberry.field(description="The current placement (diagnostic) test, without answers")
+    async def placement_test(self, info: CtxInfo) -> PlacementTest | None:
+        rows = await info.context.execute(
+            text(
+                "select slug, title, estimated_minutes, items from public.placement_tests "
+                "where status = 'published' order by version desc limit 1"
+            )
+        )
+        r = rows.mappings().first()
+        if r is None:
+            return None
+        items = [public_item(i) for i in r["items"]]
+        return PlacementTest(
+            slug=r["slug"],
+            title=r["title"],
+            estimated_minutes=int(r["estimated_minutes"]),
+            items=[
+                PlacementItem(
+                    id=i["id"],
+                    level=int(i["level"]),
+                    skill=i["skill"],
+                    prompt=i["prompt"],
+                    passage=i.get("passage"),
+                    options=list(i["options"]),
+                    has_audio=i["has_audio"],
+                )
+                for i in items
+            ],
+        )
+
+    @strawberry.field(description="Published units in course order, optionally for one level")
+    async def units(self, info: CtxInfo, level_code: int | None = None) -> list[Unit]:
+        rows = await info.context.execute(
+            text(UNIT_SQL + "and (cast(:code as int) is null or lv.code = :code) order by lv.code, u.sort_order"),
+            {"code": level_code},
+        )
+        return [_unit(r) for r in rows.all()]
+
+    @strawberry.field
+    async def unit(self, info: CtxInfo, slug: str) -> Unit | None:
+        r = (await info.context.execute(text(UNIT_SQL + "and u.slug = :slug"), {"slug": slug})).first()
+        return _unit(r) if r else None
+
+    @strawberry.field(description="Vocabulary sets in course order, optionally for one level")
+    async def vocabulary_sets(self, info: CtxInfo, level_code: int | None = None) -> list[tracks.VocabularySet]:
+        return await tracks.vocabulary_sets(info, level_code)
+
+    @strawberry.field
+    async def vocabulary_set(self, info: CtxInfo, slug: str) -> tracks.VocabularySet | None:
+        found = await tracks.vocabulary_sets(info, None, slug)
+        return found[0] if found else None
+
+    @strawberry.field(description="Pronunciation track: sounds, stress, linking and intonation")
+    async def pronunciation_topics(self, info: CtxInfo) -> list[tracks.PronunciationTopic]:
+        return await tracks.pronunciation_topics(info)
+
+    @strawberry.field
+    async def pronunciation_topic(self, info: CtxInfo, slug: str) -> tracks.PronunciationTopic | None:
+        found = await tracks.pronunciation_topics(info, slug)
+        return found[0] if found else None
+
+    @strawberry.field
+    async def question_type(self, info: CtxInfo, code: str) -> "QuestionTypeGuide | None":
+        """A Question-Type Academy page: our guide plus the published rules (timings) for that task."""
+        m = (
+            await info.context.execute(select(models.QuestionCategory).where(models.QuestionCategory.code == code))
+        ).scalar_one_or_none()
+        if m is None:
+            return None
+        guide = (
+            await info.context.execute(
+                text("select guide from public.question_categories where id = :id"), {"id": m.id}
+            )
+        ).scalar_one()
+        count = (
+            await info.context.execute(
+                text(
+                    "select count(*) from public.questions where category_id = :id and status = 'published' "
+                    "and deleted_at is null"
+                ),
+                {"id": m.id},
+            )
+        ).scalar_one()
+        return QuestionTypeGuide(category=QuestionCategory.of(m), guide=guide, question_count=int(count))
+
+    @strawberry.field(description="Mock exams and section tests learners can take")
+    async def blueprints(self, info: CtxInfo) -> list["Blueprint"]:
+        rows = await info.context.execute(
+            text(
+                "select code, name, kind, spec, verified from public.blueprints where status = 'published' "
+                "order by sort_order, code"
+            )
+        )
+        out = []
+        for r in rows.mappings():
+            spec = dict(r["spec"])
+            if not spec.get("listed", True):
+                continue
+            out.append(
+                Blueprint(
+                    code=r["code"],
+                    name=r["name"],
+                    kind=r["kind"],
+                    about=str(spec.get("about", "")),
+                    verified=bool(r["verified"]),
+                    item_count=sum(int(i["count"]) for s in spec["sections"] for i in s["items"]),
+                    sections=[str(sec["title"]) for sec in spec["sections"]],
+                    spec=spec,  # type: ignore[arg-type]
+                )
+            )
+        return out
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

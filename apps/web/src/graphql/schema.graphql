@@ -7,11 +7,80 @@ type Attempt {
   category: QuestionCategory
 }
 
+type Blueprint {
+  code: String!
+  name: String!
+  kind: String!
+  about: String!
+
+  """False: item counts or clocks are our own choices (see STATUS.md)"""
+  verified: Boolean!
+  itemCount: Int!
+  sections: [String!]!
+  spec: JSON!
+}
+
+"""Practice guidance from your own answers. Not an official PTE score."""
+type Coach {
+  """Ranked next steps: kind, reason, categoryCode, difficulty"""
+  recommendations: JSON!
+
+  """Bands per skill and an overall label (never a 10-90 score)"""
+  readiness: JSON!
+
+  """This week against last week"""
+  weekly: JSON!
+
+  """Today's blocks: lessons, practice, review"""
+  todayPlan: JSON!
+  level: Int!
+}
+
 """Date (isoformat)"""
 scalar Date
 
 """Date with time (isoformat)"""
 scalar DateTime
+
+type DrillItem {
+  id: String!
+
+  """listen_choose (play audio, pick the word) or choose"""
+  type: String!
+  prompt: String
+  options: [String!]!
+}
+
+type Evaluation {
+  id: ID!
+
+  """queued, running, done or failed"""
+  status: String!
+  taskType: String!
+  questionId: ID
+  recordingId: ID
+  mode: String!
+  responseText: String
+
+  """EvaluationResult (bands only, no scores) once done"""
+  result: JSON
+  provider: String
+  createdAt: DateTime!
+  finishedAt: DateTime
+}
+
+type Exercise {
+  id: String!
+  type: String!
+  prompt: String!
+  options: [String!]!
+  hint: String
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf).
+"""
+scalar JSON @specifiedBy(url: "https://ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf")
 
 type LearningLevel {
   id: ID!
@@ -29,6 +98,29 @@ type Lesson {
   summary: String!
   estimatedMinutes: Int!
   level: LearningLevel
+
+  """Slug of the unit this lesson belongs to; null if none"""
+  unitSlug: String
+
+  """True when the lesson's unit is still locked for the viewer"""
+  locked: Boolean!
+
+  """The viewer's progress on this lesson; null if not started"""
+  progress: LessonProgress
+  sections: [LessonSection!]!
+}
+
+type LessonProgress {
+  status: String!
+  bestScore: Float
+  completedAt: DateTime
+}
+
+type LessonSection {
+  kind: String!
+  title: String!
+  bodyMd: String!
+  exercises: [Exercise!]!
 }
 
 type MockExam {
@@ -37,6 +129,57 @@ type MockExam {
   status: String!
   startedAt: DateTime!
   completedAt: DateTime
+  blueprintCode: String
+
+  """Band from the report, once ready"""
+  overallBand: String
+}
+
+type PlacementItem {
+  id: String!
+  level: Int!
+  skill: String!
+  prompt: String!
+  passage: String
+  options: [String!]!
+  hasAudio: Boolean!
+}
+
+type PlacementTest {
+  slug: String!
+  title: String!
+  estimatedMinutes: Int!
+  items: [PlacementItem!]!
+}
+
+type PracticeQuestion {
+  id: ID!
+  externalId: String!
+  categoryCode: String!
+  difficulty: String!
+  instructions: String!
+  learningObjective: String!
+
+  """Task content without answers (text, blanks, passage, ...)"""
+  content: JSON!
+  category: QuestionCategory
+
+  """Answer options in order, without which ones are correct"""
+  options: [QuestionOption!]!
+}
+
+type PracticeTypeStats {
+  category: QuestionCategory!
+  questionCount: Int!
+
+  """True when answers are marked: automatically, or by AI feedback"""
+  autoMarked: Boolean!
+
+  """The viewer's attempts at this task type"""
+  attempts: Int!
+
+  """Mean practice score ratio 0-1; null if no attempts"""
+  averageScore: Float
 }
 
 type Profile {
@@ -55,9 +198,63 @@ type Progress {
   overallRatio: Float!
 }
 
+type PronunciationTopic {
+  slug: String!
+  kind: String!
+  title: String!
+  symbols: [String!]!
+  tip: String!
+  examples: [String!]!
+
+  """Drill items without answers"""
+  drill: [DrillItem!]!
+
+  """The viewer's best drill score 0-1; null if not tried"""
+  bestScore: Float
+  attempts: Int!
+}
+
 type Query {
   viewer: Viewer!
   learningLevels: [LearningLevel!]!
+
+  """Published lessons, optionally for one level, in course order"""
+  lessons(levelCode: Int = null): [Lesson!]!
+  lesson(slug: String!): Lesson
+
+  """
+  Task types of one section with question counts and the viewer's results
+  """
+  practiceTypes(section: String!): [PracticeTypeStats!]!
+
+  """Published questions of one task type, easiest first"""
+  practiceQuestions(
+    categoryCode: String!
+    limit: Int! = 50
+
+    """Put questions at the learner's current difficulty first"""
+    adaptive: Boolean! = false
+  ): [PracticeQuestion!]!
+  practiceQuestion(id: ID!): PracticeQuestion
+
+  """The current placement (diagnostic) test, without answers"""
+  placementTest: PlacementTest
+
+  """Published units in course order, optionally for one level"""
+  units(levelCode: Int = null): [Unit!]!
+  unit(slug: String!): Unit
+
+  """Vocabulary sets in course order, optionally for one level"""
+  vocabularySets(levelCode: Int = null): [VocabularySet!]!
+  vocabularySet(slug: String!): VocabularySet
+
+  """Pronunciation track: sounds, stress, linking and intonation"""
+  pronunciationTopics: [PronunciationTopic!]!
+  pronunciationTopic(slug: String!): PronunciationTopic
+  questionType(code: String!): QuestionTypeGuide
+
+  """Mock exams and section tests learners can take"""
+  blueprints: [Blueprint!]!
   questionCategories: [QuestionCategory!]!
 }
 
@@ -67,6 +264,36 @@ type QuestionCategory {
   name: String!
   section: String!
   skills: [Skill!]!
+}
+
+type QuestionOption {
+  label: String!
+  body: String!
+}
+
+type QuestionTypeGuide {
+  category: QuestionCategory!
+
+  """
+  what, tests, scoring (with source), strategy, examples, mistakes, rules
+  """
+  guide: JSON!
+  questionCount: Int!
+}
+
+type ReviewItem {
+  id: ID!
+
+  """0 = just missed; 5 = mastered"""
+  box: Int!
+  dueAt: DateTime!
+  wrongCount: Int!
+  lastScore: Float
+  mastered: Boolean!
+  question: PracticeQuestion!
+
+  """True when the item is waiting for review now"""
+  isDue: Boolean!
 }
 
 enum Skill {
@@ -82,6 +309,48 @@ type SkillProgress {
 
   """0..1 share of marks gained; null if no marked attempts"""
   accuracy: Float
+}
+
+type StudyPlan {
+  id: ID!
+  createdAt: DateTime!
+  recommendedLevelCode: Int!
+  skillScores: JSON!
+  plan: JSON!
+}
+
+type TutorMessage {
+  id: ID!
+
+  """user or assistant"""
+  role: String!
+  content: String!
+  provider: String
+  createdAt: DateTime!
+}
+
+type Unit {
+  id: ID!
+  slug: String!
+  title: String!
+  summary: String!
+  level: LearningLevel
+
+  """
+  Locked until the unit before it is passed (or the learner placed higher)
+  """
+  locked: Boolean!
+  progress: UnitProgress
+  lessons: [Lesson!]!
+
+  """End-of-unit test questions, without answers"""
+  testItems: [Exercise!]!
+}
+
+type UnitProgress {
+  bestScore: Float!
+  attempts: Int!
+  passed: Boolean!
 }
 
 type Viewer {
@@ -101,8 +370,79 @@ type Viewer {
 
   """Next published lessons at the learner's level that are not completed"""
   recommendedLessons(limit: Int! = 3): [Lesson!]!
+
+  """Mistake notebook. dueOnly: only items due for spaced review now"""
+  reviewItems(dueOnly: Boolean! = false, limit: Int! = 50): [ReviewItem!]!
+
+  """Mistakes due for spaced review now"""
+  reviewDueCount: Int!
+
+  """Vocabulary flashcards due for spaced review now"""
+  vocabularyDue(limit: Int! = 30): [VocabularyWord!]!
+
+  """Number of vocabulary flashcards due now"""
+  vocabularyDueCount: Int!
+
+  """
+  The learner's latest study plan from the placement test; null if not taken
+  """
+  studyPlan: StudyPlan
   weakAreas: [WeakArea!]!
+
+  """The viewer's speaking and writing evaluations, newest first"""
+  evaluations(categoryCode: String = null, limit: Int! = 20): [Evaluation!]!
+
+  """
+  Personal guidance from the viewer's own attempts (practice estimate only)
+  """
+  coach: Coach!
+
+  """
+  Progress analytics: summary, daily series, by question type, weekly skill trend (JSON)
+  """
+  analytics(days: Int! = 30): JSON!
+
+  """The viewer's tutor chat, oldest first"""
+  tutorMessages(limit: Int! = 40): [TutorMessage!]!
+
+  """True when the viewer has agreed to voice recordings"""
+  recordingConsent: Boolean!
+
+  """
+  The viewer's attempts at one task type, newest first (personal history)
+  """
+  typeHistory(categoryCode: String!, limit: Int! = 20): [Attempt!]!
   mockExams(limit: Int! = 5): [MockExam!]!
+}
+
+type VocabularySet {
+  slug: String!
+  title: String!
+  levelCode: Int!
+  wordCount: Int!
+
+  """Words the viewer has practised at least once"""
+  seenCount: Int!
+  masteredCount: Int!
+
+  """Words in order with the viewer's flashcard state"""
+  words: [VocabularyWord!]!
+}
+
+type VocabularyWord {
+  id: ID!
+  word: String!
+  partOfSpeech: String!
+  meaning: String!
+  example: String!
+
+  """Stable id; audio file name is vocab-<externalId>.wav"""
+  externalId: String!
+
+  """Flashcard box 0-5 for the viewer; null if never practised"""
+  box: Int
+  dueAt: DateTime
+  mastered: Boolean!
 }
 
 type WeakArea {

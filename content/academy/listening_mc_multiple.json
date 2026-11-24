@@ -1,0 +1,36 @@
+{
+  "code": "listening_mc_multiple",
+  "what": "You listen to a recording once and choose more than one correct answer.",
+  "tests": "Listening: details, main ideas and the speaker's purpose.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson's page names no separate traits for this task.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the question and options before the recording starts.",
+    "Note key words while you listen.",
+    "Choose only options you clearly heard. In our practice marking, each wrong choice cancels a right one."
+  ],
+  "example_prompt": "Which TWO problems does the speaker mention about city traffic?",
+  "examples": {
+    "strong": {
+      "answer": "Chooses the two problems the speaker states.",
+      "why": "Both are heard in the recording; no extras."
+    },
+    "medium": {
+      "answer": "Chooses one heard problem and one that is only implied.",
+      "why": "Only clear points count."
+    },
+    "weak": {
+      "answer": "Chooses three options.",
+      "why": "Extra wrong choices cancel right ones in our practice marking."
+    }
+  },
+  "mistakes": [
+    "Choosing too many options.",
+    "Choosing an option because one word was heard."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

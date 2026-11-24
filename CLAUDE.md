@@ -42,7 +42,8 @@ supabase/       migrations/, seed.sql (generated), templates/ (auth emails), con
 content/        levels, question_categories, lessons/, questions/, blueprints/
 tests/e2e/      Playwright specs (app must be running)
 scripts/        setup, write-env, build_seed, download-models, detect-hardware
-docs/           SPEC, CODEMAP, DECISIONS, ARCHITECTURE, API, AI_MODELS, CONTENT_GUIDE, PRIVACY, LEGAL_NOTES, HISTORY
+docs/           SPEC, CODEMAP, DECISIONS, ARCHITECTURE, API, AI_MODELS, CONTENT_GUIDE, PRIVACY, LEGAL_NOTES, HISTORY,
+                SECURITY_REVIEW, LICENCE_AUDIT, releases/
 ```
 
 ## Commands
@@ -54,6 +55,7 @@ make test-e2e      # Playwright; needs app running (make start or make dev)
 make lint typecheck
 make codegen       # after changing GraphQL schema or REST routes: regenerates frontend types (CI checks this)
 make seed          # after editing content/
+make backup / restore DIR=...   make admin EMAIL=...   python3 scripts/secret_scan.py
 supabase migration new <name>   # new schema change, then: supabase db reset (local data is wiped)
 ```
 

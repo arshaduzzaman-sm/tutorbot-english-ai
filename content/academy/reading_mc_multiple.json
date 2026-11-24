@@ -1,0 +1,37 @@
+{
+  "code": "reading_mc_multiple",
+  "what": "You read a text and answer a question by choosing more than one correct option.",
+  "tests": "Reading: understanding details, main ideas and the writer's purpose.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson's page names no separate traits for this task.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/reading/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the question first so you know what to look for.",
+    "Check each option against the text. Choose only options the text clearly supports.",
+    "Do not guess. In our practice marking, each wrong choice cancels a right one."
+  ],
+  "example_prompt": "Which TWO are reasons the text gives for the library's new opening hours?",
+  "examples": {
+    "strong": {
+      "answer": "Chooses the two options stated in the text.",
+      "why": "Both choices are supported and nothing extra is chosen."
+    },
+    "medium": {
+      "answer": "Chooses one correct option and one that sounds true but is not in the text.",
+      "why": "One right, one wrong: in our practice marking they cancel out."
+    },
+    "weak": {
+      "answer": "Chooses four options to be safe.",
+      "why": "Extra wrong choices cancel right ones in our practice marking."
+    }
+  },
+  "mistakes": [
+    "Choosing options that are true in real life but not in the text.",
+    "Choosing every option.",
+    "Missing words like 'not', 'only' or 'all'."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

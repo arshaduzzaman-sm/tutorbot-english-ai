@@ -110,10 +110,20 @@ def test_evaluation_result_shape_has_no_score_by_default() -> None:
         EvaluationResult(task_type="x", criteria=[{"name": "c", "band": "85"}], confidence=0.5, provider="mock")
 
 
-def test_local_provider_fails_loudly(monkeypatch: pytest.MonkeyPatch) -> None:
+async def test_local_provider_fails_loudly(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Local providers that are not running or installed raise a clear error; they never fake a result."""
+    from app.core.config import get_settings
+
     monkeypatch.setattr(registry, "_choice", lambda cap: "local")
+    monkeypatch.setattr(get_settings(), "ollama_url", "http://127.0.0.1:9")
+    monkeypatch.setattr(get_settings(), "languagetool_url", "http://127.0.0.1:9")
+    assert registry.llm().name == "local"
     with pytest.raises(LocalProviderNotInstalled):
-        registry.llm()
+        await registry.llm().complete("hi")
+    with pytest.raises(LocalProviderNotInstalled):
+        await registry.grammar().check("hi")
+    with pytest.raises(LocalProviderNotInstalled):
+        await registry.text_to_speech().synthesize("hi")
 
 
 async def test_graphql_depth_alias_and_introspection_limits() -> None:

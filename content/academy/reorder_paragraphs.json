@@ -1,0 +1,38 @@
+{
+  "code": "reorder_paragraphs",
+  "what": "Several text boxes are in the wrong order. You put them in the right order.",
+  "tests": "Reading: understanding how a text is organised and how sentences connect.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says the response is judged on your ability to understand the organization and cohesion of an academic text.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/reading/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Find the first sentence: it introduces the topic and does not depend on anything before it.",
+    "Look for links: 'this', 'these', 'however', 'as a result', names that are introduced and then repeated.",
+    "Build pairs of sentences that must go together.",
+    "Read the final order from start to end to check it makes sense."
+  ],
+  "example_prompt": "A. As a result, many farmers changed crops. B. Rainfall in the region fell sharply in the 1990s. C. These new crops needed much less water.",
+  "examples": {
+    "strong": {
+      "answer": "B, A, C",
+      "why": "B starts the topic, A gives the result, and 'These new crops' in C refers back to A."
+    },
+    "medium": {
+      "answer": "B, C, A",
+      "why": "Starts correctly, but C before A breaks the link 'These new crops'."
+    },
+    "weak": {
+      "answer": "A, B, C",
+      "why": "'As a result' cannot start a text."
+    }
+  },
+  "mistakes": [
+    "Starting with a sentence that begins with 'This' or 'However'.",
+    "Ignoring pronouns that point back.",
+    "Not checking the full order at the end."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

@@ -1,0 +1,44 @@
+{
+  "code": "summarize_written_text",
+  "what": "You read a passage and write a one-sentence summary of it.",
+  "tests": "Reading and writing: finding the main ideas and joining them in one correct sentence.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Form",
+      "Grammar",
+      "Vocabulary"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read once for the topic. Read again and pick the main idea of each paragraph.",
+    "Join the ideas with linking words: and, but, while, because, although, which.",
+    "Write one sentence only, between 5 and 75 words, ending with one full stop.",
+    "Use your own words where you can, and check grammar and spelling."
+  ],
+  "example_prompt": "A passage about shared electric bikes: popular and cheap for short trips, but bikes are often left blocking paths, so some cities now use parking zones.",
+  "examples": {
+    "strong": {
+      "answer": "Shared electric bikes have become popular because they are cheap and convenient for short trips, but problems with bikes blocking paths have led some cities to introduce parking zones.",
+      "why": "One sentence, within the word limit, covering the benefit, the problem and the response."
+    },
+    "medium": {
+      "answer": "Electric bikes are popular and cheap, some cities have parking zones.",
+      "why": "One line, but it misses the problem and joins ideas with a comma only."
+    },
+    "weak": {
+      "answer": "Electric bikes are good. They are cheap. Cities have rules.",
+      "why": "Three sentences, so the form is wrong, and the main ideas are not linked."
+    }
+  },
+  "mistakes": [
+    "Writing more than one sentence.",
+    "Copying one sentence from the passage.",
+    "Using only commas to join ideas.",
+    "Going over 75 words."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

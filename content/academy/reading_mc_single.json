@@ -1,0 +1,36 @@
+{
+  "code": "reading_mc_single",
+  "what": "You read a text and choose the one correct answer to a question.",
+  "tests": "Reading: main idea, details, inference and the writer's purpose.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says it is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/reading/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the question first, then the text.",
+    "Remove options that are not supported by the text.",
+    "Be careful with options that use words from the text but change the meaning."
+  ],
+  "example_prompt": "What is the main purpose of the text? (to compare / to warn / to describe a process / to advertise)",
+  "examples": {
+    "strong": {
+      "answer": "Picks the option that matches the whole text.",
+      "why": "Main purpose is about the whole text, not one sentence."
+    },
+    "medium": {
+      "answer": "Picks an option that matches only the first paragraph.",
+      "why": "Partly true but not the main purpose."
+    },
+    "weak": {
+      "answer": "Picks the option that repeats the most words from the text.",
+      "why": "Same words do not mean same meaning."
+    }
+  },
+  "mistakes": [
+    "Choosing by matching words, not meaning.",
+    "Using your own knowledge instead of the text."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

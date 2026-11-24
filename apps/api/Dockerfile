@@ -4,7 +4,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 UV_COMPILE_BYTECODE=1 UV_LINK_M
 RUN pip install --no-cache-dir uv==0.8.22
 WORKDIR /app
 COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen --no-dev --no-install-project
+# INSTALL_AI=1 adds the optional local AI packages (faster-whisper, sentence-transformers; several GB)
+ARG INSTALL_AI=0
+RUN if [ "$INSTALL_AI" = "1" ]; then uv sync --frozen --no-dev --group ai --no-install-project; \
+    else uv sync --frozen --no-dev --no-install-project; fi
 COPY app ./app
 RUN useradd --create-home --uid 10001 appuser
 USER appuser

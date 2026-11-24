@@ -1,0 +1,1679 @@
+{
+  "level_code": 5,
+  "_licence": "CC BY-SA 4.0, original TutorBot content",
+  "units": [
+    {
+      "slug": "l5-u1-advanced-grammar",
+      "title": "Unit 1: Advanced grammar",
+      "summary": "Inversion, cleft sentences, participle clauses and mixed conditionals.",
+      "lessons": [
+        "l5-inversion",
+        "l5-cleft-sentences",
+        "l5-participle-clauses",
+        "l5-mixed-conditionals"
+      ],
+      "test": [
+        {
+          "id": "u51-t1",
+          "type": "single_choice",
+          "prompt": "Never ___ such a strong result.",
+          "options": [
+            "we have seen",
+            "have we seen",
+            "we saw"
+          ],
+          "answer": "have we seen",
+          "explanation": "Inversion."
+        },
+        {
+          "id": "u51-t2",
+          "type": "single_choice",
+          "prompt": "What I want ___ a quiet room.",
+          "options": [
+            "is",
+            "are",
+            "it is"
+          ],
+          "answer": "is",
+          "explanation": "*What I want is*."
+        },
+        {
+          "id": "u51-t3",
+          "type": "single_choice",
+          "prompt": "___ in 1900, the station is now a museum.",
+          "options": [
+            "Building",
+            "Built",
+            "Having build"
+          ],
+          "answer": "Built",
+          "explanation": "Passive participle."
+        },
+        {
+          "id": "u51-t4",
+          "type": "single_choice",
+          "prompt": "If I had saved more, I ___ a car now.",
+          "options": [
+            "would have",
+            "would have had",
+            "will have"
+          ],
+          "answer": "would have",
+          "explanation": "Mixed: present result."
+        },
+        {
+          "id": "u51-t5",
+          "type": "single_choice",
+          "prompt": "It was the cost ___ stopped the project.",
+          "options": [
+            "that",
+            "what",
+            "who"
+          ],
+          "answer": "that",
+          "explanation": "*It was ... that*."
+        },
+        {
+          "id": "u51-t6",
+          "type": "single_choice",
+          "prompt": "Not only ___ late, but he also forgot the file.",
+          "options": [
+            "he was",
+            "was he",
+            "he is"
+          ],
+          "answer": "was he",
+          "explanation": "*Not only was he*."
+        }
+      ]
+    },
+    {
+      "slug": "l5-u2-precise-writing",
+      "title": "Unit 2: Precise academic writing",
+      "summary": "Nominalisation, cohesion, register and concise wording.",
+      "lessons": [
+        "l5-nominalisation",
+        "l5-cohesion-reference",
+        "l5-register",
+        "l5-concise-writing"
+      ],
+      "test": [
+        {
+          "id": "u52-t1",
+          "type": "single_choice",
+          "prompt": "Noun of *expand*:",
+          "options": [
+            "expansion",
+            "expanding",
+            "expandment"
+          ],
+          "answer": "expansion",
+          "explanation": "*expansion*."
+        },
+        {
+          "id": "u52-t2",
+          "type": "single_choice",
+          "prompt": "Cars and bikes: ___ need fuel (cars).",
+          "options": [
+            "the former",
+            "the latter",
+            "these"
+          ],
+          "answer": "the former",
+          "explanation": "*the former*."
+        },
+        {
+          "id": "u52-t3",
+          "type": "single_choice",
+          "prompt": "Formal word for *find out*:",
+          "options": [
+            "discover",
+            "dig up",
+            "figure"
+          ],
+          "answer": "discover",
+          "explanation": "*discover*."
+        },
+        {
+          "id": "u52-t4",
+          "type": "single_choice",
+          "prompt": "Concise for *in spite of the fact that*:",
+          "options": [
+            "although",
+            "spite",
+            "in fact"
+          ],
+          "answer": "although",
+          "explanation": "*although*."
+        },
+        {
+          "id": "u52-t5",
+          "type": "single_choice",
+          "prompt": "Prices fell. ___ fall helped buyers.",
+          "options": [
+            "This",
+            "These",
+            "Those ones"
+          ],
+          "answer": "This",
+          "explanation": "*This fall*."
+        },
+        {
+          "id": "u52-t6",
+          "type": "single_choice",
+          "prompt": "In an essay, avoid:",
+          "options": [
+            "contractions and slang",
+            "linking words",
+            "paragraphs"
+          ],
+          "answer": "contractions and slang",
+          "explanation": "Formal register."
+        }
+      ]
+    },
+    {
+      "slug": "l5-u3-advanced-comprehension",
+      "title": "Unit 3: Advanced reading and listening",
+      "summary": "Inference, purpose and tone, signposting, and fact versus opinion.",
+      "lessons": [
+        "l5-inference",
+        "l5-purpose-tone",
+        "l5-signposting",
+        "l5-fact-opinion"
+      ],
+      "test": [
+        {
+          "id": "u53-t1",
+          "type": "single_choice",
+          "prompt": "\"Every seat was taken.\" Inference:",
+          "options": [
+            "The event was busy.",
+            "The event was cancelled.",
+            "Seats were broken."
+          ],
+          "answer": "The event was busy.",
+          "explanation": "Supported inference."
+        },
+        {
+          "id": "u53-t2",
+          "type": "single_choice",
+          "prompt": "\"We must act now.\" Purpose:",
+          "options": [
+            "to persuade",
+            "to describe a process",
+            "to compare"
+          ],
+          "answer": "to persuade",
+          "explanation": "Persuasive."
+        },
+        {
+          "id": "u53-t3",
+          "type": "single_choice",
+          "prompt": "\"In conclusion, ...\" signals:",
+          "options": [
+            "the end",
+            "an example",
+            "a new topic"
+          ],
+          "answer": "the end",
+          "explanation": "Conclusion."
+        },
+        {
+          "id": "u53-t4",
+          "type": "single_choice",
+          "prompt": "Which is an opinion?",
+          "options": [
+            "The film is too long.",
+            "The film lasts 3 hours.",
+            "The film came out in 2020."
+          ],
+          "answer": "The film is too long.",
+          "explanation": "Judgement."
+        },
+        {
+          "id": "u53-t5",
+          "type": "single_choice",
+          "prompt": "\"Results might show a link.\" Tone:",
+          "options": [
+            "cautious",
+            "angry",
+            "excited"
+          ],
+          "answer": "cautious",
+          "explanation": "Hedged."
+        },
+        {
+          "id": "u53-t6",
+          "type": "single_choice",
+          "prompt": "\"Take Rome, for instance.\" introduces:",
+          "options": [
+            "an example",
+            "a contrast",
+            "the conclusion"
+          ],
+          "answer": "an example",
+          "explanation": "Example."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "l5-inversion",
+      "title": "Inversion for emphasis",
+      "summary": "Use formal inverted structures after negative adverbs.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Inversion for emphasis",
+          "body_md": "After some negative or limiting adverbs at the start of a sentence, use question word order:\n\n- *Never **have I** seen such a result.*\n- *Rarely **do** students finish early.*\n- *Not only **did** prices rise, but wages also fell.*\n- *Only after the test **did we** realise the mistake.*\n- *No sooner **had** we arrived than it started to rain.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***Seldom has** a policy been so popular.*\n- ***Under no circumstances should** you share your password.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-inversion-try-1",
+              "type": "single_choice",
+              "prompt": "Never ___ such a beautiful view.",
+              "options": [
+                "I have seen",
+                "have I seen",
+                "I saw"
+              ],
+              "answer": "have I seen",
+              "explanation": "Inversion: *have I seen*.",
+              "hint": "Inversion: *have I seen*."
+            },
+            {
+              "id": "l5-inversion-try-2",
+              "type": "single_choice",
+              "prompt": "Not only ___ the exam, but she also won a prize.",
+              "options": [
+                "she passed",
+                "did she pass",
+                "passed she"
+              ],
+              "answer": "did she pass",
+              "explanation": "*Not only did she pass*.",
+              "hint": "*Not only did she pass*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-inversion-check-1",
+              "type": "single_choice",
+              "prompt": "Rarely ___ late.",
+              "options": [
+                "he is",
+                "is he",
+                "he was being"
+              ],
+              "answer": "is he",
+              "explanation": "*Rarely is he late*."
+            },
+            {
+              "id": "l5-inversion-check-2",
+              "type": "single_choice",
+              "prompt": "No sooner ___ home than the phone rang.",
+              "options": [
+                "had I got",
+                "I had got",
+                "I got"
+              ],
+              "answer": "had I got",
+              "explanation": "*No sooner had I got ... than*."
+            },
+            {
+              "id": "l5-inversion-check-3",
+              "type": "single_choice",
+              "prompt": "Only later ___ the truth.",
+              "options": [
+                "we learned",
+                "did we learn",
+                "learned we"
+              ],
+              "answer": "did we learn",
+              "explanation": "*Only later did we learn*."
+            },
+            {
+              "id": "l5-inversion-check-4",
+              "type": "single_choice",
+              "prompt": "Under no circumstances ___ open this door.",
+              "options": [
+                "you should",
+                "should you",
+                "you must"
+              ],
+              "answer": "should you",
+              "explanation": "*should you*: inversion."
+            },
+            {
+              "id": "l5-inversion-check-5",
+              "type": "single_choice",
+              "prompt": "Which sentence is correct?",
+              "options": [
+                "Seldom we see such talent.",
+                "Seldom do we see such talent.",
+                "Seldom see we such talent."
+              ],
+              "answer": "Seldom do we see such talent.",
+              "explanation": "*Seldom do we see*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-cleft-sentences",
+      "title": "Cleft sentences",
+      "summary": "Focus attention on one part of a sentence.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Cleft sentences",
+          "body_md": "**Cleft sentences** split a sentence to emphasise one part:\n\n- ***It was** the cost **that** worried people.* (not the design)\n- ***What** surprised me **was** the speed.*\n- ***The reason why** they left **was** the noise.*\n- ***All** we need **is** more time.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *It is the students **who** benefit most.*\n- *What the data shows is a clear rise in demand.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-cleft-sentences-try-1",
+              "type": "single_choice",
+              "prompt": "___ was the noise that kept me awake.",
+              "options": [
+                "It",
+                "What",
+                "This"
+              ],
+              "answer": "It",
+              "explanation": "*It was ... that*.",
+              "hint": "*It was ... that*."
+            },
+            {
+              "id": "l5-cleft-sentences-try-2",
+              "type": "single_choice",
+              "prompt": "What I need ___ a holiday.",
+              "options": [
+                "is",
+                "are",
+                "it is"
+              ],
+              "answer": "is",
+              "explanation": "*What I need is ...*.",
+              "hint": "*What I need is ...*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-cleft-sentences-check-1",
+              "type": "single_choice",
+              "prompt": "It was in 2010 ___ the company was founded.",
+              "options": [
+                "that",
+                "what",
+                "which was"
+              ],
+              "answer": "that",
+              "explanation": "*It was ... that*."
+            },
+            {
+              "id": "l5-cleft-sentences-check-2",
+              "type": "single_choice",
+              "prompt": "___ surprised everyone was the result.",
+              "options": [
+                "It",
+                "What",
+                "That"
+              ],
+              "answer": "What",
+              "explanation": "*What surprised everyone was ...*."
+            },
+            {
+              "id": "l5-cleft-sentences-check-3",
+              "type": "single_choice",
+              "prompt": "The reason ___ he resigned was stress.",
+              "options": [
+                "why",
+                "because",
+                "what"
+              ],
+              "answer": "why",
+              "explanation": "*The reason why ...*."
+            },
+            {
+              "id": "l5-cleft-sentences-check-4",
+              "type": "single_choice",
+              "prompt": "Which sentence emphasises *the price*?",
+              "options": [
+                "People complained about the price.",
+                "It was the price that people complained about.",
+                "People complained."
+              ],
+              "answer": "It was the price that people complained about.",
+              "explanation": "Cleft with *It was ... that*."
+            },
+            {
+              "id": "l5-cleft-sentences-check-5",
+              "type": "single_choice",
+              "prompt": "All we can do ___ wait.",
+              "options": [
+                "is",
+                "it is",
+                "are"
+              ],
+              "answer": "is",
+              "explanation": "*All we can do is wait*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-participle-clauses",
+      "title": "Participle clauses",
+      "summary": "Write shorter, more formal sentences.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Participle clauses",
+          "body_md": "Participle clauses replace a full clause when the subject is the same:\n\n- **Present participle (-ing)** for active or simultaneous actions: ***Walking** home, I saw an accident.*\n- **Past participle** for passive meaning: ***Built** in 1900, the hall needs repairs.*\n- **Having + past participle** for an earlier action: ***Having finished** the report, she left.*\n\nThe subject must be the same in both parts, or the sentence becomes confusing."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***Funded** by the council, the project began in May.*\n- ***Having analysed** the data, the team published the results.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-participle-clauses-try-1",
+              "type": "single_choice",
+              "prompt": "___ by a famous architect, the museum attracts visitors.",
+              "options": [
+                "Designing",
+                "Designed",
+                "Having designing"
+              ],
+              "answer": "Designed",
+              "explanation": "Passive meaning: *Designed*.",
+              "hint": "Passive meaning: *Designed*."
+            },
+            {
+              "id": "l5-participle-clauses-try-2",
+              "type": "single_choice",
+              "prompt": "___ the email, he closed his laptop.",
+              "options": [
+                "Having sent",
+                "Sent",
+                "Having send"
+              ],
+              "answer": "Having sent",
+              "explanation": "Earlier action: *Having sent*.",
+              "hint": "Earlier action: *Having sent*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-participle-clauses-check-1",
+              "type": "single_choice",
+              "prompt": "___ in the park, we met an old friend.",
+              "options": [
+                "Walked",
+                "Walking",
+                "Having walk"
+              ],
+              "answer": "Walking",
+              "explanation": "Active, same time: *Walking*."
+            },
+            {
+              "id": "l5-participle-clauses-check-2",
+              "type": "single_choice",
+              "prompt": "Which sentence is correct?",
+              "options": [
+                "Running for the bus, my bag fell.",
+                "Running for the bus, I dropped my bag.",
+                "Ran for the bus, I dropped my bag."
+              ],
+              "answer": "Running for the bus, I dropped my bag.",
+              "explanation": "The subject *I* is the runner."
+            },
+            {
+              "id": "l5-participle-clauses-check-3",
+              "type": "single_choice",
+              "prompt": "___ in 1850, the bridge is still in use.",
+              "options": [
+                "Opening",
+                "Opened",
+                "Having opening"
+              ],
+              "answer": "Opened",
+              "explanation": "Passive: *Opened*."
+            },
+            {
+              "id": "l5-participle-clauses-check-4",
+              "type": "single_choice",
+              "prompt": "___ all the evidence, the judge made a decision.",
+              "options": [
+                "Having considered",
+                "Considered",
+                "Consider"
+              ],
+              "answer": "Having considered",
+              "explanation": "Earlier action: *Having considered*."
+            },
+            {
+              "id": "l5-participle-clauses-check-5",
+              "type": "single_choice",
+              "prompt": "Students ___ late will not be allowed in.",
+              "options": [
+                "arriving",
+                "arrived",
+                "having arrive"
+              ],
+              "answer": "arriving",
+              "explanation": "= *students who arrive*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-mixed-conditionals",
+      "title": "Mixed conditionals",
+      "summary": "Link a past condition to a present result, and the reverse.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Mixed conditionals",
+          "body_md": "- **Past condition → present result:** *If* + past perfect, *would* + verb. *If I **had studied** medicine, I **would be** a doctor now.*\n- **Present condition → past result:** *If* + past simple, *would have* + past participle. *If she **were** more careful, she **wouldn't have made** that mistake.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *If they **had invested** earlier, they **would be** richer today.*\n- *If I **didn't** trust him, I **wouldn't have lent** him money.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-mixed-conditionals-try-1",
+              "type": "single_choice",
+              "prompt": "If I had taken the job, I ___ in London now.",
+              "options": [
+                "would live",
+                "would have lived",
+                "will live"
+              ],
+              "answer": "would live",
+              "explanation": "Past condition, present result.",
+              "hint": "Past condition, present result."
+            },
+            {
+              "id": "l5-mixed-conditionals-try-2",
+              "type": "single_choice",
+              "prompt": "If he ___ so shy, he would have spoken at the meeting.",
+              "options": [
+                "weren't",
+                "hadn't",
+                "isn't"
+              ],
+              "answer": "weren't",
+              "explanation": "Present condition (general), past result.",
+              "hint": "Present condition (general), past result."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-mixed-conditionals-check-1",
+              "type": "single_choice",
+              "prompt": "If we had booked earlier, we ___ here now.",
+              "options": [
+                "would sit",
+                "would be sitting",
+                "will sit"
+              ],
+              "answer": "would be sitting",
+              "explanation": "Present result in progress."
+            },
+            {
+              "id": "l5-mixed-conditionals-check-2",
+              "type": "single_choice",
+              "prompt": "Which is a mixed conditional?",
+              "options": [
+                "If it rains, I'll stay.",
+                "If I had saved money, I would be travelling now.",
+                "If I had time, I would go."
+              ],
+              "answer": "If I had saved money, I would be travelling now.",
+              "explanation": "Past condition + present result."
+            },
+            {
+              "id": "l5-mixed-conditionals-check-3",
+              "type": "single_choice",
+              "prompt": "If she spoke French, she ___ the job last year.",
+              "options": [
+                "would get",
+                "would have got",
+                "gets"
+              ],
+              "answer": "would have got",
+              "explanation": "Present condition, past result."
+            },
+            {
+              "id": "l5-mixed-conditionals-check-4",
+              "type": "single_choice",
+              "prompt": "If I hadn't missed the train, I ___ at work now.",
+              "options": [
+                "would be",
+                "would have been",
+                "am"
+              ],
+              "answer": "would be",
+              "explanation": "Present result: *would be*."
+            },
+            {
+              "id": "l5-mixed-conditionals-check-5",
+              "type": "single_choice",
+              "prompt": "If they ___ the warnings, the town wouldn't be flooded now.",
+              "options": [
+                "followed",
+                "had followed",
+                "follow"
+              ],
+              "answer": "had followed",
+              "explanation": "Past condition: past perfect."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-nominalisation",
+      "title": "Nominalisation",
+      "summary": "Turn verbs and adjectives into nouns for a formal style.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Nominalisation",
+          "body_md": "Academic writing often uses **nouns** instead of verbs: this is **nominalisation**.\n\n- *Prices increased* → ***The increase in prices** ...*\n- *They analysed the data* → ***Analysis of the data** showed ...*\n- *People are aware* → ***Public awareness** ...*\n\nIt makes writing more compact and objective. Do not overuse it: clarity matters most."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The **introduction of** the new law led to **a reduction in** accidents.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-nominalisation-try-1",
+              "type": "single_choice",
+              "prompt": "Nominalise: \"Unemployment rose.\"",
+              "options": [
+                "The rise in unemployment",
+                "Unemployment rising up",
+                "The rose of unemployment"
+              ],
+              "answer": "The rise in unemployment",
+              "explanation": "*the rise in*.",
+              "hint": "*the rise in*."
+            },
+            {
+              "id": "l5-nominalisation-try-2",
+              "type": "single_choice",
+              "prompt": "Noun of *reduce*:",
+              "options": [
+                "reduction",
+                "reducing",
+                "reduced"
+              ],
+              "answer": "reduction",
+              "explanation": "*reduction*.",
+              "hint": "*reduction*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-nominalisation-check-1",
+              "type": "single_choice",
+              "prompt": "\"The ___ of new technology changed work.\"",
+              "options": [
+                "introduce",
+                "introduction",
+                "introduced"
+              ],
+              "answer": "introduction",
+              "explanation": "Noun after *the*."
+            },
+            {
+              "id": "l5-nominalisation-check-2",
+              "type": "single_choice",
+              "prompt": "Which is more formal?",
+              "options": [
+                "Because they failed, ...",
+                "Their failure led to ...",
+                "They failed so ..."
+              ],
+              "answer": "Their failure led to ...",
+              "explanation": "Noun *failure*."
+            },
+            {
+              "id": "l5-nominalisation-check-3",
+              "type": "single_choice",
+              "prompt": "Noun of *available*:",
+              "options": [
+                "availability",
+                "availableness",
+                "avail"
+              ],
+              "answer": "availability",
+              "explanation": "*availability*."
+            },
+            {
+              "id": "l5-nominalisation-check-4",
+              "type": "single_choice",
+              "prompt": "\"There was a ___ in the number of visitors.\"",
+              "options": [
+                "decline",
+                "declined",
+                "declining"
+              ],
+              "answer": "decline",
+              "explanation": "Noun *decline*."
+            },
+            {
+              "id": "l5-nominalisation-check-5",
+              "type": "single_choice",
+              "prompt": "Noun of *able*:",
+              "options": [
+                "ability",
+                "ableness",
+                "enable"
+              ],
+              "answer": "ability",
+              "explanation": "*ability*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-cohesion-reference",
+      "title": "Cohesion: reference words",
+      "summary": "Link sentences with this, these, such, the former and the latter.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Cohesion: reference words",
+          "body_md": "Reference words point back to ideas you already mentioned, so you do not repeat them:\n\n- *this / these + noun*: *Costs rose. **This increase** worried firms.*\n- *such + noun*: ***Such** changes take time.*\n- *the former / the latter*: first and second of two things.\n- *it / they / them* must clearly refer to one noun."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Bikes and buses both reduce traffic. **The former** is cheaper; **the latter** carries more people.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-cohesion-reference-try-1",
+              "type": "single_choice",
+              "prompt": "Cars and trains are common. ___ is faster over long distances.",
+              "options": [
+                "The latter",
+                "The latters",
+                "These"
+              ],
+              "answer": "The latter",
+              "explanation": "*the latter* = trains.",
+              "hint": "*the latter* = trains."
+            },
+            {
+              "id": "l5-cohesion-reference-try-2",
+              "type": "single_choice",
+              "prompt": "Prices doubled. ___ rise surprised experts.",
+              "options": [
+                "This",
+                "These",
+                "Such a"
+              ],
+              "answer": "This",
+              "explanation": "*This rise*.",
+              "hint": "*This rise*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-cohesion-reference-check-1",
+              "type": "single_choice",
+              "prompt": "Floods and fires are increasing. ___ events cost billions.",
+              "options": [
+                "This",
+                "Such",
+                "It"
+              ],
+              "answer": "Such",
+              "explanation": "*Such events*."
+            },
+            {
+              "id": "l5-cohesion-reference-check-2",
+              "type": "single_choice",
+              "prompt": "Coffee and tea: ___ contains more caffeine (coffee).",
+              "options": [
+                "the former",
+                "the latter",
+                "this"
+              ],
+              "answer": "the former",
+              "explanation": "First item: *the former*."
+            },
+            {
+              "id": "l5-cohesion-reference-check-3",
+              "type": "single_choice",
+              "prompt": "Several schools closed. ___ decisions were unpopular.",
+              "options": [
+                "This",
+                "These",
+                "It"
+              ],
+              "answer": "These",
+              "explanation": "Plural: *These decisions*."
+            },
+            {
+              "id": "l5-cohesion-reference-check-4",
+              "type": "single_choice",
+              "prompt": "Which sentence has a clear reference?",
+              "options": [
+                "The manager told the worker he was late. (unclear)",
+                "The manager told the worker that the worker was late.",
+                "He told him he was."
+              ],
+              "answer": "The manager told the worker that the worker was late.",
+              "explanation": "No unclear pronoun."
+            },
+            {
+              "id": "l5-cohesion-reference-check-5",
+              "type": "single_choice",
+              "prompt": "Reference words help to:",
+              "options": [
+                "repeat every word",
+                "avoid repetition and link ideas",
+                "make sentences longer"
+              ],
+              "answer": "avoid repetition and link ideas",
+              "explanation": "They create cohesion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-register",
+      "title": "Formal and informal register",
+      "summary": "Choose the right tone for academic writing and for spoken situations.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Formal and informal register",
+          "body_md": "**Academic writing** is formal: no contractions (*do not*, not *don't*), no slang, few phrasal verbs, precise words.\n\n| Informal | Formal |\n|---|---|\n| get | obtain, receive |\n| look into | investigate |\n| lots of | a large number of / considerable |\n| kids | children |\n| really big | substantial |\n\nIn speaking tasks such as Respond to a Situation, match the person: polite with a manager or teacher, friendly with a friend."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- Informal: *Lots of kids don't get enough sleep.*\n- Formal: *A large number of children do not receive sufficient sleep.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-register-try-1",
+              "type": "single_choice",
+              "prompt": "Formal word for *look into*:",
+              "options": [
+                "investigate",
+                "check out",
+                "dig"
+              ],
+              "answer": "investigate",
+              "explanation": "*investigate*.",
+              "hint": "*investigate*."
+            },
+            {
+              "id": "l5-register-try-2",
+              "type": "single_choice",
+              "prompt": "Which is formal?",
+              "options": [
+                "We've got loads of data.",
+                "We have a considerable amount of data.",
+                "We got tons of data."
+              ],
+              "answer": "We have a considerable amount of data.",
+              "explanation": "No contractions or slang.",
+              "hint": "No contractions or slang."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-register-check-1",
+              "type": "single_choice",
+              "prompt": "Formal word for *kids*:",
+              "options": [
+                "children",
+                "kiddos",
+                "young ones"
+              ],
+              "answer": "children",
+              "explanation": "*children*."
+            },
+            {
+              "id": "l5-register-check-2",
+              "type": "single_choice",
+              "prompt": "In an essay, write:",
+              "options": [
+                "don't",
+                "do not",
+                "dont"
+              ],
+              "answer": "do not",
+              "explanation": "No contractions."
+            },
+            {
+              "id": "l5-register-check-3",
+              "type": "single_choice",
+              "prompt": "Formal word for *get* (a reply):",
+              "options": [
+                "receive",
+                "grab",
+                "pick"
+              ],
+              "answer": "receive",
+              "explanation": "*receive a reply*."
+            },
+            {
+              "id": "l5-register-check-4",
+              "type": "single_choice",
+              "prompt": "Speaking to your manager, the best opening is:",
+              "options": [
+                "Hey, what's up?",
+                "Good morning, do you have a minute?",
+                "Listen, mate."
+              ],
+              "answer": "Good morning, do you have a minute?",
+              "explanation": "Polite and suitable."
+            },
+            {
+              "id": "l5-register-check-5",
+              "type": "single_choice",
+              "prompt": "Formal for *really big*:",
+              "options": [
+                "substantial",
+                "huge-ish",
+                "massive lots"
+              ],
+              "answer": "substantial",
+              "explanation": "*substantial*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-concise-writing",
+      "title": "Concise writing",
+      "summary": "Say more with fewer words, which helps with word limits.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Concise writing",
+          "body_md": "Cut words that add nothing:\n\n- *due to the fact that* → *because*\n- *in order to* → *to*\n- *at this point in time* → *now*\n- *a large number of* → *many*\n- *it is important to note that* → (often delete)\n\nThis helps in Summarize Written Text (one sentence, up to 75 words) and Summarize Spoken Text (50–70 words)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- Wordy: *Due to the fact that it was raining, the match was cancelled.*\n- Concise: *The match was cancelled because of rain.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-concise-writing-try-1",
+              "type": "single_choice",
+              "prompt": "Concise for *in order to*:",
+              "options": [
+                "to",
+                "so as in order to",
+                "for to"
+              ],
+              "answer": "to",
+              "explanation": "*to*.",
+              "hint": "*to*."
+            },
+            {
+              "id": "l5-concise-writing-try-2",
+              "type": "single_choice",
+              "prompt": "Concise for *due to the fact that*:",
+              "options": [
+                "because",
+                "owing to the fact of",
+                "since the fact"
+              ],
+              "answer": "because",
+              "explanation": "*because*.",
+              "hint": "*because*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-concise-writing-check-1",
+              "type": "single_choice",
+              "prompt": "Concise for *at this point in time*:",
+              "options": [
+                "now",
+                "at this time point",
+                "currently at present"
+              ],
+              "answer": "now",
+              "explanation": "*now*."
+            },
+            {
+              "id": "l5-concise-writing-check-2",
+              "type": "single_choice",
+              "prompt": "Which is most concise?",
+              "options": [
+                "Many people agree.",
+                "A large number of people are in agreement.",
+                "There are many people who are agreeing."
+              ],
+              "answer": "Many people agree.",
+              "explanation": "Fewest words, same meaning."
+            },
+            {
+              "id": "l5-concise-writing-check-3",
+              "type": "single_choice",
+              "prompt": "Remove the extra word: \"They returned back home.\"",
+              "options": [
+                "They returned home.",
+                "They back home.",
+                "They returned back."
+              ],
+              "answer": "They returned home.",
+              "explanation": "*returned* already means *came back*."
+            },
+            {
+              "id": "l5-concise-writing-check-4",
+              "type": "single_choice",
+              "prompt": "Concise for *make a decision*:",
+              "options": [
+                "decide",
+                "decision-make",
+                "make decide"
+              ],
+              "answer": "decide",
+              "explanation": "*decide*."
+            },
+            {
+              "id": "l5-concise-writing-check-5",
+              "type": "single_choice",
+              "prompt": "Concise for *in the event that*:",
+              "options": [
+                "if",
+                "when in event",
+                "in event"
+              ],
+              "answer": "if",
+              "explanation": "*if*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-inference",
+      "title": "Making inferences",
+      "summary": "Understand what a writer or speaker means but does not say directly.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Making inferences",
+          "body_md": "An **inference** is a logical conclusion from the text. It must be **supported** by the text, not by your own opinion.\n\n- Look for clues: word choice, examples, contrasts.\n- Ask: *What must be true if this is true?*\n- Avoid options that go too far (*always, never, all*)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*\"The new café is always full, even on weekdays.\"* → Inference: *The café is popular.* (Not: *It is the best café in town.*)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-inference-try-1",
+              "type": "single_choice",
+              "prompt": "\"She checked her watch for the tenth time.\" We can infer she was:",
+              "options": [
+                "impatient or worried",
+                "happy",
+                "asleep"
+              ],
+              "answer": "impatient or worried",
+              "explanation": "Repeated checking suggests waiting impatiently.",
+              "hint": "Repeated checking suggests waiting impatiently."
+            },
+            {
+              "id": "l5-inference-try-2",
+              "type": "single_choice",
+              "prompt": "A good inference is:",
+              "options": [
+                "supported by the text",
+                "your personal opinion",
+                "anything possible"
+              ],
+              "answer": "supported by the text",
+              "explanation": "It must come from the text.",
+              "hint": "It must come from the text."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-inference-check-1",
+              "type": "single_choice",
+              "prompt": "\"Tickets sold out in an hour.\" Inference:",
+              "options": [
+                "The event was popular.",
+                "Tickets were free.",
+                "Nobody went."
+              ],
+              "answer": "The event was popular.",
+              "explanation": "Fast sales suggest popularity."
+            },
+            {
+              "id": "l5-inference-check-2",
+              "type": "single_choice",
+              "prompt": "Which option goes too far? Text: \"Some students prefer online classes.\"",
+              "options": [
+                "Not all students prefer face-to-face classes.",
+                "All students hate classrooms.",
+                "Online classes suit some students."
+              ],
+              "answer": "All students hate classrooms.",
+              "explanation": "*All ... hate* is not supported."
+            },
+            {
+              "id": "l5-inference-check-3",
+              "type": "single_choice",
+              "prompt": "\"Despite the price, the phone sold well.\" Inference:",
+              "options": [
+                "The phone was expensive.",
+                "The phone was cheap.",
+                "Nobody bought it."
+              ],
+              "answer": "The phone was expensive.",
+              "explanation": "*Despite the price* implies a high price."
+            },
+            {
+              "id": "l5-inference-check-4",
+              "type": "single_choice",
+              "prompt": "\"The streets were wet and people carried umbrellas.\" It had probably:",
+              "options": [
+                "rained",
+                "snowed heavily",
+                "been very hot"
+              ],
+              "answer": "rained",
+              "explanation": "Wet streets + umbrellas."
+            },
+            {
+              "id": "l5-inference-check-5",
+              "type": "single_choice",
+              "prompt": "Inference questions often use words like:",
+              "options": [
+                "suggest, imply",
+                "spell, count",
+                "list, name"
+              ],
+              "answer": "suggest, imply",
+              "explanation": "*What does the text suggest/imply?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-purpose-tone",
+      "title": "Writer's purpose and tone",
+      "summary": "Recognise why a text was written and the writer's attitude.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Writer's purpose and tone",
+          "body_md": "**Purpose:** to inform, explain, persuade, compare, warn, describe a process.\n\n**Tone:** neutral, critical, enthusiastic, cautious, concerned.\n\nClues: strong adjectives (*alarming, impressive*), modal verbs (*must, should*), hedging (*may, might*)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *\"Cities **must** act now to prevent an **alarming** rise in heat deaths.\"* → purpose: persuade; tone: concerned."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-purpose-tone-try-1",
+              "type": "single_choice",
+              "prompt": "\"Here are the steps to set up your account.\" Purpose:",
+              "options": [
+                "to describe a process",
+                "to persuade",
+                "to criticise"
+              ],
+              "answer": "to describe a process",
+              "explanation": "Steps = process.",
+              "hint": "Steps = process."
+            },
+            {
+              "id": "l5-purpose-tone-try-2",
+              "type": "single_choice",
+              "prompt": "\"This shocking waste of money must stop.\" Tone:",
+              "options": [
+                "neutral",
+                "critical",
+                "cautious"
+              ],
+              "answer": "critical",
+              "explanation": "*shocking ... must stop*: critical.",
+              "hint": "*shocking ... must stop*: critical."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-purpose-tone-check-1",
+              "type": "single_choice",
+              "prompt": "\"Results may suggest a small benefit.\" Tone:",
+              "options": [
+                "cautious",
+                "enthusiastic",
+                "angry"
+              ],
+              "answer": "cautious",
+              "explanation": "Hedging = cautious."
+            },
+            {
+              "id": "l5-purpose-tone-check-2",
+              "type": "single_choice",
+              "prompt": "A text that gives facts without opinion is:",
+              "options": [
+                "neutral",
+                "persuasive",
+                "emotional"
+              ],
+              "answer": "neutral",
+              "explanation": "Neutral, informative."
+            },
+            {
+              "id": "l5-purpose-tone-check-3",
+              "type": "single_choice",
+              "prompt": "\"Everyone should try this amazing method!\" Purpose:",
+              "options": [
+                "to persuade",
+                "to compare",
+                "to warn"
+              ],
+              "answer": "to persuade",
+              "explanation": "Recommendation = persuade."
+            },
+            {
+              "id": "l5-purpose-tone-check-4",
+              "type": "single_choice",
+              "prompt": "\"Option A is cheaper, while option B is faster.\" Purpose:",
+              "options": [
+                "to compare",
+                "to warn",
+                "to describe a process"
+              ],
+              "answer": "to compare",
+              "explanation": "Two options weighed = compare."
+            },
+            {
+              "id": "l5-purpose-tone-check-5",
+              "type": "single_choice",
+              "prompt": "Which word shows concern?",
+              "options": [
+                "worrying",
+                "delightful",
+                "standard"
+              ],
+              "answer": "worrying",
+              "explanation": "*worrying* = concern."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-signposting",
+      "title": "Signposting in lectures",
+      "summary": "Follow the structure of a talk from the speaker's signals.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Signposting in lectures",
+          "body_md": "Speakers use **signposts** to show where the talk is going:\n\n- Starting: *Today I'd like to talk about ..., First of all ...*\n- Adding: *Another point is ..., Moreover ...*\n- Contrasting: *On the other hand ..., However ...*\n- Example: *To illustrate this ..., Take ... for example.*\n- Concluding: *To sum up ..., So, the key point is ...*\n\nNote what comes after a signpost: it is often a main point you need for Retell Lecture or Summarize Spoken Text."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*\"**To sum up**, small daily changes have a bigger effect than one big change.\"* → the conclusion."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-signposting-try-1",
+              "type": "single_choice",
+              "prompt": "\"To sum up, ...\" introduces:",
+              "options": [
+                "the conclusion",
+                "an example",
+                "the first point"
+              ],
+              "answer": "the conclusion",
+              "explanation": "Conclusion signal.",
+              "hint": "Conclusion signal."
+            },
+            {
+              "id": "l5-signposting-try-2",
+              "type": "single_choice",
+              "prompt": "\"Take Tokyo, for example.\" introduces:",
+              "options": [
+                "an example",
+                "a contrast",
+                "the topic"
+              ],
+              "answer": "an example",
+              "explanation": "Example signal.",
+              "hint": "Example signal."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-signposting-check-1",
+              "type": "single_choice",
+              "prompt": "\"On the other hand, ...\" signals:",
+              "options": [
+                "a contrast",
+                "a result",
+                "a definition"
+              ],
+              "answer": "a contrast",
+              "explanation": "Contrast."
+            },
+            {
+              "id": "l5-signposting-check-2",
+              "type": "single_choice",
+              "prompt": "Which signpost starts a talk?",
+              "options": [
+                "Today I'd like to talk about ...",
+                "Finally, ...",
+                "In conclusion, ..."
+              ],
+              "answer": "Today I'd like to talk about ...",
+              "explanation": "Opening."
+            },
+            {
+              "id": "l5-signposting-check-3",
+              "type": "single_choice",
+              "prompt": "\"Another important point is ...\" signals:",
+              "options": [
+                "adding a point",
+                "ending",
+                "an example"
+              ],
+              "answer": "adding a point",
+              "explanation": "Addition."
+            },
+            {
+              "id": "l5-signposting-check-4",
+              "type": "single_choice",
+              "prompt": "Why note signposts?",
+              "options": [
+                "They show the main points and structure.",
+                "They are hard words.",
+                "They are always numbers."
+              ],
+              "answer": "They show the main points and structure.",
+              "explanation": "Structure of the talk."
+            },
+            {
+              "id": "l5-signposting-check-5",
+              "type": "single_choice",
+              "prompt": "\"The main reason is ...\" usually gives:",
+              "options": [
+                "a key point",
+                "a joke",
+                "a greeting"
+              ],
+              "answer": "a key point",
+              "explanation": "Key point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l5-fact-opinion",
+      "title": "Fact and opinion",
+      "summary": "Tell the difference between what is proven and what someone believes.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Fact and opinion",
+          "body_md": "- A **fact** can be checked: *The bridge opened in 1932.*\n- An **opinion** shows a belief or judgement: *It is the most beautiful bridge in the world.*\n\nOpinion signals: *I think, in my view, should, best, worst, beautiful, unfortunately*. In multiple-choice tasks, choose what the text **states**, not what you believe."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- Fact: *Sales fell by 10% in 2023.*\n- Opinion: *The new design was a terrible idea.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l5-fact-opinion-try-1",
+              "type": "single_choice",
+              "prompt": "Which is a fact?",
+              "options": [
+                "Water boils at 100 °C at sea level.",
+                "Tea is nicer than coffee.",
+                "Winter is the worst season."
+              ],
+              "answer": "Water boils at 100 °C at sea level.",
+              "explanation": "Can be checked.",
+              "hint": "Can be checked."
+            },
+            {
+              "id": "l5-fact-opinion-try-2",
+              "type": "single_choice",
+              "prompt": "Which is an opinion?",
+              "options": [
+                "The city has 2 million people.",
+                "The city is too crowded.",
+                "The city was founded in 1200."
+              ],
+              "answer": "The city is too crowded.",
+              "explanation": "*too crowded* is a judgement.",
+              "hint": "*too crowded* is a judgement."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l5-fact-opinion-check-1",
+              "type": "single_choice",
+              "prompt": "Opinion signal:",
+              "options": [
+                "in my view",
+                "in 1990",
+                "measured at"
+              ],
+              "answer": "in my view",
+              "explanation": "*in my view*."
+            },
+            {
+              "id": "l5-fact-opinion-check-2",
+              "type": "single_choice",
+              "prompt": "\"Unfortunately, the plan failed.\" The word *unfortunately* shows:",
+              "options": [
+                "the writer's attitude",
+                "a date",
+                "a statistic"
+              ],
+              "answer": "the writer's attitude",
+              "explanation": "Attitude."
+            },
+            {
+              "id": "l5-fact-opinion-check-3",
+              "type": "single_choice",
+              "prompt": "\"Experts estimate that 30% of food is wasted.\" This is:",
+              "options": [
+                "a reported estimate (fact about a claim)",
+                "a personal feeling",
+                "a joke"
+              ],
+              "answer": "a reported estimate (fact about a claim)",
+              "explanation": "It reports what experts estimate."
+            },
+            {
+              "id": "l5-fact-opinion-check-4",
+              "type": "single_choice",
+              "prompt": "In reading questions, choose options that the text:",
+              "options": [
+                "states or clearly supports",
+                "you agree with",
+                "sound clever"
+              ],
+              "answer": "states or clearly supports",
+              "explanation": "Base answers on the text."
+            },
+            {
+              "id": "l5-fact-opinion-check-5",
+              "type": "single_choice",
+              "prompt": "Which is a fact?",
+              "options": [
+                "The museum is free on Sundays.",
+                "The museum is boring.",
+                "Everyone should visit the museum."
+              ],
+              "answer": "The museum is free on Sundays.",
+              "explanation": "Checkable."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ skill_enum = ENUM("speaking", "writing", "reading", "listening", name="skill", c
 section_enum = ENUM("speaking_writing", "reading", "listening", name="pte_section", create_type=False)
 status_enum = ENUM("draft", "ai_generated", "reviewed", "published", name="content_status", create_type=False)
 difficulty_enum = ENUM("beginner", "intermediate", "advanced", name="difficulty", create_type=False)
-mode_enum = ENUM("learn", "practice", "timed_drill", "exam", name="practice_mode", create_type=False)
+mode_enum = ENUM("learn", "practice", "timed_drill", "exam", "review", name="practice_mode", create_type=False)
 role_enum = ENUM("student", "content_editor", "admin", name="app_role", create_type=False)
 
 
@@ -109,5 +109,6 @@ class TestSession(Base):
     kind: Mapped[str] = mapped_column(Text)
     status: Mapped[str] = mapped_column(Text)
     result_summary: Mapped[dict[str, Any]] = mapped_column(JSONB)
+    blueprint_code: Mapped[str | None] = mapped_column(Text)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))

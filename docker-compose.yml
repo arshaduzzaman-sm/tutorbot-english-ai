@@ -8,13 +8,23 @@ x-host-gateway: &host-gateway
 
 services:
   api:
-    build: ./apps/api
+    build:
+      context: ./apps/api
+      args:
+        INSTALL_AI: ${INSTALL_AI:-0}
     <<: *host-gateway
     env_file: .env
     environment:
       DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD:-postgres}@host.docker.internal:54322/postgres
       SUPABASE_URL: http://host.docker.internal:54321
       JWT_ISSUER: ${SUPABASE_PUBLIC_URL:-http://127.0.0.1:54321}/auth/v1
+      RECORDINGS_DIR: /data/recordings
+      HF_HOME: /data/models/huggingface
+    # Runs as your own user id (set by `make start`) so the recordings and models folders stay yours
+    user: "${APP_UID:-10001}:${APP_GID:-10001}"
+    volumes:
+      - ./recordings:/data/recordings
+      - ./models:/data/models
     ports:
       - "127.0.0.1:8000:8000"
     restart: unless-stopped

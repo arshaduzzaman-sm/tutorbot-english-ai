@@ -1,0 +1,36 @@
+{
+  "code": "highlight_incorrect_words",
+  "what": "You read a transcript while you listen. Some words in the text are different from what the speaker says. You click those words.",
+  "tests": "Listening and reading: noticing small differences between speech and text.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says each selected word is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Follow the text with your eyes or the mouse pointer as the speaker talks.",
+    "Click a word as soon as you hear something different.",
+    "Do not click words you are not sure about. In our practice marking, each wrong click cancels a right one."
+  ],
+  "example_prompt": "Text: 'The festival takes place every summer in the old town.' Speaker says 'every spring'.",
+  "examples": {
+    "strong": {
+      "answer": "Clicks 'summer'.",
+      "why": "It is the only word that is different."
+    },
+    "medium": {
+      "answer": "Clicks 'summer' and 'old'.",
+      "why": "One right and one wrong click cancel out in our practice marking."
+    },
+    "weak": {
+      "answer": "Clicks nothing because they lost their place.",
+      "why": "Keep following the text."
+    }
+  },
+  "mistakes": [
+    "Losing your place in the text.",
+    "Clicking many words to be safe."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

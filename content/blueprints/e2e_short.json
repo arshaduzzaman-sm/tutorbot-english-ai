@@ -1,0 +1,60 @@
+{
+  "code": "e2e_short",
+  "version": "2026.1",
+  "name": "Short test blueprint (automated tests)",
+  "kind": "mini_mock",
+  "sort_order": 99,
+  "about": "Used by the end-to-end test only.",
+  "listed": false,
+  "verified": false,
+  "note": "See task_rules.json for the per-task timings (verified). Item counts, the item order inside a section and the section clocks we choose are NOT published by Pearson: they are marked verified=false and listed in STATUS.md.",
+  "pre_test": [],
+  "navigation": "No going back. Each answer is final once you press Next.",
+  "order_note": "Sections follow Pearson's order (Speaking & Writing, Reading, Listening). Inside a section, task types follow the order on Pearson's test-format page.",
+  "sections": [
+    {
+      "code": "speaking_writing",
+      "title": "Speaking and Writing",
+      "items": [
+        {
+          "type": "read_aloud",
+          "count": 1
+        },
+        {
+          "type": "summarize_written_text",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "code": "reading",
+      "title": "Reading",
+      "items": [
+        {
+          "type": "reorder_paragraphs",
+          "count": 1
+        },
+        {
+          "type": "reading_mc_single",
+          "count": 1
+        }
+      ],
+      "clock_minutes": 3,
+      "clock_note": "Our own shorter clock.",
+      "clock_verified": false
+    },
+    {
+      "code": "listening",
+      "title": "Listening",
+      "items": [
+        {
+          "type": "write_from_dictation",
+          "count": 1
+        }
+      ],
+      "clock_minutes": 2,
+      "clock_note": "Our own shorter clock.",
+      "clock_verified": false
+    }
+  ]
+}

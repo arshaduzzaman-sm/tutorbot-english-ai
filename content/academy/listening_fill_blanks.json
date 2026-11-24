@@ -1,0 +1,39 @@
+{
+  "code": "listening_fill_blanks",
+  "what": "You see a transcript with gaps. You listen once and type the missing words.",
+  "tests": "Listening and writing: hearing exact words and spelling them correctly.",
+  "scoring": {
+    "traits": [
+      "Content"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the text before the audio starts to guess what kind of word fits each gap.",
+    "Type the first letters quickly while you listen, then complete the words.",
+    "Check spelling and word endings (-s, -ed) at the end."
+  ],
+  "example_prompt": "The museum opens at nine and ____ at five on weekdays.",
+  "examples": {
+    "strong": {
+      "answer": "closes",
+      "why": "Correct word and correct spelling with the -s."
+    },
+    "medium": {
+      "answer": "close",
+      "why": "Right word, but the ending is wrong for the grammar."
+    },
+    "weak": {
+      "answer": "shuts down",
+      "why": "Different words from the recording."
+    }
+  },
+  "mistakes": [
+    "Writing a synonym instead of the word you heard.",
+    "Missing plural or past endings.",
+    "Spelling mistakes."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

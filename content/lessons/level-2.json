@@ -1,0 +1,2691 @@
+{
+  "level_code": 2,
+  "lessons": [
+    {
+      "slug": "past-was-were",
+      "title": "Past of to be: was and were",
+      "summary": "Talk about where people were and how things were.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "was / were",
+          "body_md": "| | past of *to be* |\n|---|---|\n| I / he / she / it | **was** |\n| you / we / they | **were** |\n\n**Negative:** *wasn't* (was not), *weren't* (were not).\n\n**Question:** ***Was** it cold? **Were** they at home?*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I **was** at the doctor's yesterday.*\n- *The film **was** really funny.*\n- *We **weren't** at school last Friday.*\n- ***Were** you tired after the trip?* — *Yes, I **was**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "was-try-1",
+              "type": "single_choice",
+              "prompt": "My grandparents ___ farmers.",
+              "options": [
+                "was",
+                "were",
+                "are been"
+              ],
+              "answer": "were",
+              "hint": "they → ?",
+              "explanation": "*My grandparents* = *they*, so *were*."
+            },
+            {
+              "id": "was-try-2",
+              "type": "single_choice",
+              "prompt": "___ the shop open yesterday?",
+              "options": [
+                "Was",
+                "Were",
+                "Did"
+              ],
+              "answer": "Was",
+              "explanation": "*The shop* = *it*, so the question starts with *Was*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "was-check-1",
+              "type": "single_choice",
+              "prompt": "It ___ very hot last summer.",
+              "options": [
+                "was",
+                "were",
+                "is"
+              ],
+              "answer": "was",
+              "explanation": "*It* + past = *was*."
+            },
+            {
+              "id": "was-check-2",
+              "type": "single_choice",
+              "prompt": "You ___ late this morning.",
+              "options": [
+                "was",
+                "were",
+                "be"
+              ],
+              "answer": "were",
+              "explanation": "*You* always goes with *were*."
+            },
+            {
+              "id": "was-check-3",
+              "type": "single_choice",
+              "prompt": "Which is the negative?",
+              "options": [
+                "They weren't happy.",
+                "They were happy.",
+                "Were they happy?"
+              ],
+              "answer": "They weren't happy.",
+              "explanation": "*weren't* = *were not*."
+            },
+            {
+              "id": "was-check-4",
+              "type": "single_choice",
+              "prompt": "\"Was Sam at the party?\" \"No, he ___.\"",
+              "options": [
+                "wasn't",
+                "weren't",
+                "didn't"
+              ],
+              "answer": "wasn't",
+              "explanation": "Short answer with *he*: *No, he wasn't.*"
+            },
+            {
+              "id": "was-check-5",
+              "type": "single_choice",
+              "prompt": "Where ___ you last night?",
+              "options": [
+                "was",
+                "were",
+                "did"
+              ],
+              "answer": "were",
+              "explanation": "*you* → *were*: *Where were you?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-regular",
+      "title": "Past simple: regular verbs",
+      "summary": "Add -ed to talk about finished actions.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Finished actions",
+          "body_md": "We use the **past simple** for actions that finished in the past.\n\nRegular verbs add **-ed**, the same for everyone: *I work**ed**, she work**ed**, they work**ed**.*\n\nSpelling:\n- *live → live**d*** (ends in *e*: add *d*)\n- *study → stud**ied*** (consonant + *y*: *y → ied*)\n- *stop → stop**ped*** (short verb, one vowel + one consonant: double it)\n- *play → play**ed*** (vowel + *y*: just add *ed*)"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*Last weekend I **visited** my aunt. We **cooked** lunch and **watched** a film. On Sunday it **rained**, so I **stayed** at home and **studied**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "reg-try-1",
+              "type": "single_choice",
+              "prompt": "Yesterday I ___ my room.",
+              "options": [
+                "clean",
+                "cleaned",
+                "cleaning"
+              ],
+              "answer": "cleaned",
+              "hint": "Add -ed.",
+              "explanation": "Past simple: *clean + ed = cleaned*."
+            },
+            {
+              "id": "reg-try-2",
+              "type": "single_choice",
+              "prompt": "What is the past of \"try\"?",
+              "options": [
+                "tryed",
+                "tried",
+                "trys"
+              ],
+              "answer": "tried",
+              "explanation": "Consonant + *y* → *ied*: *tried*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "reg-check-1",
+              "type": "single_choice",
+              "prompt": "She ___ in Rome for two years.",
+              "options": [
+                "live",
+                "lived",
+                "liveed"
+              ],
+              "answer": "lived",
+              "explanation": "*live* ends in *e*, so add *d*: *lived*."
+            },
+            {
+              "id": "reg-check-2",
+              "type": "single_choice",
+              "prompt": "The bus ___ suddenly.",
+              "options": [
+                "stoped",
+                "stopped",
+                "stopt"
+              ],
+              "answer": "stopped",
+              "explanation": "*stop* doubles the *p*: *stopped*."
+            },
+            {
+              "id": "reg-check-3",
+              "type": "single_choice",
+              "prompt": "We ___ football after school.",
+              "options": [
+                "played",
+                "plaied",
+                "plays"
+              ],
+              "answer": "played",
+              "explanation": "Vowel + *y*: just add *ed*: *played*."
+            },
+            {
+              "id": "reg-check-4",
+              "type": "single_choice",
+              "prompt": "Which sentence is in the past?",
+              "options": [
+                "I walk to work.",
+                "I walked to work.",
+                "I am walking to work."
+              ],
+              "answer": "I walked to work.",
+              "explanation": "*walked* is past simple."
+            },
+            {
+              "id": "reg-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ for the exam all night.",
+              "options": [
+                "studyed",
+                "studied",
+                "studies"
+              ],
+              "answer": "studied",
+              "explanation": "*study* → *studied*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-irregular",
+      "title": "Past simple: irregular verbs",
+      "summary": "Learn common verbs that do not use -ed.",
+      "estimated_minutes": 14,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Irregular verbs",
+          "body_md": "Many common verbs have a special past form. Learn them by heart.\n\n| verb | past | verb | past |\n|---|---|---|---|\n| go | **went** | have | **had** |\n| see | **saw** | eat | **ate** |\n| come | **came** | make | **made** |\n| take | **took** | buy | **bought** |\n| get | **got** | write | **wrote** |\n| say | **said** | think | **thought** |"
+        },
+        {
+          "kind": "see",
+          "title": "A story",
+          "body_md": "*On Saturday I **went** to the market. I **saw** my friend Leo there. We **bought** some fruit and **had** coffee. Then we **took** the bus home. Leo **said** it **was** a great day.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "irr-try-1",
+              "type": "single_choice",
+              "prompt": "Last year we ___ to Spain.",
+              "options": [
+                "goed",
+                "went",
+                "gone"
+              ],
+              "answer": "went",
+              "hint": "It is irregular.",
+              "explanation": "The past of *go* is *went*."
+            },
+            {
+              "id": "irr-try-2",
+              "type": "single_choice",
+              "prompt": "I ___ a letter to my grandmother.",
+              "options": [
+                "writed",
+                "wrote",
+                "write"
+              ],
+              "answer": "wrote",
+              "explanation": "The past of *write* is *wrote*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "irr-check-1",
+              "type": "single_choice",
+              "prompt": "She ___ a new phone last week.",
+              "options": [
+                "buyed",
+                "bought",
+                "buys"
+              ],
+              "answer": "bought",
+              "explanation": "The past of *buy* is *bought*."
+            },
+            {
+              "id": "irr-check-2",
+              "type": "single_choice",
+              "prompt": "We ___ pizza for dinner.",
+              "options": [
+                "ate",
+                "eated",
+                "eat"
+              ],
+              "answer": "ate",
+              "explanation": "The past of *eat* is *ate*."
+            },
+            {
+              "id": "irr-check-3",
+              "type": "single_choice",
+              "prompt": "They ___ home very late.",
+              "options": [
+                "comed",
+                "came",
+                "come"
+              ],
+              "answer": "came",
+              "explanation": "The past of *come* is *came*."
+            },
+            {
+              "id": "irr-check-4",
+              "type": "single_choice",
+              "prompt": "I ___ a strange noise in the night.",
+              "options": [
+                "heard",
+                "heared",
+                "hear"
+              ],
+              "answer": "heard",
+              "explanation": "The past of *hear* is *heard*."
+            },
+            {
+              "id": "irr-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ that he was busy.",
+              "options": [
+                "sayed",
+                "said",
+                "says"
+              ],
+              "answer": "said",
+              "explanation": "The past of *say* is *said*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-simple-questions-negatives",
+      "title": "Past simple: questions and negatives",
+      "summary": "Use did and didn't to ask and say no about the past.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "did / didn't",
+          "body_md": "- **Negative:** *didn't* + base verb: *I **didn't go** to work.* (not *didn't went*)\n- **Question:** *Did* + subject + base verb: ***Did** you **see** the match?*\n- **Short answers:** *Yes, I did. / No, I didn't.*\n- **Wh- questions:** *Where **did** you **go**? What **did** she **buy**?*\n\nWith *was/were* we do **not** use *did*: *Were you tired?* (not *Did you be tired?*)"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***Did** you **enjoy** the concert?* — *Yes, I **did**.*\n- *She **didn't like** the food.*\n- *What time **did** the train **leave**?*\n- *We **didn't have** time for lunch.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "dq-try-1",
+              "type": "single_choice",
+              "prompt": "I ___ my homework yesterday.",
+              "options": [
+                "didn't finish",
+                "didn't finished",
+                "not finished"
+              ],
+              "answer": "didn't finish",
+              "hint": "didn't + base verb",
+              "explanation": "After *didn't*, use the base verb: *didn't finish*."
+            },
+            {
+              "id": "dq-try-2",
+              "type": "single_choice",
+              "prompt": "___ you call your mother?",
+              "options": [
+                "Did",
+                "Do",
+                "Were"
+              ],
+              "answer": "Did",
+              "explanation": "Past simple questions start with *Did*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "dq-check-1",
+              "type": "single_choice",
+              "prompt": "Where ___ you go on holiday?",
+              "options": [
+                "did",
+                "were",
+                "do"
+              ],
+              "answer": "did",
+              "explanation": "*Where did you go?*"
+            },
+            {
+              "id": "dq-check-2",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "Did she came?",
+                "Did she come?",
+                "Did she comes?"
+              ],
+              "answer": "Did she come?",
+              "explanation": "After *Did*, use the base verb."
+            },
+            {
+              "id": "dq-check-3",
+              "type": "single_choice",
+              "prompt": "\"Did they win?\" \"No, they ___.\"",
+              "options": [
+                "didn't",
+                "weren't",
+                "don't"
+              ],
+              "answer": "didn't",
+              "explanation": "Short answer: *No, they didn't.*"
+            },
+            {
+              "id": "dq-check-4",
+              "type": "single_choice",
+              "prompt": "He ___ at home last night.",
+              "options": [
+                "didn't be",
+                "wasn't",
+                "not was"
+              ],
+              "answer": "wasn't",
+              "explanation": "With *be* we use *wasn't*, not *didn't*."
+            },
+            {
+              "id": "dq-check-5",
+              "type": "single_choice",
+              "prompt": "What ___ you have for breakfast?",
+              "options": [
+                "did",
+                "was",
+                "do"
+              ],
+              "answer": "did",
+              "explanation": "*What did you have ...?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "past-time-expressions",
+      "title": "Yesterday, last week, two days ago",
+      "summary": "Say when something happened.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "When did it happen?",
+          "body_md": "- **yesterday** / **yesterday morning**\n- **last** + time: *last night, last week, last year* (no *the*)\n- time + **ago**: *two days ago, ten minutes ago*\n- **in** + year or month: *in 2019, in May*\n- **on** + day or date: *on Monday, on 3 March*\n\nThese words usually go at the end or the start of the sentence."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I started this job **three months ago**.*\n- ***Last summer** we went camping.*\n- *She was born **in** 2001.*\n- *I saw him **on** Tuesday.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "ptx-try-1",
+              "type": "single_choice",
+              "prompt": "I met her two years ___.",
+              "options": [
+                "ago",
+                "last",
+                "before"
+              ],
+              "answer": "ago",
+              "hint": "Which word comes after the time?",
+              "explanation": "Time + *ago*: *two years ago*."
+            },
+            {
+              "id": "ptx-try-2",
+              "type": "single_choice",
+              "prompt": "We moved here ___ year.",
+              "options": [
+                "last",
+                "the last",
+                "ago"
+              ],
+              "answer": "last",
+              "explanation": "*last year* (no *the*)."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "ptx-check-1",
+              "type": "single_choice",
+              "prompt": "The class finished ten minutes ___.",
+              "options": [
+                "ago",
+                "last",
+                "yesterday"
+              ],
+              "answer": "ago",
+              "explanation": "*ten minutes ago*."
+            },
+            {
+              "id": "ptx-check-2",
+              "type": "single_choice",
+              "prompt": "I phoned you ___ night.",
+              "options": [
+                "yesterday",
+                "last",
+                "ago"
+              ],
+              "answer": "last",
+              "explanation": "*last night*. (We say *yesterday evening*, but *last night*.)"
+            },
+            {
+              "id": "ptx-check-3",
+              "type": "single_choice",
+              "prompt": "He finished school ___ 2015.",
+              "options": [
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": "in",
+              "explanation": "*in* + year."
+            },
+            {
+              "id": "ptx-check-4",
+              "type": "single_choice",
+              "prompt": "The parcel arrived ___ Friday.",
+              "options": [
+                "on",
+                "in",
+                "ago"
+              ],
+              "answer": "on",
+              "explanation": "*on* + day."
+            },
+            {
+              "id": "ptx-check-5",
+              "type": "single_choice",
+              "prompt": "Which sentence is correct?",
+              "options": [
+                "I saw him the last week.",
+                "I saw him last week.",
+                "I saw him week ago."
+              ],
+              "answer": "I saw him last week.",
+              "explanation": "*last week*, with no *the*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "present-continuous-now",
+      "title": "Present continuous: happening now",
+      "summary": "Say what people are doing at the moment.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "am / is / are + -ing",
+          "body_md": "We use the **present continuous** for actions happening **now** or around now.\n\n*I **am** read**ing**. She **is** cook**ing**. They **are** play**ing**.*\n\nSpelling: *make → mak**ing*** (drop *e*), *run → run**ning*** (double the consonant), *lie → l**ying***.\n\n**Negative:** *I'm not working. He isn't sleeping.*  **Question:** ***Are** you listen**ing**?*"
+        },
+        {
+          "kind": "see",
+          "title": "Look out of the window",
+          "body_md": "*It **is raining**. A man **is running** for the bus. Two children **are playing** in the park. My neighbour **isn't working** today: she **is sitting** in her garden.*\n\nWords like *now, right now, at the moment, look!, listen!* often go with it."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "pc-try-1",
+              "type": "single_choice",
+              "prompt": "Be quiet! The baby ___.",
+              "options": [
+                "sleeps",
+                "is sleeping",
+                "sleeping"
+              ],
+              "answer": "is sleeping",
+              "hint": "am / is / are + -ing",
+              "explanation": "Happening now: *is sleeping*."
+            },
+            {
+              "id": "pc-try-2",
+              "type": "single_choice",
+              "prompt": "What is the -ing form of \"swim\"?",
+              "options": [
+                "swiming",
+                "swimming",
+                "swimeing"
+              ],
+              "answer": "swimming",
+              "explanation": "Short verb, one vowel + one consonant: double it: *swimming*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "pc-check-1",
+              "type": "single_choice",
+              "prompt": "They ___ TV right now.",
+              "options": [
+                "watch",
+                "are watching",
+                "watching"
+              ],
+              "answer": "are watching",
+              "explanation": "*They* + *are* + *watching*."
+            },
+            {
+              "id": "pc-check-2",
+              "type": "single_choice",
+              "prompt": "I ___ dinner at the moment.",
+              "options": [
+                "am making",
+                "am makeing",
+                "make"
+              ],
+              "answer": "am making",
+              "explanation": "*make* drops the *e*: *making*."
+            },
+            {
+              "id": "pc-check-3",
+              "type": "single_choice",
+              "prompt": "Which is a question?",
+              "options": [
+                "Is she working?",
+                "She is working.",
+                "She isn't working."
+              ],
+              "answer": "Is she working?",
+              "explanation": "Questions start with *Is / Are*."
+            },
+            {
+              "id": "pc-check-4",
+              "type": "single_choice",
+              "prompt": "Listen! Someone ___ at the door.",
+              "options": [
+                "knocks",
+                "is knocking",
+                "knocked"
+              ],
+              "answer": "is knocking",
+              "explanation": "*Listen!* means now: *is knocking*."
+            },
+            {
+              "id": "pc-check-5",
+              "type": "single_choice",
+              "prompt": "He ___ today. He is at home.",
+              "options": [
+                "isn't working",
+                "doesn't working",
+                "not work"
+              ],
+              "answer": "isn't working",
+              "explanation": "Negative: *isn't* + *-ing*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "present-simple-vs-continuous",
+      "title": "Present simple or present continuous?",
+      "summary": "Choose between habits and things happening now.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Habit or now?",
+          "body_md": "- **Present simple**: habits, routines and facts: *I **drink** coffee every morning.*\n- **Present continuous**: now or around now: *I**'m drinking** tea now.*\n\nClue words:\n- simple: *every day, usually, often, never, on Mondays*\n- continuous: *now, at the moment, today, this week*\n\nSome verbs are rarely used with -ing: *like, love, want, know, understand, need*: *I **want** a coffee* (not *I'm wanting*)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Ali usually **walks** to work, but today he**'s taking** the bus.*\n- *Water **boils** at 100 °C.*\n- *I **know** the answer.*\n- *We**'re staying** with friends this week.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "svc-try-1",
+              "type": "single_choice",
+              "prompt": "She ___ to the gym every Tuesday.",
+              "options": [
+                "goes",
+                "is going",
+                "go"
+              ],
+              "answer": "goes",
+              "hint": "Look for the clue word.",
+              "explanation": "*every Tuesday* = a habit: present simple."
+            },
+            {
+              "id": "svc-try-2",
+              "type": "single_choice",
+              "prompt": "Look! It ___.",
+              "options": [
+                "snows",
+                "is snowing",
+                "snow"
+              ],
+              "answer": "is snowing",
+              "explanation": "*Look!* = now: present continuous."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "svc-check-1",
+              "type": "single_choice",
+              "prompt": "I ___ what you mean.",
+              "options": [
+                "understand",
+                "am understanding",
+                "understanding"
+              ],
+              "answer": "understand",
+              "explanation": "*understand* is not normally used with -ing."
+            },
+            {
+              "id": "svc-check-2",
+              "type": "single_choice",
+              "prompt": "My brother ___ for an exam this week.",
+              "options": [
+                "studies",
+                "is studying",
+                "study"
+              ],
+              "answer": "is studying",
+              "explanation": "*this week* = around now: present continuous."
+            },
+            {
+              "id": "svc-check-3",
+              "type": "single_choice",
+              "prompt": "The sun ___ in the east.",
+              "options": [
+                "rises",
+                "is rising",
+                "rising"
+              ],
+              "answer": "rises",
+              "explanation": "A fact: present simple."
+            },
+            {
+              "id": "svc-check-4",
+              "type": "single_choice",
+              "prompt": "\"Where's Mum?\" \"She ___ in the garden.\"",
+              "options": [
+                "works",
+                "is working",
+                "work"
+              ],
+              "answer": "is working",
+              "explanation": "Happening now: present continuous."
+            },
+            {
+              "id": "svc-check-5",
+              "type": "single_choice",
+              "prompt": "We never ___ meat.",
+              "options": [
+                "eat",
+                "are eating",
+                "eats"
+              ],
+              "answer": "eat",
+              "explanation": "*never* = a habit: present simple. *We* has no *-s*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "going-to-plans",
+      "title": "Going to: plans and intentions",
+      "summary": "Talk about things you have decided to do.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "be going to + verb",
+          "body_md": "Use **be going to** for plans you have already made, and for things we can see are going to happen.\n\n*I**'m going to** visit my cousin. She**'s going to** study law. They**'re going to** move house.*\n\n**Negative:** *I'm not going to ...*  **Question:** ***Are** you **going to** ...?*\n\nLook at those clouds! It**'s going to** rain. (we can see it)"
+        },
+        {
+          "kind": "see",
+          "title": "Plans for the summer",
+          "body_md": "*This summer **I'm going to** learn to drive. My sister **is going to** work in a hotel. We **aren't going to** travel abroad, but we **are going to** visit the coast for a weekend.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "gt-try-1",
+              "type": "single_choice",
+              "prompt": "We ___ paint the kitchen next weekend.",
+              "options": [
+                "are going to",
+                "going to",
+                "are go to"
+              ],
+              "answer": "are going to",
+              "hint": "be + going to",
+              "explanation": "*We* + *are going to* + verb."
+            },
+            {
+              "id": "gt-try-2",
+              "type": "single_choice",
+              "prompt": "Watch out! You ___ fall!",
+              "options": [
+                "are going to",
+                "go to",
+                "will going to"
+              ],
+              "answer": "are going to",
+              "explanation": "We can see it is about to happen: *are going to*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "gt-check-1",
+              "type": "single_choice",
+              "prompt": "He ___ buy a new laptop.",
+              "options": [
+                "is going to",
+                "are going to",
+                "going"
+              ],
+              "answer": "is going to",
+              "explanation": "*He* + *is going to*."
+            },
+            {
+              "id": "gt-check-2",
+              "type": "single_choice",
+              "prompt": "Which is a question?",
+              "options": [
+                "Are you going to apply?",
+                "You are going to apply.",
+                "You aren't going to apply."
+              ],
+              "answer": "Are you going to apply?",
+              "explanation": "Questions start with *Are / Is*."
+            },
+            {
+              "id": "gt-check-3",
+              "type": "single_choice",
+              "prompt": "I ___ to the party. I'm too tired.",
+              "options": [
+                "am not going to go",
+                "not going to go",
+                "don't going to go"
+              ],
+              "answer": "am not going to go",
+              "explanation": "Negative: *am not going to* + verb."
+            },
+            {
+              "id": "gt-check-4",
+              "type": "single_choice",
+              "prompt": "They ___ get married in June.",
+              "options": [
+                "are going to",
+                "is going to",
+                "going to"
+              ],
+              "answer": "are going to",
+              "explanation": "*They* + *are going to*."
+            },
+            {
+              "id": "gt-check-5",
+              "type": "single_choice",
+              "prompt": "What ___ do after university?",
+              "options": [
+                "are you going to",
+                "you are going to",
+                "do you going to"
+              ],
+              "answer": "are you going to",
+              "explanation": "Question: *What are you going to do?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "will-predictions-offers",
+      "title": "Will: predictions, offers and quick decisions",
+      "summary": "Use will for the future when you decide now or guess.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "will + verb",
+          "body_md": "**will** (*'ll*) + base verb is the same for everyone: *I'll help, she'll help.*\n\nUse it for:\n- **quick decisions** made now: *The phone's ringing. I**'ll** answer it.*\n- **offers and promises**: *I**'ll** carry that bag for you. I **won't** tell anyone.*\n- **predictions** (what you think): *I think it **will** be sunny tomorrow.*\n\n**Negative:** *won't* (= will not)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *\"I'm cold.\" \"I**'ll** close the window.\"*\n- *Don't worry, I **won't** be late.*\n- *I think you**'ll** love this book.*\n- ***Will** you help me with this?*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "will-try-1",
+              "type": "single_choice",
+              "prompt": "\"I haven't got any money.\" \"Don't worry, I ___ pay.\"",
+              "options": [
+                "'ll",
+                "am going to",
+                "pay"
+              ],
+              "answer": "'ll",
+              "hint": "Did you decide just now?",
+              "explanation": "A quick decision or offer made now: *I'll pay*."
+            },
+            {
+              "id": "will-try-2",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She will comes.",
+                "She will come.",
+                "She wills come."
+              ],
+              "answer": "She will come.",
+              "explanation": "*will* + base verb, no *-s*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "will-check-1",
+              "type": "single_choice",
+              "prompt": "I promise I ___ forget.",
+              "options": [
+                "won't",
+                "don't",
+                "am not"
+              ],
+              "answer": "won't",
+              "explanation": "A promise: *I won't forget*."
+            },
+            {
+              "id": "will-check-2",
+              "type": "single_choice",
+              "prompt": "I think people ___ live on Mars one day.",
+              "options": [
+                "will",
+                "are",
+                "do"
+              ],
+              "answer": "will",
+              "explanation": "A prediction: *will live*."
+            },
+            {
+              "id": "will-check-3",
+              "type": "single_choice",
+              "prompt": "\"This box is heavy.\" \"I ___ help you.\"",
+              "options": [
+                "'ll",
+                "'m helping",
+                "help"
+              ],
+              "answer": "'ll",
+              "explanation": "An offer made now: *I'll help you*."
+            },
+            {
+              "id": "will-check-4",
+              "type": "single_choice",
+              "prompt": "___ you marry me?",
+              "options": [
+                "Will",
+                "Do",
+                "Are"
+              ],
+              "answer": "Will",
+              "explanation": "A request: *Will you ...?*"
+            },
+            {
+              "id": "will-check-5",
+              "type": "single_choice",
+              "prompt": "Which means \"will not\"?",
+              "options": [
+                "won't",
+                "willn't",
+                "don't"
+              ],
+              "answer": "won't",
+              "explanation": "*won't* = *will not*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "future-time-expressions",
+      "title": "Tomorrow, next week, in two days",
+      "summary": "Say when something will happen.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "When will it happen?",
+          "body_md": "- **tomorrow** / **tomorrow morning** / **the day after tomorrow**\n- **next** + time: *next week, next month, next year* (no *the*)\n- **in** + period: *in two days, in an hour* (= two days from now)\n- **soon**, **later**, **tonight**, **this evening**\n\nCompare: *two days **ago*** (past) and ***in** two days* (future)."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The shop opens **in** ten minutes.*\n- *I'll call you **tomorrow**.*\n- *We're going to Italy **next** month.*\n- *See you **later**!*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "ftx-try-1",
+              "type": "single_choice",
+              "prompt": "The train leaves ___ five minutes.",
+              "options": [
+                "in",
+                "after",
+                "ago"
+              ],
+              "answer": "in",
+              "hint": "ago is for the past.",
+              "explanation": "Future, from now: *in five minutes*."
+            },
+            {
+              "id": "ftx-try-2",
+              "type": "single_choice",
+              "prompt": "My exam is ___ Monday.",
+              "options": [
+                "next",
+                "the next",
+                "in"
+              ],
+              "answer": "next",
+              "explanation": "*next Monday* (no *the*)."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "ftx-check-1",
+              "type": "single_choice",
+              "prompt": "I'll finish the report ___.",
+              "options": [
+                "tomorrow",
+                "yesterday",
+                "last week"
+              ],
+              "answer": "tomorrow",
+              "explanation": "*tomorrow* is in the future."
+            },
+            {
+              "id": "ftx-check-2",
+              "type": "single_choice",
+              "prompt": "She's starting a new job ___ month.",
+              "options": [
+                "next",
+                "last",
+                "ago"
+              ],
+              "answer": "next",
+              "explanation": "Future: *next month*."
+            },
+            {
+              "id": "ftx-check-3",
+              "type": "single_choice",
+              "prompt": "Which is about the future?",
+              "options": [
+                "in three days",
+                "three days ago",
+                "last three days"
+              ],
+              "answer": "in three days",
+              "explanation": "*in three days* = three days from now."
+            },
+            {
+              "id": "ftx-check-4",
+              "type": "single_choice",
+              "prompt": "\"When is the party?\" \"___ Saturday, the day after tomorrow.\"",
+              "options": [
+                "This",
+                "Last",
+                "Ago"
+              ],
+              "answer": "This",
+              "explanation": "*This Saturday* = the coming Saturday."
+            },
+            {
+              "id": "ftx-check-5",
+              "type": "single_choice",
+              "prompt": "I'm busy now. I'll do it ___.",
+              "options": [
+                "later",
+                "ago",
+                "yesterday"
+              ],
+              "answer": "later",
+              "explanation": "*later* = at a time after now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "comparatives",
+      "title": "Comparatives: bigger, more expensive",
+      "summary": "Compare two people or things.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Comparing two things",
+          "body_md": "- Short adjectives: add **-er** + **than**: *tall → tall**er** than*\n- Ending in *e*: *nice → nic**er***\n- One vowel + one consonant: double it: *big → big**ger***, *hot → hot**ter***\n- Ending in consonant + *y*: *happy → happ**ier***, *easy → eas**ier***\n- Long adjectives: **more** + adjective: *more expensive, more interesting*\n- Irregular: *good → **better***, *bad → **worse***, *far → **further / farther***"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *My brother is **taller than** me.*\n- *Trains are **faster than** buses.*\n- *This book is **more interesting than** the film.*\n- *Today's weather is **worse than** yesterday's.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "cmp-try-1",
+              "type": "single_choice",
+              "prompt": "An elephant is ___ than a horse.",
+              "options": [
+                "big",
+                "biger",
+                "bigger"
+              ],
+              "answer": "bigger",
+              "hint": "One vowel + one consonant.",
+              "explanation": "*big* doubles the *g*: *bigger*."
+            },
+            {
+              "id": "cmp-try-2",
+              "type": "single_choice",
+              "prompt": "Gold is ___ than silver.",
+              "options": [
+                "expensiver",
+                "more expensive",
+                "most expensive"
+              ],
+              "answer": "more expensive",
+              "explanation": "Long adjective: *more expensive*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "cmp-check-1",
+              "type": "single_choice",
+              "prompt": "This test is ___ than the last one.",
+              "options": [
+                "easyer",
+                "easier",
+                "more easy"
+              ],
+              "answer": "easier",
+              "explanation": "*easy* → *easier* (y → ier)."
+            },
+            {
+              "id": "cmp-check-2",
+              "type": "single_choice",
+              "prompt": "My cooking is ___ than my sister's.",
+              "options": [
+                "gooder",
+                "better",
+                "more good"
+              ],
+              "answer": "better",
+              "explanation": "*good* → *better* (irregular)."
+            },
+            {
+              "id": "cmp-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She is older than me.",
+                "She is older that me.",
+                "She is more old than me."
+              ],
+              "answer": "She is older than me.",
+              "explanation": "Short adjective + *-er* + *than*."
+            },
+            {
+              "id": "cmp-check-4",
+              "type": "single_choice",
+              "prompt": "Summer is ___ than winter here.",
+              "options": [
+                "hoter",
+                "hotter",
+                "more hot"
+              ],
+              "answer": "hotter",
+              "explanation": "*hot* doubles the *t*: *hotter*."
+            },
+            {
+              "id": "cmp-check-5",
+              "type": "single_choice",
+              "prompt": "His second song was ___ than his first. Nobody liked it.",
+              "options": [
+                "badder",
+                "worse",
+                "worst"
+              ],
+              "answer": "worse",
+              "explanation": "*bad* → *worse*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "superlatives",
+      "title": "Superlatives: the biggest, the most beautiful",
+      "summary": "Say which is number one in a group.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "The top of a group",
+          "body_md": "Use a **superlative** to compare one thing with all the others in a group. Use **the**.\n\n- Short: **the** + adjective + **-est**: *the tall**est***, *the big**gest***, *the happ**iest***\n- Long: **the most** + adjective: *the most beautiful*\n- Irregular: *good → **the best***, *bad → **the worst***\n\nWe often use **in** with places and groups: *the tallest building **in** the city*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Mount Everest is **the highest** mountain in the world.*\n- *This is **the most delicious** cake I know.*\n- *Who is **the best** player in your team?*\n- *January is **the coldest** month here.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "sup-try-1",
+              "type": "single_choice",
+              "prompt": "The cheetah is ___ land animal.",
+              "options": [
+                "the fastest",
+                "the faster",
+                "fastest"
+              ],
+              "answer": "the fastest",
+              "hint": "Remember 'the'.",
+              "explanation": "Number one in the group: *the fastest*."
+            },
+            {
+              "id": "sup-try-2",
+              "type": "single_choice",
+              "prompt": "That was ___ day of my life!",
+              "options": [
+                "the most good",
+                "the best",
+                "the better"
+              ],
+              "answer": "the best",
+              "explanation": "*good* → *the best*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "sup-check-1",
+              "type": "single_choice",
+              "prompt": "She is ___ student in the class.",
+              "options": [
+                "the cleverest",
+                "the more clever",
+                "cleverest than"
+              ],
+              "answer": "the cleverest",
+              "explanation": "Superlative with *the*: *the cleverest*."
+            },
+            {
+              "id": "sup-check-2",
+              "type": "single_choice",
+              "prompt": "This is ___ hotel in town.",
+              "options": [
+                "the most expensive",
+                "the expensivest",
+                "more expensive"
+              ],
+              "answer": "the most expensive",
+              "explanation": "Long adjective: *the most expensive*."
+            },
+            {
+              "id": "sup-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "It's the bigest city.",
+                "It's the biggest city.",
+                "It's the most big city."
+              ],
+              "answer": "It's the biggest city.",
+              "explanation": "*big* → *the biggest*."
+            },
+            {
+              "id": "sup-check-4",
+              "type": "single_choice",
+              "prompt": "Last winter was ___ winter for fifty years.",
+              "options": [
+                "the worst",
+                "the baddest",
+                "the worse"
+              ],
+              "answer": "the worst",
+              "explanation": "*bad* → *the worst*."
+            },
+            {
+              "id": "sup-check-5",
+              "type": "single_choice",
+              "prompt": "Russia is the largest country ___ the world.",
+              "options": [
+                "in",
+                "of",
+                "at"
+              ],
+              "answer": "in",
+              "explanation": "*the largest ... in the world*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "adverbs-of-manner",
+      "title": "Adverbs: quickly, carefully, well",
+      "summary": "Say how someone does something.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "How?",
+          "body_md": "An **adverb of manner** says **how** we do something. Many are adjective + **-ly**: *quick → quick**ly***, *careful → careful**ly***.\n\n- *-y → -ily*: *easy → eas**ily***, *happy → happ**ily***\n- Irregular: *good → **well***, *fast → **fast***, *hard → **hard***\n\nAdjectives describe **nouns**; adverbs describe **verbs**: *She is a **careful** driver. She drives **carefully**.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Please speak **slowly**.*\n- *He plays the piano very **well**.*\n- *The children waited **quietly**.*\n- *She works **hard**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "adv-try-1",
+              "type": "single_choice",
+              "prompt": "He ran ___ to catch the bus.",
+              "options": [
+                "quick",
+                "quickly",
+                "quicker"
+              ],
+              "answer": "quickly",
+              "hint": "Does the word describe the verb?",
+              "explanation": "*ran* is a verb, so we need an adverb: *quickly*."
+            },
+            {
+              "id": "adv-try-2",
+              "type": "single_choice",
+              "prompt": "She speaks English very ___.",
+              "options": [
+                "good",
+                "well",
+                "goodly"
+              ],
+              "answer": "well",
+              "explanation": "The adverb of *good* is *well*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "adv-check-1",
+              "type": "single_choice",
+              "prompt": "Read the instructions ___.",
+              "options": [
+                "careful",
+                "carefully",
+                "carefuly"
+              ],
+              "answer": "carefully",
+              "explanation": "*careful + ly = carefully*."
+            },
+            {
+              "id": "adv-check-2",
+              "type": "single_choice",
+              "prompt": "Which word is an adverb?",
+              "options": [
+                "happy",
+                "happily",
+                "happiness"
+              ],
+              "answer": "happily",
+              "explanation": "*happily* says how someone does something."
+            },
+            {
+              "id": "adv-check-3",
+              "type": "single_choice",
+              "prompt": "He is a ___ worker.",
+              "options": [
+                "hard",
+                "hardly",
+                "hardily"
+              ],
+              "answer": "hard",
+              "explanation": "Before a noun we need an adjective: *a hard worker*."
+            },
+            {
+              "id": "adv-check-4",
+              "type": "single_choice",
+              "prompt": "She passed the exam ___.",
+              "options": [
+                "easy",
+                "easily",
+                "easyly"
+              ],
+              "answer": "easily",
+              "explanation": "*easy* → *easily*."
+            },
+            {
+              "id": "adv-check-5",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "He drives fastly.",
+                "He drives fast.",
+                "He fast drives."
+              ],
+              "answer": "He drives fast.",
+              "explanation": "*fast* is the same as an adjective and an adverb."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "countable-uncountable",
+      "title": "Countable and uncountable nouns",
+      "summary": "Use a, some and any with nouns you can and can't count.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Can you count it?",
+          "body_md": "- **Countable** nouns have a plural: *an apple → apples, a chair → chairs*.\n- **Uncountable** nouns have no plural and no *a/an*: *water, rice, money, information, advice, bread, music*.\n\n- **some** in positive sentences: *some apples, some water*\n- **any** in negatives and questions: *I don't have **any** money. Is there **any** milk?*\n\nWe can count uncountable things with containers: *a bottle of water, a piece of advice, a slice of bread*."
+        },
+        {
+          "kind": "see",
+          "title": "In the kitchen",
+          "body_md": "*We have **some** eggs and **some** cheese, but we don't have **any** bread. Is there **any** milk? Can you buy **a loaf of** bread and **a carton of** milk?*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "cnt-try-1",
+              "type": "single_choice",
+              "prompt": "Can I have ___ water, please?",
+              "options": [
+                "a",
+                "some",
+                "an"
+              ],
+              "answer": "some",
+              "hint": "Can you count water?",
+              "explanation": "*water* is uncountable: *some water*, not *a water*."
+            },
+            {
+              "id": "cnt-try-2",
+              "type": "single_choice",
+              "prompt": "Which noun is uncountable?",
+              "options": [
+                "chair",
+                "information",
+                "pen"
+              ],
+              "answer": "information",
+              "explanation": "*information* has no plural."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "cnt-check-1",
+              "type": "single_choice",
+              "prompt": "There isn't ___ sugar in my tea.",
+              "options": [
+                "some",
+                "any",
+                "a"
+              ],
+              "answer": "any",
+              "explanation": "Negative sentence: *any*."
+            },
+            {
+              "id": "cnt-check-2",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She gave me some advices.",
+                "She gave me some advice.",
+                "She gave me an advice."
+              ],
+              "answer": "She gave me some advice.",
+              "explanation": "*advice* is uncountable: no *-s*, no *an*."
+            },
+            {
+              "id": "cnt-check-3",
+              "type": "single_choice",
+              "prompt": "I bought ___ oranges at the market.",
+              "options": [
+                "some",
+                "any",
+                "an"
+              ],
+              "answer": "some",
+              "explanation": "Positive sentence with a plural: *some*."
+            },
+            {
+              "id": "cnt-check-4",
+              "type": "single_choice",
+              "prompt": "Are there ___ questions?",
+              "options": [
+                "some",
+                "any",
+                "a"
+              ],
+              "answer": "any",
+              "explanation": "Question: *any*."
+            },
+            {
+              "id": "cnt-check-5",
+              "type": "single_choice",
+              "prompt": "I'd like ___ of bread, please.",
+              "options": [
+                "a slice",
+                "a bread",
+                "breads"
+              ],
+              "answer": "a slice",
+              "explanation": "Count bread with *a slice of* or *a loaf of*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "much-many-a-lot",
+      "title": "How much, how many, a lot of",
+      "summary": "Talk about quantity.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "much / many / a lot of",
+          "body_md": "- **many** + plural countable: *many books*\n- **much** + uncountable: *much time*\n- **a lot of** + both: *a lot of books, a lot of time*\n\n*much* and *many* are most common in **questions and negatives**: *I don't have **much** time. Were there **many** people?*\n\nQuestions: ***How many** brothers have you got? **How much** money do you need?*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***How many** students are in your class?* — *About twenty.*\n- ***How much** does this cost?*\n- *There was **a lot of** traffic this morning.*\n- *We didn't take **many** photos.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "mm-try-1",
+              "type": "single_choice",
+              "prompt": "How ___ eggs do we need?",
+              "options": [
+                "much",
+                "many",
+                "lot"
+              ],
+              "answer": "many",
+              "hint": "Can you count eggs?",
+              "explanation": "*eggs* are countable: *how many*."
+            },
+            {
+              "id": "mm-try-2",
+              "type": "single_choice",
+              "prompt": "I don't drink ___ coffee.",
+              "options": [
+                "many",
+                "much",
+                "a lots"
+              ],
+              "answer": "much",
+              "explanation": "*coffee* is uncountable: *much*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "mm-check-1",
+              "type": "single_choice",
+              "prompt": "How ___ is the ticket?",
+              "options": [
+                "many",
+                "much",
+                "lot"
+              ],
+              "answer": "much",
+              "explanation": "Asking about price/money: *How much*."
+            },
+            {
+              "id": "mm-check-2",
+              "type": "single_choice",
+              "prompt": "There are ___ trees in this park.",
+              "options": [
+                "a lot of",
+                "much",
+                "a lot"
+              ],
+              "answer": "a lot of",
+              "explanation": "*a lot of* + plural noun."
+            },
+            {
+              "id": "mm-check-3",
+              "type": "single_choice",
+              "prompt": "We haven't got ___ time.",
+              "options": [
+                "many",
+                "much",
+                "a lots of"
+              ],
+              "answer": "much",
+              "explanation": "*time* is uncountable: *much*."
+            },
+            {
+              "id": "mm-check-4",
+              "type": "single_choice",
+              "prompt": "How ___ languages do you speak?",
+              "options": [
+                "much",
+                "many",
+                "lot of"
+              ],
+              "answer": "many",
+              "explanation": "*languages* are countable: *how many*."
+            },
+            {
+              "id": "mm-check-5",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She has a lot of friends.",
+                "She has much friends.",
+                "She has a lot friends."
+              ],
+              "answer": "She has a lot of friends.",
+              "explanation": "*a lot of* + plural: *a lot of friends*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "object-pronouns",
+      "title": "Object pronouns: me, him, them",
+      "summary": "Use the right pronoun after a verb or a preposition.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Subject and object",
+          "body_md": "A **subject** pronoun does the action. An **object** pronoun comes **after** a verb or a preposition.\n\n| Subject | Object |\n|---|---|\n| I | me |\n| you | you |\n| he | him |\n| she | her |\n| it | it |\n| we | us |\n| they | them |"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *I like **her**.* (not *I like she*)\n- *Can you help **me**?*\n- *This present is for **them**.*\n- *We called **him** yesterday.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "obj-try-1",
+              "type": "single_choice",
+              "prompt": "Tom is my friend. I see ___ every day.",
+              "options": [
+                "he",
+                "him",
+                "his"
+              ],
+              "answer": "him",
+              "hint": "It comes after the verb.",
+              "explanation": "After the verb *see*: object *him*."
+            },
+            {
+              "id": "obj-try-2",
+              "type": "single_choice",
+              "prompt": "Please wait for ___.",
+              "options": [
+                "we",
+                "us",
+                "our"
+              ],
+              "answer": "us",
+              "explanation": "After the preposition *for*: *us*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "obj-check-1",
+              "type": "single_choice",
+              "prompt": "My parents live far away. I miss ___.",
+              "options": [
+                "they",
+                "them",
+                "their"
+              ],
+              "answer": "them",
+              "explanation": "Object of *miss*: *them*."
+            },
+            {
+              "id": "obj-check-2",
+              "type": "single_choice",
+              "prompt": "Can you give ___ the salt, please?",
+              "options": [
+                "I",
+                "me",
+                "my"
+              ],
+              "answer": "me",
+              "explanation": "Object: *me*."
+            },
+            {
+              "id": "obj-check-3",
+              "type": "single_choice",
+              "prompt": "Anna sent ___ a message. He replied quickly.",
+              "options": [
+                "him",
+                "he",
+                "his"
+              ],
+              "answer": "him",
+              "explanation": "Object of *sent*: *him*."
+            },
+            {
+              "id": "obj-check-4",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She called me last night.",
+                "She called I last night.",
+                "Her called me last night."
+              ],
+              "answer": "She called me last night.",
+              "explanation": "Subject *she*, object *me*."
+            },
+            {
+              "id": "obj-check-5",
+              "type": "single_choice",
+              "prompt": "This is my new phone. Do you like ___?",
+              "options": [
+                "it",
+                "its",
+                "them"
+              ],
+              "answer": "it",
+              "explanation": "One thing: *it*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "must-have-to",
+      "title": "Must and have to",
+      "summary": "Talk about rules and things that are necessary.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Rules and needs",
+          "body_md": "- **must** + verb: a strong rule, or the speaker feels it is necessary: *I **must** call my mum.*\n- **have to / has to** + verb: necessary because of a rule or situation: *She **has to** wear a uniform.*\n- **mustn't**: it is not allowed: *You **mustn't** smoke here.*\n- **don't have to**: it is not necessary (you can choose): *You **don't have to** come.*\n\nPast: use **had to**: *We **had to** wait an hour.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Students **must** switch off their phones in the exam room.*\n- *He **has to** get up at six for work.*\n- *You **mustn't** touch the paintings.*\n- *It's Sunday, so I **don't have to** work.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "must-try-1",
+              "type": "single_choice",
+              "prompt": "My sister ___ work on Saturdays.",
+              "options": [
+                "have to",
+                "has to",
+                "must to"
+              ],
+              "answer": "has to",
+              "hint": "Third person singular.",
+              "explanation": "*she* → *has to*."
+            },
+            {
+              "id": "must-try-2",
+              "type": "single_choice",
+              "prompt": "It's free. You ___ pay.",
+              "options": [
+                "mustn't",
+                "don't have to",
+                "must"
+              ],
+              "answer": "don't have to",
+              "explanation": "Not necessary: *don't have to*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "must-check-1",
+              "type": "single_choice",
+              "prompt": "You ___ cross the road when the light is red. It's dangerous.",
+              "options": [
+                "mustn't",
+                "don't have to",
+                "has to"
+              ],
+              "answer": "mustn't",
+              "explanation": "Not allowed: *mustn't*."
+            },
+            {
+              "id": "must-check-2",
+              "type": "single_choice",
+              "prompt": "Yesterday I ___ stay late at work.",
+              "options": [
+                "must",
+                "had to",
+                "have to"
+              ],
+              "answer": "had to",
+              "explanation": "Past of *have to*: *had to*."
+            },
+            {
+              "id": "must-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "I must go now.",
+                "I must to go now.",
+                "I musts go now."
+              ],
+              "answer": "I must go now.",
+              "explanation": "*must* + verb without *to*."
+            },
+            {
+              "id": "must-check-4",
+              "type": "single_choice",
+              "prompt": "The museum is free on Mondays, so you ___ buy a ticket.",
+              "options": [
+                "mustn't",
+                "don't have to",
+                "must"
+              ],
+              "answer": "don't have to",
+              "explanation": "You can choose: *don't have to*."
+            },
+            {
+              "id": "must-check-5",
+              "type": "single_choice",
+              "prompt": "Do you ___ wear a tie at work?",
+              "options": [
+                "have to",
+                "must to",
+                "has to"
+              ],
+              "answer": "have to",
+              "explanation": "Question: *Do you have to ...?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "should-advice",
+      "title": "Should for advice",
+      "summary": "Give and ask for advice.",
+      "estimated_minutes": 10,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Giving advice",
+          "body_md": "Use **should** + verb to say something is a good idea. Use **shouldn't** for a bad idea.\n\n*should* is the same for every person: *I / you / she / they **should** rest.*\n\nAsk for advice: ***Should** I take a taxi?* · *What **should** I do?*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *You look tired. You **should** go to bed early.*\n- *You **shouldn't** eat so much sugar.*\n- *What **should** I wear to the interview?*\n- *She **should** see a doctor.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "sh-try-1",
+              "type": "single_choice",
+              "prompt": "You have a cold. You ___ drink hot tea.",
+              "options": [
+                "should",
+                "shouldn't",
+                "should to"
+              ],
+              "answer": "should",
+              "hint": "Is it a good idea?",
+              "explanation": "A good idea: *should*."
+            },
+            {
+              "id": "sh-try-2",
+              "type": "single_choice",
+              "prompt": "He ___ drive so fast. It's dangerous.",
+              "options": [
+                "should",
+                "shouldn't",
+                "shoulds"
+              ],
+              "answer": "shouldn't",
+              "explanation": "A bad idea: *shouldn't*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "sh-check-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "She should study more.",
+                "She shoulds study more.",
+                "She should to study more."
+              ],
+              "answer": "She should study more.",
+              "explanation": "*should* + verb, no *-s*, no *to*."
+            },
+            {
+              "id": "sh-check-2",
+              "type": "single_choice",
+              "prompt": "___ I call her now or later?",
+              "options": [
+                "Should",
+                "Do should",
+                "Am should"
+              ],
+              "answer": "Should",
+              "explanation": "Question: *Should I ...?*"
+            },
+            {
+              "id": "sh-check-3",
+              "type": "single_choice",
+              "prompt": "You ___ stay up late before an exam.",
+              "options": [
+                "should",
+                "shouldn't",
+                "must to"
+              ],
+              "answer": "shouldn't",
+              "explanation": "A bad idea: *shouldn't*."
+            },
+            {
+              "id": "sh-check-4",
+              "type": "single_choice",
+              "prompt": "It's cold outside. You ___ take a coat.",
+              "options": [
+                "should",
+                "shouldn't",
+                "should not to"
+              ],
+              "answer": "should",
+              "explanation": "Good advice: *should*."
+            },
+            {
+              "id": "sh-check-5",
+              "type": "single_choice",
+              "prompt": "What ___ I do? I lost my keys.",
+              "options": [
+                "should",
+                "shoulds",
+                "do should"
+              ],
+              "answer": "should",
+              "explanation": "*What should I do?*"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linking-words",
+      "title": "Linking words: and, but, because, so",
+      "summary": "Join two ideas in one sentence.",
+      "estimated_minutes": 12,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Joining ideas",
+          "body_md": "- **and** adds an idea: *I like tea **and** coffee.*\n- **but** shows a contrast: *It's small **but** comfortable.*\n- **because** gives a reason: *I stayed home **because** I was ill.*\n- **so** gives a result: *I was ill, **so** I stayed home.*\n\nTip: *because* answers *Why?* · *so* tells you *what happened next*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *She plays the piano **and** sings.*\n- *I wanted to go, **but** I was busy.*\n- *We took a taxi **because** it was raining.*\n- *It was raining, **so** we took a taxi.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "lk-try-1",
+              "type": "single_choice",
+              "prompt": "I was hungry, ___ I made a sandwich.",
+              "options": [
+                "because",
+                "so",
+                "but"
+              ],
+              "answer": "so",
+              "hint": "What happened next?",
+              "explanation": "Result: *so*."
+            },
+            {
+              "id": "lk-try-2",
+              "type": "single_choice",
+              "prompt": "The phone is cheap ___ good.",
+              "options": [
+                "but",
+                "because",
+                "so"
+              ],
+              "answer": "but",
+              "explanation": "Cheap vs. good is a surprise: *but*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "lk-check-1",
+              "type": "single_choice",
+              "prompt": "He missed the bus ___ he woke up late.",
+              "options": [
+                "so",
+                "because",
+                "and"
+              ],
+              "answer": "because",
+              "explanation": "Reason: *because*."
+            },
+            {
+              "id": "lk-check-2",
+              "type": "single_choice",
+              "prompt": "I bought bread ___ milk.",
+              "options": [
+                "and",
+                "but",
+                "so"
+              ],
+              "answer": "and",
+              "explanation": "Adding: *and*."
+            },
+            {
+              "id": "lk-check-3",
+              "type": "single_choice",
+              "prompt": "The film was long, ___ it was very good.",
+              "options": [
+                "because",
+                "so",
+                "but"
+              ],
+              "answer": "but",
+              "explanation": "Contrast: *but*."
+            },
+            {
+              "id": "lk-check-4",
+              "type": "single_choice",
+              "prompt": "It was late, ___ we went home.",
+              "options": [
+                "so",
+                "because",
+                "but"
+              ],
+              "answer": "so",
+              "explanation": "Result: *so*."
+            },
+            {
+              "id": "lk-check-5",
+              "type": "single_choice",
+              "prompt": "She is happy ___ she passed her test.",
+              "options": [
+                "so",
+                "because",
+                "but"
+              ],
+              "answer": "because",
+              "explanation": "Reason: *because*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sequence-words",
+      "title": "Writing a short story: first, then, after that",
+      "summary": "Put events in order in a short paragraph.",
+      "estimated_minutes": 14,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Telling events in order",
+          "body_md": "Use **sequence words** to show the order of events:\n\n- **First,** ...\n- **Then** / **Next,** ...\n- **After that,** ...\n- **Finally,** ... (the last thing)\n\nUse the **past simple** for a story about yesterday or last week. Put a comma after *First*, *After that* and *Finally*."
+        },
+        {
+          "kind": "see",
+          "title": "Example paragraph",
+          "body_md": "*Last Saturday was a busy day. **First,** I cleaned my flat. **Then** I went to the market and bought some fruit. **After that,** I met my friend for lunch. **Finally,** we watched a film in the evening.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "sq-try-1",
+              "type": "single_choice",
+              "prompt": "Which word starts the story?",
+              "options": [
+                "Finally",
+                "First",
+                "After that"
+              ],
+              "answer": "First",
+              "hint": "Which comes at the beginning?",
+              "explanation": "*First* is for the first event."
+            },
+            {
+              "id": "sq-try-2",
+              "type": "single_choice",
+              "prompt": "___, I went to bed. It was the end of a long day.",
+              "options": [
+                "First",
+                "Finally",
+                "Then"
+              ],
+              "answer": "Finally",
+              "explanation": "The last event: *Finally*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "sq-check-1",
+              "type": "single_choice",
+              "prompt": "Choose the best order: (a) I had breakfast. (b) I woke up. (c) I went to work.",
+              "options": [
+                "b, a, c",
+                "a, b, c",
+                "c, b, a"
+              ],
+              "answer": "b, a, c",
+              "explanation": "Wake up → breakfast → work."
+            },
+            {
+              "id": "sq-check-2",
+              "type": "single_choice",
+              "prompt": "Which sentence is punctuated correctly?",
+              "options": [
+                "After that, we went home.",
+                "After that we, went home.",
+                "After, that we went home."
+              ],
+              "answer": "After that, we went home.",
+              "explanation": "Comma after *After that*."
+            },
+            {
+              "id": "sq-check-3",
+              "type": "single_choice",
+              "prompt": "Yesterday I ___ to the park first.",
+              "options": [
+                "go",
+                "went",
+                "goes"
+              ],
+              "answer": "went",
+              "explanation": "A story about yesterday: past simple *went*."
+            },
+            {
+              "id": "sq-check-4",
+              "type": "single_choice",
+              "prompt": "Which word can replace *Then*?",
+              "options": [
+                "Next",
+                "Finally",
+                "First"
+              ],
+              "answer": "Next",
+              "explanation": "*Next* and *Then* both mean the following step."
+            },
+            {
+              "id": "sq-check-5",
+              "type": "single_choice",
+              "prompt": "Which is the best last sentence of a story?",
+              "options": [
+                "Finally, I fell asleep.",
+                "First, I fell asleep.",
+                "Then first I fell asleep."
+              ],
+              "answer": "Finally, I fell asleep.",
+              "explanation": "*Finally* introduces the last event."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "slug": "l2-u1-past-events",
+      "title": "Unit 1: Past events",
+      "summary": "Talk about what happened: was, were and the past simple.",
+      "lessons": [
+        "past-was-were",
+        "past-simple-regular",
+        "past-simple-irregular",
+        "past-simple-questions-negatives",
+        "past-time-expressions"
+      ],
+      "test": [
+        {
+          "id": "u21-t1",
+          "type": "single_choice",
+          "prompt": "We ___ very tired after the game.",
+          "options": [
+            "was",
+            "were",
+            "did"
+          ],
+          "answer": "were",
+          "explanation": "*We* → *were*."
+        },
+        {
+          "id": "u21-t2",
+          "type": "single_choice",
+          "prompt": "She ___ the window because it was hot.",
+          "options": [
+            "opened",
+            "opend",
+            "open"
+          ],
+          "answer": "opened",
+          "explanation": "Regular past: *opened*."
+        },
+        {
+          "id": "u21-t3",
+          "type": "single_choice",
+          "prompt": "I ___ my keys at home.",
+          "options": [
+            "leaved",
+            "left",
+            "leave"
+          ],
+          "answer": "left",
+          "explanation": "The past of *leave* is *left*."
+        },
+        {
+          "id": "u21-t4",
+          "type": "single_choice",
+          "prompt": "They ___ the answer.",
+          "options": [
+            "didn't know",
+            "didn't knew",
+            "not knew"
+          ],
+          "answer": "didn't know",
+          "explanation": "*didn't* + base verb."
+        },
+        {
+          "id": "u21-t5",
+          "type": "single_choice",
+          "prompt": "I finished university three years ___.",
+          "options": [
+            "ago",
+            "last",
+            "before"
+          ],
+          "answer": "ago",
+          "explanation": "*three years ago*."
+        },
+        {
+          "id": "u21-t6",
+          "type": "single_choice",
+          "prompt": "___ you see the news?",
+          "options": [
+            "Did",
+            "Were",
+            "Do"
+          ],
+          "answer": "Did",
+          "explanation": "Past simple question: *Did you see ...?*"
+        }
+      ]
+    },
+    {
+      "slug": "l2-u2-now-and-next",
+      "title": "Unit 2: Now and next",
+      "summary": "Talk about now, your plans and the future.",
+      "lessons": [
+        "present-continuous-now",
+        "present-simple-vs-continuous",
+        "going-to-plans",
+        "will-predictions-offers",
+        "future-time-expressions"
+      ],
+      "test": [
+        {
+          "id": "u22-t1",
+          "type": "single_choice",
+          "prompt": "Shh! I ___ to the radio.",
+          "options": [
+            "listen",
+            "am listening",
+            "listens"
+          ],
+          "answer": "am listening",
+          "explanation": "Now: present continuous."
+        },
+        {
+          "id": "u22-t2",
+          "type": "single_choice",
+          "prompt": "She ___ tea. She prefers coffee.",
+          "options": [
+            "doesn't like",
+            "isn't liking",
+            "don't like"
+          ],
+          "answer": "doesn't like",
+          "explanation": "*like* is not used with -ing; *she* → *doesn't*."
+        },
+        {
+          "id": "u22-t3",
+          "type": "single_choice",
+          "prompt": "We have the tickets. We ___ see the show on Friday.",
+          "options": [
+            "are going to",
+            "will to",
+            "going"
+          ],
+          "answer": "are going to",
+          "explanation": "A plan already made: *are going to*."
+        },
+        {
+          "id": "u22-t4",
+          "type": "single_choice",
+          "prompt": "\"It's dark in here.\" \"I ___ turn on the light.\"",
+          "options": [
+            "'ll",
+            "'m going",
+            "turn"
+          ],
+          "answer": "'ll",
+          "explanation": "A decision made now: *I'll*."
+        },
+        {
+          "id": "u22-t5",
+          "type": "single_choice",
+          "prompt": "The film starts ___ ten minutes.",
+          "options": [
+            "in",
+            "ago",
+            "next"
+          ],
+          "answer": "in",
+          "explanation": "*in ten minutes* = from now."
+        },
+        {
+          "id": "u22-t6",
+          "type": "single_choice",
+          "prompt": "Which is correct?",
+          "options": [
+            "He is running every morning.",
+            "He runs every morning.",
+            "He run every morning."
+          ],
+          "answer": "He runs every morning.",
+          "explanation": "*every morning* = habit: *He runs*."
+        }
+      ]
+    },
+    {
+      "slug": "l2-u3-describing-and-comparing",
+      "title": "Unit 3: Describing and comparing",
+      "summary": "Compare things, say how people do things, and talk about quantity.",
+      "lessons": [
+        "comparatives",
+        "superlatives",
+        "adverbs-of-manner",
+        "countable-uncountable",
+        "much-many-a-lot"
+      ],
+      "test": [
+        {
+          "id": "u23-t1",
+          "type": "single_choice",
+          "prompt": "A plane is ___ than a car.",
+          "options": [
+            "fast",
+            "faster",
+            "fastest"
+          ],
+          "answer": "faster",
+          "explanation": "Two things: comparative *faster*."
+        },
+        {
+          "id": "u23-t2",
+          "type": "single_choice",
+          "prompt": "It's ___ restaurant in the city.",
+          "options": [
+            "the best",
+            "the better",
+            "best than"
+          ],
+          "answer": "the best",
+          "explanation": "Superlative: *the best*."
+        },
+        {
+          "id": "u23-t3",
+          "type": "single_choice",
+          "prompt": "Please drive ___.",
+          "options": [
+            "slow",
+            "slowly",
+            "slowlly"
+          ],
+          "answer": "slowly",
+          "explanation": "Adverb: *slowly*."
+        },
+        {
+          "id": "u23-t4",
+          "type": "single_choice",
+          "prompt": "Can you give me ___ information?",
+          "options": [
+            "an",
+            "some",
+            "many"
+          ],
+          "answer": "some",
+          "explanation": "*information* is uncountable: *some*."
+        },
+        {
+          "id": "u23-t5",
+          "type": "single_choice",
+          "prompt": "How ___ people came to the meeting?",
+          "options": [
+            "much",
+            "many",
+            "lot"
+          ],
+          "answer": "many",
+          "explanation": "*people* is countable plural: *how many*."
+        },
+        {
+          "id": "u23-t6",
+          "type": "single_choice",
+          "prompt": "This chair is ___ than that one.",
+          "options": [
+            "more comfortable",
+            "comfortabler",
+            "most comfortable"
+          ],
+          "answer": "more comfortable",
+          "explanation": "Long adjective: *more comfortable*."
+        }
+      ]
+    },
+    {
+      "slug": "l2-u4-everyday-english",
+      "title": "Unit 4: Everyday English",
+      "summary": "Use pronouns, talk about rules and advice, and join ideas into a short story.",
+      "lessons": [
+        "object-pronouns",
+        "must-have-to",
+        "should-advice",
+        "linking-words",
+        "sequence-words"
+      ],
+      "test": [
+        {
+          "id": "u24-t1",
+          "type": "single_choice",
+          "prompt": "My grandmother lives with ___.",
+          "options": [
+            "we",
+            "us",
+            "our"
+          ],
+          "answer": "us",
+          "explanation": "Object after *with*: *us*."
+        },
+        {
+          "id": "u24-t2",
+          "type": "single_choice",
+          "prompt": "You ___ park here. It's not allowed.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "should"
+          ],
+          "answer": "mustn't",
+          "explanation": "Not allowed: *mustn't*."
+        },
+        {
+          "id": "u24-t3",
+          "type": "single_choice",
+          "prompt": "You have a headache. You ___ rest.",
+          "options": [
+            "should",
+            "shouldn't",
+            "should to"
+          ],
+          "answer": "should",
+          "explanation": "Advice: *should*."
+        },
+        {
+          "id": "u24-t4",
+          "type": "single_choice",
+          "prompt": "I didn't go out ___ it was very cold.",
+          "options": [
+            "so",
+            "because",
+            "but"
+          ],
+          "answer": "because",
+          "explanation": "Reason: *because*."
+        },
+        {
+          "id": "u24-t5",
+          "type": "single_choice",
+          "prompt": "___, we packed our bags. Then we drove to the airport.",
+          "options": [
+            "Finally",
+            "First",
+            "After that"
+          ],
+          "answer": "First",
+          "explanation": "First event: *First*."
+        },
+        {
+          "id": "u24-t6",
+          "type": "single_choice",
+          "prompt": "He ___ wear glasses to read. He can't see well without them.",
+          "options": [
+            "has to",
+            "have to",
+            "must to"
+          ],
+          "answer": "has to",
+          "explanation": "*he* → *has to*."
+        }
+      ]
+    }
+  ]
+}

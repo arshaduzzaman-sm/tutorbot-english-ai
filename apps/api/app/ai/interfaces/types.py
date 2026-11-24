@@ -90,6 +90,8 @@ class EvaluationResult(BaseModel):
     strengths: list[str] = []
     weaknesses: list[str] = []
     recommendations: list[str] = []
+    flags: list[str] = []  # e.g. "off_topic", "template_like", "no_speech"
+    feedback: str = ""  # friendly text written by the LLM from the signals; it never sets the bands
     confidence: float = Field(ge=0, le=1)
     provider: ProviderName
     evaluation_model_version: str = EVALUATION_MODEL_VERSION

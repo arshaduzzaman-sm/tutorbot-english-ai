@@ -1,0 +1,44 @@
+{
+  "code": "describe_image",
+  "what": "You see a picture such as a graph, chart, map or diagram. You study it and then describe it.",
+  "tests": "Speaking: describing the main features and what they show, clearly and fluently.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "In the preparation time, find the title, the biggest and smallest values and the overall trend.",
+    "Start with one sentence that says what the image shows.",
+    "Give two or three key details with numbers or comparisons.",
+    "Finish with a short conclusion: what the image means overall.",
+    "Keep speaking at a steady pace. Simple, correct sentences are better than long, broken ones."
+  ],
+  "example_prompt": "A bar chart: visitors to a museum by season (spring 3,000; summer 5,500; autumn 2,800; winter 1,900).",
+  "examples": {
+    "strong": {
+      "answer": "The bar chart shows how many people visited a museum in each season. Summer was by far the busiest, with about five thousand five hundred visitors, while winter was the quietest, with under two thousand. Spring and autumn were similar, at around three thousand. Overall, the museum is much more popular in the warmer months.",
+      "why": "It says what the chart is, gives the highest, lowest and similar values, and ends with a clear conclusion."
+    },
+    "medium": {
+      "answer": "This chart is about museum visitors. Summer is high. Winter is low. Spring and autumn are, um, similar. So it changes.",
+      "why": "The main points are there, but there are few details, and the conclusion is vague."
+    },
+    "weak": {
+      "answer": "I can see a chart. There are some colours and some numbers. It is interesting.",
+      "why": "It does not describe what the data shows."
+    }
+  },
+  "mistakes": [
+    "Describing colours or shapes instead of the data.",
+    "Listing every number with no comparison.",
+    "Stopping to think for a long time.",
+    "No conclusion."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

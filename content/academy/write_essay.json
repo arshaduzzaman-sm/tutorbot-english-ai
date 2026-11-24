@@ -1,0 +1,48 @@
+{
+  "code": "write_essay",
+  "what": "You read a short prompt and write an essay of 200 to 300 words.",
+  "tests": "Writing: giving a clear argument with structure, accurate grammar and a good range of words.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Form",
+      "Development, structure and coherence",
+      "Grammar usage and mechanics",
+      "General linguistic range",
+      "Vocabulary range",
+      "Spelling"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Spend two or three minutes planning: your opinion and two main reasons with examples.",
+    "Write four paragraphs: introduction with your opinion, two body paragraphs, conclusion.",
+    "Start each body paragraph with a clear topic sentence, then explain and give an example.",
+    "Use linking words (however, therefore, for example) to connect ideas.",
+    "Keep within 200 to 300 words. Leave three minutes to check grammar and spelling."
+  ],
+  "example_prompt": "Some people think children should learn a second language at primary school. Others think it is better to start later. Discuss both views and give your opinion.",
+  "examples": {
+    "strong": {
+      "answer": "A four-paragraph essay of about 260 words: the introduction gives a clear opinion (start early), each body paragraph has one main reason with an example (young children copy sounds easily; early learners gain confidence), the other view is answered fairly (pressure on the timetable), and the conclusion repeats the opinion in new words.",
+      "why": "Clear position, logical structure, examples, linking words, correct word count."
+    },
+    "medium": {
+      "answer": "A 210-word essay in two long paragraphs. The opinion appears only at the end, reasons are listed without examples, and some sentences repeat the prompt.",
+      "why": "Ideas are relevant, but the structure is weak and development is thin."
+    },
+    "weak": {
+      "answer": "A 120-word answer that uses memorised phrases ('In this day and age...', 'In a nutshell...') and does not answer the question.",
+      "why": "Too short, off the point and templated: content and form are low."
+    }
+  },
+  "mistakes": [
+    "Memorised templates that do not answer the prompt.",
+    "No clear opinion.",
+    "Writing under 200 or over 300 words.",
+    "One long paragraph with no structure."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

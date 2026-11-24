@@ -14,6 +14,9 @@ import sys
 import uuid
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from content_rules import check_question  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 OUT = ROOT / "supabase" / "seed.sql"
@@ -27,6 +30,9 @@ DEMO_USERS = [
     {"email": "demo.student@example.test", "password": "DemoStudent-123!", "name": "Demo Student", "roles": []},
     {"email": "demo.admin@example.test", "password": "DemoAdmin-123!", "name": "Demo Admin", "roles": ["admin"]},
 ]
+
+
+ACADEMY_KEYS = ("what", "tests", "scoring", "strategy", "examples", "mistakes")
 
 
 def uid(kind: str, key: str) -> str:
@@ -82,18 +88,30 @@ def build() -> str:
     source = cats_file["_source"]
     cat_ids = {}
     out += ["", "-- Question categories (22 PTE Academic task types)"]
+    rules = load_json(CONTENT / "blueprints" / "task_rules.json")
     for i, c in enumerate(cats_file["categories"], start=1):
         cat_ids[c["code"]] = uid("category", c["code"])
         skills = "array[" + ", ".join(q(s) for s in c["skills"]) + "]::public.skill[]"
+        guide_path = CONTENT / "academy" / f"{c['code']}.json"
+        guide = load_json(guide_path) if guide_path.exists() else {}
+        missing = [k for k in ACADEMY_KEYS if not guide.get(k)]
+        if missing:
+            errors.append(f"academy/{c['code']}.json: missing {', '.join(missing)}")
+        elif set(guide["examples"]) != {"strong", "medium", "weak"}:
+            errors.append(f"academy/{c['code']}.json: examples must be strong, medium and weak")
+        task_rules = rules["tasks"].get(c["code"])
+        if not task_rules:
+            errors.append(f"blueprints/task_rules.json: no rules for {c['code']}")
+        guide = {**guide, "rules": task_rules or {}, "rules_source": rules["_source"]}
         out.append(
-            "insert into public.question_categories (id, code, name, section, skills, sort_order, description, official_source_url, verified) values ("
+            "insert into public.question_categories (id, code, name, section, skills, sort_order, description, official_source_url, verified, guide) values ("
             f"{q(cat_ids[c['code']])}, {q(c['code'])}, {q(c['name'])}, {q(c['section'])}, {skills}, {i}, "
-            f"{q(c.get('description', ''))}, {q(source)}, true);"
+            f"{q(c.get('description', ''))}, {q(source)}, true, {q(guide)});"
         )
     if len(cat_ids) != 22:
         errors.append(f"expected 22 question categories, found {len(cat_ids)}")
 
-    out += ["", "-- Lessons"]
+    out += ["", "-- Units and lessons"]
     lesson_count = 0
     for path in sorted((CONTENT / "lessons").glob("*.json")):
         data = load_json(path)
@@ -101,12 +119,36 @@ def build() -> str:
         if not level_id:
             errors.append(f"{path.name}: unknown level_code {data['level_code']}")
             continue
+        unit_of: dict[str, str] = {}
+        lesson_slugs = {lesson["slug"] for lesson in data["lessons"]}
+        for u_order, unit in enumerate(data.get("units", []), start=1):
+            unit_id = uid("unit", unit["slug"])
+            for slug in unit["lessons"]:
+                if slug not in lesson_slugs:
+                    errors.append(f"{path.name}/{unit['slug']}: unknown lesson {slug}")
+                if slug in unit_of:
+                    errors.append(f"{path.name}: lesson {slug} is in two units")
+                unit_of[slug] = unit_id
+            test = unit.get("test", [])
+            if len(test) < 5:
+                errors.append(f"{unit['slug']}: end-of-unit test needs at least 5 items")
+            for ex in test:
+                if ex.get("type") != "single_choice" or ex["answer"] not in ex["options"]:
+                    errors.append(f"{unit['slug']}/{ex.get('id')}: must be single_choice with the answer in options")
+            out.append(
+                "insert into public.units (id, slug, learning_level_id, title, summary, sort_order, test_items, status) values ("
+                f"{q(unit_id)}, {q(unit['slug'])}, {q(level_id)}, {q(unit['title'])}, {q(unit.get('summary', ''))}, "
+                f"{u_order}, {q(test)}, 'published');"
+            )
+        if data.get("units") and set(unit_of) != lesson_slugs:
+            errors.append(f"{path.name}: lessons not in any unit: {sorted(lesson_slugs - set(unit_of))}")
         for order, lesson in enumerate(data["lessons"], start=1):
             lesson_count += 1
             lid = uid("lesson", lesson["slug"])
+            unit_sql = q(unit_of[lesson["slug"]]) if lesson["slug"] in unit_of else "null"
             out.append(
-                "insert into public.lessons (id, slug, learning_level_id, title, summary, sort_order, estimated_minutes, status) values ("
-                f"{q(lid)}, {q(lesson['slug'])}, {q(level_id)}, {q(lesson['title'])}, {q(lesson['summary'])}, {order}, "
+                "insert into public.lessons (id, slug, learning_level_id, unit_id, title, summary, sort_order, estimated_minutes, status) values ("
+                f"{q(lid)}, {q(lesson['slug'])}, {q(level_id)}, {unit_sql}, {q(lesson['title'])}, {q(lesson['summary'])}, {order}, "
                 f"{lesson.get('estimated_minutes', 10)}, 'published');"
             )
             for s_order, sec in enumerate(lesson["sections"], start=1):
@@ -124,35 +166,29 @@ def build() -> str:
     out += ["", "-- Sample questions"]
     seen: set[str] = set()
     per_cat: dict[str, int] = {}
+    published_by_type: dict[str, int] = {}
     for path in sorted((CONTENT / "questions").glob("*.json")):
         for item in load_json(path)["questions"]:
             ext = item["external_id"]
             if ext in seen:
                 errors.append(f"duplicate external_id {ext}")
             seen.add(ext)
-            if item["category"] not in cat_ids:
-                errors.append(f"{ext}: unknown category {item['category']}")
+            problems = check_question(item, set(cat_ids))
+            if problems:
+                errors += problems
                 continue
-            if item["difficulty"] not in DIFFICULTIES:
-                errors.append(f"{ext}: bad difficulty")
-            for field in ("instructions", "explanation", "learning_objective"):
-                if not item.get(field):
-                    errors.append(f"{ext}: missing {field}")
             options = item.get("options", [])
-            if options and not any(o["is_correct"] for o in options):
-                errors.append(f"{ext}: no correct option")
-            if options:
-                correct = sorted(o["label"] for o in options if o["is_correct"])
-                if correct != sorted(item["answer"].get("correct", [])):
-                    errors.append(f"{ext}: answer.correct does not match options")
+            status = item.get("status", "published")
             per_cat[item["category"]] = per_cat.get(item["category"], 0) + 1
+            if status == "published":
+                published_by_type[item["category"]] = published_by_type.get(item["category"], 0) + 1
             qid = uid("question", ext)
             out.append(
                 "insert into public.questions (id, external_id, category_id, difficulty, instructions, content, answer, explanation, "
                 "learning_objective, scoring_criteria, key_points, status) values ("
                 f"{q(qid)}, {q(ext)}, {q(cat_ids[item['category']])}, {q(item['difficulty'])}, {q(item['instructions'])}, "
                 f"{q(item['content'])}, {q(item['answer'])}, {q(item['explanation'])}, {q(item['learning_objective'])}, "
-                f"{text_array(item.get('scoring_criteria', []))}, {text_array(item.get('key_points', []))}, 'published');"
+                f"{text_array(item.get('scoring_criteria', []))}, {text_array(item.get('key_points', []))}, {q(status)});"
             )
             for o_order, opt in enumerate(options, start=1):
                 out.append(
@@ -160,8 +196,87 @@ def build() -> str:
                     f"{q(uid('option', ext + ':' + opt['label']))}, {q(qid)}, {q(opt['label'])}, {q(opt['body'])}, {q(opt['is_correct'])}, {o_order});"
                 )
     for code in cat_ids:
-        if per_cat.get(code, 0) < 2:
+        if per_cat.get(code, 0) < 2:  # counts every status; learners only see published
             errors.append(f"category {code} has fewer than 2 questions")
+
+    out += ["", "-- Placement (diagnostic) test"]
+    diag = load_json(CONTENT / "diagnostic.json")
+    per_level: dict[int, int] = {}
+    ids: set[str] = set()
+    for item in diag["items"]:
+        if item["id"] in ids:
+            errors.append(f"diagnostic: duplicate id {item['id']}")
+        ids.add(item["id"])
+        if item["level"] not in level_ids:
+            errors.append(f"diagnostic/{item['id']}: unknown level {item['level']}")
+        if item.get("skill") not in ("reading", "writing", "listening", "speaking"):
+            errors.append(f"diagnostic/{item['id']}: bad skill {item.get('skill')}")
+        if item.get("type") != "single_choice" or item["answer"] not in item["options"]:
+            errors.append(f"diagnostic/{item['id']}: must be single_choice with the answer in options")
+        per_level[item["level"]] = per_level.get(item["level"], 0) + 1
+    if sorted(per_level) != sorted(level_ids) or min(per_level.values()) < 2:
+        errors.append("diagnostic: every level needs at least 2 items")
+    out.append(
+        "insert into public.placement_tests (id, slug, title, version, estimated_minutes, items) values ("
+        f"{q(uid('placement', diag['slug']))}, {q(diag['slug'])}, {q(diag['title'])}, {diag['version']}, "
+        f"{diag['estimated_minutes']}, {q(diag['items'])});"
+    )
+
+    out += ["", "-- Vocabulary track"]
+    seen_words: set[str] = set()
+    for path in sorted((CONTENT / "vocabulary").glob("level-*.json")):
+        data = load_json(path)
+        level_id = level_ids.get(data["level_code"])
+        if level_id is None:
+            errors.append(f"{path.name}: unknown level {data['level_code']}")
+            continue
+        for s_order, vset in enumerate(data["sets"], start=1):
+            if not vset.get("words"):
+                errors.append(f"{path.name}: set {vset.get('slug')} has no words")
+            for w_order, w in enumerate(vset["words"], start=1):
+                missing = [k for k in ("id", "word", "part_of_speech", "meaning", "example") if not w.get(k)]
+                if missing or w["id"] in seen_words:
+                    errors.append(f"{path.name}/{w.get('id')}: missing {missing} or duplicate id")
+                    continue
+                seen_words.add(w["id"])
+                out.append(
+                    "insert into public.vocabulary (id, external_id, learning_level_id, set_slug, set_title, set_order, "
+                    "sort_order, word, part_of_speech, meaning, example, status) values ("
+                    f"{q(uid('vocab', w['id']))}, {q(w['id'])}, {q(level_id)}, {q(vset['slug'])}, {q(vset['title'])}, "
+                    f"{s_order}, {w_order}, {q(w['word'])}, {q(w['part_of_speech'])}, {q(w['meaning'])}, "
+                    f"{q(w['example'])}, 'published');"
+                )
+
+    out += ["", "-- Pronunciation track"]
+    for p_order, t in enumerate(load_json(CONTENT / "pronunciation.json")["topics"], start=1):
+        for d in t["drill"]:
+            if d["answer"] not in d["options"] or d.get("type") not in ("listen_choose", "choose"):
+                errors.append(f"pronunciation/{d['id']}: answer must be one of the options")
+        if len(t["drill"]) < 5:
+            errors.append(f"pronunciation/{t['slug']}: needs at least 5 drill items")
+        out.append(
+            "insert into public.pronunciation_topics (id, slug, kind, title, symbols, tip, examples, drill, sort_order, status) "
+            f"values ({q(uid('pron', t['slug']))}, {q(t['slug'])}, {q(t['kind'])}, {q(t['title'])}, {text_array(t['symbols'])}, "
+            f"{q(t['tip'])}, {text_array(t['examples'])}, {q(t['drill'])}, {p_order}, 'published');"
+        )
+
+    out += ["", "-- Exam blueprints (SPEC 5A.4)"]
+    for path in sorted((CONTENT / "blueprints").glob("*.json")):
+        if path.name == "task_rules.json":
+            continue
+        bp = load_json(path)
+        for sec in bp["sections"]:
+            for item in sec["items"]:
+                have = published_by_type.get(item["type"], 0)
+                if item["type"] not in cat_ids:
+                    errors.append(f"blueprints/{path.name}: unknown task type {item['type']}")
+                elif item["count"] > have:
+                    errors.append(f"blueprints/{path.name}: needs {item['count']} {item['type']} but only {have} published")
+        out.append(
+            "insert into public.blueprints (id, code, version, name, kind, spec, verified, sort_order) values ("
+            f"{q(uid('blueprint', bp['code']))}, {q(bp['code'])}, {q(bp['version'])}, {q(bp['name'])}, {q(bp['kind'])}, "
+            f"{q(bp)}, {'true' if bp.get('verified') else 'false'}, {bp.get('sort_order', 0)});"
+        )
 
     out += ["", "-- Demo users (fake, local only). The signup trigger creates profiles and student roles."]
     for user in DEMO_USERS:

@@ -1,0 +1,3772 @@
+{
+  "level_code": 3,
+  "sets": [
+    {
+      "slug": "l3-words-01",
+      "title": "Useful words 1",
+      "words": [
+        {
+          "id": "scale-noun",
+          "word": "scale",
+          "part_of_speech": "noun",
+          "meaning": "size or level",
+          "example": "The scale of the problem is huge."
+        },
+        {
+          "id": "score-noun",
+          "word": "score",
+          "part_of_speech": "noun",
+          "meaning": "the points in a game or test",
+          "example": "What's the score?"
+        },
+        {
+          "id": "separate-adjective",
+          "word": "separate",
+          "part_of_speech": "adjective",
+          "meaning": "not together",
+          "example": "We sleep in separate rooms."
+        },
+        {
+          "id": "smart-adjective",
+          "word": "smart",
+          "part_of_speech": "adjective",
+          "meaning": "clever; well dressed",
+          "example": "She's a smart student."
+        },
+        {
+          "id": "surface-noun",
+          "word": "surface",
+          "part_of_speech": "noun",
+          "meaning": "the top layer",
+          "example": "The surface of the table is smooth."
+        },
+        {
+          "id": "throw-verb",
+          "word": "throw",
+          "part_of_speech": "verb",
+          "meaning": "send through the air with your hand",
+          "example": "Throw me the ball."
+        },
+        {
+          "id": "totally-adverb",
+          "word": "totally",
+          "part_of_speech": "adverb",
+          "meaning": "completely",
+          "example": "I totally agree."
+        },
+        {
+          "id": "wedding-noun",
+          "word": "wedding",
+          "part_of_speech": "noun",
+          "meaning": "a marriage ceremony",
+          "example": "They invited us to their wedding."
+        },
+        {
+          "id": "arm-noun",
+          "word": "arm",
+          "part_of_speech": "noun",
+          "meaning": "the part of your body from shoulder to hand",
+          "example": "I broke my arm."
+        },
+        {
+          "id": "budget-noun",
+          "word": "budget",
+          "part_of_speech": "noun",
+          "meaning": "a plan for spending money",
+          "example": "We're on a tight budget."
+        },
+        {
+          "id": "click-verb",
+          "word": "click",
+          "part_of_speech": "verb",
+          "meaning": "press a button on a mouse",
+          "example": "Click here to start."
+        },
+        {
+          "id": "fail-verb",
+          "word": "fail",
+          "part_of_speech": "verb",
+          "meaning": "not succeed",
+          "example": "He failed his driving test."
+        },
+        {
+          "id": "faith-noun",
+          "word": "faith",
+          "part_of_speech": "noun",
+          "meaning": "strong belief",
+          "example": "I have faith in you."
+        },
+        {
+          "id": "fashion-noun",
+          "word": "fashion",
+          "part_of_speech": "noun",
+          "meaning": "popular styles of clothes",
+          "example": "She loves fashion."
+        },
+        {
+          "id": "fund-noun",
+          "word": "fund",
+          "part_of_speech": "noun",
+          "meaning": "money saved for a purpose",
+          "example": "We started a fund for the school."
+        },
+        {
+          "id": "generation-noun",
+          "word": "generation",
+          "part_of_speech": "noun",
+          "meaning": "people born at about the same time",
+          "example": "My generation grew up with the internet."
+        },
+        {
+          "id": "hill-noun",
+          "word": "hill",
+          "part_of_speech": "noun",
+          "meaning": "a small mountain",
+          "example": "We walked up the hill."
+        },
+        {
+          "id": "metal-noun",
+          "word": "metal",
+          "part_of_speech": "noun",
+          "meaning": "a hard material like iron or gold",
+          "example": "The gate is made of metal."
+        },
+        {
+          "id": "profile-noun",
+          "word": "profile",
+          "part_of_speech": "noun",
+          "meaning": "a short description of someone",
+          "example": "Update your profile."
+        },
+        {
+          "id": "pull-verb",
+          "word": "pull",
+          "part_of_speech": "verb",
+          "meaning": "move something towards you",
+          "example": "Pull the door to open it."
+        },
+        {
+          "id": "push-verb",
+          "word": "push",
+          "part_of_speech": "verb",
+          "meaning": "move something away from you",
+          "example": "Push the button."
+        },
+        {
+          "id": "seat-noun",
+          "word": "seat",
+          "part_of_speech": "noun",
+          "meaning": "something to sit on",
+          "example": "Is this seat free?"
+        },
+        {
+          "id": "target-noun",
+          "word": "target",
+          "part_of_speech": "noun",
+          "meaning": "a goal",
+          "example": "Our target is 100 sales."
+        },
+        {
+          "id": "village-noun",
+          "word": "village",
+          "part_of_speech": "noun",
+          "meaning": "a very small town",
+          "example": "They live in a quiet village."
+        },
+        {
+          "id": "agent-noun",
+          "word": "agent",
+          "part_of_speech": "noun",
+          "meaning": "a person who acts for others",
+          "example": "Talk to a travel agent."
+        },
+        {
+          "id": "apply-verb",
+          "word": "apply",
+          "part_of_speech": "verb",
+          "meaning": "ask formally for something",
+          "example": "I applied for the job."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-02",
+      "title": "Useful words 2",
+      "words": [
+        {
+          "id": "authority-noun",
+          "word": "authority",
+          "part_of_speech": "noun",
+          "meaning": "power; an official organisation",
+          "example": "The local authority runs the schools."
+        },
+        {
+          "id": "basis-noun",
+          "word": "basis",
+          "part_of_speech": "noun",
+          "meaning": "the main reason or part",
+          "example": "We meet on a weekly basis."
+        },
+        {
+          "id": "draw-verb",
+          "word": "draw",
+          "part_of_speech": "verb",
+          "meaning": "make a picture with a pen",
+          "example": "Draw a cat."
+        },
+        {
+          "id": "employee-noun",
+          "word": "employee",
+          "part_of_speech": "noun",
+          "meaning": "a person who works for a company",
+          "example": "The company has fifty employees."
+        },
+        {
+          "id": "enter-verb",
+          "word": "enter",
+          "part_of_speech": "verb",
+          "meaning": "go in",
+          "example": "Please enter the room quietly."
+        },
+        {
+          "id": "foundation-noun",
+          "word": "foundation",
+          "part_of_speech": "noun",
+          "meaning": "the base of a building; an organisation",
+          "example": "The foundation helps poor children."
+        },
+        {
+          "id": "gain-verb",
+          "word": "gain",
+          "part_of_speech": "verb",
+          "meaning": "get more of something",
+          "example": "I gained some weight."
+        },
+        {
+          "id": "memory-noun",
+          "word": "memory",
+          "part_of_speech": "noun",
+          "meaning": "the ability to remember; something remembered",
+          "example": "I have a good memory."
+        },
+        {
+          "id": "prime-adjective",
+          "word": "prime",
+          "part_of_speech": "adjective",
+          "meaning": "main",
+          "example": "The prime reason was money."
+        },
+        {
+          "id": "ring-noun",
+          "word": "ring",
+          "part_of_speech": "noun",
+          "meaning": "jewellery for your finger",
+          "example": "She wears a gold ring."
+        },
+        {
+          "id": "rise-verb",
+          "word": "rise",
+          "part_of_speech": "verb",
+          "meaning": "go up",
+          "example": "The sun rises at six."
+        },
+        {
+          "id": "silver-noun",
+          "word": "silver",
+          "part_of_speech": "noun",
+          "meaning": "a valuable grey-white metal",
+          "example": "She has a silver necklace."
+        },
+        {
+          "id": "soul-noun",
+          "word": "soul",
+          "part_of_speech": "noun",
+          "meaning": "the spirit of a person",
+          "example": "He put his heart and soul into it."
+        },
+        {
+          "id": "spread-verb",
+          "word": "spread",
+          "part_of_speech": "verb",
+          "meaning": "open out; move to more places",
+          "example": "The news spread quickly."
+        },
+        {
+          "id": "supply-noun",
+          "word": "supply",
+          "part_of_speech": "noun",
+          "meaning": "an amount available",
+          "example": "We have a supply of water."
+        },
+        {
+          "id": "waste-verb",
+          "word": "waste",
+          "part_of_speech": "verb",
+          "meaning": "use badly",
+          "example": "Don't waste food."
+        },
+        {
+          "id": "weird-adjective",
+          "word": "weird",
+          "part_of_speech": "adjective",
+          "meaning": "strange",
+          "example": "That's a weird idea."
+        },
+        {
+          "id": "adult-noun",
+          "word": "adult",
+          "part_of_speech": "noun",
+          "meaning": "a grown-up person",
+          "example": "Tickets for adults cost ten pounds."
+        },
+        {
+          "id": "apparently-adverb",
+          "word": "apparently",
+          "part_of_speech": "adverb",
+          "meaning": "it seems that",
+          "example": "Apparently, the shop is closing."
+        },
+        {
+          "id": "artist-noun",
+          "word": "artist",
+          "part_of_speech": "noun",
+          "meaning": "a person who makes art",
+          "example": "She's a talented artist."
+        },
+        {
+          "id": "edition-noun",
+          "word": "edition",
+          "part_of_speech": "noun",
+          "meaning": "one version of a book or paper",
+          "example": "This is the first edition."
+        },
+        {
+          "id": "engineering-noun",
+          "word": "engineering",
+          "part_of_speech": "noun",
+          "meaning": "designing and building machines and structures",
+          "example": "He studies engineering."
+        },
+        {
+          "id": "grade-noun",
+          "word": "grade",
+          "part_of_speech": "noun",
+          "meaning": "a mark for school work",
+          "example": "I got a good grade."
+        },
+        {
+          "id": "healthy-adjective",
+          "word": "healthy",
+          "part_of_speech": "adjective",
+          "meaning": "well; good for your health",
+          "example": "Eat healthy food."
+        },
+        {
+          "id": "institute-noun",
+          "word": "institute",
+          "part_of_speech": "noun",
+          "meaning": "an organisation for study or research",
+          "example": "She works at a research institute."
+        },
+        {
+          "id": "method-noun",
+          "word": "method",
+          "part_of_speech": "noun",
+          "meaning": "a way of doing something",
+          "example": "This is a simple method."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-03",
+      "title": "Useful words 3",
+      "words": [
+        {
+          "id": "obviously-adverb",
+          "word": "obviously",
+          "part_of_speech": "adverb",
+          "meaning": "clearly",
+          "example": "Obviously, I'll help you."
+        },
+        {
+          "id": "option-noun",
+          "word": "option",
+          "part_of_speech": "noun",
+          "meaning": "a choice",
+          "example": "We have two options."
+        },
+        {
+          "id": "prison-noun",
+          "word": "prison",
+          "part_of_speech": "noun",
+          "meaning": "a place where criminals are kept",
+          "example": "He spent a year in prison."
+        },
+        {
+          "id": "smaller-adjective",
+          "word": "smaller",
+          "part_of_speech": "adjective",
+          "meaning": "less big",
+          "example": "I need a smaller size."
+        },
+        {
+          "id": "somebody-pronoun",
+          "word": "somebody",
+          "part_of_speech": "pronoun",
+          "meaning": "someone",
+          "example": "Somebody called you."
+        },
+        {
+          "id": "stone-noun",
+          "word": "stone",
+          "part_of_speech": "noun",
+          "meaning": "a small piece of rock",
+          "example": "He threw a stone into the water."
+        },
+        {
+          "id": "strength-noun",
+          "word": "strength",
+          "part_of_speech": "noun",
+          "meaning": "being strong",
+          "example": "She has great strength."
+        },
+        {
+          "id": "user-noun",
+          "word": "user",
+          "part_of_speech": "noun",
+          "meaning": "a person who uses something",
+          "example": "The app has a million users."
+        },
+        {
+          "id": "wild-adjective",
+          "word": "wild",
+          "part_of_speech": "adjective",
+          "meaning": "living in nature, not with people",
+          "example": "Wild animals live in the forest."
+        },
+        {
+          "id": "window-noun",
+          "word": "window",
+          "part_of_speech": "noun",
+          "meaning": "glass in a wall to let in light",
+          "example": "Open the window, please."
+        },
+        {
+          "id": "winner-noun",
+          "word": "winner",
+          "part_of_speech": "noun",
+          "meaning": "a person who wins",
+          "example": "The winner gets a prize."
+        },
+        {
+          "id": "arrive-verb",
+          "word": "arrive",
+          "part_of_speech": "verb",
+          "meaning": "reach a place",
+          "example": "We arrived at six."
+        },
+        {
+          "id": "bag-noun",
+          "word": "bag",
+          "part_of_speech": "noun",
+          "meaning": "a container for carrying things",
+          "example": "My bag is heavy."
+        },
+        {
+          "id": "camp-noun",
+          "word": "camp",
+          "part_of_speech": "noun",
+          "meaning": "a place with tents",
+          "example": "We stayed at a camp by the lake."
+        },
+        {
+          "id": "correct-adjective",
+          "word": "correct",
+          "part_of_speech": "adjective",
+          "meaning": "right",
+          "example": "Your answer is correct."
+        },
+        {
+          "id": "dangerous-adjective",
+          "word": "dangerous",
+          "part_of_speech": "adjective",
+          "meaning": "able to hurt you",
+          "example": "It's dangerous to swim here."
+        },
+        {
+          "id": "extremely-adverb",
+          "word": "extremely",
+          "part_of_speech": "adverb",
+          "meaning": "very",
+          "example": "It's extremely cold."
+        },
+        {
+          "id": "firm-noun",
+          "word": "firm",
+          "part_of_speech": "noun",
+          "meaning": "a company",
+          "example": "She works for a law firm."
+        },
+        {
+          "id": "handle-verb",
+          "word": "handle",
+          "part_of_speech": "verb",
+          "meaning": "deal with",
+          "example": "She handles problems well."
+        },
+        {
+          "id": "improve-verb",
+          "word": "improve",
+          "part_of_speech": "verb",
+          "meaning": "make better",
+          "example": "I want to improve my English."
+        },
+        {
+          "id": "indeed-adverb",
+          "word": "indeed",
+          "part_of_speech": "adverb",
+          "meaning": "really; certainly",
+          "example": "It was indeed a great day."
+        },
+        {
+          "id": "negative-adjective",
+          "word": "negative",
+          "part_of_speech": "adjective",
+          "meaning": "bad; showing no",
+          "example": "Don't be so negative."
+        },
+        {
+          "id": "prevent-verb",
+          "word": "prevent",
+          "part_of_speech": "verb",
+          "meaning": "stop something from happening",
+          "example": "Wash your hands to prevent illness."
+        },
+        {
+          "id": "remove-verb",
+          "word": "remove",
+          "part_of_speech": "verb",
+          "meaning": "take away",
+          "example": "Please remove your shoes."
+        },
+        {
+          "id": "spirit-noun",
+          "word": "spirit",
+          "part_of_speech": "noun",
+          "meaning": "a person's character or feelings",
+          "example": "The team has a great spirit."
+        },
+        {
+          "id": "television-noun",
+          "word": "television",
+          "part_of_speech": "noun",
+          "meaning": "a device for watching programmes",
+          "example": "We watched television."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-04",
+      "title": "Useful words 4",
+      "words": [
+        {
+          "id": "trouble-noun",
+          "word": "trouble",
+          "part_of_speech": "noun",
+          "meaning": "problems",
+          "example": "I'm having trouble with my car."
+        },
+        {
+          "id": "advantage-noun",
+          "word": "advantage",
+          "part_of_speech": "noun",
+          "meaning": "something that helps you",
+          "example": "Living near work is an advantage."
+        },
+        {
+          "id": "apart-adverb",
+          "word": "apart",
+          "part_of_speech": "adverb",
+          "meaning": "separated by distance",
+          "example": "The two towns are ten miles apart."
+        },
+        {
+          "id": "aware-adjective",
+          "word": "aware",
+          "part_of_speech": "adjective",
+          "meaning": "knowing about something",
+          "example": "Are you aware of the risks?"
+        },
+        {
+          "id": "cat-noun",
+          "word": "cat",
+          "part_of_speech": "noun",
+          "meaning": "a small pet animal",
+          "example": "My cat sleeps all day."
+        },
+        {
+          "id": "customer-noun",
+          "word": "customer",
+          "part_of_speech": "noun",
+          "meaning": "a person who buys something",
+          "example": "The shop has many customers."
+        },
+        {
+          "id": "dinner-noun",
+          "word": "dinner",
+          "part_of_speech": "noun",
+          "meaning": "the main evening meal",
+          "example": "What's for dinner?"
+        },
+        {
+          "id": "dollar-noun",
+          "word": "dollar",
+          "part_of_speech": "noun",
+          "meaning": "money used in the USA and other countries",
+          "example": "It costs ten dollars."
+        },
+        {
+          "id": "eastern-adjective",
+          "word": "eastern",
+          "part_of_speech": "adjective",
+          "meaning": "in the east",
+          "example": "Eastern Europe is beautiful."
+        },
+        {
+          "id": "fifth-adjective",
+          "word": "fifth",
+          "part_of_speech": "adjective",
+          "meaning": "number 5 in order",
+          "example": "It's his fifth birthday."
+        },
+        {
+          "id": "function-noun",
+          "word": "function",
+          "part_of_speech": "noun",
+          "meaning": "the job something does",
+          "example": "What is the function of this button?"
+        },
+        {
+          "id": "gift-noun",
+          "word": "gift",
+          "part_of_speech": "noun",
+          "meaning": "a present",
+          "example": "This is a gift for you."
+        },
+        {
+          "id": "impossible-adjective",
+          "word": "impossible",
+          "part_of_speech": "adjective",
+          "meaning": "not possible",
+          "example": "It's impossible to finish today."
+        },
+        {
+          "id": "influence-noun",
+          "word": "influence",
+          "part_of_speech": "noun",
+          "meaning": "the power to change someone or something",
+          "example": "Parents have a big influence on children."
+        },
+        {
+          "id": "item-noun",
+          "word": "item",
+          "part_of_speech": "noun",
+          "meaning": "one thing in a list",
+          "example": "There are ten items on the list."
+        },
+        {
+          "id": "nor-conjunction",
+          "word": "nor",
+          "part_of_speech": "conjunction",
+          "meaning": "and not (neither ... nor)",
+          "example": "Neither Tom nor Sam came."
+        },
+        {
+          "id": "progress-noun",
+          "word": "progress",
+          "part_of_speech": "noun",
+          "meaning": "improvement",
+          "example": "You're making good progress."
+        },
+        {
+          "id": "proud-adjective",
+          "word": "proud",
+          "part_of_speech": "adjective",
+          "meaning": "pleased about something you did",
+          "example": "I'm proud of you."
+        },
+        {
+          "id": "require-verb",
+          "word": "require",
+          "part_of_speech": "verb",
+          "meaning": "need",
+          "example": "This job requires experience."
+        },
+        {
+          "id": "shut-verb",
+          "word": "shut",
+          "part_of_speech": "verb",
+          "meaning": "close",
+          "example": "Shut the door."
+        },
+        {
+          "id": "wood-noun",
+          "word": "wood",
+          "part_of_speech": "noun",
+          "meaning": "the hard material from trees",
+          "example": "The table is made of wood."
+        },
+        {
+          "id": "background-noun",
+          "word": "background",
+          "part_of_speech": "noun",
+          "meaning": "someone's past; the back part of a picture",
+          "example": "She comes from a musical background."
+        },
+        {
+          "id": "birth-noun",
+          "word": "birth",
+          "part_of_speech": "noun",
+          "meaning": "being born",
+          "example": "What is your date of birth?"
+        },
+        {
+          "id": "bridge-noun",
+          "word": "bridge",
+          "part_of_speech": "noun",
+          "meaning": "a structure over a river or road",
+          "example": "We walked across the bridge."
+        },
+        {
+          "id": "concept-noun",
+          "word": "concept",
+          "part_of_speech": "noun",
+          "meaning": "an idea",
+          "example": "It's a simple concept."
+        },
+        {
+          "id": "copy-noun",
+          "word": "copy",
+          "part_of_speech": "noun",
+          "meaning": "a thing made the same as another",
+          "example": "Make a copy of this page."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-05",
+      "title": "Useful words 5",
+      "words": [
+        {
+          "id": "dear-adjective",
+          "word": "dear",
+          "part_of_speech": "adjective",
+          "meaning": "a word to start a letter; loved",
+          "example": "Dear Sir or Madam,"
+        },
+        {
+          "id": "garden-noun",
+          "word": "garden",
+          "part_of_speech": "noun",
+          "meaning": "land next to a house with plants",
+          "example": "We grow vegetables in the garden."
+        },
+        {
+          "id": "host-noun",
+          "word": "host",
+          "part_of_speech": "noun",
+          "meaning": "a person who invites guests",
+          "example": "Our host cooked dinner."
+        },
+        {
+          "id": "journal-noun",
+          "word": "journal",
+          "part_of_speech": "noun",
+          "meaning": "a magazine; a diary",
+          "example": "She writes in her journal every night."
+        },
+        {
+          "id": "leadership-noun",
+          "word": "leadership",
+          "part_of_speech": "noun",
+          "meaning": "leading a group",
+          "example": "She shows strong leadership."
+        },
+        {
+          "id": "length-noun",
+          "word": "length",
+          "part_of_speech": "noun",
+          "meaning": "how long something is",
+          "example": "What's the length of the room?"
+        },
+        {
+          "id": "lucky-adjective",
+          "word": "lucky",
+          "part_of_speech": "adjective",
+          "meaning": "having good luck",
+          "example": "You're so lucky!"
+        },
+        {
+          "id": "neither-determiner",
+          "word": "neither",
+          "part_of_speech": "determiner",
+          "meaning": "not one and not the other",
+          "example": "Neither answer is right."
+        },
+        {
+          "id": "onto-preposition",
+          "word": "onto",
+          "part_of_speech": "preposition",
+          "meaning": "to a position on",
+          "example": "The cat jumped onto the table."
+        },
+        {
+          "id": "possibly-adverb",
+          "word": "possibly",
+          "part_of_speech": "adverb",
+          "meaning": "perhaps",
+          "example": "I'll possibly be late."
+        },
+        {
+          "id": "prove-verb",
+          "word": "prove",
+          "part_of_speech": "verb",
+          "meaning": "show something is true",
+          "example": "Can you prove it?"
+        },
+        {
+          "id": "rare-adjective",
+          "word": "rare",
+          "part_of_speech": "adjective",
+          "meaning": "not common",
+          "example": "This bird is very rare."
+        },
+        {
+          "id": "setting-noun",
+          "word": "setting",
+          "part_of_speech": "noun",
+          "meaning": "the place where something happens",
+          "example": "The setting of the story is Paris."
+        },
+        {
+          "id": "skill-noun",
+          "word": "skill",
+          "part_of_speech": "noun",
+          "meaning": "an ability to do something well",
+          "example": "Cooking is a useful skill."
+        },
+        {
+          "id": "software-noun",
+          "word": "software",
+          "part_of_speech": "noun",
+          "meaning": "programs for a computer",
+          "example": "I need to update the software."
+        },
+        {
+          "id": "thousand-number",
+          "word": "thousand",
+          "part_of_speech": "number",
+          "meaning": "1,000",
+          "example": "There were a thousand people there."
+        },
+        {
+          "id": "tough-adjective",
+          "word": "tough",
+          "part_of_speech": "adjective",
+          "meaning": "difficult; strong",
+          "example": "It was a tough exam."
+        },
+        {
+          "id": "alive-adjective",
+          "word": "alive",
+          "part_of_speech": "adjective",
+          "meaning": "living",
+          "example": "The fish is still alive."
+        },
+        {
+          "id": "balance-noun",
+          "word": "balance",
+          "part_of_speech": "noun",
+          "meaning": "being steady; the money in an account",
+          "example": "I lost my balance and fell."
+        },
+        {
+          "id": "birthday-noun",
+          "word": "birthday",
+          "part_of_speech": "noun",
+          "meaning": "the day you were born each year",
+          "example": "Happy birthday!"
+        },
+        {
+          "id": "boss-noun",
+          "word": "boss",
+          "part_of_speech": "noun",
+          "meaning": "the person in charge at work",
+          "example": "My boss is very fair."
+        },
+        {
+          "id": "connection-noun",
+          "word": "connection",
+          "part_of_speech": "noun",
+          "meaning": "a link",
+          "example": "The internet connection is slow."
+        },
+        {
+          "id": "dress-noun",
+          "word": "dress",
+          "part_of_speech": "noun",
+          "meaning": "a piece of clothing for women and girls",
+          "example": "She wore a red dress."
+        },
+        {
+          "id": "fellow-adjective",
+          "word": "fellow",
+          "part_of_speech": "adjective",
+          "meaning": "in the same group",
+          "example": "My fellow students are friendly."
+        },
+        {
+          "id": "horse-noun",
+          "word": "horse",
+          "part_of_speech": "noun",
+          "meaning": "a large animal people ride",
+          "example": "She rides a horse."
+        },
+        {
+          "id": "magic-noun",
+          "word": "magic",
+          "part_of_speech": "noun",
+          "meaning": "a special power to make impossible things happen",
+          "example": "The show was full of magic."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-06",
+      "title": "Useful words 6",
+      "words": [
+        {
+          "id": "manage-verb",
+          "word": "manage",
+          "part_of_speech": "verb",
+          "meaning": "be in charge of; succeed in doing",
+          "example": "She manages a small team."
+        },
+        {
+          "id": "map-noun",
+          "word": "map",
+          "part_of_speech": "noun",
+          "meaning": "a drawing of an area",
+          "example": "Look at the map."
+        },
+        {
+          "id": "request-noun",
+          "word": "request",
+          "part_of_speech": "noun",
+          "meaning": "asking for something",
+          "example": "I made a request for a day off."
+        },
+        {
+          "id": "stick-noun",
+          "word": "stick",
+          "part_of_speech": "noun",
+          "meaning": "a thin piece of wood",
+          "example": "The dog brought back the stick."
+        },
+        {
+          "id": "vehicle-noun",
+          "word": "vehicle",
+          "part_of_speech": "noun",
+          "meaning": "a car, bus, lorry etc.",
+          "example": "No vehicles in the park."
+        },
+        {
+          "id": "volume-noun",
+          "word": "volume",
+          "part_of_speech": "noun",
+          "meaning": "how loud something is; amount",
+          "example": "Turn the volume down."
+        },
+        {
+          "id": "wake-verb",
+          "word": "wake",
+          "part_of_speech": "verb",
+          "meaning": "stop sleeping",
+          "example": "I wake up at seven."
+        },
+        {
+          "id": "aid-noun",
+          "word": "aid",
+          "part_of_speech": "noun",
+          "meaning": "help",
+          "example": "They sent aid to the area."
+        },
+        {
+          "id": "beauty-noun",
+          "word": "beauty",
+          "part_of_speech": "noun",
+          "meaning": "being beautiful",
+          "example": "The beauty of the mountains is amazing."
+        },
+        {
+          "id": "billion-number",
+          "word": "billion",
+          "part_of_speech": "number",
+          "meaning": "1,000,000,000",
+          "example": "The world has about eight billion people."
+        },
+        {
+          "id": "busy-adjective",
+          "word": "busy",
+          "part_of_speech": "adjective",
+          "meaning": "having a lot to do",
+          "example": "I'm very busy today."
+        },
+        {
+          "id": "concerned-adjective",
+          "word": "concerned",
+          "part_of_speech": "adjective",
+          "meaning": "worried",
+          "example": "I'm concerned about my exam."
+        },
+        {
+          "id": "conversation-noun",
+          "word": "conversation",
+          "part_of_speech": "noun",
+          "meaning": "a talk between people",
+          "example": "We had a long conversation."
+        },
+        {
+          "id": "corner-noun",
+          "word": "corner",
+          "part_of_speech": "noun",
+          "meaning": "where two lines or streets meet",
+          "example": "The shop is on the corner."
+        },
+        {
+          "id": "criminal-noun",
+          "word": "criminal",
+          "part_of_speech": "noun",
+          "meaning": "a person who commits a crime",
+          "example": "The police caught the criminal."
+        },
+        {
+          "id": "cultural-adjective",
+          "word": "cultural",
+          "part_of_speech": "adjective",
+          "meaning": "about culture",
+          "example": "The city has a rich cultural life."
+        },
+        {
+          "id": "driver-noun",
+          "word": "driver",
+          "part_of_speech": "noun",
+          "meaning": "a person who drives",
+          "example": "The bus driver was kind."
+        },
+        {
+          "id": "existing-adjective",
+          "word": "existing",
+          "part_of_speech": "adjective",
+          "meaning": "already there",
+          "example": "We'll improve the existing system."
+        },
+        {
+          "id": "farm-noun",
+          "word": "farm",
+          "part_of_speech": "noun",
+          "meaning": "land used for crops or animals",
+          "example": "My uncle has a farm."
+        },
+        {
+          "id": "file-noun",
+          "word": "file",
+          "part_of_speech": "noun",
+          "meaning": "a document on a computer; a folder",
+          "example": "Save the file."
+        },
+        {
+          "id": "fix-verb",
+          "word": "fix",
+          "part_of_speech": "verb",
+          "meaning": "repair",
+          "example": "Can you fix my bike?"
+        },
+        {
+          "id": "fly-verb",
+          "word": "fly",
+          "part_of_speech": "verb",
+          "meaning": "move through the air",
+          "example": "Birds can fly."
+        },
+        {
+          "id": "guide-noun",
+          "word": "guide",
+          "part_of_speech": "noun",
+          "meaning": "a person who shows tourists around",
+          "example": "Our guide was very friendly."
+        },
+        {
+          "id": "investigation-noun",
+          "word": "investigation",
+          "part_of_speech": "noun",
+          "meaning": "a careful search for facts",
+          "example": "The police started an investigation."
+        },
+        {
+          "id": "responsibility-noun",
+          "word": "responsibility",
+          "part_of_speech": "noun",
+          "meaning": "a duty",
+          "example": "It's your responsibility."
+        },
+        {
+          "id": "roll-verb",
+          "word": "roll",
+          "part_of_speech": "verb",
+          "meaning": "move by turning over",
+          "example": "The ball rolled down the hill."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-07",
+      "title": "Useful words 7",
+      "words": [
+        {
+          "id": "slightly-adverb",
+          "word": "slightly",
+          "part_of_speech": "adverb",
+          "meaning": "a little",
+          "example": "I'm slightly tired."
+        },
+        {
+          "id": "suggest-verb",
+          "word": "suggest",
+          "part_of_speech": "verb",
+          "meaning": "give an idea",
+          "example": "I suggest we leave early."
+        },
+        {
+          "id": "surprise-noun",
+          "word": "surprise",
+          "part_of_speech": "noun",
+          "meaning": "something unexpected",
+          "example": "What a nice surprise!"
+        },
+        {
+          "id": "technical-adjective",
+          "word": "technical",
+          "part_of_speech": "adjective",
+          "meaning": "about machines or special skills",
+          "example": "We had a technical problem."
+        },
+        {
+          "id": "treat-verb",
+          "word": "treat",
+          "part_of_speech": "verb",
+          "meaning": "behave towards; give medical care",
+          "example": "Treat people with respect."
+        },
+        {
+          "id": "unique-adjective",
+          "word": "unique",
+          "part_of_speech": "adjective",
+          "meaning": "the only one of its kind",
+          "example": "Every person is unique."
+        },
+        {
+          "id": "variety-noun",
+          "word": "variety",
+          "part_of_speech": "noun",
+          "meaning": "many different types",
+          "example": "There's a variety of food."
+        },
+        {
+          "id": "violence-noun",
+          "word": "violence",
+          "part_of_speech": "noun",
+          "meaning": "behaviour that hurts people",
+          "example": "Violence is never the answer."
+        },
+        {
+          "id": "weapon-noun",
+          "word": "weapon",
+          "part_of_speech": "noun",
+          "meaning": "a thing used to hurt or kill",
+          "example": "The soldiers carried weapons."
+        },
+        {
+          "id": "youth-noun",
+          "word": "youth",
+          "part_of_speech": "noun",
+          "meaning": "the time when you are young",
+          "example": "In his youth he was a dancer."
+        },
+        {
+          "id": "appreciate-verb",
+          "word": "appreciate",
+          "part_of_speech": "verb",
+          "meaning": "be thankful for",
+          "example": "I appreciate your help."
+        },
+        {
+          "id": "discover-verb",
+          "word": "discover",
+          "part_of_speech": "verb",
+          "meaning": "find for the first time",
+          "example": "They discovered a new planet."
+        },
+        {
+          "id": "dry-adjective",
+          "word": "dry",
+          "part_of_speech": "adjective",
+          "meaning": "not wet",
+          "example": "Is the paint dry?"
+        },
+        {
+          "id": "edge-noun",
+          "word": "edge",
+          "part_of_speech": "noun",
+          "meaning": "the outside end of something",
+          "example": "Don't stand near the edge."
+        },
+        {
+          "id": "evil-adjective",
+          "word": "evil",
+          "part_of_speech": "adjective",
+          "meaning": "very bad",
+          "example": "The story has an evil king."
+        },
+        {
+          "id": "excited-adjective",
+          "word": "excited",
+          "part_of_speech": "adjective",
+          "meaning": "very happy about something coming",
+          "example": "I'm so excited about the trip."
+        },
+        {
+          "id": "forever-adverb",
+          "word": "forever",
+          "part_of_speech": "adverb",
+          "meaning": "for all time",
+          "example": "I'll love you forever."
+        },
+        {
+          "id": "injury-noun",
+          "word": "injury",
+          "part_of_speech": "noun",
+          "meaning": "harm to the body",
+          "example": "He has a knee injury."
+        },
+        {
+          "id": "iron-noun",
+          "word": "iron",
+          "part_of_speech": "noun",
+          "meaning": "a metal; a device for flattening clothes",
+          "example": "The gate is made of iron."
+        },
+        {
+          "id": "lovely-adjective",
+          "word": "lovely",
+          "part_of_speech": "adjective",
+          "meaning": "very nice",
+          "example": "What a lovely day!"
+        },
+        {
+          "id": "mad-adjective",
+          "word": "mad",
+          "part_of_speech": "adjective",
+          "meaning": "angry; crazy",
+          "example": "She was mad at me."
+        },
+        {
+          "id": "magazine-noun",
+          "word": "magazine",
+          "part_of_speech": "noun",
+          "meaning": "a thin book with articles and photos",
+          "example": "I read a fashion magazine."
+        },
+        {
+          "id": "parliament-noun",
+          "word": "parliament",
+          "part_of_speech": "noun",
+          "meaning": "the group that makes a country's laws",
+          "example": "Parliament passed the new law."
+        },
+        {
+          "id": "prepared-adjective",
+          "word": "prepared",
+          "part_of_speech": "adjective",
+          "meaning": "ready",
+          "example": "Are you prepared for the exam?"
+        },
+        {
+          "id": "reference-noun",
+          "word": "reference",
+          "part_of_speech": "noun",
+          "meaning": "mentioning something; a letter about you for a job",
+          "example": "My teacher wrote a reference for me."
+        },
+        {
+          "id": "religion-noun",
+          "word": "religion",
+          "part_of_speech": "noun",
+          "meaning": "belief in a god or gods",
+          "example": "There are many religions in the world."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-08",
+      "title": "Useful words 8",
+      "words": [
+        {
+          "id": "somewhere-adverb",
+          "word": "somewhere",
+          "part_of_speech": "adverb",
+          "meaning": "in or to some place",
+          "example": "Let's go somewhere warm."
+        },
+        {
+          "id": "strategy-noun",
+          "word": "strategy",
+          "part_of_speech": "noun",
+          "meaning": "a plan to reach a goal",
+          "example": "We need a new strategy."
+        },
+        {
+          "id": "web-noun",
+          "word": "web",
+          "part_of_speech": "noun",
+          "meaning": "the internet; a net made by a spider",
+          "example": "I found it on the web."
+        },
+        {
+          "id": "wine-noun",
+          "word": "wine",
+          "part_of_speech": "noun",
+          "meaning": "an alcoholic drink made from grapes",
+          "example": "They had a glass of wine."
+        },
+        {
+          "id": "audience-noun",
+          "word": "audience",
+          "part_of_speech": "noun",
+          "meaning": "people watching or listening",
+          "example": "The audience clapped."
+        },
+        {
+          "id": "bay-noun",
+          "word": "bay",
+          "part_of_speech": "noun",
+          "meaning": "part of the sea with land curving around it",
+          "example": "The boat sailed into the bay."
+        },
+        {
+          "id": "blog-noun",
+          "word": "blog",
+          "part_of_speech": "noun",
+          "meaning": "a website where someone writes regularly",
+          "example": "She writes a travel blog."
+        },
+        {
+          "id": "core-noun",
+          "word": "core",
+          "part_of_speech": "noun",
+          "meaning": "the central part",
+          "example": "The core of the problem is money."
+        },
+        {
+          "id": "description-noun",
+          "word": "description",
+          "part_of_speech": "noun",
+          "meaning": "words saying what something is like",
+          "example": "Give me a description of the man."
+        },
+        {
+          "id": "excellent-adjective",
+          "word": "excellent",
+          "part_of_speech": "adjective",
+          "meaning": "very good",
+          "example": "Your work is excellent."
+        },
+        {
+          "id": "exist-verb",
+          "word": "exist",
+          "part_of_speech": "verb",
+          "meaning": "be real",
+          "example": "Do ghosts exist?"
+        },
+        {
+          "id": "honest-adjective",
+          "word": "honest",
+          "part_of_speech": "adjective",
+          "meaning": "telling the truth",
+          "example": "Be honest with me."
+        },
+        {
+          "id": "medicine-noun",
+          "word": "medicine",
+          "part_of_speech": "noun",
+          "meaning": "something you take to get better",
+          "example": "Take this medicine twice a day."
+        },
+        {
+          "id": "mountain-noun",
+          "word": "mountain",
+          "part_of_speech": "noun",
+          "meaning": "a very high hill",
+          "example": "They climbed the mountain."
+        },
+        {
+          "id": "nuclear-adjective",
+          "word": "nuclear",
+          "part_of_speech": "adjective",
+          "meaning": "about the energy from atoms",
+          "example": "The country has nuclear power stations."
+        },
+        {
+          "id": "port-noun",
+          "word": "port",
+          "part_of_speech": "noun",
+          "meaning": "a town where ships stop",
+          "example": "The ship arrived at the port."
+        },
+        {
+          "id": "presence-noun",
+          "word": "presence",
+          "part_of_speech": "noun",
+          "meaning": "being in a place",
+          "example": "Your presence is important."
+        },
+        {
+          "id": "reaction-noun",
+          "word": "reaction",
+          "part_of_speech": "noun",
+          "meaning": "what you do because of something",
+          "example": "What was his reaction?"
+        },
+        {
+          "id": "reduce-verb",
+          "word": "reduce",
+          "part_of_speech": "verb",
+          "meaning": "make smaller",
+          "example": "Reduce your speed."
+        },
+        {
+          "id": "shoot-verb",
+          "word": "shoot",
+          "part_of_speech": "verb",
+          "meaning": "fire a gun; kick a ball at the goal",
+          "example": "He shot and scored."
+        },
+        {
+          "id": "solid-adjective",
+          "word": "solid",
+          "part_of_speech": "adjective",
+          "meaning": "hard; not liquid",
+          "example": "Ice is solid water."
+        },
+        {
+          "id": "stress-noun",
+          "word": "stress",
+          "part_of_speech": "noun",
+          "meaning": "worry and pressure",
+          "example": "Exams cause a lot of stress."
+        },
+        {
+          "id": "taste-noun",
+          "word": "taste",
+          "part_of_speech": "noun",
+          "meaning": "the flavour of food",
+          "example": "I love the taste of lemons."
+        },
+        {
+          "id": "tea-noun",
+          "word": "tea",
+          "part_of_speech": "noun",
+          "meaning": "a hot drink made from leaves",
+          "example": "Would you like some tea?"
+        },
+        {
+          "id": "victory-noun",
+          "word": "victory",
+          "part_of_speech": "noun",
+          "meaning": "a win",
+          "example": "It was a great victory."
+        },
+        {
+          "id": "afternoon-noun",
+          "word": "afternoon",
+          "part_of_speech": "noun",
+          "meaning": "the time between midday and evening",
+          "example": "I'll see you this afternoon."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-09",
+      "title": "Useful words 9",
+      "words": [
+        {
+          "id": "assistant-noun",
+          "word": "assistant",
+          "part_of_speech": "noun",
+          "meaning": "a helper",
+          "example": "She works as a shop assistant."
+        },
+        {
+          "id": "citizen-noun",
+          "word": "citizen",
+          "part_of_speech": "noun",
+          "meaning": "a person who belongs to a country",
+          "example": "He became a citizen last year."
+        },
+        {
+          "id": "classic-adjective",
+          "word": "classic",
+          "part_of_speech": "adjective",
+          "meaning": "very good and popular for a long time",
+          "example": "It's a classic film."
+        },
+        {
+          "id": "clothes-noun",
+          "word": "clothes",
+          "part_of_speech": "noun",
+          "meaning": "things you wear",
+          "example": "I need new clothes."
+        },
+        {
+          "id": "electric-adjective",
+          "word": "electric",
+          "part_of_speech": "adjective",
+          "meaning": "using electricity",
+          "example": "She drives an electric car."
+        },
+        {
+          "id": "emergency-noun",
+          "word": "emergency",
+          "part_of_speech": "noun",
+          "meaning": "a sudden dangerous situation",
+          "example": "In an emergency, call 999."
+        },
+        {
+          "id": "entirely-adverb",
+          "word": "entirely",
+          "part_of_speech": "adverb",
+          "meaning": "completely",
+          "example": "I entirely agree."
+        },
+        {
+          "id": "failure-noun",
+          "word": "failure",
+          "part_of_speech": "noun",
+          "meaning": "not succeeding",
+          "example": "The plan was a failure."
+        },
+        {
+          "id": "festival-noun",
+          "word": "festival",
+          "part_of_speech": "noun",
+          "meaning": "a special event or celebration",
+          "example": "We went to a music festival."
+        },
+        {
+          "id": "flat-noun",
+          "word": "flat",
+          "part_of_speech": "noun",
+          "meaning": "an apartment",
+          "example": "I live in a small flat."
+        },
+        {
+          "id": "fuel-noun",
+          "word": "fuel",
+          "part_of_speech": "noun",
+          "meaning": "petrol, gas etc. that gives energy",
+          "example": "The car needs fuel."
+        },
+        {
+          "id": "hello-exclamation",
+          "word": "hello",
+          "part_of_speech": "exclamation",
+          "meaning": "a greeting",
+          "example": "Hello! How are you?"
+        },
+        {
+          "id": "ill-adjective",
+          "word": "ill",
+          "part_of_speech": "adjective",
+          "meaning": "sick",
+          "example": "She's ill in bed."
+        },
+        {
+          "id": "introduce-verb",
+          "word": "introduce",
+          "part_of_speech": "verb",
+          "meaning": "present someone to another person",
+          "example": "Let me introduce my friend."
+        },
+        {
+          "id": "kick-verb",
+          "word": "kick",
+          "part_of_speech": "verb",
+          "meaning": "hit with your foot",
+          "example": "Kick the ball!"
+        },
+        {
+          "id": "mail-noun",
+          "word": "mail",
+          "part_of_speech": "noun",
+          "meaning": "letters and parcels",
+          "example": "Is there any mail for me?"
+        },
+        {
+          "id": "massive-adjective",
+          "word": "massive",
+          "part_of_speech": "adjective",
+          "meaning": "very big",
+          "example": "They have a massive TV."
+        },
+        {
+          "id": "pair-noun",
+          "word": "pair",
+          "part_of_speech": "noun",
+          "meaning": "two things that go together",
+          "example": "I bought a pair of shoes."
+        },
+        {
+          "id": "plane-noun",
+          "word": "plane",
+          "part_of_speech": "noun",
+          "meaning": "a vehicle that flies",
+          "example": "The plane landed on time."
+        },
+        {
+          "id": "plenty-pronoun",
+          "word": "plenty",
+          "part_of_speech": "pronoun",
+          "meaning": "a lot; more than enough",
+          "example": "We have plenty of time."
+        },
+        {
+          "id": "proper-adjective",
+          "word": "proper",
+          "part_of_speech": "adjective",
+          "meaning": "right; correct",
+          "example": "Use the proper tools."
+        },
+        {
+          "id": "quarter-noun",
+          "word": "quarter",
+          "part_of_speech": "noun",
+          "meaning": "one of four equal parts",
+          "example": "It's a quarter past three."
+        },
+        {
+          "id": "session-noun",
+          "word": "session",
+          "part_of_speech": "noun",
+          "meaning": "a period of an activity",
+          "example": "The training session lasts an hour."
+        },
+        {
+          "id": "shape-noun",
+          "word": "shape",
+          "part_of_speech": "noun",
+          "meaning": "the form of something",
+          "example": "What shape is it? It's round."
+        },
+        {
+          "id": "sky-noun",
+          "word": "sky",
+          "part_of_speech": "noun",
+          "meaning": "the space above the earth",
+          "example": "The sky is blue."
+        },
+        {
+          "id": "teaching-noun",
+          "word": "teaching",
+          "part_of_speech": "noun",
+          "meaning": "the job of a teacher",
+          "example": "She loves teaching."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-10",
+      "title": "Useful words 10",
+      "words": [
+        {
+          "id": "toward-preposition",
+          "word": "toward",
+          "part_of_speech": "preposition",
+          "meaning": "towards",
+          "example": "He walked toward the door."
+        },
+        {
+          "id": "transfer-verb",
+          "word": "transfer",
+          "part_of_speech": "verb",
+          "meaning": "move from one place to another",
+          "example": "I'll transfer the money today."
+        },
+        {
+          "id": "upper-adjective",
+          "word": "upper",
+          "part_of_speech": "adjective",
+          "meaning": "higher",
+          "example": "The upper floor has three bedrooms."
+        },
+        {
+          "id": "useful-adjective",
+          "word": "useful",
+          "part_of_speech": "adjective",
+          "meaning": "helpful",
+          "example": "This is a useful book."
+        },
+        {
+          "id": "valley-noun",
+          "word": "valley",
+          "part_of_speech": "noun",
+          "meaning": "low land between hills",
+          "example": "The village is in a valley."
+        },
+        {
+          "id": "willing-adjective",
+          "word": "willing",
+          "part_of_speech": "adjective",
+          "meaning": "happy to do something",
+          "example": "I'm willing to help."
+        },
+        {
+          "id": "zone-noun",
+          "word": "zone",
+          "part_of_speech": "noun",
+          "meaning": "an area",
+          "example": "This is a no-parking zone."
+        },
+        {
+          "id": "accident-noun",
+          "word": "accident",
+          "part_of_speech": "noun",
+          "meaning": "something bad that happens by chance",
+          "example": "There was a car accident."
+        },
+        {
+          "id": "advanced-adjective",
+          "word": "advanced",
+          "part_of_speech": "adjective",
+          "meaning": "at a high level",
+          "example": "She's in the advanced class."
+        },
+        {
+          "id": "alternative-noun",
+          "word": "alternative",
+          "part_of_speech": "noun",
+          "meaning": "another choice",
+          "example": "Is there an alternative?"
+        },
+        {
+          "id": "anywhere-adverb",
+          "word": "anywhere",
+          "part_of_speech": "adverb",
+          "meaning": "in or to any place",
+          "example": "You can sit anywhere."
+        },
+        {
+          "id": "bear-noun",
+          "word": "bear",
+          "part_of_speech": "noun",
+          "meaning": "a large wild animal with thick fur",
+          "example": "We saw a bear in the forest."
+        },
+        {
+          "id": "boat-noun",
+          "word": "boat",
+          "part_of_speech": "noun",
+          "meaning": "a small vehicle for water",
+          "example": "We went out in a boat."
+        },
+        {
+          "id": "capacity-noun",
+          "word": "capacity",
+          "part_of_speech": "noun",
+          "meaning": "the amount something can hold",
+          "example": "The stadium has a capacity of 50,000."
+        },
+        {
+          "id": "cheap-adjective",
+          "word": "cheap",
+          "part_of_speech": "adjective",
+          "meaning": "not expensive",
+          "example": "This shirt was cheap."
+        },
+        {
+          "id": "climate-noun",
+          "word": "climate",
+          "part_of_speech": "noun",
+          "meaning": "the usual weather of a place",
+          "example": "The climate here is mild."
+        },
+        {
+          "id": "discussion-noun",
+          "word": "discussion",
+          "part_of_speech": "noun",
+          "meaning": "a talk about something",
+          "example": "We had a discussion about the plan."
+        },
+        {
+          "id": "duty-noun",
+          "word": "duty",
+          "part_of_speech": "noun",
+          "meaning": "something you must do",
+          "example": "It's my duty to help."
+        },
+        {
+          "id": "fantastic-adjective",
+          "word": "fantastic",
+          "part_of_speech": "adjective",
+          "meaning": "very good",
+          "example": "The food was fantastic."
+        },
+        {
+          "id": "feeling-noun",
+          "word": "feeling",
+          "part_of_speech": "noun",
+          "meaning": "an emotion",
+          "example": "I have a strange feeling."
+        },
+        {
+          "id": "hundred-number",
+          "word": "hundred",
+          "part_of_speech": "number",
+          "meaning": "100",
+          "example": "There were a hundred people."
+        },
+        {
+          "id": "industrial-adjective",
+          "word": "industrial",
+          "part_of_speech": "adjective",
+          "meaning": "about factories and industry",
+          "example": "It's an industrial city."
+        },
+        {
+          "id": "joint-adjective",
+          "word": "joint",
+          "part_of_speech": "adjective",
+          "meaning": "shared",
+          "example": "They have a joint bank account."
+        },
+        {
+          "id": "mix-verb",
+          "word": "mix",
+          "part_of_speech": "verb",
+          "meaning": "combine things",
+          "example": "Mix the flour and the eggs."
+        },
+        {
+          "id": "museum-noun",
+          "word": "museum",
+          "part_of_speech": "noun",
+          "meaning": "a building with interesting objects to see",
+          "example": "We visited the history museum."
+        },
+        {
+          "id": "path-noun",
+          "word": "path",
+          "part_of_speech": "noun",
+          "meaning": "a narrow way for walking",
+          "example": "Follow the path to the lake."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-11",
+      "title": "Useful words 11",
+      "words": [
+        {
+          "id": "promise-verb",
+          "word": "promise",
+          "part_of_speech": "verb",
+          "meaning": "say you will certainly do something",
+          "example": "I promise I'll call."
+        },
+        {
+          "id": "purchase-noun",
+          "word": "purchase",
+          "part_of_speech": "noun",
+          "meaning": "something you buy",
+          "example": "Keep the receipt for your purchase."
+        },
+        {
+          "id": "rain-noun",
+          "word": "rain",
+          "part_of_speech": "noun",
+          "meaning": "water falling from clouds",
+          "example": "The rain stopped."
+        },
+        {
+          "id": "steel-noun",
+          "word": "steel",
+          "part_of_speech": "noun",
+          "meaning": "a strong metal",
+          "example": "The bridge is made of steel."
+        },
+        {
+          "id": "terrible-adjective",
+          "word": "terrible",
+          "part_of_speech": "adjective",
+          "meaning": "very bad",
+          "example": "The food was terrible."
+        },
+        {
+          "id": "tired-adjective",
+          "word": "tired",
+          "part_of_speech": "adjective",
+          "meaning": "needing rest",
+          "example": "I'm tired after work."
+        },
+        {
+          "id": "warm-adjective",
+          "word": "warm",
+          "part_of_speech": "adjective",
+          "meaning": "a little hot",
+          "example": "It's warm today."
+        },
+        {
+          "id": "afraid-adjective",
+          "word": "afraid",
+          "part_of_speech": "adjective",
+          "meaning": "frightened",
+          "example": "She's afraid of spiders."
+        },
+        {
+          "id": "border-noun",
+          "word": "border",
+          "part_of_speech": "noun",
+          "meaning": "the line between two countries",
+          "example": "We crossed the border."
+        },
+        {
+          "id": "command-noun",
+          "word": "command",
+          "part_of_speech": "noun",
+          "meaning": "an order",
+          "example": "The soldier followed the command."
+        },
+        {
+          "id": "crew-noun",
+          "word": "crew",
+          "part_of_speech": "noun",
+          "meaning": "people who work on a ship or plane",
+          "example": "The crew were very helpful."
+        },
+        {
+          "id": "crowd-noun",
+          "word": "crowd",
+          "part_of_speech": "noun",
+          "meaning": "a large group of people",
+          "example": "A crowd waited outside."
+        },
+        {
+          "id": "element-noun",
+          "word": "element",
+          "part_of_speech": "noun",
+          "meaning": "a basic part",
+          "example": "Trust is an important element of friendship."
+        },
+        {
+          "id": "enemy-noun",
+          "word": "enemy",
+          "part_of_speech": "noun",
+          "meaning": "someone who is against you",
+          "example": "They were enemies in the war."
+        },
+        {
+          "id": "ensure-verb",
+          "word": "ensure",
+          "part_of_speech": "verb",
+          "meaning": "make sure",
+          "example": "Please ensure the door is locked."
+        },
+        {
+          "id": "environmental-adjective",
+          "word": "environmental",
+          "part_of_speech": "adjective",
+          "meaning": "about the natural world",
+          "example": "Pollution is an environmental problem."
+        },
+        {
+          "id": "fill-verb",
+          "word": "fill",
+          "part_of_speech": "verb",
+          "meaning": "make full",
+          "example": "Fill the glass with water."
+        },
+        {
+          "id": "forest-noun",
+          "word": "forest",
+          "part_of_speech": "noun",
+          "meaning": "a large area of trees",
+          "example": "We walked in the forest."
+        },
+        {
+          "id": "intelligence-noun",
+          "word": "intelligence",
+          "part_of_speech": "noun",
+          "meaning": "the ability to learn and understand",
+          "example": "She has great intelligence."
+        },
+        {
+          "id": "intend-verb",
+          "word": "intend",
+          "part_of_speech": "verb",
+          "meaning": "plan to do",
+          "example": "I intend to study medicine."
+        },
+        {
+          "id": "limit-noun",
+          "word": "limit",
+          "part_of_speech": "noun",
+          "meaning": "the greatest amount allowed",
+          "example": "The speed limit is 50."
+        },
+        {
+          "id": "moon-noun",
+          "word": "moon",
+          "part_of_speech": "noun",
+          "meaning": "the object that goes around the earth at night",
+          "example": "The moon is full tonight."
+        },
+        {
+          "id": "ocean-noun",
+          "word": "ocean",
+          "part_of_speech": "noun",
+          "meaning": "a very large sea",
+          "example": "The Pacific is the largest ocean."
+        },
+        {
+          "id": "profit-noun",
+          "word": "profit",
+          "part_of_speech": "noun",
+          "meaning": "money you make in business",
+          "example": "The company made a profit."
+        },
+        {
+          "id": "proof-noun",
+          "word": "proof",
+          "part_of_speech": "noun",
+          "meaning": "evidence",
+          "example": "Do you have proof?"
+        },
+        {
+          "id": "soldier-noun",
+          "word": "soldier",
+          "part_of_speech": "noun",
+          "meaning": "a person in an army",
+          "example": "The soldiers marched past."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-12",
+      "title": "Useful words 12",
+      "words": [
+        {
+          "id": "suit-noun",
+          "word": "suit",
+          "part_of_speech": "noun",
+          "meaning": "a jacket and trousers that match",
+          "example": "He wore a suit to the interview."
+        },
+        {
+          "id": "appearance-noun",
+          "word": "appearance",
+          "part_of_speech": "noun",
+          "meaning": "how someone looks",
+          "example": "She changed her appearance."
+        },
+        {
+          "id": "behaviour-noun",
+          "word": "behaviour",
+          "part_of_speech": "noun",
+          "meaning": "the way you act",
+          "example": "His behaviour was very good."
+        },
+        {
+          "id": "chair-noun",
+          "word": "chair",
+          "part_of_speech": "noun",
+          "meaning": "a seat with a back",
+          "example": "Sit on this chair."
+        },
+        {
+          "id": "debt-noun",
+          "word": "debt",
+          "part_of_speech": "noun",
+          "meaning": "money you owe",
+          "example": "He has a lot of debt."
+        },
+        {
+          "id": "domestic-adjective",
+          "word": "domestic",
+          "part_of_speech": "adjective",
+          "meaning": "of the home; of your own country",
+          "example": "We took a domestic flight."
+        },
+        {
+          "id": "expensive-adjective",
+          "word": "expensive",
+          "part_of_speech": "adjective",
+          "meaning": "costing a lot",
+          "example": "London is an expensive city."
+        },
+        {
+          "id": "historical-adjective",
+          "word": "historical",
+          "part_of_speech": "adjective",
+          "meaning": "about history",
+          "example": "It's a historical novel."
+        },
+        {
+          "id": "honestly-adverb",
+          "word": "honestly",
+          "part_of_speech": "adverb",
+          "meaning": "truthfully",
+          "example": "Honestly, I don't know."
+        },
+        {
+          "id": "jump-verb",
+          "word": "jump",
+          "part_of_speech": "verb",
+          "meaning": "push yourself into the air with your legs",
+          "example": "The cat jumped over the wall."
+        },
+        {
+          "id": "launch-verb",
+          "word": "launch",
+          "part_of_speech": "verb",
+          "meaning": "start; send into the sky",
+          "example": "They launched a new product."
+        },
+        {
+          "id": "minimum-noun",
+          "word": "minimum",
+          "part_of_speech": "noun",
+          "meaning": "the smallest amount allowed",
+          "example": "The minimum age is 18."
+        },
+        {
+          "id": "native-adjective",
+          "word": "native",
+          "part_of_speech": "adjective",
+          "meaning": "from the place where you were born",
+          "example": "Her native language is Arabic."
+        },
+        {
+          "id": "originally-adverb",
+          "word": "originally",
+          "part_of_speech": "adverb",
+          "meaning": "at first",
+          "example": "Originally, I wanted to be a doctor."
+        },
+        {
+          "id": "plan-verb",
+          "word": "plan",
+          "part_of_speech": "verb",
+          "meaning": "decide what to do",
+          "example": "We're planning a trip."
+        },
+        {
+          "id": "suddenly-adverb",
+          "word": "suddenly",
+          "part_of_speech": "adverb",
+          "meaning": "quickly and without warning",
+          "example": "Suddenly, the lights went out."
+        },
+        {
+          "id": "survey-noun",
+          "word": "survey",
+          "part_of_speech": "noun",
+          "meaning": "a set of questions to many people",
+          "example": "We did a survey of students."
+        },
+        {
+          "id": "update-verb",
+          "word": "update",
+          "part_of_speech": "verb",
+          "meaning": "make newer",
+          "example": "Update your phone."
+        },
+        {
+          "id": "writer-noun",
+          "word": "writer",
+          "part_of_speech": "noun",
+          "meaning": "a person who writes",
+          "example": "She's a famous writer."
+        },
+        {
+          "id": "yellow-adjective",
+          "word": "yellow",
+          "part_of_speech": "adjective",
+          "meaning": "the colour of lemons",
+          "example": "She has a yellow car."
+        },
+        {
+          "id": "younger-adjective",
+          "word": "younger",
+          "part_of_speech": "adjective",
+          "meaning": "having fewer years",
+          "example": "My younger sister is ten."
+        },
+        {
+          "id": "ancient-adjective",
+          "word": "ancient",
+          "part_of_speech": "adjective",
+          "meaning": "very old",
+          "example": "We visited an ancient temple."
+        },
+        {
+          "id": "combine-verb",
+          "word": "combine",
+          "part_of_speech": "verb",
+          "meaning": "join together",
+          "example": "Combine the two ideas."
+        },
+        {
+          "id": "communication-noun",
+          "word": "communication",
+          "part_of_speech": "noun",
+          "meaning": "sharing information",
+          "example": "Good communication is important."
+        },
+        {
+          "id": "connected-adjective",
+          "word": "connected",
+          "part_of_speech": "adjective",
+          "meaning": "joined",
+          "example": "Is your printer connected?"
+        },
+        {
+          "id": "contain-verb",
+          "word": "contain",
+          "part_of_speech": "verb",
+          "meaning": "have inside",
+          "example": "This box contains books."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-13",
+      "title": "Useful words 13",
+      "words": [
+        {
+          "id": "download-verb",
+          "word": "download",
+          "part_of_speech": "verb",
+          "meaning": "copy from the internet to your device",
+          "example": "Download the app."
+        },
+        {
+          "id": "email-noun",
+          "word": "email",
+          "part_of_speech": "noun",
+          "meaning": "a message sent by computer",
+          "example": "I'll send you an email."
+        },
+        {
+          "id": "exercise-noun",
+          "word": "exercise",
+          "part_of_speech": "noun",
+          "meaning": "physical activity; a task to practise",
+          "example": "Exercise is good for you."
+        },
+        {
+          "id": "express-verb",
+          "word": "express",
+          "part_of_speech": "verb",
+          "meaning": "show a feeling or idea",
+          "example": "He expressed his thanks."
+        },
+        {
+          "id": "flow-verb",
+          "word": "flow",
+          "part_of_speech": "verb",
+          "meaning": "move like water",
+          "example": "The river flows to the sea."
+        },
+        {
+          "id": "hero-noun",
+          "word": "hero",
+          "part_of_speech": "noun",
+          "meaning": "a brave person people admire",
+          "example": "He's my hero."
+        },
+        {
+          "id": "illegal-adjective",
+          "word": "illegal",
+          "part_of_speech": "adjective",
+          "meaning": "against the law",
+          "example": "It's illegal to drive without a licence."
+        },
+        {
+          "id": "joke-noun",
+          "word": "joke",
+          "part_of_speech": "noun",
+          "meaning": "something funny you say",
+          "example": "He told a funny joke."
+        },
+        {
+          "id": "loan-noun",
+          "word": "loan",
+          "part_of_speech": "noun",
+          "meaning": "money you borrow",
+          "example": "I got a loan from the bank."
+        },
+        {
+          "id": "perform-verb",
+          "word": "perform",
+          "part_of_speech": "verb",
+          "meaning": "do; act or play music for an audience",
+          "example": "The band performed live."
+        },
+        {
+          "id": "planet-noun",
+          "word": "planet",
+          "part_of_speech": "noun",
+          "meaning": "a large object that goes around a star",
+          "example": "Mars is a planet."
+        },
+        {
+          "id": "restaurant-noun",
+          "word": "restaurant",
+          "part_of_speech": "noun",
+          "meaning": "a place where you pay to eat",
+          "example": "Let's go to a restaurant."
+        },
+        {
+          "id": "select-verb",
+          "word": "select",
+          "part_of_speech": "verb",
+          "meaning": "choose",
+          "example": "Select your language."
+        },
+        {
+          "id": "shopping-noun",
+          "word": "shopping",
+          "part_of_speech": "noun",
+          "meaning": "buying things in shops",
+          "example": "I'm going shopping."
+        },
+        {
+          "id": "soft-adjective",
+          "word": "soft",
+          "part_of_speech": "adjective",
+          "meaning": "not hard",
+          "example": "The bed is very soft."
+        },
+        {
+          "id": "stuck-adjective",
+          "word": "stuck",
+          "part_of_speech": "adjective",
+          "meaning": "not able to move",
+          "example": "The door is stuck."
+        },
+        {
+          "id": "sugar-noun",
+          "word": "sugar",
+          "part_of_speech": "noun",
+          "meaning": "a sweet substance",
+          "example": "Do you take sugar?"
+        },
+        {
+          "id": "transport-noun",
+          "word": "transport",
+          "part_of_speech": "noun",
+          "meaning": "ways of travelling",
+          "example": "Public transport is cheap here."
+        },
+        {
+          "id": "appeal-verb",
+          "word": "appeal",
+          "part_of_speech": "verb",
+          "meaning": "ask strongly; be attractive",
+          "example": "The idea appeals to me."
+        },
+        {
+          "id": "appropriate-adjective",
+          "word": "appropriate",
+          "part_of_speech": "adjective",
+          "meaning": "suitable",
+          "example": "Wear appropriate clothes."
+        },
+        {
+          "id": "confirm-verb",
+          "word": "confirm",
+          "part_of_speech": "verb",
+          "meaning": "say that something is true or fixed",
+          "example": "Please confirm your booking."
+        },
+        {
+          "id": "device-noun",
+          "word": "device",
+          "part_of_speech": "noun",
+          "meaning": "a machine or tool",
+          "example": "A phone is a useful device."
+        },
+        {
+          "id": "drama-noun",
+          "word": "drama",
+          "part_of_speech": "noun",
+          "meaning": "a play; exciting events",
+          "example": "I study drama at school."
+        },
+        {
+          "id": "entry-noun",
+          "word": "entry",
+          "part_of_speech": "noun",
+          "meaning": "going in; a way in",
+          "example": "Entry is free."
+        },
+        {
+          "id": "era-noun",
+          "word": "era",
+          "part_of_speech": "noun",
+          "meaning": "a period in history",
+          "example": "It was the end of an era."
+        },
+        {
+          "id": "factor-noun",
+          "word": "factor",
+          "part_of_speech": "noun",
+          "meaning": "one thing that affects a result",
+          "example": "Cost is an important factor."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-14",
+      "title": "Useful words 14",
+      "words": [
+        {
+          "id": "feed-verb",
+          "word": "feed",
+          "part_of_speech": "verb",
+          "meaning": "give food to",
+          "example": "Don't feed the animals."
+        },
+        {
+          "id": "golden-adjective",
+          "word": "golden",
+          "part_of_speech": "adjective",
+          "meaning": "made of gold or gold in colour",
+          "example": "She has golden hair."
+        },
+        {
+          "id": "grant-noun",
+          "word": "grant",
+          "part_of_speech": "noun",
+          "meaning": "money given for a purpose",
+          "example": "She got a grant to study."
+        },
+        {
+          "id": "lawyer-noun",
+          "word": "lawyer",
+          "part_of_speech": "noun",
+          "meaning": "a person whose job is the law",
+          "example": "You should talk to a lawyer."
+        },
+        {
+          "id": "leg-noun",
+          "word": "leg",
+          "part_of_speech": "noun",
+          "meaning": "the part of the body you walk with",
+          "example": "I hurt my leg."
+        },
+        {
+          "id": "measure-verb",
+          "word": "measure",
+          "part_of_speech": "verb",
+          "meaning": "find the size or amount",
+          "example": "Measure the window."
+        },
+        {
+          "id": "mistake-noun",
+          "word": "mistake",
+          "part_of_speech": "noun",
+          "meaning": "something wrong",
+          "example": "I made a mistake."
+        },
+        {
+          "id": "platform-noun",
+          "word": "platform",
+          "part_of_speech": "noun",
+          "meaning": "the place where you get on a train",
+          "example": "The train leaves from platform 2."
+        },
+        {
+          "id": "pool-noun",
+          "word": "pool",
+          "part_of_speech": "noun",
+          "meaning": "a place to swim",
+          "example": "The hotel has a pool."
+        },
+        {
+          "id": "regarding-preposition",
+          "word": "regarding",
+          "part_of_speech": "preposition",
+          "meaning": "about",
+          "example": "I'm writing regarding your letter."
+        },
+        {
+          "id": "route-noun",
+          "word": "route",
+          "part_of_speech": "noun",
+          "meaning": "the way from one place to another",
+          "example": "What's the fastest route?"
+        },
+        {
+          "id": "schedule-noun",
+          "word": "schedule",
+          "part_of_speech": "noun",
+          "meaning": "a plan of times",
+          "example": "What's your schedule today?"
+        },
+        {
+          "id": "scientific-adjective",
+          "word": "scientific",
+          "part_of_speech": "adjective",
+          "meaning": "about science",
+          "example": "They did a scientific study."
+        },
+        {
+          "id": "shoe-noun",
+          "word": "shoe",
+          "part_of_speech": "noun",
+          "meaning": "what you wear on your foot",
+          "example": "These shoes are comfortable."
+        },
+        {
+          "id": "smoke-noun",
+          "word": "smoke",
+          "part_of_speech": "noun",
+          "meaning": "grey gas from fire",
+          "example": "There was smoke everywhere."
+        },
+        {
+          "id": "teach-verb",
+          "word": "teach",
+          "part_of_speech": "verb",
+          "meaning": "help someone learn",
+          "example": "She teaches maths."
+        },
+        {
+          "id": "angry-adjective",
+          "word": "angry",
+          "part_of_speech": "adjective",
+          "meaning": "very annoyed",
+          "example": "He was angry with me."
+        },
+        {
+          "id": "candidate-noun",
+          "word": "candidate",
+          "part_of_speech": "noun",
+          "meaning": "a person applying for a job or election",
+          "example": "There are three candidates."
+        },
+        {
+          "id": "comfortable-adjective",
+          "word": "comfortable",
+          "part_of_speech": "adjective",
+          "meaning": "nice to sit in or wear",
+          "example": "This chair is comfortable."
+        },
+        {
+          "id": "concern-noun",
+          "word": "concern",
+          "part_of_speech": "noun",
+          "meaning": "worry",
+          "example": "My main concern is money."
+        },
+        {
+          "id": "discuss-verb",
+          "word": "discuss",
+          "part_of_speech": "verb",
+          "meaning": "talk about",
+          "example": "Let's discuss the plan."
+        },
+        {
+          "id": "emotional-adjective",
+          "word": "emotional",
+          "part_of_speech": "adjective",
+          "meaning": "about feelings",
+          "example": "It was an emotional goodbye."
+        },
+        {
+          "id": "everywhere-adverb",
+          "word": "everywhere",
+          "part_of_speech": "adverb",
+          "meaning": "in all places",
+          "example": "I looked everywhere."
+        },
+        {
+          "id": "facility-noun",
+          "word": "facility",
+          "part_of_speech": "noun",
+          "meaning": "a building or equipment for a purpose",
+          "example": "The sports facilities are excellent."
+        },
+        {
+          "id": "hole-noun",
+          "word": "hole",
+          "part_of_speech": "noun",
+          "meaning": "an empty space in something",
+          "example": "There's a hole in my sock."
+        },
+        {
+          "id": "holiday-noun",
+          "word": "holiday",
+          "part_of_speech": "noun",
+          "meaning": "time off work or school",
+          "example": "Where are you going on holiday?"
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-15",
+      "title": "Useful words 15",
+      "words": [
+        {
+          "id": "internal-adjective",
+          "word": "internal",
+          "part_of_speech": "adjective",
+          "meaning": "inside",
+          "example": "The company has an internal email system."
+        },
+        {
+          "id": "laugh-verb",
+          "word": "laugh",
+          "part_of_speech": "verb",
+          "meaning": "make sounds when something is funny",
+          "example": "They laughed at the joke."
+        },
+        {
+          "id": "lunch-noun",
+          "word": "lunch",
+          "part_of_speech": "noun",
+          "meaning": "the meal in the middle of the day",
+          "example": "Let's have lunch together."
+        },
+        {
+          "id": "milk-noun",
+          "word": "milk",
+          "part_of_speech": "noun",
+          "meaning": "white liquid from cows",
+          "example": "I drink milk with breakfast."
+        },
+        {
+          "id": "pack-verb",
+          "word": "pack",
+          "part_of_speech": "verb",
+          "meaning": "put things in a bag",
+          "example": "Pack your bags."
+        },
+        {
+          "id": "payment-noun",
+          "word": "payment",
+          "part_of_speech": "noun",
+          "meaning": "money paid",
+          "example": "Payment is due on Friday."
+        },
+        {
+          "id": "relatively-adverb",
+          "word": "relatively",
+          "part_of_speech": "adverb",
+          "meaning": "quite, compared with others",
+          "example": "The test was relatively easy."
+        },
+        {
+          "id": "snow-noun",
+          "word": "snow",
+          "part_of_speech": "noun",
+          "meaning": "white frozen water that falls from the sky",
+          "example": "The children played in the snow."
+        },
+        {
+          "id": "storm-noun",
+          "word": "storm",
+          "part_of_speech": "noun",
+          "meaning": "bad weather with strong wind and rain",
+          "example": "The storm lasted all night."
+        },
+        {
+          "id": "strike-noun",
+          "word": "strike",
+          "part_of_speech": "noun",
+          "meaning": "stopping work as a protest",
+          "example": "The workers are on strike."
+        },
+        {
+          "id": "weak-adjective",
+          "word": "weak",
+          "part_of_speech": "adjective",
+          "meaning": "not strong",
+          "example": "I feel weak after being ill."
+        },
+        {
+          "id": "actor-noun",
+          "word": "actor",
+          "part_of_speech": "noun",
+          "meaning": "a person who acts in films or plays",
+          "example": "He's a famous actor."
+        },
+        {
+          "id": "apartment-noun",
+          "word": "apartment",
+          "part_of_speech": "noun",
+          "meaning": "a flat",
+          "example": "They rent an apartment."
+        },
+        {
+          "id": "chain-noun",
+          "word": "chain",
+          "part_of_speech": "noun",
+          "meaning": "connected metal rings; a group of shops",
+          "example": "She wore a gold chain."
+        },
+        {
+          "id": "chapter-noun",
+          "word": "chapter",
+          "part_of_speech": "noun",
+          "meaning": "a part of a book",
+          "example": "Read chapter three."
+        },
+        {
+          "id": "confidence-noun",
+          "word": "confidence",
+          "part_of_speech": "noun",
+          "meaning": "belief in yourself",
+          "example": "She has a lot of confidence."
+        },
+        {
+          "id": "cook-verb",
+          "word": "cook",
+          "part_of_speech": "verb",
+          "meaning": "make food hot to eat",
+          "example": "I cook dinner every night."
+        },
+        {
+          "id": "cute-adjective",
+          "word": "cute",
+          "part_of_speech": "adjective",
+          "meaning": "attractive in a sweet way",
+          "example": "What a cute puppy!"
+        },
+        {
+          "id": "equal-adjective",
+          "word": "equal",
+          "part_of_speech": "adjective",
+          "meaning": "the same in amount or value",
+          "example": "Cut the cake into equal pieces."
+        },
+        {
+          "id": "fake-adjective",
+          "word": "fake",
+          "part_of_speech": "adjective",
+          "meaning": "not real",
+          "example": "It's a fake watch."
+        },
+        {
+          "id": "finance-noun",
+          "word": "finance",
+          "part_of_speech": "noun",
+          "meaning": "money management",
+          "example": "She works in finance."
+        },
+        {
+          "id": "identity-noun",
+          "word": "identity",
+          "part_of_speech": "noun",
+          "meaning": "who someone is",
+          "example": "Show your identity card."
+        },
+        {
+          "id": "journey-noun",
+          "word": "journey",
+          "part_of_speech": "noun",
+          "meaning": "travelling from one place to another",
+          "example": "The journey takes two hours."
+        },
+        {
+          "id": "kitchen-noun",
+          "word": "kitchen",
+          "part_of_speech": "noun",
+          "meaning": "a room where you cook",
+          "example": "The kitchen is very small."
+        },
+        {
+          "id": "maintain-verb",
+          "word": "maintain",
+          "part_of_speech": "verb",
+          "meaning": "keep in good condition",
+          "example": "It's expensive to maintain a car."
+        },
+        {
+          "id": "numerous-adjective",
+          "word": "numerous",
+          "part_of_speech": "adjective",
+          "meaning": "many",
+          "example": "I've told him numerous times."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-16",
+      "title": "Useful words 16",
+      "words": [
+        {
+          "id": "quiet-adjective",
+          "word": "quiet",
+          "part_of_speech": "adjective",
+          "meaning": "making little noise",
+          "example": "It's very quiet here."
+        },
+        {
+          "id": "specifically-adverb",
+          "word": "specifically",
+          "part_of_speech": "adverb",
+          "meaning": "for one purpose; exactly",
+          "example": "This book is specifically for children."
+        },
+        {
+          "id": "split-verb",
+          "word": "split",
+          "part_of_speech": "verb",
+          "meaning": "divide",
+          "example": "Let's split the bill."
+        },
+        {
+          "id": "task-noun",
+          "word": "task",
+          "part_of_speech": "noun",
+          "meaning": "a piece of work",
+          "example": "Your first task is to read this."
+        },
+        {
+          "id": "twenty-number",
+          "word": "twenty",
+          "part_of_speech": "number",
+          "meaning": "the number 20",
+          "example": "There are twenty students."
+        },
+        {
+          "id": "urban-adjective",
+          "word": "urban",
+          "part_of_speech": "adjective",
+          "meaning": "of a town or city",
+          "example": "Most people live in urban areas."
+        },
+        {
+          "id": "affect-verb",
+          "word": "affect",
+          "part_of_speech": "verb",
+          "meaning": "change or influence",
+          "example": "The weather affects my mood."
+        },
+        {
+          "id": "aircraft-noun",
+          "word": "aircraft",
+          "part_of_speech": "noun",
+          "meaning": "a plane or helicopter",
+          "example": "The aircraft landed safely."
+        },
+        {
+          "id": "approve-verb",
+          "word": "approve",
+          "part_of_speech": "verb",
+          "meaning": "agree officially; think something is good",
+          "example": "The plan was approved."
+        },
+        {
+          "id": "approximately-adverb",
+          "word": "approximately",
+          "part_of_speech": "adverb",
+          "meaning": "about; nearly",
+          "example": "It takes approximately an hour."
+        },
+        {
+          "id": "argument-noun",
+          "word": "argument",
+          "part_of_speech": "noun",
+          "meaning": "an angry disagreement; a reason",
+          "example": "They had an argument about money."
+        },
+        {
+          "id": "arrest-verb",
+          "word": "arrest",
+          "part_of_speech": "verb",
+          "meaning": "take someone to the police station",
+          "example": "The police arrested a man."
+        },
+        {
+          "id": "conflict-noun",
+          "word": "conflict",
+          "part_of_speech": "noun",
+          "meaning": "a serious disagreement or fight",
+          "example": "The conflict lasted for years."
+        },
+        {
+          "id": "debate-noun",
+          "word": "debate",
+          "part_of_speech": "noun",
+          "meaning": "a formal discussion",
+          "example": "We had a debate about school uniforms."
+        },
+        {
+          "id": "determined-adjective",
+          "word": "determined",
+          "part_of_speech": "adjective",
+          "meaning": "wanting to do something very much",
+          "example": "She's determined to win."
+        },
+        {
+          "id": "distribution-noun",
+          "word": "distribution",
+          "part_of_speech": "noun",
+          "meaning": "giving or sending things to people",
+          "example": "The distribution of food took hours."
+        },
+        {
+          "id": "document-noun",
+          "word": "document",
+          "part_of_speech": "noun",
+          "meaning": "an official paper or file",
+          "example": "Sign this document, please."
+        },
+        {
+          "id": "escape-verb",
+          "word": "escape",
+          "part_of_speech": "verb",
+          "meaning": "get away",
+          "example": "The bird escaped from its cage."
+        },
+        {
+          "id": "extend-verb",
+          "word": "extend",
+          "part_of_speech": "verb",
+          "meaning": "make longer or bigger",
+          "example": "We extended our holiday."
+        },
+        {
+          "id": "fault-noun",
+          "word": "fault",
+          "part_of_speech": "noun",
+          "meaning": "a mistake you are responsible for",
+          "example": "It's not your fault."
+        },
+        {
+          "id": "flower-noun",
+          "word": "flower",
+          "part_of_speech": "noun",
+          "meaning": "the coloured part of a plant",
+          "example": "She bought some flowers."
+        },
+        {
+          "id": "friendly-adjective",
+          "word": "friendly",
+          "part_of_speech": "adjective",
+          "meaning": "kind and pleasant",
+          "example": "The people here are friendly."
+        },
+        {
+          "id": "lay-verb",
+          "word": "lay",
+          "part_of_speech": "verb",
+          "meaning": "put down carefully",
+          "example": "Lay the baby on the bed."
+        },
+        {
+          "id": "phase-noun",
+          "word": "phase",
+          "part_of_speech": "noun",
+          "meaning": "a stage",
+          "example": "The first phase of the project is finished."
+        },
+        {
+          "id": "properly-adverb",
+          "word": "properly",
+          "part_of_speech": "adverb",
+          "meaning": "correctly",
+          "example": "Close the door properly."
+        },
+        {
+          "id": "pure-adjective",
+          "word": "pure",
+          "part_of_speech": "adjective",
+          "meaning": "not mixed with anything",
+          "example": "This is pure orange juice."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-17",
+      "title": "Useful words 17",
+      "words": [
+        {
+          "id": "requirement-noun",
+          "word": "requirement",
+          "part_of_speech": "noun",
+          "meaning": "something needed",
+          "example": "What are the entry requirements?"
+        },
+        {
+          "id": "resident-noun",
+          "word": "resident",
+          "part_of_speech": "noun",
+          "meaning": "a person who lives in a place",
+          "example": "Local residents are angry."
+        },
+        {
+          "id": "revenue-noun",
+          "word": "revenue",
+          "part_of_speech": "noun",
+          "meaning": "money a business or government receives",
+          "example": "The company's revenue grew."
+        },
+        {
+          "id": "secure-adjective",
+          "word": "secure",
+          "part_of_speech": "adjective",
+          "meaning": "safe",
+          "example": "Keep your password secure."
+        },
+        {
+          "id": "smile-verb",
+          "word": "smile",
+          "part_of_speech": "verb",
+          "meaning": "make a happy face",
+          "example": "She smiled at me."
+        },
+        {
+          "id": "strange-adjective",
+          "word": "strange",
+          "part_of_speech": "adjective",
+          "meaning": "unusual",
+          "example": "I heard a strange noise."
+        },
+        {
+          "id": "talent-noun",
+          "word": "talent",
+          "part_of_speech": "noun",
+          "meaning": "a natural ability",
+          "example": "She has a talent for music."
+        },
+        {
+          "id": "temperature-noun",
+          "word": "temperature",
+          "part_of_speech": "noun",
+          "meaning": "how hot or cold something is",
+          "example": "The temperature is 25 degrees."
+        },
+        {
+          "id": "truck-noun",
+          "word": "truck",
+          "part_of_speech": "noun",
+          "meaning": "a large vehicle for goods",
+          "example": "A truck blocked the road."
+        },
+        {
+          "id": "basically-adverb",
+          "word": "basically",
+          "part_of_speech": "adverb",
+          "meaning": "in the most important ways",
+          "example": "Basically, the plan is good."
+        },
+        {
+          "id": "besides-adverb",
+          "word": "besides",
+          "part_of_speech": "adverb",
+          "meaning": "also; as well as",
+          "example": "Besides, it's too late now."
+        },
+        {
+          "id": "bird-noun",
+          "word": "bird",
+          "part_of_speech": "noun",
+          "meaning": "an animal with feathers that can fly",
+          "example": "A bird is singing."
+        },
+        {
+          "id": "blame-verb",
+          "word": "blame",
+          "part_of_speech": "verb",
+          "meaning": "say someone is responsible for something bad",
+          "example": "Don't blame me."
+        },
+        {
+          "id": "bowl-noun",
+          "word": "bowl",
+          "part_of_speech": "noun",
+          "meaning": "a round dish",
+          "example": "A bowl of soup, please."
+        },
+        {
+          "id": "chicken-noun",
+          "word": "chicken",
+          "part_of_speech": "noun",
+          "meaning": "a farm bird; its meat",
+          "example": "We had chicken for dinner."
+        },
+        {
+          "id": "context-noun",
+          "word": "context",
+          "part_of_speech": "noun",
+          "meaning": "the situation around something",
+          "example": "Read the word in context."
+        },
+        {
+          "id": "determine-verb",
+          "word": "determine",
+          "part_of_speech": "verb",
+          "meaning": "find out; decide",
+          "example": "We need to determine the cause."
+        },
+        {
+          "id": "display-noun",
+          "word": "display",
+          "part_of_speech": "noun",
+          "meaning": "a show of things for people to see",
+          "example": "The shop has a window display."
+        },
+        {
+          "id": "false-adjective",
+          "word": "false",
+          "part_of_speech": "adjective",
+          "meaning": "not true",
+          "example": "Is this true or false?"
+        },
+        {
+          "id": "incredible-adjective",
+          "word": "incredible",
+          "part_of_speech": "adjective",
+          "meaning": "hard to believe; very good",
+          "example": "The view was incredible."
+        },
+        {
+          "id": "meat-noun",
+          "word": "meat",
+          "part_of_speech": "noun",
+          "meaning": "food from animals",
+          "example": "I don't eat meat."
+        },
+        {
+          "id": "neck-noun",
+          "word": "neck",
+          "part_of_speech": "noun",
+          "meaning": "the part between your head and body",
+          "example": "She wore a scarf around her neck."
+        },
+        {
+          "id": "novel-noun",
+          "word": "novel",
+          "part_of_speech": "noun",
+          "meaning": "a long story in a book",
+          "example": "I'm reading a novel."
+        },
+        {
+          "id": "obvious-adjective",
+          "word": "obvious",
+          "part_of_speech": "adjective",
+          "meaning": "easy to see or understand",
+          "example": "The answer is obvious."
+        },
+        {
+          "id": "shirt-noun",
+          "word": "shirt",
+          "part_of_speech": "noun",
+          "meaning": "a piece of clothing for the upper body",
+          "example": "He wore a white shirt."
+        },
+        {
+          "id": "slowly-adverb",
+          "word": "slowly",
+          "part_of_speech": "adverb",
+          "meaning": "not quickly",
+          "example": "Please speak slowly."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-18",
+      "title": "Useful words 18",
+      "words": [
+        {
+          "id": "stadium-noun",
+          "word": "stadium",
+          "part_of_speech": "noun",
+          "meaning": "a large sports ground with seats",
+          "example": "The stadium was full."
+        },
+        {
+          "id": "surgery-noun",
+          "word": "surgery",
+          "part_of_speech": "noun",
+          "meaning": "medical treatment by cutting the body",
+          "example": "He needs surgery on his knee."
+        },
+        {
+          "id": "vision-noun",
+          "word": "vision",
+          "part_of_speech": "noun",
+          "meaning": "the ability to see; an idea of the future",
+          "example": "She has good vision."
+        },
+        {
+          "id": "whenever-conjunction",
+          "word": "whenever",
+          "part_of_speech": "conjunction",
+          "meaning": "at any time that",
+          "example": "Call me whenever you want."
+        },
+        {
+          "id": "worried-adjective",
+          "word": "worried",
+          "part_of_speech": "adjective",
+          "meaning": "anxious",
+          "example": "I'm worried about my exam."
+        },
+        {
+          "id": "zero-number",
+          "word": "zero",
+          "part_of_speech": "number",
+          "meaning": "the number 0",
+          "example": "It's zero degrees outside."
+        },
+        {
+          "id": "champion-noun",
+          "word": "champion",
+          "part_of_speech": "noun",
+          "meaning": "the winner of a competition",
+          "example": "She's the world champion."
+        },
+        {
+          "id": "cream-noun",
+          "word": "cream",
+          "part_of_speech": "noun",
+          "meaning": "the thick part of milk",
+          "example": "Do you want cream in your coffee?"
+        },
+        {
+          "id": "crisis-noun",
+          "word": "crisis",
+          "part_of_speech": "noun",
+          "meaning": "a time of great difficulty",
+          "example": "The country is in a crisis."
+        },
+        {
+          "id": "deliver-verb",
+          "word": "deliver",
+          "part_of_speech": "verb",
+          "meaning": "bring goods to someone",
+          "example": "They deliver pizza."
+        },
+        {
+          "id": "editor-noun",
+          "word": "editor",
+          "part_of_speech": "noun",
+          "meaning": "a person who prepares texts for publishing",
+          "example": "She's a newspaper editor."
+        },
+        {
+          "id": "estimate-verb",
+          "word": "estimate",
+          "part_of_speech": "verb",
+          "meaning": "guess an amount",
+          "example": "I estimate it will cost £100."
+        },
+        {
+          "id": "giant-adjective",
+          "word": "giant",
+          "part_of_speech": "adjective",
+          "meaning": "very large",
+          "example": "There was a giant tree."
+        },
+        {
+          "id": "kingdom-noun",
+          "word": "kingdom",
+          "part_of_speech": "noun",
+          "meaning": "a country ruled by a king or queen",
+          "example": "The United Kingdom has four countries."
+        },
+        {
+          "id": "literature-noun",
+          "word": "literature",
+          "part_of_speech": "noun",
+          "meaning": "books and poems with artistic value",
+          "example": "I study English literature."
+        },
+        {
+          "id": "mayor-noun",
+          "word": "mayor",
+          "part_of_speech": "noun",
+          "meaning": "the leader of a town",
+          "example": "The mayor opened the new park."
+        },
+        {
+          "id": "minor-adjective",
+          "word": "minor",
+          "part_of_speech": "adjective",
+          "meaning": "small; not important",
+          "example": "It's only a minor problem."
+        },
+        {
+          "id": "opposite-preposition",
+          "word": "opposite",
+          "part_of_speech": "preposition",
+          "meaning": "facing; on the other side",
+          "example": "The bank is opposite the post office."
+        },
+        {
+          "id": "orange-noun",
+          "word": "orange",
+          "part_of_speech": "noun",
+          "meaning": "a round fruit; a colour",
+          "example": "I'd like an orange."
+        },
+        {
+          "id": "selection-noun",
+          "word": "selection",
+          "part_of_speech": "noun",
+          "meaning": "choosing; a range",
+          "example": "There's a good selection of books."
+        },
+        {
+          "id": "signal-noun",
+          "word": "signal",
+          "part_of_speech": "noun",
+          "meaning": "a sign or sound giving a message",
+          "example": "There's no phone signal here."
+        },
+        {
+          "id": "stream-noun",
+          "word": "stream",
+          "part_of_speech": "noun",
+          "meaning": "a small river",
+          "example": "We crossed a stream."
+        },
+        {
+          "id": "struggle-verb",
+          "word": "struggle",
+          "part_of_speech": "verb",
+          "meaning": "try hard with difficulty",
+          "example": "I struggled to open the jar."
+        },
+        {
+          "id": "theme-noun",
+          "word": "theme",
+          "part_of_speech": "noun",
+          "meaning": "the main subject",
+          "example": "The theme of the party is the 1980s."
+        },
+        {
+          "id": "tiny-adjective",
+          "word": "tiny",
+          "part_of_speech": "adjective",
+          "meaning": "very small",
+          "example": "The kitten is tiny."
+        },
+        {
+          "id": "typically-adverb",
+          "word": "typically",
+          "part_of_speech": "adverb",
+          "meaning": "usually",
+          "example": "It typically rains in April."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-19",
+      "title": "Useful words 19",
+      "words": [
+        {
+          "id": "unfortunately-adverb",
+          "word": "unfortunately",
+          "part_of_speech": "adverb",
+          "meaning": "sadly",
+          "example": "Unfortunately, I can't come."
+        },
+        {
+          "id": "usual-adjective",
+          "word": "usual",
+          "part_of_speech": "adjective",
+          "meaning": "normal",
+          "example": "I'll meet you at the usual time."
+        },
+        {
+          "id": "wave-noun",
+          "word": "wave",
+          "part_of_speech": "noun",
+          "meaning": "moving water in the sea; a hand movement",
+          "example": "The waves were big."
+        },
+        {
+          "id": "alcohol-noun",
+          "word": "alcohol",
+          "part_of_speech": "noun",
+          "meaning": "drinks like beer and wine",
+          "example": "He doesn't drink alcohol."
+        },
+        {
+          "id": "bright-adjective",
+          "word": "bright",
+          "part_of_speech": "adjective",
+          "meaning": "full of light; clever",
+          "example": "It's a bright sunny day."
+        },
+        {
+          "id": "capable-adjective",
+          "word": "capable",
+          "part_of_speech": "adjective",
+          "meaning": "able to do something",
+          "example": "She's capable of doing the job."
+        },
+        {
+          "id": "combination-noun",
+          "word": "combination",
+          "part_of_speech": "noun",
+          "meaning": "things joined together",
+          "example": "It's a combination of luck and hard work."
+        },
+        {
+          "id": "desire-noun",
+          "word": "desire",
+          "part_of_speech": "noun",
+          "meaning": "a strong wish",
+          "example": "She has a desire to travel."
+        },
+        {
+          "id": "destroy-verb",
+          "word": "destroy",
+          "part_of_speech": "verb",
+          "meaning": "damage completely",
+          "example": "The fire destroyed the house."
+        },
+        {
+          "id": "draft-noun",
+          "word": "draft",
+          "part_of_speech": "noun",
+          "meaning": "an early version of a text",
+          "example": "Send me the first draft."
+        },
+        {
+          "id": "essential-adjective",
+          "word": "essential",
+          "part_of_speech": "adjective",
+          "meaning": "absolutely necessary",
+          "example": "Water is essential for life."
+        },
+        {
+          "id": "familiar-adjective",
+          "word": "familiar",
+          "part_of_speech": "adjective",
+          "meaning": "known to you",
+          "example": "Your face looks familiar."
+        },
+        {
+          "id": "guilty-adjective",
+          "word": "guilty",
+          "part_of_speech": "adjective",
+          "meaning": "having done something wrong",
+          "example": "I feel guilty."
+        },
+        {
+          "id": "largely-adverb",
+          "word": "largely",
+          "part_of_speech": "adverb",
+          "meaning": "mostly",
+          "example": "The team was largely young."
+        },
+        {
+          "id": "medium-adjective",
+          "word": "medium",
+          "part_of_speech": "adjective",
+          "meaning": "in the middle; not big or small",
+          "example": "I'll have a medium coffee."
+        },
+        {
+          "id": "perfectly-adverb",
+          "word": "perfectly",
+          "part_of_speech": "adverb",
+          "meaning": "completely; very well",
+          "example": "It fits perfectly."
+        },
+        {
+          "id": "recommend-verb",
+          "word": "recommend",
+          "part_of_speech": "verb",
+          "meaning": "suggest as good",
+          "example": "Can you recommend a restaurant?"
+        },
+        {
+          "id": "relevant-adjective",
+          "word": "relevant",
+          "part_of_speech": "adjective",
+          "meaning": "connected to the subject",
+          "example": "Is this information relevant?"
+        },
+        {
+          "id": "seek-verb",
+          "word": "seek",
+          "part_of_speech": "verb",
+          "meaning": "look for",
+          "example": "They are seeking help."
+        },
+        {
+          "id": "ticket-noun",
+          "word": "ticket",
+          "part_of_speech": "noun",
+          "meaning": "a paper that lets you travel or enter",
+          "example": "I bought a train ticket."
+        },
+        {
+          "id": "unable-adjective",
+          "word": "unable",
+          "part_of_speech": "adjective",
+          "meaning": "not able",
+          "example": "I'm unable to come."
+        },
+        {
+          "id": "upset-adjective",
+          "word": "upset",
+          "part_of_speech": "adjective",
+          "meaning": "unhappy and worried",
+          "example": "She was upset about the news."
+        },
+        {
+          "id": "creative-adjective",
+          "word": "creative",
+          "part_of_speech": "adjective",
+          "meaning": "good at making new things",
+          "example": "He's very creative."
+        },
+        {
+          "id": "cycle-verb",
+          "word": "cycle",
+          "part_of_speech": "verb",
+          "meaning": "ride a bike",
+          "example": "I cycle to work."
+        },
+        {
+          "id": "educational-adjective",
+          "word": "educational",
+          "part_of_speech": "adjective",
+          "meaning": "helping you learn",
+          "example": "It's an educational game."
+        },
+        {
+          "id": "entertainment-noun",
+          "word": "entertainment",
+          "part_of_speech": "noun",
+          "meaning": "things that amuse people",
+          "example": "The hotel offers entertainment."
+        }
+      ]
+    },
+    {
+      "slug": "l3-words-20",
+      "title": "Useful words 20",
+      "words": [
+        {
+          "id": "extreme-adjective",
+          "word": "extreme",
+          "part_of_speech": "adjective",
+          "meaning": "very great",
+          "example": "There was extreme heat."
+        },
+        {
+          "id": "hang-verb",
+          "word": "hang",
+          "part_of_speech": "verb",
+          "meaning": "attach from the top",
+          "example": "Hang your coat here."
+        },
+        {
+          "id": "mainly-adverb",
+          "word": "mainly",
+          "part_of_speech": "adverb",
+          "meaning": "mostly",
+          "example": "I mainly eat vegetables."
+        },
+        {
+          "id": "maximum-noun",
+          "word": "maximum",
+          "part_of_speech": "noun",
+          "meaning": "the largest amount possible",
+          "example": "The maximum speed is 70."
+        },
+        {
+          "id": "newspaper-noun",
+          "word": "newspaper",
+          "part_of_speech": "noun",
+          "meaning": "printed news sold daily",
+          "example": "I read the newspaper."
+        },
+        {
+          "id": "painting-noun",
+          "word": "painting",
+          "part_of_speech": "noun",
+          "meaning": "a picture made with paint",
+          "example": "That's a beautiful painting."
+        },
+        {
+          "id": "reserve-verb",
+          "word": "reserve",
+          "part_of_speech": "verb",
+          "meaning": "book",
+          "example": "I reserved a table for two."
+        },
+        {
+          "id": "row-noun",
+          "word": "row",
+          "part_of_speech": "noun",
+          "meaning": "a line of people or things",
+          "example": "We sat in the front row."
+        },
+        {
+          "id": "salt-noun",
+          "word": "salt",
+          "part_of_speech": "noun",
+          "meaning": "a white substance that adds flavour",
+          "example": "Pass the salt, please."
+        },
+        {
+          "id": "scared-adjective",
+          "word": "scared",
+          "part_of_speech": "adjective",
+          "meaning": "afraid",
+          "example": "I'm scared of the dark."
+        },
+        {
+          "id": "statistics-noun",
+          "word": "statistics",
+          "part_of_speech": "noun",
+          "meaning": "numbers about a subject",
+          "example": "The statistics show a rise."
+        },
+        {
+          "id": "switch-verb",
+          "word": "switch",
+          "part_of_speech": "verb",
+          "meaning": "change; turn on or off",
+          "example": "Switch off the light."
+        },
+        {
+          "id": "threat-noun",
+          "word": "threat",
+          "part_of_speech": "noun",
+          "meaning": "a danger",
+          "example": "Pollution is a threat to wildlife."
+        },
+        {
+          "id": "appoint-verb",
+          "word": "appoint",
+          "part_of_speech": "verb",
+          "meaning": "choose someone for a job",
+          "example": "They appointed a new manager."
+        },
+        {
+          "id": "aside-adverb",
+          "word": "aside",
+          "part_of_speech": "adverb",
+          "meaning": "to one side",
+          "example": "Put your phone aside."
+        },
+        {
+          "id": "assistance-noun",
+          "word": "assistance",
+          "part_of_speech": "noun",
+          "meaning": "help",
+          "example": "Do you need assistance?"
+        },
+        {
+          "id": "bell-noun",
+          "word": "bell",
+          "part_of_speech": "noun",
+          "meaning": "a metal object that rings",
+          "example": "The bell rang."
+        },
+        {
+          "id": "blow-verb",
+          "word": "blow",
+          "part_of_speech": "verb",
+          "meaning": "send out air from your mouth; move with the wind",
+          "example": "Blow out the candles."
+        },
+        {
+          "id": "careful-adjective",
+          "word": "careful",
+          "part_of_speech": "adjective",
+          "meaning": "paying attention to avoid danger",
+          "example": "Be careful!"
+        },
+        {
+          "id": "circumstance-noun",
+          "word": "circumstance",
+          "part_of_speech": "noun",
+          "meaning": "a fact or situation",
+          "example": "In these circumstances, we should wait."
+        },
+        {
+          "id": "cry-verb",
+          "word": "cry",
+          "part_of_speech": "verb",
+          "meaning": "have tears in your eyes",
+          "example": "The baby is crying."
+        },
+        {
+          "id": "danger-noun",
+          "word": "danger",
+          "part_of_speech": "noun",
+          "meaning": "the chance of harm",
+          "example": "There's danger ahead."
+        },
+        {
+          "id": "delivery-noun",
+          "word": "delivery",
+          "part_of_speech": "noun",
+          "meaning": "bringing goods",
+          "example": "Delivery is free."
+        },
+        {
+          "id": "deserve-verb",
+          "word": "deserve",
+          "part_of_speech": "verb",
+          "meaning": "have earned something",
+          "example": "You deserve a rest."
+        },
+        {
+          "id": "empty-adjective",
+          "word": "empty",
+          "part_of_speech": "adjective",
+          "meaning": "with nothing inside",
+          "example": "The fridge is empty."
+        },
+        {
+          "id": "gender-noun",
+          "word": "gender",
+          "part_of_speech": "noun",
+          "meaning": "being male, female or another identity",
+          "example": "The form asks for your gender."
+        },
+        {
+          "id": "instance-noun",
+          "word": "instance",
+          "part_of_speech": "noun",
+          "meaning": "an example",
+          "example": "For instance, you could walk."
+        }
+      ]
+    }
+  ]
+}

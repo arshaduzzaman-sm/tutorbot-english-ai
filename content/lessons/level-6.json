@@ -1,0 +1,1679 @@
+{
+  "level_code": 6,
+  "_licence": "CC BY-SA 4.0, original TutorBot content",
+  "units": [
+    {
+      "slug": "l6-u1-accuracy",
+      "title": "Unit 1: Accuracy",
+      "summary": "Agreement, articles, punctuation and common errors.",
+      "lessons": [
+        "l6-agreement",
+        "l6-articles",
+        "l6-punctuation",
+        "l6-common-errors"
+      ],
+      "test": [
+        {
+          "id": "u61-t1",
+          "type": "single_choice",
+          "prompt": "The quality of the roads ___ improved.",
+          "options": [
+            "has",
+            "have",
+            "are"
+          ],
+          "answer": "has",
+          "explanation": "Subject *quality*."
+        },
+        {
+          "id": "u61-t2",
+          "type": "single_choice",
+          "prompt": "___ health is important.",
+          "options": [
+            "A",
+            "The",
+            "— (no article)"
+          ],
+          "answer": "— (no article)",
+          "explanation": "General uncountable."
+        },
+        {
+          "id": "u61-t3",
+          "type": "single_choice",
+          "prompt": "Which is correct?",
+          "options": [
+            "Costs rose; profits fell.",
+            "Costs rose, profits fell.",
+            "Costs rose profits fell."
+          ],
+          "answer": "Costs rose; profits fell.",
+          "explanation": "Semicolon."
+        },
+        {
+          "id": "u61-t4",
+          "type": "single_choice",
+          "prompt": "We need more ___.",
+          "options": [
+            "informations",
+            "information",
+            "an information"
+          ],
+          "answer": "information",
+          "explanation": "Uncountable."
+        },
+        {
+          "id": "u61-t5",
+          "type": "single_choice",
+          "prompt": "The new law will ___ many people.",
+          "options": [
+            "affect",
+            "effect",
+            "affects to"
+          ],
+          "answer": "affect",
+          "explanation": "Verb *affect*."
+        },
+        {
+          "id": "u61-t6",
+          "type": "single_choice",
+          "prompt": "One of the reasons ___ the price.",
+          "options": [
+            "is",
+            "are",
+            "were being"
+          ],
+          "answer": "is",
+          "explanation": "*One ... is*."
+        }
+      ]
+    },
+    {
+      "slug": "l6-u2-range",
+      "title": "Unit 2: Range",
+      "summary": "Advanced collocations, nuance, variety and academic phrases.",
+      "lessons": [
+        "l6-advanced-collocations",
+        "l6-nuance-synonyms",
+        "l6-avoiding-repetition",
+        "l6-academic-phrases"
+      ],
+      "test": [
+        {
+          "id": "u62-t1",
+          "type": "single_choice",
+          "prompt": "The report sheds ___ on the causes.",
+          "options": [
+            "light",
+            "lamp",
+            "shine"
+          ],
+          "answer": "light",
+          "explanation": "*shed light on*."
+        },
+        {
+          "id": "u62-t2",
+          "type": "single_choice",
+          "prompt": "Prices rose extremely fast. They ___.",
+          "options": [
+            "soared",
+            "crept up",
+            "eased"
+          ],
+          "answer": "soared",
+          "explanation": "*soared*."
+        },
+        {
+          "id": "u62-t3",
+          "type": "single_choice",
+          "prompt": "\"___, the plan is worth trying.\"",
+          "options": [
+            "On balance",
+            "On the balance",
+            "Balanced"
+          ],
+          "answer": "On balance",
+          "explanation": "*On balance*."
+        },
+        {
+          "id": "u62-t4",
+          "type": "single_choice",
+          "prompt": "Synonym for *show* (results):",
+          "options": [
+            "indicate",
+            "say up",
+            "tell"
+          ],
+          "answer": "indicate",
+          "explanation": "*indicate*."
+        },
+        {
+          "id": "u62-t5",
+          "type": "single_choice",
+          "prompt": "\"A major ___ is the cost.\"",
+          "options": [
+            "drawback",
+            "backdraw",
+            "drawn"
+          ],
+          "answer": "drawback",
+          "explanation": "*drawback*."
+        },
+        {
+          "id": "u62-t6",
+          "type": "single_choice",
+          "prompt": "We must ___ the gap between the two groups.",
+          "options": [
+            "bridge",
+            "build up",
+            "close up to"
+          ],
+          "answer": "bridge",
+          "explanation": "*bridge the gap*."
+        }
+      ]
+    },
+    {
+      "slug": "l6-u3-exam-performance",
+      "title": "Unit 3: Exam performance",
+      "summary": "Arguments, self-checking, precise summaries and fluent speaking.",
+      "lessons": [
+        "l6-building-arguments",
+        "l6-self-correction",
+        "l6-precise-summaries",
+        "l6-confident-speaking"
+      ],
+      "test": [
+        {
+          "id": "u63-t1",
+          "type": "single_choice",
+          "prompt": "A strong argument includes:",
+          "options": [
+            "a claim, a reason and evidence",
+            "only a claim",
+            "a joke"
+          ],
+          "answer": "a claim, a reason and evidence",
+          "explanation": "Claim + reason + evidence."
+        },
+        {
+          "id": "u63-t2",
+          "type": "single_choice",
+          "prompt": "Write Essay word range:",
+          "options": [
+            "200–300",
+            "50–70",
+            "5–75"
+          ],
+          "answer": "200–300",
+          "explanation": "Pearson: 200–300 words."
+        },
+        {
+          "id": "u63-t3",
+          "type": "single_choice",
+          "prompt": "Summarize Written Text form:",
+          "options": [
+            "one sentence, 5–75 words",
+            "two paragraphs",
+            "50–70 words"
+          ],
+          "answer": "one sentence, 5–75 words",
+          "explanation": "Pearson: one sentence, 5–75 words."
+        },
+        {
+          "id": "u63-t4",
+          "type": "single_choice",
+          "prompt": "If you make a mistake while reading aloud:",
+          "options": [
+            "keep going",
+            "go back and repeat",
+            "stop"
+          ],
+          "answer": "keep going",
+          "explanation": "Keep the flow."
+        },
+        {
+          "id": "u63-t5",
+          "type": "single_choice",
+          "prompt": "Fix: \"Each of them have a car.\"",
+          "options": [
+            "Each of them has a car.",
+            "Each of them have cars.",
+            "Each them has car."
+          ],
+          "answer": "Each of them has a car.",
+          "explanation": "*Each ... has*."
+        },
+        {
+          "id": "u63-t6",
+          "type": "single_choice",
+          "prompt": "In summaries, remove:",
+          "options": [
+            "examples and repetition",
+            "main ideas",
+            "the topic"
+          ],
+          "answer": "examples and repetition",
+          "explanation": "Keep main ideas."
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "l6-agreement",
+      "title": "Subject-verb agreement in long sentences",
+      "summary": "Keep verbs correct when subjects are long or complex.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Subject-verb agreement in long sentences",
+          "body_md": "Find the **real subject**, not the nearest noun:\n\n- *The **number** of students **is** rising.* (subject: *number*)\n- *A **number** of students **are** absent.* (*a number of* = many → plural)\n- *The **results** of the study **show** ...*\n- ***Each** of the answers **is** checked.*\n- *Neither the manager nor **the staff are** ready.* (verb agrees with the nearer subject)"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The quality of the services provided by local councils **varies**.*\n- *One of the main reasons **is** cost.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-agreement-try-1",
+              "type": "single_choice",
+              "prompt": "The number of cars ___ increased.",
+              "options": [
+                "has",
+                "have",
+                "are"
+              ],
+              "answer": "has",
+              "explanation": "Subject *number*: singular.",
+              "hint": "Subject *number*: singular."
+            },
+            {
+              "id": "l6-agreement-try-2",
+              "type": "single_choice",
+              "prompt": "One of the biggest problems ___ traffic.",
+              "options": [
+                "is",
+                "are",
+                "were being"
+              ],
+              "answer": "is",
+              "explanation": "*One ... is*.",
+              "hint": "*One ... is*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-agreement-check-1",
+              "type": "single_choice",
+              "prompt": "The results of the survey ___ surprising.",
+              "options": [
+                "was",
+                "were",
+                "is"
+              ],
+              "answer": "were",
+              "explanation": "Subject *results*: plural."
+            },
+            {
+              "id": "l6-agreement-check-2",
+              "type": "single_choice",
+              "prompt": "Each of the students ___ a laptop.",
+              "options": [
+                "have",
+                "has",
+                "are having"
+              ],
+              "answer": "has",
+              "explanation": "*Each ... has*."
+            },
+            {
+              "id": "l6-agreement-check-3",
+              "type": "single_choice",
+              "prompt": "A number of experts ___ concerns.",
+              "options": [
+                "has raised",
+                "have raised",
+                "raises"
+              ],
+              "answer": "have raised",
+              "explanation": "*A number of* = many: plural."
+            },
+            {
+              "id": "l6-agreement-check-4",
+              "type": "single_choice",
+              "prompt": "The cost of the new buildings ___ too high.",
+              "options": [
+                "was",
+                "were",
+                "are"
+              ],
+              "answer": "was",
+              "explanation": "Subject *cost*: singular."
+            },
+            {
+              "id": "l6-agreement-check-5",
+              "type": "single_choice",
+              "prompt": "Neither the teacher nor the students ___ happy with the change.",
+              "options": [
+                "was",
+                "were",
+                "is"
+              ],
+              "answer": "were",
+              "explanation": "Nearer subject *students*: plural."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-articles",
+      "title": "Articles in academic English",
+      "summary": "Use a, an, the and no article accurately.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Articles in academic English",
+          "body_md": "- **No article** for general plural or uncountable nouns: ***Education** improves lives.* ***Students** need sleep.*\n- **the** for specific or already known things, and unique things: ***the** results of this study*, ***the** environment*, ***the** internet*.\n- **a/an** for one of many, mentioned for the first time: *a new method*.\n- *the* + superlative: ***the** largest increase*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Research shows that **exercise** helps memory.*\n- ***The** research **that** we discussed was small.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-articles-try-1",
+              "type": "single_choice",
+              "prompt": "___ technology is changing work.",
+              "options": [
+                "The",
+                "A",
+                "— (no article)"
+              ],
+              "answer": "— (no article)",
+              "explanation": "General uncountable idea: no article.",
+              "hint": "General uncountable idea: no article."
+            },
+            {
+              "id": "l6-articles-try-2",
+              "type": "single_choice",
+              "prompt": "This is ___ largest city in the region.",
+              "options": [
+                "a",
+                "the",
+                "— (no article)"
+              ],
+              "answer": "the",
+              "explanation": "Superlative: *the*.",
+              "hint": "Superlative: *the*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-articles-check-1",
+              "type": "single_choice",
+              "prompt": "The study used ___ new method.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "a",
+              "explanation": "First mention, one of many: *a*."
+            },
+            {
+              "id": "l6-articles-check-2",
+              "type": "single_choice",
+              "prompt": "We must protect ___ environment.",
+              "options": [
+                "an",
+                "the",
+                "— (no article)"
+              ],
+              "answer": "the",
+              "explanation": "*the environment*."
+            },
+            {
+              "id": "l6-articles-check-3",
+              "type": "single_choice",
+              "prompt": "___ students in this class are very motivated.",
+              "options": [
+                "The",
+                "A",
+                "— (no article)"
+              ],
+              "answer": "The",
+              "explanation": "Specific group: *the*."
+            },
+            {
+              "id": "l6-articles-check-4",
+              "type": "single_choice",
+              "prompt": "She is ___ honest person.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "answer": "an",
+              "explanation": "*an* before a vowel sound (h is silent)."
+            },
+            {
+              "id": "l6-articles-check-5",
+              "type": "single_choice",
+              "prompt": "___ water covers most of the planet.",
+              "options": [
+                "A",
+                "— (no article)",
+                "An"
+              ],
+              "answer": "— (no article)",
+              "explanation": "General uncountable: no article."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-punctuation",
+      "title": "Punctuation for clarity",
+      "summary": "Use commas, semicolons and colons correctly.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Punctuation for clarity",
+          "body_md": "- **Comma** after an introductory phrase: *However, ...* / *In 2020, ...*\n- **Comma splice** is an error: *~~It rained, we stayed home.~~* Fix with a full stop, a semicolon or a linking word.\n- **Semicolon** joins two closely linked full sentences: *Costs rose; profits fell.*\n- **Colon** introduces a list or an explanation: *Three factors matter: cost, time and quality.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The plan was cheap; however, it was slow.*\n- *One thing is clear: we need more data.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-punctuation-try-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "It was late, we went home.",
+                "It was late; we went home.",
+                "It was late we went home."
+              ],
+              "answer": "It was late; we went home.",
+              "explanation": "Semicolon joins two sentences.",
+              "hint": "Semicolon joins two sentences."
+            },
+            {
+              "id": "l6-punctuation-try-2",
+              "type": "single_choice",
+              "prompt": "Add the punctuation: \"Three things matter ___ cost, time and quality.\"",
+              "options": [
+                ":",
+                ";",
+                ","
+              ],
+              "answer": ":",
+              "explanation": "Colon before a list.",
+              "hint": "Colon before a list."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-punctuation-check-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "However the plan failed.",
+                "However, the plan failed.",
+                "However; the plan failed."
+              ],
+              "answer": "However, the plan failed.",
+              "explanation": "Comma after *However* at the start."
+            },
+            {
+              "id": "l6-punctuation-check-2",
+              "type": "single_choice",
+              "prompt": "A comma splice is:",
+              "options": [
+                "two sentences joined only by a comma",
+                "a list",
+                "a question"
+              ],
+              "answer": "two sentences joined only by a comma",
+              "explanation": "An error."
+            },
+            {
+              "id": "l6-punctuation-check-3",
+              "type": "single_choice",
+              "prompt": "Fix: \"Prices rose, demand fell.\"",
+              "options": [
+                "Prices rose, and demand fell.",
+                "Prices rose demand fell.",
+                "Prices, rose demand fell."
+              ],
+              "answer": "Prices rose, and demand fell.",
+              "explanation": "Add *and*."
+            },
+            {
+              "id": "l6-punctuation-check-4",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "In 2010, the law changed.",
+                "In 2010 the, law changed.",
+                "In, 2010 the law changed."
+              ],
+              "answer": "In 2010, the law changed.",
+              "explanation": "Comma after the introductory phrase."
+            },
+            {
+              "id": "l6-punctuation-check-5",
+              "type": "single_choice",
+              "prompt": "In Summarize Written Text, your answer must be:",
+              "options": [
+                "one sentence ending with one full stop",
+                "two sentences",
+                "a list with colons"
+              ],
+              "answer": "one sentence ending with one full stop",
+              "explanation": "Form rule: one sentence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-common-errors",
+      "title": "Common errors in academic writing",
+      "summary": "Find and fix mistakes that cost marks.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Common errors in academic writing",
+          "body_md": "Common problems:\n\n- Uncountable nouns made plural: *~~informations, advices, researches~~* → *information, advice, research*.\n- Wrong word forms: *~~economical growth~~* → *economic growth*.\n- Missing *-s* on present simple: *~~It depend~~* → *It depends*.\n- Confused words: *affect* (verb) / *effect* (noun); *its* / *it's*; *their* / *there*."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *The new policy will **affect** prices. Its **effect** will be large.*\n- *We need more **information**.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-common-errors-try-1",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "I need some advices.",
+                "I need some advice.",
+                "I need an advice."
+              ],
+              "answer": "I need some advice.",
+              "explanation": "*advice* is uncountable.",
+              "hint": "*advice* is uncountable."
+            },
+            {
+              "id": "l6-common-errors-try-2",
+              "type": "single_choice",
+              "prompt": "The weather can ___ your mood.",
+              "options": [
+                "affect",
+                "effect",
+                "affection"
+              ],
+              "answer": "affect",
+              "explanation": "Verb: *affect*.",
+              "hint": "Verb: *affect*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-common-errors-check-1",
+              "type": "single_choice",
+              "prompt": "The ___ of the change was clear.",
+              "options": [
+                "affect",
+                "effect",
+                "effected"
+              ],
+              "answer": "effect",
+              "explanation": "Noun: *effect*."
+            },
+            {
+              "id": "l6-common-errors-check-2",
+              "type": "single_choice",
+              "prompt": "___ a good idea.",
+              "options": [
+                "Its",
+                "It's",
+                "Its'"
+              ],
+              "answer": "It's",
+              "explanation": "*It's* = *it is*."
+            },
+            {
+              "id": "l6-common-errors-check-3",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "The result depend on the data.",
+                "The result depends on the data.",
+                "The result depending on the data."
+              ],
+              "answer": "The result depends on the data.",
+              "explanation": "Third person *-s*."
+            },
+            {
+              "id": "l6-common-errors-check-4",
+              "type": "single_choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "We did many researches.",
+                "We did a lot of research.",
+                "We did a research."
+              ],
+              "answer": "We did a lot of research.",
+              "explanation": "*research* is uncountable."
+            },
+            {
+              "id": "l6-common-errors-check-5",
+              "type": "single_choice",
+              "prompt": "The country's ___ growth slowed.",
+              "options": [
+                "economical",
+                "economic",
+                "economy"
+              ],
+              "answer": "economic",
+              "explanation": "*economic growth*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-advanced-collocations",
+      "title": "Advanced collocations",
+      "summary": "Use precise word partners at a high level.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Advanced collocations",
+          "body_md": "- *a growing body of evidence*\n- *draw a conclusion / draw attention to*\n- *bridge the gap between*\n- *shed light on*\n- *meet a demand / a need / a deadline*\n- *a widely held view*\n- *bear in mind*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Recent studies **shed light on** how sleep affects learning.*\n- *Schools must **bridge the gap between** theory and practice.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-advanced-collocations-try-1",
+              "type": "single_choice",
+              "prompt": "The study ___ light on the problem.",
+              "options": [
+                "shed",
+                "threw out",
+                "gave"
+              ],
+              "answer": "shed",
+              "explanation": "*shed light on*.",
+              "hint": "*shed light on*."
+            },
+            {
+              "id": "l6-advanced-collocations-try-2",
+              "type": "single_choice",
+              "prompt": "We can ___ a clear conclusion from the data.",
+              "options": [
+                "draw",
+                "pull",
+                "make up"
+              ],
+              "answer": "draw",
+              "explanation": "*draw a conclusion*.",
+              "hint": "*draw a conclusion*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-advanced-collocations-check-1",
+              "type": "single_choice",
+              "prompt": "There is a growing ___ of evidence.",
+              "options": [
+                "body",
+                "group",
+                "team"
+              ],
+              "answer": "body",
+              "explanation": "*a growing body of evidence*."
+            },
+            {
+              "id": "l6-advanced-collocations-check-2",
+              "type": "single_choice",
+              "prompt": "The project aims to ___ the gap between rich and poor.",
+              "options": [
+                "bridge",
+                "build",
+                "jump"
+              ],
+              "answer": "bridge",
+              "explanation": "*bridge the gap*."
+            },
+            {
+              "id": "l6-advanced-collocations-check-3",
+              "type": "single_choice",
+              "prompt": "Supply could not ___ demand.",
+              "options": [
+                "meet",
+                "reach up",
+                "join"
+              ],
+              "answer": "meet",
+              "explanation": "*meet demand*."
+            },
+            {
+              "id": "l6-advanced-collocations-check-4",
+              "type": "single_choice",
+              "prompt": "It is a widely ___ view.",
+              "options": [
+                "held",
+                "kept",
+                "taken"
+              ],
+              "answer": "held",
+              "explanation": "*a widely held view*."
+            },
+            {
+              "id": "l6-advanced-collocations-check-5",
+              "type": "single_choice",
+              "prompt": "Please ___ in mind that time is limited.",
+              "options": [
+                "bear",
+                "carry",
+                "hold up"
+              ],
+              "answer": "bear",
+              "explanation": "*bear in mind*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-nuance-synonyms",
+      "title": "Synonyms and nuance",
+      "summary": "Choose the word with exactly the right meaning.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Synonyms and nuance",
+          "body_md": "Synonyms are rarely identical. Check **strength**, **formality** and **grammar**:\n\n- *rise / soar / creep up*: *soar* = very fast; *creep up* = slowly.\n- *claim / state / admit*: *claim* suggests the writer is not sure it is true; *admit* = accept something negative.\n- *problem / issue / crisis*: *crisis* is very serious."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *House prices **soared** by 40% in a year.*\n- *The company **admitted** that it had made mistakes.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-nuance-synonyms-try-1",
+              "type": "single_choice",
+              "prompt": "Prices went up very quickly. They ___.",
+              "options": [
+                "soared",
+                "crept up",
+                "levelled off"
+              ],
+              "answer": "soared",
+              "explanation": "*soared* = very fast.",
+              "hint": "*soared* = very fast."
+            },
+            {
+              "id": "l6-nuance-synonyms-try-2",
+              "type": "single_choice",
+              "prompt": "Prices went up very slowly. They ___.",
+              "options": [
+                "crept up",
+                "soared",
+                "plunged"
+              ],
+              "answer": "crept up",
+              "explanation": "*crept up*.",
+              "hint": "*crept up*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-nuance-synonyms-check-1",
+              "type": "single_choice",
+              "prompt": "He finally ___ that he was wrong.",
+              "options": [
+                "claimed",
+                "admitted",
+                "argued"
+              ],
+              "answer": "admitted",
+              "explanation": "Accepting something negative: *admitted*."
+            },
+            {
+              "id": "l6-nuance-synonyms-check-2",
+              "type": "single_choice",
+              "prompt": "The firm ___ its product was the best, but there is no proof.",
+              "options": [
+                "claims",
+                "admits",
+                "proves"
+              ],
+              "answer": "claims",
+              "explanation": "*claims*: maybe not true."
+            },
+            {
+              "id": "l6-nuance-synonyms-check-3",
+              "type": "single_choice",
+              "prompt": "A very serious situation is a:",
+              "options": [
+                "crisis",
+                "issue",
+                "point"
+              ],
+              "answer": "crisis",
+              "explanation": "*crisis*."
+            },
+            {
+              "id": "l6-nuance-synonyms-check-4",
+              "type": "single_choice",
+              "prompt": "Prices fell suddenly and a lot. They ___.",
+              "options": [
+                "plunged",
+                "dipped slightly",
+                "eased"
+              ],
+              "answer": "plunged",
+              "explanation": "*plunged*."
+            },
+            {
+              "id": "l6-nuance-synonyms-check-5",
+              "type": "single_choice",
+              "prompt": "Which is the most neutral reporting verb?",
+              "options": [
+                "states",
+                "admits",
+                "boasts"
+              ],
+              "answer": "states",
+              "explanation": "*states* is neutral."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-avoiding-repetition",
+      "title": "Avoiding repetition",
+      "summary": "Vary your words and structures to show range.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Avoiding repetition",
+          "body_md": "Showing range helps vocabulary and linguistic range criteria:\n\n- Use synonyms: *important → crucial, essential, significant*.\n- Use reference words: *this trend, such measures*.\n- Vary sentence beginnings: *Although ..., In contrast, ..., One reason is ...*.\n- Mix short and long sentences.\n\nDo not use rare words just to impress: a wrong rare word is worse than a correct simple one."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- *Cycling is **important**. It is also **crucial** for clean air, and **such benefits** are hard to ignore.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-avoiding-repetition-try-1",
+              "type": "single_choice",
+              "prompt": "Synonym for *important* in an essay:",
+              "options": [
+                "crucial",
+                "biggish",
+                "nice"
+              ],
+              "answer": "crucial",
+              "explanation": "*crucial*.",
+              "hint": "*crucial*."
+            },
+            {
+              "id": "l6-avoiding-repetition-try-2",
+              "type": "single_choice",
+              "prompt": "Replace the repeated noun: \"The policy worked. The policy was popular.\"",
+              "options": [
+                "The policy worked, and it was popular.",
+                "The policy worked. Policy policy.",
+                "Worked policy popular."
+              ],
+              "answer": "The policy worked, and it was popular.",
+              "explanation": "Use a pronoun.",
+              "hint": "Use a pronoun."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-avoiding-repetition-check-1",
+              "type": "single_choice",
+              "prompt": "Which beginning adds variety?",
+              "options": [
+                "In contrast,",
+                "And,",
+                "So so,"
+              ],
+              "answer": "In contrast,",
+              "explanation": "*In contrast*."
+            },
+            {
+              "id": "l6-avoiding-repetition-check-2",
+              "type": "single_choice",
+              "prompt": "Best advice about rare words:",
+              "options": [
+                "Use them only if you are sure of meaning and grammar.",
+                "Use as many as possible.",
+                "Never use any."
+              ],
+              "answer": "Use them only if you are sure of meaning and grammar.",
+              "explanation": "Accuracy first."
+            },
+            {
+              "id": "l6-avoiding-repetition-check-3",
+              "type": "single_choice",
+              "prompt": "\"___ measures could reduce traffic.\" (referring back)",
+              "options": [
+                "Such",
+                "Suchs",
+                "So"
+              ],
+              "answer": "Such",
+              "explanation": "*Such measures*."
+            },
+            {
+              "id": "l6-avoiding-repetition-check-4",
+              "type": "single_choice",
+              "prompt": "Synonym for *show* (data):",
+              "options": [
+                "indicate",
+                "say loudly",
+                "tell up"
+              ],
+              "answer": "indicate",
+              "explanation": "*indicate*."
+            },
+            {
+              "id": "l6-avoiding-repetition-check-5",
+              "type": "single_choice",
+              "prompt": "Good range means:",
+              "options": [
+                "varied, accurate words and structures",
+                "very long sentences only",
+                "repeating key words"
+              ],
+              "answer": "varied, accurate words and structures",
+              "explanation": "Variety + accuracy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-academic-phrases",
+      "title": "Useful academic phrases",
+      "summary": "Express argument and evaluation precisely.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Useful academic phrases",
+          "body_md": "- Giving a view: *It could be argued that ..., From my perspective, ...*\n- Balancing: *While it is true that ..., ... it is also the case that ...*\n- Evaluating: *A major drawback of ... is ..., The main advantage is ...*\n- Concluding: *On balance, ..., All things considered, ...*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "- ***While it is true that** remote work saves time, **it is also the case that** it can isolate staff. **On balance**, the benefits outweigh the costs.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-academic-phrases-try-1",
+              "type": "single_choice",
+              "prompt": "\"___, the advantages outweigh the disadvantages.\"",
+              "options": [
+                "On balance",
+                "On the balance of",
+                "In balance"
+              ],
+              "answer": "On balance",
+              "explanation": "*On balance*.",
+              "hint": "*On balance*."
+            },
+            {
+              "id": "l6-academic-phrases-try-2",
+              "type": "single_choice",
+              "prompt": "\"While it is true that X, it is ___ the case that Y.\"",
+              "options": [
+                "also",
+                "too",
+                "as well as"
+              ],
+              "answer": "also",
+              "explanation": "*it is also the case that*.",
+              "hint": "*it is also the case that*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-academic-phrases-check-1",
+              "type": "single_choice",
+              "prompt": "\"A major ___ of the plan is its cost.\"",
+              "options": [
+                "drawback",
+                "drawing",
+                "backdraw"
+              ],
+              "answer": "drawback",
+              "explanation": "*drawback* = disadvantage."
+            },
+            {
+              "id": "l6-academic-phrases-check-2",
+              "type": "single_choice",
+              "prompt": "\"It could be ___ that schools should start later.\"",
+              "options": [
+                "argued",
+                "argue",
+                "arguing"
+              ],
+              "answer": "argued",
+              "explanation": "*It could be argued that*."
+            },
+            {
+              "id": "l6-academic-phrases-check-3",
+              "type": "single_choice",
+              "prompt": "Which is a concluding phrase?",
+              "options": [
+                "All things considered,",
+                "For instance,",
+                "Firstly,"
+              ],
+              "answer": "All things considered,",
+              "explanation": "Conclusion."
+            },
+            {
+              "id": "l6-academic-phrases-check-4",
+              "type": "single_choice",
+              "prompt": "Which phrase gives a personal view formally?",
+              "options": [
+                "From my perspective,",
+                "I reckon,",
+                "Honestly guys,"
+              ],
+              "answer": "From my perspective,",
+              "explanation": "Formal."
+            },
+            {
+              "id": "l6-academic-phrases-check-5",
+              "type": "single_choice",
+              "prompt": "\"The main ___ of online learning is flexibility.\"",
+              "options": [
+                "advantage",
+                "advantages of",
+                "advantaged"
+              ],
+              "answer": "advantage",
+              "explanation": "*The main advantage*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-building-arguments",
+      "title": "Building a strong argument",
+      "summary": "Support every claim with a reason and evidence.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Building a strong argument",
+          "body_md": "A strong argument has a **claim**, a **reason** and **evidence or an example**, and it deals with the **other side**:\n\n1. Claim: *Cities should invest in cycling.*\n2. Reason: *It reduces traffic and pollution.*\n3. Evidence: *In one city, cycle lanes cut car trips by 10%.*\n4. Counter-argument and reply: *Some say lanes hurt shops; however, studies show cyclists shop more often.*"
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "Write your own ideas each time. Memorised paragraphs that do not answer the question score poorly on content."
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-building-arguments-try-1",
+              "type": "single_choice",
+              "prompt": "A claim with no reason or example is:",
+              "options": [
+                "weak",
+                "strong",
+                "complete"
+              ],
+              "answer": "weak",
+              "explanation": "Support makes it strong.",
+              "hint": "Support makes it strong."
+            },
+            {
+              "id": "l6-building-arguments-try-2",
+              "type": "single_choice",
+              "prompt": "Which is evidence?",
+              "options": [
+                "A study found a 10% fall in car trips.",
+                "I think it is good.",
+                "Everyone knows this."
+              ],
+              "answer": "A study found a 10% fall in car trips.",
+              "explanation": "A specific finding.",
+              "hint": "A specific finding."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-building-arguments-check-1",
+              "type": "single_choice",
+              "prompt": "Dealing with the other side is called a:",
+              "options": [
+                "counter-argument",
+                "conclusion",
+                "topic"
+              ],
+              "answer": "counter-argument",
+              "explanation": "Counter-argument."
+            },
+            {
+              "id": "l6-building-arguments-check-2",
+              "type": "single_choice",
+              "prompt": "Best reply to a counter-argument:",
+              "options": [
+                "However, evidence shows ...",
+                "That is stupid.",
+                "No."
+              ],
+              "answer": "However, evidence shows ...",
+              "explanation": "Reasoned reply."
+            },
+            {
+              "id": "l6-building-arguments-check-3",
+              "type": "single_choice",
+              "prompt": "Order of a strong point:",
+              "options": [
+                "claim, reason, evidence",
+                "evidence, greeting, claim",
+                "reason only"
+              ],
+              "answer": "claim, reason, evidence",
+              "explanation": "Claim → reason → evidence."
+            },
+            {
+              "id": "l6-building-arguments-check-4",
+              "type": "single_choice",
+              "prompt": "Why avoid memorised templates?",
+              "options": [
+                "They often do not answer the question.",
+                "They are too short.",
+                "They have no words."
+              ],
+              "answer": "They often do not answer the question.",
+              "explanation": "Content must match the prompt."
+            },
+            {
+              "id": "l6-building-arguments-check-5",
+              "type": "single_choice",
+              "prompt": "Which is a clear claim?",
+              "options": [
+                "Governments should fund free school meals.",
+                "Food.",
+                "Some things are good sometimes."
+              ],
+              "answer": "Governments should fund free school meals.",
+              "explanation": "Clear position."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-self-correction",
+      "title": "Checking your own writing",
+      "summary": "Use a quick checklist before time runs out.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Checking your own writing",
+          "body_md": "Leave a few minutes to check. Read once for each point:\n\n1. **Task:** did I answer the question? Is the word count right?\n2. **Form:** one sentence for Summarize Written Text; paragraphs for an essay.\n3. **Grammar:** verb tenses, subject-verb agreement, articles.\n4. **Spelling:** especially key words from the prompt.\n5. **Punctuation:** no comma splices."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "Check: *\"The results shows a increase.\"* → *The results **show an** increase.*"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-self-correction-try-1",
+              "type": "single_choice",
+              "prompt": "Fix: \"The data show a increase.\"",
+              "options": [
+                "The data show an increase.",
+                "The data shows a increase.",
+                "The data show increase a."
+              ],
+              "answer": "The data show an increase.",
+              "explanation": "*an increase*.",
+              "hint": "*an increase*."
+            },
+            {
+              "id": "l6-self-correction-try-2",
+              "type": "single_choice",
+              "prompt": "First thing to check:",
+              "options": [
+                "Did I answer the question?",
+                "Is my handwriting nice?",
+                "Did I use rare words?"
+              ],
+              "answer": "Did I answer the question?",
+              "explanation": "Task first.",
+              "hint": "Task first."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-self-correction-check-1",
+              "type": "single_choice",
+              "prompt": "Fix the spelling: *recieve*",
+              "options": [
+                "receive",
+                "receeve",
+                "recive"
+              ],
+              "answer": "receive",
+              "explanation": "*i before e except after c*: *receive*."
+            },
+            {
+              "id": "l6-self-correction-check-2",
+              "type": "single_choice",
+              "prompt": "Fix: \"Each students has a book.\"",
+              "options": [
+                "Each student has a book.",
+                "Each students have a book.",
+                "Each student have books."
+              ],
+              "answer": "Each student has a book.",
+              "explanation": "*Each* + singular noun."
+            },
+            {
+              "id": "l6-self-correction-check-3",
+              "type": "single_choice",
+              "prompt": "For Write Essay, the published word range is:",
+              "options": [
+                "200–300 words",
+                "5–75 words",
+                "50–70 words"
+              ],
+              "answer": "200–300 words",
+              "explanation": "Pearson: 200–300 words."
+            },
+            {
+              "id": "l6-self-correction-check-4",
+              "type": "single_choice",
+              "prompt": "Fix: \"It rained, the game stopped.\"",
+              "options": [
+                "It rained, so the game stopped.",
+                "It rained the game stopped.",
+                "It rained, the, game stopped."
+              ],
+              "answer": "It rained, so the game stopped.",
+              "explanation": "No comma splice."
+            },
+            {
+              "id": "l6-self-correction-check-5",
+              "type": "single_choice",
+              "prompt": "Spelling check should focus on:",
+              "options": [
+                "key words from the prompt and your answer",
+                "only the first word",
+                "nothing"
+              ],
+              "answer": "key words from the prompt and your answer",
+              "explanation": "Key words."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-precise-summaries",
+      "title": "Precise summaries",
+      "summary": "Fit the main ideas into strict word limits.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Precise summaries",
+          "body_md": "For **Summarize Written Text** (one sentence, 5–75 words) and **Summarize Spoken Text** (50–70 words):\n\n1. Identify the main idea and two or three key supporting points.\n2. Join them with linking words: *while, although, because, which, so*.\n3. Remove examples and repetition.\n4. Check the word count and the form."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*Although shared e-bikes offer cheap short trips, problems with parking have led some cities to introduce rules.* (19 words, one sentence)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-precise-summaries-try-1",
+              "type": "single_choice",
+              "prompt": "In a summary, first remove:",
+              "options": [
+                "examples and repetition",
+                "the main idea",
+                "linking words"
+              ],
+              "answer": "examples and repetition",
+              "explanation": "Keep main ideas only.",
+              "hint": "Keep main ideas only."
+            },
+            {
+              "id": "l6-precise-summaries-try-2",
+              "type": "single_choice",
+              "prompt": "A good linking word to join contrast in one sentence:",
+              "options": [
+                "although",
+                "full stop",
+                "firstly"
+              ],
+              "answer": "although",
+              "explanation": "*although*.",
+              "hint": "*although*."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-precise-summaries-check-1",
+              "type": "single_choice",
+              "prompt": "Summarize Spoken Text needs:",
+              "options": [
+                "50–70 words",
+                "one word",
+                "200–300 words"
+              ],
+              "answer": "50–70 words",
+              "explanation": "Pearson: 50–70 words."
+            },
+            {
+              "id": "l6-precise-summaries-check-2",
+              "type": "single_choice",
+              "prompt": "Which is one sentence?",
+              "options": [
+                "Bikes are cheap. They need rules.",
+                "Although bikes are cheap, they need rules.",
+                "Bikes. Cheap. Rules."
+              ],
+              "answer": "Although bikes are cheap, they need rules.",
+              "explanation": "One sentence with a clause."
+            },
+            {
+              "id": "l6-precise-summaries-check-3",
+              "type": "single_choice",
+              "prompt": "A summary should be:",
+              "options": [
+                "in your own words where possible",
+                "copied line by line",
+                "about something else"
+              ],
+              "answer": "in your own words where possible",
+              "explanation": "Paraphrase."
+            },
+            {
+              "id": "l6-precise-summaries-check-4",
+              "type": "single_choice",
+              "prompt": "Best summary of \"Sleep helps memory; students who sleep recall more.\"",
+              "options": [
+                "Sleep improves memory, so well-rested students recall more.",
+                "Students sleep.",
+                "Memory is a word."
+              ],
+              "answer": "Sleep improves memory, so well-rested students recall more.",
+              "explanation": "Main idea + support."
+            },
+            {
+              "id": "l6-precise-summaries-check-5",
+              "type": "single_choice",
+              "prompt": "Which joins a cause?",
+              "options": [
+                "because",
+                "whereas",
+                "despite"
+              ],
+              "answer": "because",
+              "explanation": "*because*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "l6-confident-speaking",
+      "title": "Confident, fluent speaking",
+      "summary": "Speak smoothly at a natural pace and recover from mistakes.",
+      "estimated_minutes": 15,
+      "sections": [
+        {
+          "kind": "learn",
+          "title": "Confident, fluent speaking",
+          "body_md": "Fluency is about **smooth, steady speech**, not speed:\n\n- Speak in **phrases**, with short pauses at commas and full stops.\n- Avoid long silences and fillers (*um, er*).\n- If you make a mistake, keep going. Going back to correct breaks the flow.\n- Stress the important words; let the small words be quick.\n- Practise with a recording and listen back."
+        },
+        {
+          "kind": "see",
+          "title": "Examples",
+          "body_md": "*\"The chart shows | a steady rise | in electric car sales | from 2019 to 2022.\"* (pauses at the bars)"
+        },
+        {
+          "kind": "try",
+          "title": "Try it",
+          "body_md": "Try it.",
+          "exercises": [
+            {
+              "id": "l6-confident-speaking-try-1",
+              "type": "single_choice",
+              "prompt": "Fluent speech is mostly about:",
+              "options": [
+                "smooth, steady speech",
+                "speaking as fast as possible",
+                "long pauses"
+              ],
+              "answer": "smooth, steady speech",
+              "explanation": "Smooth and steady.",
+              "hint": "Smooth and steady."
+            },
+            {
+              "id": "l6-confident-speaking-try-2",
+              "type": "single_choice",
+              "prompt": "If you make a small mistake while speaking, you should:",
+              "options": [
+                "keep going",
+                "start again from the beginning",
+                "stop speaking"
+              ],
+              "answer": "keep going",
+              "explanation": "Keep the flow.",
+              "hint": "Keep the flow."
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "title": "Check",
+          "body_md": "Answer the questions.",
+          "exercises": [
+            {
+              "id": "l6-confident-speaking-check-1",
+              "type": "single_choice",
+              "prompt": "Words like *um* and *er* are called:",
+              "options": [
+                "fillers",
+                "linkers",
+                "stresses"
+              ],
+              "answer": "fillers",
+              "explanation": "Fillers."
+            },
+            {
+              "id": "l6-confident-speaking-check-2",
+              "type": "single_choice",
+              "prompt": "Where should you pause?",
+              "options": [
+                "at phrase boundaries such as commas",
+                "in the middle of a word",
+                "after every word"
+              ],
+              "answer": "at phrase boundaries such as commas",
+              "explanation": "Phrase boundaries."
+            },
+            {
+              "id": "l6-confident-speaking-check-3",
+              "type": "single_choice",
+              "prompt": "Which words get stress?",
+              "options": [
+                "important content words",
+                "only *the* and *a*",
+                "every word equally"
+              ],
+              "answer": "important content words",
+              "explanation": "Content words."
+            },
+            {
+              "id": "l6-confident-speaking-check-4",
+              "type": "single_choice",
+              "prompt": "A good way to practise fluency:",
+              "options": [
+                "record yourself and listen back",
+                "read silently only",
+                "write faster"
+              ],
+              "answer": "record yourself and listen back",
+              "explanation": "Listen back."
+            },
+            {
+              "id": "l6-confident-speaking-check-5",
+              "type": "single_choice",
+              "prompt": "Long silences while speaking usually make fluency:",
+              "options": [
+                "weaker",
+                "stronger",
+                "perfect"
+              ],
+              "answer": "weaker",
+              "explanation": "They break the flow."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
