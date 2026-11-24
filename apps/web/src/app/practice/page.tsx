@@ -17,7 +17,8 @@ export default async function PracticePage() {
         <h1 className="text-3xl font-bold text-primary">{t("title")}</h1>
         <p className="mt-2 text-muted-foreground">{t("intro")}</p>
       </div>
-      {([["reading", t("readingHeading"), data.reading], ["listening", t("listeningHeading"), data.listening]] as const).map(
+      {([["speaking-writing", t("speakingHeading"), data.speakingWriting], ["reading", t("readingHeading"), data.reading],
+        ["listening", t("listeningHeading"), data.listening]] as const).map(
         ([key, heading, types]) => (
       <section key={key} aria-labelledby={`${key}-heading`}>
         <h2 id={`${key}-heading`} className="text-xl font-semibold text-primary">{heading}</h2>
@@ -47,7 +48,7 @@ export default async function PracticePage() {
       </section>
         ),
       )}
-      <p className="rounded-xl bg-muted p-4 text-sm">{t("comingSoon")}</p>
+      <p className="rounded-xl bg-muted p-4 text-sm">{t("aiNote")} <Link href="/academy" className="font-medium text-accent-blue underline">{t("academyLink")}</Link></p>
     </div>
   );
 }

@@ -26,7 +26,7 @@ class AnswerResponse(BaseModel):
 
 class AnswerIn(BaseModel):
     response: AnswerResponse
-    mode: Literal["learn", "practice", "review"] = "practice"
+    mode: Literal["learn", "practice", "review", "timed_drill"] = "practice"
     duration_seconds: int | None = Field(default=None, ge=0, le=3 * 3600)
 
 

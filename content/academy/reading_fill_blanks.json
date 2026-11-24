@@ -1,0 +1,38 @@
+{
+  "code": "reading_fill_blanks",
+  "what": "A text has gaps and there is a box of words. You drag the right word into each gap. Some words are not used.",
+  "tests": "Reading: vocabulary, grammar and understanding of the text.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson's page names no separate traits for this task.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/reading/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the text once for the general meaning.",
+    "Decide the word type for each gap (noun, verb, adjective...).",
+    "Fill the easiest gaps first. Remaining words become fewer.",
+    "Check that each word fits the grammar and meaning of its sentence."
+  ],
+  "example_prompt": "Bees ____ flowers, which helps plants produce fruit. (pollinate / pollution / visit / visiting)",
+  "examples": {
+    "strong": {
+      "answer": "pollinate",
+      "why": "A plural verb is needed after 'Bees', and the meaning fits 'helps plants produce fruit'."
+    },
+    "medium": {
+      "answer": "visit",
+      "why": "Grammar is fine, but 'pollinate' explains why it helps plants; check the meaning of the whole sentence."
+    },
+    "weak": {
+      "answer": "pollution",
+      "why": "A noun cannot follow the subject here."
+    }
+  },
+  "mistakes": [
+    "Using a word because it appears in the text nearby.",
+    "Ignoring singular and plural forms.",
+    "Leaving gaps empty."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

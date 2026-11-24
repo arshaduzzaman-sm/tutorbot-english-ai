@@ -1,0 +1,42 @@
+{
+  "code": "retell_lecture",
+  "what": "You listen to a short talk. Then you retell it in your own words.",
+  "tests": "Listening and speaking: understanding the main ideas and explaining them clearly.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "While you listen, note key words only: the topic, two or three main points and any conclusion.",
+    "Use your notes to plan: 'The lecture was about... First... Also... Finally...'.",
+    "Speak in short, clear sentences. You do not need every detail.",
+    "Keep a steady pace and finish before the time ends."
+  ],
+  "example_prompt": "A talk about why city rooftop gardens are growing: they cool buildings, give space for food, but cost money to build safely.",
+  "examples": {
+    "strong": {
+      "answer": "The lecture was about rooftop gardens in cities. The speaker explained that they keep buildings cooler and give people space to grow food. However, they can be expensive because roofs must be made strong and safe. Overall, the speaker thinks they are useful if cities support the costs.",
+      "why": "It covers the topic, the benefits, the problem and the conclusion in clear sentences."
+    },
+    "medium": {
+      "answer": "The talk was about gardens on roofs. They are good for food. They are cool. But money.",
+      "why": "Some key points are there, but ideas are incomplete and the contrast is not explained."
+    },
+    "weak": {
+      "answer": "The speaker talked about many things in the city and it was very interesting for everyone.",
+      "why": "It gives no real points from the talk."
+    }
+  },
+  "mistakes": [
+    "Trying to write full sentences while listening.",
+    "Repeating only one point many times.",
+    "Using a memorised paragraph that does not match the talk."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

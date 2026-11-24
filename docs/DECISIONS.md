@@ -21,4 +21,19 @@
 | 2026-11-22 | Flashcards reuse the mistake-notebook boxes (1, 3, 7, 14 days) in a separate table `vocabulary_reviews` | One spaced-review rule for the whole app; `review_items` stays tied to questions. |
 | 2026-11-22 | Pronunciation drills are listen-and-choose (auto-marked) until M3 | Recording + pronunciation analyser are M3 work. Symbols follow common British dictionary style. |
 | 2026-11-22 | E2E runs the API with `RATE_LIMIT_PER_MINUTE=1000` | All test learners share the web server's IP; the normal limit (120/min per IP) stays for real use. |
-| — | Numeric 10-90 estimates: threshold to be set in M7 calibration | SPEC 7.3. Not enabled. |
+| 2026-11-22 | Pronunciation uses Whisper word confidence as a proxy, not a phoneme model | No wav2vec2 phoneme model could be downloaded or licence-checked here. The proxy is labelled in the result; replace when a model is verified. |
+| 2026-11-22 | Evaluation jobs use a Postgres table claimed with `for update skip locked`; worker runs in the API process or `python -m app.workers` | No extra queue service (local-only, 8 GB tier). Stale jobs are re-queued. |
+| 2026-11-22 | Recordings are files under `recordings/<user>/` (git-ignored), not Supabase Storage | Simpler locally; deleted with the account and included in the export list. |
+| 2026-11-22 | Mock exam state is written only by the API (service role); students can only read their own sessions | Stops a student from changing answers, timers or position through the database. |
+| 2026-11-22 | Exam blueprints keep unverified counts and clocks with `verified: false` | Pearson publishes per-task timings but not exact item counts per test; the report says "practice estimate". |
+| 2026-11-22 | Coaching rules are plain, tested functions (services/coach.py), not an LLM | Recommendations must follow real history and be explainable (SPEC 6.1). |
+| 2026-11-22 | Tutor topic filter is a keyword check before the LLM; score promises get a fixed reply | Off-topic and score questions never reach the LLM and do not use the daily limit. |
+| 2026-11-22 | Charts are small hand-written SVG components with a data table each | No chart library to download or audit; accessibility comes first (M6). |
+| 2026-11-22 | Publishing is guarded by a database trigger (approval of the current version; AI content needs a different reviewer) | Holds for every path into the database, not only the API. Edits bump the version. |
+| 2026-11-22 | Role changes and the audit log use the service role after `require_role("admin")` | RLS deliberately blocks learners and editors from these tables. |
+| 2026-11-22 | Calibration uses only the admin's own sample answers | Learners' answers are never shown to staff (privacy by default). |
+| 2026-11-22 | Content rules live in apps/api/app/services/content_rules.py; scripts load that file | One copy of the checks for the seed builder, the import script and admin uploads. |
+| 2026-11-22 | Secret scan is our own script (scripts/secret_scan.py) run in CI | No third-party binary or action; it scans every commit on every branch. |
+| 2026-11-22 | Backups are a data-only pg_dump from the database container plus a tar of recordings | Version-matched pg_dump; restore applies migrations first, then loads the data with triggers off. |
+| 2026-11-22 | No in-browser transcription in v1.0.0 | The Web Speech API sends audio to a cloud service in most browsers; local-only wins. |
+| — | Numeric 10-90 estimates: minimum set by the M7 calibration tool (30 ratings per type, 60% exact, 80% within one band) | SPEC 7.3. Still not enabled; needs a separate decision. |

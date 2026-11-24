@@ -11,8 +11,7 @@ from app.ai.interfaces import (
     SpeechToText,
     TextToSpeech,
 )
-from app.ai.providers import mock
-from app.ai.providers.local import LocalProviderNotInstalled
+from app.ai.providers import local, mock
 from app.core.config import get_settings
 
 _MOCKS: dict[str, Any] = {
@@ -26,6 +25,17 @@ _MOCKS: dict[str, Any] = {
 }
 
 
+_LOCALS: dict[str, Any] = {
+    "stt": local.LocalSpeechToText,
+    "pronunciation": local.LocalPronunciationAnalyzer,
+    "fluency": local.LocalFluencyAnalyzer,
+    "tts": local.LocalTextToSpeech,
+    "grammar": local.LanguageToolChecker,
+    "embedder": local.LocalEmbedder,
+    "llm": local.OllamaLLM,
+}
+
+
 def _choice(capability: str) -> str:
     return str(getattr(get_settings(), f"{capability}_provider"))
 
@@ -33,7 +43,7 @@ def _choice(capability: str) -> str:
 def _build(capability: str) -> Any:
     if _choice(capability) == "mock":
         return _MOCKS[capability]()
-    raise LocalProviderNotInstalled(capability)
+    return _LOCALS[capability]()
 
 
 def speech_to_text() -> SpeechToText:

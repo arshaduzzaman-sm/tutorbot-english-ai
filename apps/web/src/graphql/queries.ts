@@ -30,7 +30,9 @@ export const DashboardQuery = graphql(`
       recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }
       weakAreas { accuracy attempts category { code name } }
       mockExams(limit: 5) { id kind status startedAt completedAt }
+      coach { recommendations }
     }
+    practiceTypes: questionCategories { code name }
   }
 `);
 
@@ -48,6 +50,7 @@ export const ProfileQuery = graphql(`
     viewer {
       email
       roles
+      recordingConsent
       profile { displayName targetScore examDate dailyGoalMinutes level { code name cefr } }
     }
   }
@@ -82,6 +85,10 @@ export const LessonQuery = graphql(`
 
 export const PracticeHubQuery = graphql(`
   query PracticeHub {
+    speakingWriting: practiceTypes(section: "speaking_writing") {
+      category { code name section }
+      questionCount autoMarked attempts averageScore
+    }
     reading: practiceTypes(section: "reading") {
       category { code name section }
       questionCount autoMarked attempts averageScore
@@ -94,8 +101,8 @@ export const PracticeHubQuery = graphql(`
 `);
 
 export const PracticeQuestionsQuery = graphql(`
-  query PracticeQuestions($code: String!) {
-    practiceQuestions(categoryCode: $code) {
+  query PracticeQuestions($code: String!, $adaptive: Boolean! = false) {
+    practiceQuestions(categoryCode: $code, adaptive: $adaptive) {
       id externalId categoryCode difficulty instructions learningObjective content
       options { label body }
       category { code name section }
@@ -180,5 +187,65 @@ export const PronunciationTopicQuery = graphql(`
       slug kind title symbols tip examples bestScore attempts
       drill { id type prompt options }
     }
+  }
+`);
+
+export const RecordingConsentQuery = graphql(`
+  query RecordingConsent {
+    viewer { recordingConsent demoMode }
+  }
+`);
+
+export const AcademyHubQuery = graphql(`
+  query AcademyHub {
+    speakingWriting: practiceTypes(section: "speaking_writing") { category { code name section } questionCount attempts }
+    reading: practiceTypes(section: "reading") { category { code name section } questionCount attempts }
+    listening: practiceTypes(section: "listening") { category { code name section } questionCount attempts }
+  }
+`);
+
+export const QuestionTypeQuery = graphql(`
+  query QuestionType($code: String!) {
+    questionType(code: $code) { questionCount guide category { code name section skills } }
+    viewer {
+      typeHistory(categoryCode: $code, limit: 10) { id createdAt mode isCorrect scoreRatio }
+      evaluations(categoryCode: $code, limit: 5) { id status createdAt result }
+    }
+  }
+`);
+
+export const ExamsHubQuery = graphql(`
+  query ExamsHub {
+    blueprints { code name kind about verified itemCount sections spec }
+    viewer { recordingConsent mockExams(limit: 10) { id kind status startedAt completedAt blueprintCode overallBand } }
+  }
+`);
+
+export const ProgressQuery = graphql(`
+  query Progress($days: Int!) {
+    viewer {
+      id
+      demoMode
+      coach { level recommendations readiness weekly todayPlan }
+      analytics(days: $days)
+    }
+    practiceTypes: questionCategories { code name }
+  }
+`);
+
+export const TutorQuery = graphql(`
+  query Tutor {
+    viewer {
+      id
+      demoMode
+      profile { level { code name cefr } }
+      tutorMessages(limit: 40) { id role content provider createdAt }
+    }
+  }
+`);
+
+export const RolesQuery = graphql(`
+  query Roles {
+    viewer { id roles }
   }
 `);

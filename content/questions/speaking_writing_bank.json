@@ -1,0 +1,1712 @@
+{
+  "_note": "Original speaking and writing questions (CC BY-SA 4.0). Generated once; edit freely.",
+  "questions": [
+    {
+      "external_id": "ra-0003",
+      "category": "read_aloud",
+      "difficulty": "beginner",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Public libraries now lend more than books. Many offer laptops, language classes and quiet rooms where students can study for free."
+      },
+      "answer": {
+        "reference_text": "Public libraries now lend more than books. Many offer laptops, language classes and quiet rooms where students can study for free."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0004",
+      "category": "read_aloud",
+      "difficulty": "intermediate",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Walking for thirty minutes a day can improve sleep, lower stress and help people stay at a healthy weight as they get older."
+      },
+      "answer": {
+        "reference_text": "Walking for thirty minutes a day can improve sleep, lower stress and help people stay at a healthy weight as they get older."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0005",
+      "category": "read_aloud",
+      "difficulty": "advanced",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "The city council has decided to turn the old railway line into a long park, with paths for walking, running and cycling."
+      },
+      "answer": {
+        "reference_text": "The city council has decided to turn the old railway line into a long park, with paths for walking, running and cycling."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0006",
+      "category": "read_aloud",
+      "difficulty": "beginner",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Scientists have found that some birds use the stars to find their way when they fly thousands of kilometres each year."
+      },
+      "answer": {
+        "reference_text": "Scientists have found that some birds use the stars to find their way when they fly thousands of kilometres each year."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0007",
+      "category": "read_aloud",
+      "difficulty": "intermediate",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Online courses allow people to learn at their own speed, but many learners find it hard to stay motivated without a teacher."
+      },
+      "answer": {
+        "reference_text": "Online courses allow people to learn at their own speed, but many learners find it hard to stay motivated without a teacher."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0008",
+      "category": "read_aloud",
+      "difficulty": "advanced",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Rain gardens are small planted areas that collect water from roofs and roads, which helps to prevent flooding after heavy storms."
+      },
+      "answer": {
+        "reference_text": "Rain gardens are small planted areas that collect water from roofs and roads, which helps to prevent flooding after heavy storms."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0009",
+      "category": "read_aloud",
+      "difficulty": "beginner",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Most smartphones contain small amounts of gold and silver, so recycling old phones can recover valuable materials."
+      },
+      "answer": {
+        "reference_text": "Most smartphones contain small amounts of gold and silver, so recycling old phones can recover valuable materials."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0010",
+      "category": "read_aloud",
+      "difficulty": "intermediate",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "In many countries, farmers are planting a mix of crops instead of one, because mixed fields are better at resisting disease."
+      },
+      "answer": {
+        "reference_text": "In many countries, farmers are planting a mix of crops instead of one, because mixed fields are better at resisting disease."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0011",
+      "category": "read_aloud",
+      "difficulty": "advanced",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Museums increasingly use digital screens to explain their collections, yet many visitors still prefer simple printed labels."
+      },
+      "answer": {
+        "reference_text": "Museums increasingly use digital screens to explain their collections, yet many visitors still prefer simple printed labels."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "ra-0012",
+      "category": "read_aloud",
+      "difficulty": "beginner",
+      "instructions": "Read the text out loud, clearly and at a natural speed.",
+      "content": {
+        "text": "Learning to cook a few basic meals is a useful life skill that can save money and lead to a healthier diet."
+      },
+      "answer": {
+        "reference_text": "Learning to cook a few basic meals is a useful life skill that can save money and lead to a healthier diet."
+      },
+      "explanation": "Read in phrases and pause briefly at commas and full stops.",
+      "learning_objective": "Read a short text aloud with clear phrasing.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0003",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Please hand in your essays at the main office."
+      },
+      "answer": {
+        "reference_text": "Please hand in your essays at the main office."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0004",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "The bus to the campus leaves every twenty minutes."
+      },
+      "answer": {
+        "reference_text": "The bus to the campus leaves every twenty minutes."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0005",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Remember to bring your student card to the exam."
+      },
+      "answer": {
+        "reference_text": "Remember to bring your student card to the exam."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0006",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "The lecture on climate has been moved to Thursday."
+      },
+      "answer": {
+        "reference_text": "The lecture on climate has been moved to Thursday."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0007",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Most of the reading list is available online."
+      },
+      "answer": {
+        "reference_text": "Most of the reading list is available online."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0008",
+      "category": "repeat_sentence",
+      "difficulty": "advanced",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "You can borrow up to ten books at a time."
+      },
+      "answer": {
+        "reference_text": "You can borrow up to ten books at a time."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0009",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "The computer lab is open until midnight during exams."
+      },
+      "answer": {
+        "reference_text": "The computer lab is open until midnight during exams."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0010",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Group projects should be submitted by one team member."
+      },
+      "answer": {
+        "reference_text": "Group projects should be submitted by one team member."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0011",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Our seminar will start ten minutes later than usual."
+      },
+      "answer": {
+        "reference_text": "Our seminar will start ten minutes later than usual."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0012",
+      "category": "repeat_sentence",
+      "difficulty": "advanced",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Students who need extra time should contact the office early."
+      },
+      "answer": {
+        "reference_text": "Students who need extra time should contact the office early."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0013",
+      "category": "repeat_sentence",
+      "difficulty": "advanced",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "The results of the survey will be shared next week."
+      },
+      "answer": {
+        "reference_text": "The results of the survey will be shared next week."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0014",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Fresh fruit is sold in the café every morning."
+      },
+      "answer": {
+        "reference_text": "Fresh fruit is sold in the café every morning."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0015",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "Please switch off your phone before the talk begins."
+      },
+      "answer": {
+        "reference_text": "Please switch off your phone before the talk begins."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rs-0016",
+      "category": "repeat_sentence",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the sentence, then say it back exactly as you heard it.",
+      "content": {
+        "audio_script": "The new sports centre has a large indoor pool."
+      },
+      "answer": {
+        "reference_text": "The new sports centre has a large indoor pool."
+      },
+      "explanation": "Remember the sentence as one idea, then repeat it smoothly.",
+      "learning_objective": "Hold a sentence in memory and repeat it accurately.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0003",
+      "category": "describe_image",
+      "difficulty": "beginner",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "bar_chart",
+          "title": "Hours of sunshine per day in a coastal town",
+          "data": [
+            {
+              "label": "May",
+              "value": 7
+            },
+            {
+              "label": "June",
+              "value": 9
+            },
+            {
+              "label": "July",
+              "value": 10
+            },
+            {
+              "label": "August",
+              "value": 8
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The bar chart shows hours of sunshine per day in a coastal town. The highest value is July, at 10, and the lowest is May, at 7. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "sunshine per day by month",
+        "highest in July (10)",
+        "lowest in May (7)",
+        "rises then falls"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0004",
+      "category": "describe_image",
+      "difficulty": "intermediate",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "line_chart",
+          "title": "Number of electric cars sold in a country (thousands)",
+          "data": [
+            {
+              "label": "2019",
+              "value": 20
+            },
+            {
+              "label": "2020",
+              "value": 35
+            },
+            {
+              "label": "2021",
+              "value": 60
+            },
+            {
+              "label": "2022",
+              "value": 95
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The line chart shows number of electric cars sold in a country (thousands). The highest value is 2022, at 95, and the lowest is 2019, at 20. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "electric car sales over time",
+        "rose every year",
+        "from 20 to 95 thousand",
+        "fastest growth at the end"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0005",
+      "category": "describe_image",
+      "difficulty": "advanced",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "pie_chart",
+          "title": "How a student spends a weekday",
+          "data": [
+            {
+              "label": "Sleep",
+              "value": 33
+            },
+            {
+              "label": "Study",
+              "value": 30
+            },
+            {
+              "label": "Leisure",
+              "value": 22
+            },
+            {
+              "label": "Travel",
+              "value": 15
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The pie chart shows how a student spends a weekday. The highest value is Sleep, at 33, and the lowest is Travel, at 15. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "student's weekday",
+        "sleep largest (33%)",
+        "travel smallest (15%)",
+        "study almost as much as sleep"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0006",
+      "category": "describe_image",
+      "difficulty": "beginner",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "bar_chart",
+          "title": "Visitors to a national park by season (thousands)",
+          "data": [
+            {
+              "label": "Spring",
+              "value": 40
+            },
+            {
+              "label": "Summer",
+              "value": 85
+            },
+            {
+              "label": "Autumn",
+              "value": 50
+            },
+            {
+              "label": "Winter",
+              "value": 15
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The bar chart shows visitors to a national park by season (thousands). The highest value is Summer, at 85, and the lowest is Winter, at 15. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "park visitors by season",
+        "summer most popular (85)",
+        "winter least (15)",
+        "busier in warm seasons"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0007",
+      "category": "describe_image",
+      "difficulty": "intermediate",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "line_chart",
+          "title": "Average price of a cup of coffee in a city",
+          "data": [
+            {
+              "label": "2015",
+              "value": 2.1
+            },
+            {
+              "label": "2017",
+              "value": 2.4
+            },
+            {
+              "label": "2019",
+              "value": 2.9
+            },
+            {
+              "label": "2021",
+              "value": 3.4
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The line chart shows average price of a cup of coffee in a city. The highest value is 2021, at 3.4, and the lowest is 2015, at 2.1. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "coffee price over time",
+        "steady increase",
+        "from 2.1 to 3.4",
+        "about 60% rise"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "di-0008",
+      "category": "describe_image",
+      "difficulty": "advanced",
+      "instructions": "Look at the picture. Describe the main things it shows and what they mean.",
+      "content": {
+        "image": {
+          "kind": "pie_chart",
+          "title": "Sources of electricity in a region",
+          "data": [
+            {
+              "label": "Wind",
+              "value": 35
+            },
+            {
+              "label": "Solar",
+              "value": 25
+            },
+            {
+              "label": "Gas",
+              "value": 30
+            },
+            {
+              "label": "Water",
+              "value": 10
+            }
+          ]
+        }
+      },
+      "answer": {
+        "model_answer": "The pie chart shows sources of electricity in a region. The highest value is Wind, at 35, and the lowest is Water, at 10. Overall, the figures show a clear difference between the categories."
+      },
+      "explanation": "Say what the image is, give the highest and lowest values, describe the trend, then conclude.",
+      "learning_objective": "Describe a chart with comparison and trend language.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "electricity sources",
+        "wind largest (35%)",
+        "water smallest (10%)",
+        "renewables more than half"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rl-0003",
+      "category": "retell_lecture",
+      "difficulty": "advanced",
+      "instructions": "Listen to the talk, then tell it again in your own words.",
+      "content": {
+        "audio_script": "Many people think that multitasking makes us more productive. However, research shows that when we switch between tasks, our brain needs time to refocus, and we make more mistakes. Instead, experts suggest working on one task for a set period, such as twenty-five minutes, and then taking a short break."
+      },
+      "answer": {
+        "model_answer": "The speaker explained that multitasking is less productive than people think, because switching tasks costs time and causes mistakes. Experts recommend focusing on one task for a fixed period and then taking a short break."
+      },
+      "explanation": "Note the topic and the main points, then retell them in order.",
+      "learning_objective": "Retell the main ideas of a short talk.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "multitasking seems productive",
+        "switching costs time and causes mistakes",
+        "focus on one task for a set time",
+        "take short breaks"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rl-0004",
+      "category": "retell_lecture",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the talk, then tell it again in your own words.",
+      "content": {
+        "audio_script": "Coral reefs cover a tiny part of the ocean floor, but they are home to about a quarter of all sea life. Warmer water causes corals to lose the algae that feed them, a process called bleaching. Some scientists are now growing heat-resistant corals in tanks and planting them on damaged reefs."
+      },
+      "answer": {
+        "model_answer": "The lecture said coral reefs are small but support a large share of sea life. Warmer water causes bleaching, when corals lose the algae that feed them. To help, scientists grow heat-resistant corals and plant them on damaged reefs."
+      },
+      "explanation": "Note the topic and the main points, then retell them in order.",
+      "learning_objective": "Retell the main ideas of a short talk.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "reefs small but rich in life",
+        "warm water causes bleaching",
+        "corals lose algae",
+        "scientists plant heat-resistant corals"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rl-0005",
+      "category": "retell_lecture",
+      "difficulty": "advanced",
+      "instructions": "Listen to the talk, then tell it again in your own words.",
+      "content": {
+        "audio_script": "Cities are often several degrees warmer than the countryside around them. This is because roads and buildings absorb heat during the day and release it at night. Planting trees, painting roofs white and adding green spaces can reduce this effect and make summers more comfortable."
+      },
+      "answer": {
+        "model_answer": "The speaker explained that cities are warmer than the countryside because roads and buildings store heat and release it at night. Trees, white roofs and green spaces can reduce this and make summers cooler."
+      },
+      "explanation": "Note the topic and the main points, then retell them in order.",
+      "learning_objective": "Retell the main ideas of a short talk.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "cities warmer than countryside",
+        "buildings and roads store heat",
+        "trees and white roofs help",
+        "green spaces reduce heat"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rl-0006",
+      "category": "retell_lecture",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the talk, then tell it again in your own words.",
+      "content": {
+        "audio_script": "Sleep is not just rest for the body. During deep sleep, the brain sorts the information we learned during the day and stores the important parts as long-term memories. Students who sleep well after studying usually remember more than those who stay up late revising."
+      },
+      "answer": {
+        "model_answer": "The lecture explained that sleep helps memory, because during deep sleep the brain sorts and stores what we learned. As a result, students who sleep well after studying remember more than those who revise late at night."
+      },
+      "explanation": "Note the topic and the main points, then retell them in order.",
+      "learning_objective": "Retell the main ideas of a short talk.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "sleep is more than rest",
+        "brain sorts information in deep sleep",
+        "creates long-term memories",
+        "good sleep beats late revision"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0003",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What do we call the frozen water that falls from the sky in winter?"
+      },
+      "answer": {
+        "accepted": [
+          "snow"
+        ]
+      },
+      "explanation": "The answer is 'snow'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0004",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "How many days are there in a week?"
+      },
+      "answer": {
+        "accepted": [
+          "seven",
+          "7"
+        ]
+      },
+      "explanation": "The answer is 'seven'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0005",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "Which part of the body do we use to see?"
+      },
+      "answer": {
+        "accepted": [
+          "eyes",
+          "eye",
+          "the eyes"
+        ]
+      },
+      "explanation": "The answer is 'eyes'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0006",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What is the opposite of 'expensive'?"
+      },
+      "answer": {
+        "accepted": [
+          "cheap",
+          "inexpensive"
+        ]
+      },
+      "explanation": "The answer is 'cheap'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0007",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What do you call a person who teaches at a school?"
+      },
+      "answer": {
+        "accepted": [
+          "teacher",
+          "a teacher"
+        ]
+      },
+      "explanation": "The answer is 'teacher'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0008",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "Which season comes after autumn?"
+      },
+      "answer": {
+        "accepted": [
+          "winter"
+        ]
+      },
+      "explanation": "The answer is 'winter'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0009",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What do bees make?"
+      },
+      "answer": {
+        "accepted": [
+          "honey"
+        ]
+      },
+      "explanation": "The answer is 'honey'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0010",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What device do we use to tell the time on our wrist?"
+      },
+      "answer": {
+        "accepted": [
+          "watch",
+          "a watch",
+          "wristwatch"
+        ]
+      },
+      "explanation": "The answer is 'watch'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0011",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "How many minutes are there in an hour?"
+      },
+      "answer": {
+        "accepted": [
+          "sixty",
+          "60"
+        ]
+      },
+      "explanation": "The answer is 'sixty'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0012",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What do we call the place where planes take off and land?"
+      },
+      "answer": {
+        "accepted": [
+          "airport",
+          "an airport"
+        ]
+      },
+      "explanation": "The answer is 'airport'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0013",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "Which meal do people usually eat in the middle of the day?"
+      },
+      "answer": {
+        "accepted": [
+          "lunch"
+        ]
+      },
+      "explanation": "The answer is 'lunch'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0014",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What colour do you get when you mix blue and yellow?"
+      },
+      "answer": {
+        "accepted": [
+          "green"
+        ]
+      },
+      "explanation": "The answer is 'green'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0015",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What is the name of the book that lists words and their meanings?"
+      },
+      "answer": {
+        "accepted": [
+          "dictionary",
+          "a dictionary"
+        ]
+      },
+      "explanation": "The answer is 'dictionary'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "asq-0016",
+      "category": "answer_short_question",
+      "difficulty": "beginner",
+      "instructions": "Listen to the question and answer it in one or a few words.",
+      "content": {
+        "audio_script": "What do we call a baby cat?"
+      },
+      "answer": {
+        "accepted": [
+          "kitten",
+          "a kitten"
+        ]
+      },
+      "explanation": "The answer is 'kitten'.",
+      "learning_objective": "Answer a general question quickly with one word.",
+      "scoring_criteria": [],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "sgd-0003",
+      "category": "summarize_group_discussion",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the discussion, then say what the main points were in your own words.",
+      "content": {
+        "speakers": [
+          "Gita",
+          "Hugo",
+          "Ines"
+        ],
+        "audio_script": [
+          {
+            "speaker": "Gita",
+            "text": "I think our university should ban single-use plastic cups in the cafés."
+          },
+          {
+            "speaker": "Hugo",
+            "text": "I agree in principle, but many students forget to bring their own cup."
+          },
+          {
+            "speaker": "Ines",
+            "text": "Then the cafés could lend reusable cups with a small deposit that you get back when you return them."
+          }
+        ]
+      },
+      "answer": {
+        "model_answer": "The students discussed banning single-use plastic cups. Gita supported a ban, Hugo worried that students forget their own cups, and Ines suggested lending reusable cups with a refundable deposit."
+      },
+      "explanation": "Name each speaker's position and the final suggestion.",
+      "learning_objective": "Summarize different opinions in a discussion.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "proposal: ban plastic cups",
+        "concern: students forget cups",
+        "solution: reusable cups with deposit"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "sgd-0004",
+      "category": "summarize_group_discussion",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the discussion, then say what the main points were in your own words.",
+      "content": {
+        "speakers": [
+          "Jon",
+          "Kemi",
+          "Lars"
+        ],
+        "audio_script": [
+          {
+            "speaker": "Jon",
+            "text": "Our study group meets on Friday evenings, but attendance has been really low."
+          },
+          {
+            "speaker": "Kemi",
+            "text": "Friday is hard because many of us work part-time at weekends and start early."
+          },
+          {
+            "speaker": "Lars",
+            "text": "Let's move to Wednesday lunchtime and keep each session to one hour with a clear topic."
+          }
+        ]
+      },
+      "answer": {
+        "model_answer": "The group discussed low attendance at Friday study sessions. Kemi explained that many members work at weekends, and Lars proposed moving to a one-hour Wednesday lunchtime session with a set topic."
+      },
+      "explanation": "Name each speaker's position and the final suggestion.",
+      "learning_objective": "Summarize different opinions in a discussion.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "problem: low Friday attendance",
+        "reason: weekend jobs",
+        "solution: shorter Wednesday sessions with a topic"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rts-0003",
+      "category": "respond_to_situation",
+      "difficulty": "intermediate",
+      "instructions": "Read and listen to the situation, then say what you would say in it.",
+      "content": {
+        "situation": "You are late for a group meeting because your train was delayed. You arrive twenty minutes late. What do you say to the group?"
+      },
+      "answer": {
+        "model_answer": "Hi everyone, I'm really sorry I'm late. My train was delayed for twenty minutes. Could someone quickly tell me what I've missed? I'm happy to take notes for the rest of the meeting to help out."
+      },
+      "explanation": "Speak to the person directly: deal with the problem and suggest a next step.",
+      "learning_objective": "Respond politely and clearly to an everyday situation.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "apologise",
+        "explain the reason",
+        "ask what was missed",
+        "offer help"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rts-0004",
+      "category": "respond_to_situation",
+      "difficulty": "beginner",
+      "instructions": "Read and listen to the situation, then say what you would say in it.",
+      "content": {
+        "situation": "A classmate asks to copy your homework because they did not have time to finish it. What do you say to your classmate?"
+      },
+      "answer": {
+        "model_answer": "I understand you've been busy, but I don't think copying is a good idea, because we could both get into trouble. Why don't we go through the questions together at lunch so you can finish it yourself?"
+      },
+      "explanation": "Speak to the person directly: deal with the problem and suggest a next step.",
+      "learning_objective": "Respond politely and clearly to an everyday situation.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "polite refusal",
+        "give a reason",
+        "offer an alternative"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rts-0005",
+      "category": "respond_to_situation",
+      "difficulty": "intermediate",
+      "instructions": "Read and listen to the situation, then say what you would say in it.",
+      "content": {
+        "situation": "You ordered a vegetarian meal in a restaurant, but the dish has meat in it. What do you say to the waiter?"
+      },
+      "answer": {
+        "model_answer": "Excuse me, I'm sorry to bother you, but I ordered the vegetarian option and this dish has meat in it. Could you please change it for the vegetarian meal? Thank you."
+      },
+      "explanation": "Speak to the person directly: deal with the problem and suggest a next step.",
+      "learning_objective": "Respond politely and clearly to an everyday situation.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "polite opening",
+        "explain the problem",
+        "ask for a change",
+        "thank"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "rts-0006",
+      "category": "respond_to_situation",
+      "difficulty": "beginner",
+      "instructions": "Read and listen to the situation, then say what you would say in it.",
+      "content": {
+        "situation": "Your teacher has given you a deadline for an essay, but you have been ill for a week. What do you say to your teacher?"
+      },
+      "answer": {
+        "model_answer": "Good morning. I wanted to let you know that I've been ill for the past week, so I haven't been able to finish my essay. Would it be possible to have a few extra days? I can show you my plan so far."
+      },
+      "explanation": "Speak to the person directly: deal with the problem and suggest a next step.",
+      "learning_objective": "Respond politely and clearly to an everyday situation.",
+      "scoring_criteria": [
+        "Content",
+        "Oral fluency",
+        "Pronunciation"
+      ],
+      "key_points": [
+        "explain the situation",
+        "ask for an extension politely",
+        "offer evidence of work"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "swt-0003",
+      "category": "summarize_written_text",
+      "difficulty": "advanced",
+      "instructions": "Read the passage, then sum up its main idea in one sentence.",
+      "content": {
+        "passage": "Many workplaces now offer standing desks. Supporters say standing for part of the day reduces back pain and keeps workers alert. However, research shows that standing all day can cause its own problems, such as sore legs. Experts recommend changing position often, rather than simply replacing sitting with standing."
+      },
+      "answer": {
+        "model_answer": "Although standing desks can reduce back pain and improve alertness, standing all day causes other problems, so experts recommend changing position often."
+      },
+      "explanation": "Join the main idea and the key contrast or result in one sentence.",
+      "learning_objective": "Write a one-sentence summary that links ideas.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary"
+      ],
+      "key_points": [
+        "standing desks reduce back pain",
+        "standing all day causes problems",
+        "change position often"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "swt-0004",
+      "category": "summarize_written_text",
+      "difficulty": "intermediate",
+      "instructions": "Read the passage, then sum up its main idea in one sentence.",
+      "content": {
+        "passage": "Second-hand clothing shops are becoming popular with young people. Buying used clothes is cheaper and reduces the waste and pollution caused by producing new garments. Some fashion brands have started their own resale websites so that customers can sell items they no longer wear."
+      },
+      "answer": {
+        "model_answer": "Second-hand clothing is popular with young people because it is cheaper and reduces waste and pollution, and some brands now run their own resale websites."
+      },
+      "explanation": "Join the main idea and the key contrast or result in one sentence.",
+      "learning_objective": "Write a one-sentence summary that links ideas.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary"
+      ],
+      "key_points": [
+        "popular with young people",
+        "cheaper and less waste",
+        "brands run resale sites"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "swt-0005",
+      "category": "summarize_written_text",
+      "difficulty": "advanced",
+      "instructions": "Read the passage, then sum up its main idea in one sentence.",
+      "content": {
+        "passage": "Many schools have introduced short daily reading sessions in which every student and teacher reads silently for fifteen minutes. Teachers report that students' vocabulary and concentration improve. The sessions are cheap to run, but they only work if schools provide a wide choice of books that students enjoy."
+      },
+      "answer": {
+        "model_answer": "Daily silent reading sessions improve students' vocabulary and concentration at low cost, but they only succeed when schools offer a wide range of enjoyable books."
+      },
+      "explanation": "Join the main idea and the key contrast or result in one sentence.",
+      "learning_objective": "Write a one-sentence summary that links ideas.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary"
+      ],
+      "key_points": [
+        "daily silent reading",
+        "improves vocabulary and focus",
+        "needs a wide choice of books"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "swt-0006",
+      "category": "summarize_written_text",
+      "difficulty": "intermediate",
+      "instructions": "Read the passage, then sum up its main idea in one sentence.",
+      "content": {
+        "passage": "Drones are increasingly used to deliver medical supplies to remote villages. They can fly over mountains and flooded roads, arriving much faster than trucks. However, their batteries limit how far they can travel, and bad weather can stop flights altogether."
+      },
+      "answer": {
+        "model_answer": "Drones deliver medical supplies to remote villages faster than trucks by flying over obstacles, although battery limits and bad weather restrict their use."
+      },
+      "explanation": "Join the main idea and the key contrast or result in one sentence.",
+      "learning_objective": "Write a one-sentence summary that links ideas.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary"
+      ],
+      "key_points": [
+        "drones deliver medicine to remote areas",
+        "faster than trucks",
+        "limited by batteries and weather"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "we-0003",
+      "category": "write_essay",
+      "difficulty": "advanced",
+      "instructions": "Write an essay on the topic. Give your opinion and support it with reasons and examples.",
+      "content": {
+        "prompt": "Some people think that social media brings people closer together, while others believe it makes people more isolated. Discuss both views and give your opinion."
+      },
+      "answer": {
+        "outline": [
+          "Introduction: topic and opinion",
+          "Body 1: first view or reason",
+          "Body 2: second view or reason",
+          "Conclusion: summary and opinion"
+        ]
+      },
+      "explanation": "Plan four paragraphs. Support each idea with a reason and an example.",
+      "learning_objective": "Write a structured opinion essay.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Development, structure and coherence",
+        "Grammar usage and mechanics",
+        "General linguistic range",
+        "Vocabulary range",
+        "Spelling"
+      ],
+      "key_points": [
+        "ways social media connects people",
+        "ways it isolates people",
+        "clear personal opinion"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "we-0004",
+      "category": "write_essay",
+      "difficulty": "intermediate",
+      "instructions": "Write an essay on the topic. Give your opinion and support it with reasons and examples.",
+      "content": {
+        "prompt": "Many cities are considering banning cars from their centres. Do the advantages of this policy outweigh the disadvantages?"
+      },
+      "answer": {
+        "outline": [
+          "Introduction: topic and opinion",
+          "Body 1: first view or reason",
+          "Body 2: second view or reason",
+          "Conclusion: summary and opinion"
+        ]
+      },
+      "explanation": "Plan four paragraphs. Support each idea with a reason and an example.",
+      "learning_objective": "Write a structured opinion essay.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Development, structure and coherence",
+        "Grammar usage and mechanics",
+        "General linguistic range",
+        "Vocabulary range",
+        "Spelling"
+      ],
+      "key_points": [
+        "advantages of car-free centres",
+        "disadvantages of car-free centres",
+        "clear judgement"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "we-0005",
+      "category": "write_essay",
+      "difficulty": "advanced",
+      "instructions": "Write an essay on the topic. Give your opinion and support it with reasons and examples.",
+      "content": {
+        "prompt": "Should governments spend more money on public transport or on building new roads? Give reasons and examples."
+      },
+      "answer": {
+        "outline": [
+          "Introduction: topic and opinion",
+          "Body 1: first view or reason",
+          "Body 2: second view or reason",
+          "Conclusion: summary and opinion"
+        ]
+      },
+      "explanation": "Plan four paragraphs. Support each idea with a reason and an example.",
+      "learning_objective": "Write a structured opinion essay.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Development, structure and coherence",
+        "Grammar usage and mechanics",
+        "General linguistic range",
+        "Vocabulary range",
+        "Spelling"
+      ],
+      "key_points": [
+        "case for public transport",
+        "case for roads",
+        "clear position with examples"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "we-0006",
+      "category": "write_essay",
+      "difficulty": "intermediate",
+      "instructions": "Write an essay on the topic. Give your opinion and support it with reasons and examples.",
+      "content": {
+        "prompt": "Some people believe that homework is necessary for school students, while others think it should be stopped. Discuss both views and give your opinion."
+      },
+      "answer": {
+        "outline": [
+          "Introduction: topic and opinion",
+          "Body 1: first view or reason",
+          "Body 2: second view or reason",
+          "Conclusion: summary and opinion"
+        ]
+      },
+      "explanation": "Plan four paragraphs. Support each idea with a reason and an example.",
+      "learning_objective": "Write a structured opinion essay.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Development, structure and coherence",
+        "Grammar usage and mechanics",
+        "General linguistic range",
+        "Vocabulary range",
+        "Spelling"
+      ],
+      "key_points": [
+        "benefits of homework",
+        "problems with homework",
+        "clear personal opinion"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "sst-0003",
+      "category": "summarize_spoken_text",
+      "difficulty": "advanced",
+      "instructions": "Listen to the talk. Then write a short summary of its main points in your own words.",
+      "content": {
+        "audio_script": "Many cities are adding bicycle lanes that are separated from cars by a low wall. Studies show that more people start cycling when they feel safe, especially older people and parents with children. Shop owners often worry that losing parking spaces will reduce sales, but research in several cities suggests that cyclists visit shops more often and spend similar amounts overall."
+      },
+      "answer": {
+        "model_answer": "The speaker explained that separated bike lanes encourage more people to cycle because they feel safer, particularly older people and parents. Although shop owners fear that fewer parking spaces will hurt business, research shows that cyclists visit shops more frequently and spend about the same amount overall, so the lanes need not reduce sales."
+      },
+      "explanation": "Include the topic, the main points and the conclusion in 50 to 70 words.",
+      "learning_objective": "Summarize a short talk in a few clear sentences.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary",
+        "Spelling"
+      ],
+      "key_points": [
+        "separated lanes make cycling feel safe",
+        "more older people and parents cycle",
+        "shops fear losing parking",
+        "cyclists visit more and spend similar amounts"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "sst-0004",
+      "category": "summarize_spoken_text",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the talk. Then write a short summary of its main points in your own words.",
+      "content": {
+        "audio_script": "Learning a musical instrument as an adult is easier than many people think. Adults may not pick up new sounds as quickly as children, but they are better at planning practice and understanding theory. Short daily practice sessions of around twenty minutes are more effective than one long session each week."
+      },
+      "answer": {
+        "model_answer": "According to the speaker, adults can learn instruments more easily than expected. Although children pick up sounds faster, adults plan practice better and understand theory more easily. The speaker recommended practising for about twenty minutes every day rather than once a week for a long time, because short regular sessions work better."
+      },
+      "explanation": "Include the topic, the main points and the conclusion in 50 to 70 words.",
+      "learning_objective": "Summarize a short talk in a few clear sentences.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary",
+        "Spelling"
+      ],
+      "key_points": [
+        "adults can learn instruments",
+        "children faster with sounds",
+        "adults better at planning and theory",
+        "short daily practice is best"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "sst-0005",
+      "category": "summarize_spoken_text",
+      "difficulty": "advanced",
+      "instructions": "Listen to the talk. Then write a short summary of its main points in your own words.",
+      "content": {
+        "audio_script": "Food packaging made from seaweed is being tested as an alternative to plastic. It can be eaten or composted, and it breaks down in a few weeks. At the moment it is more expensive to produce and does not keep food fresh for as long, so it is mainly used for drinks and sauces at events."
+      },
+      "answer": {
+        "model_answer": "The talk described seaweed packaging as a possible replacement for plastic, since it can be eaten or composted and breaks down within weeks. However, it currently costs more and keeps food fresh for a shorter time, so for now it is mostly used for drinks and sauces at events rather than everyday products."
+      },
+      "explanation": "Include the topic, the main points and the conclusion in 50 to 70 words.",
+      "learning_objective": "Summarize a short talk in a few clear sentences.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary",
+        "Spelling"
+      ],
+      "key_points": [
+        "seaweed packaging replaces plastic",
+        "edible, compostable, quick to break down",
+        "more expensive, shorter freshness",
+        "used mainly at events"
+      ],
+      "status": "published"
+    },
+    {
+      "external_id": "sst-0006",
+      "category": "summarize_spoken_text",
+      "difficulty": "intermediate",
+      "instructions": "Listen to the talk. Then write a short summary of its main points in your own words.",
+      "content": {
+        "audio_script": "Volunteering can benefit the volunteer as well as the community. People who volunteer regularly report feeling less stressed and more connected to others. Employers also value volunteering because it shows skills such as teamwork and reliability, which can help young people find their first job."
+      },
+      "answer": {
+        "model_answer": "The speaker argued that volunteering helps volunteers as well as communities. Regular volunteers feel less stressed and more connected with other people. In addition, employers value volunteering because it demonstrates teamwork and reliability, so it can help young people who are looking for their first job to stand out from other applicants."
+      },
+      "explanation": "Include the topic, the main points and the conclusion in 50 to 70 words.",
+      "learning_objective": "Summarize a short talk in a few clear sentences.",
+      "scoring_criteria": [
+        "Content",
+        "Form",
+        "Grammar",
+        "Vocabulary",
+        "Spelling"
+      ],
+      "key_points": [
+        "volunteering helps volunteers too",
+        "less stress, more connection",
+        "employers value it",
+        "shows teamwork and reliability for first jobs"
+      ],
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "code": "answer_short_question",
+  "what": "You hear a short question and answer it with one or a few words.",
+  "tests": "Listening and vocabulary: understanding everyday and general knowledge questions quickly.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says the response is scored as either correct or incorrect.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Listen for the question word: what, how many, where, who.",
+    "Answer at once with the word or short phrase. A full sentence is not needed.",
+    "Speak clearly: the answer must be understood."
+  ],
+  "example_prompt": "What do we call a person who repairs water pipes in a house?",
+  "examples": {
+    "strong": {
+      "answer": "A plumber.",
+      "why": "Correct and clear."
+    },
+    "medium": {
+      "answer": "Um... the person is a... plumber.",
+      "why": "Correct in the end, but slow; the recording may stop after silence."
+    },
+    "weak": {
+      "answer": "An electrician.",
+      "why": "Wrong word, so it is marked incorrect."
+    }
+  },
+  "mistakes": [
+    "Waiting too long to start.",
+    "Giving a long explanation instead of the word.",
+    "Mixing up similar job or object names."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

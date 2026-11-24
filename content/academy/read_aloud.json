@@ -1,0 +1,44 @@
+{
+  "code": "read_aloud",
+  "what": "A short text appears on the screen. You read it out loud after a short time to prepare.",
+  "tests": "Reading and speaking: saying every word clearly, with natural speed and phrasing.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Use the preparation time to read the text silently and find the phrase breaks (commas, full stops, 'and', 'but').",
+    "Find difficult words and say them quietly in your head.",
+    "Start speaking just after the tone. Do not wait a long time: the microphone can stop after a few seconds of silence.",
+    "Read in phrases of three to six words at a steady speed. Stress the important words.",
+    "If you make a mistake, keep going. Do not go back and repeat."
+  ],
+  "example_prompt": "Many towns now collect food waste separately. The waste is turned into compost for parks and farms, which reduces the amount sent to landfill.",
+  "examples": {
+    "strong": {
+      "answer": "Reads every word, pauses at the commas and full stop, keeps a smooth pace and stresses 'food waste', 'compost' and 'landfill'.",
+      "why": "All words are there, the phrasing sounds natural and the stressed words help the meaning."
+    },
+    "medium": {
+      "answer": "Reads every word but stops before 'compost' and 'landfill' and says them slowly, one sound at a time.",
+      "why": "Content is complete, but the stops break the flow and make the speech sound uneven."
+    },
+    "weak": {
+      "answer": "Misses 'separately', goes back to repeat 'turned into', and has a long silence in the middle.",
+      "why": "Missing words lower content; going back and long silences lower fluency."
+    }
+  },
+  "mistakes": [
+    "Going back to correct a word.",
+    "Reading word by word with no phrasing.",
+    "Waiting too long after the tone.",
+    "Speaking too fast to sound fluent."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

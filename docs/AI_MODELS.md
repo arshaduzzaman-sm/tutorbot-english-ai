@@ -1,18 +1,23 @@
 # AI models
 
-**Milestone 1 uses mock providers only.** No models are downloaded. Every response says `provider: "mock"` and the
-UI shows "Demo mode: AI not connected".
+The app works with **mock providers** by default (`*_PROVIDER=mock`). Every mock result says `provider: "mock"` and
+the UI shows "Demo mode: AI not connected". Local providers (`*_PROVIDER=local`) are in
+`apps/api/app/ai/providers/local.py`. They are imported only when chosen, and fail with a clear message if the
+package or service is missing. Install the Python packages with `cd apps/api && uv sync --group ai`.
 
-Planned for Milestone 3 (check current version and licence before installing, then fill in this table):
+Scores come from measurable signals only (SPEC 6.1). The LLM writes the feedback text and never sets a band.
 
-| Capability | Planned default | Licence | Size / RAM | Version checked |
+| Capability | Default (local) | Licence | Size / RAM | Version locked |
 |---|---|---|---|---|
-| Speech-to-text | faster-whisper (`small` / `large-v3-turbo`) | MIT (code), Whisper weights MIT | TBD | TBD |
-| Voice activity | Silero VAD | MIT | small | TBD |
-| Pronunciation | wav2vec2 phoneme CTC model | check model card | TBD | TBD |
-| Phonemiser | espeak-ng (separate container) | GPL-3.0 (run as separate process) | small | TBD |
-| Grammar | LanguageTool server (`erikvl87/languagetool:6.6` image) | LGPL-2.1 | ~1 GB RAM | image tag only |
-| Vocabulary | wordfreq + open academic word list | check | small | TBD |
-| Embeddings | sentence-transformers `all-MiniLM-L6-v2` | Apache-2.0 | ~90 MB | TBD |
-| LLM | Ollama + small Apache-2.0 model (e.g. Qwen 4B-8B) | check model licence | 3-8 GB | TBD |
-| TTS (offline content only) | Kokoro-82M | Apache-2.0 | small | TBD |
+| Speech-to-text | faster-whisper, model `small` (`WHISPER_MODEL=large-v3-turbo` on stronger computers) | MIT (code and weights) | ~500 MB (`small`, int8) | faster-whisper 1.2.1 |
+| Voice activity | Silero VAD, built into faster-whisper (`vad_filter=True`) | MIT | small | bundled |
+| Pronunciation | Whisper word confidence as a proxy (see DECISIONS) | MIT | none extra | — |
+| Fluency | word timings from speech-to-text (pauses, rate, fillers) | our code (MIT) | none | — |
+| Grammar | LanguageTool server, HTTP (`erikvl87/languagetool:6.6`, `docker compose --profile ai`) | LGPL-2.1 (separate process) | ~1 GB RAM | image 6.6 |
+| Embeddings | sentence-transformers `all-MiniLM-L6-v2` | Apache-2.0 | ~90 MB | sentence-transformers 6.3.0 |
+| LLM (feedback text) | Ollama `qwen3:4b` (`ollama/ollama:0.12.6`) | Apache-2.0 (Ollama MIT) | ~3 GB | image 0.12.6 |
+| TTS (offline content only) | Kokoro-82M via `make audio` | Apache-2.0 | small | not run here |
+
+**Not tested in this environment:** model downloads are blocked here, so the local providers have unit tests for
+their error path only. The full flow (record → transcript → evaluation) is tested end to end with mocks.
+Planned later: a wav2vec2 phoneme model for real pronunciation scoring (needs a licence check of the model card).

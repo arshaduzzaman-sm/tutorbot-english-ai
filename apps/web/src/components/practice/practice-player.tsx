@@ -3,6 +3,7 @@
 import { Lightbulb } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
+import { ReportProblem } from "@/components/practice/report-problem";
 import { Markdown } from "@/components/markdown";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
@@ -17,9 +18,9 @@ import { type AnswerState, BlanksView, ChoicesView, DictationView, type Question
 type Question = PracticeQuestionsQuery["practiceQuestions"][number];
 type Outcome = components["schemas"]["AnswerOut"];
 type Mode = "learn" | "practice" | "review";
-const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
+export const SINGLE = new Set(["reading_mc_single", "listening_mc_single", "highlight_correct_summary", "select_missing_word"]);
 
-function initialAnswer(q: Question): AnswerState {
+export function initialAnswer(q: Question): AnswerState {
   const c = q.content as QuestionContent;
   if (q.categoryCode === "reorder_paragraphs") return { order: (c.paragraphs ?? []).map((p) => p.id) };
   if (q.categoryCode.endsWith("fill_blanks")) return { blanks: {} };
@@ -28,7 +29,7 @@ function initialAnswer(q: Question): AnswerState {
   return { selected: [] };
 }
 
-function isAnswered(q: Question, a: AnswerState): boolean {
+export function isAnswered(q: Question, a: AnswerState): boolean {
   if (a.order) return true;
   if (a.indices) return a.indices.length > 0;
   if (a.text !== undefined) return a.text.trim().length > 0;
@@ -208,9 +209,12 @@ export function PracticePlayer({ questions, fixedMode }: { questions: Question[]
             )}
             <p className="text-xs">{outcome.note}</p>
           </Alert>
-          <Button type="button" onClick={() => (last ? setDone(true) : load(index + 1))}>
-            {last ? t("finish") : t("next")}
-          </Button>
+          <div className="flex flex-wrap items-center gap-3">
+            <Button type="button" onClick={() => (last ? setDone(true) : load(index + 1))}>
+              {last ? t("finish") : t("next")}
+            </Button>
+            <ReportProblem key={q.id} questionId={q.id} />
+          </div>
         </div>
       )}
     </div>

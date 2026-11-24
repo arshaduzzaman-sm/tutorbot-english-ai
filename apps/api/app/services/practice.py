@@ -29,7 +29,15 @@ LISTENING = {
     "write_from_dictation",
     "summarize_spoken_text",
 }
-MODES = {"learn", "practice", "review"}
+# Speaking tasks with a spoken prompt (the browser voice reads it; pre-generated audio replaces it later).
+SPOKEN_PROMPT = {
+    "repeat_sentence",
+    "retell_lecture",
+    "answer_short_question",
+    "summarize_group_discussion",
+    "respond_to_situation",
+}
+MODES = {"learn", "practice", "review", "timed_drill"}
 
 
 @dataclass(frozen=True)
@@ -124,7 +132,19 @@ def mark(category: str, answer: dict[str, Any], response: dict[str, Any]) -> Mar
 
 def public_content(category: str, content: dict[str, Any]) -> dict[str, Any]:
     """Content learners may see before answering. The audio script never goes in the page (it can hold the answer)."""
-    allowed = {"text", "blanks", "word_bank", "passage", "question", "paragraphs", "transcript"}
+    allowed = {
+        "text",
+        "blanks",
+        "word_bank",
+        "passage",
+        "question",
+        "paragraphs",
+        "transcript",
+        "image",
+        "situation",
+        "prompt",
+        "speakers",
+    }
     return {k: v for k, v in content.items() if k in allowed}
 
 
@@ -192,7 +212,7 @@ async def speech(session: AsyncSession, question_id: uuid.UUID) -> dict[str, Any
         (
             await session.execute(
                 text(
-                    "select q.external_id, c.code, q.content->>'audio_script' as script from public.questions q "
+                    "select q.external_id, c.code, q.content from public.questions q "
                     "join public.question_categories c on c.id = q.category_id "
                     "where q.id = :id and q.status = 'published' and q.deleted_at is null"
                 ),
@@ -202,9 +222,20 @@ async def speech(session: AsyncSession, question_id: uuid.UUID) -> dict[str, Any
         .mappings()
         .one_or_none()
     )
-    if row is None or row["code"] not in LISTENING or not row["script"]:
+    if row is None or row["code"] not in LISTENING | SPOKEN_PROMPT:
         raise AppError(404, "audio_not_found", "This question has no audio.")
-    script = str(row["script"])
+    content = dict(row["content"])
+    raw = content.get("situation") if row["code"] == "respond_to_situation" else content.get("audio_script")
+    if isinstance(raw, list):  # a discussion: one part per speaker turn
+        turns = [t for t in raw if isinstance(t, dict)]
+        return {
+            "external_id": row["external_id"],
+            "parts": [str(t.get("text", "")) for t in turns],
+            "transcript": "\n".join(f"{t.get('speaker', '')}: {t.get('text', '')}" for t in turns),
+        }
+    if not raw:
+        raise AppError(404, "audio_not_found", "This question has no audio.")
+    script = str(raw)
     return {
         "external_id": row["external_id"],
         "parts": [p.strip() for p in script.split("[BEEP]")],

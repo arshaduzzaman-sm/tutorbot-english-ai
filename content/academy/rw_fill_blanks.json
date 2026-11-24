@@ -1,0 +1,38 @@
+{
+  "code": "rw_fill_blanks",
+  "what": "A text has several gaps. For each gap you choose the best word from a drop-down list.",
+  "tests": "Reading and writing: using grammar and meaning to choose the right word.",
+  "scoring": {
+    "traits": [],
+    "note": "Pearson says the response is judged on your ability to use contextual and grammatical cues.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/reading/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Read the whole text once to understand the topic.",
+    "For each gap, check the grammar first: does it need a noun, verb, adjective or adverb?",
+    "Then check the meaning and common word partners (collocations).",
+    "Read the full sentence again with your choice."
+  ],
+  "example_prompt": "The new policy had a significant ____ on traffic. (impact / affect / effective / impacted)",
+  "examples": {
+    "strong": {
+      "answer": "impact",
+      "why": "A noun is needed after 'significant', and 'have an impact on' is a common partner."
+    },
+    "medium": {
+      "answer": "affect",
+      "why": "Close in meaning, but 'affect' is a verb, so the grammar is wrong."
+    },
+    "weak": {
+      "answer": "effective",
+      "why": "An adjective does not fit after 'a significant'."
+    }
+  },
+  "mistakes": [
+    "Choosing by meaning only and ignoring grammar.",
+    "Not reading the words after the gap.",
+    "Spending too long on one gap."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

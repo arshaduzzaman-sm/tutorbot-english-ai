@@ -3,7 +3,7 @@
 import uuid
 from datetime import UTC, date, datetime
 from enum import Enum
-from typing import Any
+from typing import Annotated, Any
 
 import strawberry
 from graphql.validation import NoSchemaIntrospectionCustomRule
@@ -15,8 +15,12 @@ from strawberry.types import Info
 from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
+from app.graphql import coach as coach_gql
+from app.graphql import evaluations as evals
 from app.graphql import tracks
 from app.graphql.context import Context
+from app.services import coach as coach_stats
+from app.services.evaluate import EVALUATED
 from app.services.lessons import public_exercise
 from app.services.placement import public_item
 from app.services.practice import AUTO_MARKED, public_content
@@ -103,7 +107,7 @@ class PracticeQuestion:
 class PracticeTypeStats:
     category: QuestionCategory
     question_count: int
-    auto_marked: bool
+    auto_marked: bool = strawberry.field(description="True when answers are marked: automatically, or by AI feedback")
     attempts: int = strawberry.field(description="The viewer's attempts at this task type")
     average_score: float | None = strawberry.field(description="Mean practice score ratio 0-1; null if no attempts")
 
@@ -454,6 +458,8 @@ class MockExam:
     status: str
     started_at: datetime
     completed_at: datetime | None
+    blueprint_code: str | None = None
+    overall_band: str | None = strawberry.field(default=None, description="Band from the report, once ready")
 
 
 async def _signals(info: CtxInfo) -> list[tuple[AttemptSignal, date]]:
@@ -659,6 +665,55 @@ class Viewer:
         weak = weak_categories(s for s, _ in await _signals(info))
         return [WeakArea(category_id=uuid.UUID(cid), accuracy=acc, attempts=n) for cid, acc, n in weak]
 
+    @strawberry.field(description="The viewer's speaking and writing evaluations, newest first")
+    async def evaluations(
+        self, info: CtxInfo, category_code: str | None = None, limit: int = 20
+    ) -> list[evals.Evaluation]:
+        return await evals.evaluations(info, category_code, limit)
+
+    @strawberry.field(description="Personal guidance from the viewer's own attempts (practice estimate only)")
+    async def coach(self, info: CtxInfo) -> coach_gql.Coach:
+        return await coach_gql.coach(info, str(self.id))
+
+    @strawberry.field(
+        description="Progress analytics: summary, daily series, by question type, weekly skill trend (JSON)"
+    )
+    async def analytics(self, info: CtxInfo, days: int = 30) -> JSON:
+        return await coach_gql.analytics(info, str(self.id), days)  # type: ignore[no-any-return]
+
+    @strawberry.field(description="The viewer's tutor chat, oldest first")
+    async def tutor_messages(self, info: CtxInfo, limit: int = 40) -> list[coach_gql.TutorMessage]:
+        return await coach_gql.tutor_messages(info, str(self.id), limit)
+
+    @strawberry.field(description="True when the viewer has agreed to voice recordings")
+    async def recording_consent(self, info: CtxInfo) -> bool:
+        return await evals.recording_consent(info)
+
+    @strawberry.field(description="The viewer's attempts at one task type, newest first (personal history)")
+    async def type_history(self, info: CtxInfo, category_code: str, limit: int = 20) -> list[Attempt]:
+        rows = await info.context.execute(
+            text(
+                "select a.id, a.created_at, a.mode::text, a.is_correct, a.score_ratio, a.category_id "
+                "from public.attempts a join public.question_categories c on c.id = a.category_id "
+                "where a.user_id = :u and c.code = :code order by a.created_at desc limit :lim"
+            ),
+            {"u": info.context.user.id, "code": category_code, "lim": max(1, min(limit, 50))},
+        )
+        out: list[Attempt] = []
+        for row in rows.all():
+            r: list[Any] = list(row)
+            out.append(
+                Attempt(
+                    id=strawberry.ID(str(r[0])),
+                    created_at=r[1],
+                    mode=r[2],
+                    is_correct=r[3],
+                    score_ratio=float(r[4]) if r[4] is not None else None,
+                    category_id=r[5],
+                )
+            )
+        return out
+
     @strawberry.field
     async def mock_exams(self, info: CtxInfo, limit: int = 5) -> list[MockExam]:
         limit = max(1, min(limit, 20))
@@ -681,9 +736,32 @@ class Viewer:
                 status=t.status,
                 started_at=t.started_at,
                 completed_at=t.completed_at,
+                blueprint_code=t.blueprint_code,
+                overall_band=(t.result_summary or {}).get("overall_band"),
             )
             for t in rows
         ]
+
+
+@strawberry.type
+class QuestionTypeGuide:
+    category: QuestionCategory
+    guide: JSON = strawberry.field(
+        description="what, tests, scoring (with source), strategy, examples, mistakes, rules"
+    )
+    question_count: int
+
+
+@strawberry.type
+class Blueprint:
+    code: str
+    name: str
+    kind: str
+    about: str
+    verified: bool = strawberry.field(description="False: item counts or clocks are our own choices (see STATUS.md)")
+    item_count: int
+    sections: list[str]
+    spec: JSON
 
 
 @strawberry.type
@@ -760,7 +838,7 @@ class Query:
                 PracticeTypeStats(
                     category=QuestionCategory.of(c),
                     question_count=int(r[1]) if r else 0,
-                    auto_marked=c.code in AUTO_MARKED,
+                    auto_marked=c.code in AUTO_MARKED | EVALUATED,
                     attempts=int(r[2]) if r else 0,
                     average_score=float(r[3]) if r and r[3] is not None else None,
                 )
@@ -768,15 +846,33 @@ class Query:
         return out
 
     @strawberry.field(description="Published questions of one task type, easiest first")
-    async def practice_questions(self, info: CtxInfo, category_code: str, limit: int = 50) -> list[PracticeQuestion]:
+    async def practice_questions(
+        self,
+        info: CtxInfo,
+        category_code: str,
+        limit: int = 50,
+        adaptive: Annotated[
+            bool, strawberry.argument(description="Put questions at the learner's current difficulty first")
+        ] = False,
+    ) -> list[PracticeQuestion]:
+        target = 0
+        if adaptive:
+            uid = info.context.user.id
+            level, _ = await coach_gql.learner_level(info, uid)
+            stats = coach_stats.category_stats(
+                r for r in await coach_gql.attempt_rows(info, uid) if r.category_code == category_code
+            )
+            target = coach_stats.DIFFICULTIES.index(coach_stats.target_difficulty(level, stats.get(category_code)))
         rows = await info.context.execute(
             text(
                 f"select {QUESTION_COLUMNS} from public.questions q "  # noqa: S608 (constant column list)
                 "join public.question_categories c on c.id = q.category_id "
                 "where c.code = :code and q.status = 'published' and q.deleted_at is null "
-                "order by q.difficulty, q.external_id limit :lim"
+                "order by case when :adaptive then abs(array_position("
+                "array['beginner','intermediate','advanced'], q.difficulty::text) - 1 - :target) else 0 end, "
+                "q.difficulty, q.external_id limit :lim"
             ),
-            {"code": category_code, "lim": max(1, min(limit, 100))},
+            {"code": category_code, "lim": max(1, min(limit, 100)), "adaptive": adaptive, "target": target},
         )
         return [_question(r) for r in rows.all()]
 
@@ -857,6 +953,57 @@ class Query:
     async def pronunciation_topic(self, info: CtxInfo, slug: str) -> tracks.PronunciationTopic | None:
         found = await tracks.pronunciation_topics(info, slug)
         return found[0] if found else None
+
+    @strawberry.field
+    async def question_type(self, info: CtxInfo, code: str) -> "QuestionTypeGuide | None":
+        """A Question-Type Academy page: our guide plus the published rules (timings) for that task."""
+        m = (
+            await info.context.execute(select(models.QuestionCategory).where(models.QuestionCategory.code == code))
+        ).scalar_one_or_none()
+        if m is None:
+            return None
+        guide = (
+            await info.context.execute(
+                text("select guide from public.question_categories where id = :id"), {"id": m.id}
+            )
+        ).scalar_one()
+        count = (
+            await info.context.execute(
+                text(
+                    "select count(*) from public.questions where category_id = :id and status = 'published' "
+                    "and deleted_at is null"
+                ),
+                {"id": m.id},
+            )
+        ).scalar_one()
+        return QuestionTypeGuide(category=QuestionCategory.of(m), guide=guide, question_count=int(count))
+
+    @strawberry.field(description="Mock exams and section tests learners can take")
+    async def blueprints(self, info: CtxInfo) -> list["Blueprint"]:
+        rows = await info.context.execute(
+            text(
+                "select code, name, kind, spec, verified from public.blueprints where status = 'published' "
+                "order by sort_order, code"
+            )
+        )
+        out = []
+        for r in rows.mappings():
+            spec = dict(r["spec"])
+            if not spec.get("listed", True):
+                continue
+            out.append(
+                Blueprint(
+                    code=r["code"],
+                    name=r["name"],
+                    kind=r["kind"],
+                    about=str(spec.get("about", "")),
+                    verified=bool(r["verified"]),
+                    item_count=sum(int(i["count"]) for s in spec["sections"] for i in s["items"]),
+                    sections=[str(sec["title"]) for sec in spec["sections"]],
+                    spec=spec,  # type: ignore[arg-type]
+                )
+            )
+        return out
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

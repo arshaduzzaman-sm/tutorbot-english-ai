@@ -1,0 +1,42 @@
+{
+  "code": "respond_to_situation",
+  "what": "You read and hear a short description of an everyday situation. Then you say what you would say in that situation.",
+  "tests": "Speaking: giving a clear, suitable spoken response to a real-life situation.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Find who you are speaking to and what they need from you.",
+    "Plan three parts: greet or react, deal with the problem, offer a next step.",
+    "Use polite language that suits the person (a manager, a friend, a teacher).",
+    "Speak to the person directly, as if they are in front of you."
+  ],
+  "example_prompt": "Your neighbour's music is very loud late at night and you have an exam tomorrow. What do you say to your neighbour?",
+  "examples": {
+    "strong": {
+      "answer": "Hi, sorry to bother you so late. I have an important exam tomorrow morning and I'm finding it hard to sleep with the music. Would you mind turning it down a little tonight? Thanks so much, I really appreciate it.",
+      "why": "It is polite, explains the problem and asks for a clear action."
+    },
+    "medium": {
+      "answer": "Hello. The music is loud. I have exam. Please make it quiet.",
+      "why": "The message is clear, but grammar mistakes and short phrases make it less natural and less polite."
+    },
+    "weak": {
+      "answer": "Music is a very important part of life for many people around the world.",
+      "why": "It does not respond to the situation."
+    }
+  },
+  "mistakes": [
+    "Describing the situation instead of speaking in it.",
+    "Being rude or too direct.",
+    "Forgetting to ask for or offer a next step."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

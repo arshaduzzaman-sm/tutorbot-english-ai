@@ -41,8 +41,12 @@ function say(text: string): Promise<void> {
  * otherwise the browser's own offline speech voice. The transcript is offered in Learn mode only.
  */
 export function AudioPlayer({
-  questionId, externalId, learn, source = "practice",
-}: { questionId: string; externalId: string; learn: boolean; source?: "practice" | "placement" }) {
+  questionId, externalId, learn, source = "practice", maxPlays, autoPlay = false, onEnded,
+}: {
+  questionId: string; externalId: string; learn: boolean; source?: "practice" | "placement";
+  /** Exam rules: the clip plays this many times only. */ maxPlays?: number;
+  autoPlay?: boolean; onEnded?: () => void;
+}) {
   const t = useTranslations("practice");
   const [speech, setSpeech] = useState<Speech | null>(null);
   const [playing, setPlaying] = useState(false);
@@ -51,6 +55,11 @@ export function AudioPlayer({
   const [error, setError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const stopped = useRef(false);
+
+  useEffect(() => {
+    if (autoPlay) void play();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => () => {
     audioRef.current?.pause();
@@ -95,6 +104,7 @@ export function AudioPlayer({
       await speakFallback();
     }
     setPlaying(false);
+    if (!stopped.current) onEnded?.();
   }
 
   function stop() {
@@ -113,8 +123,8 @@ export function AudioPlayer({
     <div className="space-y-3 rounded-xl bg-muted p-4">
       <div className="flex flex-wrap items-center gap-2">
         {playing ? (
-          <Button type="button" variant="outline" onClick={stop}><Square aria-hidden="true" className="size-4" /> {t("stopAudio")}</Button>
-        ) : (
+          maxPlays === undefined && <Button type="button" variant="outline" onClick={stop}><Square aria-hidden="true" className="size-4" /> {t("stopAudio")}</Button>
+        ) : maxPlays !== undefined && plays >= maxPlays ? null : (
           <Button type="button" onClick={play}><Play aria-hidden="true" className="size-4" /> {plays ? t("playAgain") : t("playAudio")}</Button>
         )}
         {learn && (

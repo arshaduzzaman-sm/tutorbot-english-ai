@@ -1,0 +1,59 @@
+{
+  "code": "section_listening",
+  "version": "2026.1",
+  "name": "Listening test",
+  "kind": "section_test",
+  "sort_order": 4,
+  "about": "The Listening part only.",
+  "listed": true,
+  "verified": false,
+  "note": "See task_rules.json for the per-task timings (verified). Item counts, the item order inside a section and the section clocks we choose are NOT published by Pearson: they are marked verified=false and listed in STATUS.md.",
+  "pre_test": [
+    "mic_check"
+  ],
+  "navigation": "No going back. Each answer is final once you press Next.",
+  "order_note": "Sections follow Pearson's order (Speaking & Writing, Reading, Listening). Inside a section, task types follow the order on Pearson's test-format page.",
+  "sections": [
+    {
+      "code": "listening",
+      "title": "Listening",
+      "items": [
+        {
+          "type": "summarize_spoken_text",
+          "count": 2
+        },
+        {
+          "type": "listening_mc_multiple",
+          "count": 2
+        },
+        {
+          "type": "listening_fill_blanks",
+          "count": 3
+        },
+        {
+          "type": "highlight_correct_summary",
+          "count": 2
+        },
+        {
+          "type": "listening_mc_single",
+          "count": 2
+        },
+        {
+          "type": "select_missing_word",
+          "count": 2
+        },
+        {
+          "type": "highlight_incorrect_words",
+          "count": 3
+        },
+        {
+          "type": "write_from_dictation",
+          "count": 3
+        }
+      ],
+      "clock_minutes": 23,
+      "clock_note": "Summarize Spoken Text has its own 10-minute timer; the other items share this clock (our own choice; Pearson gives 31-39 minutes for the whole section).",
+      "clock_verified": false
+    }
+  ]
+}

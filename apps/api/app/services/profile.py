@@ -8,6 +8,7 @@ from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import AppError
+from app.services.evaluate import delete_user_recordings
 
 EXPORT_TABLES = (
     "profiles",
@@ -21,7 +22,10 @@ EXPORT_TABLES = (
     "vocabulary_reviews",
     "pronunciation_progress",
     "consents",
+    "recordings",
+    "evaluations",
     "ai_usage",
+    "tutor_messages",
 )
 
 
@@ -87,7 +91,7 @@ async def export_user_data(session: AsyncSession, user_id: str) -> dict[str, Any
 
 
 async def delete_account(service: AsyncSession, user_id: str) -> None:
-    """Deletes the auth user; profile, attempts, recordings rows etc. cascade."""
+    """Deletes the auth user (profile, attempts, recordings rows etc. cascade) and the recording files."""
     await service.execute(
         text(
             "insert into public.audit_log (actor_id, action, target_table, target_id) "
@@ -98,3 +102,4 @@ async def delete_account(service: AsyncSession, user_id: str) -> None:
     result = await service.execute(text("delete from auth.users where id = :uid"), {"uid": user_id})
     if result.rowcount == 0:  # type: ignore[attr-defined]
         raise AppError(404, "user_not_found", "Account not found.")
+    delete_user_recordings(user_id)  # the audio files on disk; their rows went with the cascade

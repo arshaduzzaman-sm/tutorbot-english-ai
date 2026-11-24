@@ -1,0 +1,39 @@
+{
+  "code": "write_from_dictation",
+  "what": "You hear a short sentence once. You type it exactly.",
+  "tests": "Listening and writing: hearing every word and spelling it correctly.",
+  "scoring": {
+    "traits": [
+      "Content"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/listening/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Listen to the whole sentence, then type it straight away.",
+    "Use the meaning to help you remember the order.",
+    "Check spelling, plurals and small words like 'the' and 'a'."
+  ],
+  "example_prompt": "Students must return all library books before the end of term.",
+  "examples": {
+    "strong": {
+      "answer": "Students must return all library books before the end of term.",
+      "why": "Every word correct."
+    },
+    "medium": {
+      "answer": "Student must return all library book before the end of term.",
+      "why": "Two words lose their -s."
+    },
+    "weak": {
+      "answer": "Return books before term.",
+      "why": "Many words missing."
+    }
+  },
+  "mistakes": [
+    "Missing small words.",
+    "Spelling mistakes.",
+    "Changing word endings."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

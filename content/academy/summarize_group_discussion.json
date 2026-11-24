@@ -1,0 +1,42 @@
+{
+  "code": "summarize_group_discussion",
+  "what": "You listen to a discussion between a few people. Then you speak to summarize the main points and each person's view.",
+  "tests": "Listening and speaking: following several speakers and summarizing the discussion.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Note the topic, then one key point for each speaker (their name or first letter helps).",
+    "Note any agreement, disagreement or final decision.",
+    "Organise your answer: topic, each view, how the discussion ended.",
+    "Use reporting words: suggested, argued, agreed, was worried that."
+  ],
+  "example_prompt": "Three students discuss whether their class should move to online quizzes: one likes the speed, one worries about cheating, one suggests short quizzes in class on laptops.",
+  "examples": {
+    "strong": {
+      "answer": "The students discussed moving their quizzes online. The first student liked how quickly results would come back. The second was worried that people could cheat at home. The third suggested a compromise: short online quizzes taken in class on laptops, so they keep the speed and reduce cheating.",
+      "why": "It covers the topic, every speaker's view and the final idea, using reporting language."
+    },
+    "medium": {
+      "answer": "They talked about online quizzes. One said it is fast. Another said cheating. Then they decided something about laptops.",
+      "why": "Main points are partly there, but the solution is unclear."
+    },
+    "weak": {
+      "answer": "It was a discussion about school and the students had different opinions about it.",
+      "why": "No specific points from the discussion."
+    }
+  },
+  "mistakes": [
+    "Summarizing only one speaker.",
+    "Forgetting the final decision.",
+    "Retelling every sentence instead of the main ideas."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}

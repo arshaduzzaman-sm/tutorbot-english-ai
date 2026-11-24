@@ -16,7 +16,7 @@
 7. After editing `content/`, run `make seed` (validates and regenerates `supabase/seed.sql`), then
    `supabase db reset` locally. CI fails if seed.sql is out of date.
 8. Audio is generated offline with `make audio` (Kokoro). Questions keep the text to speak in `audio_script`.
-9. Scoring criteria names must match Pearson's published Score Guide (to be re-checked before M3).
+9. Scoring criteria names must match the trait names printed on Pearson's test-format pages (checked 2026-11-22). Where a page names none (most reading and listening choice tasks, Answer Short Question: "scored as either correct or incorrect"), leave `scoring_criteria` empty.
 10. **Vocabulary** (`content/vocabulary/level-N.json`): sets of about 26 words. Each word has `id`
     (`word-partofspeech`), `word`, `part_of_speech`, `meaning` (simple words) and `example` (one short
     original sentence). Word choice follows frequency (see `content/LICENSE.md`); never copy dictionary definitions.

@@ -1,0 +1,43 @@
+{
+  "code": "repeat_sentence",
+  "what": "You hear a short sentence once. Then you say it back exactly as you heard it.",
+  "tests": "Listening and speaking: holding a sentence in memory and repeating it clearly.",
+  "scoring": {
+    "traits": [
+      "Content",
+      "Oral fluency",
+      "Pronunciation"
+    ],
+    "note": "Pearson's page lists these scored traits.",
+    "source": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+    "checked": "2026-11-22"
+  },
+  "strategy": [
+    "Listen for the meaning of the whole sentence, not single words.",
+    "Split the sentence into two or three chunks in your mind (who, does what, when or where).",
+    "Start speaking as soon as the tone sounds, while the sentence is fresh.",
+    "Copy the speaker's rhythm and intonation.",
+    "If you forget a word, keep going with the rest of the sentence."
+  ],
+  "example_prompt": "The science building will be closed for repairs until the end of March.",
+  "examples": {
+    "strong": {
+      "answer": "The science building will be closed for repairs until the end of March.",
+      "why": "Every word is correct and it is said smoothly with natural stress."
+    },
+    "medium": {
+      "answer": "The science building will be closed for repair until the end of the March.",
+      "why": "Most words are right; two small changes ('repair', 'the March') lower content a little."
+    },
+    "weak": {
+      "answer": "The building... um... closed... March.",
+      "why": "Many words are missing and there are long pauses and fillers."
+    }
+  },
+  "mistakes": [
+    "Trying to remember every single word instead of the meaning.",
+    "Stopping when one word is forgotten.",
+    "Long hesitations with 'um' or 'er'."
+  ],
+  "licence": "CC BY-SA 4.0, original TutorBot content"
+}
