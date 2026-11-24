@@ -36,3 +36,9 @@ Recordings with consent, evaluation jobs + worker, speaking and writing evaluato
 providers (faster-whisper, LanguageTool, sentence-transformers, Ollama) + mocks, Question-Type Academy (22 pages),
 timed drills, 66 speaking/writing questions, blueprints + exam engine (resume, no going back, section clocks,
 report), Levels 4-6 (36 lessons, 9 units).
+
+## M5-M8: coach, analytics, admin, release (2026-11-22, branch `m5-m8`)
+Coaching (recommendations, adaptive difficulty, readiness bands, weekly check-in, daily plan), tutor chat,
+progress analytics with accessible charts and CSV, admin area (review workflow with a database publish guard,
+uploads, reports, users and roles, blueprints, usage, calibration), CSP header, secret scan, OWASP review,
+licence audit, backup/restore, README and v1.0.0 release notes. Fixed: recordings path inside the Docker image.

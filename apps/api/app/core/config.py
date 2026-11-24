@@ -57,11 +57,16 @@ class Settings(BaseSettings):
     recordings_dir: str = ""  # default: <repo>/recordings (git-ignored). Files are deleted with the account.
     max_recording_bytes: int = 3_000_000
     evaluations_per_day: int = 200
+    tutor_messages_per_day: int = 60
     evaluation_worker: bool = True  # run the background worker inside the API process
 
     @property
     def recordings_path(self) -> Path:
-        return Path(self.recordings_dir) if self.recordings_dir else Path(__file__).resolve().parents[4] / "recordings"
+        if self.recordings_dir:
+            return Path(self.recordings_dir)
+        here = Path(__file__).resolve()  # <repo>/apps/api/app/core/config.py when run from the repository
+        root = here.parents[4] if len(here.parents) > 4 else Path.cwd()
+        return root / "recordings"
 
     @property
     def is_dev(self) -> bool:

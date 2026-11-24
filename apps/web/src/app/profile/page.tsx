@@ -24,6 +24,9 @@ export default async function ProfilePage() {
         <CardBody>
           <p className="text-foreground">{p?.displayName}</p>
           <p>{viewer.email}</p>
+          {viewer.roles.some((r) => r === "admin" || r === "content_editor") && (
+            <Link href="/admin" className="mt-2 inline-block font-medium text-accent-blue underline">{t("adminLink")}</Link>
+          )}
         </CardBody>
       </Card>
       <Card>

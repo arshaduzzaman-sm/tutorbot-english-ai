@@ -25,6 +25,7 @@ EXPORT_TABLES = (
     "recordings",
     "evaluations",
     "ai_usage",
+    "tutor_messages",
 )
 
 

@@ -28,7 +28,9 @@
     "vocabulary": "Vocabulary",
     "pronunciation": "Pronunciation",
     "academy": "Question types",
-    "exams": "Mock exams"
+    "exams": "Mock exams",
+    "progress": "My progress",
+    "tutor": "Tutor"
   },
   "footer": {
     "disclaimer": "TutorBot English AI is an independent learning platform. It is not affiliated with, endorsed by, or sponsored by Pearson. PTE and PTE Academic are trademarks of Pearson.",
@@ -160,7 +162,7 @@
     "weak": "Areas to work on",
     "weakEmpty": "Practise a few questions and we will show your weak areas here.",
     "mocks": "Mock exams",
-    "mocksEmpty": "No mock exams yet. Full mock exams arrive in a later version.",
+    "mocksEmpty": "No mock exams yet. A mini mock exam takes about 30 minutes.",
     "readinessNote": "Progress here is a practice estimate, not an official PTE score.",
     "openLesson": "Open lesson",
     "allLessons": "See all lessons",
@@ -174,7 +176,9 @@
     "retakePlacement": "Redo the placement test",
     "vocabularyDue": "{count, plural, =0 {No words to review} one {# word to review} other {# words to review}}",
     "openVocabulary": "Vocabulary flashcards",
-    "openPronunciation": "Pronunciation track"
+    "openPronunciation": "Pronunciation track",
+    "nextSteps": "Your next steps",
+    "openProgress": "See all progress and charts"
   },
   "profile": {
     "title": "Your profile",
@@ -194,7 +198,8 @@
     "recordingOn": "You have agreed to voice recordings.",
     "recordingOff": "Voice recordings are off. You will be asked before you record.",
     "recordingStop": "Stop recordings",
-    "recordingAllow": "Allow recordings"
+    "recordingAllow": "Allow recordings",
+    "adminLink": "Open the admin area"
   },
   "levels": {
     "1": "Beginner English",
@@ -661,5 +666,265 @@
     "lower": "this time is lower",
     "nextSteps": "Your study plan and recommended lessons are on the",
     "toDashboard": "dashboard."
+  },
+  "coach": {
+    "title": "Your next steps",
+    "note": "Built from your own answers. Practice estimate, not an official PTE score.",
+    "empty": "Keep going with your lessons. We will suggest more as you practise.",
+    "reason": {
+      "review_due": "{count, plural, one {# mistake is} other {# mistakes are}} ready for review",
+      "weak": "You find this hard ({accuracy}% correct). Practise at {difficulty} level.",
+      "declining": "Your recent answers here are weaker than before. A short refresh will help.",
+      "not_tried": "You have not tried this question type yet.",
+      "stale": "You have not practised this for a week or more.",
+      "ready_for_mock": "You have tried most question types. Try a mock exam.",
+      "keep_going": "Keep going with your next lesson."
+    },
+    "difficulty": {
+      "beginner": "beginner",
+      "intermediate": "intermediate",
+      "advanced": "advanced"
+    },
+    "start": "Start",
+    "openReview": "Review mistakes",
+    "openMock": "Choose a mock exam",
+    "openLesson": "Open lessons",
+    "readiness": "Exam readiness",
+    "readinessHelp": "Based on the question types you have tried and how you did. It is not a score prediction.",
+    "overall": {
+      "not_enough_data": "Not enough practice yet to judge. Try at least 6 question types and 20 questions.",
+      "building": "Building up: some skills still need work.",
+      "getting_close": "Getting close: keep practising your weaker types.",
+      "ready": "Ready for a full mock exam: every skill is strong."
+    },
+    "typesTried": "{tried} of {total} types tried",
+    "noBand": "No data yet",
+    "weekly": "Weekly check-in",
+    "thisWeek": "This week",
+    "lastWeek": "Last week",
+    "weeklyStats": "{attempts, plural, one {# question} other {# questions}} on {days, plural, one {# day} other {# days}}",
+    "weeklyMessage": {
+      "start": "You have not practised this week yet. Ten minutes today is a great start.",
+      "first_week": "Good start this week! Come back next week to compare.",
+      "improving": "You are improving: accuracy is up {change} points on last week.",
+      "slipping": "Accuracy is down {change} points on last week. Review your mistakes.",
+      "steady": "Steady week. Keep your routine going."
+    },
+    "todayPlan": "Today's plan",
+    "planLessons": "Lessons at your level: {minutes} min",
+    "planPractice": "{name} ({difficulty}): {minutes} min",
+    "planReview": "Mistake review: {minutes} min"
+  },
+  "analytics": {
+    "title": "My progress",
+    "intro": "Charts are drawn from your own practice. Accuracy is the share of marks you earned. Practice estimate, not an official PTE score.",
+    "period": "Period",
+    "days": "{count} days",
+    "download": "Download report (CSV)",
+    "summaryAttempts": "Questions answered",
+    "summaryAccuracy": "Accuracy",
+    "summaryMinutes": "Minutes practised",
+    "summaryDays": "Active days",
+    "dailyTitle": "Accuracy by day",
+    "dailyDesc": "Your accuracy on each day you practised in the last {days} days.",
+    "attemptsTitle": "Questions per day",
+    "typeTitle": "Accuracy by question type",
+    "typeDesc": "Weakest first. The table also compares the last 14 days with the 14 days before.",
+    "trendTitle": "Weekly accuracy by skill",
+    "showTable": "Show the data as a table",
+    "colDay": "Day",
+    "colAttempts": "Questions",
+    "colAccuracy": "Accuracy",
+    "colMinutes": "Minutes",
+    "colType": "Question type",
+    "colBand": "Band",
+    "colRecent": "Last 14 days",
+    "colPrevious": "14 days before",
+    "colWeek": "Week starting",
+    "none": "—",
+    "empty": "No practice in this period yet. Answer a few practice questions and your charts appear here.",
+    "noData": "No data"
+  },
+  "tutor": {
+    "title": "Ask the tutor",
+    "intro": "Ask about English words, grammar, pronunciation or a PTE question type. The tutor answers at your level.",
+    "note": "The tutor can make mistakes. It never predicts your exam score.",
+    "label": "Your question",
+    "placeholder": "For example: What is the difference between 'affect' and 'effect'?",
+    "send": "Send",
+    "sending": "Thinking…",
+    "clear": "Clear chat",
+    "you": "You",
+    "bot": "Tutor",
+    "empty": "No messages yet. Ask your first question.",
+    "remaining": "{count, plural, =0 {No messages left today} one {# message left today} other {# messages left today}}",
+    "limit": "You have reached today's limit for tutor messages. Try again tomorrow.",
+    "error": "Something went wrong. Please try again."
+  },
+  "report": {
+    "open": "Report a problem",
+    "reasonLabel": "What is wrong?",
+    "messageLabel": "Details (optional)",
+    "send": "Send report",
+    "cancel": "Cancel",
+    "thanks": "Thank you. The content team will check this question.",
+    "error": "The report could not be sent. Please try again.",
+    "reason": {
+      "wrong_answer": "The answer is wrong",
+      "unclear": "The question is unclear",
+      "typo": "Spelling or typing mistake",
+      "audio": "Problem with the audio",
+      "offensive": "Offensive or unsuitable",
+      "other": "Something else"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "navLabel": "Admin sections",
+    "nav": {
+      "overview": "Overview",
+      "content": "Content",
+      "reports": "Reports",
+      "upload": "Upload",
+      "users": "Users",
+      "blueprints": "Mock exams",
+      "calibration": "Calibration"
+    },
+    "status": {
+      "draft": "Draft",
+      "ai_generated": "AI draft",
+      "reviewed": "Approved",
+      "published": "Published"
+    },
+    "reason": {
+      "wrong_answer": "The answer is wrong",
+      "unclear": "The question is unclear",
+      "typo": "Spelling or typing mistake",
+      "audio": "Problem with the audio",
+      "offensive": "Offensive or unsuitable",
+      "other": "Something else"
+    },
+    "reportStatus": {
+      "open": "open",
+      "resolved": "resolved",
+      "dismissed": "dismissed"
+    },
+    "roles": {
+      "content_editor": "Content editor",
+      "admin": "Admin"
+    },
+    "overview": {
+      "aiWaiting": "AI drafts waiting for review",
+      "openReports": "Open reports",
+      "content": "Questions by status",
+      "usage": "Usage (last 7 days)",
+      "users": "{users} accounts, {active} active this week",
+      "queue": "Evaluation queue: {queued} waiting, {failed} failed this week",
+      "aiTable": "AI use by feature",
+      "feature": "Feature",
+      "provider": "Provider",
+      "count": "Uses",
+      "noUsage": "No AI use this week."
+    },
+    "content": {
+      "status": "Status",
+      "all": "All",
+      "search": "Search",
+      "filter": "Filter",
+      "id": "Question",
+      "type": "Type",
+      "version": "Version",
+      "reports": "Open reports",
+      "none": "No questions match.",
+      "aiBadge": "AI-drafted",
+      "back": "Back to content"
+    },
+    "editor": {
+      "version": "Version {version}",
+      "reviewTitle": "Review and publish",
+      "approvedNow": "This version is approved and can be published.",
+      "needsApproval": "This version needs an approval before it can be published.",
+      "aiRule": "This question was drafted with AI. A different staff member from the one who added it must approve it.",
+      "note": "Review note (optional)",
+      "approve": "Approve this version",
+      "requestChanges": "Request changes",
+      "publish": "Publish",
+      "unpublish": "Take back to draft",
+      "approved": "Approved.",
+      "changesRequested": "Changes requested.",
+      "published": "Published. Learners can now see it.",
+      "unpublished": "Moved back to draft.",
+      "history": "Review history",
+      "decision": {
+        "approve": "Approved",
+        "request_changes": "Changes requested"
+      },
+      "instructions": "Instructions",
+      "content": "Content (JSON)",
+      "answer": "Answer (JSON)",
+      "explanation": "Explanation",
+      "saveNote": "Saving creates a new version. It goes back to review before it can be published again.",
+      "save": "Save changes",
+      "saved": "Saved as a new version.",
+      "badJson": "Content and answer must be valid JSON.",
+      "error": "Something went wrong. Please try again."
+    },
+    "reports": {
+      "title": "Open reports from learners",
+      "none": "No open reports.",
+      "resolve": "Mark fixed",
+      "dismiss": "Dismiss"
+    },
+    "upload": {
+      "title": "Upload questions",
+      "intro": "Upload a JSON content file in the same format as content/questions/*.json. Every question is checked with the same rules as the seed builder. New questions start as drafts and are never published straight away.",
+      "file": "Content file (.json)",
+      "origin": "Who wrote these questions?",
+      "origin_human": "People (original content)",
+      "origin_ai": "Drafted with AI (needs a human approval)",
+      "submit": "Upload",
+      "badFile": "This file is not valid JSON with a list of questions.",
+      "created": "{count, plural, =0 {No questions added} one {# question added} other {# questions added}} as {status}.",
+      "rowError": "Row {row}:"
+    },
+    "users": {
+      "search": "Email or name",
+      "user": "User",
+      "joined": "Joined",
+      "attempts": "Answers",
+      "roles": "Staff roles",
+      "rolesFor": "Staff roles for {name}"
+    },
+    "blueprints": {
+      "note": "Item counts and section clocks in our blueprints are not published by Pearson and are marked unverified.",
+      "name": "Name",
+      "items": "Items",
+      "check": "Questions available",
+      "enough": "Enough published questions",
+      "short": "{type}: needs {needed}, {published} published",
+      "publish": "Show to learners",
+      "hide": "Hide from learners",
+      "unverified": "Unverified rules",
+      "actions": "Actions"
+    },
+    "calibration": {
+      "intro": "Rate your own sample answers (write or record them in practice first). Learners' answers are never shown here. The report compares the AI bands with your bands.",
+      "report": "Agreement between AI and human bands",
+      "ratings": "Ratings",
+      "exact": "Same band",
+      "adjacent": "Within one band",
+      "minimum": "Meets the minimum",
+      "yes": "Yes",
+      "no": "Not yet",
+      "noRatings": "No ratings yet.",
+      "numericOff": "Numeric 10-90 practice estimates stay switched off. The minimum is 30 ratings per task type with at least 60% same band and 80% within one band; even then, switching them on is a separate, documented decision.",
+      "noSamples": "No sample evaluations yet. Answer a few speaking or writing questions with this account first.",
+      "rateCaption": "AI and human bands",
+      "criterion": "Criterion",
+      "ai": "AI band",
+      "human": "Your band",
+      "save": "Save rating",
+      "saved": "Saved."
+    }
   }
 }
