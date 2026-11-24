@@ -70,7 +70,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
       - uses: supabase/setup-cli@v1
-        with: { version: latest }
+        with: { version: 2.122.1 }
       - run: pnpm install --frozen-lockfile
       - name: Start local Supabase
         run: supabase start -x "$SUPABASE_EXCLUDE"
