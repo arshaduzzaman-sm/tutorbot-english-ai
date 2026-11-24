@@ -76,7 +76,8 @@ jobs:
       - name: Start API
         working-directory: apps/api
         run: |
-          nohup uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 > /tmp/api.log 2>&1 &
+          # Every e2e learner reaches the API through the same web server IP, so raise the per-IP limit for this run.
+          RATE_LIMIT_PER_MINUTE=1000 nohup uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 > /tmp/api.log 2>&1 &
           for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/health/ready && break; sleep 1; done
       - name: Build and start web
         run: |

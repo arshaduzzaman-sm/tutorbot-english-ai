@@ -17,4 +17,8 @@ Third-party content (for example an openly licensed word list) keeps its own
 licence. Each such file states its source and licence in its header or in
 `docs/AI_MODELS.md` / `docs/CONTENT_GUIDE.md`.
 
+**Vocabulary word choice** (`content/vocabulary/`): the choice and order of words is based on the
+[wordfreq](https://github.com/rspeer/wordfreq) word-frequency data by Robyn Speer, licensed CC BY-SA 4.0.
+The meanings and example sentences are original TutorBot English AI content.
+
 Exam questions from Pearson or any other publisher must never be added here.

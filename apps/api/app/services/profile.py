@@ -18,6 +18,8 @@ EXPORT_TABLES = (
     "study_plans",
     "unit_progress",
     "test_sessions",
+    "vocabulary_reviews",
+    "pronunciation_progress",
     "consents",
     "ai_usage",
 )

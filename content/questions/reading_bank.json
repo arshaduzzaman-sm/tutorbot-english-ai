@@ -1,0 +1,5429 @@
+{
+  "questions": [
+    {
+      "external_id": "rmcs-0003",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "The city library has changed a lot in the last ten years. It still lends books, but it now also offers free computer classes, a quiet study room and a weekly club for children. Because more people visit in the evenings, it stays open until nine o'clock from Monday to Thursday.",
+        "question": "Why does the library now stay open until nine o'clock?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "It has fewer books than before.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "More people visit in the evenings.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "The children's club meets late.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Computer classes are only at night.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B"
+        ]
+      },
+      "explanation": "The text says \"Because more people visit in the evenings, it stays open until nine\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0003",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "The city library has changed a lot in the last ten years. It still lends books, but it now also offers free computer classes, a quiet study room and a weekly club for children. Because more people visit in the evenings, it stays open until nine o'clock from Monday to Thursday.",
+        "question": "Which services does the library offer now?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "A weekly children's club",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Bicycle rental",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "A café",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Free computer classes",
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "body": "A quiet study room",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "D",
+          "E"
+        ]
+      },
+      "explanation": "The text lists computer classes, a study room and a children's club. A café and bicycles are not mentioned.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0003",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Maria practised the recipe at home the next weekend."
+          },
+          {
+            "id": "p2",
+            "text": "Maria wanted to learn to cook, so she joined an evening class."
+          },
+          {
+            "id": "p3",
+            "text": "Her family liked it so much that she now cooks pasta every Sunday."
+          },
+          {
+            "id": "p4",
+            "text": "At the first lesson, the teacher showed the group how to make fresh pasta."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p4",
+          "p1",
+          "p3"
+        ]
+      },
+      "explanation": "The first sentence introduces Maria and her goal. Then come the first lesson, the practice at home and the result.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0003",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Many people {{1}} to shop online because it saves time. However, some still {{2}} visiting real shops at the weekend.",
+        "blanks": {
+          "1": [
+            "preferring",
+            "prefers",
+            "prefer"
+          ],
+          "2": [
+            "enjoy",
+            "enjoys",
+            "enjoyed"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "prefer",
+          "2": "enjoy"
+        }
+      },
+      "explanation": "After \"Many people\" (plural, present simple) we need \"prefer\". After \"some still\" in the present simple we need \"enjoy\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0003",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Drinking enough water helps your body {{1}} well. Doctors often {{2}} adults to drink several glasses a day.",
+        "word_bank": [
+          "advise",
+          "work",
+          "forget",
+          "eat"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "work",
+          "2": "advise"
+        }
+      },
+      "explanation": "Your body \"works\" well; doctors \"advise\" people to do something. \"eat\" and \"forget\" do not fit the meaning.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0004",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Scientists say that most adults need between seven and nine hours of sleep each night. People who sleep too little often find it hard to concentrate, and they may catch colds more easily. Using phones late at night can make it harder to fall asleep, because the bright screen tells the brain that it is still daytime.",
+        "question": "According to the text, why can phones make it harder to fall asleep?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They are too noisy.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "They make people catch colds.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "People use them to set alarms.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "The bright screen makes the brain think it is day.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "The text says the bright screen \"tells the brain that it is still daytime\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0004",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Scientists say that most adults need between seven and nine hours of sleep each night. People who sleep too little often find it hard to concentrate, and they may catch colds more easily. Using phones late at night can make it harder to fall asleep, because the bright screen tells the brain that it is still daytime.",
+        "question": "What problems does the text link with too little sleep?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Poor eyesight",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Catching colds more easily",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Weight gain",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Difficulty concentrating",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "The text mentions concentration and colds. Weight and eyesight are not mentioned.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0004",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Our town has a new bicycle scheme."
+          },
+          {
+            "id": "p2",
+            "text": "After using it, they simply return it to any station."
+          },
+          {
+            "id": "p3",
+            "text": "Since the scheme started, traffic in the centre has fallen noticeably."
+          },
+          {
+            "id": "p4",
+            "text": "Anyone can borrow a bike from one of twenty stations in the centre."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p1",
+          "p4",
+          "p2",
+          "p3"
+        ]
+      },
+      "explanation": "Start with the topic (the scheme), then how to borrow, how to return, and finally the result.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0004",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The concert was {{1}} because the singer was ill. Fans who had bought tickets were {{2}} their money back.",
+        "blanks": {
+          "1": [
+            "cancel",
+            "cancelling",
+            "cancelled"
+          ],
+          "2": [
+            "offering",
+            "offer",
+            "offered"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "cancelled",
+          "2": "offered"
+        }
+      },
+      "explanation": "Both gaps need the passive: \"was cancelled\" and \"were offered\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0004",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Learning a new language takes {{1}}. It is better to study a little every day than to {{2}} for many hours once a week.",
+        "word_bank": [
+          "money",
+          "patience",
+          "hurry",
+          "study"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "patience",
+          "2": "study"
+        }
+      },
+      "explanation": "Learning a language \"takes patience\"; the sentence compares two ways to study. \"hurry\" and \"money\" do not fit.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0005",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Bees are important for growing food. When they move from flower to flower, they carry pollen, which plants need to make fruit and seeds. In many countries the number of bees has fallen, partly because of chemicals used on farms and partly because there are fewer wild flowers. Some cities now encourage people to plant flowers on balconies and in gardens to help.",
+        "question": "What is the main idea of the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Cities are building homes for bees.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Bees are dangerous for city gardens.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Bees help plants make fruit, but their numbers are falling.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Farm chemicals help bees find flowers.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "The text explains why bees matter and why their numbers have fallen; the other answers are not stated.",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0005",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Bees are important for growing food. When they move from flower to flower, they carry pollen, which plants need to make fruit and seeds. In many countries the number of bees has fallen, partly because of chemicals used on farms and partly because there are fewer wild flowers. Some cities now encourage people to plant flowers on balconies and in gardens to help.",
+        "question": "Which reasons for the fall in bee numbers does the text give?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Colder winters",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Chemicals used on farms",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Too many balconies",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Fewer wild flowers",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "The text says \"partly because of chemicals ... and partly because there are fewer wild flowers\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0005",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "First, every classroom got three bins: one for paper, one for plastic and one for other waste."
+          },
+          {
+            "id": "p2",
+            "text": "Then a group of students checked the bins every Friday and recorded the results."
+          },
+          {
+            "id": "p3",
+            "text": "By the end of the year, the school was throwing away half as much rubbish as before."
+          },
+          {
+            "id": "p4",
+            "text": "Last year our school started a recycling project."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p1",
+          "p2",
+          "p3"
+        ]
+      },
+      "explanation": "Topic first, then the steps (First, Then) and the result (By the end of the year).",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0005",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Although the weather was {{1}}, the football match went ahead. The players were tired but {{2}} with the result.",
+        "blanks": {
+          "1": [
+            "terribly",
+            "terror",
+            "terrible"
+          ],
+          "2": [
+            "please",
+            "pleased",
+            "pleasing"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "terrible",
+          "2": "pleased"
+        }
+      },
+      "explanation": "\"was\" is followed by an adjective: \"terrible\". People feel \"pleased\" (-ed adjective for feelings).",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0005",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The hotel is in a {{1}} street, but it is only a short {{2}} from the main square.",
+        "word_bank": [
+          "busy",
+          "quiet",
+          "loud",
+          "walk",
+          "drive"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "quiet",
+          "2": "walk"
+        }
+      },
+      "explanation": "\"but\" shows a contrast: the street is quiet, yet the square is a short walk away.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0006",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "More people now work from home for at least part of the week. Many say they save time and money because they do not travel to an office. However, some workers feel lonely, and managers worry that it is harder to share ideas. For this reason, many companies now use a mixed model, with two or three office days each week.",
+        "question": "Why do many companies use a mixed model?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Workers want to travel more.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Home working has both benefits and problems.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Offices are too expensive to close.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Managers prefer to work from home.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B"
+        ]
+      },
+      "explanation": "The text gives benefits (time, money) and problems (loneliness, sharing ideas), then says \"For this reason\" companies mix the two.",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0006",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "More people now work from home for at least part of the week. Many say they save time and money because they do not travel to an office. However, some workers feel lonely, and managers worry that it is harder to share ideas. For this reason, many companies now use a mixed model, with two or three office days each week.",
+        "question": "Which problems with working from home does the text mention?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "It is harder to share ideas.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Internet connections are slow.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Some workers feel lonely.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Workers spend more on travel.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C"
+        ]
+      },
+      "explanation": "Loneliness and sharing ideas are mentioned. Workers actually save on travel.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0006",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Paper was first made in China about two thousand years ago."
+          },
+          {
+            "id": "p2",
+            "text": "From there, it reached Europe, where the first paper mills opened in Spain."
+          },
+          {
+            "id": "p3",
+            "text": "Over many centuries, the method spread along trade routes to the Middle East."
+          },
+          {
+            "id": "p4",
+            "text": "Later, the printing press made paper even more important across the world."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p1",
+          "p3",
+          "p2",
+          "p4"
+        ]
+      },
+      "explanation": "The text follows time and place: China, then the Middle East, then Europe, then later the printing press.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0006",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The new park is {{1}} with families. On sunny days it can get quite {{2}}.",
+        "blanks": {
+          "1": [
+            "popularly",
+            "popularity",
+            "popular"
+          ],
+          "2": [
+            "crowded",
+            "crowd",
+            "crowding"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "popular",
+          "2": "crowded"
+        }
+      },
+      "explanation": "\"is\" + adjective: \"popular\". \"get\" + adjective: \"crowded\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0006",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Before you sign a contract, read it {{1}}. If you do not understand something, ask for an {{2}}.",
+        "word_bank": [
+          "carefully",
+          "invitation",
+          "explanation",
+          "quickly"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "carefully",
+          "2": "explanation"
+        }
+      },
+      "explanation": "You read a contract carefully and ask for an explanation of something you do not understand.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0007",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Every year millions of tonnes of plastic end up in the sea. Large pieces can trap birds and fish, while tiny pieces, called microplastics, are eaten by sea animals and can enter the food chain. Some countries have banned plastic bags, and research shows that these bans quickly reduce the number of bags found on beaches.",
+        "question": "What does the research show about plastic bag bans?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They increase microplastics.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "They have no effect on beaches.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "They are only used in a few cities.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "They quickly reduce the number of bags on beaches.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "The last sentence says the bans \"quickly reduce the number of bags found on beaches\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0007",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Every year millions of tonnes of plastic end up in the sea. Large pieces can trap birds and fish, while tiny pieces, called microplastics, are eaten by sea animals and can enter the food chain. Some countries have banned plastic bags, and research shows that these bans quickly reduce the number of bags found on beaches.",
+        "question": "How does plastic harm sea life, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Large pieces can trap animals.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Animals eat tiny pieces.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "It makes the water warmer.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "It blocks sunlight from the seabed.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B"
+        ]
+      },
+      "explanation": "Trapping and eating microplastics are mentioned. Temperature and sunlight are not.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0007",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "However, a desert is really defined by how little rain it gets, not by its temperature."
+          },
+          {
+            "id": "p2",
+            "text": "This means that some very cold places count as deserts too."
+          },
+          {
+            "id": "p3",
+            "text": "Most people think of deserts as hot places."
+          },
+          {
+            "id": "p4",
+            "text": "In fact, the largest desert in the world is Antarctica."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p1",
+          "p2",
+          "p4"
+        ]
+      },
+      "explanation": "A common belief, then \"However\" corrects it, \"This means\" follows from it, and \"In fact\" gives the surprising example.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0007",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "She has {{1}} in this city since 2015. Before that, she {{2}} in a small village school.",
+        "blanks": {
+          "1": [
+            "live",
+            "living",
+            "lived"
+          ],
+          "2": [
+            "worked",
+            "working",
+            "works"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "lived",
+          "2": "worked"
+        }
+      },
+      "explanation": "\"has ... since\" needs the present perfect \"has lived\". \"Before that\" points to the past simple \"worked\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0007",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "A good night's sleep can {{1}} your memory. Students who rest well often {{2}} more of what they studied.",
+        "word_bank": [
+          "remember",
+          "damage",
+          "forget",
+          "improve"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "improve",
+          "2": "remember"
+        }
+      },
+      "explanation": "Sleep improves memory, so rested students remember more.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0008",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Volunteering means giving your time to help others without being paid. People volunteer in hospitals, schools, parks and animal shelters. Research suggests that volunteers often feel happier and less stressed. It can also help young people find work, because they learn new skills and meet people who may later offer them a job.",
+        "question": "According to the text, how can volunteering help young people find work?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They are paid for their time.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "They feel less stressed at interviews.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "They work in hospitals for free.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "They learn skills and meet useful people.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "The last sentence: \"they learn new skills and meet people who may later offer them a job\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0008",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Volunteering means giving your time to help others without being paid. People volunteer in hospitals, schools, parks and animal shelters. Research suggests that volunteers often feel happier and less stressed. It can also help young people find work, because they learn new skills and meet people who may later offer them a job.",
+        "question": "Where does the text say people volunteer?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Schools",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Hospitals",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Animal shelters",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Banks",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "explanation": "Hospitals, schools, parks and animal shelters are listed. Banks are not.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0008",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Finally, let the soup cook for twenty minutes and blend it until smooth."
+          },
+          {
+            "id": "p2",
+            "text": "Then add the carrots, some stock and a pinch of salt."
+          },
+          {
+            "id": "p3",
+            "text": "To make a simple vegetable soup, start by chopping an onion and two carrots."
+          },
+          {
+            "id": "p4",
+            "text": "Next, fry the onion gently in a little oil until it is soft."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p4",
+          "p2",
+          "p1"
+        ]
+      },
+      "explanation": "Follow the recipe steps: start by, Next, Then, Finally.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0008",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "If it {{1}} tomorrow, we will stay at home. We can {{2}} a film instead.",
+        "blanks": {
+          "1": [
+            "rained",
+            "rains",
+            "raining"
+          ],
+          "2": [
+            "watching",
+            "watch",
+            "watched"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "rains",
+          "2": "watch"
+        }
+      },
+      "explanation": "First conditional: \"If it rains, we will ...\". After \"can\" we use the base verb \"watch\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0008",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The company is {{1}} for a new manager. Applicants must have at least five years of {{2}}.",
+        "word_bank": [
+          "looking",
+          "holiday",
+          "experience",
+          "sitting"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "looking",
+          "2": "experience"
+        }
+      },
+      "explanation": "A company is \"looking for\" a new person. Applicants need \"experience\".",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0009",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Some companies now hold walking meetings, where colleagues talk while walking outside instead of sitting in a room. Supporters say that walking helps people think more creatively and makes conversations feel more relaxed. However, walking meetings work best for small groups of two or three people, and they are not suitable when people need to look at documents or take detailed notes.",
+        "question": "When are walking meetings NOT suitable, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "When colleagues know each other",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "When the weather is warm",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "When the group is small",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "When people need to read documents or take notes",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "The text says they are \"not suitable when people need to look at documents or take detailed notes\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0009",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Some companies now hold walking meetings, where colleagues talk while walking outside instead of sitting in a room. Supporters say that walking helps people think more creatively and makes conversations feel more relaxed. However, walking meetings work best for small groups of two or three people, and they are not suitable when people need to look at documents or take detailed notes.",
+        "question": "Which benefits of walking meetings does the text mention?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Better notes",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "More creative thinking",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Shorter meetings",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "More relaxed conversations",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "Creativity and relaxed conversation are mentioned. Shorter meetings are not, and notes are harder.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0009",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "On the day, he was still nervous, but the presentation went very well."
+          },
+          {
+            "id": "p2",
+            "text": "He practised in front of a mirror and then in front of two friends."
+          },
+          {
+            "id": "p3",
+            "text": "Ahmed had always been afraid of speaking in public."
+          },
+          {
+            "id": "p4",
+            "text": "When his manager asked him to give a presentation, he decided to prepare carefully."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p4",
+          "p2",
+          "p1"
+        ]
+      },
+      "explanation": "Introduce Ahmed's fear, then the task, the preparation and the result.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0009",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The museum is {{1}} visiting if you are interested in history. It has one of the {{2}} collections of old maps in the country.",
+        "blanks": {
+          "1": [
+            "worthing",
+            "worthy",
+            "worth"
+          ],
+          "2": [
+            "largely",
+            "large",
+            "largest"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "worth",
+          "2": "largest"
+        }
+      },
+      "explanation": "\"worth + -ing\" is the fixed pattern. \"one of the\" is followed by a superlative: \"largest\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0009",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Online reviews can help shoppers {{1}} what to buy. However, some reviews are not {{2}} because they are written by the sellers themselves.",
+        "word_bank": [
+          "decide",
+          "reliable",
+          "expensive",
+          "refuse"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "decide",
+          "2": "reliable"
+        }
+      },
+      "explanation": "Reviews help people decide; reviews written by sellers are not reliable.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0010",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Cities are often several degrees warmer than the countryside around them, an effect known as the urban heat island. Dark roads and roofs absorb sunlight during the day and release the heat slowly at night, while the lack of trees means there is less shade and less cooling from plants. Planners increasingly respond by painting roofs in light colours and creating green spaces, measures that can lower local temperatures noticeably during heatwaves.",
+        "question": "What is the main purpose of the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "To explain why cities are warmer and how planners respond",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "To argue that cities should stop building roads",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "To describe the history of heatwaves",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "To compare city and countryside weather records",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A"
+        ]
+      },
+      "explanation": "The text first explains the causes of the urban heat island and then describes what planners do about it.",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0010",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Cities are often several degrees warmer than the countryside around them, an effect known as the urban heat island. Dark roads and roofs absorb sunlight during the day and release the heat slowly at night, while the lack of trees means there is less shade and less cooling from plants. Planners increasingly respond by painting roofs in light colours and creating green spaces, measures that can lower local temperatures noticeably during heatwaves.",
+        "question": "According to the text, which factors make cities warmer?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Light-coloured roofs",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "A lack of trees and shade",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Strong winds from the countryside",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Dark surfaces that absorb sunlight",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "Dark roads and roofs and the lack of trees are given as causes. Light roofs are a solution, and wind is not mentioned.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0010",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "As a result, people who multitask often take longer and make more mistakes than those who focus on one task."
+          },
+          {
+            "id": "p2",
+            "text": "Many people assume that multitasking makes them more productive."
+          },
+          {
+            "id": "p3",
+            "text": "Instead, it switches rapidly between them, and each switch costs time and attention."
+          },
+          {
+            "id": "p4",
+            "text": "Research, however, suggests that the brain does not really do two demanding tasks at once."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p4",
+          "p3",
+          "p1"
+        ]
+      },
+      "explanation": "The belief comes first, \"however\" introduces the research, \"Instead\" explains it, and \"As a result\" gives the consequence.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0010",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The report {{1}} the need for better public transport. Its authors argue that investment would {{2}} congestion and pollution.",
+        "blanks": {
+          "1": [
+            "highlights",
+            "highlighting",
+            "highlighted"
+          ],
+          "2": [
+            "reduce",
+            "reduction",
+            "reducing"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "highlights",
+          "2": "reduce"
+        }
+      },
+      "explanation": "\"The report\" needs a present simple verb: \"highlights\". After \"would\" we use the base form \"reduce\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0010",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The experiment was {{1}} several times to make sure the results were {{2}}.",
+        "word_bank": [
+          "consistent",
+          "repeated",
+          "ignored",
+          "accidental"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "repeated",
+          "2": "consistent"
+        }
+      },
+      "explanation": "Scientists repeat an experiment to check that the results are consistent.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0011",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Sam works in a café from Monday to Friday. On Saturdays he plays football with his friends in the park, and on Sundays he visits his grandparents. He likes his job, but he says the weekend is the best part of the week.",
+        "question": "What does Sam do on Sundays?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "He plays football.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "He works in a café.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "He goes shopping.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "He visits his grandparents.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "\"on Sundays he visits his grandparents\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0011",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Sam works in a café from Monday to Friday. On Saturdays he plays football with his friends in the park, and on Sundays he visits his grandparents. He likes his job, but he says the weekend is the best part of the week.",
+        "question": "Which sentences are true about Sam?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "He plays football on Saturdays.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "He works on Sundays.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "He works from Monday to Friday.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "He doesn't like his job.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C"
+        ]
+      },
+      "explanation": "He works Monday to Friday and plays football on Saturdays. He likes his job.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0011",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Because I was in a hurry, I didn't have breakfast."
+          },
+          {
+            "id": "p2",
+            "text": "In the end, I walked to work and arrived twenty minutes late."
+          },
+          {
+            "id": "p3",
+            "text": "I woke up late this morning."
+          },
+          {
+            "id": "p4",
+            "text": "I ran to the bus stop, but the bus had already left."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p1",
+          "p4",
+          "p2"
+        ]
+      },
+      "explanation": "The story follows the order of events: waking up late, no breakfast, missing the bus, walking to work.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0011",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "My sister {{1}} a nurse. She {{2}} at the city hospital.",
+        "blanks": {
+          "1": [
+            "is",
+            "are",
+            "be"
+          ],
+          "2": [
+            "works",
+            "working",
+            "work"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "is",
+          "2": "works"
+        }
+      },
+      "explanation": "\"My sister\" is singular: \"is\" and \"works\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0011",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "I {{1}} get up at seven. Then I have a {{2}} and make breakfast.",
+        "word_bank": [
+          "never",
+          "window",
+          "usually",
+          "shower"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "usually",
+          "2": "shower"
+        }
+      },
+      "explanation": "\"usually\" fits a daily routine, and you \"have a shower\".",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0012",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "A recent survey asked teenagers how they read for pleasure. Over half said they read mainly on phones or tablets, but most still preferred paper books for long stories. Many said they found it easier to concentrate on paper, while screens were better for short articles and news.",
+        "question": "What did most teenagers prefer for long stories?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Phones",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "News websites",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Paper books",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Tablets",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "\"most still preferred paper books for long stories\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0012",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "A recent survey asked teenagers how they read for pleasure. Over half said they read mainly on phones or tablets, but most still preferred paper books for long stories. Many said they found it easier to concentrate on paper, while screens were better for short articles and news.",
+        "question": "Which statements match the survey results?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Most teenagers never read for pleasure.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Screens were preferred for short articles.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Many found it easier to concentrate on paper.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Over half read mainly on phones or tablets.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "Three results are stated; the text does not say teenagers never read.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0012",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "The company is therefore considering a free bus from the station."
+          },
+          {
+            "id": "p2",
+            "text": "The new space is much larger and has a lot more natural light."
+          },
+          {
+            "id": "p3",
+            "text": "However, it is further from the train station, so some staff now spend longer travelling."
+          },
+          {
+            "id": "p4",
+            "text": "Our office moved to a new building last month."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p2",
+          "p3",
+          "p1"
+        ]
+      },
+      "explanation": "Introduce the move, describe the good side, add the problem with \"However\" and end with the response \"therefore\".",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0012",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The film was so {{1}} that I watched it twice. My friends were {{2}} when I told them.",
+        "blanks": {
+          "1": [
+            "interesting",
+            "interested",
+            "interest"
+          ],
+          "2": [
+            "surprise",
+            "surprising",
+            "surprised"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "interesting",
+          "2": "surprised"
+        }
+      },
+      "explanation": "Things are \"interesting\" (-ing); people feel \"surprised\" (-ed).",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0012",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Please {{1}} in the form and {{2}} it to the office by Friday.",
+        "word_bank": [
+          "return",
+          "lose",
+          "fill",
+          "take"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "fill",
+          "2": "return"
+        }
+      },
+      "explanation": "You \"fill in\" a form and \"return\" it.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0013",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Historians once believed that the printing press spread rapidly because books became cheaper. More recent studies suggest a more complex picture: printers settled first in trading cities, where merchants already needed written records and could afford to buy books. In smaller towns, demand grew far more slowly, and handwritten copies remained common for decades. The spread of printing, in other words, followed existing networks of trade and literacy.",
+        "question": "What does the text suggest about the spread of printing?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "It followed existing trade and literacy networks.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "It quickly ended handwritten copies everywhere.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "It began in small towns.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "It depended mainly on the low price of books.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A"
+        ]
+      },
+      "explanation": "The last sentence sums up the argument: printing \"followed existing networks of trade and literacy\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0013",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Historians once believed that the printing press spread rapidly because books became cheaper. More recent studies suggest a more complex picture: printers settled first in trading cities, where merchants already needed written records and could afford to buy books. In smaller towns, demand grew far more slowly, and handwritten copies remained common for decades. The spread of printing, in other words, followed existing networks of trade and literacy.",
+        "question": "Which statements are supported by the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Merchants needed written records.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Handwritten copies disappeared immediately.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Demand in small towns grew slowly.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Printers first settled in trading cities.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "Handwritten copies \"remained common for decades\", so that option is wrong.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0013",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Today, cafés still play a similar social role in many cities."
+          },
+          {
+            "id": "p2",
+            "text": "Coffee was first drunk in the Middle East more than five hundred years ago."
+          },
+          {
+            "id": "p3",
+            "text": "These coffee houses were sometimes called \"penny universities\", because for the price of a cup people could hear the latest news and ideas."
+          },
+          {
+            "id": "p4",
+            "text": "From there, traders carried it to Europe, where coffee houses soon became popular meeting places."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p4",
+          "p3",
+          "p1"
+        ]
+      },
+      "explanation": "Origin, spread to Europe, \"These coffee houses\" refers back, and \"Today\" ends the timeline.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0013",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Despite {{1}} little funding, the project was a success. The team attributed this to careful {{2}}.",
+        "blanks": {
+          "1": [
+            "receiving",
+            "received",
+            "receive"
+          ],
+          "2": [
+            "planned",
+            "planning",
+            "plan"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "receiving",
+          "2": "planning"
+        }
+      },
+      "explanation": "\"Despite\" is followed by a noun or -ing form: \"receiving\". After \"careful\" we need a noun: \"planning\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0013",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The new policy has been widely {{1}} for failing to {{2}} the causes of the problem.",
+        "word_bank": [
+          "criticised",
+          "address",
+          "ignore",
+          "celebrated"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "criticised",
+          "2": "address"
+        }
+      },
+      "explanation": "\"failing to\" shows a negative view, so the policy was \"criticised\". You \"address\" a problem; \"ignore\" would contradict the criticism.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0014",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Dogs and cats are the most popular pets in many countries. Dogs need a walk every day, so they are good for people who like to be active. Cats are more independent and can stay alone for longer, so they often suit people who work long hours.",
+        "question": "Who are cats good for, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Children",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "People who work long hours",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "People with big gardens",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "People who like to be active",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B"
+        ]
+      },
+      "explanation": "Cats \"often suit people who work long hours\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0014",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Dogs and cats are the most popular pets in many countries. Dogs need a walk every day, so they are good for people who like to be active. Cats are more independent and can stay alone for longer, so they often suit people who work long hours.",
+        "question": "What does the text say about dogs?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They are good for active people.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "They can stay alone for a long time.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "They are less popular than fish.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "They need a walk every day.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "D"
+        ]
+      },
+      "explanation": "Dogs need daily walks and suit active people. Cats, not dogs, can stay alone longer.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0014",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "He went to the shop and bought a red mountain bike."
+          },
+          {
+            "id": "p2",
+            "text": "After six months, he had enough money."
+          },
+          {
+            "id": "p3",
+            "text": "He saved some money every week from his part-time job."
+          },
+          {
+            "id": "p4",
+            "text": "Tom wanted to buy a new bike."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p3",
+          "p2",
+          "p1"
+        ]
+      },
+      "explanation": "The goal, the saving, the time passing and the purchase.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0014",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "They {{1}} students at the same university. Every morning they {{2}} the bus together.",
+        "blanks": {
+          "1": [
+            "am",
+            "is",
+            "are"
+          ],
+          "2": [
+            "take",
+            "taking",
+            "takes"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "are",
+          "2": "take"
+        }
+      },
+      "explanation": "\"They\" needs \"are\" and \"take\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0014",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "It is {{1}} outside, so take an {{2}}.",
+        "word_bank": [
+          "orange",
+          "umbrella",
+          "sunny",
+          "raining"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "raining",
+          "2": "umbrella"
+        }
+      },
+      "explanation": "Rain is the reason to take an umbrella.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0015",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Electric cars produce no exhaust fumes, which helps to improve air quality in cities. They are also cheaper to run than petrol cars, because electricity usually costs less than fuel. On the other hand, they are still expensive to buy, and in some areas there are not enough charging points for long journeys.",
+        "question": "What is one disadvantage of electric cars mentioned in the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They are expensive to run.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "There are not always enough charging points.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "They are slow.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "They produce exhaust fumes.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B"
+        ]
+      },
+      "explanation": "The text says \"in some areas there are not enough charging points for long journeys\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0015",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Electric cars produce no exhaust fumes, which helps to improve air quality in cities. They are also cheaper to run than petrol cars, because electricity usually costs less than fuel. On the other hand, they are still expensive to buy, and in some areas there are not enough charging points for long journeys.",
+        "question": "Which advantages of electric cars does the text mention?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Lower running costs",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Faster journeys",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Better air quality in cities",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "A low purchase price",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C"
+        ]
+      },
+      "explanation": "Cleaner air and cheaper running costs are advantages. They are \"still expensive to buy\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0015",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Learning to drive can be stressful for many people."
+          },
+          {
+            "id": "p2",
+            "text": "One way to reduce stress is to practise in quiet streets before driving in busy traffic."
+          },
+          {
+            "id": "p3",
+            "text": "With enough practice, most learners become confident drivers."
+          },
+          {
+            "id": "p4",
+            "text": "It also helps to take lessons with a patient, qualified instructor."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p1",
+          "p2",
+          "p4",
+          "p3"
+        ]
+      },
+      "explanation": "The problem first, then two pieces of advice (\"One way\", \"It also helps\"), then the result.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0015",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "I'm looking forward {{1}} meeting you next week. Please let me know if you need {{2}} before then.",
+        "blanks": {
+          "1": [
+            "at",
+            "for",
+            "to"
+          ],
+          "2": [
+            "everything",
+            "anything",
+            "nothing"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "to",
+          "2": "anything"
+        }
+      },
+      "explanation": "The fixed phrase is \"look forward to\". \"if you need anything\" is the natural phrase; \"nothing\" and \"everything\" do not fit the meaning.",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0015",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The restaurant is very {{1}}, so it's a good idea to {{2}} a table in advance.",
+        "word_bank": [
+          "cook",
+          "empty",
+          "popular",
+          "book"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "popular",
+          "2": "book"
+        }
+      },
+      "explanation": "A popular restaurant fills up, so you book in advance.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0016",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Tourism can bring considerable economic benefits to a region, creating jobs and supporting local businesses. Yet when visitor numbers grow too quickly, residents may face rising rents, crowded streets and damage to historic sites. Some popular destinations have therefore introduced visitor limits or tourist taxes, arguing that the income can be used to protect the very attractions that draw people there.",
+        "question": "Why have some destinations introduced tourist taxes, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "To stop all tourism",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "To create more hotels",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "To raise money to protect attractions",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "To lower rents for tourists",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "The text says the income \"can be used to protect the very attractions that draw people there\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0016",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Tourism can bring considerable economic benefits to a region, creating jobs and supporting local businesses. Yet when visitor numbers grow too quickly, residents may face rising rents, crowded streets and damage to historic sites. Some popular destinations have therefore introduced visitor limits or tourist taxes, arguing that the income can be used to protect the very attractions that draw people there.",
+        "question": "Which problems linked to rapid tourism growth are mentioned?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Crowded streets",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "A fall in local jobs",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Damage to historic sites",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Rising rents",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "Rents, crowds and damage are mentioned. Tourism creates jobs rather than reducing them.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0016",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "The arrival of the railway changed this, making long journeys faster and cheaper."
+          },
+          {
+            "id": "p2",
+            "text": "This was the beginning of mass tourism as we know it today."
+          },
+          {
+            "id": "p3",
+            "text": "Until the nineteenth century, most people never travelled far from where they were born."
+          },
+          {
+            "id": "p4",
+            "text": "Soon, ordinary families could afford day trips to the seaside."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p1",
+          "p4",
+          "p2"
+        ]
+      },
+      "explanation": "The situation before, the change (\"changed this\"), its effect (\"Soon\") and the conclusion (\"This was the beginning\").",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0016",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The findings {{1}} that the treatment is effective. Nevertheless, further research is {{2}} before it can be widely used.",
+        "blanks": {
+          "1": [
+            "indication",
+            "indicate",
+            "indicating"
+          ],
+          "2": [
+            "require",
+            "requiring",
+            "required"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "indicate",
+          "2": "required"
+        }
+      },
+      "explanation": "The subject \"The findings\" needs a verb: \"indicate\". \"is required\" is passive.",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0016",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Scientists {{1}} that sea levels will continue to rise, posing a serious {{2}} to coastal communities.",
+        "word_bank": [
+          "predict",
+          "threat",
+          "remember",
+          "benefit"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "predict",
+          "2": "threat"
+        }
+      },
+      "explanation": "\"will continue\" refers to the future, so scientists \"predict\". A rise in sea level is a \"threat\", not a benefit.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0017",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Lena is eight years old. She goes to school by bike with her father. Her favourite subject is art, because she loves drawing animals. After school, she has lunch at home and then plays with her little brother.",
+        "question": "Why does Lena like art?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Because the teacher is kind",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Because it is easy",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Because her father is an artist",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Because she loves drawing animals",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "\"because she loves drawing animals\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0017",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Lena is eight years old. She goes to school by bike with her father. Her favourite subject is art, because she loves drawing animals. After school, she has lunch at home and then plays with her little brother.",
+        "question": "Which sentences are true about Lena?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "She goes to school by bike.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "She has a little sister.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "She has lunch at school.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "She is eight.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "D"
+        ]
+      },
+      "explanation": "She cycles and is eight. She eats at home and has a brother.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0017",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Yesterday was my mum's birthday."
+          },
+          {
+            "id": "p2",
+            "text": "She was very happy and said it was her best birthday."
+          },
+          {
+            "id": "p3",
+            "text": "In the afternoon, we gave her the cake and some flowers."
+          },
+          {
+            "id": "p4",
+            "text": "In the morning, my sister and I made her a cake."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p1",
+          "p4",
+          "p3",
+          "p2"
+        ]
+      },
+      "explanation": "Topic first, then morning, afternoon and her reaction.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0017",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "There {{1}} a big tree in our garden. In summer, we {{2}} under it.",
+        "blanks": {
+          "1": [
+            "is",
+            "be",
+            "are"
+          ],
+          "2": [
+            "sitting",
+            "sits",
+            "sit"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "is",
+          "2": "sit"
+        }
+      },
+      "explanation": "\"a big tree\" is singular: \"There is\". \"we\" takes \"sit\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0017",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "I {{1}} in a small flat near the {{2}}.",
+        "word_bank": [
+          "eat",
+          "sky",
+          "station",
+          "live"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "live",
+          "2": "station"
+        }
+      },
+      "explanation": "You live in a flat; a flat can be near a station.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0018",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Online courses allow people to study at their own speed and from any place with an internet connection. This makes them popular with adults who work full time. However, completion rates are often low. Learners who join a study group or set a regular weekly schedule are much more likely to finish their course.",
+        "question": "What helps learners finish online courses, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Paying higher fees",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Studying only at weekends",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Joining a study group or keeping a regular schedule",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Choosing shorter courses",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "The last sentence names study groups and a regular schedule.",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0018",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Online courses allow people to study at their own speed and from any place with an internet connection. This makes them popular with adults who work full time. However, completion rates are often low. Learners who join a study group or set a regular weekly schedule are much more likely to finish their course.",
+        "question": "Which statements about online courses are made in the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "People can study at their own speed.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Most learners finish them.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "They need an internet connection.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "They are popular with full-time workers.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "Completion rates are \"often low\", so most learners do not finish.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0018",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Residents closed the road for the day and set up tables outside their houses."
+          },
+          {
+            "id": "p2",
+            "text": "The event was such a success that it will now take place every year."
+          },
+          {
+            "id": "p3",
+            "text": "Everyone brought food to share, and some neighbours played music."
+          },
+          {
+            "id": "p4",
+            "text": "Our neighbourhood held its first street party last summer."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p1",
+          "p3",
+          "p2"
+        ]
+      },
+      "explanation": "Introduce the event, describe the set-up and the activities, then the result.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0018",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The hotel staff were very {{1}}. They {{2}} a great restaurant near the beach.",
+        "blanks": {
+          "1": [
+            "helpful",
+            "helpless",
+            "help"
+          ],
+          "2": [
+            "recommending",
+            "recommended",
+            "recommend"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "helpful",
+          "2": "recommended"
+        }
+      },
+      "explanation": "Staff who help are \"helpful\". The past simple fits the story: \"recommended\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0018",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Regular {{1}} can help you sleep better and feel more {{2}} during the day.",
+        "word_bank": [
+          "dinner",
+          "exercise",
+          "tired",
+          "energetic"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "exercise",
+          "2": "energetic"
+        }
+      },
+      "explanation": "Exercise helps sleep; you feel energetic, not tired.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0019",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "False information often spreads faster online than accurate reports. One explanation is that misleading stories tend to be surprising or emotional, which makes people more likely to share them. Studies have found that simply asking users to consider whether a headline is accurate before sharing it can reduce the spread of false stories, even without removing any content.",
+        "question": "According to the text, what can reduce the spread of false stories?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Asking users to think about accuracy before sharing",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Removing all emotional content",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Making headlines shorter",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Blocking surprising news",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A"
+        ]
+      },
+      "explanation": "\"simply asking users to consider whether a headline is accurate before sharing it can reduce the spread\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0019",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "False information often spreads faster online than accurate reports. One explanation is that misleading stories tend to be surprising or emotional, which makes people more likely to share them. Studies have found that simply asking users to consider whether a headline is accurate before sharing it can reduce the spread of false stories, even without removing any content.",
+        "question": "Which statements are supported by the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Emotional stories are more likely to be shared.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "False information can spread faster than accurate reports.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "The method described requires removing content.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Misleading stories are often surprising.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "The method works \"even without removing any content\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0019",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "As global temperatures rise, many of them are shrinking at an increasing rate."
+          },
+          {
+            "id": "p2",
+            "text": "In the long term, however, communities that depend on these rivers may face serious water shortages."
+          },
+          {
+            "id": "p3",
+            "text": "Glaciers store about seventy per cent of the world's fresh water."
+          },
+          {
+            "id": "p4",
+            "text": "In the short term, this can actually increase the flow of rivers fed by melting ice."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p1",
+          "p4",
+          "p2"
+        ]
+      },
+      "explanation": "A fact, the change, its short-term effect, then the contrasting long-term effect (\"however\").",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0019",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Not only {{1}} the scheme reduce costs, but it also improved staff satisfaction. Its success has {{2}} other departments to adopt it.",
+        "blanks": {
+          "1": [
+            "did",
+            "done",
+            "does"
+          ],
+          "2": [
+            "prompt",
+            "prompting",
+            "prompted"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "did",
+          "2": "prompted"
+        }
+      },
+      "explanation": "After \"Not only\" at the start, we invert: \"did the scheme reduce\". \"has\" + past participle: \"prompted\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0019",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The museum's collection was {{1}} over two centuries and now includes objects of great historical {{2}}.",
+        "word_bank": [
+          "abandoned",
+          "weakness",
+          "acquired",
+          "significance"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "acquired",
+          "2": "significance"
+        }
+      },
+      "explanation": "Collections are acquired over time, and old objects can have historical significance.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0020",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "The supermarket near my house is open every day from seven in the morning to ten at night. It is big and sells food, clothes and things for the house. On Fridays, fruit and vegetables are cheaper, so it is very busy.",
+        "question": "Why is the supermarket busy on Fridays?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Fruit and vegetables are cheaper.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "It sells new clothes.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "It opens late.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "It closes early.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A"
+        ]
+      },
+      "explanation": "\"On Fridays, fruit and vegetables are cheaper, so it is very busy\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0020",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "The supermarket near my house is open every day from seven in the morning to ten at night. It is big and sells food, clothes and things for the house. On Fridays, fruit and vegetables are cheaper, so it is very busy.",
+        "question": "What does the supermarket sell?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Clothes",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Cars",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Things for the house",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Food",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "It sells food, clothes and things for the house.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0020",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Max likes running after balls and playing with other dogs."
+          },
+          {
+            "id": "p2",
+            "text": "Every morning, Jack takes Max for a walk in the park."
+          },
+          {
+            "id": "p3",
+            "text": "After the walk, they both come home tired and happy."
+          },
+          {
+            "id": "p4",
+            "text": "Jack has a new puppy called Max."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p2",
+          "p1",
+          "p3"
+        ]
+      },
+      "explanation": "Introduce Max, then the walk, what Max does and the end of the walk.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0020",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "I {{1}} like coffee. I {{2}} tea.",
+        "blanks": {
+          "1": [
+            "not",
+            "don't",
+            "doesn't"
+          ],
+          "2": [
+            "prefer",
+            "prefers",
+            "preferring"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "don't",
+          "2": "prefer"
+        }
+      },
+      "explanation": "\"I\" takes \"don't\" and \"prefer\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0020",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "My father {{1}} dinner every evening. His {{2}} dish is chicken with rice.",
+        "word_bank": [
+          "favourite",
+          "cooks",
+          "worst",
+          "sleeps"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "cooks",
+          "2": "favourite"
+        }
+      },
+      "explanation": "Your father cooks dinner; chicken with rice is his favourite dish.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0021",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "More people in our city now cycle to work. The council has built new bike lanes that separate cyclists from cars, and accidents involving cyclists have fallen. Some shop owners worried that fewer parking spaces would mean fewer customers, but a study found that people who cycle actually visit local shops more often.",
+        "question": "What did the study find?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Accidents increased.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Shops lost customers.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Cyclists rarely visit shops.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "People who cycle visit local shops more often.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "\"people who cycle actually visit local shops more often\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0021",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "More people in our city now cycle to work. The council has built new bike lanes that separate cyclists from cars, and accidents involving cyclists have fallen. Some shop owners worried that fewer parking spaces would mean fewer customers, but a study found that people who cycle actually visit local shops more often.",
+        "question": "Which statements are true according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "There are now more parking spaces.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Shop owners were worried at first.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "New bike lanes separate cyclists from cars.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Accidents involving cyclists have fallen.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "The text implies there are fewer parking spaces, not more.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0021",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "There are new colleagues to meet, new systems to learn and new routines to follow."
+          },
+          {
+            "id": "p2",
+            "text": "After a month or so, most people find that everything feels much more familiar."
+          },
+          {
+            "id": "p3",
+            "text": "It helps to keep a notebook and write down important information."
+          },
+          {
+            "id": "p4",
+            "text": "When you start a new job, the first few weeks can feel overwhelming."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p1",
+          "p3",
+          "p2"
+        ]
+      },
+      "explanation": "The general feeling, the details of the challenge, advice (\"It helps\") and the outcome.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0021",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "He apologised {{1}} being late. He said the traffic {{2}} been terrible.",
+        "blanks": {
+          "1": [
+            "about",
+            "for",
+            "of"
+          ],
+          "2": [
+            "has",
+            "have",
+            "had"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "for",
+          "2": "had"
+        }
+      },
+      "explanation": "\"apologise for\" is the fixed pattern. In reported speech, \"has been\" becomes \"had been\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0021",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The flight was {{1}} because of the storm, so we had to {{2}} another night in the hotel.",
+        "word_bank": [
+          "cancelled",
+          "stay",
+          "leave",
+          "boarded"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "cancelled",
+          "2": "stay"
+        }
+      },
+      "explanation": "A storm causes cancellations; then you have to stay longer.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0022",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Biodiversity refers to the variety of living things in an area, from microorganisms to large mammals. Ecosystems with high biodiversity tend to be more resilient: if one species declines, others can often perform similar roles. Conversely, when an ecosystem depends on only a few species, the loss of one can trigger a chain of effects that is difficult to reverse.",
+        "question": "Why are ecosystems with high biodiversity more resilient, according to the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They change less over time.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "They contain larger animals.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Other species can take over the roles of a declining one.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "They have fewer microorganisms.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "\"if one species declines, others can often perform similar roles\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0022",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Biodiversity refers to the variety of living things in an area, from microorganisms to large mammals. Ecosystems with high biodiversity tend to be more resilient: if one species declines, others can often perform similar roles. Conversely, when an ecosystem depends on only a few species, the loss of one can trigger a chain of effects that is difficult to reverse.",
+        "question": "Which ideas are expressed in the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Biodiversity includes very small organisms.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Biodiversity means variety of living things.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Ecosystems that rely on few species are vulnerable.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "The effects of losing a species are always easy to reverse.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "explanation": "The text says such effects are \"difficult to reverse\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0022",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Nevertheless, scientists stress that high vaccination rates must be maintained to prevent outbreaks."
+          },
+          {
+            "id": "p2",
+            "text": "They worked by training the body's immune system to recognise a disease without causing serious illness."
+          },
+          {
+            "id": "p3",
+            "text": "Since then, vaccination programmes have greatly reduced or even eliminated several deadly diseases."
+          },
+          {
+            "id": "p4",
+            "text": "The first vaccines were developed more than two hundred years ago."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p4",
+          "p2",
+          "p3",
+          "p1"
+        ]
+      },
+      "explanation": "History, how vaccines work, their success (\"Since then\") and a caution (\"Nevertheless\").",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0022",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Had the warning been {{1}} earlier, fewer homes would have been damaged. The authorities have since {{2}} the delay.",
+        "blanks": {
+          "1": [
+            "issue",
+            "issued",
+            "issuing"
+          ],
+          "2": [
+            "acknowledged",
+            "acknowledging",
+            "acknowledge"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "issued",
+          "2": "acknowledged"
+        }
+      },
+      "explanation": "\"Had the warning been\" needs a past participle: \"issued\". \"have since\" + past participle: \"acknowledged\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0022",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Critics argue that the new tax will place a heavy {{1}} on small businesses, which are less able to {{2}} extra costs.",
+        "word_bank": [
+          "burden",
+          "advantage",
+          "absorb",
+          "avoid"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "burden",
+          "2": "absorb"
+        }
+      },
+      "explanation": "A tax is a \"burden\"; small firms are less able to \"absorb\" costs.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0023",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "When the national museums stopped charging for entry, the number of visitors almost doubled within a year. Supporters said free entry made culture available to everyone, not just those who could afford a ticket. However, museums now rely more on donations and government funding, and some have had to reduce opening hours to save money.",
+        "question": "What happened after the museums stopped charging?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Visitor numbers fell.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Ticket prices rose.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "All museums closed earlier.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Visitor numbers almost doubled.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "\"the number of visitors almost doubled within a year\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0023",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "When the national museums stopped charging for entry, the number of visitors almost doubled within a year. Supporters said free entry made culture available to everyone, not just those who could afford a ticket. However, museums now rely more on donations and government funding, and some have had to reduce opening hours to save money.",
+        "question": "Which effects of free entry does the text mention?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Fewer school visits",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "More visitors",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Shorter opening hours at some museums",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Greater reliance on donations and government funding",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "School visits are not mentioned.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0023",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "The plan slowly increases the distance they run each week."
+          },
+          {
+            "id": "p2",
+            "text": "Many people dream of running a marathon."
+          },
+          {
+            "id": "p3",
+            "text": "By race day, their bodies are ready to cover the full forty-two kilometres."
+          },
+          {
+            "id": "p4",
+            "text": "To prepare, beginners usually follow a training plan that lasts several months."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p4",
+          "p1",
+          "p3"
+        ]
+      },
+      "explanation": "The dream, the plan, how it works and the result on race day.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0023",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "She is used to {{1}} at night. She has {{2}} a nurse for ten years.",
+        "blanks": {
+          "1": [
+            "working",
+            "work",
+            "worked"
+          ],
+          "2": [
+            "be",
+            "being",
+            "been"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "working",
+          "2": "been"
+        }
+      },
+      "explanation": "\"be used to\" + -ing: \"working\". Present perfect: \"has been\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0023",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "You can {{1}} money by cooking at home instead of eating out every {{2}}.",
+        "word_bank": [
+          "minute",
+          "night",
+          "save",
+          "spend"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "save",
+          "2": "night"
+        }
+      },
+      "explanation": "Cooking at home saves money; eating out every night is expensive.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0024",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "In my country, summer is hot and dry, and it hardly ever rains. Winter is cold, and sometimes it snows in the mountains. Spring is my favourite season, because the weather is warm and there are flowers everywhere.",
+        "question": "Why is spring the writer's favourite season?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "It hardly ever rains.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "It is very hot.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "It is warm and there are flowers.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "It snows in the mountains.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "\"because the weather is warm and there are flowers everywhere\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0024",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "In my country, summer is hot and dry, and it hardly ever rains. Winter is cold, and sometimes it snows in the mountains. Spring is my favourite season, because the weather is warm and there are flowers everywhere.",
+        "question": "What does the writer say about the weather?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Summer is hot and dry.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Spring is warm.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "It sometimes snows in the mountains in winter.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "It rains a lot in summer.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "explanation": "In summer \"it hardly ever rains\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0024",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "By Friday, she felt much more confident."
+          },
+          {
+            "id": "p2",
+            "text": "On her first day, she met her manager and her new colleagues."
+          },
+          {
+            "id": "p3",
+            "text": "Anna started a new job at a bank last week."
+          },
+          {
+            "id": "p4",
+            "text": "They showed her how to use the computer system."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p2",
+          "p4",
+          "p1"
+        ]
+      },
+      "explanation": "New job, first day, training and how she felt at the end of the week.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0024",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "We {{1}} to the cinema last night. The film {{2}} very funny.",
+        "blanks": {
+          "1": [
+            "go",
+            "going",
+            "went"
+          ],
+          "2": [
+            "is",
+            "was",
+            "were"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "went",
+          "2": "was"
+        }
+      },
+      "explanation": "\"last night\" needs the past simple: \"went\" and \"was\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0024",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Can you {{1}} the window? It's very {{2}} in here.",
+        "word_bank": [
+          "open",
+          "close",
+          "cold",
+          "hot"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "open",
+          "2": "hot"
+        }
+      },
+      "explanation": "When it's hot, you open a window.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0025",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Several companies have tested a four-day working week, with staff paid the same as before. In most trials, managers reported that productivity stayed the same or even improved, while workers said they felt less stressed. Critics point out, however, that the model may be harder to use in services such as hospitals, which need staff every day.",
+        "question": "What concern do critics raise about the four-day week?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Productivity always falls.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "It may be hard to use in services that need staff every day.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Workers feel more stressed.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Workers would earn less.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B"
+        ]
+      },
+      "explanation": "Critics say it \"may be harder to use in services such as hospitals\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0025",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Several companies have tested a four-day working week, with staff paid the same as before. In most trials, managers reported that productivity stayed the same or even improved, while workers said they felt less stressed. Critics point out, however, that the model may be harder to use in services such as hospitals, which need staff every day.",
+        "question": "What did the trials show?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Workers felt less stressed.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Productivity stayed the same or improved.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Hospitals were included in every trial.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Staff were paid less.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B"
+        ]
+      },
+      "explanation": "Staff were \"paid the same\"; hospitals are only mentioned by critics.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0025",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Many students, however, stay up late revising the night before."
+          },
+          {
+            "id": "p2",
+            "text": "Getting a good night's sleep before an exam is important."
+          },
+          {
+            "id": "p3",
+            "text": "This often leaves them tired and less able to remember what they have studied."
+          },
+          {
+            "id": "p4",
+            "text": "A better strategy is to revise over several weeks and rest well before the exam."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p1",
+          "p3",
+          "p4"
+        ]
+      },
+      "explanation": "The idea, the common habit (\"however\"), its effect (\"This\") and a better approach.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0025",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "If I {{1}} more free time, I would learn to play the guitar. I've always {{2}} to play an instrument.",
+        "blanks": {
+          "1": [
+            "have",
+            "had",
+            "has"
+          ],
+          "2": [
+            "want",
+            "wanted",
+            "wanting"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "had",
+          "2": "wanted"
+        }
+      },
+      "explanation": "Second conditional: \"If I had ..., I would ...\". \"have always\" + past participle: \"wanted\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0025",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The new phone has a longer battery {{1}} and a much better {{2}} than the old model.",
+        "word_bank": [
+          "kitchen",
+          "life",
+          "death",
+          "camera"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "life",
+          "2": "camera"
+        }
+      },
+      "explanation": "Phones have \"battery life\" and a \"camera\".",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0026",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "In many developed countries, the proportion of people over sixty-five is rising steadily, largely because of longer life expectancy and lower birth rates. This shift places pressure on pension systems and health services, as fewer working-age people support a growing number of retirees. Some economists argue, however, that the challenge is often overstated, since older people increasingly remain in work and contribute through volunteering and caring for family members.",
+        "question": "What is the economists' view mentioned at the end of the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Older people should retire earlier.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Ageing will cause pension systems to collapse.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "The challenge of ageing may be exaggerated.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Birth rates will soon rise again.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "They \"argue ... that the challenge is often overstated\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0026",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "In many developed countries, the proportion of people over sixty-five is rising steadily, largely because of longer life expectancy and lower birth rates. This shift places pressure on pension systems and health services, as fewer working-age people support a growing number of retirees. Some economists argue, however, that the challenge is often overstated, since older people increasingly remain in work and contribute through volunteering and caring for family members.",
+        "question": "Which causes of an ageing population does the text give?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Lower birth rates",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Increased immigration",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Earlier retirement",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Longer life expectancy",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "D"
+        ]
+      },
+      "explanation": "Only life expectancy and birth rates are named as causes.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0026",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "This method worked well on clear nights but was useless in cloudy weather."
+          },
+          {
+            "id": "p2",
+            "text": "For centuries, sailors relied on the stars to find their way at sea."
+          },
+          {
+            "id": "p3",
+            "text": "Today, satellite navigation allows ships to know their exact position at any time."
+          },
+          {
+            "id": "p4",
+            "text": "The invention of the magnetic compass solved part of this problem."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p1",
+          "p4",
+          "p3"
+        ]
+      },
+      "explanation": "The early method, its weakness (\"This method\"), a partial solution and the modern situation.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0026",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The proposal was rejected on the {{1}} that it was too expensive. Its supporters, {{2}}, intend to submit a revised version.",
+        "blanks": {
+          "1": [
+            "grounding",
+            "grounds",
+            "ground"
+          ],
+          "2": [
+            "despite",
+            "although",
+            "however"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "grounds",
+          "2": "however"
+        }
+      },
+      "explanation": "\"on the grounds that\" is a fixed phrase. \"however\" can sit between commas; \"although\" and \"despite\" cannot.",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0026",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Although the treatment showed {{1}} results in early trials, its long-term {{2}} remain unknown.",
+        "word_bank": [
+          "causes",
+          "promising",
+          "disappointing",
+          "effects"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "promising",
+          "2": "effects"
+        }
+      },
+      "explanation": "\"Although\" contrasts good early results with unknown long-term effects.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0027",
+      "category": "reading_mc_single",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Lucas lives in a small town. There is no train station, so he goes to the city by bus. The journey takes forty minutes. He reads a book or listens to music on the bus.",
+        "question": "Why does Lucas take the bus to the city?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "There is no train station in his town.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "He doesn't like trains.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "The bus is faster.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "He can't drive.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A"
+        ]
+      },
+      "explanation": "\"There is no train station, so he goes to the city by bus\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0027",
+      "category": "reading_mc_multiple",
+      "difficulty": "beginner",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Lucas lives in a small town. There is no train station, so he goes to the city by bus. The journey takes forty minutes. He reads a book or listens to music on the bus.",
+        "question": "What does Lucas do on the bus?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "He works on his laptop.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "He reads a book.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "He listens to music.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "He sleeps.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "C"
+        ]
+      },
+      "explanation": "He \"reads a book or listens to music\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0027",
+      "category": "reorder_paragraphs",
+      "difficulty": "beginner",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "When it was ready, she decorated it with chocolate."
+          },
+          {
+            "id": "p2",
+            "text": "Sara wanted to make a cake for her friend's party."
+          },
+          {
+            "id": "p3",
+            "text": "First, she went to the shop to buy eggs, flour and sugar."
+          },
+          {
+            "id": "p4",
+            "text": "Then she mixed everything together and put the cake in the oven."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p3",
+          "p4",
+          "p1"
+        ]
+      },
+      "explanation": "The plan, the shopping, the baking and the decoration.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0027",
+      "category": "rw_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "My parents {{1}} a small shop. They {{2}} it every day at eight.",
+        "blanks": {
+          "1": [
+            "has",
+            "have",
+            "having"
+          ],
+          "2": [
+            "opened",
+            "open",
+            "opens"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "have",
+          "2": "open"
+        }
+      },
+      "explanation": "\"My parents\" is plural: \"have\" and \"open\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0027",
+      "category": "reading_fill_blanks",
+      "difficulty": "beginner",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "It's late. I'm very {{1}}, so I'm going to {{2}}.",
+        "word_bank": [
+          "tired",
+          "bed",
+          "school",
+          "hungry"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "tired",
+          "2": "bed"
+        }
+      },
+      "explanation": "Tired people go to bed.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0028",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Fast fashion brands produce new clothing collections every few weeks at low prices. This allows shoppers to follow trends cheaply, but it also encourages people to buy more and throw clothes away sooner. Making clothes uses large amounts of water and energy, so some shoppers now prefer second-hand shops or rent clothes for special occasions.",
+        "question": "Why do some shoppers prefer second-hand shops or renting clothes?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "They dislike trends.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "They are always cheaper.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Making new clothes uses a lot of water and energy.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Fast fashion is hard to find.",
+          "is_correct": false
+        }
+      ],
+      "answer": {
+        "correct": [
+          "C"
+        ]
+      },
+      "explanation": "The text links the shift to the water and energy used to make clothes (\"so some shoppers now prefer ...\").",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0028",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Fast fashion brands produce new clothing collections every few weeks at low prices. This allows shoppers to follow trends cheaply, but it also encourages people to buy more and throw clothes away sooner. Making clothes uses large amounts of water and energy, so some shoppers now prefer second-hand shops or rent clothes for special occasions.",
+        "question": "What does the text say about fast fashion?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "It has low prices.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "It makes clothes last longer.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "It offers new collections every few weeks.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "It encourages people to buy more.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "It leads people to throw clothes away \"sooner\".",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0028",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Our town's old cinema closed ten years ago."
+          },
+          {
+            "id": "p2",
+            "text": "Last year, a group of residents raised money to repair it."
+          },
+          {
+            "id": "p3",
+            "text": "It reopened this spring as a community arts centre."
+          },
+          {
+            "id": "p4",
+            "text": "For a long time, the building stood empty and began to fall apart."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p1",
+          "p4",
+          "p2",
+          "p3"
+        ]
+      },
+      "explanation": "The closure, the empty years, the fundraising and the reopening.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0028",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "The tickets sold out so {{1}} that many fans were disappointed. The organisers are {{2}} to add an extra show.",
+        "blanks": {
+          "1": [
+            "quickly",
+            "quicker",
+            "quick"
+          ],
+          "2": [
+            "planned",
+            "plan",
+            "planning"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "quickly",
+          "2": "planning"
+        }
+      },
+      "explanation": "An adverb describes how they sold: \"quickly\". \"are\" + -ing: \"planning\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0028",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "Please keep your {{1}} with you at all times and report any {{2}} items to staff.",
+        "word_bank": [
+          "friendly",
+          "luggage",
+          "breakfast",
+          "suspicious"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "luggage",
+          "2": "suspicious"
+        }
+      },
+      "explanation": "At a station you keep your luggage with you and report suspicious items.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0029",
+      "category": "reading_mc_single",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Automation has transformed manufacturing, with machines now performing many tasks once done by hand. Contrary to some predictions, overall employment has not collapsed; instead, the nature of work has shifted. Routine jobs have declined, while demand has grown for roles requiring problem-solving, communication and technical maintenance. The central policy challenge, therefore, is ensuring that workers can retrain for these new roles.",
+        "question": "According to the text, what is the central policy challenge?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Increasing routine jobs",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Stopping automation",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "Reducing technical maintenance",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Helping workers retrain for new roles",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "\"The central policy challenge, therefore, is ensuring that workers can retrain\".",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0029",
+      "category": "reading_mc_multiple",
+      "difficulty": "advanced",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Automation has transformed manufacturing, with machines now performing many tasks once done by hand. Contrary to some predictions, overall employment has not collapsed; instead, the nature of work has shifted. Routine jobs have declined, while demand has grown for roles requiring problem-solving, communication and technical maintenance. The central policy challenge, therefore, is ensuring that workers can retrain for these new roles.",
+        "question": "Which statements are supported by the text?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Overall employment has not collapsed.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "body": "Routine jobs have declined.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Machines have replaced all manual work.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "Demand has grown for communication skills.",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "explanation": "Machines perform \"many tasks\", not all.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0029",
+      "category": "reorder_paragraphs",
+      "difficulty": "advanced",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "When a bee finds a good source of food, it returns to the hive and performs a series of movements."
+          },
+          {
+            "id": "p2",
+            "text": "The honeybee dance is one of the most remarkable forms of animal communication."
+          },
+          {
+            "id": "p3",
+            "text": "Using this information, the other bees can fly straight to the source."
+          },
+          {
+            "id": "p4",
+            "text": "The direction and length of these movements tell other bees where the food is and how far away it lies."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p2",
+          "p1",
+          "p4",
+          "p3"
+        ]
+      },
+      "explanation": "Topic, the bee's action, what \"these movements\" mean, and how others use \"this information\".",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0029",
+      "category": "rw_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "Rarely {{1}} a single discovery had such a wide impact. It has {{2}} changed the way doctors treat infections.",
+        "blanks": {
+          "1": [
+            "having",
+            "has",
+            "have"
+          ],
+          "2": [
+            "fundamental",
+            "fundamentally",
+            "fundamentals"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "has",
+          "2": "fundamentally"
+        }
+      },
+      "explanation": "After \"Rarely\" at the start we invert: \"has a single discovery had\". An adverb modifies \"changed\": \"fundamentally\".",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0029",
+      "category": "reading_fill_blanks",
+      "difficulty": "advanced",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The committee will {{1}} the applications and {{2}} successful candidates by the end of the month.",
+        "word_bank": [
+          "notify",
+          "ignore",
+          "punish",
+          "review"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "review",
+          "2": "notify"
+        }
+      },
+      "explanation": "A committee reviews applications and notifies candidates.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcs-0030",
+      "category": "reading_mc_single",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose the one answer that the text supports.",
+      "content": {
+        "passage": "Noise from traffic, aircraft and building work is a growing problem in cities. Long-term exposure to loud noise can disturb sleep and raise stress levels. Some cities are tackling the problem by using quieter road surfaces, planting trees along busy roads and limiting building work to daytime hours.",
+        "question": "What is the text mainly about?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "How trees grow in cities",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Why aircraft are loud",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "body": "The history of road building",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "body": "City noise, its effects and some solutions",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "D"
+        ]
+      },
+      "explanation": "The text describes noise, its effects and how cities respond.",
+      "learning_objective": "Find the answer the text supports, not just matching words.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rmcm-0030",
+      "category": "reading_mc_multiple",
+      "difficulty": "intermediate",
+      "instructions": "Read the text. Choose every answer that the text supports. There is more than one.",
+      "content": {
+        "passage": "Noise from traffic, aircraft and building work is a growing problem in cities. Long-term exposure to loud noise can disturb sleep and raise stress levels. Some cities are tackling the problem by using quieter road surfaces, planting trees along busy roads and limiting building work to daytime hours.",
+        "question": "Which solutions does the text mention?"
+      },
+      "options": [
+        {
+          "label": "A",
+          "body": "Banning cars from cities",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "body": "Planting trees along roads",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "body": "Limiting building work to daytime",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "body": "Quieter road surfaces",
+          "is_correct": true
+        }
+      ],
+      "answer": {
+        "correct": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "explanation": "Banning cars is not mentioned.",
+      "learning_objective": "Find several facts stated in a text.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rop-0030",
+      "category": "reorder_paragraphs",
+      "difficulty": "intermediate",
+      "instructions": "The sentences are mixed up. Put them in an order that makes sense.",
+      "content": {
+        "paragraphs": [
+          {
+            "id": "p1",
+            "text": "Many adults feel nervous in the water, especially if they had a bad experience as children."
+          },
+          {
+            "id": "p2",
+            "text": "Good instructors start slowly, helping learners feel comfortable before teaching any strokes."
+          },
+          {
+            "id": "p3",
+            "text": "Learning to swim as an adult can be a challenge."
+          },
+          {
+            "id": "p4",
+            "text": "With patience, most adults can learn to swim confidently within a few months."
+          }
+        ]
+      },
+      "answer": {
+        "order": [
+          "p3",
+          "p1",
+          "p2",
+          "p4"
+        ]
+      },
+      "explanation": "The challenge, the reason, the teaching approach and the outcome.",
+      "learning_objective": "Use topic sentences, pronouns and linking words to order sentences.",
+      "scoring_criteria": [
+        "Reorder"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rwfib-0030",
+      "category": "rw_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Choose the word that fits each gap in the text.",
+      "content": {
+        "text": "I wish I {{1}} studied harder at school. Now I'm thinking {{2}} taking an evening course.",
+        "blanks": {
+          "1": [
+            "have",
+            "had",
+            "has"
+          ],
+          "2": [
+            "for",
+            "on",
+            "about"
+          ]
+        }
+      },
+      "answer": {
+        "blanks": {
+          "1": "had",
+          "2": "about"
+        }
+      },
+      "explanation": "Regret about the past: \"I wish I had studied\". \"think about\" + -ing.",
+      "learning_objective": "Choose words that fit both grammar and meaning.",
+      "scoring_criteria": [
+        "Reading",
+        "Writing"
+      ],
+      "key_points": [],
+      "status": "published"
+    },
+    {
+      "external_id": "rfib-0030",
+      "category": "reading_fill_blanks",
+      "difficulty": "intermediate",
+      "instructions": "Some words are missing. Choose a word from the list for each gap. Some words are not needed.",
+      "content": {
+        "text": "The festival attracts {{1}} of visitors every year and is an important {{2}} of income for the town.",
+        "word_bank": [
+          "thousands",
+          "dozen",
+          "problem",
+          "source"
+        ]
+      },
+      "answer": {
+        "blanks": {
+          "1": "thousands",
+          "2": "source"
+        }
+      },
+      "explanation": "\"thousands of visitors\" and \"a source of income\" are the natural phrases.",
+      "learning_objective": "Use collocations and meaning to fill gaps.",
+      "scoring_criteria": [
+        "Reading"
+      ],
+      "key_points": [],
+      "status": "published"
+    }
+  ]
+}

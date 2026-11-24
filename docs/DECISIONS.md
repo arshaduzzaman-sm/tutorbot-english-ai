@@ -17,4 +17,8 @@
 | 2026-11-22 | Streak/daily minutes in UTC | Simple and deterministic for M1; per-user time zone later. |
 | 2026-11-22 | Unused Supabase services excluded at start (studio, realtime, etc.) | Saves memory for the 8 GB minimum tier. |
 | 2026-11-22 | Listening audio as static files (`make audio`, Kokoro) with browser speech voice fallback | SPEC 6 says Supabase Storage; static git-ignored files are simpler locally. The audio script never goes in page HTML: it is fetched only on Play or for the Learn-mode transcript. Revisit when content moves to Storage. |
+| 2026-11-22 | Vocabulary list chosen by word frequency (wordfreq data, CC BY-SA 4.0); meanings and examples written by us | Frequency-based core words as SPEC 5A.1 asks; licence matches our content licence. Names, slang and offensive words removed by hand. |
+| 2026-11-22 | Flashcards reuse the mistake-notebook boxes (1, 3, 7, 14 days) in a separate table `vocabulary_reviews` | One spaced-review rule for the whole app; `review_items` stays tied to questions. |
+| 2026-11-22 | Pronunciation drills are listen-and-choose (auto-marked) until M3 | Recording + pronunciation analyser are M3 work. Symbols follow common British dictionary style. |
+| 2026-11-22 | E2E runs the API with `RATE_LIMIT_PER_MINUTE=1000` | All test learners share the web server's IP; the normal limit (120/min per IP) stays for real use. |
 | — | Numeric 10-90 estimates: threshold to be set in M7 calibration | SPEC 7.3. Not enabled. |

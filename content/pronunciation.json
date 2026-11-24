@@ -1,0 +1,1988 @@
+{
+  "topics": [
+    {
+      "slug": "ship-sheep",
+      "kind": "vowel",
+      "title": "Short i and long ee",
+      "symbols": [
+        "ɪ",
+        "iː"
+      ],
+      "tip": "For /ɪ/ (ship) keep your tongue relaxed and the sound short. For /iː/ (sheep) spread your lips a little, as if smiling, and make the sound longer.",
+      "examples": [
+        "sit",
+        "seat",
+        "fill",
+        "feel",
+        "live",
+        "leave"
+      ],
+      "drill": [
+        {
+          "id": "ship-sheep-1",
+          "type": "listen_choose",
+          "options": [
+            "ship",
+            "sheep"
+          ],
+          "say": "ship",
+          "answer": "ship"
+        },
+        {
+          "id": "ship-sheep-2",
+          "type": "listen_choose",
+          "options": [
+            "sit",
+            "seat"
+          ],
+          "say": "seat",
+          "answer": "seat"
+        },
+        {
+          "id": "ship-sheep-3",
+          "type": "listen_choose",
+          "options": [
+            "fill",
+            "feel"
+          ],
+          "say": "fill",
+          "answer": "fill"
+        },
+        {
+          "id": "ship-sheep-4",
+          "type": "listen_choose",
+          "options": [
+            "live",
+            "leave"
+          ],
+          "say": "leave",
+          "answer": "leave"
+        },
+        {
+          "id": "ship-sheep-5",
+          "type": "listen_choose",
+          "options": [
+            "bin",
+            "bean"
+          ],
+          "say": "bean",
+          "answer": "bean"
+        },
+        {
+          "id": "ship-sheep-6",
+          "type": "listen_choose",
+          "options": [
+            "hit",
+            "heat"
+          ],
+          "say": "hit",
+          "answer": "hit"
+        }
+      ]
+    },
+    {
+      "slug": "cat-cut",
+      "kind": "vowel",
+      "title": "a in cat and u in cut",
+      "symbols": [
+        "æ",
+        "ʌ"
+      ],
+      "tip": "For /æ/ (cat) open your mouth wide and push your tongue low and forward. For /ʌ/ (cut) the mouth is less open and the tongue is in the middle.",
+      "examples": [
+        "hat",
+        "hut",
+        "bag",
+        "bug",
+        "ran",
+        "run"
+      ],
+      "drill": [
+        {
+          "id": "cat-cut-1",
+          "type": "listen_choose",
+          "options": [
+            "cat",
+            "cut"
+          ],
+          "say": "cat",
+          "answer": "cat"
+        },
+        {
+          "id": "cat-cut-2",
+          "type": "listen_choose",
+          "options": [
+            "bag",
+            "bug"
+          ],
+          "say": "bug",
+          "answer": "bug"
+        },
+        {
+          "id": "cat-cut-3",
+          "type": "listen_choose",
+          "options": [
+            "ran",
+            "run"
+          ],
+          "say": "run",
+          "answer": "run"
+        },
+        {
+          "id": "cat-cut-4",
+          "type": "listen_choose",
+          "options": [
+            "hat",
+            "hut"
+          ],
+          "say": "hat",
+          "answer": "hat"
+        },
+        {
+          "id": "cat-cut-5",
+          "type": "listen_choose",
+          "options": [
+            "cap",
+            "cup"
+          ],
+          "say": "cup",
+          "answer": "cup"
+        },
+        {
+          "id": "cat-cut-6",
+          "type": "listen_choose",
+          "options": [
+            "match",
+            "much"
+          ],
+          "say": "match",
+          "answer": "match"
+        }
+      ]
+    },
+    {
+      "slug": "full-fool",
+      "kind": "vowel",
+      "title": "Short oo and long oo",
+      "symbols": [
+        "ʊ",
+        "uː"
+      ],
+      "tip": "For /ʊ/ (full) round your lips a little and keep the sound short. For /uː/ (fool) round your lips more and make it longer.",
+      "examples": [
+        "pull",
+        "pool",
+        "look",
+        "Luke",
+        "should",
+        "shoed"
+      ],
+      "drill": [
+        {
+          "id": "full-fool-1",
+          "type": "listen_choose",
+          "options": [
+            "full",
+            "fool"
+          ],
+          "say": "fool",
+          "answer": "fool"
+        },
+        {
+          "id": "full-fool-2",
+          "type": "listen_choose",
+          "options": [
+            "pull",
+            "pool"
+          ],
+          "say": "pull",
+          "answer": "pull"
+        },
+        {
+          "id": "full-fool-3",
+          "type": "listen_choose",
+          "options": [
+            "look",
+            "Luke"
+          ],
+          "say": "look",
+          "answer": "look"
+        },
+        {
+          "id": "full-fool-4",
+          "type": "listen_choose",
+          "options": [
+            "foot",
+            "food"
+          ],
+          "say": "food",
+          "answer": "food"
+        },
+        {
+          "id": "full-fool-5",
+          "type": "listen_choose",
+          "options": [
+            "could",
+            "cooed"
+          ],
+          "say": "could",
+          "answer": "could"
+        },
+        {
+          "id": "full-fool-6",
+          "type": "listen_choose",
+          "options": [
+            "would",
+            "wooed"
+          ],
+          "say": "wooed",
+          "answer": "wooed"
+        }
+      ]
+    },
+    {
+      "slug": "hot-caught",
+      "kind": "vowel",
+      "title": "o in hot and aw in caught",
+      "symbols": [
+        "ɒ",
+        "ɔː"
+      ],
+      "tip": "For /ɒ/ (hot) the mouth is open and the lips slightly round; keep it short. For /ɔː/ (caught) round your lips more and make it long.",
+      "examples": [
+        "cot",
+        "caught",
+        "pot",
+        "port",
+        "shot",
+        "short"
+      ],
+      "drill": [
+        {
+          "id": "hot-caught-1",
+          "type": "listen_choose",
+          "options": [
+            "cot",
+            "caught"
+          ],
+          "say": "caught",
+          "answer": "caught"
+        },
+        {
+          "id": "hot-caught-2",
+          "type": "listen_choose",
+          "options": [
+            "pot",
+            "port"
+          ],
+          "say": "pot",
+          "answer": "pot"
+        },
+        {
+          "id": "hot-caught-3",
+          "type": "listen_choose",
+          "options": [
+            "shot",
+            "short"
+          ],
+          "say": "short",
+          "answer": "short"
+        },
+        {
+          "id": "hot-caught-4",
+          "type": "listen_choose",
+          "options": [
+            "don",
+            "dawn"
+          ],
+          "say": "don",
+          "answer": "don"
+        },
+        {
+          "id": "hot-caught-5",
+          "type": "listen_choose",
+          "options": [
+            "spot",
+            "sport"
+          ],
+          "say": "sport",
+          "answer": "sport"
+        },
+        {
+          "id": "hot-caught-6",
+          "type": "listen_choose",
+          "options": [
+            "not",
+            "nought"
+          ],
+          "say": "not",
+          "answer": "not"
+        }
+      ]
+    },
+    {
+      "slug": "bed-bird",
+      "kind": "vowel",
+      "title": "e in bed and ir in bird",
+      "symbols": [
+        "e",
+        "ɜː"
+      ],
+      "tip": "For /e/ (bed) the mouth is half open and the sound is short. For /ɜː/ (bird) keep your lips relaxed, tongue in the middle, and make the sound long.",
+      "examples": [
+        "bed",
+        "bird",
+        "ten",
+        "turn",
+        "head",
+        "heard"
+      ],
+      "drill": [
+        {
+          "id": "bed-bird-1",
+          "type": "listen_choose",
+          "options": [
+            "bed",
+            "bird"
+          ],
+          "say": "bird",
+          "answer": "bird"
+        },
+        {
+          "id": "bed-bird-2",
+          "type": "listen_choose",
+          "options": [
+            "ten",
+            "turn"
+          ],
+          "say": "ten",
+          "answer": "ten"
+        },
+        {
+          "id": "bed-bird-3",
+          "type": "listen_choose",
+          "options": [
+            "head",
+            "heard"
+          ],
+          "say": "heard",
+          "answer": "heard"
+        },
+        {
+          "id": "bed-bird-4",
+          "type": "listen_choose",
+          "options": [
+            "west",
+            "worst"
+          ],
+          "say": "west",
+          "answer": "west"
+        },
+        {
+          "id": "bed-bird-5",
+          "type": "listen_choose",
+          "options": [
+            "bend",
+            "burned"
+          ],
+          "say": "burned",
+          "answer": "burned"
+        },
+        {
+          "id": "bed-bird-6",
+          "type": "listen_choose",
+          "options": [
+            "wed",
+            "word"
+          ],
+          "say": "wed",
+          "answer": "wed"
+        }
+      ]
+    },
+    {
+      "slug": "car-cup",
+      "kind": "vowel",
+      "title": "Long ah in car",
+      "symbols": [
+        "ɑː"
+      ],
+      "tip": "For /ɑː/ (car, father) open your mouth wide, keep your tongue low and back, and make the sound long. In British English the r in car is usually not pronounced.",
+      "examples": [
+        "car",
+        "park",
+        "heart",
+        "father",
+        "start",
+        "calm"
+      ],
+      "drill": [
+        {
+          "id": "car-cup-1",
+          "type": "listen_choose",
+          "options": [
+            "cart",
+            "cut"
+          ],
+          "say": "cart",
+          "answer": "cart"
+        },
+        {
+          "id": "car-cup-2",
+          "type": "listen_choose",
+          "options": [
+            "heart",
+            "hut"
+          ],
+          "say": "heart",
+          "answer": "heart"
+        },
+        {
+          "id": "car-cup-3",
+          "type": "listen_choose",
+          "options": [
+            "bark",
+            "buck"
+          ],
+          "say": "buck",
+          "answer": "buck"
+        },
+        {
+          "id": "car-cup-4",
+          "type": "listen_choose",
+          "options": [
+            "calm",
+            "come"
+          ],
+          "say": "calm",
+          "answer": "calm"
+        },
+        {
+          "id": "car-cup-5",
+          "type": "listen_choose",
+          "options": [
+            "march",
+            "much"
+          ],
+          "say": "much",
+          "answer": "much"
+        },
+        {
+          "id": "car-cup-6",
+          "type": "listen_choose",
+          "options": [
+            "last",
+            "lust"
+          ],
+          "say": "last",
+          "answer": "last"
+        }
+      ]
+    },
+    {
+      "slug": "schwa",
+      "kind": "vowel",
+      "title": "The weak sound: schwa",
+      "symbols": [
+        "ə"
+      ],
+      "tip": "Schwa /ə/ is the most common sound in English. It is short and relaxed, like a quiet 'uh'. It appears in unstressed syllables: the a in about, the er in teacher, the o in today.",
+      "examples": [
+        "about",
+        "teacher",
+        "banana",
+        "today",
+        "sofa",
+        "problem"
+      ],
+      "drill": [
+        {
+          "id": "schwa-k1",
+          "type": "choose",
+          "prompt": "Where is the schwa in 'about'?",
+          "options": [
+            "the first a",
+            "the ou",
+            "the t"
+          ],
+          "answer": "the first a",
+          "explanation": "a-BOUT: the unstressed first syllable is a schwa."
+        },
+        {
+          "id": "schwa-k2",
+          "type": "choose",
+          "prompt": "Which word ends with a schwa sound?",
+          "options": [
+            "teacher",
+            "tree",
+            "go"
+          ],
+          "answer": "teacher",
+          "explanation": "The -er in teacher is a schwa in British English."
+        },
+        {
+          "id": "schwa-k3",
+          "type": "choose",
+          "prompt": "Is schwa usually in stressed or unstressed syllables?",
+          "options": [
+            "unstressed",
+            "stressed"
+          ],
+          "answer": "unstressed",
+          "explanation": "Schwa is the weak, unstressed sound."
+        },
+        {
+          "id": "schwa-k4",
+          "type": "choose",
+          "prompt": "How is 'to' usually said in 'I want to go'?",
+          "options": [
+            "with a schwa: /tə/",
+            "with a long oo: /tuː/"
+          ],
+          "answer": "with a schwa: /tə/",
+          "explanation": "Small grammar words are often weak."
+        },
+        {
+          "id": "schwa-k5",
+          "type": "choose",
+          "prompt": "Which syllable in 'banana' is NOT a schwa?",
+          "options": [
+            "the middle one",
+            "the first one",
+            "the last one"
+          ],
+          "answer": "the middle one",
+          "explanation": "ba-NA-na: the stressed middle syllable is a full vowel."
+        }
+      ]
+    },
+    {
+      "slug": "day-die-boy",
+      "kind": "diphthong",
+      "title": "Sounds in day, die and boy",
+      "symbols": [
+        "eɪ",
+        "aɪ",
+        "ɔɪ"
+      ],
+      "tip": "These sounds move from one vowel to another. /eɪ/ (day) moves from e to i; /aɪ/ (die) from a wide a to i; /ɔɪ/ (boy) from aw to i.",
+      "examples": [
+        "day",
+        "late",
+        "die",
+        "time",
+        "boy",
+        "coin"
+      ],
+      "drill": [
+        {
+          "id": "day-die-boy-1",
+          "type": "listen_choose",
+          "options": [
+            "late",
+            "light"
+          ],
+          "say": "late",
+          "answer": "late"
+        },
+        {
+          "id": "day-die-boy-2",
+          "type": "listen_choose",
+          "options": [
+            "way",
+            "why"
+          ],
+          "say": "why",
+          "answer": "why"
+        },
+        {
+          "id": "day-die-boy-3",
+          "type": "listen_choose",
+          "options": [
+            "buy",
+            "boy"
+          ],
+          "say": "boy",
+          "answer": "boy"
+        },
+        {
+          "id": "day-die-boy-4",
+          "type": "listen_choose",
+          "options": [
+            "tile",
+            "toil"
+          ],
+          "say": "tile",
+          "answer": "tile"
+        },
+        {
+          "id": "day-die-boy-5",
+          "type": "listen_choose",
+          "options": [
+            "main",
+            "mine"
+          ],
+          "say": "mine",
+          "answer": "mine"
+        },
+        {
+          "id": "day-die-boy-6",
+          "type": "listen_choose",
+          "options": [
+            "pain",
+            "pine"
+          ],
+          "say": "pain",
+          "answer": "pain"
+        }
+      ]
+    },
+    {
+      "slug": "go-now",
+      "kind": "diphthong",
+      "title": "Sounds in go and now",
+      "symbols": [
+        "əʊ",
+        "aʊ"
+      ],
+      "tip": "/əʊ/ (go) moves from a relaxed schwa to a rounded oo. /aʊ/ (now) starts with a wide a and moves to oo.",
+      "examples": [
+        "go",
+        "home",
+        "phone",
+        "now",
+        "house",
+        "town"
+      ],
+      "drill": [
+        {
+          "id": "go-now-1",
+          "type": "listen_choose",
+          "options": [
+            "phone",
+            "found"
+          ],
+          "say": "phone",
+          "answer": "phone"
+        },
+        {
+          "id": "go-now-2",
+          "type": "listen_choose",
+          "options": [
+            "no",
+            "now"
+          ],
+          "say": "now",
+          "answer": "now"
+        },
+        {
+          "id": "go-now-3",
+          "type": "listen_choose",
+          "options": [
+            "road",
+            "loud"
+          ],
+          "say": "road",
+          "answer": "road"
+        },
+        {
+          "id": "go-now-4",
+          "type": "listen_choose",
+          "options": [
+            "tone",
+            "town"
+          ],
+          "say": "town",
+          "answer": "town"
+        },
+        {
+          "id": "go-now-5",
+          "type": "listen_choose",
+          "options": [
+            "goat",
+            "gout"
+          ],
+          "say": "goat",
+          "answer": "goat"
+        },
+        {
+          "id": "go-now-6",
+          "type": "listen_choose",
+          "options": [
+            "show",
+            "shout"
+          ],
+          "say": "shout",
+          "answer": "shout"
+        }
+      ]
+    },
+    {
+      "slug": "near-hair",
+      "kind": "diphthong",
+      "title": "Sounds in near and hair",
+      "symbols": [
+        "ɪə",
+        "eə"
+      ],
+      "tip": "/ɪə/ (near) moves from i to a schwa. /eə/ (hair) moves from e to a schwa. In British English the r is usually silent.",
+      "examples": [
+        "near",
+        "here",
+        "beer",
+        "hair",
+        "where",
+        "chair"
+      ],
+      "drill": [
+        {
+          "id": "near-hair-1",
+          "type": "listen_choose",
+          "options": [
+            "pier",
+            "pair"
+          ],
+          "say": "pier",
+          "answer": "pier"
+        },
+        {
+          "id": "near-hair-2",
+          "type": "listen_choose",
+          "options": [
+            "here",
+            "hair"
+          ],
+          "say": "hair",
+          "answer": "hair"
+        },
+        {
+          "id": "near-hair-3",
+          "type": "listen_choose",
+          "options": [
+            "beer",
+            "bear"
+          ],
+          "say": "beer",
+          "answer": "beer"
+        },
+        {
+          "id": "near-hair-4",
+          "type": "listen_choose",
+          "options": [
+            "fear",
+            "fair"
+          ],
+          "say": "fair",
+          "answer": "fair"
+        },
+        {
+          "id": "near-hair-5",
+          "type": "listen_choose",
+          "options": [
+            "cheer",
+            "chair"
+          ],
+          "say": "chair",
+          "answer": "chair"
+        },
+        {
+          "id": "near-hair-6",
+          "type": "listen_choose",
+          "options": [
+            "dear",
+            "dare"
+          ],
+          "say": "dear",
+          "answer": "dear"
+        }
+      ]
+    },
+    {
+      "slug": "p-b",
+      "kind": "consonant",
+      "title": "p and b",
+      "symbols": [
+        "p",
+        "b"
+      ],
+      "tip": "Both start with closed lips. /p/ is voiceless: no voice, and a small puff of air (hold paper in front of your mouth: it moves). /b/ uses your voice.",
+      "examples": [
+        "pen",
+        "Ben",
+        "pie",
+        "buy",
+        "cap",
+        "cab"
+      ],
+      "drill": [
+        {
+          "id": "p-b-1",
+          "type": "listen_choose",
+          "options": [
+            "pen",
+            "Ben"
+          ],
+          "say": "pen",
+          "answer": "pen"
+        },
+        {
+          "id": "p-b-2",
+          "type": "listen_choose",
+          "options": [
+            "pie",
+            "buy"
+          ],
+          "say": "buy",
+          "answer": "buy"
+        },
+        {
+          "id": "p-b-3",
+          "type": "listen_choose",
+          "options": [
+            "cap",
+            "cab"
+          ],
+          "say": "cap",
+          "answer": "cap"
+        },
+        {
+          "id": "p-b-4",
+          "type": "listen_choose",
+          "options": [
+            "pear",
+            "bear"
+          ],
+          "say": "bear",
+          "answer": "bear"
+        },
+        {
+          "id": "p-b-5",
+          "type": "listen_choose",
+          "options": [
+            "pack",
+            "back"
+          ],
+          "say": "pack",
+          "answer": "pack"
+        },
+        {
+          "id": "p-b-6",
+          "type": "listen_choose",
+          "options": [
+            "rope",
+            "robe"
+          ],
+          "say": "robe",
+          "answer": "robe"
+        }
+      ]
+    },
+    {
+      "slug": "t-d",
+      "kind": "consonant",
+      "title": "t and d",
+      "symbols": [
+        "t",
+        "d"
+      ],
+      "tip": "Touch the ridge behind your top teeth with your tongue. /t/ has no voice; /d/ uses your voice. At the end of a word, a vowel before /d/ is a little longer.",
+      "examples": [
+        "ten",
+        "den",
+        "tie",
+        "die",
+        "bet",
+        "bed"
+      ],
+      "drill": [
+        {
+          "id": "t-d-1",
+          "type": "listen_choose",
+          "options": [
+            "ten",
+            "den"
+          ],
+          "say": "den",
+          "answer": "den"
+        },
+        {
+          "id": "t-d-2",
+          "type": "listen_choose",
+          "options": [
+            "tie",
+            "die"
+          ],
+          "say": "tie",
+          "answer": "tie"
+        },
+        {
+          "id": "t-d-3",
+          "type": "listen_choose",
+          "options": [
+            "bet",
+            "bed"
+          ],
+          "say": "bed",
+          "answer": "bed"
+        },
+        {
+          "id": "t-d-4",
+          "type": "listen_choose",
+          "options": [
+            "write",
+            "ride"
+          ],
+          "say": "write",
+          "answer": "write"
+        },
+        {
+          "id": "t-d-5",
+          "type": "listen_choose",
+          "options": [
+            "cart",
+            "card"
+          ],
+          "say": "card",
+          "answer": "card"
+        },
+        {
+          "id": "t-d-6",
+          "type": "listen_choose",
+          "options": [
+            "tear",
+            "dear"
+          ],
+          "say": "tear",
+          "answer": "tear"
+        }
+      ]
+    },
+    {
+      "slug": "k-g",
+      "kind": "consonant",
+      "title": "k and g",
+      "symbols": [
+        "k",
+        "g"
+      ],
+      "tip": "The back of your tongue touches the back of the roof of your mouth. /k/ has no voice; /g/ uses your voice.",
+      "examples": [
+        "coat",
+        "goat",
+        "back",
+        "bag",
+        "cold",
+        "gold"
+      ],
+      "drill": [
+        {
+          "id": "k-g-1",
+          "type": "listen_choose",
+          "options": [
+            "coat",
+            "goat"
+          ],
+          "say": "goat",
+          "answer": "goat"
+        },
+        {
+          "id": "k-g-2",
+          "type": "listen_choose",
+          "options": [
+            "back",
+            "bag"
+          ],
+          "say": "back",
+          "answer": "back"
+        },
+        {
+          "id": "k-g-3",
+          "type": "listen_choose",
+          "options": [
+            "cold",
+            "gold"
+          ],
+          "say": "gold",
+          "answer": "gold"
+        },
+        {
+          "id": "k-g-4",
+          "type": "listen_choose",
+          "options": [
+            "came",
+            "game"
+          ],
+          "say": "came",
+          "answer": "came"
+        },
+        {
+          "id": "k-g-5",
+          "type": "listen_choose",
+          "options": [
+            "pick",
+            "pig"
+          ],
+          "say": "pig",
+          "answer": "pig"
+        },
+        {
+          "id": "k-g-6",
+          "type": "listen_choose",
+          "options": [
+            "class",
+            "glass"
+          ],
+          "say": "class",
+          "answer": "class"
+        }
+      ]
+    },
+    {
+      "slug": "f-v",
+      "kind": "consonant",
+      "title": "f and v",
+      "symbols": [
+        "f",
+        "v"
+      ],
+      "tip": "Put your top teeth lightly on your bottom lip and blow. /f/ has no voice; /v/ uses your voice (you can feel a buzz).",
+      "examples": [
+        "fan",
+        "van",
+        "fine",
+        "vine",
+        "leaf",
+        "leave"
+      ],
+      "drill": [
+        {
+          "id": "f-v-1",
+          "type": "listen_choose",
+          "options": [
+            "fan",
+            "van"
+          ],
+          "say": "van",
+          "answer": "van"
+        },
+        {
+          "id": "f-v-2",
+          "type": "listen_choose",
+          "options": [
+            "fine",
+            "vine"
+          ],
+          "say": "fine",
+          "answer": "fine"
+        },
+        {
+          "id": "f-v-3",
+          "type": "listen_choose",
+          "options": [
+            "leaf",
+            "leave"
+          ],
+          "say": "leave",
+          "answer": "leave"
+        },
+        {
+          "id": "f-v-4",
+          "type": "listen_choose",
+          "options": [
+            "ferry",
+            "very"
+          ],
+          "say": "ferry",
+          "answer": "ferry"
+        },
+        {
+          "id": "f-v-5",
+          "type": "listen_choose",
+          "options": [
+            "fail",
+            "veil"
+          ],
+          "say": "veil",
+          "answer": "veil"
+        },
+        {
+          "id": "f-v-6",
+          "type": "listen_choose",
+          "options": [
+            "safe",
+            "save"
+          ],
+          "say": "safe",
+          "answer": "safe"
+        }
+      ]
+    },
+    {
+      "slug": "th-sounds",
+      "kind": "consonant",
+      "title": "The two th sounds",
+      "symbols": [
+        "θ",
+        "ð"
+      ],
+      "tip": "Put the tip of your tongue lightly between your teeth and blow. /θ/ (think) has no voice; /ð/ (this) uses your voice. Do not replace them with s, z, t or d.",
+      "examples": [
+        "think",
+        "three",
+        "bath",
+        "this",
+        "mother",
+        "breathe"
+      ],
+      "drill": [
+        {
+          "id": "th-sounds-1",
+          "type": "listen_choose",
+          "options": [
+            "think",
+            "sink"
+          ],
+          "say": "think",
+          "answer": "think"
+        },
+        {
+          "id": "th-sounds-2",
+          "type": "listen_choose",
+          "options": [
+            "three",
+            "tree"
+          ],
+          "say": "three",
+          "answer": "three"
+        },
+        {
+          "id": "th-sounds-3",
+          "type": "listen_choose",
+          "options": [
+            "thank",
+            "tank"
+          ],
+          "say": "tank",
+          "answer": "tank"
+        },
+        {
+          "id": "th-sounds-4",
+          "type": "listen_choose",
+          "options": [
+            "mouth",
+            "mouse"
+          ],
+          "say": "mouth",
+          "answer": "mouth"
+        },
+        {
+          "id": "th-sounds-5",
+          "type": "listen_choose",
+          "options": [
+            "then",
+            "den"
+          ],
+          "say": "den",
+          "answer": "den"
+        },
+        {
+          "id": "th-sounds-6",
+          "type": "listen_choose",
+          "options": [
+            "they",
+            "day"
+          ],
+          "say": "they",
+          "answer": "they"
+        }
+      ]
+    },
+    {
+      "slug": "s-sh",
+      "kind": "consonant",
+      "title": "s and sh",
+      "symbols": [
+        "s",
+        "ʃ"
+      ],
+      "tip": "For /s/ (see) the tongue is near the ridge behind your teeth and the lips are spread. For /ʃ/ (she) the tongue moves back a little and the lips push forward.",
+      "examples": [
+        "see",
+        "she",
+        "sip",
+        "ship",
+        "mess",
+        "mesh"
+      ],
+      "drill": [
+        {
+          "id": "s-sh-1",
+          "type": "listen_choose",
+          "options": [
+            "see",
+            "she"
+          ],
+          "say": "she",
+          "answer": "she"
+        },
+        {
+          "id": "s-sh-2",
+          "type": "listen_choose",
+          "options": [
+            "sip",
+            "ship"
+          ],
+          "say": "sip",
+          "answer": "sip"
+        },
+        {
+          "id": "s-sh-3",
+          "type": "listen_choose",
+          "options": [
+            "sort",
+            "short"
+          ],
+          "say": "short",
+          "answer": "short"
+        },
+        {
+          "id": "s-sh-4",
+          "type": "listen_choose",
+          "options": [
+            "save",
+            "shave"
+          ],
+          "say": "save",
+          "answer": "save"
+        },
+        {
+          "id": "s-sh-5",
+          "type": "listen_choose",
+          "options": [
+            "mass",
+            "mash"
+          ],
+          "say": "mash",
+          "answer": "mash"
+        },
+        {
+          "id": "s-sh-6",
+          "type": "listen_choose",
+          "options": [
+            "seat",
+            "sheet"
+          ],
+          "say": "seat",
+          "answer": "seat"
+        }
+      ]
+    },
+    {
+      "slug": "ch-j",
+      "kind": "consonant",
+      "title": "ch and j",
+      "symbols": [
+        "tʃ",
+        "dʒ"
+      ],
+      "tip": "Both start like /t/ or /d/ and then release into sh. /tʃ/ (chin) has no voice; /dʒ/ (gin, job) uses your voice.",
+      "examples": [
+        "chin",
+        "gin",
+        "cheap",
+        "jeep",
+        "rich",
+        "ridge"
+      ],
+      "drill": [
+        {
+          "id": "ch-j-1",
+          "type": "listen_choose",
+          "options": [
+            "chin",
+            "gin"
+          ],
+          "say": "gin",
+          "answer": "gin"
+        },
+        {
+          "id": "ch-j-2",
+          "type": "listen_choose",
+          "options": [
+            "cheap",
+            "jeep"
+          ],
+          "say": "cheap",
+          "answer": "cheap"
+        },
+        {
+          "id": "ch-j-3",
+          "type": "listen_choose",
+          "options": [
+            "choke",
+            "joke"
+          ],
+          "say": "joke",
+          "answer": "joke"
+        },
+        {
+          "id": "ch-j-4",
+          "type": "listen_choose",
+          "options": [
+            "rich",
+            "ridge"
+          ],
+          "say": "rich",
+          "answer": "rich"
+        },
+        {
+          "id": "ch-j-5",
+          "type": "listen_choose",
+          "options": [
+            "chest",
+            "jest"
+          ],
+          "say": "jest",
+          "answer": "jest"
+        },
+        {
+          "id": "ch-j-6",
+          "type": "listen_choose",
+          "options": [
+            "batch",
+            "badge"
+          ],
+          "say": "batch",
+          "answer": "batch"
+        }
+      ]
+    },
+    {
+      "slug": "m-n-ng",
+      "kind": "consonant",
+      "title": "m, n and ng",
+      "symbols": [
+        "m",
+        "n",
+        "ŋ"
+      ],
+      "tip": "All three let air out through your nose. /m/: lips closed. /n/: tongue tip on the ridge behind the teeth. /ŋ/ (sing): back of the tongue up; do not add a hard g at the end.",
+      "examples": [
+        "map",
+        "nap",
+        "sum",
+        "sun",
+        "thin",
+        "thing"
+      ],
+      "drill": [
+        {
+          "id": "m-n-ng-1",
+          "type": "listen_choose",
+          "options": [
+            "sun",
+            "sung"
+          ],
+          "say": "sung",
+          "answer": "sung"
+        },
+        {
+          "id": "m-n-ng-2",
+          "type": "listen_choose",
+          "options": [
+            "thin",
+            "thing"
+          ],
+          "say": "thin",
+          "answer": "thin"
+        },
+        {
+          "id": "m-n-ng-3",
+          "type": "listen_choose",
+          "options": [
+            "ban",
+            "bang"
+          ],
+          "say": "bang",
+          "answer": "bang"
+        },
+        {
+          "id": "m-n-ng-4",
+          "type": "listen_choose",
+          "options": [
+            "win",
+            "wing"
+          ],
+          "say": "win",
+          "answer": "win"
+        },
+        {
+          "id": "m-n-ng-5",
+          "type": "listen_choose",
+          "options": [
+            "rum",
+            "run"
+          ],
+          "say": "run",
+          "answer": "run"
+        },
+        {
+          "id": "m-n-ng-6",
+          "type": "listen_choose",
+          "options": [
+            "some",
+            "sun"
+          ],
+          "say": "some",
+          "answer": "some"
+        }
+      ]
+    },
+    {
+      "slug": "l-r",
+      "kind": "consonant",
+      "title": "l and r",
+      "symbols": [
+        "l",
+        "r"
+      ],
+      "tip": "For /l/ the tongue tip touches the ridge behind your top teeth. For /r/ the tongue does not touch anything: curl it back a little and round your lips.",
+      "examples": [
+        "light",
+        "right",
+        "long",
+        "wrong",
+        "fly",
+        "fry"
+      ],
+      "drill": [
+        {
+          "id": "l-r-1",
+          "type": "listen_choose",
+          "options": [
+            "light",
+            "right"
+          ],
+          "say": "right",
+          "answer": "right"
+        },
+        {
+          "id": "l-r-2",
+          "type": "listen_choose",
+          "options": [
+            "long",
+            "wrong"
+          ],
+          "say": "long",
+          "answer": "long"
+        },
+        {
+          "id": "l-r-3",
+          "type": "listen_choose",
+          "options": [
+            "fly",
+            "fry"
+          ],
+          "say": "fry",
+          "answer": "fry"
+        },
+        {
+          "id": "l-r-4",
+          "type": "listen_choose",
+          "options": [
+            "lead",
+            "read"
+          ],
+          "say": "lead",
+          "answer": "lead"
+        },
+        {
+          "id": "l-r-5",
+          "type": "listen_choose",
+          "options": [
+            "glass",
+            "grass"
+          ],
+          "say": "grass",
+          "answer": "grass"
+        },
+        {
+          "id": "l-r-6",
+          "type": "listen_choose",
+          "options": [
+            "collect",
+            "correct"
+          ],
+          "say": "collect",
+          "answer": "collect"
+        }
+      ]
+    },
+    {
+      "slug": "w-v-y",
+      "kind": "consonant",
+      "title": "w, v and y",
+      "symbols": [
+        "w",
+        "v",
+        "j"
+      ],
+      "tip": "/w/ (wet): round your lips, then open them; teeth do not touch the lip. /v/ (vet): top teeth on the bottom lip. /j/ (yet): tongue high like ee, then move on.",
+      "examples": [
+        "wet",
+        "vet",
+        "west",
+        "vest",
+        "yes",
+        "yet"
+      ],
+      "drill": [
+        {
+          "id": "w-v-y-1",
+          "type": "listen_choose",
+          "options": [
+            "wet",
+            "vet"
+          ],
+          "say": "wet",
+          "answer": "wet"
+        },
+        {
+          "id": "w-v-y-2",
+          "type": "listen_choose",
+          "options": [
+            "west",
+            "vest"
+          ],
+          "say": "vest",
+          "answer": "vest"
+        },
+        {
+          "id": "w-v-y-3",
+          "type": "listen_choose",
+          "options": [
+            "wine",
+            "vine"
+          ],
+          "say": "wine",
+          "answer": "wine"
+        },
+        {
+          "id": "w-v-y-4",
+          "type": "listen_choose",
+          "options": [
+            "wail",
+            "veil"
+          ],
+          "say": "veil",
+          "answer": "veil"
+        },
+        {
+          "id": "w-v-y-5",
+          "type": "listen_choose",
+          "options": [
+            "year",
+            "ear"
+          ],
+          "say": "year",
+          "answer": "year"
+        },
+        {
+          "id": "w-v-y-6",
+          "type": "listen_choose",
+          "options": [
+            "yell",
+            "well"
+          ],
+          "say": "well",
+          "answer": "well"
+        }
+      ]
+    },
+    {
+      "slug": "h-sound",
+      "kind": "consonant",
+      "title": "The h sound",
+      "symbols": [
+        "h"
+      ],
+      "tip": "/h/ is just a breath out, like warming your hands. Do not drop it at the start of words like house and hungry, and do not add it where there is none (eye, art).",
+      "examples": [
+        "house",
+        "happy",
+        "hello",
+        "eat",
+        "art",
+        "old"
+      ],
+      "drill": [
+        {
+          "id": "h-sound-1",
+          "type": "listen_choose",
+          "options": [
+            "hat",
+            "at"
+          ],
+          "say": "hat",
+          "answer": "hat"
+        },
+        {
+          "id": "h-sound-2",
+          "type": "listen_choose",
+          "options": [
+            "heat",
+            "eat"
+          ],
+          "say": "eat",
+          "answer": "eat"
+        },
+        {
+          "id": "h-sound-3",
+          "type": "listen_choose",
+          "options": [
+            "hear",
+            "ear"
+          ],
+          "say": "hear",
+          "answer": "hear"
+        },
+        {
+          "id": "h-sound-4",
+          "type": "listen_choose",
+          "options": [
+            "hold",
+            "old"
+          ],
+          "say": "old",
+          "answer": "old"
+        },
+        {
+          "id": "h-sound-5",
+          "type": "listen_choose",
+          "options": [
+            "hand",
+            "and"
+          ],
+          "say": "hand",
+          "answer": "hand"
+        },
+        {
+          "id": "h-sound-6",
+          "type": "listen_choose",
+          "options": [
+            "hair",
+            "air"
+          ],
+          "say": "air",
+          "answer": "air"
+        }
+      ]
+    },
+    {
+      "slug": "word-stress",
+      "kind": "stress",
+      "title": "Word stress",
+      "symbols": [],
+      "tip": "In words with two or more syllables, one syllable is stronger: longer, louder and higher. Many two-syllable nouns stress the first syllable (TAble); many two-syllable verbs stress the second (reLAX). A dictionary shows stress with a mark ˈ before the stressed syllable.",
+      "examples": [
+        "TAble",
+        "HAPpy",
+        "reLAX",
+        "beGIN",
+        "PHOtograph",
+        "phoTOgraphy"
+      ],
+      "drill": [
+        {
+          "id": "word-stress-k1",
+          "type": "choose",
+          "prompt": "Which syllable is stressed in 'teacher'?",
+          "options": [
+            "TEA-cher",
+            "tea-CHER"
+          ],
+          "answer": "TEA-cher",
+          "explanation": "Two-syllable nouns often stress the first syllable."
+        },
+        {
+          "id": "word-stress-k2",
+          "type": "choose",
+          "prompt": "Which syllable is stressed in 'begin'?",
+          "options": [
+            "BE-gin",
+            "be-GIN"
+          ],
+          "answer": "be-GIN",
+          "explanation": "Two-syllable verbs often stress the second syllable."
+        },
+        {
+          "id": "word-stress-k3",
+          "type": "choose",
+          "prompt": "Which syllable is stressed in 'banana'?",
+          "options": [
+            "BA-na-na",
+            "ba-NA-na",
+            "ba-na-NA"
+          ],
+          "answer": "ba-NA-na",
+          "explanation": "The middle syllable is strong; the others are schwa."
+        },
+        {
+          "id": "word-stress-k4",
+          "type": "choose",
+          "prompt": "Which syllable is stressed in 'photography'?",
+          "options": [
+            "PHO-to-gra-phy",
+            "pho-TO-gra-phy",
+            "pho-to-GRA-phy"
+          ],
+          "answer": "pho-TO-gra-phy",
+          "explanation": "Words ending in -graphy stress the syllable before it."
+        },
+        {
+          "id": "word-stress-k5",
+          "type": "choose",
+          "prompt": "Which syllable is stressed in 'education'?",
+          "options": [
+            "E-du-ca-tion",
+            "e-du-CA-tion",
+            "e-DU-ca-tion"
+          ],
+          "answer": "e-du-CA-tion",
+          "explanation": "Words ending in -tion stress the syllable just before it."
+        },
+        {
+          "id": "word-stress-k6",
+          "type": "choose",
+          "prompt": "In 'a REcord' (noun) and 'to reCORD' (verb), what changes?",
+          "options": [
+            "the stress",
+            "the spelling",
+            "nothing"
+          ],
+          "answer": "the stress",
+          "explanation": "Some words change stress between noun and verb."
+        }
+      ]
+    },
+    {
+      "slug": "sentence-stress",
+      "kind": "stress",
+      "title": "Sentence stress",
+      "symbols": [],
+      "tip": "In a sentence we stress the words that carry meaning (nouns, main verbs, adjectives, adverbs, negatives) and say small grammar words (a, the, to, and, of, can) quickly and weakly.",
+      "examples": [
+        "I WANT to GO HOME.",
+        "She's BOUGHT a NEW CAR.",
+        "I CAN'T COME toNIGHT."
+      ],
+      "drill": [
+        {
+          "id": "sentence-stress-k1",
+          "type": "choose",
+          "prompt": "Which words are usually stressed in 'I need a cup of tea'?",
+          "options": [
+            "need, cup, tea",
+            "I, a, of",
+            "a, of"
+          ],
+          "answer": "need, cup, tea",
+          "explanation": "Content words carry the stress."
+        },
+        {
+          "id": "sentence-stress-k2",
+          "type": "choose",
+          "prompt": "Which kind of word is usually NOT stressed?",
+          "options": [
+            "the",
+            "house",
+            "beautiful"
+          ],
+          "answer": "the",
+          "explanation": "Articles are grammar words and are usually weak."
+        },
+        {
+          "id": "sentence-stress-k3",
+          "type": "choose",
+          "prompt": "Are negatives like 'can't' usually stressed?",
+          "options": [
+            "yes",
+            "no"
+          ],
+          "answer": "yes",
+          "explanation": "Negatives carry important meaning, so they are stressed."
+        },
+        {
+          "id": "sentence-stress-k4",
+          "type": "choose",
+          "prompt": "In 'She's BOUGHT a NEW CAR', why is 'a' weak?",
+          "options": [
+            "it is a grammar word",
+            "it is a verb",
+            "it is a negative"
+          ],
+          "answer": "it is a grammar word",
+          "explanation": "Grammar words are said quickly."
+        },
+        {
+          "id": "sentence-stress-k5",
+          "type": "choose",
+          "prompt": "Stressing a different word can change the meaning. 'I didn't say HE took it' suggests:",
+          "options": [
+            "someone else took it",
+            "I said nothing",
+            "he gave it back"
+          ],
+          "answer": "someone else took it",
+          "explanation": "Stress shows what you are focusing on."
+        }
+      ]
+    },
+    {
+      "slug": "linking",
+      "kind": "linking",
+      "title": "Linking words together",
+      "symbols": [],
+      "tip": "In natural speech, words join. When a word ends in a consonant and the next starts with a vowel, join them: 'turn_off' sounds like 'tur noff'. Between two vowels we often add a small /w/ or /j/: 'go_(w)out', 'see_(j)it'.",
+      "examples": [
+        "turn off",
+        "pick it up",
+        "an apple",
+        "go out",
+        "see it",
+        "far away"
+      ],
+      "drill": [
+        {
+          "id": "linking-k1",
+          "type": "choose",
+          "prompt": "How is 'an apple' usually said?",
+          "options": [
+            "a-napple",
+            "an... apple (with a pause)"
+          ],
+          "answer": "a-napple",
+          "explanation": "Consonant + vowel: link them."
+        },
+        {
+          "id": "linking-k2",
+          "type": "choose",
+          "prompt": "Which sound links 'go out'?",
+          "options": [
+            "a small w",
+            "a small j",
+            "a t"
+          ],
+          "answer": "a small w",
+          "explanation": "After an oo-type sound, a small /w/ links the words."
+        },
+        {
+          "id": "linking-k3",
+          "type": "choose",
+          "prompt": "Which sound links 'see it'?",
+          "options": [
+            "a small j (y)",
+            "a small w",
+            "an h"
+          ],
+          "answer": "a small j (y)",
+          "explanation": "After an ee-type sound, a small /j/ links the words."
+        },
+        {
+          "id": "linking-k4",
+          "type": "choose",
+          "prompt": "'Pick it up' often sounds like:",
+          "options": [
+            "pi-ki-tup",
+            "pick... it... up"
+          ],
+          "answer": "pi-ki-tup",
+          "explanation": "Each consonant joins the next vowel."
+        },
+        {
+          "id": "linking-k5",
+          "type": "choose",
+          "prompt": "Why learn linking?",
+          "options": [
+            "to understand and sound like fluent speakers",
+            "to speak more slowly",
+            "to spell better"
+          ],
+          "answer": "to understand and sound like fluent speakers",
+          "explanation": "Linking is part of natural connected speech."
+        }
+      ]
+    },
+    {
+      "slug": "intonation",
+      "kind": "intonation",
+      "title": "Intonation: up and down",
+      "symbols": [],
+      "tip": "Intonation is the music of speech. The voice usually goes down at the end of statements and wh- questions (Where do you LIVE↘). It often goes up at the end of yes/no questions (Do you live HERE↗) and in lists until the last item.",
+      "examples": [
+        "Where do you live?",
+        "Do you live here?",
+        "I'd like tea, coffee and cake."
+      ],
+      "drill": [
+        {
+          "id": "intonation-k1",
+          "type": "choose",
+          "prompt": "Does the voice usually go up or down at the end of 'What's your name?'",
+          "options": [
+            "down",
+            "up"
+          ],
+          "answer": "down",
+          "explanation": "Wh- questions usually fall."
+        },
+        {
+          "id": "intonation-k2",
+          "type": "choose",
+          "prompt": "Does the voice usually go up or down at the end of 'Are you ready?'",
+          "options": [
+            "up",
+            "down"
+          ],
+          "answer": "up",
+          "explanation": "Yes/no questions often rise."
+        },
+        {
+          "id": "intonation-k3",
+          "type": "choose",
+          "prompt": "In 'apples, oranges and pears', where does the voice fall?",
+          "options": [
+            "on pears",
+            "on apples",
+            "on oranges"
+          ],
+          "answer": "on pears",
+          "explanation": "In a list the voice rises on each item and falls on the last."
+        },
+        {
+          "id": "intonation-k4",
+          "type": "choose",
+          "prompt": "A statement like 'I'm from Spain' usually ends:",
+          "options": [
+            "falling",
+            "rising"
+          ],
+          "answer": "falling",
+          "explanation": "Statements usually fall."
+        },
+        {
+          "id": "intonation-k5",
+          "type": "choose",
+          "prompt": "Saying 'You're leaving?' with a rise shows:",
+          "options": [
+            "surprise or a question",
+            "a strong order",
+            "the end of a list"
+          ],
+          "answer": "surprise or a question",
+          "explanation": "A rising tone can turn a statement into a question."
+        }
+      ]
+    }
+  ]
+}

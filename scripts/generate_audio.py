@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Pre-generate listening audio from content/questions/listening.json with Kokoro-82M (Apache-2.0, CPU).
+"""Pre-generate audio with Kokoro-82M (Apache-2.0, CPU): listening questions, placement items, vocabulary words
+and pronunciation drill words.
 
 Learners never trigger TTS on the server. Files go to apps/web/public/audio/<external_id>.wav (git-ignored).
 If a file is missing, the app falls back to the browser's own speech voice.
@@ -17,18 +18,37 @@ from collections.abc import Callable, Iterator
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "content" / "questions" / "listening.json"
+CONTENT = ROOT / "content"
 OUT = ROOT / "apps" / "web" / "public" / "audio"
 RATE = 24_000  # Kokoro output sample rate
 # Several accents, as SPEC 6 asks: (Kokoro language code, voice). Chosen per question, deterministic.
 VOICES = [("a", "af_heart"), ("b", "bf_emma"), ("a", "am_michael"), ("b", "bm_george")]
 
 
+def _load(path: Path) -> dict:  # type: ignore[type-arg]
+    return json.loads(path.read_text(encoding="utf-8"))  # type: ignore[no-any-return]
+
+
 def clips() -> Iterator[tuple[str, list[str]]]:
-    for q in json.loads(SOURCE.read_text(encoding="utf-8"))["questions"]:
-        script = q.get("content", {}).get("audio_script")
-        if script:
-            yield q["external_id"], [p.strip() for p in script.split("[BEEP]")]
+    """(file name without .wav, parts). Parts are joined by a beep. Names match what the web app requests."""
+    for path in sorted((CONTENT / "questions").glob("*.json")):
+        for q in _load(path)["questions"]:
+            script = q.get("content", {}).get("audio_script")
+            if isinstance(script, list):
+                yield q["external_id"], [str(p).strip() for p in script]
+            elif script:
+                yield q["external_id"], [p.strip() for p in script.split("[BEEP]")]
+    for item in _load(CONTENT / "diagnostic.json")["items"]:
+        if item.get("audio_script"):
+            yield f"placement-{item['id']}", [item["audio_script"]]
+    for path in sorted((CONTENT / "vocabulary").glob("level-*.json")):
+        for vset in _load(path)["sets"]:
+            for w in vset["words"]:
+                yield f"vocab-{w['id']}", [w["word"]]
+    for topic in _load(CONTENT / "pronunciation.json")["topics"]:
+        for d in topic["drill"]:
+            if d.get("say"):
+                yield f"pron-{d['id']}", [d["say"]]
 
 
 def beep(np, seconds: float = 0.6, hz: float = 1000.0):  # type: ignore[no-untyped-def]

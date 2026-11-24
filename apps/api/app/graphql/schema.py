@@ -15,6 +15,7 @@ from strawberry.types import Info
 from app.ai.registry import demo_mode
 from app.core.config import get_settings
 from app.db import models
+from app.graphql import tracks
 from app.graphql.context import Context
 from app.services.lessons import public_exercise
 from app.services.placement import public_item
@@ -625,6 +626,14 @@ class Viewer:
         )
         return int(rows.scalar_one())
 
+    @strawberry.field(description="Vocabulary flashcards due for spaced review now")
+    async def vocabulary_due(self, info: CtxInfo, limit: int = 30) -> list[tracks.VocabularyWord]:
+        return await tracks.due_words(info, limit)
+
+    @strawberry.field(description="Number of vocabulary flashcards due now")
+    async def vocabulary_due_count(self, info: CtxInfo) -> int:
+        return await tracks.due_word_count(info)
+
     @strawberry.field(description="The learner's latest study plan from the placement test; null if not taken")
     async def study_plan(self, info: CtxInfo) -> StudyPlan | None:
         rows = await info.context.execute(
@@ -830,6 +839,24 @@ class Query:
     async def unit(self, info: CtxInfo, slug: str) -> Unit | None:
         r = (await info.context.execute(text(UNIT_SQL + "and u.slug = :slug"), {"slug": slug})).first()
         return _unit(r) if r else None
+
+    @strawberry.field(description="Vocabulary sets in course order, optionally for one level")
+    async def vocabulary_sets(self, info: CtxInfo, level_code: int | None = None) -> list[tracks.VocabularySet]:
+        return await tracks.vocabulary_sets(info, level_code)
+
+    @strawberry.field
+    async def vocabulary_set(self, info: CtxInfo, slug: str) -> tracks.VocabularySet | None:
+        found = await tracks.vocabulary_sets(info, None, slug)
+        return found[0] if found else None
+
+    @strawberry.field(description="Pronunciation track: sounds, stress, linking and intonation")
+    async def pronunciation_topics(self, info: CtxInfo) -> list[tracks.PronunciationTopic]:
+        return await tracks.pronunciation_topics(info)
+
+    @strawberry.field
+    async def pronunciation_topic(self, info: CtxInfo, slug: str) -> tracks.PronunciationTopic | None:
+        found = await tracks.pronunciation_topics(info, slug)
+        return found[0] if found else None
 
     @strawberry.field
     async def question_categories(self, info: CtxInfo) -> list[QuestionCategory]:

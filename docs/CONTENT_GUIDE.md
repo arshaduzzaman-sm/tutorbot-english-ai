@@ -17,3 +17,11 @@
    `supabase db reset` locally. CI fails if seed.sql is out of date.
 8. Audio is generated offline with `make audio` (Kokoro). Questions keep the text to speak in `audio_script`.
 9. Scoring criteria names must match Pearson's published Score Guide (to be re-checked before M3).
+10. **Vocabulary** (`content/vocabulary/level-N.json`): sets of about 26 words. Each word has `id`
+    (`word-partofspeech`), `word`, `part_of_speech`, `meaning` (simple words) and `example` (one short
+    original sentence). Word choice follows frequency (see `content/LICENSE.md`); never copy dictionary definitions.
+11. **Pronunciation** (`content/pronunciation.json`): each topic has a `tip` in our own words, `examples` and at
+    least 5 `drill` items. `listen_choose` items say one word (`say`) and offer real minimal pairs; `choose`
+    items have a `prompt` and an `explanation`. Answers and `say` never reach the page.
+12. **Question banks**: `content/questions/*_bank.json` hold 28 original topics; each topic supplies one
+    question of every auto-marked reading and listening type, so some passages appear in more than one type.

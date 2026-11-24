@@ -24,6 +24,7 @@ export const DashboardQuery = graphql(`
       streakDays
       todayMinutes
       reviewDueCount
+      vocabularyDueCount
       studyPlan { createdAt recommendedLevelCode plan }
       recentAttempts(limit: 5) { id createdAt isCorrect scoreRatio category { code name } }
       recommendedLessons(limit: 3) { id slug title summary estimatedMinutes level { code cefr } }
@@ -137,6 +138,47 @@ export const UnitTestQuery = graphql(`
       progress { bestScore passed attempts }
       lessons { slug title progress { status } }
       testItems { id type prompt options hint }
+    }
+  }
+`);
+
+export const VocabularyHubQuery = graphql(`
+  query VocabularyHub {
+    learningLevels { code name cefr }
+    vocabularySets { slug title levelCode wordCount seenCount masteredCount }
+    viewer { vocabularyDueCount }
+  }
+`);
+
+export const VocabularySetQuery = graphql(`
+  query VocabularySet($slug: String!) {
+    vocabularySet(slug: $slug) {
+      slug title levelCode wordCount seenCount masteredCount
+      words { id externalId word partOfSpeech meaning example box mastered }
+    }
+  }
+`);
+
+export const VocabularyReviewQuery = graphql(`
+  query VocabularyReview {
+    viewer {
+      vocabularyDueCount
+      vocabularyDue(limit: 30) { id externalId word partOfSpeech meaning example box mastered }
+    }
+  }
+`);
+
+export const PronunciationHubQuery = graphql(`
+  query PronunciationHub {
+    pronunciationTopics { slug kind title symbols bestScore attempts }
+  }
+`);
+
+export const PronunciationTopicQuery = graphql(`
+  query PronunciationTopic($slug: String!) {
+    pronunciationTopic(slug: $slug) {
+      slug kind title symbols tip examples bestScore attempts
+      drill { id type prompt options }
     }
   }
 `);

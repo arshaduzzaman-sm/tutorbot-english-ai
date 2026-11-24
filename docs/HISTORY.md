@@ -9,3 +9,8 @@
   logs, rate limit, health, REST onboarding/export/delete, GraphQL dashboard with limits and DataLoaders), mock AI
   providers, Next.js app (landing, auth, onboarding, dashboard, profile, legal pages), Docker, Makefile, CI.
 - Bug found by e2e in Docker: redirects used the 0.0.0.0 bind address; fixed with `publicOrigin()`.
+
+## M2 Learning (2026-11-22)
+PRs into `m2-learning`: lesson pages (#2), reading practice, listening practice + Kokoro script, mistake notebook +
+spaced review, placement + study plan, units + unlock rule, content import, Level 1 content, Level 2 units 1-2 (#12),
+then `m2-finish`: Level 2 units 3-4, Level 3, 280 more questions, vocabulary and pronunciation tracks, API lesson lock.

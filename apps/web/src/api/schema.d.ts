@@ -177,6 +177,43 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/pronunciation/{slug}/drill": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Submit Drill */
+        post: operations["submit_drill_api_v1_pronunciation__slug__drill_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/pronunciation/{slug}/items/{item_id}/speech": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Drill Speech
+         * @description The word a listen-and-choose item says. Fetched only when the learner presses Play.
+         */
+        get: operations["drill_speech_api_v1_pronunciation__slug__items__item_id__speech_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/units/{slug}/test": {
         parameters: {
             query?: never;
@@ -188,6 +225,23 @@ export interface paths {
         put?: never;
         /** Submit Test */
         post: operations["submit_test_api_v1_units__slug__test_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/vocabulary/{word_id}/review": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Review Word */
+        post: operations["review_word_api_v1_vocabulary__word_id__review_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -293,6 +347,31 @@ export interface components {
              * @constant
              */
             confirm: "DELETE";
+        };
+        /** DrillIn */
+        DrillIn: {
+            /** Answers */
+            answers: {
+                [key: string]: string;
+            };
+        };
+        /** DrillOut */
+        DrillOut: {
+            /** Results */
+            results: components["schemas"]["DrillResultOut"][];
+            /** Score Ratio */
+            score_ratio: number;
+        };
+        /** DrillResultOut */
+        DrillResultOut: {
+            /** Correct */
+            correct: boolean;
+            /** Correct Answer */
+            correct_answer: string;
+            /** Explanation */
+            explanation: string;
+            /** Id */
+            id: string;
         };
         /** ExerciseCheckIn */
         ExerciseCheckIn: {
@@ -452,6 +531,26 @@ export interface components {
             msg: string;
             /** Error Type */
             type: string;
+        };
+        /** WordReviewIn */
+        WordReviewIn: {
+            /**
+             * Known
+             * @description True when the learner knew the word
+             */
+            known: boolean;
+        };
+        /** WordReviewOut */
+        WordReviewOut: {
+            /** Box */
+            box: number;
+            /**
+             * Due At
+             * Format: date-time
+             */
+            due_at: string;
+            /** Mastered */
+            mastered: boolean;
         };
     };
     responses: never;
@@ -780,6 +879,73 @@ export interface operations {
             };
         };
     };
+    submit_drill_api_v1_pronunciation__slug__drill_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["DrillIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["DrillOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    drill_speech_api_v1_pronunciation__slug__items__item_id__speech_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+                item_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["SpeechOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     submit_test_api_v1_units__slug__test_post: {
         parameters: {
             query?: never;
@@ -802,6 +968,41 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["UnitTestOut"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    review_word_api_v1_vocabulary__word_id__review_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                word_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["WordReviewIn"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["WordReviewOut"];
                 };
             };
             /** @description Validation Error */
